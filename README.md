@@ -12,7 +12,7 @@ Plan ma 7 kroków (`specyfikacja.md`, część 11).
 | 2 | Pobieranie z API SEC i weryfikacja (tożsamości, drugie źródło) | gotowy |
 | 3 | Odczyt ESEF i PDF dla GPW, test cytatu | gotowy |
 | 4 | Obliczenia: wskaźniki, wycena odwrotna, scenariusze, karta Treli | gotowy |
-| 5 | Bramki stopu | — |
+| 5 | Bramki stopu | gotowy |
 | 6 | Raport: szablon z miejscami na liczby, lint, PDF | — |
 | 7 | SKILL.md i pełne przebiegi na 6 spółkach testowych | — |
 
@@ -109,6 +109,32 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają obliczenia same. Osobno: `pyt
 ```
 
 **Karta w stylu Treli** (`konfiguracja/karta-treli.yaml`): pięć filarów (wzrost 30%, jakość 25%, wycena 20%, analitycy 15%, momentum 10%), każda miara 0–10 pkt liniowo między progami, osobnymi dla USA i GPW. Filar bez danych (np. „analitycy” przy pokryciu poniżej 3 analityków) przekazuje wagę pozostałym. Karta jest informacją, nie bramką.
+
+## Bramki stopu (krok 5)
+
+Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają bramki same. Osobno: `python -m silnik.bramki analizy/<TICKER>/<data>`. Progi i lista bramek: `konfiguracja/bramki.yaml`.
+
+**Decyzja:** STOP (pierwsza twarda flaga według etapu), PAUZA (flagi poważne w co najmniej 3 kategoriach — skill pyta, czy kontynuować) albo DALEJ. Wynik: `bramki.md`, `bramki.json` i przy stopie `stop.md` (powód, dowód, cztery testy, warunek powrotu).
+
+**Sprawdzenia automatyczne:**
+
+| Etap | USA | GPW | Oba rynki (z rejestru) |
+|---:|---|---|---|
+| 0 | — | Lista Alertów (STOP), szczególne oznaczenie, zawieszenia obrotu | pokrycie analityczne (informacja) |
+| 1 | 8-K 4.02 — korekta sprawozdań (STOP), NT 10-K/NT 10-Q, 8-K 4.01 — zmiana biegłego, wzmianka „material weakness” | — | — |
+| 2 | — | — | rozwodnienie > 10% r/r; seryjne (3 z 5 lat) = flaga poważna |
+| 3 | wzmianka „substantial doubt”; razem z ujemnymi przepływami i zobowiązaniami krótkoterminowymi > aktywa obrotowe = STOP | — | przepływy ÷ zysk netto (3 lata) < 70%, M-score > −1,78, Z'' < 1,10, ujemny kapitał niewyjaśniony skupem (STOP) |
+
+**Dowody od modelu** (`bramki_dowody.json`): bramki wymagające oceny (opinia biegłego, sankcje, oszustwo, akcjonariusz > 90%, decyzja organu, brak przewagi itd.). Silnik przyjmuje dowód tylko z cytatem obecnym w dokumencie z archiwum; STOP wymaga też czterech testów i warunku powrotu. Dowód modelu zastępuje automatyczny wynik tej samej bramki (np. model ocenia, czy NT miało przyczyny księgowe).
+
+```json
+{"dowody": [{"bramka": "B4.akcjonariusz_90", "poziom": "stop", "dokument": "doc-012", "strona": 5,
+  "cytat": "…dosłowny fragment…", "opis": "…",
+  "testy": {"strukturalny": "…", "uczciwosc_liczb": "…", "zarzad_rozwiazuje": "…", "termin": "…"},
+  "warunek_powrotu": "…"}]}
+```
+
+Przypadki testowe w `analizy/`: PBG (Lista Alertów → STOP na etapie 0) i DarkPulse, DPLS (istotna niepewność kontynuacji + ujemne przepływy + brak pokrycia zobowiązań → STOP na etapie 3).
 
 ## Jak działa rejestr faktów
 

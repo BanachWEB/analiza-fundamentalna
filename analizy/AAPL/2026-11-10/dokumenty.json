@@ -101,6 +101,26 @@
       "pobrano": "2026-11-10T08:22:30.804705Z",
       "sha256": "2079e573e24d2560d0ec0ad2e949f6bf39e3262beefe526c537edb1435a3bc41",
       "plik": "2079e573e24d2560.csv"
+    },
+    {
+      "id": "doc-011",
+      "typ": "strona",
+      "zrodlo": "SEC EDGAR (wyszukiwanie)",
+      "adres": "https://efts.sec.gov/LATEST/search-index?q=%22substantial%20doubt%22&forms=10-K,10-Q&dateRange=custom&startdt=2026-11-02&enddt=2026-11-10&ciks=0000320193",
+      "opis": "wyszukiwanie: substantial doubt",
+      "pobrano": "2026-11-10T08:34:02.759481Z",
+      "sha256": "2f70b4a0b720195fc2306d4eb395c3524172bfd4e4a61ff070dce6d2f14535a2",
+      "plik": "2f70b4a0b720195f.json"
+    },
+    {
+      "id": "doc-012",
+      "typ": "strona",
+      "zrodlo": "SEC EDGAR (wyszukiwanie)",
+      "adres": "https://efts.sec.gov/LATEST/search-index?q=%22material%20weakness%22&forms=10-K&dateRange=custom&startdt=2026-11-02&enddt=2026-11-10&ciks=0000320193",
+      "opis": "wyszukiwanie: material weakness",
+      "pobrano": "2026-11-10T08:34:03.535672Z",
+      "sha256": "e4288ce3cb2a4b0ac09159d17d4ce32c1b4f747c60d9408078e4b75a62691044",
+      "plik": "e4288ce3cb2a4b0a.json"
     }
   ]
 }

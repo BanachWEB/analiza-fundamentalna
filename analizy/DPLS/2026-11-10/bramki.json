@@ -1,0 +1,168 @@
+{
+  "decyzja": "STOP",
+  "etap": 3,
+  "powod": "B3.kontynuacja: Istotna niepewność kontynuacji działalności w raporcie, ujemne przepływy operacyjne i zobowiązania krótkoterminowe wyższe niż aktywa obrotowe",
+  "wyniki": [
+    {
+      "id": "B0.pokrycie",
+      "etap": 0,
+      "kategoria": "rynek_i_status",
+      "poziom": "informacja",
+      "opis": "Pokrycie analityczne małe albo nieznane — nie można na nim polegać (brak danych o liczbie analityków)",
+      "dowody": [],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.opoznione_raporty",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "flaga_powazna",
+      "opis": "9 zawiadomień o opóźnieniu raportu (NT) w 3 latach; przyczynę sprawdza model (przyczyny księgowe = STOP)",
+      "dowody": [
+        "doc-002: NT 10-Q 2026-08-14 0001683168-26-006462",
+        "doc-002: NT 10-Q 2026-05-15 0001683168-26-003993",
+        "doc-002: NT 10-K 2026-03-31 0001683168-26-002553",
+        "doc-002: NT 10-Q 2025-05-15 0001683168-25-003687",
+        "doc-002: NT 10-K 2025-03-31 0001683168-25-002129",
+        "doc-002: NT 10-Q 2024-11-14 0001683168-24-008011",
+        "doc-002: NT 10-Q 2024-08-14 0001683168-24-005652",
+        "doc-002: NT 10-K 2024-04-01 0001683168-24-001977",
+        "doc-002: NT 10-Q 2023-11-14 0001683168-23-008079"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.zmiana_bieglego",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "flaga",
+      "opis": "Zmiana biegłego rewidenta (8-K, pozycja 4.01); model sprawdza, czy były spory",
+      "dowody": [
+        "doc-002: 8-K 4.01 2026-09-24 0001683168-26-007352",
+        "doc-002: 8-K 4.01 2026-09-17 0001683168-26-007212",
+        "doc-002: 8-K 4.01 2024-07-03 0001683168-24-004669",
+        "doc-002: 8-K 4.01 2024-07-02 0001683168-24-004608"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.korekta_sprawozdan",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Brak 8-K z pozycją 4.02 (korekta sprawozdań)",
+      "dowody": [],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.slabosc_kontroli_wzmianka",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Brak wzmianki „material weakness” w raportach od 2026-05-04",
+      "dowody": [
+        "doc-008: 0 trafień od 2026-05-04"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B2.rozwodnienie_seryjne",
+      "etap": 2,
+      "kategoria": "kapital",
+      "poziom": "flaga_powazna",
+      "opis": "Liczba akcji rosła o ponad 10% r/r w 4 z 5 ostatnich lat; sprawdź, czy emisje szły bez prawa poboru (wtedy STOP wymaga dowodu)",
+      "dowody": [
+        "zmiana_liczby_akcji.FY2021",
+        "zmiana_liczby_akcji.FY2022",
+        "zmiana_liczby_akcji.FY2023",
+        "zmiana_liczby_akcji.FY2024"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B3.kontynuacja",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "stop",
+      "opis": "Istotna niepewność kontynuacji działalności w raporcie, ujemne przepływy operacyjne i zobowiązania krótkoterminowe wyższe niż aktywa obrotowe",
+      "dowody": [
+        "doc-007: 4 trafień od 2026-05-04",
+        "przeplywy_operacyjne.FY2025",
+        "aktywa_obrotowe.2026-06-30",
+        "zobowiazania_krotkoterminowe.2026-06-30"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": "raport bez zastrzeżenia o kontynuacji działalności i dodatnie przepływy operacyjne"
+    },
+    {
+      "id": "B3.ujemny_kapital",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "stop",
+      "opis": "Ujemny kapitał własny na 2026-06-30, niewyjaśniony skupem akcji",
+      "dowody": [
+        "kapital_wlasny_z_udzialami_niekontrolujacymi.2026-06-30"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": "kapitał własny dodatni albo wyjaśniony skupem akcji"
+    },
+    {
+      "id": "B3.altman",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "flaga_powazna",
+      "opis": "Altman Z'' -284,43 (strefa zagrożenia poniżej 1,10)",
+      "dowody": [
+        "altman_z2.FY2025"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B3.kontynuacja_wzmianka",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "flaga_powazna",
+      "opis": "Raport okresowy wspomina o istotnej niepewności kontynuacji działalności („substantial doubt”); STOP, jeśli do tego ujemne przepływy i dług do spłaty bez finansowania",
+      "dowody": [
+        "doc-007: 4 trafień od 2026-05-04"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B3.przeplywy_do_zysku",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "ok",
+      "opis": "Zysk netto z 3 lat ≤ 0 (patrz wskaźniki)",
+      "dowody": [
+        "przeplywy_operacyjne.FY2023",
+        "przeplywy_operacyjne.FY2024",
+        "przeplywy_operacyjne.FY2025",
+        "zysk_netto.FY2023",
+        "zysk_netto.FY2024",
+        "zysk_netto.FY2025"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    }
+  ]
+}

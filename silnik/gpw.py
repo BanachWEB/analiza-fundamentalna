@@ -17,6 +17,7 @@ from pathlib import Path
 
 from silnik.fakty.cytat import dodaj_propozycje, wczytaj_propozycje
 from silnik import obliczenia
+from silnik.bramki.uruchom import uruchom_w_katalogu as bramki_uruchom
 from silnik.fakty.rejestr import RejestrFaktow
 from silnik.fakty.schemat import Status, TypDokumentu
 from silnik.fakty.weryfikacja import Raport, drugie_zrodlo, grupa_okresu, podsumowanie_md, tozsamosci
@@ -133,6 +134,7 @@ def uruchom(ticker: str, dzien: date, esef_urls: list[str], pdf_urls: list[str],
     rejestr.do_pliku(katalog / "fakty.json")
     (katalog / "weryfikacja.md").write_text(podsumowanie_md(rejestr, raport), encoding="utf-8")
     obliczenia.uruchom_w_katalogu(katalog, "GPW")
+    bramki_uruchom(katalog, "GPW")
     return katalog
 
 

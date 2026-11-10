@@ -591,6 +591,86 @@
       "pobrano": "2026-11-10T08:21:14.444846Z",
       "sha256": "ec1922294befda99541ad75bdf1cd6bc5e23a017ca43f9b0f9bc7dc37e3667d9",
       "plik": "ec1922294befda99.json"
+    },
+    {
+      "id": "doc-060",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/lista-alertow-notowania",
+      "opis": "lista alertow",
+      "pobrano": "2026-11-10T08:29:35.408952Z",
+      "sha256": "abbdd7f324d929f114188c18e44de6cdd0d45821ad68e3f905b3304baf91a433",
+      "plik": "abbdd7f324d929f1.html"
+    },
+    {
+      "id": "doc-061",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/spolki-ze-szczegolnym-oznaczeniem-notowania-ciagle",
+      "opis": "oznaczenie ciagle",
+      "pobrano": "2026-11-10T08:29:37.868374Z",
+      "sha256": "424dde9824fc9f1f8fbba864da30649c3baae733df4fde0bfe1fdb24483f8c41",
+      "plik": "424dde9824fc9f1f.html"
+    },
+    {
+      "id": "doc-062",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/spolki-ze-szczegolnym-oznaczeniem-notowania-jednolite",
+      "opis": "oznaczenie jednolite",
+      "pobrano": "2026-11-10T08:29:39.970519Z",
+      "sha256": "4766a2acb0ccad4fb56e46fd4b3029c80648a823090adf10d2ef0f6632c119e6",
+      "plik": "4766a2acb0ccad4f.html"
+    },
+    {
+      "id": "doc-063",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/zawieszenia-i-wykluczenia",
+      "opis": "zawieszenia",
+      "pobrano": "2026-11-10T08:29:42.529509Z",
+      "sha256": "5cad06bb70a1b1cd2b9bdd9c97bf823bd02fae8037be71f3bcad226f39beeff0",
+      "plik": "5cad06bb70a1b1cd.html"
+    },
+    {
+      "id": "doc-064",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/lista-alertow-notowania",
+      "opis": "lista alertow",
+      "pobrano": "2026-11-10T08:34:07.304508Z",
+      "sha256": "48331572d916e9a1b48ffafdabb4f0214010a21ca5f2b29176782e1c747c73ee",
+      "plik": "48331572d916e9a1.html"
+    },
+    {
+      "id": "doc-065",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/spolki-ze-szczegolnym-oznaczeniem-notowania-ciagle",
+      "opis": "oznaczenie ciagle",
+      "pobrano": "2026-11-10T08:34:09.857208Z",
+      "sha256": "360683342fb4d423fcee38d7ae4d36750dd73ad225496d230c31af5960396b42",
+      "plik": "360683342fb4d423.html"
+    },
+    {
+      "id": "doc-066",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/spolki-ze-szczegolnym-oznaczeniem-notowania-jednolite",
+      "opis": "oznaczenie jednolite",
+      "pobrano": "2026-11-10T08:34:11.851929Z",
+      "sha256": "ac06084e901b3f8833dbac0cdfcdbb9472674c8059cd5e59143a8af00a183cf8",
+      "plik": "ac06084e901b3f88.html"
+    },
+    {
+      "id": "doc-067",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/zawieszenia-i-wykluczenia",
+      "opis": "zawieszenia",
+      "pobrano": "2026-11-10T08:34:14.630287Z",
+      "sha256": "03c7064faa23b3fff43edbfe5e4fc9c996eec912a1b7189e4f56d64377d1f70b",
+      "plik": "03c7064faa23b3ff.html"
     }
   ]
 }

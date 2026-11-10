@@ -1,0 +1,33 @@
+# Bramki stopu (specyfikacja, część 4). Zmiana progów wymaga zgody właściciela.
+# Poziomy: stop | flaga_powazna | flaga | informacja. STOP wymaga dokumentu w archiwum.
+# Trzy flagi poważne z różnych kategorii naraz → PAUZA (skill pyta właściciela, czy kontynuować).
+
+progi:
+  rozwodnienie_roczne: 0.10        # liczba akcji rośnie o więcej niż 10% r/r → flaga
+  rozwodnienie_seryjne_lat: 3      # tyle lat z 5 ostatnich powyżej progu → flaga poważna
+  przeplywy_do_zysku: 0.70         # suma przepływów operacyjnych ÷ suma zysku netto z 3 lat poniżej → flaga
+  beneish_m: -1.78                 # powyżej → flaga
+  altman_z2: 1.10                  # poniżej → flaga poważna
+  analitycy_min: 3                 # mniej → informacja: pokrycie małe, nie można na nim polegać
+  akcjonariusz_max: 0.90           # akcjonariusz z większym udziałem głosów → STOP (decyzja właściciela 10.11.2026)
+  lata_sec: 3                      # okno dla NT, 8-K 4.01 i 4.02
+
+kategorie: [rynek_i_status, biegly_i_regulator, kapital, wyplacalnosc_i_jakosc, lad_korporacyjny, biznes]
+
+# Bramki, które ocenia model (z cytatem z dokumentu w archiwum):
+bramki_modelu:
+  B0.brak_sprawozdan: {etap: 0, kategoria: rynek_i_status, opis: "brak wiarygodnych sprawozdań"}
+  B1.opinia_bieglego: {etap: 1, kategoria: biegly_i_regulator, opis: "opinia negatywna albo odmowa wyrażenia opinii"}
+  B1.sankcja_regulatora: {etap: 1, kategoria: biegly_i_regulator, opis: "sankcja KNF/SEC za raporty przy tym samym zarządzie"}
+  B1.nt_ksiegowe: {etap: 1, kategoria: biegly_i_regulator, opis: "opóźnienie raportu z przyczyn księgowych"}
+  B1.slabosc_kontroli: {etap: 1, kategoria: biegly_i_regulator, opis: "nieusunięta istotna słabość kontroli wewnętrznej"}
+  B2.rozwodnienie_szkodliwe: {etap: 2, kategoria: kapital, opis: "seryjne rozwodnienie na szkodę mniejszości (np. emisje bez prawa poboru)"}
+  B3.kontynuacja: {etap: 3, kategoria: wyplacalnosc_i_jakosc, opis: "istotna niepewność kontynuacji + ujemne przepływy + dług do spłaty w 12 mies. bez finansowania"}
+  B3.bank_kapital: {etap: 3, kategoria: wyplacalnosc_i_jakosc, opis: "bank z CET1 poniżej wymogu"}
+  B4.oszustwo: {etap: 4, kategoria: lad_korporacyjny, opis: "wiarygodne dowody oszustwa albo tunelowania"}
+  B4.kontrahenci: {etap: 4, kategoria: lad_korporacyjny, opis: "większość zysku przez niesprawdzalnych kontrahentów"}
+  B4.akcjonariusz_90: {etap: 4, kategoria: lad_korporacyjny, opis: "akcjonariusz z ponad 90% głosów albo ryzyko przymusowego wykupu"}
+  B4.podmioty_powiazane: {etap: 4, kategoria: lad_korporacyjny, opis: "duże transakcje z podmiotami powiązanymi"}
+  B4.insiderzy: {etap: 4, kategoria: lad_korporacyjny, opis: "sprzedaż przez insiderów poza planem"}
+  B5.decyzja_organu: {etap: 5, kategoria: biznes, opis: "decyzja organu, która odbiera rdzeń biznesu"}
+  B5.brak_przewagi: {etap: 5, kategoria: biznes, opis: "brak przewagi konkurencyjnej przy wycenie zakładającej długi okres przewagi"}

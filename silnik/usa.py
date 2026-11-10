@@ -11,6 +11,7 @@ from datetime import date
 from pathlib import Path
 
 from silnik import obliczenia
+from silnik.bramki.uruchom import uruchom_w_katalogu as bramki_uruchom
 from silnik.fakty.rejestr import RejestrFaktow
 from silnik.fakty.weryfikacja import Raport, drugie_zrodlo, podsumowanie_md, tozsamosci
 from silnik.fakty.schemat import TypDokumentu
@@ -86,6 +87,7 @@ def uruchom(ticker: str, dzien: date, katalog_plikow: Path | None = None) -> Pat
     rejestr.do_pliku(katalog / "fakty.json")
     (katalog / "weryfikacja.md").write_text(podsumowanie_md(rejestr, raport), encoding="utf-8")
     obliczenia.uruchom_w_katalogu(katalog, "USA")
+    bramki_uruchom(katalog, "USA")
     return katalog
 
 

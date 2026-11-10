@@ -8,6 +8,7 @@ i nie omija blokad: gdy serwis odmawia (403), zwraca błąd.
 
 from __future__ import annotations
 
+import http.client
 import os
 import re
 import tempfile
@@ -53,6 +54,12 @@ def pobierz(url: str, limit_s: int = 60, rozszerzenie: str | None = None) -> Pat
             raise BladPobierania(f"{url}: HTTP {e.code}") from None
         except urllib.error.URLError as e:
             raise BladPobierania(f"{url}: {e.reason}") from None
+        except (http.client.HTTPException, ValueError, ConnectionError, TimeoutError) as e:
+            # zerwana transmisja (np. uszkodzone kodowanie chunked): jedno ponowienie, potem błąd pobierania
+            if proba < 2:
+                time.sleep(3)
+                continue
+            raise BladPobierania(f"{url}: przerwana transmisja ({type(e).__name__})") from None
         finally:
             _ostatnie[host] = time.monotonic()
     if rozszerzenie is None:

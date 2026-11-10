@@ -186,6 +186,9 @@ def notowania_biznesradar(tresc: str) -> dict:
     m = re.search(r"Liczba akcji:\s*([\d ]+)", tekst)
     if m:
         wynik["liczba_akcji"] = float(m.group(1).replace(" ", ""))
+    m = re.search(r"Notowania\s+\S+\s+\(([^)]+)\)", tekst)
+    if m:
+        wynik["nazwa"] = m.group(1).strip()
     m = re.search(r'datetime="(\d{4}-\d{2}-\d{2})', tresc)
     if m:
         wynik["dzien"] = date.fromisoformat(m.group(1))
