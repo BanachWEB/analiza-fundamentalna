@@ -1,0 +1,315 @@
+{
+  "$defs": {
+    "Fakt": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "rodzaj": {
+          "$ref": "#/$defs/Rodzaj"
+        },
+        "pozycja": {
+          "description": "Kanoniczna nazwa pozycji, np. przychody, ebit, dlug_netto",
+          "title": "Pozycja",
+          "type": "string"
+        },
+        "okres": {
+          "$ref": "#/$defs/Okres"
+        },
+        "wartosc": {
+          "title": "Wartosc",
+          "type": "number"
+        },
+        "skala": {
+          "$ref": "#/$defs/Skala",
+          "default": "jedn"
+        },
+        "jednostka": {
+          "$ref": "#/$defs/Jednostka"
+        },
+        "waluta": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Waluta"
+        },
+        "metoda": {
+          "$ref": "#/$defs/Metoda"
+        },
+        "status": {
+          "$ref": "#/$defs/Status"
+        },
+        "dokument": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dokument"
+        },
+        "miejsce": {
+          "additionalProperties": true,
+          "default": {},
+          "title": "Miejsce",
+          "type": "object"
+        },
+        "cytat": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cytat"
+        },
+        "wzor": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wzor"
+        },
+        "wejscia": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Wejscia",
+          "type": "array"
+        },
+        "uzasadnienie": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uzasadnienie"
+        },
+        "dostawca": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dostawca"
+        },
+        "data_prognozy": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Data Prognozy"
+        },
+        "liczba_analitykow": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Liczba Analitykow"
+        },
+        "kontrole": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Kontrole",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "rodzaj",
+        "pozycja",
+        "okres",
+        "wartosc",
+        "jednostka",
+        "metoda",
+        "status"
+      ],
+      "title": "Fakt",
+      "type": "object"
+    },
+    "Jednostka": {
+      "enum": [
+        "pieniadz",
+        "pieniadz_na_akcje",
+        "ulamek",
+        "mnoznik",
+        "akcje",
+        "dni",
+        "lata",
+        "punkty",
+        "liczba"
+      ],
+      "title": "Jednostka",
+      "type": "string"
+    },
+    "Metoda": {
+      "enum": [
+        "api",
+        "xbrl",
+        "tabela_pdf",
+        "wklejka",
+        "model",
+        "kod",
+        "uzytkownik"
+      ],
+      "title": "Metoda",
+      "type": "string"
+    },
+    "Okres": {
+      "additionalProperties": false,
+      "properties": {
+        "typ": {
+          "$ref": "#/$defs/TypOkresu"
+        },
+        "koniec": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Koniec"
+        },
+        "poczatek": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Poczatek"
+        }
+      },
+      "required": [
+        "typ"
+      ],
+      "title": "Okres",
+      "type": "object"
+    },
+    "Rodzaj": {
+      "enum": [
+        "raportowany",
+        "wyliczony",
+        "zalozenie",
+        "prognoza"
+      ],
+      "title": "Rodzaj",
+      "type": "string"
+    },
+    "Skala": {
+      "enum": [
+        "jedn",
+        "tys",
+        "mln",
+        "mld"
+      ],
+      "title": "Skala",
+      "type": "string"
+    },
+    "Status": {
+      "enum": [
+        "zweryfikowany",
+        "jedno_zrodlo",
+        "konflikt",
+        "odrzucony"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "TypOkresu": {
+      "enum": [
+        "FY",
+        "H1",
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "TTM",
+        "dzien",
+        "brak"
+      ],
+      "title": "TypOkresu",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "wersja_schematu": {
+      "default": "1",
+      "title": "Wersja Schematu",
+      "type": "string"
+    },
+    "ticker": {
+      "title": "Ticker",
+      "type": "string"
+    },
+    "data_analizy": {
+      "format": "date",
+      "title": "Data Analizy",
+      "type": "string"
+    },
+    "fakty": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Fakt"
+      },
+      "title": "Fakty",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker",
+    "data_analizy"
+  ],
+  "title": "RejestrFaktowPlik",
+  "type": "object"
+}

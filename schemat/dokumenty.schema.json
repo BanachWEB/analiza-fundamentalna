@@ -1,0 +1,106 @@
+{
+  "$defs": {
+    "Dokument": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "typ": {
+          "$ref": "#/$defs/TypDokumentu"
+        },
+        "zrodlo": {
+          "description": "Kto opublikował dane, np. SEC, spółka, Biznesradar, InvestingPro",
+          "title": "Zrodlo",
+          "type": "string"
+        },
+        "adres": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "URL; dla wklejki None",
+          "title": "Adres"
+        },
+        "opis": {
+          "default": "",
+          "title": "Opis",
+          "type": "string"
+        },
+        "pobrano": {
+          "format": "date-time",
+          "title": "Pobrano",
+          "type": "string"
+        },
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "plik": {
+          "description": "Nazwa pliku w archiwum (poza repozytorium)",
+          "title": "Plik",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "typ",
+        "zrodlo",
+        "pobrano",
+        "sha256",
+        "plik"
+      ],
+      "title": "Dokument",
+      "type": "object"
+    },
+    "TypDokumentu": {
+      "enum": [
+        "sec_api",
+        "10-K",
+        "10-Q",
+        "8-K",
+        "20-F",
+        "6-K",
+        "esef",
+        "raport_pdf",
+        "espi",
+        "strona",
+        "wklejka",
+        "inny"
+      ],
+      "title": "TypDokumentu",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "wersja_schematu": {
+      "default": "1",
+      "title": "Wersja Schematu",
+      "type": "string"
+    },
+    "ticker": {
+      "title": "Ticker",
+      "type": "string"
+    },
+    "dokumenty": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Dokument"
+      },
+      "title": "Dokumenty",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "RejestrDokumentow",
+  "type": "object"
+}
