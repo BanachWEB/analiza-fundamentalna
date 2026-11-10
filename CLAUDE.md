@@ -22,6 +22,7 @@ Repozytorium buduje skill, który robi wstępną analizę fundamentalną spółk
 | Co | Źródło prawdy |
 |---|---|
 | Projekt skilla: architektura, etapy, bramki, układ PDF, plan budowy | `specyfikacja.md` |
+| Badanie metody (stan na 9.11.2026; podstawa specyfikacji i plików referencyjnych skilla) | `badanie/analiza-fundamentalna-i-wycena-spolek.md` |
 | Jak uruchomić i stan budowy | `README.md` |
 | Schemat rejestru faktów i dokumentów | `silnik/fakty/schemat.py` (plik `schemat/*.schema.json` jest z niego generowany) |
 | Rejestr faktów: dodawanie, wyliczanie, zapis | `silnik/fakty/rejestr.py` |
