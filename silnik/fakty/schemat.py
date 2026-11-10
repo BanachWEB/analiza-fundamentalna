@@ -82,6 +82,7 @@ class Metoda(str, Enum):
     xbrl = "xbrl"
     tabela_pdf = "tabela_pdf"
     wklejka = "wklejka"
+    parser_strony = "parser_strony"  # deterministyczny odczyt tabeli ze strony WWW (np. Biznesradar)
     model = "model"  # model przypisał wiersz i podał cytat; wymaga testu cytatu
     kod = "kod"  # wyliczone przez silnik
     uzytkownik = "uzytkownik"  # założenie podane przez właściciela
@@ -208,7 +209,7 @@ class Fakt(BaseModel):
         if r == Rodzaj.raportowany:
             if not self.dokument:
                 raise ValueError(f"{self.id}: fakt raportowany musi wskazywać dokument")
-            if self.metoda not in (Metoda.api, Metoda.xbrl, Metoda.tabela_pdf, Metoda.wklejka, Metoda.model):
+            if self.metoda not in (Metoda.api, Metoda.xbrl, Metoda.tabela_pdf, Metoda.wklejka, Metoda.parser_strony, Metoda.model):
                 raise ValueError(f"{self.id}: niedozwolona metoda dla faktu raportowanego")
             if self.metoda in (Metoda.model, Metoda.tabela_pdf) and not self.cytat:
                 raise ValueError(f"{self.id}: fakt z dokumentu tekstowego musi mieć cytat dosłowny")

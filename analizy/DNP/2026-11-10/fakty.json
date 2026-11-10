@@ -3,6 +3,150 @@
   "data_analizy": "2026-11-10",
   "fakty": [
     {
+      "id": "aktywa.2016-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2016-12-31"
+      },
+      "wartosc": 1856840.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "aktywa"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "aktywa.2017-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2017-12-31"
+      },
+      "wartosc": 2451329.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "aktywa"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "aktywa.2018-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2018-12-31"
+      },
+      "wartosc": 3287690.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "aktywa"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "aktywa.2019-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2019-12-31"
+      },
+      "wartosc": 4350750.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "aktywa"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "aktywa.2020-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2020-12-31"
+      },
+      "wartosc": 5570510.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "aktywa"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "aktywa.2021-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2021-12-31"
+      },
+      "wartosc": 7168531.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "aktywa"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
       "id": "aktywa.2022-12-31",
       "rodzaj": "raportowany",
       "pozycja": "aktywa",
@@ -24,7 +168,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-014:9.00306e+09:0.00%:ok"
+        "drugie_zrodlo:doc-020:9.00306e+09:0.00%:ok"
       ]
     },
     {
@@ -49,7 +193,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-014:1.03777e+10:0.00%:ok"
+        "drugie_zrodlo:doc-020:1.03777e+10:0.00%:ok"
       ]
     },
     {
@@ -74,7 +218,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-014:1.30558e+10:0.00%:ok"
+        "drugie_zrodlo:doc-020:1.30558e+10:0.00%:ok"
       ]
     },
     {
@@ -99,7 +243,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-014:1.51713e+10:0.00%:ok"
+        "drugie_zrodlo:doc-020:1.51713e+10:0.00%:ok"
       ]
     },
     {
@@ -125,7 +269,175 @@
       "cytat": "Suma aktywów .......................................................................... 16 175 929 15 171 280 3 703 959 3 589 391",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-014:1.61759e+10:0.00%:ok"
+        "drugie_zrodlo:doc-020:1.61759e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "amortyzacja.FY2016",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2016-12-31",
+        "poczatek": "2016-01-01"
+      },
+      "wartosc": 65202.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "amortyzacja"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "amortyzacja.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-12-31",
+        "poczatek": "2017-01-01"
+      },
+      "wartosc": 85872.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "amortyzacja"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "amortyzacja.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-12-31",
+        "poczatek": "2018-01-01"
+      },
+      "wartosc": 112058.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "amortyzacja"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "amortyzacja.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-12-31",
+        "poczatek": "2019-01-01"
+      },
+      "wartosc": 163517.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "amortyzacja"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "amortyzacja.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-12-31",
+        "poczatek": "2020-01-01"
+      },
+      "wartosc": 198146.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "amortyzacja"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "amortyzacja.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-12-31",
+        "poczatek": "2021-01-01"
+      },
+      "wartosc": 247343.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "amortyzacja"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "amortyzacja.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-01-01"
+      },
+      "wartosc": 300129.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "amortyzacja"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
       ]
     },
     {
@@ -150,7 +462,7 @@
         "tekst": "356 828"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-016:3.56828e+08:0.00%:ok"
+        "drugie_zrodlo:doc-022:3.56828e+08:0.00%:ok"
       ]
     },
     {
@@ -175,7 +487,7 @@
         "tekst": "409 179"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-016:4.09179e+08:0.00%:ok"
+        "drugie_zrodlo:doc-022:4.09179e+08:0.00%:ok"
       ]
     },
     {
@@ -200,7 +512,7 @@
         "tekst": "505 031"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-016:5.05031e+08:0.00%:ok"
+        "drugie_zrodlo:doc-022:5.05031e+08:0.00%:ok"
       ]
     },
     {
@@ -270,6 +582,144 @@
       }
     },
     {
+      "id": "gotowka.2016-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2016-12-31"
+      },
+      "wartosc": 66427.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "gotowka"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "gotowka.2017-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2017-12-31"
+      },
+      "wartosc": 202626.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "gotowka"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "gotowka.2018-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2018-12-31"
+      },
+      "wartosc": 285361.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "gotowka"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "gotowka.2019-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2019-12-31"
+      },
+      "wartosc": 394720.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "gotowka"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "gotowka.2020-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2020-12-31"
+      },
+      "wartosc": 480418.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "gotowka"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "gotowka.2021-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2021-12-31"
+      },
+      "wartosc": 418615.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "gotowka"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
       "id": "gotowka.2022-12-31",
       "rodzaj": "raportowany",
       "pozycja": "gotowka",
@@ -290,7 +740,7 @@
         "tekst": "382 718"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-014:3.82718e+08:0.00%:ok"
+        "drugie_zrodlo:doc-020:3.82718e+08:0.00%:ok"
       ]
     },
     {
@@ -314,7 +764,7 @@
         "tekst": "218 389"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-014:2.18389e+08:0.00%:ok"
+        "drugie_zrodlo:doc-020:2.18389e+08:0.00%:ok"
       ]
     },
     {
@@ -338,7 +788,7 @@
         "tekst": "891 022"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-014:8.91022e+08:0.00%:ok"
+        "drugie_zrodlo:doc-020:8.91022e+08:0.00%:ok"
       ]
     },
     {
@@ -362,7 +812,145 @@
         "tekst": "954 814"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-014:9.54814e+08:0.00%:ok"
+        "drugie_zrodlo:doc-020:9.54814e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2016-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2016-12-31"
+      },
+      "wartosc": 683476.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "kapital_wlasny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2017-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2017-12-31"
+      },
+      "wartosc": 904493.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "kapital_wlasny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2018-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2018-12-31"
+      },
+      "wartosc": 1211873.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "kapital_wlasny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2019-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2019-12-31"
+      },
+      "wartosc": 1622353.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "kapital_wlasny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2020-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2020-12-31"
+      },
+      "wartosc": 2266563.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "kapital_wlasny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2021-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2021-12-31"
+      },
+      "wartosc": 3070190.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "kapital_wlasny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
       ]
     },
     {
@@ -386,7 +974,7 @@
         "tekst": "4 203 783"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-014:4.20378e+09:0.00%:ok"
+        "drugie_zrodlo:doc-020:4.20378e+09:0.00%:ok"
       ]
     },
     {
@@ -410,7 +998,7 @@
         "tekst": "5 605 311"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-014:5.60531e+09:0.00%:ok"
+        "drugie_zrodlo:doc-020:5.60531e+09:0.00%:ok"
       ]
     },
     {
@@ -434,7 +1022,7 @@
         "tekst": "7 085 151"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-014:7.08515e+09:0.00%:ok"
+        "drugie_zrodlo:doc-020:7.08515e+09:0.00%:ok"
       ]
     },
     {
@@ -458,7 +1046,7 @@
         "tekst": "8 653 393"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-014:8.65339e+09:0.00%:ok"
+        "drugie_zrodlo:doc-020:8.65339e+09:0.00%:ok"
       ]
     },
     {
@@ -742,6 +1330,150 @@
       }
     },
     {
+      "id": "pasywa_razem.2016-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2016-12-31"
+      },
+      "wartosc": 1856840.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "pasywa_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "pasywa_razem.2017-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2017-12-31"
+      },
+      "wartosc": 2451329.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "pasywa_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "pasywa_razem.2018-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2018-12-31"
+      },
+      "wartosc": 3287690.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "pasywa_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "pasywa_razem.2019-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2019-12-31"
+      },
+      "wartosc": 4350750.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "pasywa_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "pasywa_razem.2020-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2020-12-31"
+      },
+      "wartosc": 5570510.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "pasywa_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "pasywa_razem.2021-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2021-12-31"
+      },
+      "wartosc": 7168531.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "pasywa_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
       "id": "pasywa_razem.2022-12-31",
       "rodzaj": "raportowany",
       "pozycja": "pasywa_razem",
@@ -764,7 +1496,7 @@
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-014:9.00306e+09:0.00%:ok"
+        "drugie_zrodlo:doc-020:9.00306e+09:0.00%:ok"
       ]
     },
     {
@@ -790,7 +1522,7 @@
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-014:1.03777e+10:0.00%:ok"
+        "drugie_zrodlo:doc-020:1.03777e+10:0.00%:ok"
       ]
     },
     {
@@ -816,7 +1548,7 @@
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-014:1.30558e+10:0.00%:ok"
+        "drugie_zrodlo:doc-020:1.30558e+10:0.00%:ok"
       ]
     },
     {
@@ -842,7 +1574,182 @@
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-014:1.51713e+10:0.00%:ok"
+        "drugie_zrodlo:doc-020:1.51713e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2016",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2016-12-31",
+        "poczatek": "2016-01-01"
+      },
+      "wartosc": 18365.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_finansowe"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-12-31",
+        "poczatek": "2017-01-01"
+      },
+      "wartosc": 41137.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_finansowe"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-12-31",
+        "poczatek": "2018-01-01"
+      },
+      "wartosc": 82298.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_finansowe"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-12-31",
+        "poczatek": "2019-01-01"
+      },
+      "wartosc": 154563.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_finansowe"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-12-31",
+        "poczatek": "2020-01-01"
+      },
+      "wartosc": 265912.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_finansowe"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-12-31",
+        "poczatek": "2021-01-01"
+      },
+      "wartosc": -57406.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_finansowe"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-01-01"
+      },
+      "wartosc": 145244.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_finansowe"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
       ]
     },
     {
@@ -868,7 +1775,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
-        "drugie_zrodlo:doc-016:-7.77613e+08:0.00%:ok"
+        "drugie_zrodlo:doc-022:-7.77613e+08:0.00%:ok"
       ]
     },
     {
@@ -894,7 +1801,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
-        "drugie_zrodlo:doc-016:-2.87911e+08:0.00%:ok"
+        "drugie_zrodlo:doc-022:-2.87911e+08:0.00%:ok"
       ]
     },
     {
@@ -920,7 +1827,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-016:-5.58599e+08:0.00%:ok"
+        "drugie_zrodlo:doc-022:-5.58599e+08:0.00%:ok"
       ]
     },
     {
@@ -948,7 +1855,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-017:-3.54985e+08:0.00%:ok"
+        "drugie_zrodlo:doc-023:-3.54985e+08:0.00%:ok"
       ]
     },
     {
@@ -976,7 +1883,182 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-017:-4.3376e+07:0.00%:ok"
+        "drugie_zrodlo:doc-023:-4.3376e+07:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2016",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2016-12-31",
+        "poczatek": "2016-01-01"
+      },
+      "wartosc": -310180.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_inwestycyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-12-31",
+        "poczatek": "2017-01-01"
+      },
+      "wartosc": -402143.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_inwestycyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-12-31",
+        "poczatek": "2018-01-01"
+      },
+      "wartosc": -634018.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_inwestycyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-12-31",
+        "poczatek": "2019-01-01"
+      },
+      "wartosc": -827807.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_inwestycyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-12-31",
+        "poczatek": "2020-01-01"
+      },
+      "wartosc": -1000136.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_inwestycyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-12-31",
+        "poczatek": "2021-01-01"
+      },
+      "wartosc": -1330728.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_inwestycyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-01-01"
+      },
+      "wartosc": -1434563.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_inwestycyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
       ]
     },
     {
@@ -1002,7 +2084,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
-        "drugie_zrodlo:doc-016:-1.15826e+09:0.00%:ok"
+        "drugie_zrodlo:doc-022:-1.15826e+09:0.00%:ok"
       ]
     },
     {
@@ -1028,7 +2110,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
-        "drugie_zrodlo:doc-016:-1.59691e+09:0.00%:ok"
+        "drugie_zrodlo:doc-022:-1.59691e+09:0.00%:ok"
       ]
     },
     {
@@ -1054,7 +2136,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-016:-2.07505e+09:0.00%:ok"
+        "drugie_zrodlo:doc-022:-2.07505e+09:0.00%:ok"
       ]
     },
     {
@@ -1082,7 +2164,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-017:-1.56846e+09:0.00%:ok"
+        "drugie_zrodlo:doc-023:-1.56846e+09:0.00%:ok"
       ]
     },
     {
@@ -1110,7 +2192,182 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-017:-1.8422e+09:0.00%:ok"
+        "drugie_zrodlo:doc-023:-1.8422e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2016",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2016-12-31",
+        "poczatek": "2016-01-01"
+      },
+      "wartosc": 324323.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_operacyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-12-31",
+        "poczatek": "2017-01-01"
+      },
+      "wartosc": 497204.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_operacyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-12-31",
+        "poczatek": "2018-01-01"
+      },
+      "wartosc": 634455.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_operacyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-12-31",
+        "poczatek": "2019-01-01"
+      },
+      "wartosc": 799044.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_operacyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-12-31",
+        "poczatek": "2020-01-01"
+      },
+      "wartosc": 819922.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_operacyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-12-31",
+        "poczatek": "2021-01-01"
+      },
+      "wartosc": 1326331.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_operacyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-01-01"
+      },
+      "wartosc": 1253422.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przeplywy_operacyjne"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
       ]
     },
     {
@@ -1136,7 +2393,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
-        "drugie_zrodlo:doc-016:1.77154e+09:0.00%:ok"
+        "drugie_zrodlo:doc-022:1.77154e+09:0.00%:ok"
       ]
     },
     {
@@ -1162,7 +2419,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
-        "drugie_zrodlo:doc-016:2.55745e+09:0.00%:ok"
+        "drugie_zrodlo:doc-022:2.55745e+09:0.00%:ok"
       ]
     },
     {
@@ -1188,7 +2445,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-016:2.69744e+09:0.00%:ok"
+        "drugie_zrodlo:doc-022:2.69744e+09:0.00%:ok"
       ]
     },
     {
@@ -1216,7 +2473,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-017:1.60734e+09:0.00%:ok"
+        "drugie_zrodlo:doc-023:1.60734e+09:0.00%:ok"
       ]
     },
     {
@@ -1244,7 +2501,175 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-017:1.707e+09:0.00%:ok"
+        "drugie_zrodlo:doc-023:1.707e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przychody.FY2016",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2016-12-31",
+        "poczatek": "2016-01-01"
+      },
+      "wartosc": 3369517.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przychody"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "przychody.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-12-31",
+        "poczatek": "2017-01-01"
+      },
+      "wartosc": 4515933.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przychody"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "przychody.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-12-31",
+        "poczatek": "2018-01-01"
+      },
+      "wartosc": 5838529.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przychody"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "przychody.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-12-31",
+        "poczatek": "2019-01-01"
+      },
+      "wartosc": 7646547.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przychody"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "przychody.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-12-31",
+        "poczatek": "2020-01-01"
+      },
+      "wartosc": 10125815.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przychody"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "przychody.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-12-31",
+        "poczatek": "2021-01-01"
+      },
+      "wartosc": 13362012.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przychody"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "przychody.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-01-01"
+      },
+      "wartosc": 19801622.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "przychody"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
       ]
     },
     {
@@ -1270,7 +2695,7 @@
       },
       "kontrole": [
         "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
-        "drugie_zrodlo:doc-012:2.56663e+10:0.00%:ok"
+        "drugie_zrodlo:doc-018:2.56663e+10:0.00%:ok"
       ]
     },
     {
@@ -1296,7 +2721,7 @@
       },
       "kontrole": [
         "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
-        "drugie_zrodlo:doc-012:2.92738e+10:0.00%:ok"
+        "drugie_zrodlo:doc-018:2.92738e+10:0.00%:ok"
       ]
     },
     {
@@ -1322,7 +2747,7 @@
       },
       "kontrole": [
         "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
-        "drugie_zrodlo:doc-012:3.36342e+10:0.00%:ok"
+        "drugie_zrodlo:doc-018:3.36342e+10:0.00%:ok"
       ]
     },
     {
@@ -1349,7 +2774,7 @@
       "cytat": "Przychody ze sprzedaży ................................................................. 27 679 127 24 738 104 6 467 086 5 839 279",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-013:2.47381e+10:0.00%:ok"
+        "drugie_zrodlo:doc-019:2.47381e+10:0.00%:ok"
       ]
     },
     {
@@ -1376,7 +2801,7 @@
       "cytat": "Przychody ze sprzedaży ................................................................. 27 679 127 24 738 104 6 467 086 5 839 279",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-013:2.76791e+10:0.00%:ok"
+        "drugie_zrodlo:doc-019:2.76791e+10:0.00%:ok"
       ]
     },
     {
@@ -1446,6 +2871,144 @@
       }
     },
     {
+      "id": "zapasy.2016-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2016-12-31"
+      },
+      "wartosc": 276541.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zapasy"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zapasy.2017-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2017-12-31"
+      },
+      "wartosc": 368262.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zapasy"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zapasy.2018-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2018-12-31"
+      },
+      "wartosc": 445357.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zapasy"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zapasy.2019-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2019-12-31"
+      },
+      "wartosc": 623995.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zapasy"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zapasy.2020-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2020-12-31"
+      },
+      "wartosc": 875147.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zapasy"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zapasy.2021-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2021-12-31"
+      },
+      "wartosc": 1373463.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zapasy"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
       "id": "zapasy.2022-12-31",
       "rodzaj": "raportowany",
       "pozycja": "zapasy",
@@ -1466,7 +3029,7 @@
         "tekst": "1 978 778"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-014:1.97878e+09:0.00%:ok"
+        "drugie_zrodlo:doc-020:1.97878e+09:0.00%:ok"
       ]
     },
     {
@@ -1490,7 +3053,7 @@
         "tekst": "2 638 859"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-014:2.63886e+09:0.00%:ok"
+        "drugie_zrodlo:doc-020:2.63886e+09:0.00%:ok"
       ]
     },
     {
@@ -1514,7 +3077,7 @@
         "tekst": "3 081 444"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-014:3.08144e+09:0.00%:ok"
+        "drugie_zrodlo:doc-020:3.08144e+09:0.00%:ok"
       ]
     },
     {
@@ -1538,7 +3101,206 @@
         "tekst": "3 548 100"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-014:3.5481e+09:0.00%:ok"
+        "drugie_zrodlo:doc-020:3.5481e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2016",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2016-12-31",
+        "poczatek": "2016-01-01"
+      },
+      "wartosc": 32508.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zmiana_gotowki"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-12-31",
+        "poczatek": "2017-01-01"
+      },
+      "wartosc": 136198.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zmiana_gotowki"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-12-31",
+        "poczatek": "2018-01-01"
+      },
+      "wartosc": 82735.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zmiana_gotowki"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-12-31",
+        "poczatek": "2019-01-01"
+      },
+      "wartosc": 125800.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zmiana_gotowki"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-12-31",
+        "poczatek": "2020-01-01"
+      },
+      "wartosc": 85698.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zmiana_gotowki"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-12-31",
+        "poczatek": "2021-01-01"
+      },
+      "wartosc": -61803.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zmiana_gotowki"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-01-01"
+      },
+      "wartosc": -35897.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "zweryfikowany",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zmiana_gotowki"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": -164329.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zmiana_gotowki"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
       ]
     },
     {
@@ -1555,13 +3317,16 @@
       "jednostka": "pieniadz",
       "waluta": "PLN",
       "metoda": "xbrl",
-      "status": "jedno_zrodlo",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "ifrs-full:IncreaseDecreaseInCashAndCashEquivalents",
         "kontekst": "C1578",
         "tekst": "672 633"
-      }
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-022:6.72633e+08:0.00%:ok"
+      ]
     },
     {
       "id": "zmiana_gotowki.FY2025",
@@ -1585,7 +3350,8 @@
         "tekst": "63 792"
       },
       "kontrole": [
-        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
+        "drugie_zrodlo:doc-022:6.3792e+07:0.00%:ok"
       ]
     },
     {
@@ -1612,7 +3378,8 @@
       "cytat": "Zwiększenie/(zmniejszenie) netto stanu środków pieniężnych ...... (178 576) (316 105) (41 723) (74 615)",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
+        "drugie_zrodlo:doc-023:-3.16105e+08:0.00%:ok"
       ]
     },
     {
@@ -1639,7 +3406,8 @@
       "cytat": "Zwiększenie/(zmniejszenie) netto stanu środków pieniężnych ...... (178 576) (316 105) (41 723) (74 615)",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
+        "drugie_zrodlo:doc-023:-1.78576e+08:0.00%:ok"
       ]
     },
     {
@@ -1889,6 +3657,174 @@
       ]
     },
     {
+      "id": "zysk_netto.FY2016",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2016-12-31",
+        "poczatek": "2016-01-01"
+      },
+      "wartosc": 151210.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_netto.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-12-31",
+        "poczatek": "2017-01-01"
+      },
+      "wartosc": 213604.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_netto.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-12-31",
+        "poczatek": "2018-01-01"
+      },
+      "wartosc": 307554.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_netto.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-12-31",
+        "poczatek": "2019-01-01"
+      },
+      "wartosc": 410907.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_netto.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-12-31",
+        "poczatek": "2020-01-01"
+      },
+      "wartosc": 643917.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_netto.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-12-31",
+        "poczatek": "2021-01-01"
+      },
+      "wartosc": 805303.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_netto.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-01-01"
+      },
+      "wartosc": 1132087.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
       "id": "zysk_netto.FY2023",
       "rodzaj": "raportowany",
       "pozycja": "zysk_netto",
@@ -1910,7 +3846,7 @@
         "tekst": "1 405 327"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-012:1.40533e+09:0.00%:ok"
+        "drugie_zrodlo:doc-018:1.40533e+09:0.00%:ok"
       ]
     },
     {
@@ -1935,7 +3871,7 @@
         "tekst": "1 504 980"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-012:1.50498e+09:0.00%:ok"
+        "drugie_zrodlo:doc-018:1.50498e+09:0.00%:ok"
       ]
     },
     {
@@ -1960,7 +3896,175 @@
         "tekst": "1 558 360"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-012:1.55836e+09:0.00%:ok"
+        "drugie_zrodlo:doc-018:1.55836e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_netto_razem.FY2016",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2016-12-31",
+        "poczatek": "2016-01-01"
+      },
+      "wartosc": 151210.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_netto_razem.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-12-31",
+        "poczatek": "2017-01-01"
+      },
+      "wartosc": 213604.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_netto_razem.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-12-31",
+        "poczatek": "2018-01-01"
+      },
+      "wartosc": 307554.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_netto_razem.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-12-31",
+        "poczatek": "2019-01-01"
+      },
+      "wartosc": 410907.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_netto_razem.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-12-31",
+        "poczatek": "2020-01-01"
+      },
+      "wartosc": 643917.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_netto_razem.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-12-31",
+        "poczatek": "2021-01-01"
+      },
+      "wartosc": 805303.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_netto_razem.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-01-01"
+      },
+      "wartosc": 1132087.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_netto_razem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
       ]
     },
     {
@@ -1985,7 +4089,7 @@
         "tekst": "1 405 327"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-012:1.40533e+09:0.00%:ok"
+        "drugie_zrodlo:doc-018:1.40533e+09:0.00%:ok"
       ]
     },
     {
@@ -2010,7 +4114,7 @@
         "tekst": "1 505 729"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-012:1.50573e+09:0.00%:ok"
+        "drugie_zrodlo:doc-018:1.50573e+09:0.00%:ok"
       ]
     },
     {
@@ -2035,7 +4139,7 @@
         "tekst": "1 558 797"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-012:1.5588e+09:0.00%:ok"
+        "drugie_zrodlo:doc-018:1.5588e+09:0.00%:ok"
       ]
     },
     {
@@ -2062,7 +4166,7 @@
       "cytat": "Zysk netto ...................................................................................... 1 199 433 1 191 047 280 241 281 139",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-013:1.19105e+09:0.00%:ok"
+        "drugie_zrodlo:doc-019:1.19105e+09:0.00%:ok"
       ]
     },
     {
@@ -2089,7 +4193,175 @@
       "cytat": "Zysk netto ...................................................................................... 1 199 433 1 191 047 280 241 281 139",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-013:1.19943e+09:0.00%:ok"
+        "drugie_zrodlo:doc-019:1.19943e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny.FY2016",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2016-12-31",
+        "poczatek": "2016-01-01"
+      },
+      "wartosc": 215589.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_operacyjny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-12-31",
+        "poczatek": "2017-01-01"
+      },
+      "wartosc": 303242.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_operacyjny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-12-31",
+        "poczatek": "2018-01-01"
+      },
+      "wartosc": 429002.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_operacyjny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-12-31",
+        "poczatek": "2019-01-01"
+      },
+      "wartosc": 561909.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_operacyjny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-12-31",
+        "poczatek": "2020-01-01"
+      },
+      "wartosc": 837859.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_operacyjny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-12-31",
+        "poczatek": "2021-01-01"
+      },
+      "wartosc": 1023993.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_operacyjny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-01-01"
+      },
+      "wartosc": 1537819.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_operacyjny"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
       ]
     },
     {
@@ -2114,7 +4386,7 @@
         "tekst": "1 875 855"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-012:1.87586e+09:0.00%:ok"
+        "drugie_zrodlo:doc-018:1.87586e+09:0.00%:ok"
       ]
     },
     {
@@ -2139,7 +4411,7 @@
         "tekst": "1 908 330"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-012:1.90833e+09:0.00%:ok"
+        "drugie_zrodlo:doc-018:1.90833e+09:0.00%:ok"
       ]
     },
     {
@@ -2164,7 +4436,7 @@
         "tekst": "2 041 282"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-012:2.04128e+09:0.00%:ok"
+        "drugie_zrodlo:doc-018:2.04128e+09:0.00%:ok"
       ]
     },
     {
@@ -2191,7 +4463,7 @@
       "cytat": "Zysk z działalności operacyjnej...................................................... 1 550 359 1 563 955 362 233 369 162",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-013:1.56396e+09:0.00%:ok"
+        "drugie_zrodlo:doc-019:1.56396e+09:0.00%:ok"
       ]
     },
     {
@@ -2218,7 +4490,175 @@
       "cytat": "Zysk z działalności operacyjnej...................................................... 1 550 359 1 563 955 362 233 369 162",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-013:1.55036e+09:0.00%:ok"
+        "drugie_zrodlo:doc-019:1.55036e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2016",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2016-12-31",
+        "poczatek": "2016-01-01"
+      },
+      "wartosc": 186455.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_przed_opodatkowaniem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-12-31",
+        "poczatek": "2017-01-01"
+      },
+      "wartosc": 266016.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_przed_opodatkowaniem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-12-31",
+        "poczatek": "2018-01-01"
+      },
+      "wartosc": 383978.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_przed_opodatkowaniem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-12-31",
+        "poczatek": "2019-01-01"
+      },
+      "wartosc": 502460.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_przed_opodatkowaniem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-12-31",
+        "poczatek": "2020-01-01"
+      },
+      "wartosc": 789000.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_przed_opodatkowaniem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-12-31",
+        "poczatek": "2021-01-01"
+      },
+      "wartosc": 978409.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_przed_opodatkowaniem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
+      ]
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-01-01"
+      },
+      "wartosc": 1401618.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "miejsce": {
+        "zrodlo": "Biznesradar",
+        "pole": "zysk_przed_opodatkowaniem"
+      },
+      "kontrole": [
+        "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"
       ]
     },
     {
@@ -2243,7 +4683,7 @@
         "tekst": "1 738 981"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-012:1.73898e+09:0.00%:ok"
+        "drugie_zrodlo:doc-018:1.73898e+09:0.00%:ok"
       ]
     },
     {
@@ -2268,7 +4708,7 @@
         "tekst": "1 793 563"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-012:1.79356e+09:0.00%:ok"
+        "drugie_zrodlo:doc-018:1.79356e+09:0.00%:ok"
       ]
     },
     {
@@ -2293,7 +4733,7 @@
         "tekst": "1 926 653"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-012:1.92665e+09:0.00%:ok"
+        "drugie_zrodlo:doc-018:1.92665e+09:0.00%:ok"
       ]
     }
   ]

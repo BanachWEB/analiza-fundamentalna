@@ -169,3 +169,23 @@ def test_pdf_liczby_z_kolumn(tmp_path):
     ok, powod = cytat.sprawdz(p, 1, cyt_przych, 679127)
     assert not ok and "fragmentem" in powod
     assert not cytat.sprawdz(p, 2, cyt_przych, 27679127)[0]  # zła strona
+
+
+def test_uzupelnienie_z_biznesradaru_i_brak_samopotwierdzenia():
+    from silnik.fakty.weryfikacja import Raport, drugie_zrodlo
+
+    dane = {
+        ("przychody", "FY", date(2019, 12, 31)): (10_000_000.0, "doc-009"),
+        ("przychody", "FY", date(2025, 12, 31)): (33_634_155_000.0, "doc-009"),
+        ("przychody", "Q", date(2025, 12, 31)): (1.0, "doc-010"),
+    }
+    istniejace = {("przychody", "FY", date(2025, 12, 31))}
+    fakty = biznesradar.fakty_uzupelniajace(dane, istniejace)
+    assert [f.id for f in fakty] == ["przychody.FY2019"]
+    f = fakty[0]
+    assert f.wartosc == 10_000 and f.skala.value == "tys" and f.metoda.value == "parser_strony"
+    assert f.okres.poczatek == date(2019, 1, 1)
+    r = RejestrFaktow("DNP", date(2026, 11, 10))
+    r.dodaj(f)
+    drugie_zrodlo(r, dane, Raport())
+    assert r["przychody.FY2019"].status == Status.jedno_zrodlo  # nie potwierdza sam siebie

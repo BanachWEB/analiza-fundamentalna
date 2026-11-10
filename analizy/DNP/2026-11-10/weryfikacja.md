@@ -4,8 +4,8 @@ Plik wygenerował silnik (2026-11-10). Nie edytuj go ręcznie.
 
 | Status | Liczba faktów |
 |---|---:|
-| zweryfikowany | 79 |
-| jedno_zrodlo | 13 |
+| zweryfikowany | 120 |
+| jedno_zrodlo | 73 |
 | konflikt | 0 |
 | odrzucony | 0 |
 
@@ -13,9 +13,9 @@ Plik wygenerował silnik (2026-11-10). Nie edytuj go ręcznie.
 
 | Kontrola | Zaliczone | Niezaliczone |
 |---|---:|---:|
-| aktywa=pasywa | 4 | 0 |
-| drugie_zrodlo | 60 | 0 |
-| przeplywy=zmiana_gotowki(bez_kursow) | 3 | 0 |
+| aktywa=pasywa | 10 | 0 |
+| drugie_zrodlo | 64 | 0 |
+| przeplywy=zmiana_gotowki(bez_kursow) | 10 | 0 |
 | przeplywy=zmiana_gotowki_przed_kursami | 2 | 0 |
 | przychody-koszt_sprzedazy=zysk_brutto | 3 | 0 |
 | zobowiazania+kapital=pasywa | 4 | 0 |
@@ -27,6 +27,10 @@ Brak konfliktów.
 ## Pozycje bez danych za ostatni rok obrotowy
 
 Spółka mogła zmienić znacznik XBRL; sprawdź mapowanie: zmiana_gotowki_przed_kursami
+
+## Lata uzupełnione z serwisu danych (bez raportu spółki w archiwum)
+
+2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023
 
 ## Fakty zmienione w kolejnych raportach spółki
 

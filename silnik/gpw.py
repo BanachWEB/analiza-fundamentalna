@@ -18,7 +18,7 @@ from pathlib import Path
 from silnik.fakty.cytat import dodaj_propozycje, wczytaj_propozycje
 from silnik.fakty.rejestr import RejestrFaktow
 from silnik.fakty.schemat import Status, TypDokumentu
-from silnik.fakty.weryfikacja import Raport, drugie_zrodlo, podsumowanie_md, tozsamosci
+from silnik.fakty.weryfikacja import Raport, drugie_zrodlo, grupa_okresu, podsumowanie_md, tozsamosci
 from silnik.pobieranie import biznesradar, esef
 from silnik.pobieranie.archiwum import Archiwum
 from silnik.pobieranie.http import BladPobierania, pobierz
@@ -70,13 +70,19 @@ def uruchom(ticker: str, dzien: date, esef_urls: list[str], pdf_urls: list[str],
         dodaj_propozycje(rejestr, archiwum.sciezka, wczytaj_propozycje(plik_propozycji))
 
     raport = Raport()
-    tozsamosci(rejestr, raport)
     try:
         dok_br = biznesradar.pobierz_do_archiwum(ticker, archiwum)
         rejestr.znane_dokumenty(archiwum.ids())
-        drugie_zrodlo(rejestr, biznesradar.parsuj_dokumenty(archiwum, [d.id for d in dok_br]), raport)
+        dane_br = biznesradar.parsuj_dokumenty(archiwum, [d.id for d in dok_br])
+        istniejace = {(f.pozycja, grupa_okresu(f), f.okres.koniec) for f in rejestr.fakty() if f.status != Status.odrzucony}
+        for f in biznesradar.fakty_uzupelniajace(dane_br, istniejace):
+            rejestr.dodaj(f)
     except (BladPobierania, biznesradar.BladBiznesradar) as e:
-        print(f"Drugie źródło niedostępne: {e}")
+        dane_br = None
+        print(f"Biznesradar niedostępny: {e}")
+    tozsamosci(rejestr, raport)
+    if dane_br:
+        drugie_zrodlo(rejestr, dane_br, raport)
 
     rejestr.do_pliku(katalog / "fakty.json")
     (katalog / "weryfikacja.md").write_text(podsumowanie_md(rejestr, raport), encoding="utf-8")

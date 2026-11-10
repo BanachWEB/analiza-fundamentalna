@@ -171,6 +171,66 @@
       "pobrano": "2026-11-10T07:59:25.797000Z",
       "sha256": "c4bf952c2ab36ae79163e4993df7aa1fe40eb4c3e7893e094c572b719a88d6ee",
       "plik": "c4bf952c2ab36ae7.html"
+    },
+    {
+      "id": "doc-018",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/DNP",
+      "opis": "rachunek roczne",
+      "pobrano": "2026-11-10T08:02:20.265525Z",
+      "sha256": "328963cf4c8a48c2bc38dffb4f91d165d396d95ba72b46f599e3c673aa851381",
+      "plik": "328963cf4c8a48c2.html"
+    },
+    {
+      "id": "doc-019",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/DNP,Q",
+      "opis": "rachunek kwartalne",
+      "pobrano": "2026-11-10T08:02:22.348901Z",
+      "sha256": "96bd7293682c2c1c97fe1c9f016659f4d7c502223f38b68f194902877ba5315b",
+      "plik": "96bd7293682c2c1c.html"
+    },
+    {
+      "id": "doc-020",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/DNP",
+      "opis": "bilans roczne",
+      "pobrano": "2026-11-10T08:02:24.144042Z",
+      "sha256": "fa485f92f161bd8a82af81d75b8479fafa9e5253f76e9dc939c49c40732f9835",
+      "plik": "fa485f92f161bd8a.html"
+    },
+    {
+      "id": "doc-021",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/DNP,Q",
+      "opis": "bilans kwartalne",
+      "pobrano": "2026-11-10T08:02:25.988811Z",
+      "sha256": "03021bfc388ae31f0bf1e82b50733fb28ee8bd68ad6850f52828bdd8d12b63c1",
+      "plik": "03021bfc388ae31f.html"
+    },
+    {
+      "id": "doc-022",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/DNP",
+      "opis": "przeplywy roczne",
+      "pobrano": "2026-11-10T08:02:27.476865Z",
+      "sha256": "70d7609d5b27097e64d331e379f712fbaf258cbb659b49501258a849eb22e332",
+      "plik": "70d7609d5b27097e.html"
+    },
+    {
+      "id": "doc-023",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/DNP,Q",
+      "opis": "przeplywy kwartalne",
+      "pobrano": "2026-11-10T08:02:29.123650Z",
+      "sha256": "5dc75e4fd0a49642d3f20dd09e01d48623fcac0a35037976f021af32baf02c53",
+      "plik": "5dc75e4fd0a49642.html"
     }
   ]
 }

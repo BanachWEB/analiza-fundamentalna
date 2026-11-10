@@ -56,6 +56,7 @@ python -m silnik.gpw DNP --esef URL_ESEF_2025 --esef URL_ESEF_2024 --pdf URL_RAP
 - **PDF (raporty kwartalne i półroczne):** model czyta tekst strony i zapisuje propozycje faktów w `analizy/<TICKER>/<data>/propozycje.json`, z dosłownym cytatem i numerem strony. Potem uruchamia to samo polecenie jeszcze raz.
 - **Test cytatu:** silnik przyjmuje propozycję tylko wtedy, gdy cytat jest na wskazanej stronie, a wartość jest całą liczbą z kolumny tego wiersza (silnik składa liczby z pozycji słów w PDF). Propozycja, która nie przejdzie testu, zostaje w rejestrze ze statusem „odrzucony” i powodem.
 - **Drugie źródło:** Biznesradar (dane roczne i kwartalne w tys. PLN). Z kwartałów silnik liczy sumy narastające (H1, M9), żeby porównać je z raportami kwartalnymi.
+- **Uzupełnienie historii:** lata obrotowe i stany na koniec roku, których nie pokrywa żaden raport spółki w archiwum, silnik bierze z Biznesradaru (do 10 lat). Takie fakty mają metodę `parser_strony`, status „jedno_zrodlo” i ślad „uzupelnienie:biznesradar”; `weryfikacja.md` wymienia te lata. Fakt nie może potwierdzić sam siebie: porównanie z drugim źródłem pomija fakty z tego samego dokumentu.
 
 Format propozycji (wartość tak, jak stoi w raporcie, razem ze skalą z nagłówka tabeli):
 

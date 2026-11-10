@@ -42,6 +42,7 @@ MAPOWANIE = {
     "CashflowInvestingCashflow": "przeplywy_inwestycyjne",
     "CashflowFinancingCashflow": "przeplywy_finansowe",
     "CashflowAmortization": "amortyzacja",
+    "CashflowNetCashflow": "zmiana_gotowki",
 }
 POZYCJE_STANU = {"aktywa", "pasywa_razem", "kapital_wlasny", "gotowka", "zapasy"}
 MIESIACE = {"sty": 1, "lut": 2, "mar": 3, "kwi": 4, "maj": 5, "cze": 6, "lip": 7, "sie": 8, "wrz": 9, "paź": 10, "paz": 10, "lis": 11, "gru": 12}
@@ -150,4 +151,34 @@ def parsuj_dokumenty(archiwum: Archiwum, dok_ids: list[str]) -> dict:
     for klucz, v in sumy_narastajace(proste).items():
         if klucz not in wynik:
             wynik[klucz] = (v, dok_kw.get((klucz[0], klucz[2]), "?"))
+    return wynik
+
+
+def fakty_uzupelniajace(dane: dict, istniejace: set[tuple[str, str, date]], lat: int = 10) -> list:
+    """Fakty roczne i stany na koniec roku z Biznesradaru dla okresów, których nie ma w raportach spółki.
+
+    `dane`: wynik parsuj_dokumenty; `istniejace`: klucze (pozycja, grupa okresu, koniec) faktów z raportów.
+    Kwartały i sumy narastające nie trafiają do rejestru: służą tylko do kontroli.
+    """
+    from silnik.fakty.schemat import Fakt, Jednostka, Metoda, Okres, Rodzaj, Skala, Status
+
+    konce_roku = sorted({k for (_, t, k) in dane if t == "FY"})[-lat:]
+    wynik = []
+    for (pozycja, typ, koniec), (v, dok) in sorted(dane.items(), key=lambda x: (x[0][0], x[0][2])):
+        if koniec not in konce_roku or typ not in ("FY", "dzien") or (pozycja, typ, koniec) in istniejace:
+            continue
+        if typ == "FY":
+            poczatek = date(koniec.year - 1, koniec.month, calendar.monthrange(koniec.year - 1, koniec.month)[1])
+            poczatek = date.fromordinal(poczatek.toordinal() + 1)
+            okres = Okres(typ="FY", poczatek=poczatek, koniec=koniec)
+            fid = f"{pozycja}.FY{koniec.year}"
+        else:
+            okres = Okres(typ="dzien", koniec=koniec)
+            fid = f"{pozycja}.{koniec.isoformat()}"
+        wynik.append(Fakt(
+            id=fid, rodzaj=Rodzaj.raportowany, pozycja=pozycja, okres=okres, wartosc=v / 1000, skala=Skala.tys,
+            jednostka=Jednostka.pieniadz, waluta="PLN", metoda=Metoda.parser_strony, status=Status.jedno_zrodlo,
+            dokument=dok, miejsce={"zrodlo": "Biznesradar", "pole": pozycja},
+            kontrole=["uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum"],
+        ))
     return wynik

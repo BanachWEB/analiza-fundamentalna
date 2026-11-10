@@ -126,8 +126,8 @@ def drugie_zrodlo(
     }
     for (pozycja2, typ, koniec), (wartosc2, dok2) in sorted(dane.items(), key=lambda x: (x[0][0], x[0][1], x[0][2])):
         f = next((fakty[(p, typ, koniec)] for p in ALIASY.get(pozycja2, [pozycja2]) if (p, typ, koniec) in fakty), None)
-        if f is None:
-            continue
+        if f is None or f.dokument == dok2:
+            continue  # fakt z tego samego dokumentu nie może potwierdzać sam siebie
         r = _roznica(f.wartosc_bazowa(), wartosc2)
         ok = r <= tol
         wpis = f"drugie_zrodlo:{dok2}:{wartosc2:g}:{r:.2%}:{'ok' if ok else 'blad'}"
@@ -185,6 +185,9 @@ def podsumowanie_md(rejestr: RejestrFaktow, raport: Raport) -> str:
     linie.append(
         "Spółka mogła zmienić znacznik XBRL; sprawdź mapowanie: " + ", ".join(przestarzale) if przestarzale else "Brak."
     )
+    uzup = sorted({f.okres.koniec.year for f in rejestr.fakty() if f.metoda.value == "parser_strony"})
+    linie += ["", "## Lata uzupełnione z serwisu danych (bez raportu spółki w archiwum)", ""]
+    linie.append(", ".join(str(r) for r in uzup) if uzup else "Brak.")
     zmiany = [f.id for f in rejestr.fakty() if any(c.startswith("zmiana_wersji") for c in f.kontrole)]
     linie += ["", "## Fakty zmienione w kolejnych raportach spółki", ""]
     linie.append(", ".join(sorted(zmiany)) if zmiany else "Brak.")
