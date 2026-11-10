@@ -9,7 +9,7 @@ Data analizy: 10.11.2026. Rynek: USA (Nasdaq). Instrument w XTB: MSFT.US (akcja)
 - Przewaga konkurencyjna: szeroka (efekt sieciowy i koszty zmiany dostawcy w oprogramowaniu dla firm, skala w chmurze), trend stabilny z ryzykiem słabnięcia kosztów zmiany dostawcy przez AI.
 - Wycena: kapitalizacja 4,05 bln USD[^5], C/Z 28,4×[^6], EV/EBIT 24,6×[^7], FCF yield 1,1%[^8].
 - Scenariusze: wartość oczekiwana 261,94 USD[^9] przy kursie 545,18 USD[^10]; w scenariuszu byka stopa zwrotu przy obecnym kursie wynosi 8,4%[^11], a w bazowym 6,1%[^12].
-- Konsensus: 58,00[^13] analityków, średnia cena docelowa 636,12 USD[^14], wzrost EPS w bieżącym roku obrotowym 15,8%[^15]. Pokrycie analityczne jest głębokie.
+- Konsensus: 58[^13] analityków, średnia cena docelowa 636,12 USD[^14], wzrost EPS w bieżącym roku obrotowym 15,8%[^15]. Pokrycie analityczne jest głębokie.
 - Karta w stylu Treli: w części „Karta w stylu Treli”.
 
 ## 1. Jak działa firma
@@ -40,7 +40,7 @@ Test „trzech P” Damodarana (możliwe, wiarygodne, prawdopodobne): moim zdani
 
 ## 3. Najważniejsze fakty
 
-- Spółka zatrudniała około 223 000,00[^31] osób na koniec FY2026.
+- Spółka zatrudniała około 223 000[^31] osób na koniec FY2026.
 - Kapitalizacja: 4,05 bln USD[^5]; akcje w obrocie: 7 426,2 mln akcji[^32]; średnie dzienne obroty z ostatnich sesji: 11,9 mld USD[^33]. Płynność nie stanowi ograniczenia dla pozycji w IKE.
 - Biegły rewident: Deloitte & Touche; opinia bez zastrzeżeń o sprawozdaniach i o kontroli wewnętrznej za FY2026.
 - Microsoft ma w OpenAI udział rzędu 25,0%[^34] (metoda praw własności); OpenAI jest podmiotem powiązanym.
@@ -234,7 +234,7 @@ Czego nie sprawdziłem: udziałów w rynku chmury i oprogramowania (brak dokumen
 [^10]: 545,18 USD, na 09.11.2026; źródło: Yahoo Finance — notowania dzienne MSFT (doc-017, pobrano 2026-11-10; pole: zamknięcie); status: zweryfikowany; kontrola: 0.00% różnicy z drugim źródłem.
 [^11]: 8,4%, na 09.11.2026; wyliczenie: stopa dyskontowa, przy której wartość scenariusza byk równa się kursowi; status: jedno źródło.
 [^12]: 6,1%, na 09.11.2026; wyliczenie: stopa dyskontowa, przy której wartość scenariusza bazowy równa się kursowi; status: jedno źródło.
-[^13]: 58,00, na 10.11.2026; źródło: Stock Analysis — prognozy analityków (doc-014, pobrano 2026-11-10); status: jedno źródło.
+[^13]: 58, na 10.11.2026; źródło: Stock Analysis — prognozy analityków (doc-014, pobrano 2026-11-10); status: jedno źródło.
 [^14]: 636,12 USD, na 10.11.2026; źródło: Stock Analysis — prognozy analityków (doc-014, pobrano 2026-11-10); status: jedno źródło.
 [^15]: 15,8%, na 10.11.2026; źródło: Stock Analysis — prognozy analityków (doc-014, pobrano 2026-11-10; pole: epsThis.growth (bieżący rok obrotowy)); status: jedno źródło.
 [^16]: 140,0 mld USD, rok obrotowy 2026 (do 30.06.2026); źródło: spółka — raport roczny FY2026 (strona relacji inwestorskich) (doc-015, pobrano 2026-11-10); cytat: „Productivity and Business Processes Revenue $ 139,996 $ 120,810 16%”; status: jedno źródło.
@@ -252,7 +252,7 @@ Czego nie sprawdziłem: udziałów w rynku chmury i oprogramowania (brak dokumen
 [^28]: 135,9 mld USD, ostatnie 12 miesięcy do 30.09.2026; wyliczenie: capex.FY2026 + capex.FY2027Q1 - capex.FY2026Q1; status: jedno źródło.
 [^29]: 3,2×, ostatnie 12 miesięcy do 30.09.2026; wyliczenie: capex / amortyzacja; status: jedno źródło.
 [^30]: 3,5 mld USD, ostatnie 12 miesięcy do 30.09.2026; wyliczenie: splata_leasingu.FY2026 + splata_leasingu.FY2027Q1 - splata_leasingu.FY2026Q1; status: jedno źródło.
-[^31]: 223 000,00, na 30.06.2026; źródło: spółka — raport roczny FY2026 (strona relacji inwestorskich) (doc-015, pobrano 2026-11-10); cytat: „As of June 30, 2026, we employed approximately 223,000 people on a full-time basis”; status: jedno źródło.
+[^31]: 223 000, na 30.06.2026; źródło: spółka — raport roczny FY2026 (strona relacji inwestorskich) (doc-015, pobrano 2026-11-10); cytat: „As of June 30, 2026, we employed approximately 223,000 people on a full-time basis”; status: jedno źródło.
 [^32]: 7 426,2 mln akcji, na 22.10.2026; źródło: SEC — XBRL companyfacts (doc-001, pobrano 2026-11-10; xbrl: dei:EntityCommonStockSharesOutstanding); status: jedno źródło.
 [^33]: 11,9 mld USD, na 09.11.2026; źródło: Yahoo Finance — notowania dzienne MSFT (doc-017, pobrano 2026-11-10); status: jedno źródło.
 [^34]: 25,0%, na 30.06.2026; źródło: spółka — raport roczny FY2026 (strona relacji inwestorskich) (doc-015, pobrano 2026-11-10); cytat: „We have an investment accounted for under the equity method that represents an approximate 25% interest on an as-converted basis.”; status: jedno źródło.

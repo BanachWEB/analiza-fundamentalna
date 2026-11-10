@@ -49,7 +49,7 @@ def wartosc(f: Fakt) -> str:
         return f"{_pl(v, 1)} lat"
     if j == Jednostka.dni:
         return f"{_pl(v, 0)} dni"
-    return _pl(v, 2)
+    return _pl(v, 0) if abs(v - round(v)) < 1e-9 else _pl(v, 2)
 
 
 def data_pl(d: date) -> str:
