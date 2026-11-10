@@ -26,13 +26,17 @@ def sektor(katalog: Optional[Path]) -> str:
 
 
 def dodaj_propozycje_jesli_sa(rejestr: RejestrFaktow, katalog: Optional[Path]) -> None:
-    """Propozycje modelu (PDF, wklejka z InvestingPro) — tylko te, których jeszcze nie ma w rejestrze."""
+    """Propozycje modelu (PDF, wklejka z InvestingPro): nowe i wcześniej odrzucone."""
     if not katalog or not (katalog / "propozycje.json").exists():
         return
     from silnik.fakty.cytat import dodaj_propozycje, wczytaj_propozycje
     from silnik.pobieranie.archiwum import Archiwum
 
-    nowe = [p for p in wczytaj_propozycje(katalog / "propozycje.json") if p["id"] not in rejestr]
+    from silnik.fakty.schemat import Status
+
+    # nowe propozycje oraz wcześniej odrzucone (model mógł poprawić cytat albo wartość, albo silnik test)
+    nowe = [p for p in wczytaj_propozycje(katalog / "propozycje.json")
+            if p["id"] not in rejestr or rejestr[p["id"]].status == Status.odrzucony]
     if nowe:
         archiwum = Archiwum(rejestr.ticker, katalog)
         rejestr.znane_dokumenty(archiwum.ids())

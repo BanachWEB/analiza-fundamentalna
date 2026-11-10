@@ -28,6 +28,9 @@ DOZWOLONE = [  # kolejność ma znaczenie: daty przed latami
     re.compile(r"\b(Q[1-4]|H1|M9|S&P\s?500|WIG\d*|mWIG40|sWIG80|10-K|10-Q|8-K|20-F|6-K|K-IFRS|MSSF\s?\d+|IFRS\s?\d+|"
                r"IAS\s?\d+|ASC\s?\d+|4\.0[12]|12–1|ESEF|CET1|Z''|F-score|M-score)\b"),
 ]
+# Nazwy własne z cyframi (produkty, indeksy). Inne nazwy model zapisuje w `kodzie`.
+NAZWY = re.compile(r"\b(Microsoft 365|Dynamics 365|Office 365|Windows 1[01]|Xbox 360|WIG20|WIG30|mWIG40|sWIG80|"
+                   r"Russell 2000|Nasdaq[- ]100|W-8BEN|Stoxx 600|Euro Stoxx 50|FTSE 100|DAX 40|CAC 40|Web3|5G|4G)\b")
 NUMERACJA = re.compile(r"^(\s*#{1,6}\s*\d+(\.\d+)*\.?|\s*\d+\.\s)")
 
 
@@ -55,7 +58,7 @@ def sprawdz(tekst: str, rejestr: RejestrFaktow, tabele: set[str], wykresy: set[s
                     bledy.append(Blad(nr, ref, "brak faktu w rejestrze"))
                 elif rejestr[fid].status == Status.odrzucony:
                     bledy.append(Blad(nr, ref, "fakt odrzucony przez weryfikację"))
-        reszta = KOD.sub(" ", MIEJSCE.sub(" ", linia))
+        reszta = NAZWY.sub(" ", KOD.sub(" ", MIEJSCE.sub(" ", linia)))
         reszta = NUMERACJA.sub(" ", reszta)
         for wz in DOZWOLONE:
             reszta = wz.sub(" ", reszta)

@@ -199,3 +199,7 @@ zysk_przed_opodatkowaniem:
   znaczniki:
     - IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest
     - IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+splata_leasingu:  # spłata części kapitałowej leasingu finansowego (np. centra danych Microsoftu); odejmowana w FCF dla właścicieli
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [FinanceLeasePrincipalPayments, RepaymentsOfLongTermCapitalLeaseObligations]

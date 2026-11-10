@@ -570,7 +570,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:3.6484e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:3.6484e+11:0.00%:ok"
       ]
     },
     {
@@ -595,7 +595,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:4.11976e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:4.11976e+11:0.00%:ok"
       ]
     },
     {
@@ -668,7 +668,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:5.12163e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:5.12163e+11:0.00%:ok"
       ]
     },
     {
@@ -765,7 +765,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:6.19003e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:6.19003e+11:0.00%:ok"
       ]
     },
     {
@@ -862,7 +862,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:7.58376e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:7.58376e+11:0.00%:ok"
       ]
     },
     {
@@ -3318,6 +3318,29 @@
       ]
     },
     {
+      "id": "asymetria.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "asymetria",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.0,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "asymetria",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
       "id": "badania_i_rozwoj.FY2017",
       "rodzaj": "raportowany",
       "pozycja": "badania_i_rozwoj",
@@ -4450,7 +4473,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 8.604750909885592,
+      "wartosc": 8.604750794285097,
       "jednostka": "mnoznik",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -4468,7 +4491,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 28.385223029070538,
+      "wartosc": 28.38522264772936,
       "jednostka": "mnoznik",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -4739,7 +4762,7 @@
         "koniec": "2020-06-30",
         "poczatek": "2019-07-01"
       },
-      "wartosc": 0.12423446165446772,
+      "wartosc": 0.12099601584126596,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -4758,7 +4781,7 @@
         "koniec": "2021-06-30",
         "poczatek": "2020-07-01"
       },
-      "wartosc": 0.2087407164443711,
+      "wartosc": 0.20554358127526995,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -4777,7 +4800,7 @@
         "koniec": "2022-06-30",
         "poczatek": "2021-07-01"
       },
-      "wartosc": 0.19704739958690132,
+      "wartosc": 0.19343482645601018,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -4796,7 +4819,7 @@
         "koniec": "2023-06-30",
         "poczatek": "2022-07-01"
       },
-      "wartosc": 0.07673351031602249,
+      "wartosc": 0.07275223487484905,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -4815,7 +4838,7 @@
         "koniec": "2024-06-30",
         "poczatek": "2023-07-01"
       },
-      "wartosc": 0.08200473551045007,
+      "wartosc": 0.079314494053494,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -4834,10 +4857,10 @@
         "koniec": "2025-06-30",
         "poczatek": "2024-07-01"
       },
-      "wartosc": 0.011376889986269179,
+      "wartosc": 0.0035293170770585025,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "(fcf_wlascicieli.FY2025 / fcf_wlascicieli.FY2022)^(1/3) - 1",
       "wejscia": [
         "fcf_wlascicieli.FY2025",
@@ -4853,10 +4876,10 @@
         "koniec": "2026-06-30",
         "poczatek": "2025-07-01"
       },
-      "wartosc": 0.03059360611747719,
+      "wartosc": 0.01793173497961864,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "(fcf_wlascicieli.FY2026 / fcf_wlascicieli.FY2023)^(1/3) - 1",
       "wejscia": [
         "fcf_wlascicieli.FY2026",
@@ -4872,7 +4895,7 @@
         "koniec": "2022-06-30",
         "poczatek": "2021-07-01"
       },
-      "wartosc": 0.15445495845203938,
+      "wartosc": 0.15122072525571917,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -4891,7 +4914,7 @@
         "koniec": "2023-06-30",
         "poczatek": "2022-07-01"
       },
-      "wartosc": 0.11985891799047521,
+      "wartosc": 0.11621280403395784,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -4910,7 +4933,7 @@
         "koniec": "2024-06-30",
         "poczatek": "2023-07-01"
       },
-      "wartosc": 0.1351231060561935,
+      "wartosc": 0.13196833296749766,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -4929,7 +4952,7 @@
         "koniec": "2025-06-30",
         "poczatek": "2024-07-01"
       },
-      "wartosc": 0.08345448721981996,
+      "wartosc": 0.07724428013964846,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -4948,7 +4971,7 @@
         "koniec": "2026-06-30",
         "poczatek": "2025-07-01"
       },
-      "wartosc": 0.017690892961192306,
+      "wartosc": 0.008482678876992722,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -6626,6 +6649,27 @@
         "capex.TTM2026-09-30",
         "amortyzacja.TTM2026-09-30"
       ]
+    },
+    {
+      "id": "cena_docelowa_srednia.2026-11-10",
+      "rodzaj": "prognoza",
+      "pozycja": "cena_docelowa_srednia",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 636.12,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-014",
+      "miejsce": {
+        "tekst": "According to 58 analysts polled by S&P Global, Microsoft stock has a consensus rating of \"Strong Buy\" and an average price target of $636.12"
+      },
+      "dostawca": "S&P Global (przez Stock Analysis)",
+      "data_prognozy": "2026-11-10",
+      "liczba_analitykow": 58
     },
     {
       "id": "dlug.2017-06-30",
@@ -10055,7 +10099,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 4019584745859.36,
+      "wartosc": 4019584691468.2866,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
@@ -10074,7 +10118,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 24.631166828191258,
+      "wartosc": 24.631166494894245,
       "jednostka": "mnoznik",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -10092,7 +10136,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 19.54186010014711,
+      "wartosc": 19.54185983571613,
       "jednostka": "mnoznik",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -10331,15 +10375,16 @@
         "koniec": "2017-06-30",
         "poczatek": "2016-07-01"
       },
-      "wartosc": 28112000000.0,
+      "wartosc": 28066000000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
       "status": "jedno_zrodlo",
-      "wzor": "fcf - sbc",
+      "wzor": "fcf - sbc - splata_leasingu",
       "wejscia": [
         "fcf.FY2017",
-        "sbc.FY2017"
+        "sbc.FY2017",
+        "splata_leasingu.FY2017"
       ]
     },
     {
@@ -10351,15 +10396,16 @@
         "koniec": "2018-06-30",
         "poczatek": "2017-07-01"
       },
-      "wartosc": 28312000000.0,
+      "wartosc": 28168000000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
       "status": "jedno_zrodlo",
-      "wzor": "fcf - sbc",
+      "wzor": "fcf - sbc - splata_leasingu",
       "wejscia": [
         "fcf.FY2018",
-        "sbc.FY2018"
+        "sbc.FY2018",
+        "splata_leasingu.FY2018"
       ]
     },
     {
@@ -10371,15 +10417,16 @@
         "koniec": "2019-06-30",
         "poczatek": "2018-07-01"
       },
-      "wartosc": 33608000000.0,
+      "wartosc": 33387000000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
       "status": "jedno_zrodlo",
-      "wzor": "fcf - sbc",
+      "wzor": "fcf - sbc - splata_leasingu",
       "wejscia": [
         "fcf.FY2019",
-        "sbc.FY2019"
+        "sbc.FY2019",
+        "splata_leasingu.FY2019"
       ]
     },
     {
@@ -10391,15 +10438,16 @@
         "koniec": "2020-06-30",
         "poczatek": "2019-07-01"
       },
-      "wartosc": 39945000000.0,
+      "wartosc": 39536000000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
       "status": "jedno_zrodlo",
-      "wzor": "fcf - sbc",
+      "wzor": "fcf - sbc - splata_leasingu",
       "wejscia": [
         "fcf.FY2020",
-        "sbc.FY2020"
+        "sbc.FY2020",
+        "splata_leasingu.FY2020"
       ]
     },
     {
@@ -10411,15 +10459,16 @@
         "koniec": "2021-06-30",
         "poczatek": "2020-07-01"
       },
-      "wartosc": 50000000000.0,
+      "wartosc": 49352000000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
       "status": "jedno_zrodlo",
-      "wzor": "fcf - sbc",
+      "wzor": "fcf - sbc - splata_leasingu",
       "wejscia": [
         "fcf.FY2021",
-        "sbc.FY2021"
+        "sbc.FY2021",
+        "splata_leasingu.FY2021"
       ]
     },
     {
@@ -10431,15 +10480,16 @@
         "koniec": "2022-06-30",
         "poczatek": "2021-07-01"
       },
-      "wartosc": 57647000000.0,
+      "wartosc": 56751000000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "zweryfikowany",
-      "wzor": "fcf - sbc",
+      "status": "jedno_zrodlo",
+      "wzor": "fcf - sbc - splata_leasingu",
       "wejscia": [
         "fcf.FY2022",
-        "sbc.FY2022"
+        "sbc.FY2022",
+        "splata_leasingu.FY2022"
       ]
     },
     {
@@ -10451,15 +10501,16 @@
         "koniec": "2023-06-30",
         "poczatek": "2022-07-01"
       },
-      "wartosc": 49864000000.0,
+      "wartosc": 48808000000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "zweryfikowany",
-      "wzor": "fcf - sbc",
+      "status": "jedno_zrodlo",
+      "wzor": "fcf - sbc - splata_leasingu",
       "wejscia": [
         "fcf.FY2023",
-        "sbc.FY2023"
+        "sbc.FY2023",
+        "splata_leasingu.FY2023"
       ]
     },
     {
@@ -10471,15 +10522,16 @@
         "koniec": "2024-06-30",
         "poczatek": "2023-07-01"
       },
-      "wartosc": 63337000000.0,
+      "wartosc": 62051000000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "zweryfikowany",
-      "wzor": "fcf - sbc",
+      "status": "jedno_zrodlo",
+      "wzor": "fcf - sbc - splata_leasingu",
       "wejscia": [
         "fcf.FY2024",
-        "sbc.FY2024"
+        "sbc.FY2024",
+        "splata_leasingu.FY2024"
       ]
     },
     {
@@ -10491,15 +10543,16 @@
         "koniec": "2025-06-30",
         "poczatek": "2024-07-01"
       },
-      "wartosc": 59637000000.0,
+      "wartosc": 57354000000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "zweryfikowany",
-      "wzor": "fcf - sbc",
+      "status": "jedno_zrodlo",
+      "wzor": "fcf - sbc - splata_leasingu",
       "wejscia": [
         "fcf.FY2025",
-        "sbc.FY2025"
+        "sbc.FY2025",
+        "splata_leasingu.FY2025"
       ]
     },
     {
@@ -10511,15 +10564,16 @@
         "koniec": "2026-06-30",
         "poczatek": "2025-07-01"
       },
-      "wartosc": 54582000000.0,
+      "wartosc": 51481000000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "zweryfikowany",
-      "wzor": "fcf - sbc",
+      "status": "jedno_zrodlo",
+      "wzor": "fcf - sbc - splata_leasingu",
       "wejscia": [
         "fcf.FY2026",
-        "sbc.FY2026"
+        "sbc.FY2026",
+        "splata_leasingu.FY2026"
       ]
     },
     {
@@ -10531,15 +10585,16 @@
         "koniec": "2026-09-30",
         "poczatek": "2025-10-01"
       },
-      "wartosc": 47401000000.0,
+      "wartosc": 43939000000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
       "status": "jedno_zrodlo",
-      "wzor": "fcf - sbc",
+      "wzor": "fcf - sbc - splata_leasingu",
       "wejscia": [
         "fcf.TTM2026-09-30",
-        "sbc.TTM2026-09-30"
+        "sbc.TTM2026-09-30",
+        "splata_leasingu.TTM2026-09-30"
       ]
     },
     {
@@ -10550,7 +10605,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 0.01170796096724204,
+      "wartosc": 0.010852853396570493,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -10988,7 +11043,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 0.3161620655292786,
+      "wartosc": 0.31616206128180047,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -11009,7 +11064,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 22.845512299208895,
+      "wartosc": 24.146896783547536,
       "jednostka": "lata",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -11030,7 +11085,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 0.2597686294466257,
+      "wartosc": 0.2703287263866514,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -11054,7 +11109,7 @@
       "jednostka": "punkty",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-007",
+      "dokument": "doc-018",
       "miejsce": {
         "sesja": "2026-11-09",
         "pole": "zamknięcie"
@@ -11072,13 +11127,13 @@
       "jednostka": "ulamek",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-007",
+      "dokument": "doc-018",
       "miejsce": {
         "od": "2025-11-07",
         "do": "2026-10-09",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-007"
+          "doc-018"
         ]
       }
     },
@@ -11628,7 +11683,7 @@
       },
       "kontrole": [
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:1.66542e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:1.66542e+11:0.00%:ok"
       ]
     },
     {
@@ -11653,7 +11708,7 @@
       },
       "kontrole": [
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:2.06223e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:2.06223e+11:0.00%:ok"
       ]
     },
     {
@@ -11726,7 +11781,7 @@
       },
       "kontrole": [
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:2.68477e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:2.68477e+11:0.00%:ok"
       ]
     },
     {
@@ -11823,7 +11878,7 @@
       },
       "kontrole": [
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:3.43479e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:3.43479e+11:0.00%:ok"
       ]
     },
     {
@@ -11920,7 +11975,7 @@
       },
       "kontrole": [
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:4.42387e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:4.42387e+11:0.00%:ok"
       ]
     },
     {
@@ -11955,7 +12010,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 4048612745859.36,
+      "wartosc": 4048612691468.2866,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
@@ -11975,7 +12030,7 @@
         "koniec": "2017-06-30",
         "poczatek": "2016-07-01"
       },
-      "wartosc": 1.1029071364117855,
+      "wartosc": 1.10110243634509,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -11994,7 +12049,7 @@
         "koniec": "2018-06-30",
         "poczatek": "2017-07-01"
       },
-      "wartosc": 1.7085269446623619,
+      "wartosc": 1.6998370647516745,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -12013,7 +12068,7 @@
         "koniec": "2019-06-30",
         "poczatek": "2018-07-01"
       },
-      "wartosc": 0.8564729867482161,
+      "wartosc": 0.8508409785932721,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -12032,7 +12087,7 @@
         "koniec": "2020-06-30",
         "poczatek": "2019-07-01"
       },
-      "wartosc": 0.9020798988279397,
+      "wartosc": 0.8928434317201509,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -12051,7 +12106,7 @@
         "koniec": "2021-06-30",
         "poczatek": "2020-07-01"
       },
-      "wartosc": 0.8160467431574481,
+      "wartosc": 0.8054707773661275,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -12070,10 +12125,10 @@
         "koniec": "2022-06-30",
         "poczatek": "2021-07-01"
       },
-      "wartosc": 0.7925293519205917,
+      "wartosc": 0.7802111688525942,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / zysk_netto",
       "wejscia": [
         "fcf_wlascicieli.FY2022",
@@ -12089,10 +12144,10 @@
         "koniec": "2023-06-30",
         "poczatek": "2022-07-01"
       },
-      "wartosc": 0.6891004823040036,
+      "wartosc": 0.6745069858072719,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / zysk_netto",
       "wejscia": [
         "fcf_wlascicieli.FY2023",
@@ -12108,10 +12163,10 @@
         "koniec": "2024-06-30",
         "poczatek": "2023-07-01"
       },
-      "wartosc": 0.718628029409095,
+      "wartosc": 0.7040369429064174,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / zysk_netto",
       "wejscia": [
         "fcf_wlascicieli.FY2024",
@@ -12127,10 +12182,10 @@
         "koniec": "2025-06-30",
         "poczatek": "2024-07-01"
       },
-      "wartosc": 0.5856410558567051,
+      "wartosc": 0.5632217770445439,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / zysk_netto",
       "wejscia": [
         "fcf_wlascicieli.FY2025",
@@ -12146,10 +12201,10 @@
         "koniec": "2026-06-30",
         "poczatek": "2025-07-01"
       },
-      "wartosc": 0.4080927707870713,
+      "wartosc": 0.3849075507106595,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / zysk_netto",
       "wejscia": [
         "fcf_wlascicieli.FY2026",
@@ -12165,7 +12220,7 @@
         "koniec": "2026-09-30",
         "poczatek": "2025-10-01"
       },
-      "wartosc": 0.33233308327081773,
+      "wartosc": 0.3080606600248193,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -15559,16 +15614,19 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 545.18,
+      "wartosc": 545.1799926757812,
       "jednostka": "pieniadz_na_akcje",
       "waluta": "USD",
       "metoda": "api",
-      "status": "jedno_zrodlo",
-      "dokument": "doc-006",
+      "status": "zweryfikowany",
+      "dokument": "doc-017",
       "miejsce": {
         "sesja": "2026-11-09",
         "pole": "zamknięcie"
-      }
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-006:545.18:0.00%:ok"
+      ]
     },
     {
       "id": "liczba_akcji_rozwodniona.FY2017",
@@ -16234,6 +16292,23 @@
       ]
     },
     {
+      "id": "liczba_analitykow.2026-11-10",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_analitykow",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 58.0,
+      "jednostka": "liczba",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-014",
+      "miejsce": {
+        "tekst": "According to 58 analysts polled by S&P Global, Microsoft stock has a consensus rating of \"Strong Buy\" and an average price target of $636.12"
+      }
+    },
+    {
       "id": "marza_brutto.FY2017",
       "rodzaj": "wyliczony",
       "pozycja": "marza_brutto",
@@ -16660,7 +16735,7 @@
         "koniec": "2017-06-30",
         "poczatek": "2016-07-01"
       },
-      "wartosc": 0.2911018835882408,
+      "wartosc": 0.2906255501133881,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -16679,7 +16754,7 @@
         "koniec": "2018-06-30",
         "poczatek": "2017-07-01"
       },
-      "wartosc": 0.25654222544400146,
+      "wartosc": 0.25523740485683216,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -16698,7 +16773,7 @@
         "koniec": "2019-06-30",
         "poczatek": "2018-07-01"
       },
-      "wartosc": 0.26706292761615663,
+      "wartosc": 0.2653067711354624,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -16717,7 +16792,7 @@
         "koniec": "2020-06-30",
         "poczatek": "2019-07-01"
       },
-      "wartosc": 0.27930636646505613,
+      "wartosc": 0.27644652658812013,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -16736,7 +16811,7 @@
         "koniec": "2021-06-30",
         "poczatek": "2020-07-01"
       },
-      "wartosc": 0.2974632335443339,
+      "wartosc": 0.29360811003759935,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -16755,10 +16830,10 @@
         "koniec": "2022-06-30",
         "poczatek": "2021-07-01"
       },
-      "wartosc": 0.29074998739093155,
+      "wartosc": 0.28623089726131035,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / przychody",
       "wejscia": [
         "fcf_wlascicieli.FY2022",
@@ -16774,10 +16849,10 @@
         "koniec": "2023-06-30",
         "poczatek": "2022-07-01"
       },
-      "wartosc": 0.2353018899086898,
+      "wartosc": 0.2303187598801406,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / przychody",
       "wejscia": [
         "fcf_wlascicieli.FY2023",
@@ -16793,10 +16868,10 @@
         "koniec": "2024-06-30",
         "poczatek": "2023-07-01"
       },
-      "wartosc": 0.2583896998229453,
+      "wartosc": 0.2531433327077945,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / przychody",
       "wejscia": [
         "fcf_wlascicieli.FY2024",
@@ -16812,10 +16887,10 @@
         "koniec": "2025-06-30",
         "poczatek": "2024-07-01"
       },
-      "wartosc": 0.21168590535417642,
+      "wartosc": 0.2035822294160242,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / przychody",
       "wejscia": [
         "fcf_wlascicieli.FY2025",
@@ -16831,10 +16906,10 @@
         "koniec": "2026-06-30",
         "poczatek": "2025-07-01"
       },
-      "wartosc": 0.16448337898800322,
+      "wartosc": 0.15513848583198478,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / przychody",
       "wejscia": [
         "fcf_wlascicieli.FY2026",
@@ -16850,7 +16925,7 @@
         "koniec": "2026-09-30",
         "poczatek": "2025-10-01"
       },
-      "wartosc": 0.1368211404407626,
+      "wartosc": 0.12682821227034594,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -17279,6 +17354,46 @@
       ]
     },
     {
+      "id": "momentum_12_1.2026-11-09",
+      "rodzaj": "raportowany",
+      "pozycja": "momentum_12_1",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.07698965306571992,
+      "jednostka": "ulamek",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "miejsce": {
+        "od": "2025-11-07",
+        "do": "2026-10-09",
+        "obliczenie": "kurs(do) / kurs(od) - 1",
+        "dokumenty": [
+          "doc-017"
+        ]
+      }
+    },
+    {
+      "id": "nadwyzka_momentum.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "nadwyzka_momentum",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": -0.08392169305884867,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "momentum_12_1 − indeks_momentum_12_1",
+      "wejscia": [
+        "momentum_12_1.2026-11-09",
+        "indeks_momentum_12_1.2026-11-09"
+      ]
+    },
+    {
       "id": "nadwyzka_wzrostu.2026-11-09",
       "rodzaj": "wyliczony",
       "pozycja": "nadwyzka_wzrostu",
@@ -17286,7 +17401,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": -0.1140495556370944,
+      "wartosc": -0.12460965257712009,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -17727,17 +17842,17 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 11876196257.380499,
+      "wartosc": 11875665778.012033,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-006",
+      "dokument": "doc-017",
       "miejsce": {
         "obliczenie": "średnia z 60 sesji: zamknięcie × wolumen",
         "od": "2026-08-17",
         "dokumenty": [
-          "doc-006"
+          "doc-017"
         ]
       }
     },
@@ -19494,6 +19609,70 @@
       "wejscia": [
         "zysk_operacyjny.TTM2026-09-30",
         "koszty_odsetek.TTM2026-09-30"
+      ]
+    },
+    {
+      "id": "potencjal_do_ceny_docelowej.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "potencjal_do_ceny_docelowej",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.16680730867961402,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "cena_docelowa_srednia / kurs − 1",
+      "wejscia": [
+        "cena_docelowa_srednia.2026-11-10",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
+      "id": "potencjal_oczekiwany.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "potencjal_oczekiwany",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": -0.5195392488456325,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "potencjal oczekiwany",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
+      "id": "prawdopodobienstwo_straty.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "prawdopodobienstwo_straty",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 1.0,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "prawdopodobienstwo straty",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-09"
       ]
     },
     {
@@ -22930,6 +23109,102 @@
       ]
     },
     {
+      "id": "przychody_chmura.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_chmura",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 137791.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "Intelligent Cloud Revenue $ 137,791 $ 106,265 30%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_komputery_osobiste.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_komputery_osobiste",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 54052.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "More Personal Computing Revenue $ 54,052 $ 54,649 (1)%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_microsoft_cloud.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_microsoft_cloud",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 214.4,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "Microsoft Cloud revenue increased 27% to $214.4 billion.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_produktywnosc.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_produktywnosc",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 139996.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "Productivity and Business Processes Revenue $ 139,996 $ 120,810 16%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "rentownosc_10l.2026-11-09",
       "rodzaj": "raportowany",
       "pozycja": "rentownosc_10l",
@@ -24615,6 +24890,123 @@
       ]
     },
     {
+      "id": "scenariusz_marza_fcf.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.24,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wzrost zbliżony do górnej części rozkładu stóp bazowych dla największych spółek, wspierany przez Microsoft Cloud; marża FCF wraca w okolice średniej z FY2022–FY2025, gdy tempo inwestycji w centra danych zwalnia."
+    },
+    {
+      "id": "scenariusz_marza_fcf.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.3,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wzrost przychodów w tempie kilkunastu procent przez dekadę przy przychodach powyżej 100 mld USD nie zdarzył się w historii (Base Rate Book), więc niskie prawdopodobieństwo; wymaga, by Azure i Copilot utrzymały tempo, a inwestycje w AI wróciły do marży FCF z lat FY2022–FY2024."
+    },
+    {
+      "id": "scenariusz_marza_fcf.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.17,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wydatki na AI nie zwracają się w oczekiwanym tempie, konkurencja w chmurze i modele AI obniżają ceny, a koszty zmiany dostawcy w oprogramowaniu biurowym słabną (Morningstar 2026); marża FCF zostaje blisko obecnego, obniżonego poziomu."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.55,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wzrost zbliżony do górnej części rozkładu stóp bazowych dla największych spółek, wspierany przez Microsoft Cloud; marża FCF wraca w okolice średniej z FY2022–FY2025, gdy tempo inwestycji w centra danych zwalnia."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.15,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wzrost przychodów w tempie kilkunastu procent przez dekadę przy przychodach powyżej 100 mld USD nie zdarzył się w historii (Base Rate Book), więc niskie prawdopodobieństwo; wymaga, by Azure i Copilot utrzymały tempo, a inwestycje w AI wróciły do marży FCF z lat FY2022–FY2024."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.3,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wydatki na AI nie zwracają się w oczekiwanym tempie, konkurencja w chmurze i modele AI obniżają ceny, a koszty zmiany dostawcy w oprogramowaniu biurowym słabną (Morningstar 2026); marża FCF zostaje blisko obecnego, obniżonego poziomu."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.09,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wzrost zbliżony do górnej części rozkładu stóp bazowych dla największych spółek, wspierany przez Microsoft Cloud; marża FCF wraca w okolice średniej z FY2022–FY2025, gdy tempo inwestycji w centra danych zwalnia."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.13,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wzrost przychodów w tempie kilkunastu procent przez dekadę przy przychodach powyżej 100 mld USD nie zdarzył się w historii (Base Rate Book), więc niskie prawdopodobieństwo; wymaga, by Azure i Copilot utrzymały tempo, a inwestycje w AI wróciły do marży FCF z lat FY2022–FY2024."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.05,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wydatki na AI nie zwracają się w oczekiwanym tempie, konkurencja w chmurze i modele AI obniżają ceny, a koszty zmiany dostawcy w oprogramowaniu biurowym słabną (Morningstar 2026); marża FCF zostaje blisko obecnego, obniżonego poziomu."
+    },
+    {
       "id": "skup_akcji.FY2017",
       "rodzaj": "raportowany",
       "pozycja": "skup_akcji",
@@ -25376,6 +25768,767 @@
       ]
     },
     {
+      "id": "splata_leasingu.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-06-30",
+        "poczatek": "2016-07-01"
+      },
+      "wartosc": 46000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001564590-19-027952",
+        "forma": "10-K",
+        "zlozono": "2019-08-01"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-06-30",
+        "poczatek": "2017-07-01"
+      },
+      "wartosc": 144000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001564590-20-034944",
+        "forma": "10-K",
+        "zlozono": "2020-07-30"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-06-30",
+        "poczatek": "2018-07-01"
+      },
+      "wartosc": 221000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001564590-21-039151",
+        "forma": "10-K",
+        "zlozono": "2021-07-29"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-06-30",
+        "poczatek": "2019-07-01"
+      },
+      "wartosc": 409000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001564590-22-026876",
+        "forma": "10-K",
+        "zlozono": "2022-07-28"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-06-30",
+        "poczatek": "2020-07-01"
+      },
+      "wartosc": 648000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0000950170-23-035122",
+        "forma": "10-K",
+        "zlozono": "2023-07-27"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-06-30",
+        "poczatek": "2021-07-01"
+      },
+      "wartosc": 896000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0000950170-24-087843",
+        "forma": "10-K",
+        "zlozono": "2024-07-30"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-06-30",
+        "poczatek": "2022-07-01"
+      },
+      "wartosc": 1056000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0000950170-25-100235",
+        "forma": "10-K",
+        "zlozono": "2025-07-30"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2023H1",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-07-01"
+      },
+      "wartosc": 518000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0000950170-24-008814",
+        "forma": "10-Q",
+        "zlozono": "2024-01-30"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2023M9",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2023-03-31",
+        "poczatek": "2022-07-01"
+      },
+      "wartosc": 790000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0000950170-24-048288",
+        "forma": "10-Q",
+        "zlozono": "2024-04-25"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2023Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-10-01"
+      },
+      "wartosc": 262000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0000950170-24-008814",
+        "forma": "10-Q",
+        "zlozono": "2024-01-30"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2023Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2023-03-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 272000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0000950170-24-048288",
+        "forma": "10-Q",
+        "zlozono": "2024-04-25"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2023Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2023-06-30",
+        "poczatek": "2023-04-01"
+      },
+      "wartosc": 266000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "splata_leasingu.FY2023 - splata_leasingu.FY2023M9",
+      "wejscia": [
+        "splata_leasingu.FY2023",
+        "splata_leasingu.FY2023M9"
+      ]
+    },
+    {
+      "id": "splata_leasingu.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-06-30",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 1286000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-323660",
+        "forma": "10-K",
+        "zlozono": "2026-07-29"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2024H1",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 573000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0000950170-25-010491",
+        "forma": "10-Q",
+        "zlozono": "2025-01-29"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2024M9",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2024-03-31",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 896000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0000950170-25-061046",
+        "forma": "10-Q",
+        "zlozono": "2025-04-30"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2024Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2023-09-30",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 285000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0000950170-24-118967",
+        "forma": "10-Q",
+        "zlozono": "2024-10-30"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2024Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-10-01"
+      },
+      "wartosc": 288000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0000950170-25-010491",
+        "forma": "10-Q",
+        "zlozono": "2025-01-29"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2024Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2024-03-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 323000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0000950170-25-061046",
+        "forma": "10-Q",
+        "zlozono": "2025-04-30"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2024Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2024-06-30",
+        "poczatek": "2024-04-01"
+      },
+      "wartosc": 390000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "splata_leasingu.FY2024 - splata_leasingu.FY2024M9",
+      "wejscia": [
+        "splata_leasingu.FY2024",
+        "splata_leasingu.FY2024M9"
+      ]
+    },
+    {
+      "id": "splata_leasingu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 2283000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-323660",
+        "forma": "10-K",
+        "zlozono": "2026-07-29"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 1282000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-027207",
+        "forma": "10-Q",
+        "zlozono": "2026-01-28"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-03-31",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 1634000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-191507",
+        "forma": "10-Q",
+        "zlozono": "2026-04-29"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2024-09-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 802000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-25-256321",
+        "forma": "10-Q",
+        "zlozono": "2025-10-29"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-10-01"
+      },
+      "wartosc": 480000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-027207",
+        "forma": "10-Q",
+        "zlozono": "2026-01-28"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 352000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-191507",
+        "forma": "10-Q",
+        "zlozono": "2026-04-29"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2025Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 649000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "splata_leasingu.FY2025 - splata_leasingu.FY2025M9",
+      "wejscia": [
+        "splata_leasingu.FY2025",
+        "splata_leasingu.FY2025M9"
+      ]
+    },
+    {
+      "id": "splata_leasingu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 3101000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-323660",
+        "forma": "10-K",
+        "zlozono": "2026-07-29"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 1340000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-027207",
+        "forma": "10-Q",
+        "zlozono": "2026-01-28"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-03-31",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 2179000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-191507",
+        "forma": "10-Q",
+        "zlozono": "2026-04-29"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 639000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-436133",
+        "forma": "10-Q",
+        "zlozono": "2026-10-28"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 701000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-027207",
+        "forma": "10-Q",
+        "zlozono": "2026-01-28"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 839000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-191507",
+        "forma": "10-Q",
+        "zlozono": "2026-04-29"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2026Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 922000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "splata_leasingu.FY2026 - splata_leasingu.FY2026M9",
+      "wejscia": [
+        "splata_leasingu.FY2026",
+        "splata_leasingu.FY2026M9"
+      ]
+    },
+    {
+      "id": "splata_leasingu.FY2027Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 1000000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:FinanceLeasePrincipalPayments",
+        "accn": "0001193125-26-436133",
+        "forma": "10-Q",
+        "zlozono": "2026-10-28"
+      }
+    },
+    {
+      "id": "splata_leasingu.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 3462000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "splata_leasingu.FY2026 + splata_leasingu.FY2027Q1 - splata_leasingu.FY2026Q1",
+      "wejscia": [
+        "splata_leasingu.FY2026",
+        "splata_leasingu.FY2027Q1",
+        "splata_leasingu.FY2026Q1"
+      ]
+    },
+    {
       "id": "stawka_podatku.zalozenie",
       "rodzaj": "zalozenie",
       "pozycja": "stawka_podatku",
@@ -25406,6 +26559,72 @@
       ]
     },
     {
+      "id": "stopa_zwrotu_implikowana.bazowy",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.061156620299210776,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza bazowy równa się kursowi",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-10-22",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
+      "id": "stopa_zwrotu_implikowana.byk",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.08403790133446457,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza byk równa się kursowi",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.byk",
+        "scenariusz_marza_fcf.byk",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-10-22",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
+      "id": "stopa_zwrotu_implikowana.niedzwiedz",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.043648803532822064,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza niedzwiedz równa się kursowi",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.niedzwiedz",
+        "scenariusz_marza_fcf.niedzwiedz",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-10-22",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
       "id": "udzial_pvgo.2026-11-09",
       "rodzaj": "wyliczony",
       "pozycja": "udzial_pvgo",
@@ -25413,7 +26632,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 0.6228094419174879,
+      "wartosc": 0.6228094368501227,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -25422,6 +26641,120 @@
         "zysk_netto.TTM2026-09-30",
         "koszt_kapitalu_wlasnego.2026-11-09",
         "kapitalizacja.2026-11-09"
+      ]
+    },
+    {
+      "id": "udzial_w_openai.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_w_openai",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 0.25,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "We have an investment accounted for under the equity method that represents an approximate 25% interest on an as-converted basis.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.bazowy",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 272.704796180213,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09",
+        "akcje_w_obrocie.2026-10-22"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.byk",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 459.99894572568854,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.byk",
+        "scenariusz_marza_fcf.byk",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09",
+        "akcje_w_obrocie.2026-10-22"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.niedzwiedz",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 143.1670301245599,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.niedzwiedz",
+        "scenariusz_marza_fcf.niedzwiedz",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09",
+        "akcje_w_obrocie.2026-10-22"
+      ]
+    },
+    {
+      "id": "wartosc_oczekiwana_na_akcje.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_oczekiwana_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 261.9375887953384,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "wartosc oczekiwana na akcje",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-09"
       ]
     },
     {
@@ -26276,6 +27609,72 @@
       ]
     },
     {
+      "id": "wplyw_openai_na_zysk_netto.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wplyw_openai_na_zysk_netto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 5.0,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "which resulted in an increase in net income and diluted EPS of $5.0 billion and $0.67, respectively",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wzrost_azure.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wzrost_azure",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.41,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "Azure and other cloud services revenue grew 41%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wzrost_eps_konsensus.2026-11-10",
+      "rodzaj": "prognoza",
+      "pozycja": "wzrost_eps_konsensus",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 0.15819270833333335,
+      "jednostka": "ulamek",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-014",
+      "miejsce": {
+        "pole": "epsThis.growth (bieżący rok obrotowy)"
+      },
+      "dostawca": "S&P Global (przez Stock Analysis)",
+      "data_prognozy": "2026-11-10",
+      "liczba_analitykow": 58
+    },
+    {
       "id": "wzrost_eps_rozwodniony.FY2018",
       "rodzaj": "wyliczony",
       "pozycja": "wzrost_eps_rozwodniony",
@@ -26473,7 +27872,7 @@
         "koniec": "2018-06-30",
         "poczatek": "2017-07-01"
       },
-      "wartosc": 0.007114399544678518,
+      "wartosc": 0.0036342906007269526,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -26492,7 +27891,7 @@
         "koniec": "2019-06-30",
         "poczatek": "2018-07-01"
       },
-      "wartosc": 0.1870584910991806,
+      "wartosc": 0.18528117012212442,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -26511,7 +27910,7 @@
         "koniec": "2020-06-30",
         "poczatek": "2019-07-01"
       },
-      "wartosc": 0.18855629611997138,
+      "wartosc": 0.1841734806960793,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -26530,7 +27929,7 @@
         "koniec": "2021-06-30",
         "poczatek": "2020-07-01"
       },
-      "wartosc": 0.251721116535236,
+      "wartosc": 0.24828004856333474,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -26549,7 +27948,7 @@
         "koniec": "2022-06-30",
         "poczatek": "2021-07-01"
       },
-      "wartosc": 0.15294000000000008,
+      "wartosc": 0.1499230021073108,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -26568,10 +27967,10 @@
         "koniec": "2023-06-30",
         "poczatek": "2022-07-01"
       },
-      "wartosc": -0.13501136225649213,
+      "wartosc": -0.13996229141336713,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli.FY2023 / fcf_wlascicieli.FY2022 - 1",
       "wejscia": [
         "fcf_wlascicieli.FY2023",
@@ -26587,10 +27986,10 @@
         "koniec": "2024-06-30",
         "poczatek": "2023-07-01"
       },
-      "wartosc": 0.2701949302101716,
+      "wartosc": 0.2713284707425012,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli.FY2024 / fcf_wlascicieli.FY2023 - 1",
       "wejscia": [
         "fcf_wlascicieli.FY2024",
@@ -26606,10 +28005,10 @@
         "koniec": "2025-06-30",
         "poczatek": "2024-07-01"
       },
-      "wartosc": -0.05841767055591518,
+      "wartosc": -0.0756957986172665,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli.FY2025 / fcf_wlascicieli.FY2024 - 1",
       "wejscia": [
         "fcf_wlascicieli.FY2025",
@@ -26625,14 +28024,102 @@
         "koniec": "2026-06-30",
         "poczatek": "2025-07-01"
       },
-      "wartosc": -0.08476281503093719,
+      "wartosc": -0.10239913519545285,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "zweryfikowany",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli.FY2026 / fcf_wlascicieli.FY2025 - 1",
       "wejscia": [
         "fcf_wlascicieli.FY2026",
         "fcf_wlascicieli.FY2025"
+      ]
+    },
+    {
+      "id": "wzrost_microsoft_cloud.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wzrost_microsoft_cloud",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.27,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "Microsoft Cloud revenue increased 27% to $214.4 billion.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wzrost_przychodow_chmura.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wzrost_przychodow_chmura",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.3,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "Intelligent Cloud Revenue $ 137,791 $ 106,265 30%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wzrost_przychodow_komputery_osobiste.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wzrost_przychodow_komputery_osobiste",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": -0.01,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "More Personal Computing Revenue $ 54,052 $ 54,649 (1)%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wzrost_przychodow_produktywnosc.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wzrost_przychodow_produktywnosc",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.16,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "Productivity and Business Processes Revenue $ 139,996 $ 120,810 16%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -28095,6 +29582,27 @@
       }
     },
     {
+      "id": "zatrudnienie.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zatrudnienie",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 223000.0,
+      "jednostka": "liczba",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "As of June 30, 2026, we employed approximately 223,000 people on a full-time basis",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "zmiana_gotowki.FY2017",
       "rodzaj": "raportowany",
       "pozycja": "zmiana_gotowki",
@@ -29284,7 +30792,7 @@
       },
       "kontrole": [
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:1.98298e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:1.98298e+11:0.00%:ok"
       ]
     },
     {
@@ -29309,7 +30817,7 @@
       },
       "kontrole": [
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:2.05753e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:2.05753e+11:0.00%:ok"
       ]
     },
     {
@@ -29382,7 +30890,7 @@
       },
       "kontrole": [
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:2.43686e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:2.43686e+11:0.00%:ok"
       ]
     },
     {
@@ -29479,7 +30987,7 @@
       },
       "kontrole": [
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:2.75524e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:2.75524e+11:0.00%:ok"
       ]
     },
     {
@@ -29576,7 +31084,7 @@
       },
       "kontrole": [
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-004:3.15989e+11:0.00%:ok"
+        "drugie_zrodlo:doc-016:3.15989e+11:0.00%:ok"
       ]
     },
     {
@@ -32439,6 +33947,78 @@
         "zysk_operacyjny.FY2026",
         "zysk_operacyjny.FY2027Q1",
         "zysk_operacyjny.FY2026Q1"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_chmura.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny_chmura",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 56972.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "Operating income $ 56,972 $ 44,589 28%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_komputery_osobiste.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny_komputery_osobiste",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 14386.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "Operating income $ 14,386 $ 14,166 2%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_produktywnosc.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny_produktywnosc",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 83879.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "raport roczny FY2026"
+      },
+      "cytat": "Operating income $ 83,879 $ 69,773 20%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {

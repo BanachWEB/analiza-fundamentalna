@@ -111,6 +111,76 @@
       "pobrano": "2026-11-10T08:29:32.698142Z",
       "sha256": "a4830871ca852efbb5f306ca2074f6539fdf9f6ba4a14c21e0892142a9aaaec2",
       "plik": "a4830871ca852efb.json"
+    },
+    {
+      "id": "doc-012",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=2y&interval=1d",
+      "opis": "notowania dzienne MSFT",
+      "pobrano": "2026-11-10T08:46:36.949098Z",
+      "sha256": "70b551a31fe8e640a47e5a12d434c16c041a76c4806a6dd81863dff5ebd3f09a",
+      "plik": "70b551a31fe8e640.json"
+    },
+    {
+      "id": "doc-013",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=2y&interval=1d",
+      "opis": "notowania dzienne %5EGSPC",
+      "pobrano": "2026-11-10T08:46:38.647630Z",
+      "sha256": "d816101f1ae882cf643152a8140c6f03d7b6fb47c290b5f641e82e6089125c1a",
+      "plik": "d816101f1ae882cf.json"
+    },
+    {
+      "id": "doc-014",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/msft/forecast/",
+      "opis": "prognozy analityków",
+      "pobrano": "2026-11-10T08:46:39.720633Z",
+      "sha256": "3101699fd74ce1b297a2cc27329c3e179c6a707a46786a0982fd0611c47b4417",
+      "plik": "3101699fd74ce1b2.html"
+    },
+    {
+      "id": "doc-015",
+      "typ": "strona",
+      "zrodlo": "spółka",
+      "adres": "https://www.microsoft.com/investor/reports/ar26/index.html",
+      "opis": "raport roczny FY2026 (strona relacji inwestorskich)",
+      "pobrano": "2026-11-10T08:47:27.980718Z",
+      "sha256": "513b5a3161adde8c8b2e7d0edc6723d34e9c652cc47d4ab43e6eeb84a84370d0",
+      "plik": "513b5a3161adde8c.html"
+    },
+    {
+      "id": "doc-016",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/msft/financials/balance-sheet/",
+      "opis": "balance-sheet",
+      "pobrano": "2026-11-10T08:48:56.806784Z",
+      "sha256": "48aac942b01423ab375a7b62b4ceda20bf27fad4d87987a581d60d79979c1739",
+      "plik": "48aac942b01423ab.html"
+    },
+    {
+      "id": "doc-017",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=2y&interval=1d",
+      "opis": "notowania dzienne MSFT",
+      "pobrano": "2026-11-10T08:48:58.739043Z",
+      "sha256": "c779f11facf739c90ec38f6e69172bfe9dbeef31ca0d70ae5f0992c846926e0f",
+      "plik": "c779f11facf739c9.json"
+    },
+    {
+      "id": "doc-018",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=2y&interval=1d",
+      "opis": "notowania dzienne %5EGSPC",
+      "pobrano": "2026-11-10T08:49:00.407490Z",
+      "sha256": "4fd83968ddfdc9a629e746cbee43d4be0b0ade08168109a88592a2cf9285e32e",
+      "plik": "4fd83968ddfdc9a6.json"
     }
   ]
 }

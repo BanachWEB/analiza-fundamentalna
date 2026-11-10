@@ -4,17 +4,6 @@
   "powod": "brak twardej flagi",
   "wyniki": [
     {
-      "id": "B0.pokrycie",
-      "etap": 0,
-      "kategoria": "rynek_i_status",
-      "poziom": "informacja",
-      "opis": "Pokrycie analityczne małe albo nieznane — nie można na nim polegać (brak danych o liczbie analityków)",
-      "dowody": [],
-      "zrodlo": "kod",
-      "testy": null,
-      "warunek_powrotu": null
-    },
-    {
       "id": "B1.slabosc_kontroli_wzmianka",
       "etap": 1,
       "kategoria": "biegly_i_regulator",
@@ -35,6 +24,19 @@
       "opis": "Brak 8-K z pozycją 4.02 (korekta sprawozdań)",
       "dowody": [],
       "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.opinia_bieglego",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Deloitte & Touche: opinia bez zastrzeżeń o sprawozdaniach za FY2026",
+      "dowody": [
+        "doc-015: „In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company as of June 30, 2026 and 2025”"
+      ],
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     },
@@ -127,6 +129,30 @@
         "zysk_netto.FY2026"
       ],
       "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.podmioty_powiazane",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "informacja",
+      "opis": "OpenAI (ok. jedna czwarta udziałów, metoda praw własności) jest podmiotem powiązanym; zyski z tej inwestycji podniosły zysk netto FY2026",
+      "dowody": [
+        "doc-015: „As an equity method investee, OpenAI is a related party”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.akcjonariusz_90",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "ok",
+      "opis": "Akcjonariat rozproszony; brak akcjonariusza z ponad 90% głosów",
+      "dowody": [],
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     }

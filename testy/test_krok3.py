@@ -189,3 +189,10 @@ def test_uzupelnienie_z_biznesradaru_i_brak_samopotwierdzenia():
     r.dodaj(f)
     drugie_zrodlo(r, dane, Raport())
     assert r["przychody.FY2019"].status == Status.jedno_zrodlo  # nie potwierdza sam siebie
+
+
+def test_procent_w_cytacie(tmp_path):
+    p = tmp_path / "r.txt"
+    p.write_text("Azure and other cloud services revenue grew 41% driven by demand", encoding="utf-8")
+    assert cytat.sprawdz(p, None, "Azure and other cloud services revenue grew 41%", 0.41, procent=True)[0]
+    assert not cytat.sprawdz(p, None, "Azure and other cloud services revenue grew 41%", 0.41)[0]

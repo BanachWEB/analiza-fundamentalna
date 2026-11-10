@@ -135,6 +135,8 @@ def zapisy_liczby(wartosc: float) -> list[str]:
     if calkowita:
         n = int(round(a))
         podstawy = {f"{n:,}".replace(",", " "), str(n), f"{n:,}"}
+        for zera in ("0", "00"):  # „5.0 billion”, „1 234,00”
+            podstawy |= {f"{n}.{zera}", f"{n},{zera}", f"{n:,}.{zera}", f"{n:,}".replace(",", " ") + f",{zera}"}
     else:
         podstawy = set()
         for miejsca in (1, 2, 3, 4):
@@ -166,20 +168,22 @@ def liczba_w_cytacie(wartosc: float, cytat: str) -> bool:
     return False
 
 
-def sprawdz(sciezka: Path, strona: int | None, cytat: str, wartosc: float) -> tuple[bool, str]:
+def sprawdz(sciezka: Path, strona: int | None, cytat: str, wartosc: float, procent: bool = False) -> tuple[bool, str]:
+    """procent=True: wartość jest ułamkiem (0,41), a dokument może pisać „41%”."""
     try:
         tekst = tekst_dokumentu(sciezka, strona)
     except ValueError as e:
         return False, str(e)
     if ujednolic(cytat) not in ujednolic(tekst):
         return False, "cytatu nie ma na wskazanej stronie"
-    if not liczba_w_cytacie(wartosc, cytat):
+    kandydaci = [wartosc] + ([round(wartosc * 100, 6)] if procent else [])
+    if not any(liczba_w_cytacie(v, cytat) for v in kandydaci):
         return False, "wartości nie ma w cytacie"
     if sciezka.suffix.lower() == ".pdf" and strona is not None:
         # W PDF sprawdzamy całe liczby z kolumn wierszy, które tworzą cytat.
         c = ujednolic(cytat)
         liczby = [v for t, vs in _wiersze_pdf(str(sciezka))[strona - 1] if ujednolic(t) and ujednolic(t) in c for v in vs]
-        if liczby and not any(abs(v - wartosc) < 1e-6 for v in liczby):
+        if liczby and not any(abs(v - w) < 1e-6 for v in liczby for w in kandydaci):
             return False, "wartość jest tylko fragmentem liczby z kolumny"
     return True, "ok"
 
@@ -196,7 +200,8 @@ def dodaj_propozycje(rejestr: RejestrFaktow, sciezka_dokumentu, propozycje: list
         dane.setdefault("metoda", Metoda.tabela_pdf.value)
         dane["status"] = Status.jedno_zrodlo.value
         strona = (dane.get("miejsce") or {}).get("strona")
-        ok, powod = sprawdz(Path(sciezka_dokumentu(dane["dokument"])), strona, dane.get("cytat") or "", dane["wartosc"])
+        ok, powod = sprawdz(Path(sciezka_dokumentu(dane["dokument"])), strona, dane.get("cytat") or "", dane["wartosc"],
+                            procent=dane.get("jednostka") == "ulamek")
         dane["kontrole"] = list(dane.get("kontrole", [])) + [f"test_cytatu:{'ok' if ok else 'blad'}:{powod}"]
         if not ok:
             dane["status"] = Status.odrzucony.value

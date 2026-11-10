@@ -19,7 +19,12 @@ from typing import Optional
 from silnik.fakty.schemat import Fakt, Jednostka, Metoda, Okres, Rodzaj, Status
 
 from .kalkulator import Kalkulator
-from .wycena import parametry, wartosc_przychody_marza
+from .wycena import bisekcja, parametry, wartosc_przychody_marza
+
+
+def stopa_implikowana(r0, g, n, gT, marza, akcje, kurs) -> float:
+    """Stopa dyskontowa k, przy której wartość scenariusza na akcję równa się kursowi."""
+    return bisekcja(lambda k: -wartosc_przychody_marza(r0, g, n, gT, k, marza) / akcje, -kurs, gT + 0.001, 0.60)
 
 U = Jednostka.ulamek
 
@@ -76,6 +81,11 @@ def oblicz(k: Kalkulator, plik: Path, wycena: dict) -> Optional[dict]:
         if f is None:
             return None
         wartosci.append((ids[0], f.id))
+        # stopa zwrotu implikowana: koszt kapitału, przy którym wartość scenariusza = obecny kurs
+        k.wylicz(f"stopa_zwrotu_implikowana.{s['nazwa']}", "stopa_zwrotu_implikowana",
+                 f"stopa dyskontowa, przy której wartość scenariusza {s['nazwa']} równa się kursowi",
+                 [f"przychody.{S}", ids[1], ids[2], "wzrost_rezydualny.zalozenie", akcje.id, kurs.id],
+                 lambda r, g, mz, gt, a, ku: stopa_implikowana(r, g, n, gt, mz, a, ku), U, okres)
     wej = [x for para in wartosci for x in para] + [kurs.id]
 
     def oczekiwana(*a):

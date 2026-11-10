@@ -160,13 +160,18 @@ def scenariusze_tabela(k: Kalkulator, wynik: dict) -> list[str]:
     linie = []
     sc = wynik.get("scenariusze")
     if sc:
-        linie += ["| Scenariusz | Prawdopodobieństwo | Wartość na akcję |", "|---|---:|---:|"]
+        linie += ["| Scenariusz | Prawdopodobieństwo | Wartość na akcję | Stopa zwrotu przy obecnym kursie |",
+                  "|---|---:|---:|---:|"]
         for f in [x for x in k.r.fakty() if x.pozycja == "wartosc_na_akcje"]:
             nazwa = f.id.split(".", 1)[1]
             p = k.fakt(f"scenariusz_prawdopodobienstwo.{nazwa}")
-            linie.append(f"| {nazwa} | {format_(p)} | {f.wartosc:,.2f} {f.waluta} |".replace(",", " ", 1))
+            st = k.fakt(f"stopa_zwrotu_implikowana.{nazwa}")
+            wartosc = f"{f.wartosc:,.2f}".replace(",", " ").replace(".", ",")
+            linie.append(f"| {nazwa} | {format_(p)} | {wartosc} {f.waluta} | {format_(st)} |")
         for nazwa, fid in sc.items():
-            linie.append(_wiersz(k, nazwa.replace("_", " "), fid).replace("| ", "| **", 1).replace(" |", "** |", 1))
+            nazwy = {"wartosc_oczekiwana_na_akcje": "Wartość oczekiwana na akcję", "potencjal_oczekiwany": "Potencjał oczekiwany",
+                     "prawdopodobienstwo_straty": "Prawdopodobieństwo straty", "asymetria": "Asymetria (zysk ÷ strata)"}
+            linie.append(_wiersz(k, nazwy.get(nazwa, nazwa), fid) + " |")
     return linie or ["Brak scenariuszy (plik scenariusze.json)."]
 
 
