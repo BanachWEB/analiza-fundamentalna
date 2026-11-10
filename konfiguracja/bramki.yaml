@@ -9,7 +9,7 @@ progi:
   beneish_m: -1.78                 # powyżej → flaga
   altman_z2: 1.10                  # poniżej → flaga poważna
   # Pokrycie analityczne wg zasad właściciela (inwestowanie/zasady-inwestowania.md, v1.6):
-  # wystarcza ponad 3 analityków; spółka zagraniczna z 3 lub mniej → „nie kupuję” (flaga poważna),
+  # wystarcza ponad 3 analityków; spółka zagraniczna z 3 lub mniej → „nie kupuję” = STOP (decyzja właściciela 10.11.2026),
   # spółka z GPW z 3 lub mniej → flaga. Skala dla USA: ponad 10 duże, 3–10 średnie, poniżej 3 słabe.
   analitycy_wystarczy_ponad: 3
   analitycy_duze_ponad: 10

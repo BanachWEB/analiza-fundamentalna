@@ -51,9 +51,14 @@ def z_rejestru(r: RejestrFaktow, finansowa: bool = False, rynek: str = "USA") ->
         if n > prog:
             w.append(Wynik("B0.pokrycie", 0, "rynek_i_status", "ok", f"Pokrycie analityczne {skala} ({n} analityków)", [an.id]))
         elif rynek == "USA":
-            w.append(Wynik("B0.pokrycie", 0, "rynek_i_status", "flaga_powazna",
-                           f"Pokrycie analityczne {skala} ({n} analityków) — wg twoich zasad: spółki zagranicznej "
-                           "z 3 analitykami lub mniej nie kupujesz", [an.id]))
+            w.append(Wynik("B0.pokrycie", 0, "rynek_i_status", "stop",
+                           f"Pokrycie analityczne {skala} ({n} analityków) — wg twoich zasad spółki zagranicznej "
+                           "z 3 analitykami lub mniej nie kupujesz", [an.id],
+                           testy={"strukturalny": "zależy od zainteresowania analityków; zwykle zmienia się powoli",
+                                  "uczciwosc_liczb": "nie dotyczy — to reguła zasad właściciela, nie zarzut wobec spółki",
+                                  "zarzad_rozwiazuje": "nie dotyczy",
+                                  "termin": "brak; sprawdzaj przy kolejnych raportach"},
+                           warunek_powrotu="spółkę śledzi ponad 3 analityków (zasady inwestowania, sekcja „Nauka — akcje i ETF tematyczne”)"))
         else:
             w.append(Wynik("B0.pokrycie", 0, "rynek_i_status", "flaga",
                            f"Pokrycie analityczne małe ({n} analityków) — na GPW to tylko flaga; "

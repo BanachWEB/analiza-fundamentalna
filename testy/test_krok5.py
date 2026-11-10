@@ -142,7 +142,7 @@ def test_dowody_modelu(tmp_path):
     assert any("nieznana bramka" in o for o in odrzucone)
 
 
-@pytest.mark.parametrize("rynek,n,poziom", [("USA", 58, "ok"), ("USA", 3, "flaga_powazna"), ("GPW", 3, "flaga"),
+@pytest.mark.parametrize("rynek,n,poziom", [("USA", 58, "ok"), ("USA", 3, "stop"), ("GPW", 3, "flaga"),
                                            ("GPW", 7, "ok")])
 def test_pokrycie_wg_zasad(rynek, n, poziom):
     r = RejestrFaktow("X", date(2026, 11, 10))

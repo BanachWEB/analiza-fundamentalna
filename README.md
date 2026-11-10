@@ -132,7 +132,7 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają bramki same. Osobno: `python 
 
 | Etap | USA | GPW | Oba rynki (z rejestru) |
 |---:|---|---|---|
-| 0 | — | Lista Alertów (STOP), szczególne oznaczenie, zawieszenia obrotu | pokrycie analityczne (informacja) |
+| 0 | pokrycie analityczne: 3 analityków lub mniej = STOP (zasady właściciela) | Lista Alertów (STOP), szczególne oznaczenie, zawieszenia obrotu; pokrycie: 3 lub mniej = flaga | brak danych o pokryciu = informacja |
 | 1 | 8-K 4.02 — korekta sprawozdań (STOP), NT 10-K/NT 10-Q, 8-K 4.01 — zmiana biegłego, wzmianka „material weakness” | — | — |
 | 2 | — | — | rozwodnienie > 10% r/r; seryjne (3 z 5 lat) = flaga poważna |
 | 3 | wzmianka „substantial doubt”; razem z ujemnymi przepływami i zobowiązaniami krótkoterminowymi > aktywa obrotowe = STOP | — | przepływy ÷ zysk netto (3 lata) < 70%, M-score > −1,78, Z'' < 1,10, ujemny kapitał niewyjaśniony skupem (STOP) |
