@@ -33,7 +33,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa"
@@ -57,7 +57,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa"
@@ -81,7 +81,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa"
@@ -105,7 +105,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa"
@@ -129,7 +129,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa"
@@ -153,7 +153,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa"
@@ -185,7 +185,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-038:9.00306e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:9.00306e+09:0.00%:ok"
       ]
     },
     {
@@ -210,7 +210,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-038:1.03777e+10:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.03777e+10:0.00%:ok"
       ]
     },
     {
@@ -235,7 +235,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-038:1.30558e+10:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.30558e+10:0.00%:ok"
       ]
     },
     {
@@ -260,7 +260,7 @@
       },
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-038:1.51713e+10:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.51713e+10:0.00%:ok"
       ]
     },
     {
@@ -286,7 +286,7 @@
       "cytat": "Suma aktywów .......................................................................... 16 175 929 15 171 280 3 703 959 3 589 391",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-038:1.61759e+10:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.61759e+10:0.00%:ok"
       ]
     },
     {
@@ -303,7 +303,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -326,7 +326,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -349,7 +349,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -372,7 +372,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -395,7 +395,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -418,7 +418,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -448,7 +448,7 @@
         "tekst": "2 706 706"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:2.70671e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:2.70671e+09:0.00%:ok"
       ]
     },
     {
@@ -472,7 +472,7 @@
         "tekst": "3 253 165"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:3.25316e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:3.25316e+09:0.00%:ok"
       ]
     },
     {
@@ -496,7 +496,7 @@
         "tekst": "4 439 416"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:4.43942e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:4.43942e+09:0.00%:ok"
       ]
     },
     {
@@ -520,7 +520,7 @@
         "tekst": "4 972 032"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:4.97203e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:4.97203e+09:0.00%:ok"
       ]
     },
     {
@@ -634,7 +634,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "amortyzacja"
@@ -658,7 +658,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "amortyzacja"
@@ -682,7 +682,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "amortyzacja"
@@ -706,7 +706,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "amortyzacja"
@@ -730,7 +730,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "amortyzacja"
@@ -754,7 +754,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "amortyzacja"
@@ -778,7 +778,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "amortyzacja"
@@ -809,7 +809,7 @@
         "tekst": "356 828"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-040:3.56828e+08:0.00%:ok"
+        "drugie_zrodlo:doc-072:3.56828e+08:0.00%:ok"
       ]
     },
     {
@@ -834,7 +834,7 @@
         "tekst": "409 179"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-040:4.09179e+08:0.00%:ok"
+        "drugie_zrodlo:doc-072:4.09179e+08:0.00%:ok"
       ]
     },
     {
@@ -859,7 +859,30 @@
         "tekst": "505 031"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-040:5.05031e+08:0.00%:ok"
+        "drugie_zrodlo:doc-072:5.05031e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "asymetria.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "asymetria",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.0,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "asymetria",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-09"
       ]
     },
     {
@@ -1688,7 +1711,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "capex"
@@ -1712,7 +1735,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "capex"
@@ -1736,7 +1759,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "capex"
@@ -1760,7 +1783,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "capex"
@@ -1784,7 +1807,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "capex"
@@ -1808,7 +1831,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "capex"
@@ -1832,7 +1855,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "capex"
@@ -1863,7 +1886,7 @@
         "tekst": "1 172 863"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-040:1.17286e+09:0.00%:ok"
+        "drugie_zrodlo:doc-072:1.17286e+09:0.00%:ok"
       ]
     },
     {
@@ -1888,7 +1911,7 @@
         "tekst": "1 561 914"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-040:1.56191e+09:0.00%:ok"
+        "drugie_zrodlo:doc-072:1.56191e+09:0.00%:ok"
       ]
     },
     {
@@ -1913,7 +1936,7 @@
         "tekst": "2 087 043"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-040:2.08704e+09:0.00%:ok"
+        "drugie_zrodlo:doc-072:2.08704e+09:0.00%:ok"
       ]
     },
     {
@@ -3766,7 +3789,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "gotowka"
@@ -3789,7 +3812,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "gotowka"
@@ -3812,7 +3835,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "gotowka"
@@ -3835,7 +3858,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "gotowka"
@@ -3858,7 +3881,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "gotowka"
@@ -3881,7 +3904,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "gotowka"
@@ -3911,7 +3934,7 @@
         "tekst": "382 718"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:3.82718e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:3.82718e+08:0.00%:ok"
       ]
     },
     {
@@ -3935,7 +3958,7 @@
         "tekst": "218 389"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:2.18389e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:2.18389e+08:0.00%:ok"
       ]
     },
     {
@@ -3959,7 +3982,7 @@
         "tekst": "891 022"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:8.91022e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:8.91022e+08:0.00%:ok"
       ]
     },
     {
@@ -3983,7 +4006,7 @@
         "tekst": "954 814"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:9.54814e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:9.54814e+08:0.00%:ok"
       ]
     },
     {
@@ -4060,7 +4083,7 @@
       "jednostka": "punkty",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-058",
+      "dokument": "doc-080",
       "miejsce": {
         "sesja": "2026-11-09",
         "pole": "zamknięcie"
@@ -4078,20 +4101,42 @@
       "jednostka": "ulamek",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-058",
+      "dokument": "doc-080",
       "miejsce": {
         "od": "2025-11-07",
         "do": "2026-10-09",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-058",
-          "doc-049",
-          "doc-050",
-          "doc-051",
-          "doc-052",
-          "doc-053"
+          "doc-080",
+          "doc-081",
+          "doc-082",
+          "doc-083",
+          "doc-084",
+          "doc-085"
         ]
       }
+    },
+    {
+      "id": "inflacja_zywnosci_pl.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "inflacja_zywnosci_pl",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": -0.006,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 7
+      },
+      "cytat": "Inflacja cen żywności i napojów w Polsce* (0,6) 0,7 2,3 0,8 5,3 2,8 47 3,3 15,1",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "kapital_wlasny.2016-12-31",
@@ -4107,7 +4152,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kapital_wlasny"
@@ -4130,7 +4175,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kapital_wlasny"
@@ -4153,7 +4198,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kapital_wlasny"
@@ -4176,7 +4221,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kapital_wlasny"
@@ -4199,7 +4244,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kapital_wlasny"
@@ -4222,7 +4267,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kapital_wlasny"
@@ -4252,7 +4297,7 @@
         "tekst": "4 203 783"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:4.20378e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:4.20378e+09:0.00%:ok"
       ]
     },
     {
@@ -4276,7 +4321,7 @@
         "tekst": "5 605 311"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:5.60531e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:5.60531e+09:0.00%:ok"
       ]
     },
     {
@@ -4300,7 +4345,7 @@
         "tekst": "7 085 151"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:7.08515e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:7.08515e+09:0.00%:ok"
       ]
     },
     {
@@ -4324,7 +4369,7 @@
         "tekst": "8 653 393"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:8.65339e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:8.65339e+09:0.00%:ok"
       ]
     },
     {
@@ -4766,7 +4811,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4790,7 +4835,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4814,7 +4859,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4838,7 +4883,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4862,7 +4907,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4886,7 +4931,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4910,7 +4955,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4941,7 +4986,7 @@
         "tekst": "3 878 421"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:3.87842e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:3.87842e+09:0.00%:ok"
       ]
     },
     {
@@ -4966,7 +5011,7 @@
         "tekst": "4 678 717"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:4.67872e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:4.67872e+09:0.00%:ok"
       ]
     },
     {
@@ -4991,7 +5036,7 @@
         "tekst": "5 576 262"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:5.57626e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:5.57626e+09:0.00%:ok"
       ]
     },
     {
@@ -5009,7 +5054,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -5033,7 +5078,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -5057,7 +5102,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -5081,7 +5126,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -5105,7 +5150,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -5129,7 +5174,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -5153,7 +5198,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -5184,7 +5229,7 @@
         "tekst": "147 316"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.47316e+08:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.47316e+08:0.00%:ok"
       ]
     },
     {
@@ -5209,7 +5254,7 @@
         "tekst": "121 424"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.21424e+08:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.21424e+08:0.00%:ok"
       ]
     },
     {
@@ -5234,7 +5279,7 @@
         "tekst": "122 945"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.22945e+08:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.22945e+08:0.00%:ok"
       ]
     },
     {
@@ -5452,7 +5497,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -5476,7 +5521,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -5500,7 +5545,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -5524,7 +5569,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -5548,7 +5593,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -5572,7 +5617,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -5596,7 +5641,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -5627,7 +5672,7 @@
         "tekst": "173 736"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.73736e+08:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.73736e+08:0.00%:ok"
       ]
     },
     {
@@ -5652,7 +5697,7 @@
         "tekst": "233 653"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:2.33653e+08:0.00%:ok"
+        "drugie_zrodlo:doc-068:2.33653e+08:0.00%:ok"
       ]
     },
     {
@@ -5677,7 +5722,7 @@
         "tekst": "302 944"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:3.02944e+08:0.00%:ok"
+        "drugie_zrodlo:doc-068:3.02944e+08:0.00%:ok"
       ]
     },
     {
@@ -5694,7 +5739,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -5717,7 +5762,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -5740,7 +5785,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -5763,7 +5808,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -5786,7 +5831,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -5809,7 +5854,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -5839,7 +5884,7 @@
         "tekst": "690 862"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:6.90862e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:6.90862e+08:0.00%:ok"
       ]
     },
     {
@@ -5863,7 +5908,7 @@
         "tekst": "469 629"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:4.69629e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:4.69629e+08:0.00%:ok"
       ]
     },
     {
@@ -5887,7 +5932,7 @@
         "tekst": "272 219"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:2.72219e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:2.72219e+08:0.00%:ok"
       ]
     },
     {
@@ -5911,7 +5956,7 @@
         "tekst": "312 861"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:3.12861e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:3.12861e+08:0.00%:ok"
       ]
     },
     {
@@ -5928,7 +5973,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -5951,7 +5996,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -5974,7 +6019,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -5997,7 +6042,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -6020,7 +6065,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -6043,7 +6088,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -6073,7 +6118,7 @@
         "tekst": "410 157"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:4.10157e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:4.10157e+08:0.00%:ok"
       ]
     },
     {
@@ -6097,7 +6142,7 @@
         "tekst": "278 588"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:2.78588e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:2.78588e+08:0.00%:ok"
       ]
     },
     {
@@ -6121,7 +6166,7 @@
         "tekst": "361 034"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:3.61034e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:3.61034e+08:0.00%:ok"
       ]
     },
     {
@@ -6145,7 +6190,7 @@
         "tekst": "159 926"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:1.59926e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.59926e+08:0.00%:ok"
       ]
     },
     {
@@ -6160,12 +6205,15 @@
       "jednostka": "pieniadz_na_akcje",
       "waluta": "PLN",
       "metoda": "parser_strony",
-      "status": "jedno_zrodlo",
-      "dokument": "doc-042",
+      "status": "zweryfikowany",
+      "dokument": "doc-074",
       "miejsce": {
         "sesja": "2026-11-09",
         "pole": "zamknięcie"
-      }
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-086:38.15:0.00%:ok"
+      ]
     },
     {
       "id": "leasing.2016-12-31",
@@ -6371,7 +6419,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -6394,7 +6442,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -6417,7 +6465,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -6440,7 +6488,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -6463,7 +6511,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -6486,7 +6534,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -6516,7 +6564,7 @@
         "tekst": "34 673"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:3.4673e+07:0.00%:ok"
+        "drugie_zrodlo:doc-070:3.4673e+07:0.00%:ok"
       ]
     },
     {
@@ -6540,7 +6588,7 @@
         "tekst": "35 612"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:3.5612e+07:0.00%:ok"
+        "drugie_zrodlo:doc-070:3.5612e+07:0.00%:ok"
       ]
     },
     {
@@ -6564,7 +6612,7 @@
         "tekst": "60 818"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:6.0818e+07:0.00%:ok"
+        "drugie_zrodlo:doc-070:6.0818e+07:0.00%:ok"
       ]
     },
     {
@@ -6588,7 +6636,7 @@
         "tekst": "87 851"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:8.7851e+07:0.00%:ok"
+        "drugie_zrodlo:doc-070:8.7851e+07:0.00%:ok"
       ]
     },
     {
@@ -6605,7 +6653,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -6628,7 +6676,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -6651,7 +6699,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -6674,7 +6722,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -6697,7 +6745,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -6720,7 +6768,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -6750,7 +6798,7 @@
         "tekst": "17 893"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:1.7893e+07:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.7893e+07:0.00%:ok"
       ]
     },
     {
@@ -6774,7 +6822,7 @@
         "tekst": "14 565"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:1.4565e+07:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.4565e+07:0.00%:ok"
       ]
     },
     {
@@ -6798,7 +6846,7 @@
         "tekst": "17 900"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:1.79e+07:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.79e+07:0.00%:ok"
       ]
     },
     {
@@ -6822,7 +6870,116 @@
         "tekst": "22 812"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:2.2812e+07:0.00%:ok"
+        "drugie_zrodlo:doc-070:2.2812e+07:0.00%:ok"
+      ]
+    },
+    {
+      "id": "lfl.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "lfl",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 0.172,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 7
+      },
+      "cytat": "Dino LfL 0,1 0,3 4,4 1,4 4,7 4,9 4,4 5,3 17,2",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "lfl.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "lfl",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 0.044,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 7
+      },
+      "cytat": "Dino LfL 0,1 0,3 4,4 1,4 4,7 4,9 4,4 5,3 17,2",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "lfl.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "lfl",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 0.014,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 7
+      },
+      "cytat": "W okresie styczeń-wrzesień 2026 r. wzrost sprzedaży LfL wyniósł 1,4%.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "lfl.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "lfl",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 0.001,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 7
+      },
+      "cytat": "Wzrost sprzedaży LfL wyniósł w III kwartale 2026 r. 0,1% w stosunku do analogicznego okresu 2025 r.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "liczba_sklepow.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_sklepow",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 3283.0,
+      "jednostka": "liczba",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 5
+      },
+      "cytat": "Na dzień 30 września 2026 r. sieć Dino tworzyły 3 283 sklepy o łącznej powierzchni sali sprzedaży 1 301 625 m².",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -7673,18 +7830,18 @@
       "jednostka": "ulamek",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-042",
+      "dokument": "doc-074",
       "miejsce": {
         "od": "2025-11-07",
         "do": "2026-10-09",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-042",
-          "doc-043",
-          "doc-044",
-          "doc-045",
-          "doc-046",
-          "doc-047"
+          "doc-074",
+          "doc-075",
+          "doc-076",
+          "doc-077",
+          "doc-078",
+          "doc-079"
         ]
       }
     },
@@ -7822,7 +7979,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -7845,7 +8002,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -7868,7 +8025,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -7891,7 +8048,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -7914,7 +8071,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -7937,7 +8094,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -7967,7 +8124,7 @@
         "tekst": "370 000"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:3.7e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:3.7e+08:0.00%:ok"
       ]
     },
     {
@@ -7991,7 +8148,7 @@
         "tekst": "370 000"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:3.7e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:3.7e+08:0.00%:ok"
       ]
     },
     {
@@ -8015,7 +8172,7 @@
         "tekst": "170 000"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:1.7e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.7e+08:0.00%:ok"
       ]
     },
     {
@@ -8039,7 +8196,7 @@
         "tekst": "-"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:0:0.00%:ok"
+        "drugie_zrodlo:doc-070:0:0.00%:ok"
       ]
     },
     {
@@ -8056,7 +8213,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -8079,7 +8236,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -8102,7 +8259,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -8125,7 +8282,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -8148,7 +8305,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -8171,7 +8328,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -8201,7 +8358,7 @@
         "tekst": "260 947"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:2.60947e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:2.60947e+08:0.00%:ok"
       ]
     },
     {
@@ -8225,7 +8382,7 @@
         "tekst": "4 784"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:4.784e+06:0.00%:ok"
+        "drugie_zrodlo:doc-070:4.784e+06:0.00%:ok"
       ]
     },
     {
@@ -8249,7 +8406,7 @@
         "tekst": "204 845"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:2.04845e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:2.04845e+08:0.00%:ok"
       ]
     },
     {
@@ -8273,7 +8430,7 @@
         "tekst": "171 882"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:1.71882e+08:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.71882e+08:0.00%:ok"
       ]
     },
     {
@@ -8289,19 +8446,41 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-042",
+      "dokument": "doc-074",
       "miejsce": {
         "obliczenie": "średnia z 60 sesji: zamknięcie × wolumen",
         "od": "2026-08-18",
         "dokumenty": [
-          "doc-042",
-          "doc-043",
-          "doc-044",
-          "doc-045",
-          "doc-046",
-          "doc-047"
+          "doc-074",
+          "doc-075",
+          "doc-076",
+          "doc-077",
+          "doc-078",
+          "doc-079"
         ]
       }
+    },
+    {
+      "id": "otwarcia_sklepow.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "otwarcia_sklepow",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 256.0,
+      "jednostka": "liczba",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 7
+      },
+      "cytat": "Narastająco od początku 2026 r. otwartych zostało łącznie 256 sklepów.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "pasywa_razem.2016-12-31",
@@ -8317,7 +8496,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -8341,7 +8520,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -8365,7 +8544,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -8389,7 +8568,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -8413,7 +8592,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -8437,7 +8616,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -8470,7 +8649,7 @@
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-038:9.00306e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:9.00306e+09:0.00%:ok"
       ]
     },
     {
@@ -8496,7 +8675,7 @@
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-038:1.03777e+10:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.03777e+10:0.00%:ok"
       ]
     },
     {
@@ -8522,7 +8701,7 @@
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-038:1.30558e+10:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.30558e+10:0.00%:ok"
       ]
     },
     {
@@ -8548,7 +8727,7 @@
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-038:1.51713e+10:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.51713e+10:0.00%:ok"
       ]
     },
     {
@@ -8808,6 +8987,73 @@
       ]
     },
     {
+      "id": "potencjal_oczekiwany.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "potencjal_oczekiwany",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": -0.4512071977736376,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "potencjal oczekiwany",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
+      "id": "powierzchnia_sprzedazy_m2.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "powierzchnia_sprzedazy_m2",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 1301625.0,
+      "jednostka": "liczba",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 5
+      },
+      "cytat": "Na dzień 30 września 2026 r. sieć Dino tworzyły 3 283 sklepy o łącznej powierzchni sali sprzedaży 1 301 625 m².",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "prawdopodobienstwo_straty.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "prawdopodobienstwo_straty",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 1.0,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "prawdopodobienstwo straty",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
       "id": "premia_ryzyka_akcji.2026-11-10",
       "rodzaj": "raportowany",
       "pozycja": "premia_ryzyka_akcji",
@@ -8841,7 +9087,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -8866,7 +9112,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -8891,7 +9137,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -8916,7 +9162,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -8941,7 +9187,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -8966,7 +9212,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -8991,7 +9237,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -9024,7 +9270,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
-        "drugie_zrodlo:doc-040:-7.77613e+08:0.00%:ok"
+        "drugie_zrodlo:doc-072:-7.77613e+08:0.00%:ok"
       ]
     },
     {
@@ -9050,7 +9296,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
-        "drugie_zrodlo:doc-040:-2.87911e+08:0.00%:ok"
+        "drugie_zrodlo:doc-072:-2.87911e+08:0.00%:ok"
       ]
     },
     {
@@ -9076,7 +9322,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-040:-5.58599e+08:0.00%:ok"
+        "drugie_zrodlo:doc-072:-5.58599e+08:0.00%:ok"
       ]
     },
     {
@@ -9104,7 +9350,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-041:-3.54985e+08:0.00%:ok"
+        "drugie_zrodlo:doc-073:-3.54985e+08:0.00%:ok"
       ]
     },
     {
@@ -9152,7 +9398,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-041:-4.3376e+07:0.00%:ok"
+        "drugie_zrodlo:doc-073:-4.3376e+07:0.00%:ok"
       ]
     },
     {
@@ -9191,7 +9437,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -9216,7 +9462,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -9241,7 +9487,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -9266,7 +9512,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -9291,7 +9537,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -9316,7 +9562,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -9341,7 +9587,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -9374,7 +9620,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
-        "drugie_zrodlo:doc-040:-1.15826e+09:0.00%:ok"
+        "drugie_zrodlo:doc-072:-1.15826e+09:0.00%:ok"
       ]
     },
     {
@@ -9400,7 +9646,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
-        "drugie_zrodlo:doc-040:-1.59691e+09:0.00%:ok"
+        "drugie_zrodlo:doc-072:-1.59691e+09:0.00%:ok"
       ]
     },
     {
@@ -9426,7 +9672,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-040:-2.07505e+09:0.00%:ok"
+        "drugie_zrodlo:doc-072:-2.07505e+09:0.00%:ok"
       ]
     },
     {
@@ -9454,7 +9700,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-041:-1.56846e+09:0.00%:ok"
+        "drugie_zrodlo:doc-073:-1.56846e+09:0.00%:ok"
       ]
     },
     {
@@ -9502,7 +9748,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-041:-1.8422e+09:0.00%:ok"
+        "drugie_zrodlo:doc-073:-1.8422e+09:0.00%:ok"
       ]
     },
     {
@@ -9541,7 +9787,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_operacyjne"
@@ -9566,7 +9812,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_operacyjne"
@@ -9591,7 +9837,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_operacyjne"
@@ -9616,7 +9862,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_operacyjne"
@@ -9641,7 +9887,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_operacyjne"
@@ -9666,7 +9912,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_operacyjne"
@@ -9691,7 +9937,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_operacyjne"
@@ -9724,7 +9970,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
-        "drugie_zrodlo:doc-040:1.77154e+09:0.00%:ok"
+        "drugie_zrodlo:doc-072:1.77154e+09:0.00%:ok"
       ]
     },
     {
@@ -9750,7 +9996,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
-        "drugie_zrodlo:doc-040:2.55745e+09:0.00%:ok"
+        "drugie_zrodlo:doc-072:2.55745e+09:0.00%:ok"
       ]
     },
     {
@@ -9776,7 +10022,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-040:2.69744e+09:0.00%:ok"
+        "drugie_zrodlo:doc-072:2.69744e+09:0.00%:ok"
       ]
     },
     {
@@ -9804,7 +10050,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-041:1.60734e+09:0.00%:ok"
+        "drugie_zrodlo:doc-073:1.60734e+09:0.00%:ok"
       ]
     },
     {
@@ -9852,7 +10098,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-041:1.707e+09:0.00%:ok"
+        "drugie_zrodlo:doc-073:1.707e+09:0.00%:ok"
       ]
     },
     {
@@ -9891,7 +10137,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przychody"
@@ -9915,7 +10161,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przychody"
@@ -9939,7 +10185,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przychody"
@@ -9963,7 +10209,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przychody"
@@ -9987,7 +10233,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przychody"
@@ -10011,7 +10257,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przychody"
@@ -10035,7 +10281,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przychody"
@@ -10067,7 +10313,7 @@
       },
       "kontrole": [
         "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
-        "drugie_zrodlo:doc-036:2.56663e+10:0.00%:ok"
+        "drugie_zrodlo:doc-068:2.56663e+10:0.00%:ok"
       ]
     },
     {
@@ -10093,7 +10339,7 @@
       },
       "kontrole": [
         "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
-        "drugie_zrodlo:doc-036:2.92738e+10:0.00%:ok"
+        "drugie_zrodlo:doc-068:2.92738e+10:0.00%:ok"
       ]
     },
     {
@@ -10119,7 +10365,7 @@
       },
       "kontrole": [
         "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
-        "drugie_zrodlo:doc-036:3.36342e+10:0.00%:ok"
+        "drugie_zrodlo:doc-068:3.36342e+10:0.00%:ok"
       ]
     },
     {
@@ -10146,7 +10392,7 @@
       "cytat": "Przychody ze sprzedaży ................................................................. 27 679 127 24 738 104 6 467 086 5 839 279",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-037:2.47381e+10:0.00%:ok"
+        "drugie_zrodlo:doc-069:2.47381e+10:0.00%:ok"
       ]
     },
     {
@@ -10193,7 +10439,7 @@
       "cytat": "Przychody ze sprzedaży ................................................................. 27 679 127 24 738 104 6 467 086 5 839 279",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-037:2.76791e+10:0.00%:ok"
+        "drugie_zrodlo:doc-069:2.76791e+10:0.00%:ok"
       ]
     },
     {
@@ -10739,6 +10985,123 @@
       }
     },
     {
+      "id": "scenariusz_marza_fcf.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.035,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wzrost głównie z nowych sklepów przy LfL w pobliżu zera do kilku procent; marża FCF poprawia się względem obecnej, bo część capeksu (centra dystrybucyjne) jest jednorazowa, ale presja cenowa dyskontów ogranicza marżę operacyjną."
+    },
+    {
+      "id": "scenariusz_marza_fcf.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.045,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Sieć dalej otwiera kilkaset sklepów rocznie, a LfL wraca w okolice inflacji; dojrzewanie sklepów i spadek tempa inwestycji podnoszą marżę FCF do poziomu dojrzałych dyskontów. Górna część rozkładu stóp bazowych dla handlu tej wielkości."
+    },
+    {
+      "id": "scenariusz_marza_fcf.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.02,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Nasycenie lokalizacji w małych miejscowościach i deflacja żywności spowalniają wzrost; konkurencja (Biedronka, Lidl) wymusza inwestycje w ceny, a marża operacyjna dalej spada jak w latach 2022–2025; marża FCF zostaje blisko obecnego poziomu."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.5,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wzrost głównie z nowych sklepów przy LfL w pobliżu zera do kilku procent; marża FCF poprawia się względem obecnej, bo część capeksu (centra dystrybucyjne) jest jednorazowa, ale presja cenowa dyskontów ogranicza marżę operacyjną."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.2,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Sieć dalej otwiera kilkaset sklepów rocznie, a LfL wraca w okolice inflacji; dojrzewanie sklepów i spadek tempa inwestycji podnoszą marżę FCF do poziomu dojrzałych dyskontów. Górna część rozkładu stóp bazowych dla handlu tej wielkości."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.3,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Nasycenie lokalizacji w małych miejscowościach i deflacja żywności spowalniają wzrost; konkurencja (Biedronka, Lidl) wymusza inwestycje w ceny, a marża operacyjna dalej spada jak w latach 2022–2025; marża FCF zostaje blisko obecnego poziomu."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.08,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wzrost głównie z nowych sklepów przy LfL w pobliżu zera do kilku procent; marża FCF poprawia się względem obecnej, bo część capeksu (centra dystrybucyjne) jest jednorazowa, ale presja cenowa dyskontów ogranicza marżę operacyjną."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.11,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Sieć dalej otwiera kilkaset sklepów rocznie, a LfL wraca w okolice inflacji; dojrzewanie sklepów i spadek tempa inwestycji podnoszą marżę FCF do poziomu dojrzałych dyskontów. Górna część rozkładu stóp bazowych dla handlu tej wielkości."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.04,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Nasycenie lokalizacji w małych miejscowościach i deflacja żywności spowalniają wzrost; konkurencja (Biedronka, Lidl) wymusza inwestycje w ceny, a marża operacyjna dalej spada jak w latach 2022–2025; marża FCF zostaje blisko obecnego poziomu."
+    },
+    {
       "id": "splata_leasingu.FY2023",
       "rodzaj": "raportowany",
       "pozycja": "splata_leasingu",
@@ -10854,6 +11217,93 @@
       ]
     },
     {
+      "id": "stopa_zwrotu_implikowana.bazowy",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.07494254588335753,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza bazowy równa się kursowi",
+      "wejscia": [
+        "przychody.FY2025",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-11-10",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
+      "id": "stopa_zwrotu_implikowana.byk",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.10201769750472159,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza byk równa się kursowi",
+      "wejscia": [
+        "przychody.FY2025",
+        "scenariusz_wzrost_przychodow.byk",
+        "scenariusz_marza_fcf.byk",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-11-10",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
+      "id": "stopa_zwrotu_implikowana.niedzwiedz",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.04606319461599924,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza niedzwiedz równa się kursowi",
+      "wejscia": [
+        "przychody.FY2025",
+        "scenariusz_wzrost_przychodow.niedzwiedz",
+        "scenariusz_marza_fcf.niedzwiedz",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-11-10",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
+      "id": "udzial_akcjonariusza_kontrolujacego.2026-11-05",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_akcjonariusza_kontrolujacego",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-05"
+      },
+      "wartosc": 0.5116,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 12
+      },
+      "cytat": "Tomasz Biernacki wraz z podmiotem zależnym3 ...... 501 600 000 51,16%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "udzial_pvgo.2026-11-09",
       "rodzaj": "wyliczony",
       "pozycja": "udzial_pvgo",
@@ -10870,6 +11320,121 @@
         "zysk_netto.FY2025",
         "koszt_kapitalu_wlasnego.2026-11-09",
         "kapitalizacja.2026-11-09"
+      ]
+    },
+    {
+      "id": "udzial_swiezych_produktow.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_swiezych_produktow",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 0.406,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 7
+      },
+      "cytat": "Świeże produkty, w tym mięso, wędliny i drób, odpowiadały za 39,4% sprzedaży Grupy w III kw. 2026 r. i za 40,6% w okresie styczeń-wrzesień 2026 r.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.bazowy",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 22.085300922312914,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.FY2025",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09",
+        "akcje_w_obrocie.2026-11-10"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.byk",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 35.248805746752296,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.FY2025",
+        "scenariusz_wzrost_przychodow.byk",
+        "scenariusz_marza_fcf.byk",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09",
+        "akcje_w_obrocie.2026-11-10"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.niedzwiedz",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 9.480112648096027,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.FY2025",
+        "scenariusz_wzrost_przychodow.niedzwiedz",
+        "scenariusz_marza_fcf.niedzwiedz",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09",
+        "akcje_w_obrocie.2026-11-10"
+      ]
+    },
+    {
+      "id": "wartosc_oczekiwana_na_akcje.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_oczekiwana_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 20.936445404935725,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "wartosc oczekiwana na akcje",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-09"
       ]
     },
     {
@@ -11526,7 +12091,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -11549,7 +12114,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -11572,7 +12137,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -11595,7 +12160,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -11618,7 +12183,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -11641,7 +12206,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -11671,7 +12236,7 @@
         "tekst": "1 978 778"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:1.97878e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:1.97878e+09:0.00%:ok"
       ]
     },
     {
@@ -11695,7 +12260,7 @@
         "tekst": "2 638 859"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:2.63886e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:2.63886e+09:0.00%:ok"
       ]
     },
     {
@@ -11719,7 +12284,7 @@
         "tekst": "3 081 444"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:3.08144e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:3.08144e+09:0.00%:ok"
       ]
     },
     {
@@ -11743,7 +12308,7 @@
         "tekst": "3 548 100"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:3.5481e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:3.5481e+09:0.00%:ok"
       ]
     },
     {
@@ -11761,7 +12326,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -11786,7 +12351,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -11811,7 +12376,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -11836,7 +12401,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -11861,7 +12426,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -11886,7 +12451,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -11911,7 +12476,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -11936,7 +12501,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-040",
+      "dokument": "doc-072",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -11967,7 +12532,7 @@
         "tekst": "672 633"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-040:6.72633e+08:0.00%:ok"
+        "drugie_zrodlo:doc-072:6.72633e+08:0.00%:ok"
       ]
     },
     {
@@ -11993,7 +12558,7 @@
       },
       "kontrole": [
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-040:6.3792e+07:0.00%:ok"
+        "drugie_zrodlo:doc-072:6.3792e+07:0.00%:ok"
       ]
     },
     {
@@ -12021,7 +12586,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-041:-3.16105e+08:0.00%:ok"
+        "drugie_zrodlo:doc-073:-3.16105e+08:0.00%:ok"
       ]
     },
     {
@@ -12069,7 +12634,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-041:-1.78576e+08:0.00%:ok"
+        "drugie_zrodlo:doc-073:-1.78576e+08:0.00%:ok"
       ]
     },
     {
@@ -12392,7 +12957,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -12415,7 +12980,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -12438,7 +13003,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -12461,7 +13026,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -12484,7 +13049,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -12507,7 +13072,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-038",
+      "dokument": "doc-070",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -12537,7 +13102,7 @@
         "tekst": "3 690 127"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:3.69013e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:3.69013e+09:0.00%:ok"
       ]
     },
     {
@@ -12561,7 +13126,7 @@
         "tekst": "3 879 293"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:3.87929e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:3.87929e+09:0.00%:ok"
       ]
     },
     {
@@ -12585,7 +13150,7 @@
         "tekst": "5 382 849"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:5.38285e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:5.38285e+09:0.00%:ok"
       ]
     },
     {
@@ -12609,7 +13174,7 @@
         "tekst": "6 065 195"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-038:6.0652e+09:0.00%:ok"
+        "drugie_zrodlo:doc-070:6.0652e+09:0.00%:ok"
       ]
     },
     {
@@ -12702,7 +13267,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto"
@@ -12726,7 +13291,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto"
@@ -12750,7 +13315,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto"
@@ -12774,7 +13339,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto"
@@ -12798,7 +13363,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto"
@@ -12822,7 +13387,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto"
@@ -12846,7 +13411,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto"
@@ -12877,7 +13442,7 @@
         "tekst": "1 405 327"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.40533e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.40533e+09:0.00%:ok"
       ]
     },
     {
@@ -12902,7 +13467,7 @@
         "tekst": "1 504 980"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.50498e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.50498e+09:0.00%:ok"
       ]
     },
     {
@@ -12927,7 +13492,7 @@
         "tekst": "1 558 360"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.55836e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.55836e+09:0.00%:ok"
       ]
     },
     {
@@ -12945,7 +13510,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -12969,7 +13534,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -12993,7 +13558,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -13017,7 +13582,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -13041,7 +13606,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -13065,7 +13630,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -13089,7 +13654,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -13120,7 +13685,7 @@
         "tekst": "1 405 327"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.40533e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.40533e+09:0.00%:ok"
       ]
     },
     {
@@ -13145,7 +13710,7 @@
         "tekst": "1 505 729"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.50573e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.50573e+09:0.00%:ok"
       ]
     },
     {
@@ -13170,7 +13735,7 @@
         "tekst": "1 558 797"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.5588e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.5588e+09:0.00%:ok"
       ]
     },
     {
@@ -13197,7 +13762,7 @@
       "cytat": "Zysk netto ...................................................................................... 1 199 433 1 191 047 280 241 281 139",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-037:1.19105e+09:0.00%:ok"
+        "drugie_zrodlo:doc-069:1.19105e+09:0.00%:ok"
       ]
     },
     {
@@ -13244,7 +13809,7 @@
       "cytat": "Zysk netto ...................................................................................... 1 199 433 1 191 047 280 241 281 139",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-037:1.19943e+09:0.00%:ok"
+        "drugie_zrodlo:doc-069:1.19943e+09:0.00%:ok"
       ]
     },
     {
@@ -13283,7 +13848,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_operacyjny"
@@ -13307,7 +13872,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_operacyjny"
@@ -13331,7 +13896,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_operacyjny"
@@ -13355,7 +13920,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_operacyjny"
@@ -13379,7 +13944,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_operacyjny"
@@ -13403,7 +13968,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_operacyjny"
@@ -13427,7 +13992,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_operacyjny"
@@ -13458,7 +14023,7 @@
         "tekst": "1 875 855"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.87586e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.87586e+09:0.00%:ok"
       ]
     },
     {
@@ -13483,7 +14048,7 @@
         "tekst": "1 908 330"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.90833e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.90833e+09:0.00%:ok"
       ]
     },
     {
@@ -13508,7 +14073,7 @@
         "tekst": "2 041 282"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:2.04128e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:2.04128e+09:0.00%:ok"
       ]
     },
     {
@@ -13535,7 +14100,7 @@
       "cytat": "Zysk z działalności operacyjnej...................................................... 1 550 359 1 563 955 362 233 369 162",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-037:1.56396e+09:0.00%:ok"
+        "drugie_zrodlo:doc-069:1.56396e+09:0.00%:ok"
       ]
     },
     {
@@ -13582,7 +14147,7 @@
       "cytat": "Zysk z działalności operacyjnej...................................................... 1 550 359 1 563 955 362 233 369 162",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-037:1.55036e+09:0.00%:ok"
+        "drugie_zrodlo:doc-069:1.55036e+09:0.00%:ok"
       ]
     },
     {
@@ -13621,7 +14186,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -13645,7 +14210,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -13669,7 +14234,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -13693,7 +14258,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -13717,7 +14282,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -13741,7 +14306,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -13765,7 +14330,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-036",
+      "dokument": "doc-068",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -13796,7 +14361,7 @@
         "tekst": "1 738 981"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.73898e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.73898e+09:0.00%:ok"
       ]
     },
     {
@@ -13821,7 +14386,7 @@
         "tekst": "1 793 563"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.79356e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.79356e+09:0.00%:ok"
       ]
     },
     {
@@ -13846,7 +14411,7 @@
         "tekst": "1 926 653"
       },
       "kontrole": [
-        "drugie_zrodlo:doc-036:1.92665e+09:0.00%:ok"
+        "drugie_zrodlo:doc-068:1.92665e+09:0.00%:ok"
       ]
     },
     {

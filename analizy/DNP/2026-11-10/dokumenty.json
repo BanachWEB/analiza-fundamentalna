@@ -671,6 +671,206 @@
       "pobrano": "2026-11-10T08:34:14.630287Z",
       "sha256": "03c7064faa23b3fff43edbfe5e4fc9c996eec912a1b7189e4f56d64377d1f70b",
       "plik": "03c7064faa23b3ff.html"
+    },
+    {
+      "id": "doc-068",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/DNP",
+      "opis": "rachunek roczne",
+      "pobrano": "2026-11-10T09:14:51.206055Z",
+      "sha256": "0743c394ca601d42fee8b4249e353d91ceea08674b95be6d535843357e2728d8",
+      "plik": "0743c394ca601d42.html"
+    },
+    {
+      "id": "doc-069",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/DNP,Q",
+      "opis": "rachunek kwartalne",
+      "pobrano": "2026-11-10T09:14:52.810537Z",
+      "sha256": "00094c2845afd51c49e3e564fddb483ad3501f4df7f8e5a6fdea41c47c0af585",
+      "plik": "00094c2845afd51c.html"
+    },
+    {
+      "id": "doc-070",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/DNP",
+      "opis": "bilans roczne",
+      "pobrano": "2026-11-10T09:14:54.405453Z",
+      "sha256": "47a54a153959ab319d0909055cb5b1eebf1e21efc363a687c7ff79a8f2f33896",
+      "plik": "47a54a153959ab31.html"
+    },
+    {
+      "id": "doc-071",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/DNP,Q",
+      "opis": "bilans kwartalne",
+      "pobrano": "2026-11-10T09:14:56.204466Z",
+      "sha256": "ad11ca9011a3b5782bb16fd75186d0bc207aa2d0da2d50e9dfb76025bae38f08",
+      "plik": "ad11ca9011a3b578.html"
+    },
+    {
+      "id": "doc-072",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/DNP",
+      "opis": "przeplywy roczne",
+      "pobrano": "2026-11-10T09:14:57.652581Z",
+      "sha256": "5d366d33989357b93d8cb7b00318e37789477908876a45f66ba6a2f2f4455c86",
+      "plik": "5d366d33989357b9.html"
+    },
+    {
+      "id": "doc-073",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/DNP,Q",
+      "opis": "przeplywy kwartalne",
+      "pobrano": "2026-11-10T09:14:59.252828Z",
+      "sha256": "d6dc5532f013b5f0398f1530caeadc3c915c164c7ee8245a9ff2c9e56b3cd14f",
+      "plik": "d6dc5532f013b5f0.html"
+    },
+    {
+      "id": "doc-074",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/DNP",
+      "opis": "notowania historyczne DNP, strona 1",
+      "pobrano": "2026-11-10T09:15:00.671881Z",
+      "sha256": "7d2c318100ac7d4bea81a2d8709e6d2a713657898cc9d2e11e2ec864236b5a00",
+      "plik": "7d2c318100ac7d4b.html"
+    },
+    {
+      "id": "doc-075",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/DNP,2",
+      "opis": "notowania historyczne DNP, strona 2",
+      "pobrano": "2026-11-10T09:15:02.100595Z",
+      "sha256": "221988fa1b1f31441ff1c8373998e4893ef3ffd097ef130c759f91e6813c73af",
+      "plik": "221988fa1b1f3144.html"
+    },
+    {
+      "id": "doc-076",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/DNP,3",
+      "opis": "notowania historyczne DNP, strona 3",
+      "pobrano": "2026-11-10T09:15:03.459188Z",
+      "sha256": "a4e4f2f06367e63638030f05db8f3637d9cd8e153ad3808e1bc17b7ac87a34b6",
+      "plik": "a4e4f2f06367e636.html"
+    },
+    {
+      "id": "doc-077",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/DNP,4",
+      "opis": "notowania historyczne DNP, strona 4",
+      "pobrano": "2026-11-10T09:15:04.837966Z",
+      "sha256": "33345f185a29caddd27ae2041c85098ca8601c60a26fca36ffbcbadb7f998909",
+      "plik": "33345f185a29cadd.html"
+    },
+    {
+      "id": "doc-078",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/DNP,5",
+      "opis": "notowania historyczne DNP, strona 5",
+      "pobrano": "2026-11-10T09:15:06.333376Z",
+      "sha256": "7d2789f80e600fef7604d781da5e8f1369541452fa938d753f0fa97f90bf2b06",
+      "plik": "7d2789f80e600fef.html"
+    },
+    {
+      "id": "doc-079",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/DNP,6",
+      "opis": "notowania historyczne DNP, strona 6",
+      "pobrano": "2026-11-10T09:15:08.865085Z",
+      "sha256": "d935d57389859f21ab40149b5b6efbff3552c118e09b87424ec968a6b3cd74d8",
+      "plik": "d935d57389859f21.html"
+    },
+    {
+      "id": "doc-080",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG",
+      "opis": "notowania historyczne WIG, strona 1",
+      "pobrano": "2026-11-10T09:15:10.466065Z",
+      "sha256": "cd50fad0c33bcd64db645fd09b3271044fdf150db7a7c30af2825bb904a79f6a",
+      "plik": "cd50fad0c33bcd64.html"
+    },
+    {
+      "id": "doc-081",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,2",
+      "opis": "notowania historyczne WIG, strona 2",
+      "pobrano": "2026-11-10T09:15:11.945344Z",
+      "sha256": "2c6cb1c2a06d924ca806dd9b8638432c88cd03c9db60090598448004256ba8d2",
+      "plik": "2c6cb1c2a06d924c.html"
+    },
+    {
+      "id": "doc-082",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,3",
+      "opis": "notowania historyczne WIG, strona 3",
+      "pobrano": "2026-11-10T09:15:13.390137Z",
+      "sha256": "8125e225fc047dce4035d93a9764c0ea89ce11e6f93203c66d1a2fb4af527157",
+      "plik": "8125e225fc047dce.html"
+    },
+    {
+      "id": "doc-083",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,4",
+      "opis": "notowania historyczne WIG, strona 4",
+      "pobrano": "2026-11-10T09:15:14.883397Z",
+      "sha256": "1dc2c30f9ec5f8c03c725de788225cd67935e293f380604ec2e2270614aabea3",
+      "plik": "1dc2c30f9ec5f8c0.html"
+    },
+    {
+      "id": "doc-084",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,5",
+      "opis": "notowania historyczne WIG, strona 5",
+      "pobrano": "2026-11-10T09:15:16.319633Z",
+      "sha256": "d524288e0aeb3b8979e77e67ed00fad03feebf615a54c6a3d0a8d40f97edd10b",
+      "plik": "d524288e0aeb3b89.html"
+    },
+    {
+      "id": "doc-085",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,6",
+      "opis": "notowania historyczne WIG, strona 6",
+      "pobrano": "2026-11-10T09:15:17.762488Z",
+      "sha256": "6d669ee4943e1a83961c97d6c259760f2f4977e5f8038e05816110c445bd9f70",
+      "plik": "6d669ee4943e1a83.html"
+    },
+    {
+      "id": "doc-086",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/DNP.WA?range=2y&interval=1d",
+      "opis": "kurs (kontrola)",
+      "pobrano": "2026-11-10T09:15:18.599066Z",
+      "sha256": "54df94062fd15e99040404c4d44cd92c4259859dfb1c4a9ac87edbacd8ed6503",
+      "plik": "54df94062fd15e99.json"
+    },
+    {
+      "id": "doc-087",
+      "typ": "inny",
+      "zrodlo": "spółka",
+      "adres": "https://grupadino.pl/wp-content/uploads/2026/03/2025_Sprawozdanie_audytora_z_badania_Skonsolidowanego_Sprawozdania_Finansowego_Dino_Polska.zip",
+      "opis": "sprawozdanie biegłego z badania skonsolidowanego sprawozdania za 2025",
+      "pobrano": "2026-11-10T09:16:51.850133Z",
+      "sha256": "b511f6d21525af6f1f05a1668716b94e90262b10fa089ee90140f22c639034d1",
+      "plik": "b511f6d21525af6f.zip"
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "dowody": [
+    {
+      "bramka": "B1.opinia_bieglego",
+      "poziom": "ok",
+      "opis": "Opinia biegłego o skonsolidowanym sprawozdaniu za 2025 bez zastrzeżeń; kluczowa sprawa badania: nakłady inwestycyjne i aktywowanie kosztów w rzeczowych aktywach trwałych",
+      "dokument": "doc-087",
+      "cytat": "Naszym zdaniem, załączone skonsolidowane sprawozdanie finansowe Grupy Kapitałowej:"
+    },
+    {
+      "bramka": "B4.akcjonariusz_90",
+      "poziom": "ok",
+      "opis": "Akcjonariusz kontrolujący (założyciel) ma ok. połowę głosów, daleko poniżej progu przymusowego wykupu",
+      "dokument": "doc-003",
+      "strona": 12,
+      "cytat": "Tomasz Biernacki wraz z podmiotem zależnym3 ...... 501 600 000 51,16%"
+    }
+  ]
+}

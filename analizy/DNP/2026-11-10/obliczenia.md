@@ -41,7 +41,7 @@ Plik wygenerował silnik (2026-11-10). Kwoty w mln PLN. ¹ = co najmniej jedno w
 
 | Miara | Wartość | Uwagi |
 |---|---:|---|
-| Kurs | 38,15 PLN¹ |  |
+| Kurs | 38,15 PLN |  |
 | Kapitalizacja | 37 402 mln PLN¹ |  |
 | EV | 37 092 mln PLN¹ |  |
 | Koszt kapitału własnego | 10,8%¹ | stopa wolna od ryzyka + beta × premia (Damodaran) |
@@ -56,19 +56,31 @@ Plik wygenerował silnik (2026-11-10). Kwoty w mln PLN. ¹ = co najmniej jedno w
 | Implikowana marża FCF | 2,7%¹ | wariant 3, wzrost w tempie historycznym |
 | Wzrost historyczny (CAGR przychodów) | 19,3%¹ |  |
 
+## Scenariusze
+
+| Scenariusz | Prawdopodobieństwo | Wartość na akcję | Stopa zwrotu przy obecnym kursie |
+|---|---:|---:|---:|
+| byk | 20,0%¹ | 35,25 PLN | 10,2%¹ |
+| bazowy | 50,0%¹ | 22,09 PLN | 7,5%¹ |
+| niedzwiedz | 30,0%¹ | 9,48 PLN | 4,6%¹ |
+| Wartość oczekiwana na akcję | 20,94 PLN¹ |  | |
+| Potencjał oczekiwany | -45,1%¹ |  | |
+| Prawdopodobieństwo straty | 100,0%¹ |  | |
+| Asymetria (zysk ÷ strata) | 0,00¹ |  | |
+
 ## Karta w stylu Treli (informacja, nie bramka)
 
 Wynik: **4,6 / 10** z 4 filarów z 5.
 
 | Filar | Waga | Punkty | Miary |
 |---|---:|---:|---|
-| wzrost | 30% | 7,1 | cagr_przychody_3l: 9,7; cagr_eps_rozwodniony_3l: brak; cagr_zysk_netto_3l: 4,5 |
+| wzrost | 30% | 7,1 | cagr_przychody_3l: 9,7; cagr_eps_rozwodniony_3l: brak; cagr_zysk_netto_3l: 4,5; wzrost_eps_konsensus: brak |
 | jakosc | 25% | 5,8 | roic: 7,4; konwersja_fcf: 0,6; dlug_netto_do_ebitda: 10,0; altman_z2: 5,1 |
 | wycena | 20% | 1,7 | fcf_yield: 0,0; ev_ebit: 3,6; nadwyzka_wzrostu: 1,4 |
 | analitycy | 15% | brak danych | rewizje_eps_90d: brak; potencjal_do_ceny_docelowej: brak |
 | momentum | 10% | 0,0 | nadwyzka_momentum: 0,0 |
 
-Filar „analitycy”: brak danych albo pokrycie poniżej 3 analityków — nie można na nim polegać.
+Filar „analitycy”: brak danych albo 3 analityków lub mniej — nie można na nim polegać.
 
 ## Braki danych
 
@@ -110,6 +122,7 @@ Filar „analitycy”: brak danych albo pokrycie poniżej 3 analityków — nie 
 - piotroski_f.FY2023: brak liczba_akcji_rozwodniona.FY2023, liczba_akcji_rozwodniona.FY2022, marza_brutto.FY2022
 - piotroski_f.FY2024: brak liczba_akcji_rozwodniona.FY2024, liczba_akcji_rozwodniona.FY2023
 - piotroski_f.FY2025: brak liczba_akcji_rozwodniona.FY2025, liczba_akcji_rozwodniona.FY2024
+- roe.TTM2026-09-30: brak zysk_netto.TTM2026-09-30
 - wzrost_fcf_wlascicieli.FY2019: ujemna albo zerowa baza, dynamika nie ma sensu
 - wzrost_fcf_wlascicieli.FY2020: ujemna albo zerowa baza, dynamika nie ma sensu
 - wzrost_fcf_wlascicieli.FY2021: ujemna albo zerowa baza, dynamika nie ma sensu

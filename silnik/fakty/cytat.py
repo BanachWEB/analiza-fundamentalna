@@ -30,7 +30,7 @@ def ujednolic(tekst: str) -> str:
     return _ODSTEPY.sub(" ", t).strip()
 
 
-_LICZBA_SLOWO = re.compile(r"^\(?-?[\d.,]+\)?$")
+_LICZBA_SLOWO = re.compile(r"^\(?-?[\d.,]+\)?%?$")
 ODSTEP_W_LICZBIE_PT = 6.0  # grupy cyfr jednej liczby dzieli ok. 2 pt, kolumny — kilkanaście pt
 
 
@@ -79,6 +79,7 @@ def _wiersze_pdf(sciezka: str) -> tuple[tuple[tuple[str, tuple[float, ...]], ...
 
 
 def _na_liczbe(tekst: str) -> float | None:
+    tekst = tekst.rstrip("%")
     ujemna = tekst.startswith("(") and tekst.endswith(")") or tekst.startswith("-")
     t = tekst.strip("()-")
     if "," in t and "." not in t:
@@ -108,10 +109,41 @@ def tekst_dokumentu(sciezka: Path, strona: int | None) -> str:
         if not 1 <= strona <= len(strony):
             raise ValueError(f"strona {strona} poza zakresem 1–{len(strony)}")
         return strony[strona - 1]
+    if sciezka.suffix.lower() == ".zip":
+        return _tekst_zip(str(sciezka), strona)
     tresc = sciezka.read_text(encoding="utf-8", errors="replace")
     if sciezka.suffix.lower() in (".htm", ".html", ".xhtml"):
         return _tekst_html(tresc)
     return tresc
+
+
+def _tekst_zip(sciezka: str, strona: int | None) -> str:
+    """Pakiet ZIP (np. sprawozdanie biegłego z podpisem .xades): tekst pierwszego PDF albo XHTML w środku."""
+    import io
+    import tempfile
+    import zipfile
+
+    def szukaj(dane: bytes, glebokosc: int = 0):
+        z = zipfile.ZipFile(io.BytesIO(dane))
+        nazwy = sorted(z.namelist(), key=lambda n: -z.getinfo(n).file_size)
+        for n in nazwy:
+            if n.lower().endswith(".pdf"):
+                return ".pdf", z.read(n)
+        for n in nazwy:
+            if n.lower().endswith((".xhtml", ".html", ".htm")):
+                return ".html", z.read(n)
+        for n in nazwy:
+            if n.lower().endswith((".zip", ".xbri")) and glebokosc < 3:
+                return szukaj(z.read(n), glebokosc + 1)
+        raise ValueError("w pakiecie nie ma PDF ani XHTML")
+
+    rozsz, dane = szukaj(Path(sciezka).read_bytes())
+    if rozsz == ".html":
+        return _tekst_html(dane.decode("utf-8", errors="replace"))
+    tmp = Path(tempfile.gettempdir()) / f"zip-{Path(sciezka).stem}.pdf"
+    if not tmp.exists():
+        tmp.write_bytes(dane)
+    return tekst_dokumentu(tmp, strona)
 
 
 @lru_cache(maxsize=16)
@@ -119,7 +151,7 @@ def _tekst_html(tresc: str) -> str:
     """Tekst strony HTML (bez znaczników, skryptów i stylów), wiersz na blok — tego używa test cytatu."""
     from lxml import html as lhtml
 
-    drzewo = lhtml.fromstring(tresc)
+    drzewo = lhtml.fromstring(re.sub(r"^\s*<\?xml[^>]*\?>", "", tresc))
     for el in drzewo.xpath("//script|//style|//noscript"):
         el.drop_tree()
     for el in drzewo.xpath("//br|//p|//div|//tr|//li|//h1|//h2|//h3|//h4|//td"):

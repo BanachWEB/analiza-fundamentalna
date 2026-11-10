@@ -8,7 +8,7 @@
       "etap": 0,
       "kategoria": "rynek_i_status",
       "poziom": "informacja",
-      "opis": "Pokrycie analityczne małe albo nieznane — nie można na nim polegać (brak danych o liczbie analityków)",
+      "opis": "Brak danych o liczbie analityków — pokrycia nie można ocenić (dla GPW: wklejka z InvestingPro)",
       "dowody": [],
       "zrodlo": "kod",
       "testy": null,
@@ -18,11 +18,9 @@
       "id": "B0.lista_alertow",
       "etap": 0,
       "kategoria": "rynek_i_status",
-      "poziom": "ok",
-      "opis": "Spółki nie ma na Liście Alertów GPW",
-      "dowody": [
-        "doc-064"
-      ],
+      "poziom": "brak_danych",
+      "opis": "Strona GPW niedostępna: https://www.gpw.pl/lista-alertow-notowania: przerwana transmisja (RemoteDisconnected)",
+      "dowody": [],
       "zrodlo": "kod",
       "testy": null,
       "warunek_powrotu": null
@@ -31,11 +29,9 @@
       "id": "B0.oznaczenie_ciagle",
       "etap": 0,
       "kategoria": "rynek_i_status",
-      "poziom": "ok",
-      "opis": "Brak szczególnego oznaczenia GPW",
-      "dowody": [
-        "doc-065"
-      ],
+      "poziom": "brak_danych",
+      "opis": "Strona GPW niedostępna: https://www.gpw.pl/spolki-ze-szczegolnym-oznaczeniem-notowania-ciagle: przerwana transmisja (RemoteDisconnected)",
+      "dowody": [],
       "zrodlo": "kod",
       "testy": null,
       "warunek_powrotu": null
@@ -44,25 +40,34 @@
       "id": "B0.oznaczenie_jednolite",
       "etap": 0,
       "kategoria": "rynek_i_status",
-      "poziom": "ok",
-      "opis": "Brak szczególnego oznaczenia GPW",
-      "dowody": [
-        "doc-066"
-      ],
+      "poziom": "brak_danych",
+      "opis": "Strona GPW niedostępna: https://www.gpw.pl/spolki-ze-szczegolnym-oznaczeniem-notowania-jednolite: przerwana transmisja (RemoteDisconnected)",
+      "dowody": [],
       "zrodlo": "kod",
       "testy": null,
       "warunek_powrotu": null
     },
     {
-      "id": "B0.zawieszenie",
+      "id": "B0.zawieszenia",
       "etap": 0,
       "kategoria": "rynek_i_status",
-      "poziom": "ok",
-      "opis": "Brak spółki w komunikatach o zawieszeniach",
-      "dowody": [
-        "doc-067"
-      ],
+      "poziom": "brak_danych",
+      "opis": "Strona GPW niedostępna: https://www.gpw.pl/zawieszenia-i-wykluczenia: przerwana transmisja (RemoteDisconnected)",
+      "dowody": [],
       "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.opinia_bieglego",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Opinia biegłego o skonsolidowanym sprawozdaniu za 2025 bez zastrzeżeń; kluczowa sprawa badania: nakłady inwestycyjne i aktywowanie kosztów w rzeczowych aktywach trwałych",
+      "dowody": [
+        "doc-087: „Naszym zdaniem, załączone skonsolidowane sprawozdanie finansowe Grupy Kapitałowej:”"
+      ],
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     },
@@ -118,6 +123,19 @@
         "zysk_netto.FY2025"
       ],
       "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.akcjonariusz_90",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "ok",
+      "opis": "Akcjonariusz kontrolujący (założyciel) ma ok. połowę głosów, daleko poniżej progu przymusowego wykupu",
+      "dowody": [
+        "doc-003: „Tomasz Biernacki wraz z podmiotem zależnym3 ...... 501 600 000 51,16%”"
+      ],
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     }

@@ -27,6 +27,9 @@ def _archiwum(katalog: Path) -> Archiwum:
 
 
 def main() -> None:
+    import signal
+
+    signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # bez błędu przy „| head”
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = p.add_subparsers(dest="cmd", required=True)
     u = sub.add_parser("url")
