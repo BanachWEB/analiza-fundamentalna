@@ -9,6 +9,7 @@ i nie omija blokad: gdy serwis odmawia (403), zwraca błąd.
 from __future__ import annotations
 
 import os
+import re
 import tempfile
 import time
 import urllib.error
@@ -27,7 +28,7 @@ class BladPobierania(Exception):
     pass
 
 
-def pobierz(url: str, limit_s: int = 60) -> Path:
+def pobierz(url: str, limit_s: int = 60, rozszerzenie: str | None = None) -> Path:
     """Pobiera URL do pliku tymczasowego i zwraca jego ścieżkę."""
     host = urlparse(url).netloc
     odstep = _ODSTEP.get(host, 0.5)
@@ -44,9 +45,9 @@ def pobierz(url: str, limit_s: int = 60) -> Path:
         raise BladPobierania(f"{url}: {e.reason}") from None
     finally:
         _ostatnie[host] = time.monotonic()
-    rozszerzenie = Path(urlparse(url).path).suffix or ".bin"
-    if url.rstrip("/").endswith(("/financials", "/income-statement", "/balance-sheet", "/cash-flow-statement")):
-        rozszerzenie = ".html"
+    if rozszerzenie is None:
+        sufiks = Path(urlparse(url).path).suffix.lower()
+        rozszerzenie = sufiks if re.fullmatch(r"\.[a-z0-9]{1,5}", sufiks) else ".bin"
     fd, sciezka = tempfile.mkstemp(suffix=rozszerzenie, prefix="pobrane-")
     with os.fdopen(fd, "wb") as f:
         f.write(dane)

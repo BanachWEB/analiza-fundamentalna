@@ -1,0 +1,120 @@
+# Mapowanie elementów ESEF (taksonomia ifrs-full) na pozycje kanoniczne rejestru faktów.
+# Zasady jak w mapowanie-us-gaap.yaml: pierwszy element z wartością w danym okresie wygrywa.
+# Pozycje mają te same nazwy co dla USA, żeby obliczenia działały na obu rynkach.
+
+przychody:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:Revenue", "ifrs-full:RevenueFromContractsWithCustomers"]
+koszt_sprzedazy:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:CostOfSales"]
+zysk_brutto:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:GrossProfit"]
+zysk_operacyjny:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:ProfitLossFromOperatingActivities"]
+zysk_przed_opodatkowaniem:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:ProfitLossBeforeTax"]
+zysk_netto:  # przypisany akcjonariuszom jednostki dominującej (jak NetIncomeLoss w USA)
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:ProfitLossAttributableToOwnersOfParent", "ifrs-full:ProfitLoss"]
+zysk_netto_razem:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:ProfitLoss"]
+eps_rozwodniony:
+  rodzaj: okres
+  jednostka: pieniadz_na_akcje
+  znaczniki: ["ifrs-full:DilutedEarningsLossPerShare"]
+amortyzacja:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki:
+    - "ifrs-full:DepreciationAndAmortisationExpense"
+    - "ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense"
+    - "ifrs-full:DepreciationAmortisationAndImpairmentLossReversalOfImpairmentLossRecognisedInProfitOrLoss"
+przeplywy_operacyjne:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:CashFlowsFromUsedInOperatingActivities"]
+przeplywy_inwestycyjne:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:CashFlowsFromUsedInInvestingActivities"]
+przeplywy_finansowe:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:CashFlowsFromUsedInFinancingActivities"]
+zmiana_gotowki_przed_kursami:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges"]
+wplyw_kursow_na_gotowke:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:EffectOfExchangeRateChangesOnCashAndCashEquivalents"]
+zmiana_gotowki:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:IncreaseDecreaseInCashAndCashEquivalents"]
+capex:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities"]
+capex_niematerialne:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities"]
+dywidendy_wyplacone:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:DividendsPaidClassifiedAsFinancingActivities"]
+splata_leasingu:  # MSSF 16: część kapitałowa rat leasingu w przepływach finansowych
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities"]
+
+aktywa:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:Assets"]
+zobowiazania:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:Liabilities"]
+kapital_wlasny:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:EquityAttributableToOwnersOfParent"]
+kapital_wlasny_z_udzialami_niekontrolujacymi:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:Equity"]
+pasywa_razem:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:EquityAndLiabilities"]
+gotowka:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:CashAndCashEquivalents"]
+zapasy:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:Inventories", "ifrs-full:CurrentInventoriesHeldForSale"]
+naleznosci_handlowe:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:TradeAndOtherCurrentReceivables", "ifrs-full:CurrentTradeReceivables"]
+zobowiazania_leasingowe:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:LeaseLiabilities"]

@@ -163,3 +163,16 @@ def test_schemat_json_aktualny():
     katalog = Path(__file__).resolve().parents[1] / "schemat"
     for nazwa, model in (("fakty", RejestrFaktowPlik), ("dokumenty", RejestrDokumentow)):
         assert json.loads((katalog / f"{nazwa}.schema.json").read_text(encoding="utf-8")) == model.model_json_schema()
+
+
+def test_archiwum_odtwarza_brakujacy_plik(tmp_path):
+    a = Archiwum("MSFT", tmp_path / "analiza", tmp_path / "pliki")
+    src = tmp_path / "r.txt"
+    src.write_text("abc", encoding="utf-8")
+    d = a.dodaj_plik(src, TypDokumentu.inny, "test")
+    a.sciezka(d.id).chmod(0o644)
+    a.sciezka(d.id).unlink()
+    assert not a.sprawdz(d.id)
+    b = Archiwum("MSFT", tmp_path / "analiza", tmp_path / "pliki")
+    assert b.dodaj_plik(src, TypDokumentu.inny, "test").id == d.id
+    assert b.sprawdz(d.id)

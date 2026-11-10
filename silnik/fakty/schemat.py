@@ -127,7 +127,8 @@ class Jednostka(str, Enum):
 
 class TypOkresu(str, Enum):
     FY = "FY"
-    H1 = "H1"
+    H1 = "H1"  # narastająco 6 miesięcy
+    M9 = "M9"  # narastająco 9 miesięcy
     Q1 = "Q1"
     Q2 = "Q2"
     Q3 = "Q3"

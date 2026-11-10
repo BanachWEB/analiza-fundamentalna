@@ -1,0 +1,342 @@
+{
+  "opis": "Propozycje modelu z raportu za III kw. 2026 r. (doc-003, strona 4). Silnik dołącza je po teście cytatu.",
+  "fakty": [
+    {
+      "id": "przychody.FY2026M9",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 27679127,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Przychody ze sprzedaży ................................................................. 27 679 127 24 738 104 6 467 086 5 839 279"
+    },
+    {
+      "id": "przychody.FY2025M9",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2025-01-01",
+        "koniec": "2025-09-30"
+      },
+      "wartosc": 24738104,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Przychody ze sprzedaży ................................................................. 27 679 127 24 738 104 6 467 086 5 839 279"
+    },
+    {
+      "id": "zysk_operacyjny.FY2026M9",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 1550359,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Zysk z działalności operacyjnej...................................................... 1 550 359 1 563 955 362 233 369 162"
+    },
+    {
+      "id": "zysk_operacyjny.FY2025M9",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2025-01-01",
+        "koniec": "2025-09-30"
+      },
+      "wartosc": 1563955,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Zysk z działalności operacyjnej...................................................... 1 550 359 1 563 955 362 233 369 162"
+    },
+    {
+      "id": "zysk_netto_razem.FY2026M9",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 1199433,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Zysk netto ...................................................................................... 1 199 433 1 191 047 280 241 281 139"
+    },
+    {
+      "id": "zysk_netto_razem.FY2025M9",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2025-01-01",
+        "koniec": "2025-09-30"
+      },
+      "wartosc": 1191047,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Zysk netto ...................................................................................... 1 199 433 1 191 047 280 241 281 139"
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2026M9",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 1707005,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Środki pieniężne netto z działalności operacyjnej ......................... 1 707 005 1 607 340 398 833 379 403"
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2025M9",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2025-01-01",
+        "koniec": "2025-09-30"
+      },
+      "wartosc": 1607340,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Środki pieniężne netto z działalności operacyjnej ......................... 1 707 005 1 607 340 398 833 379 403"
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2026M9",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": -1842205,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Środki pieniężne netto z działalności inwestycyjnej ....................... (1 842 205) (1 568 460) (430 422) (370 225)"
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2025M9",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2025-01-01",
+        "koniec": "2025-09-30"
+      },
+      "wartosc": -1568460,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Środki pieniężne netto z działalności inwestycyjnej ....................... (1 842 205) (1 568 460) (430 422) (370 225)"
+    },
+    {
+      "id": "przeplywy_finansowe.FY2026M9",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": -43376,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Środki pieniężne netto z działalności finansowej ........................... (43 376) (354 985) (10 135) (83 792)"
+    },
+    {
+      "id": "przeplywy_finansowe.FY2025M9",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2025-01-01",
+        "koniec": "2025-09-30"
+      },
+      "wartosc": -354985,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Środki pieniężne netto z działalności finansowej ........................... (43 376) (354 985) (10 135) (83 792)"
+    },
+    {
+      "id": "zmiana_gotowki.FY2026M9",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": -178576,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Zwiększenie/(zmniejszenie) netto stanu środków pieniężnych ...... (178 576) (316 105) (41 723) (74 615)"
+    },
+    {
+      "id": "zmiana_gotowki.FY2025M9",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2025-01-01",
+        "koniec": "2025-09-30"
+      },
+      "wartosc": -316105,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Zwiększenie/(zmniejszenie) netto stanu środków pieniężnych ...... (178 576) (316 105) (41 723) (74 615)"
+    },
+    {
+      "id": "aktywa.2026-09-30",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 16175929,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Suma aktywów .......................................................................... 16 175 929 15 171 280 3 703 959 3 589 391"
+    },
+    {
+      "id": "kapital_wlasny_z_udzialami_niekontrolujacymi.2026-09-30",
+      "pozycja": "kapital_wlasny_z_udzialami_niekontrolujacymi",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 9870508,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Kapitał własny ogółem .............................................................. 9 870 508 8 671 113 2 260 146 2 051 509"
+    },
+    {
+      "id": "zobowiazania.2026-09-30",
+      "pozycja": "zobowiazania",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 6305421,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Zobowiązania i rezerwy na zobowiązania ................................. 6 305 421 6 500 167 1 443 813 1 537 882"
+    }
+  ]
+}

@@ -48,7 +48,7 @@ def pobierz_do_archiwum(ticker: str, archiwum: Archiwum) -> list:
     dokumenty = []
     for strona in STRONY:
         adres = url(ticker, strona)
-        plik = pobierz(adres)
+        plik = pobierz(adres, rozszerzenie=".html")
         try:
             dokumenty.append(archiwum.dodaj_plik(plik, TypDokumentu.strona, "Stock Analysis", adres=adres, opis=strona))
         finally:
@@ -63,8 +63,11 @@ def _tablica(html: str, start: int, klucz: str):
     return json.loads("[" + m.group(1) + "]")
 
 
-def parsuj(html: str) -> dict[tuple[str, date], float]:
-    """Zwraca {(pozycja, koniec okresu): wartość} dla lat obrotowych (bez kolumny TTM)."""
+POZYCJE_STANU = {"aktywa", "zobowiazania", "kapital_wlasny_razem"}
+
+
+def parsuj(html: str) -> dict[tuple[str, str, date], float]:
+    """Zwraca {(pozycja, typ, koniec okresu): wartość}; typ FY albo dzien (bez kolumny TTM)."""
     start = html.find("datekey:[")
     if start < 0:
         raise BladStockAnalysis("brak tablicy datekey; zmienił się układ strony")
@@ -77,11 +80,12 @@ def parsuj(html: str) -> dict[tuple[str, date], float]:
         for d, v in zip(daty, wartosci):
             if d == "TTM" or v is None:
                 continue
-            wynik[(pozycja, date.fromisoformat(d))] = float(v) * znak
+            typ = "dzien" if pozycja in POZYCJE_STANU else "FY"
+            wynik[(pozycja, typ, date.fromisoformat(d))] = float(v) * znak
     return wynik
 
 
-def parsuj_dokumenty(archiwum: Archiwum, dok_ids: list[str]) -> dict[tuple[str, date], tuple[float, str]]:
+def parsuj_dokumenty(archiwum: Archiwum, dok_ids: list[str]) -> dict[tuple[str, str, date], tuple[float, str]]:
     """Łączy dane ze stron; wartość ma przy sobie id dokumentu źródłowego."""
     wynik = {}
     for dok_id in dok_ids:

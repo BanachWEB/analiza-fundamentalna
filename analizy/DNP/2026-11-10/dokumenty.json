@@ -1,0 +1,176 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "DNP",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "esef",
+      "zrodlo": "spółka",
+      "adres": "https://grupadino.pl/wp-content/uploads/2026/03/2025_Grupa_Dino_Polska_Sprawozdanie_Finansowe_MSSF.zip",
+      "opis": "raport roczny ESEF",
+      "pobrano": "2026-11-10T07:56:06.777649Z",
+      "sha256": "20e258fc994ce449603a3a0e850af46db86bd6bcbf1ff3ab21f2be7ef7cce182",
+      "plik": "20e258fc994ce449.zip"
+    },
+    {
+      "id": "doc-002",
+      "typ": "esef",
+      "zrodlo": "spółka",
+      "adres": "https://grupadino.pl/wp-content/uploads/2025/04/2024_Grupa_Dino_Polska_Sprawozdanie_Finansowe_MSSF.zip",
+      "opis": "raport roczny ESEF",
+      "pobrano": "2026-11-10T07:56:08.222008Z",
+      "sha256": "6ece7c3902e7648956f3929050d987723c6a270d877f89752a81a9e0c75f8883",
+      "plik": "6ece7c3902e76489.zip"
+    },
+    {
+      "id": "doc-003",
+      "typ": "raport_pdf",
+      "zrodlo": "spółka",
+      "adres": "https://grupadino.pl/wp-content/uploads/2026/11/Dino-Polska-S.A.-raport-za-III-kw.-2026.pdf",
+      "opis": "raport okresowy PDF",
+      "pobrano": "2026-11-10T07:56:09.006664Z",
+      "sha256": "e692654d1249c9f8d2ebcc33bdceab366f0a3a9ff164d02ed5bbad58576fa558",
+      "plik": "e692654d1249c9f8.pdf"
+    },
+    {
+      "id": "doc-004",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/DNP",
+      "opis": "rachunek roczne",
+      "pobrano": "2026-11-10T07:56:10.003658Z",
+      "sha256": "6c3bbecfafc33ee0813beaeaef9590013040450095f771534cd26e5d4188db26",
+      "plik": "6c3bbecfafc33ee0.html"
+    },
+    {
+      "id": "doc-005",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/DNP,Q",
+      "opis": "rachunek kwartalne",
+      "pobrano": "2026-11-10T07:56:11.427774Z",
+      "sha256": "9976b7439968f3dc23fffbc8df4942225dbebce4575846a6045a5226c2c6b191",
+      "plik": "9976b7439968f3dc.html"
+    },
+    {
+      "id": "doc-006",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/DNP",
+      "opis": "bilans roczne",
+      "pobrano": "2026-11-10T07:56:13.025793Z",
+      "sha256": "e465fa46c5bdeeba839bf0dff1942cacd4dea59d9738548e140f2a4e94b9feb4",
+      "plik": "e465fa46c5bdeeba.html"
+    },
+    {
+      "id": "doc-007",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/DNP,Q",
+      "opis": "bilans kwartalne",
+      "pobrano": "2026-11-10T07:56:14.809995Z",
+      "sha256": "d2f32aa45f5127783abf9e8672c8540d3c291ce203c79ebb41877a451979f2e8",
+      "plik": "d2f32aa45f512778.html"
+    },
+    {
+      "id": "doc-008",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/DNP",
+      "opis": "przeplywy roczne",
+      "pobrano": "2026-11-10T07:56:16.551954Z",
+      "sha256": "e65606fedf104b9037622427f9d857463a6952c19a45f66eb14526f51b9d4273",
+      "plik": "e65606fedf104b90.html"
+    },
+    {
+      "id": "doc-009",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/DNP,Q",
+      "opis": "przeplywy kwartalne",
+      "pobrano": "2026-11-10T07:56:18.305238Z",
+      "sha256": "0afd448fde13660e8b34e8eff90b852a102ef9791a35681a5c5c86d6fc5a8b13",
+      "plik": "0afd448fde13660e.html"
+    },
+    {
+      "id": "doc-010",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/DNP",
+      "opis": "rachunek roczne",
+      "pobrano": "2026-11-10T07:57:09.790136Z",
+      "sha256": "df971388b646f4064618f3892bba7e474ba3b120397135fab899b371af201ae0",
+      "plik": "df971388b646f406.html"
+    },
+    {
+      "id": "doc-011",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/DNP,Q",
+      "opis": "rachunek kwartalne",
+      "pobrano": "2026-11-10T07:57:11.425493Z",
+      "sha256": "27fd86c6d5c82fc57e65ee32420a26a4ea508d6799441ed2776c3edf9fad0203",
+      "plik": "27fd86c6d5c82fc5.html"
+    },
+    {
+      "id": "doc-012",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/DNP",
+      "opis": "rachunek roczne",
+      "pobrano": "2026-11-10T07:59:17.376036Z",
+      "sha256": "40648cb209a74738baa8b07aa7d872e8d8737eff168f2009de17735ad45dd53b",
+      "plik": "40648cb209a74738.html"
+    },
+    {
+      "id": "doc-013",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/DNP,Q",
+      "opis": "rachunek kwartalne",
+      "pobrano": "2026-11-10T07:59:19.048168Z",
+      "sha256": "04d341a33a6554e3dd036d5b035971770720fc5f641e21ca17d209314764a74e",
+      "plik": "04d341a33a6554e3.html"
+    },
+    {
+      "id": "doc-014",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/DNP",
+      "opis": "bilans roczne",
+      "pobrano": "2026-11-10T07:59:20.748057Z",
+      "sha256": "46d0f8db53812f4086fc554bad49a8a677450ddf946b8f726e8ecf5e5bc9fe45",
+      "plik": "46d0f8db53812f40.html"
+    },
+    {
+      "id": "doc-015",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/DNP,Q",
+      "opis": "bilans kwartalne",
+      "pobrano": "2026-11-10T07:59:22.486469Z",
+      "sha256": "192e4f24936219a2c8726b1080d629f03b03b9c2a731fde1a5a28eb3e20fdd7e",
+      "plik": "192e4f24936219a2.html"
+    },
+    {
+      "id": "doc-016",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/DNP",
+      "opis": "przeplywy roczne",
+      "pobrano": "2026-11-10T07:59:24.008790Z",
+      "sha256": "96dffb11085e929dbcf7b3f3194bebb285b13f8910e572ee1273f0f6e2e99dc3",
+      "plik": "96dffb11085e929d.html"
+    },
+    {
+      "id": "doc-017",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/DNP,Q",
+      "opis": "przeplywy kwartalne",
+      "pobrano": "2026-11-10T07:59:25.797000Z",
+      "sha256": "c4bf952c2ab36ae79163e4993df7aa1fe40eb4c3e7893e094c572b719a88d6ee",
+      "plik": "c4bf952c2ab36ae7.html"
+    }
+  ]
+}

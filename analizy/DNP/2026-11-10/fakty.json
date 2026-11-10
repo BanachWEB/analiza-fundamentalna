@@ -1,0 +1,2300 @@
+{
+  "ticker": "DNP",
+  "data_analizy": "2026-11-10",
+  "fakty": [
+    {
+      "id": "aktywa.2022-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2022-12-31"
+      },
+      "wartosc": 9003059.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:Assets",
+        "kontekst": "C1465",
+        "tekst": "9 003 059"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "drugie_zrodlo:doc-014:9.00306e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "aktywa.2023-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2023-12-31"
+      },
+      "wartosc": 10377715.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:Assets",
+        "kontekst": "C1463",
+        "tekst": "10 377 715"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "drugie_zrodlo:doc-014:1.03777e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "aktywa.2024-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2024-12-31"
+      },
+      "wartosc": 13055794.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:Assets",
+        "kontekst": "C1577",
+        "tekst": "13 055 794"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "drugie_zrodlo:doc-014:1.30558e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "aktywa.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 15171280.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:Assets",
+        "kontekst": "C1575",
+        "tekst": "15 171 280"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "drugie_zrodlo:doc-014:1.51713e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "aktywa.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 16175929.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Suma aktywów .......................................................................... 16 175 929 15 171 280 3 703 959 3 589 391",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "drugie_zrodlo:doc-014:1.61759e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "amortyzacja.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 356828.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense",
+        "kontekst": "C1464",
+        "tekst": "356 828"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-016:3.56828e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "amortyzacja.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 409179.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense",
+        "kontekst": "C1578",
+        "tekst": "409 179"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-016:4.09179e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "amortyzacja.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 505031.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:AdjustmentsForDepreciationAndAmortisationExpense",
+        "kontekst": "C1576",
+        "tekst": "505 031"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-016:5.05031e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "capex.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "capex",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 1172863.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
+        "kontekst": "C1464",
+        "tekst": "1 172 863"
+      }
+    },
+    {
+      "id": "capex.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "capex",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 1561914.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
+        "kontekst": "C1578",
+        "tekst": "1 561 914"
+      }
+    },
+    {
+      "id": "capex.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "capex",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 2087043.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
+        "kontekst": "C1576",
+        "tekst": "2 087 043"
+      }
+    },
+    {
+      "id": "gotowka.2022-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2022-12-31"
+      },
+      "wartosc": 382718.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashAndCashEquivalents",
+        "kontekst": "C1465",
+        "tekst": "382 718"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-014:3.82718e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "gotowka.2023-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2023-12-31"
+      },
+      "wartosc": 218389.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashAndCashEquivalents",
+        "kontekst": "C1579",
+        "tekst": "218 389"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-014:2.18389e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "gotowka.2024-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2024-12-31"
+      },
+      "wartosc": 891022.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashAndCashEquivalents",
+        "kontekst": "C1577",
+        "tekst": "891 022"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-014:8.91022e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "gotowka.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 954814.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashAndCashEquivalents",
+        "kontekst": "C1575",
+        "tekst": "954 814"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-014:9.54814e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2022-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2022-12-31"
+      },
+      "wartosc": 4203783.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:EquityAttributableToOwnersOfParent",
+        "kontekst": "C1465",
+        "tekst": "4 203 783"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-014:4.20378e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2023-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2023-12-31"
+      },
+      "wartosc": 5605311.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:EquityAttributableToOwnersOfParent",
+        "kontekst": "C1463",
+        "tekst": "5 605 311"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-014:5.60531e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2024-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2024-12-31"
+      },
+      "wartosc": 7085151.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:EquityAttributableToOwnersOfParent",
+        "kontekst": "C1577",
+        "tekst": "7 085 151"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-014:7.08515e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 8653393.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:EquityAttributableToOwnersOfParent",
+        "kontekst": "C1575",
+        "tekst": "8 653 393"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-014:8.65339e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "kapital_wlasny_z_udzialami_niekontrolujacymi.2022-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny_z_udzialami_niekontrolujacymi",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2022-12-31"
+      },
+      "wartosc": 4203783.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:Equity",
+        "kontekst": "C1465",
+        "tekst": "4 203 783"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "kapital_wlasny_z_udzialami_niekontrolujacymi.2023-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny_z_udzialami_niekontrolujacymi",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2023-12-31"
+      },
+      "wartosc": 5605311.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:Equity",
+        "kontekst": "C1579",
+        "tekst": "5 605 311"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "kapital_wlasny_z_udzialami_niekontrolujacymi.2024-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny_z_udzialami_niekontrolujacymi",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2024-12-31"
+      },
+      "wartosc": 7102434.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:Equity",
+        "kontekst": "C1577",
+        "tekst": "7 102 434"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "kapital_wlasny_z_udzialami_niekontrolujacymi.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny_z_udzialami_niekontrolujacymi",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 8671113.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:Equity",
+        "kontekst": "C1575",
+        "tekst": "8 671 113"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "kapital_wlasny_z_udzialami_niekontrolujacymi.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny_z_udzialami_niekontrolujacymi",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 9870508.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Kapitał własny ogółem .............................................................. 9 870 508 8 671 113 2 260 146 2 051 509",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 19741459.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:CostOfSales",
+        "kontekst": "C1464",
+        "tekst": "19 741 459"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 22463233.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:CostOfSales",
+        "kontekst": "C1578",
+        "tekst": "22 463 233"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 25723078.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:CostOfSales",
+        "kontekst": "C1576",
+        "tekst": "25 723 078"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "naleznosci_handlowe.2022-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "naleznosci_handlowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2022-12-31"
+      },
+      "wartosc": 274872.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:TradeAndOtherCurrentReceivables",
+        "kontekst": "C1465",
+        "tekst": "274 872"
+      }
+    },
+    {
+      "id": "naleznosci_handlowe.2023-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "naleznosci_handlowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2023-12-31"
+      },
+      "wartosc": 330389.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:TradeAndOtherCurrentReceivables",
+        "kontekst": "C1463",
+        "tekst": "330 389"
+      }
+    },
+    {
+      "id": "naleznosci_handlowe.2024-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "naleznosci_handlowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2024-12-31"
+      },
+      "wartosc": 376480.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:TradeAndOtherCurrentReceivables",
+        "kontekst": "C1577",
+        "tekst": "376 480"
+      }
+    },
+    {
+      "id": "naleznosci_handlowe.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "naleznosci_handlowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 372038.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:TradeAndOtherCurrentReceivables",
+        "kontekst": "C1575",
+        "tekst": "372 038"
+      }
+    },
+    {
+      "id": "pasywa_razem.2022-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2022-12-31"
+      },
+      "wartosc": 9003059.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:EquityAndLiabilities",
+        "kontekst": "C1465",
+        "tekst": "9 003 059"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
+        "drugie_zrodlo:doc-014:9.00306e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "pasywa_razem.2023-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2023-12-31"
+      },
+      "wartosc": 10377715.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:EquityAndLiabilities",
+        "kontekst": "C1463",
+        "tekst": "10 377 715"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
+        "drugie_zrodlo:doc-014:1.03777e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "pasywa_razem.2024-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2024-12-31"
+      },
+      "wartosc": 13055794.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:EquityAndLiabilities",
+        "kontekst": "C1577",
+        "tekst": "13 055 794"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
+        "drugie_zrodlo:doc-014:1.30558e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "pasywa_razem.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 15171280.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:EquityAndLiabilities",
+        "kontekst": "C1575",
+        "tekst": "15 171 280"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%",
+        "drugie_zrodlo:doc-014:1.51713e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": -777613.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashFlowsFromUsedInFinancingActivities",
+        "kontekst": "C1464",
+        "tekst": "777 613"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
+        "drugie_zrodlo:doc-016:-7.77613e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": -287911.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashFlowsFromUsedInFinancingActivities",
+        "kontekst": "C1578",
+        "tekst": "287 911"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
+        "drugie_zrodlo:doc-016:-2.87911e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -558599.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashFlowsFromUsedInFinancingActivities",
+        "kontekst": "C1576",
+        "tekst": "558 599"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
+        "drugie_zrodlo:doc-016:-5.58599e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -354985.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Środki pieniężne netto z działalności finansowej ........................... (43 376) (354 985) (10 135) (83 792)",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
+        "drugie_zrodlo:doc-017:-3.54985e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -43376.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Środki pieniężne netto z działalności finansowej ........................... (43 376) (354 985) (10 135) (83 792)",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
+        "drugie_zrodlo:doc-017:-4.3376e+07:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": -1158256.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashFlowsFromUsedInInvestingActivities",
+        "kontekst": "C1464",
+        "tekst": "1 158 256"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
+        "drugie_zrodlo:doc-016:-1.15826e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": -1596909.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashFlowsFromUsedInInvestingActivities",
+        "kontekst": "C1578",
+        "tekst": "1 596 909"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
+        "drugie_zrodlo:doc-016:-1.59691e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -2075054.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashFlowsFromUsedInInvestingActivities",
+        "kontekst": "C1576",
+        "tekst": "2 075 054"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
+        "drugie_zrodlo:doc-016:-2.07505e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -1568460.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Środki pieniężne netto z działalności inwestycyjnej ....................... (1 842 205) (1 568 460) (430 422) (370 225)",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
+        "drugie_zrodlo:doc-017:-1.56846e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -1842205.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Środki pieniężne netto z działalności inwestycyjnej ....................... (1 842 205) (1 568 460) (430 422) (370 225)",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
+        "drugie_zrodlo:doc-017:-1.8422e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 1771540.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+        "kontekst": "C1464",
+        "tekst": "1 771 540"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
+        "drugie_zrodlo:doc-016:1.77154e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 2557453.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+        "kontekst": "C1578",
+        "tekst": "2 557 453"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%",
+        "drugie_zrodlo:doc-016:2.55745e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 2697445.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:CashFlowsFromUsedInOperatingActivities",
+        "kontekst": "C1576",
+        "tekst": "2 697 445"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
+        "drugie_zrodlo:doc-016:2.69744e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 1607340.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Środki pieniężne netto z działalności operacyjnej ......................... 1 707 005 1 607 340 398 833 379 403",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
+        "drugie_zrodlo:doc-017:1.60734e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 1707005.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Środki pieniężne netto z działalności operacyjnej ......................... 1 707 005 1 607 340 398 833 379 403",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
+        "drugie_zrodlo:doc-017:1.707e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przychody.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 25666255.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:Revenue",
+        "kontekst": "C1464",
+        "tekst": "25 666 255"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
+        "drugie_zrodlo:doc-012:2.56663e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przychody.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 29273792.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:Revenue",
+        "kontekst": "C1578",
+        "tekst": "29 273 792"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
+        "drugie_zrodlo:doc-012:2.92738e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przychody.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 33634155.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:Revenue",
+        "kontekst": "C1576",
+        "tekst": "33 634 155"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
+        "drugie_zrodlo:doc-012:3.36342e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przychody.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 24738104.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Przychody ze sprzedaży ................................................................. 27 679 127 24 738 104 6 467 086 5 839 279",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "drugie_zrodlo:doc-013:2.47381e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "przychody.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 27679127.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Przychody ze sprzedaży ................................................................. 27 679 127 24 738 104 6 467 086 5 839 279",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "drugie_zrodlo:doc-013:2.76791e+10:0.00%:ok"
+      ]
+    },
+    {
+      "id": "splata_leasingu.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 25837.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities",
+        "kontekst": "C1464",
+        "tekst": "25 837"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 43861.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities",
+        "kontekst": "C1578",
+        "tekst": "43 861"
+      }
+    },
+    {
+      "id": "splata_leasingu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "splata_leasingu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 72333.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities",
+        "kontekst": "C1576",
+        "tekst": "72 333"
+      }
+    },
+    {
+      "id": "zapasy.2022-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2022-12-31"
+      },
+      "wartosc": 1978778.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:Inventories",
+        "kontekst": "C1465",
+        "tekst": "1 978 778"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-014:1.97878e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zapasy.2023-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2023-12-31"
+      },
+      "wartosc": 2638859.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:Inventories",
+        "kontekst": "C1463",
+        "tekst": "2 638 859"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-014:2.63886e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zapasy.2024-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2024-12-31"
+      },
+      "wartosc": 3081444.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:Inventories",
+        "kontekst": "C1577",
+        "tekst": "3 081 444"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-014:3.08144e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zapasy.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 3548100.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:Inventories",
+        "kontekst": "C1575",
+        "tekst": "3 548 100"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-014:3.5481e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 672633.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:IncreaseDecreaseInCashAndCashEquivalents",
+        "kontekst": "C1578",
+        "tekst": "672 633"
+      }
+    },
+    {
+      "id": "zmiana_gotowki.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 63792.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:IncreaseDecreaseInCashAndCashEquivalents",
+        "kontekst": "C1576",
+        "tekst": "63 792"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -316105.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Zwiększenie/(zmniejszenie) netto stanu środków pieniężnych ...... (178 576) (316 105) (41 723) (74 615)",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -178576.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Zwiększenie/(zmniejszenie) netto stanu środków pieniężnych ...... (178 576) (316 105) (41 723) (74 615)",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki_przed_kursami.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki_przed_kursami",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": -164329.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges",
+        "kontekst": "C1464",
+        "tekst": "164 329"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki_przed_kursami.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki_przed_kursami",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 672633.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges",
+        "kontekst": "C1462",
+        "tekst": "672 633"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki_przed_kursami:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zobowiazania.2022-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2022-12-31"
+      },
+      "wartosc": 4799276.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:Liabilities",
+        "kontekst": "C1465",
+        "tekst": "4 799 276"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zobowiazania.2023-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2023-12-31"
+      },
+      "wartosc": 4772404.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:Liabilities",
+        "kontekst": "C1463",
+        "tekst": "4 772 404"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zobowiazania.2024-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2024-12-31"
+      },
+      "wartosc": 5953360.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:Liabilities",
+        "kontekst": "C1577",
+        "tekst": "5 953 360"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zobowiazania.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 6500167.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:Liabilities",
+        "kontekst": "C1575",
+        "tekst": "6 500 167"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zobowiazania.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 6305421.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Zobowiązania i rezerwy na zobowiązania ................................. 6 305 421 6 500 167 1 443 813 1 537 882",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zysk_brutto.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 5924796.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:GrossProfit",
+        "kontekst": "C1464",
+        "tekst": "5 924 796"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_brutto.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 6810559.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:GrossProfit",
+        "kontekst": "C1578",
+        "tekst": "6 810 559"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_brutto.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 7911077.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:GrossProfit",
+        "kontekst": "C1576",
+        "tekst": "7 911 077"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_netto.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 1405327.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+        "kontekst": "C1464",
+        "tekst": "1 405 327"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-012:1.40533e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_netto.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 1504980.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+        "kontekst": "C1578",
+        "tekst": "1 504 980"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-012:1.50498e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_netto.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 1558360.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+        "kontekst": "C1576",
+        "tekst": "1 558 360"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-012:1.55836e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_netto_razem.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 1405327.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:ProfitLoss",
+        "kontekst": "C1464",
+        "tekst": "1 405 327"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-012:1.40533e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_netto_razem.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 1505729.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:ProfitLoss",
+        "kontekst": "C1578",
+        "tekst": "1 505 729"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-012:1.50573e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_netto_razem.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 1558797.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:ProfitLoss",
+        "kontekst": "C1576",
+        "tekst": "1 558 797"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-012:1.5588e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_netto_razem.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 1191047.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Zysk netto ...................................................................................... 1 199 433 1 191 047 280 241 281 139",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "drugie_zrodlo:doc-013:1.19105e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_netto_razem.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto_razem",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 1199433.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Zysk netto ...................................................................................... 1 199 433 1 191 047 280 241 281 139",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "drugie_zrodlo:doc-013:1.19943e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 1875855.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:ProfitLossFromOperatingActivities",
+        "kontekst": "C1464",
+        "tekst": "1 875 855"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-012:1.87586e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 1908330.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:ProfitLossFromOperatingActivities",
+        "kontekst": "C1578",
+        "tekst": "1 908 330"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-012:1.90833e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 2041282.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:ProfitLossFromOperatingActivities",
+        "kontekst": "C1576",
+        "tekst": "2 041 282"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-012:2.04128e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 1563955.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 1
+      },
+      "cytat": "Zysk z działalności operacyjnej...................................................... 1 550 359 1 563 955 362 233 369 162",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "drugie_zrodlo:doc-013:1.56396e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 1550359.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "zweryfikowany",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 4,
+        "tabela": "Wybrane dane finansowe",
+        "kolumna": 0
+      },
+      "cytat": "Zysk z działalności operacyjnej...................................................... 1 550 359 1 563 955 362 233 369 162",
+      "kontrole": [
+        "test_cytatu:ok:ok",
+        "drugie_zrodlo:doc-013:1.55036e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 1738981.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-002",
+      "miejsce": {
+        "xbrl": "ifrs-full:ProfitLossBeforeTax",
+        "kontekst": "C1464",
+        "tekst": "1 738 981"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-012:1.73898e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 1793563.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:ProfitLossBeforeTax",
+        "kontekst": "C1578",
+        "tekst": "1 793 563"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-012:1.79356e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 1926653.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "ifrs-full:ProfitLossBeforeTax",
+        "kontekst": "C1576",
+        "tekst": "1 926 653"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-012:1.92665e+09:0.00%:ok"
+      ]
+    }
+  ]
+}

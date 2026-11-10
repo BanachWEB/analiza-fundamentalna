@@ -112,8 +112,8 @@ def test_drugie_zrodlo_z_aliasem_i_tolerancja():
     r.dodaj(fakt("kapital_wlasny_z_udzialami_niekontrolujacymi.2026-06-30", 100))
     r.dodaj(fakt("przychody.FY2026", 1000, typ="FY"))
     dane = {
-        ("kapital_wlasny_razem", date(2026, 6, 30)): (100.2, "doc-002"),
-        ("przychody", date(2026, 6, 30)): (1010, "doc-002"),  # 1% różnicy
+        ("kapital_wlasny_razem", "dzien", date(2026, 6, 30)): (100.2, "doc-002"),
+        ("przychody", "FY", date(2026, 6, 30)): (1010, "doc-002"),  # 1% różnicy
     }
     drugie_zrodlo(r, dane, Raport())
     assert r["kapital_wlasny_z_udzialami_niekontrolujacymi.2026-06-30"].status == Status.zweryfikowany
@@ -135,11 +135,11 @@ def test_parser_stock_analysis():
     html = ('...data:{datekey:["TTM","2026-06-30","2025-06-30"],fiscalYear:["2027","2026","2025"],'
             'revenue:[346,331,281],capex:[-10,-9,null],equity:[5,4,3]}...')
     d = stockanalysis.parsuj(html)
-    assert d[("przychody", date(2026, 6, 30))] == 331
-    assert d[("capex", date(2026, 6, 30))] == 9  # znak odwrócony
-    assert ("capex", date(2025, 6, 30)) not in d  # null pominięty
-    assert ("przychody", "TTM") not in d
-    assert d[("kapital_wlasny_razem", date(2025, 6, 30))] == 3
+    assert d[("przychody", "FY", date(2026, 6, 30))] == 331
+    assert d[("capex", "FY", date(2026, 6, 30))] == 9  # znak odwrócony
+    assert ("capex", "FY", date(2025, 6, 30)) not in d  # null pominięty
+    assert len([k for k in d if k[0] == "przychody"]) == 2  # bez kolumny TTM
+    assert d[("kapital_wlasny_razem", "dzien", date(2025, 6, 30))] == 3
 
 
 def test_parser_bez_danych_zglasza_blad():

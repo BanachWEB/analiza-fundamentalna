@@ -59,9 +59,13 @@ class Archiwum:
         sciezka = Path(sciezka)
         sha = sha256_pliku(sciezka)
         istniejacy = self.po_sha(sha)
-        if istniejacy:
-            return istniejacy
         self.katalog_plikow.mkdir(parents=True, exist_ok=True)
+        if istniejacy:
+            cel = self.katalog_plikow / istniejacy.plik
+            if not cel.exists():  # wpis jest, a pliku brak (np. nowa sesja): odtwarzamy plik
+                shutil.copyfile(sciezka, cel)
+                cel.chmod(0o444)
+            return istniejacy
         nazwa = f"{sha[:16]}{sciezka.suffix.lower()}"
         cel = self.katalog_plikow / nazwa
         if not cel.exists():
@@ -101,6 +105,13 @@ class Archiwum:
 
     def ids(self) -> list[str]:
         return [d.id for d in self.rejestr.dokumenty]
+
+    def po_adresie(self, adres: str) -> Optional[Dokument]:
+        """Ostatni dokument pobrany z tego adresu, jeśli jego plik nadal jest w archiwum i ma zgodną sumę."""
+        for d in reversed(self.rejestr.dokumenty):
+            if d.adres == adres and self.sprawdz(d.id):
+                return d
+        return None
 
     def po_sha(self, sha: str) -> Optional[Dokument]:
         return next((d for d in self.rejestr.dokumenty if d.sha256 == sha), None)

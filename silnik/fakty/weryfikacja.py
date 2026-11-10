@@ -64,7 +64,7 @@ def _po_okresie(rejestr: RejestrFaktow) -> dict[str, dict[str, Fakt]]:
     """sufiks okresu (np. FY2026, 2026-06-30) → {pozycja: fakt}; tylko fakty raportowane."""
     wynik: dict[str, dict[str, Fakt]] = {}
     for f in rejestr.fakty():
-        if f.rodzaj.value != "raportowany":
+        if f.rodzaj.value != "raportowany" or f.status == Status.odrzucony:
             continue
         sufiks = f.id.split(".", 1)[1]
         wynik.setdefault(sufiks, {})[f.pozycja] = f
@@ -74,8 +74,8 @@ def _po_okresie(rejestr: RejestrFaktow) -> dict[str, dict[str, Fakt]]:
 def _tozsamosc(rejestr, raport, okres, nazwa, lewa: list[tuple[str, int]], prawa: str, pozycje: dict, tol: float):
     if prawa not in pozycje or not all(p in pozycje for p, _ in lewa):
         return
-    suma = sum(znak * pozycje[p].wartosc for p, znak in lewa)
-    wartosc_prawa = pozycje[prawa].wartosc
+    suma = sum(znak * pozycje[p].wartosc_bazowa() for p, znak in lewa)
+    wartosc_prawa = pozycje[prawa].wartosc_bazowa()
     r = _roznica(suma, wartosc_prawa)
     ok = r <= tol
     ids = [pozycje[p].id for p, _ in lewa] + [pozycje[prawa].id]
@@ -96,7 +96,13 @@ def tozsamosci(rejestr: RejestrFaktow, raport: Optional[Raport] = None) -> Rapor
         _tozsamosc(rejestr, raport, okres, "przeplywy=zmiana_gotowki",
                    [("przeplywy_operacyjne", 1), ("przeplywy_inwestycyjne", 1), ("przeplywy_finansowe", 1),
                     ("wplyw_kursow_na_gotowke", 1)], "zmiana_gotowki", poz, TOLERANCJA_TOZSAMOSCI)
-        if "wplyw_kursow_na_gotowke" not in poz:
+        _tozsamosc(rejestr, raport, okres, "przeplywy=zmiana_gotowki_przed_kursami",
+                   [("przeplywy_operacyjne", 1), ("przeplywy_inwestycyjne", 1), ("przeplywy_finansowe", 1)],
+                   "zmiana_gotowki_przed_kursami", poz, TOLERANCJA_TOZSAMOSCI)
+        _tozsamosc(rejestr, raport, okres, "zmiana_przed_kursami+kursy=zmiana_gotowki",
+                   [("zmiana_gotowki_przed_kursami", 1), ("wplyw_kursow_na_gotowke", 1)],
+                   "zmiana_gotowki", poz, TOLERANCJA_TOZSAMOSCI)
+        if "wplyw_kursow_na_gotowke" not in poz and "zmiana_gotowki_przed_kursami" not in poz:
             # Spółka nie podaje wpływu kursów (np. Apple). Gdy w rzeczywistości ma taką pozycję
             # pod innym znacznikiem, tożsamość nie wyjdzie i fakt dostanie konflikt — to dobrze.
             _tozsamosc(rejestr, raport, okres, "przeplywy=zmiana_gotowki(bez_kursow)",
@@ -107,27 +113,33 @@ def tozsamosci(rejestr: RejestrFaktow, raport: Optional[Raport] = None) -> Rapor
 
 def drugie_zrodlo(
     rejestr: RejestrFaktow,
-    dane: dict[tuple[str, date], tuple[float, str]],
+    dane: dict[tuple[str, str, date], tuple[float, str]],
     raport: Optional[Raport] = None,
     tol: float = TOLERANCJA_DRUGIE_ZRODLO,
 ) -> Raport:
-    """Porównuje fakty roczne i stany na koniec roku z danymi z drugiego źródła."""
+    """Porównuje fakty z danymi z drugiego źródła: klucz (pozycja, grupa okresu, koniec), wartości w jednostkach."""
     raport = raport or Raport()
     fakty = {
-        (f.pozycja, f.okres.koniec): f
+        (f.pozycja, grupa_okresu(f), f.okres.koniec): f
         for f in rejestr.fakty()
-        if f.rodzaj.value == "raportowany" and f.okres.typ.value in ("FY", "dzien")
+        if f.rodzaj.value == "raportowany" and f.status != Status.odrzucony
     }
-    for (pozycja2, koniec), (wartosc2, dok2) in sorted(dane.items(), key=lambda x: (x[0][0], x[0][1])):
-        f = next((fakty[(p, koniec)] for p in ALIASY.get(pozycja2, [pozycja2]) if (p, koniec) in fakty), None)
+    for (pozycja2, typ, koniec), (wartosc2, dok2) in sorted(dane.items(), key=lambda x: (x[0][0], x[0][1], x[0][2])):
+        f = next((fakty[(p, typ, koniec)] for p in ALIASY.get(pozycja2, [pozycja2]) if (p, typ, koniec) in fakty), None)
         if f is None:
             continue
-        r = _roznica(f.wartosc, wartosc2)
+        r = _roznica(f.wartosc_bazowa(), wartosc2)
         ok = r <= tol
         wpis = f"drugie_zrodlo:{dok2}:{wartosc2:g}:{r:.2%}:{'ok' if ok else 'blad'}"
         _oznacz(rejestr, [f.id], wpis, ok)
         raport.dodaj(WynikKontroli("drugie_zrodlo", f.id.split(".", 1)[1], ok, [f.id], f"{dok2}: różnica {r:.2%}"))
     return raport
+
+
+def grupa_okresu(f: Fakt) -> str:
+    """FY, Q (dowolny kwartał), H1, M9 albo dzien — klucz porównania z drugim źródłem."""
+    t = f.okres.typ.value
+    return "Q" if t in ("Q1", "Q2", "Q3", "Q4") else t
 
 
 def pozycje_przestarzale(rejestr: RejestrFaktow) -> list[str]:
