@@ -54,6 +54,22 @@ def format_(f: Optional[Fakt]) -> str:
     return s.replace(",", " ").replace(".", ",") + ZNAK[f.status]
 
 
+def panel_md(k: Kalkulator, wynik: dict) -> list[str]:
+    """Tabela panelu wskaźników: ostatnie 5 lat i TTM."""
+    ttm = wynik.get("ttm")
+    lata = k.okresy_fy()[-5:]
+    kolumny = [f.id.split(".", 1)[1] for f in lata]
+    if ttm and k.jest(f"przychody.TTM{ttm.isoformat()}") and not any(f.okres.koniec == ttm for f in lata):
+        kolumny.append(f"TTM{ttm.isoformat()}")
+    naglowki = [S if not S.startswith("TTM") else f"TTM {S[8:10]}.{S[3:7]}" for S in kolumny]
+    linie = ["| Wskaźnik | " + " | ".join(naglowki) + " |", "|---|" + "---:|" * len(kolumny)]
+    for poz, nazwa in WIERSZE:
+        linie.append(f"| {nazwa} | " + " | ".join(format_(k.fakt(f"{poz}.{S}")) for S in kolumny) + " |")
+    linie += ["", f"Kwoty w mln {lata[-1].waluta if lata else ''}. ¹ = co najmniej jedno wejście z jednego źródła; "
+              "‼ = konflikt źródeł; — = brak danych. TTM = ostatnie 12 miesięcy."]
+    return linie
+
+
 def obliczenia_md(k: Kalkulator, wynik: dict) -> str:
     ttm = wynik.get("ttm")
     lata = k.okresy_fy()[-5:]
@@ -116,13 +132,12 @@ def _wiersz(k: Kalkulator, nazwa: str, fid: Optional[str], uwaga: str = "") -> s
     return f"| {nazwa} | {tekst} | {uwaga} |"
 
 
-def _wycena_md(k: Kalkulator, wynik: dict) -> list[str]:
+def wycena_tabela(k: Kalkulator, wynik: dict) -> list[str]:
     w = wynik.get("wycena") or {}
     if not w.get("kapitalizacja"):
-        return ["", "## Wycena", "", "Brak wyceny: brak kursu albo liczby akcji (szczegóły w brakach)."]
+        return ["Brak wyceny: brak kursu albo liczby akcji."]
     cap = k.fakt(w["kapitalizacja"])
-    linie = ["", f"## Co jest w cenie (kurs z {cap.okres.koniec.isoformat()}, przepływy: {w.get('okres_bazowy')})", "",
-             "| Miara | Wartość | Uwagi |", "|---|---:|---|"]
+    linie = ["| Miara | Wartość | Uwagi |", "|---|---:|---|"]
     kurs = next((x for x in cap.wejscia if x.startswith("kurs.")), None)
     linie.append(_wiersz(k, "Kurs", kurs))
     linie.append(_wiersz(k, "Kapitalizacja", w["kapitalizacja"]))
@@ -138,19 +153,29 @@ def _wycena_md(k: Kalkulator, wynik: dict) -> list[str]:
     linie.append(_wiersz(k, "Implikowany okres przewagi (CAP)", w.get("implikowany_cap"), "wariant 2, wzrost w tempie historycznym"))
     linie.append(_wiersz(k, "Implikowana marża FCF", w.get("implikowana_marza_fcf"), "wariant 3, wzrost w tempie historycznym"))
     linie.append(_wiersz(k, "Wzrost historyczny (CAGR przychodów)", w.get("wzrost_historyczny")))
+    return linie
+
+
+def scenariusze_tabela(k: Kalkulator, wynik: dict) -> list[str]:
+    linie = []
     sc = wynik.get("scenariusze")
     if sc:
-        linie += ["", "## Scenariusze", "", "| Scenariusz | Prawdopodobieństwo | Wartość na akcję |", "|---|---:|---:|"]
+        linie += ["| Scenariusz | Prawdopodobieństwo | Wartość na akcję |", "|---|---:|---:|"]
         for f in [x for x in k.r.fakty() if x.pozycja == "wartosc_na_akcje"]:
             nazwa = f.id.split(".", 1)[1]
             p = k.fakt(f"scenariusz_prawdopodobienstwo.{nazwa}")
             linie.append(f"| {nazwa} | {format_(p)} | {f.wartosc:,.2f} {f.waluta} |".replace(",", " ", 1))
         for nazwa, fid in sc.items():
             linie.append(_wiersz(k, nazwa.replace("_", " "), fid).replace("| ", "| **", 1).replace(" |", "** |", 1))
+    return linie or ["Brak scenariuszy (plik scenariusze.json)."]
+
+
+def karta_tabela(k: Kalkulator, wynik: dict) -> list[str]:
+    linie = []
     karta = wynik.get("karta") or []
     if karta:
         ogolny, n = wynik_ogolny(karta)
-        linie += ["", "## Karta w stylu Treli (informacja, nie bramka)", "",
+        linie += [
                   (f"Wynik: **{ogolny:.1f} / 10** z {n} filarów z 5.".replace(".", ",", 1) if ogolny is not None
                    else "Wynik: brak danych."), "",
                   "| Filar | Waga | Punkty | Miary |", "|---|---:|---:|---|"]
@@ -160,4 +185,14 @@ def _wycena_md(k: Kalkulator, wynik: dict) -> list[str]:
             linie.append(f"| {f.nazwa} | {f.waga:.0%} | {pkt} | {miary} |")
         if wynik.get("analitycy") is None or wynik["analitycy"] < 3:
             linie += ["", "Filar „analitycy”: brak danych albo pokrycie poniżej 3 analityków — nie można na nim polegać."]
-    return linie
+    return linie or ["Brak karty (brak wyceny)."]
+
+
+def _wycena_md(k: Kalkulator, wynik: dict) -> list[str]:
+    w = wynik.get("wycena") or {}
+    naglowek = "## Co jest w cenie"
+    if w.get("kapitalizacja"):
+        cap = k.fakt(w["kapitalizacja"])
+        naglowek += f" (kurs z {cap.okres.koniec.isoformat()}, przepływy: {w.get('okres_bazowy')})"
+    return (["", naglowek, ""] + wycena_tabela(k, wynik) + ["", "## Scenariusze", ""] + scenariusze_tabela(k, wynik)
+            + ["", "## Karta w stylu Treli (informacja, nie bramka)", ""] + karta_tabela(k, wynik))

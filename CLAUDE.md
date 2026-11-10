@@ -41,6 +41,7 @@ Repozytorium buduje skill, który robi wstępną analizę fundamentalną spółk
 | Parametry wyceny odwrotnej | `konfiguracja/wycena.yaml` |
 | Wagi i progi karty Treli | `konfiguracja/karta-treli.yaml` |
 | Bramki stopu: lista, progi, decyzja | `konfiguracja/bramki.yaml`, `silnik/bramki/` |
+| Raport: miejsca na liczby, lint, wykresy, PDF | `silnik/raport/` |
 | Wyniki analiz | `analizy/<TICKER>/<RRRR-MM-DD>/` |
 | Zasady inwestowania właściciela (limity, pauza po rajdzie, benchmarki) | repozytorium `inwestowanie`, plik `zasady-inwestowania.md` |
 | Zasady pisania (rozmowa, pliki, raporty) | ten plik, sekcja „Język i styl” |

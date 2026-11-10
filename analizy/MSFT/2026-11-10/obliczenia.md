@@ -56,6 +56,10 @@ Plik wygenerował silnik (2026-11-10). Kwoty w mln USD. ¹ = co najmniej jedno w
 | Implikowana marża FCF | 31,6%¹ | wariant 3, wzrost w tempie historycznym |
 | Wzrost historyczny (CAGR przychodów) | 14,6% |  |
 
+## Scenariusze
+
+Brak scenariuszy (plik scenariusze.json).
+
 ## Karta w stylu Treli (informacja, nie bramka)
 
 Wynik: **5,9 / 10** z 3 filarów z 5.

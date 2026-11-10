@@ -13,7 +13,7 @@ Plan ma 7 kroków (`specyfikacja.md`, część 11).
 | 3 | Odczyt ESEF i PDF dla GPW, test cytatu | gotowy |
 | 4 | Obliczenia: wskaźniki, wycena odwrotna, scenariusze, karta Treli | gotowy |
 | 5 | Bramki stopu | gotowy |
-| 6 | Raport: szablon z miejscami na liczby, lint, PDF | — |
+| 6 | Raport: szablon z miejscami na liczby, lint, PDF | gotowy |
 | 7 | SKILL.md i pełne przebiegi na 6 spółkach testowych | — |
 
 ## Uruchomienie
@@ -135,6 +135,27 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają bramki same. Osobno: `python 
 ```
 
 Przypadki testowe w `analizy/`: PBG (Lista Alertów → STOP na etapie 0) i DarkPulse, DPLS (istotna niepewność kontynuacji + ujemne przepływy + brak pokrycia zobowiązań → STOP na etapie 3).
+
+## Raport PDF (krok 6)
+
+```bash
+python -m silnik.raport analizy/<TICKER>/<data>
+```
+
+- **STOP z bramek:** krótki PDF ze `stop.md` i tabelą wszystkich bramek.
+- **Inaczej:** model pisze `raport.md` z miejscami na liczby; silnik sprawdza tekst (lint), wstawia wartości z rejestru z przypisami źródeł, dokłada tabele i wykresy generowane przez kod i buduje `raport.pdf` (oraz `raport_wyrenderowany.md` do wglądu).
+
+Miejsca w `raport.md`:
+
+| Miejsce | Co wstawia silnik |
+|---|---|
+| `{{id_faktu}}`, np. `{{marza_operacyjna.TTM2026-09-30}}` | wartość po polsku (np. „47,1%”, „331,8 mld USD”) i przypis: okres, źródło albo wzór, status weryfikacji |
+| `{{tabela:panel}}`, `{{tabela:wycena}}`, `{{tabela:scenariusze}}`, `{{tabela:karta}}`, `{{tabela:bramki}}`, `{{tabela:jakosc_danych}}` | tabele z obliczeń, bramek i weryfikacji |
+| `{{wykres:przychody}}`, `{{wykres:marze}}`, `{{wykres:fcf_zysk}}`, `{{wykres:roic}}` | wykresy z faktów rejestru |
+
+**Lint** odrzuca raport, gdy w tekście modelu jest jakakolwiek cyfra albo znak % poza miejscami na liczby. Wyjątki: lata (1990–2049; starsze tylko z „r.”/„roku”), daty, etykiety okresów (FY2025, Q3, H1, M9, TTM), numeracja nagłówków i list, nazwy typu S&P 500, MSSF 16, 10-K. Lint odrzuca też miejsce wskazujące nieistniejący albo odrzucony fakt.
+
+PDF: ReportLab z czcionką DejaVu (polskie znaki), wykresy matplotlib (paleta i zasady z wytycznych dataviz: jedna oś, legenda przy 2+ seriach, etykiety na końcach linii).
 
 ## Jak działa rejestr faktów
 
