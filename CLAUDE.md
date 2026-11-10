@@ -28,11 +28,35 @@ Repozytorium buduje skill, który robi wstępną analizę fundamentalną spółk
 | Archiwum dokumentów źródłowych | `silnik/pobieranie/archiwum.py` |
 | Wyniki analiz | `analizy/<TICKER>/<RRRR-MM-DD>/` |
 | Zasady inwestowania właściciela (limity, pauza po rajdzie, benchmarki) | repozytorium `inwestowanie`, plik `zasady-inwestowania.md` |
-| Zasady pisania | repozytorium `inwestowanie`, plik `CLAUDE.md`, sekcja „Język i styl” |
+| Zasady pisania (rozmowa, pliki, raporty) | ten plik, sekcja „Język i styl” |
 
-## Język
+## Język i styl
 
-Pisz po polsku, na „ty”, pełnymi zdaniami, stroną czynną. Każda liczba ma walutę, okres i źródło. Oddzielaj fakty od ocen: ocenę zaczynaj od „Moim zdaniem” albo „Zakładam, że”. Pełne zasady: `inwestowanie/CLAUDE.md`, sekcja „Język i styl”.
+Dotyczy wszystkiego, co piszesz: odpowiedzi w rozmowie, plików w repozytorium i raportów PDF.
+
+### Język
+- Pisz po polsku, na „ty”. Zostaw angielskie skróty miar finansowych: EBITDA, FCF, EV, TTM, CAGR.
+- Pisz pełnymi zdaniami. Każde zdanie ma podmiot i orzeczenie. Nie pisz telegraficznie.
+
+### Nazwy
+- Jedna rzecz, jedna nazwa. Wybierz jeden termin dla pojęcia i używaj go w całej odpowiedzi. Nie używaj synonimów.
+- Jedno słowo, jedno znaczenie. Nie używaj tego samego słowa dla dwóch różnych pojęć.
+- Zawsze dookreślaj miary: „zysk netto”, nie „zysk”; „marża operacyjna”, nie „marża”; „wzrost r/r”, nie „wzrost”.
+
+### Zdania i akapity
+- Jedna myśl w zdaniu.
+- Używaj strony czynnej. Pisz, kto co robi: „Spółka obniżyła koszty”, nie „Koszty zostały obniżone”.
+- Używaj czasowników, nie rzeczowników odczasownikowych: „spółka zwiększyła sprzedaż”, nie „nastąpiło zwiększenie sprzedaży”.
+- Najwyżej 3 rzeczowniki pod rząd.
+- Jeden akapit, jeden temat.
+
+### Liczby
+- Każda liczba ma walutę, okres i źródło. Przykład: „Zysk netto: 1,2 mld PLN | TTM do 30.09.2026 | InvestingPro”.
+- Oznacz wyniki skorygowane słowem „skorygowany”.
+
+### Fakty i oceny
+- Oddzielaj fakty od ocen i założeń. Ocenę zaczynaj od „Moim zdaniem” albo „Zakładam, że”.
+- Gdy czegoś nie wiesz, napisz to wprost. Nie zgaduj.
 
 ## Środowisko
 
