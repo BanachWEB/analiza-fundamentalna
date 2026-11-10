@@ -106,15 +106,17 @@ def ostatni(k: Kalkulator, pozycja: str, przed: Optional[date] = None) -> Option
     return max(fakty, key=lambda f: f.okres.koniec) if fakty else None
 
 
-def okres_bazowy(k: Kalkulator, ttm: Optional[date]) -> Optional[str]:
+def okres_bazowy(k: Kalkulator, ttm: Optional[date], baza: str = "fcf_wlascicieli") -> Optional[str]:
     """Sufiks okresu przepływów do wyceny: TTM, a gdy go brak — ostatni rok obrotowy."""
-    if ttm and k.jest(f"fcf_wlascicieli.TTM{ttm.isoformat()}"):
+    if ttm and k.jest(f"{baza}.TTM{ttm.isoformat()}"):
         return f"TTM{ttm.isoformat()}"
-    lata = [f for f in k.okresy_fy("fcf_wlascicieli")]
+    lata = [f for f in k.okresy_fy(baza)]
     return lata[-1].id.split(".", 1)[1] if lata else None
 
 
-def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str) -> dict:
+def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str, finansowa: bool = False) -> dict:
+    """finansowa=True (bank, ubezpieczyciel): podstawą wyceny odwrotnej jest zysk netto, a nie FCF,
+    bo przepływy banku to ruchy depozytów i kredytów; wariant marży FCF i FCF yield są pomijane."""
     """Zwraca słownik id kluczowych faktów wyceny (do raportu i karty Treli)."""
     par = parametry()
     wynik: dict[str, Optional[str]] = {}
@@ -165,7 +167,8 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str) -> dict:
     n = par["lata_prognozy"]
 
     # mnożniki
-    S = okres_bazowy(k, ttm)
+    baza = "zysk_netto" if finansowa else "fcf_wlascicieli"
+    S = okres_bazowy(k, ttm, baza)
     if S is None:
         k.braki.append("wycena: brak FCF dla właścicieli (TTM ani roczny)")
         return wynik
@@ -175,7 +178,8 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str) -> dict:
         return f
     m("c_z", f"kapitalizacja / zysk_netto.{S}", [cap.id, f"zysk_netto.{S}"],
       lambda c, z: c / z if z > 0 else (_ for _ in ()).throw(BrakSensu("zysk netto ≤ 0")))
-    m("fcf_yield", f"fcf_wlascicieli.{S} / kapitalizacja", [f"fcf_wlascicieli.{S}", cap.id], lambda f, c: f / c, U)
+    if not finansowa:
+        m("fcf_yield", f"fcf_wlascicieli.{S} / kapitalizacja", [f"fcf_wlascicieli.{S}", cap.id], lambda f, c: f / c, U)
     kw = ostatni(k, "kapital_wlasny", D) or ostatni(k, "kapital_wlasny_z_udzialami_niekontrolujacymi", D)
     if kw:
         m("c_wk", "kapitalizacja / kapital_wlasny", [cap.id, kw.id], lambda c, b: c / b)
@@ -196,7 +200,7 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str) -> dict:
 
     # wycena odwrotna
     m("implikowany_wzrost_fcf", f"wzrost FCF przez {n} lat, przy którym wartość = kapitalizacja",
-      [cap.id, f"fcf_wlascicieli.{S}", gT, ke.id], lambda c, f, g, kk: implikowany_wzrost(c, f, n, g, kk), U)
+      [cap.id, f"{baza}.{S}", gT, ke.id], lambda c, f, g, kk: implikowany_wzrost(c, f, n, g, kk), U)
     # Wzrost historyczny: niższy z CAGR 3- i 5-letniego (stopy bazowe: szybki wzrost wygasa).
     kandydaci = [k.okresy_fy(x)[-1] for x in ("cagr_przychody_3l", "cagr_przychody_5l") if k.okresy_fy(x)]
     hist = min(kandydaci, key=lambda f: f.wartosc).pozycja if kandydaci else None
@@ -204,9 +208,10 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str) -> dict:
         g_hist = min(kandydaci, key=lambda f: f.wartosc).id
         wynik["wzrost_historyczny"] = g_hist
         m("implikowany_cap", f"lata wzrostu FCF w tempie {hist}, które uzasadniają kapitalizację",
-          [cap.id, f"fcf_wlascicieli.{S}", g_hist, gT, ke.id],
+          [cap.id, f"{baza}.{S}", g_hist, gT, ke.id],
           lambda c, f, g, gt, kk: implikowany_cap(c, f, g, gt, kk, par["cap_max_lat"]), Jednostka.lata)
-        m("implikowana_marza_fcf", f"marża FCF przy wzroście przychodów w tempie {hist} przez {n} lat",
+        if not finansowa:
+          m("implikowana_marza_fcf", f"marża FCF przy wzroście przychodów w tempie {hist} przez {n} lat",
           [cap.id, f"przychody.{S}", g_hist, gT, ke.id], lambda c, r, g, gt, kk: implikowana_marza(c, r, g, n, gt, kk), U)
     else:
         k.braki.append("wycena odwrotna: brak historycznego CAGR przychodów (CAP i marża)")

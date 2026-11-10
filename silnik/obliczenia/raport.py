@@ -149,7 +149,8 @@ def wycena_tabela(k: Kalkulator, wynik: dict) -> list[str]:
     linie.append(_wiersz(k, "C/WK", w.get("c_wk")))
     linie.append(_wiersz(k, "FCF yield", w.get("fcf_yield"), "FCF dla właścicieli ÷ kapitalizacja"))
     linie.append(_wiersz(k, "Udział PVGO w cenie", w.get("udzial_pvgo"), "część ceny za przyszły wzrost"))
-    linie.append(_wiersz(k, "Implikowany wzrost FCF (10 lat)", w.get("implikowany_wzrost_fcf"), "wariant 1"))
+    baza = "zysku netto (bank)" if wynik.get("sektor") == "finanse" else "FCF"
+    linie.append(_wiersz(k, f"Implikowany wzrost {baza} (10 lat)", w.get("implikowany_wzrost_fcf"), "wariant 1"))
     linie.append(_wiersz(k, "Implikowany okres przewagi (CAP)", w.get("implikowany_cap"), "wariant 2, wzrost w tempie historycznym"))
     linie.append(_wiersz(k, "Implikowana marża FCF", w.get("implikowana_marza_fcf"), "wariant 3, wzrost w tempie historycznym"))
     linie.append(_wiersz(k, "Wzrost historyczny (CAGR przychodów)", w.get("wzrost_historyczny")))

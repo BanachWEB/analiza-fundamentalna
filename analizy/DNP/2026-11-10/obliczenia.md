@@ -60,8 +60,8 @@ Plik wygenerował silnik (2026-11-10). Kwoty w mln PLN. ¹ = co najmniej jedno w
 
 | Scenariusz | Prawdopodobieństwo | Wartość na akcję | Stopa zwrotu przy obecnym kursie |
 |---|---:|---:|---:|
-| byk | 20,0%¹ | 35,25 PLN | 10,2%¹ |
 | bazowy | 50,0%¹ | 22,09 PLN | 7,5%¹ |
+| byk | 20,0%¹ | 35,25 PLN | 10,2%¹ |
 | niedzwiedz | 30,0%¹ | 9,48 PLN | 4,6%¹ |
 | Wartość oczekiwana na akcję | 20,94 PLN¹ |  | |
 | Potencjał oczekiwany | -45,1%¹ |  | |

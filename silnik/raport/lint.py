@@ -30,7 +30,7 @@ DOZWOLONE = [  # kolejność ma znaczenie: daty przed latami
 ]
 # Nazwy własne z cyframi (produkty, indeksy). Inne nazwy model zapisuje w `kodzie`.
 NAZWY = re.compile(r"\b(Microsoft 365|Dynamics 365|Office 365|Windows 1[01]|Xbox 360|WIG20|WIG30|mWIG40|sWIG80|"
-                   r"Russell 2000|Nasdaq[- ]100|W-8BEN|Stoxx 600|Euro Stoxx 50|FTSE 100|DAX 40|CAC 40|Web3|5G|4G)\b")
+                   r"Russell 2000|Nasdaq[- ]100|W-8BEN|Tier 1|Tier 2|CET1|Stoxx 600|Euro Stoxx 50|FTSE 100|DAX 40|CAC 40|Web3|5G|4G)\b")
 NUMERACJA = re.compile(r"^(\s*#{1,6}\s*\d+(\.\d+)*\.?|\s*\d+\.\s)")
 
 

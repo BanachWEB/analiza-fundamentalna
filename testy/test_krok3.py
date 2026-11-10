@@ -171,6 +171,19 @@ def test_pdf_liczby_z_kolumn(tmp_path):
     assert not cytat.sprawdz(p, 2, cyt_przych, 27679127)[0]  # zła strona
 
 
+def test_pdf_liczba_po_slowie_z_cyfra(tmp_path):
+    """„Tier 1 15,28%.” to dwie liczby, a nie „115,28”."""
+    from reportlab.lib.pagesizes import A4
+    from reportlab.pdfgen import canvas
+
+    p = tmp_path / "r.pdf"
+    c = canvas.Canvas(str(p), pagesize=A4)
+    c.setFont("Helvetica", 9)
+    c.drawString(70, 700, "wspolczynnik kapitalu Tier 1 15,28%. Wspolczynniki pozostawaly")
+    c.save()
+    assert cytat.sprawdz(p, 1, "wspolczynnik kapitalu Tier 1 15,28%. Wspolczynniki pozostawaly", 0.1528, procent=True)[0]
+
+
 def test_uzupelnienie_z_biznesradaru_i_brak_samopotwierdzenia():
     from silnik.fakty.weryfikacja import Raport, drugie_zrodlo
 

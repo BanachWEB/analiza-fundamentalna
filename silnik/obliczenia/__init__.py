@@ -54,7 +54,7 @@ def uruchom(rejestr: RejestrFaktow, katalog: Optional[Path] = None, rynek: Optio
     wskazniki.oblicz(k, koniec)
     if not finansowa:
         jakosc.oblicz(k)
-    w = wycena.oblicz(k, koniec, rynek)
+    w = wycena.oblicz(k, koniec, rynek, finansowa)
     sc = scenariusze.oblicz(k, katalog / "scenariusze.json", w) if katalog else None
     analitycy = [f for f in rejestr.fakty() if f.pozycja == "liczba_analitykow"]
     liczba = int(max(analitycy, key=lambda f: f.okres.koniec or f.id).wartosc) if analitycy else None

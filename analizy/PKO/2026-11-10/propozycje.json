@@ -1,0 +1,319 @@
+{
+  "opis": "Propozycje modelu z raportu Grupy PKO BP za III kw. 2026 (doc-051).",
+  "fakty": [
+    {
+      "id": "roe_raportowane.FY2026M9",
+      "pozycja": "roe_raportowane",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 0.191,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "• ROE wyniósł 19,1%, wobec 19,6% rok wcześniej;"
+    },
+    {
+      "id": "nim.FY2026M9",
+      "pozycja": "nim",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 0.0443,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "• marża odsetkowa sprawozdawcza wyniosła 4,43% i obniżyła się o 0,44 p.p. r/r. Zmiana odzwierciedla wpływ zmian"
+    },
+    {
+      "id": "koszty_do_dochodow.FY2026M9",
+      "pozycja": "koszty_do_dochodow",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 0.317,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "• wskaźnik C/I wyniósł 31,7%, wobec 29,9% rok wcześniej, przy szybszym wzroście kosztów działania niż wyniku na"
+    },
+    {
+      "id": "koszt_ryzyka.FY2026M9",
+      "pozycja": "koszt_ryzyka",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 0.0027,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "• koszt ryzyka kredytowego obniżył się i wyniósł 0,27%, wobec 0,34% rok wcześniej, głównie w efekcie spadku"
+    },
+    {
+      "id": "laczny_wspolczynnik_kapitalowy.2026-09-30",
+      "pozycja": "laczny_wspolczynnik_kapitalowy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 0.1718,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "• łączny współczynnik kapitałowy wyniósł 17,18%, a współczynnik kapitału Tier 1 15,28%. Współczynniki pozostawały"
+    },
+    {
+      "id": "wspolczynnik_tier1.2026-09-30",
+      "pozycja": "wspolczynnik_tier1",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 0.1528,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "• łączny współczynnik kapitałowy wyniósł 17,18%, a współczynnik kapitału Tier 1 15,28%. Współczynniki pozostawały"
+    },
+    {
+      "id": "zysk_netto.FY2026M9",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 8223,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Zysk netto przypadający akcjonariuszom jednostki 8 223 7 967 1 921 1 881",
+      "waluta": "PLN"
+    },
+    {
+      "id": "zysk_netto.FY2025M9",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2025-01-01",
+        "koniec": "2025-09-30"
+      },
+      "wartosc": 7967,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Zysk netto przypadający akcjonariuszom jednostki 8 223 7 967 1 921 1 881",
+      "waluta": "PLN"
+    },
+    {
+      "id": "wynik_odsetkowy.FY2026M9",
+      "pozycja": "wynik_odsetkowy",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 18499,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Wynik odsetkowy 18 499 18 197 4 322 4 295",
+      "waluta": "PLN"
+    },
+    {
+      "id": "wynik_odsetkowy.FY2025M9",
+      "pozycja": "wynik_odsetkowy",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2025-01-01",
+        "koniec": "2025-09-30"
+      },
+      "wartosc": 18197,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Wynik odsetkowy 18 499 18 197 4 322 4 295",
+      "waluta": "PLN"
+    },
+    {
+      "id": "wynik_prowizyjny.FY2026M9",
+      "pozycja": "wynik_prowizyjny",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 4193,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Wynik z prowizji i opłat 4 193 3 876 980 915",
+      "waluta": "PLN"
+    },
+    {
+      "id": "wynik_prowizyjny.FY2025M9",
+      "pozycja": "wynik_prowizyjny",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2025-01-01",
+        "koniec": "2025-09-30"
+      },
+      "wartosc": 3876,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Wynik z prowizji i opłat 4 193 3 876 980 915",
+      "waluta": "PLN"
+    },
+    {
+      "id": "kapital_wlasny_z_udzialami_niekontrolujacymi.2026-09-30",
+      "pozycja": "kapital_wlasny_z_udzialami_niekontrolujacymi",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 57138,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Kapitał własny 57 138 58 503 13 083 13 841",
+      "waluta": "PLN"
+    },
+    {
+      "id": "aktywa.2026-09-30",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 619866,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Aktywa 619 866 583 079 141 937 137 951",
+      "waluta": "PLN"
+    },
+    {
+      "id": "dywidenda_na_akcje.FY2025",
+      "pozycja": "dywidenda_na_akcje",
+      "okres": {
+        "typ": "FY",
+        "poczatek": "2025-01-01",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 6.14,
+      "skala": "jedn",
+      "jednostka": "pieniadz_na_akcje",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 6
+      },
+      "cytat": "13 sierpnia 2026 roku Bank wypłacił dywidendę z zysku netto za 2025 rok w kwocie 6,14 PLN na jedną akcję. Łączna",
+      "waluta": "PLN"
+    },
+    {
+      "id": "koszt_ryzyka_prawnego_chf.FY2026M9",
+      "pozycja": "koszt_ryzyka_prawnego_chf",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": -1055,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 34
+      },
+      "cytat": "Koszt ryzyka prawnego kredytów (rachunek zysków i strat) (1 055) (3 375)",
+      "waluta": "PLN"
+    },
+    {
+      "id": "koszt_ryzyka_prawnego_chf.FY2025M9",
+      "pozycja": "koszt_ryzyka_prawnego_chf",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2025-01-01",
+        "koniec": "2025-09-30"
+      },
+      "wartosc": -3375,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 34
+      },
+      "cytat": "Koszt ryzyka prawnego kredytów (rachunek zysków i strat) (1 055) (3 375)",
+      "waluta": "PLN"
+    },
+    {
+      "id": "rezerwy_ochrona_konsumentow.FY2026M9",
+      "pozycja": "rezerwy_ochrona_konsumentow",
+      "okres": {
+        "typ": "M9",
+        "poczatek": "2026-01-01",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 649,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "w wysokości 649 mln PLN (197 mln PLN w 2025 r.) oraz rezerw na karę KNF dotyczącą lokat strukturyzowanych",
+      "waluta": "PLN"
+    }
+  ]
+}

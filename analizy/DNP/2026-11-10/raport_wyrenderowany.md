@@ -35,7 +35,7 @@ Test „trzech P” Damodarana: moim zdaniem prawdopodobny jest dalszy wzrost li
 
 ## 4. Branża, konkurencja i przewaga konkurencyjna
 
-Dino konkuruje z dyskontami (Biedronka, Lidl), sieciami franczyzowymi (Żabka, Lewiatan) i lokalnymi sklepami. Rynek spożywczy w Polsce koncentruje się: duże sieci przejmują udział małych sklepów. Nie mam w archiwum danych o udziałach rynkowych, więc ich nie podaję.
+Raport spółki porównuje ceny Dino z cenami sieci dyskontowych. Moim zdaniem Dino konkuruje głównie z dyskontami, sieciami franczyzowymi i lokalnymi sklepami (nazw sieci nie ma w dokumentach archiwum). Zakładam, że rynek spożywczy w Polsce dalej się koncentruje. Nie mam w archiwum danych o udziałach rynkowych, więc ich nie podaję.
 
 | Źródło (Morningstar/Helmer) | Korzyść | Bariera | Ocena |
 |---|---|---|---|

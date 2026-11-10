@@ -59,13 +59,17 @@ def _wiersze_pdf(sciezka: str) -> tuple[tuple[tuple[str, tuple[float, ...]], ...
                 tekst = " ".join(w["text"] for w in wiersz)
                 liczby, biezaca, koniec = [], [], None
                 for w in wiersz:
-                    if _LICZBA_SLOWO.match(w["text"]) and any(ch.isdigit() for ch in w["text"]):
-                        if biezaca and koniec is not None and w["x0"] - koniec < ODSTEP_W_LICZBIE_PT:
-                            biezaca.append(w["text"])
+                    slowo = w["text"].rstrip(",;:") if w["text"].rstrip(",;:").endswith("%") else w["text"]
+                    slowo = slowo[:-1] if slowo.endswith("%.") else slowo
+                    if _LICZBA_SLOWO.match(slowo) and any(ch.isdigit() for ch in slowo):
+                        # grupę doklejamy tylko, gdy ma dokładnie 3 cyfry (separator tysięcy), np. „1 234”, a nie „Tier 1 15,28%”
+                        if (biezaca and koniec is not None and w["x0"] - koniec < ODSTEP_W_LICZBIE_PT
+                                and re.fullmatch(r"\d{3}([.,]\d+)?%?\)?", slowo)):
+                            biezaca.append(slowo)
                         else:
                             if biezaca:
                                 liczby.append("".join(biezaca))
-                            biezaca = [w["text"]]
+                            biezaca = [slowo]
                         koniec = w["x1"]
                     else:
                         if biezaca:

@@ -8,7 +8,7 @@
       "etap": 0,
       "kategoria": "rynek_i_status",
       "poziom": "informacja",
-      "opis": "Pokrycie analityczne małe albo nieznane — nie można na nim polegać (brak danych o liczbie analityków)",
+      "opis": "Brak danych o liczbie analityków — pokrycia nie można ocenić (dla GPW: wklejka z InvestingPro)",
       "dowody": [],
       "zrodlo": "kod",
       "testy": null,
@@ -18,11 +18,9 @@
       "id": "B0.lista_alertow",
       "etap": 0,
       "kategoria": "rynek_i_status",
-      "poziom": "ok",
-      "opis": "Spółki nie ma na Liście Alertów GPW",
-      "dowody": [
-        "doc-046"
-      ],
+      "poziom": "brak_danych",
+      "opis": "Strona GPW niedostępna: https://www.gpw.pl/lista-alertow-notowania: przerwana transmisja (RemoteDisconnected)",
+      "dowody": [],
       "zrodlo": "kod",
       "testy": null,
       "warunek_powrotu": null
@@ -31,11 +29,9 @@
       "id": "B0.oznaczenie_ciagle",
       "etap": 0,
       "kategoria": "rynek_i_status",
-      "poziom": "ok",
-      "opis": "Brak szczególnego oznaczenia GPW",
-      "dowody": [
-        "doc-047"
-      ],
+      "poziom": "brak_danych",
+      "opis": "Strona GPW niedostępna: https://www.gpw.pl/spolki-ze-szczegolnym-oznaczeniem-notowania-ciagle: przerwana transmisja (RemoteDisconnected)",
+      "dowody": [],
       "zrodlo": "kod",
       "testy": null,
       "warunek_powrotu": null
@@ -44,25 +40,34 @@
       "id": "B0.oznaczenie_jednolite",
       "etap": 0,
       "kategoria": "rynek_i_status",
-      "poziom": "ok",
-      "opis": "Brak szczególnego oznaczenia GPW",
-      "dowody": [
-        "doc-048"
-      ],
+      "poziom": "brak_danych",
+      "opis": "Strona GPW niedostępna: https://www.gpw.pl/spolki-ze-szczegolnym-oznaczeniem-notowania-jednolite: przerwana transmisja (RemoteDisconnected)",
+      "dowody": [],
       "zrodlo": "kod",
       "testy": null,
       "warunek_powrotu": null
     },
     {
-      "id": "B0.zawieszenie",
+      "id": "B0.zawieszenia",
       "etap": 0,
       "kategoria": "rynek_i_status",
-      "poziom": "ok",
-      "opis": "Brak spółki w komunikatach o zawieszeniach",
-      "dowody": [
-        "doc-049"
-      ],
+      "poziom": "brak_danych",
+      "opis": "Strona GPW niedostępna: https://www.gpw.pl/zawieszenia-i-wykluczenia: przerwana transmisja (RemoteDisconnected)",
+      "dowody": [],
       "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.sankcja_regulatora",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "flaga",
+      "opis": "Rezerwa na karę KNF dotyczącą lokat strukturyzowanych (sprawa produktowa, nie sprawozdawcza) i rezerwy na ochronę konsumentów",
+      "dowody": [
+        "doc-051: „rezerw na karę KNF dotyczącą lokat strukturyzowanych”"
+      ],
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     },
@@ -85,6 +90,19 @@
       "opis": "Spółka finansowa: przepływy ÷ zysk, M-score i Z'' pominięte; adekwatność kapitałową (CET1) ocenia model",
       "dowody": [],
       "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B3.bank_kapital",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "ok",
+      "opis": "Współczynniki kapitałowe powyżej wymogów regulacyjnych (raport za III kw. 2026)",
+      "dowody": [
+        "doc-051: „Współczynniki pozostawały powyżej wymogów regulacyjnych.”"
+      ],
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     }

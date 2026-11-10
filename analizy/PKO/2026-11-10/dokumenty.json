@@ -491,6 +491,26 @@
       "pobrano": "2026-11-10T08:56:09.047583Z",
       "sha256": "81aae83d0472c2c589bcbb685e0c9019e667791c356a0a826cb1a6f13ee53dbc",
       "plik": "81aae83d0472c2c5.html"
+    },
+    {
+      "id": "doc-050",
+      "typ": "raport_pdf",
+      "zrodlo": "spółka",
+      "adres": "https://www.pkobp.pl/api/public/2843fa00-d68c-4308-ab21-70127c4b77f6.pdf",
+      "opis": "prezentacja wynikowa za III kw. 2026",
+      "pobrano": "2026-11-10T11:11:50.253351Z",
+      "sha256": "3c1f1a9f312a9ec7ad3719ab21c0491237ac46366d7fe20d9a105e4f55dbb010",
+      "plik": "3c1f1a9f312a9ec7.pdf"
+    },
+    {
+      "id": "doc-051",
+      "typ": "raport_pdf",
+      "zrodlo": "spółka",
+      "adres": "https://www.pkobp.pl/api/public/198f2539-2731-47cb-80f1-b508e52e6be6.pdf",
+      "opis": "raport Grupy za III kw. 2026",
+      "pobrano": "2026-11-10T11:11:59.617506Z",
+      "sha256": "39797e8a29b0c446c89d60eb252fe9df5ac6824294fd0dfd8bc508f653fc1731",
+      "plik": "39797e8a29b0c446.pdf"
     }
   ]
 }

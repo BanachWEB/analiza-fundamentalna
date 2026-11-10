@@ -48,7 +48,7 @@ Test „trzech P” Damodarana (możliwe, wiarygodne, prawdopodobne): moim zdani
 
 ## 4. Branża, konkurencja i przewaga konkurencyjna
 
-Microsoft konkuruje w chmurze z Amazon Web Services i Google Cloud, w oprogramowaniu biurowym z Google Workspace i nowymi aplikacjami opartymi na AI, w systemach operacyjnych z Apple i Google, a w grach z Sony i Nintendo. Rynek chmury jest skoncentrowany wokół trzech dostawców, co według Mauboussina zwykle osłabia rywalizację cenową; nie sprawdziłem udziałów rynkowych w dokumentach archiwum, więc nie podaję ich wartości.
+Raport roczny opisuje konkurencję ogólnie: dostawców chmury i rozwiązań open source, producentów oprogramowania biurowego i aplikacji opartych na AI, inne systemy operacyjne i platformy do gier. Moim zdaniem głównymi konkurentami w chmurze są Amazon Web Services i Google Cloud (nazw nie ma w dokumentach archiwum). Rynek chmury jest skoncentrowany wokół trzech dostawców, co według Mauboussina zwykle osłabia rywalizację cenową; nie sprawdziłem udziałów rynkowych w dokumentach archiwum, więc nie podaję ich wartości.
 
 Kandydaci na źródło przewagi:
 

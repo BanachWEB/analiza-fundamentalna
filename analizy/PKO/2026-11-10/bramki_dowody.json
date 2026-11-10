@@ -1,0 +1,20 @@
+{
+  "dowody": [
+    {
+      "bramka": "B3.bank_kapital",
+      "poziom": "ok",
+      "opis": "Współczynniki kapitałowe powyżej wymogów regulacyjnych (raport za III kw. 2026)",
+      "dokument": "doc-051",
+      "strona": 15,
+      "cytat": "Współczynniki pozostawały powyżej wymogów regulacyjnych."
+    },
+    {
+      "bramka": "B1.sankcja_regulatora",
+      "poziom": "flaga",
+      "opis": "Rezerwa na karę KNF dotyczącą lokat strukturyzowanych (sprawa produktowa, nie sprawozdawcza) i rezerwy na ochronę konsumentów",
+      "dokument": "doc-051",
+      "strona": 15,
+      "cytat": "rezerw na karę KNF dotyczącą lokat strukturyzowanych"
+    }
+  ]
+}

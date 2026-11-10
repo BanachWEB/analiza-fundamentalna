@@ -260,6 +260,29 @@
       ]
     },
     {
+      "id": "aktywa.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 619866.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Aktywa 619 866 583 079 141 937 137 951",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "amortyzacja.FY2016",
       "rodzaj": "raportowany",
       "pozycja": "amortyzacja",
@@ -519,6 +542,29 @@
       ]
     },
     {
+      "id": "asymetria.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "asymetria",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.047626200791949354,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "asymetria",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
       "id": "beta.zalozenie",
       "rodzaj": "zalozenie",
       "pozycja": "beta",
@@ -539,14 +585,14 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 2.471630720853129,
+      "wartosc": 2.5311526479750777,
       "jednostka": "mnoznik",
       "metoda": "kod",
       "status": "jedno_zrodlo",
       "wzor": "kapitalizacja / kapital_wlasny",
       "wejscia": [
         "kapitalizacja.2026-11-09",
-        "kapital_wlasny_z_udzialami_niekontrolujacymi.2025-12-31"
+        "kapital_wlasny_z_udzialami_niekontrolujacymi.2026-09-30"
       ]
     },
     {
@@ -557,14 +603,14 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 13.539131248829808,
+      "wartosc": 13.222252697019565,
       "jednostka": "mnoznik",
       "metoda": "kod",
       "status": "jedno_zrodlo",
-      "wzor": "kapitalizacja / zysk_netto.TTM2025-12-31",
+      "wzor": "kapitalizacja / zysk_netto.TTM2026-09-30",
       "wejscia": [
         "kapitalizacja.2026-11-09",
-        "zysk_netto.TTM2025-12-31"
+        "zysk_netto.TTM2026-09-30"
       ]
     },
     {
@@ -2026,6 +2072,29 @@
       ]
     },
     {
+      "id": "dywidenda_na_akcje.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "dywidenda_na_akcje",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 6.14,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 6
+      },
+      "cytat": "13 sierpnia 2026 roku Bank wypłacił dywidendę z zysku netto za 2025 rok w kwocie 6,14 PLN na jedną akcję. Łączna",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "ebitda.FY2016",
       "rodzaj": "wyliczony",
       "pozycja": "ebitda",
@@ -2721,14 +2790,14 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 0.7125383213668238,
+      "wartosc": 0.42051220840702874,
       "jednostka": "lata",
       "metoda": "kod",
       "status": "jedno_zrodlo",
       "wzor": "lata wzrostu FCF w tempie cagr_przychody_5l, które uzasadniają kapitalizację",
       "wejscia": [
         "kapitalizacja.2026-11-09",
-        "fcf_wlascicieli.TTM2025-12-31",
+        "zysk_netto.TTM2026-09-30",
         "cagr_przychody_5l.FY2025",
         "wzrost_rezydualny.zalozenie",
         "koszt_kapitalu_wlasnego.2026-11-09"
@@ -2742,14 +2811,14 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 0.039588560815900564,
+      "wartosc": 0.03380196657963097,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
       "wzor": "wzrost FCF przez 10 lat, przy którym wartość = kapitalizacja",
       "wejscia": [
         "kapitalizacja.2026-11-09",
-        "fcf_wlascicieli.TTM2025-12-31",
+        "zysk_netto.TTM2026-09-30",
         "wzrost_rezydualny.zalozenie",
         "koszt_kapitalu_wlasnego.2026-11-09"
       ]
@@ -3040,6 +3109,29 @@
       ]
     },
     {
+      "id": "kapital_wlasny_z_udzialami_niekontrolujacymi.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny_z_udzialami_niekontrolujacymi",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 57138.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Kapitał własny 57 138 58 503 13 083 13 841",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "kapitalizacja.2026-11-09",
       "rodzaj": "wyliczony",
       "pozycja": "kapitalizacja",
@@ -3284,6 +3376,76 @@
         "stopa_wolna_od_ryzyka.2026-11-09",
         "beta.zalozenie",
         "premia_ryzyka_akcji.2026-11-10"
+      ]
+    },
+    {
+      "id": "koszt_ryzyka.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_ryzyka",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 0.0027,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "• koszt ryzyka kredytowego obniżył się i wyniósł 0,27%, wobec 0,34% rok wcześniej, głównie w efekcie spadku",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "koszt_ryzyka_prawnego_chf.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_ryzyka_prawnego_chf",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -3375.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 34
+      },
+      "cytat": "Koszt ryzyka prawnego kredytów (rachunek zysków i strat) (1 055) (3 375)",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "koszt_ryzyka_prawnego_chf.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_ryzyka_prawnego_chf",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -1055.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 34
+      },
+      "cytat": "Koszt ryzyka prawnego kredytów (rachunek zysków i strat) (1 055) (3 375)",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -3546,6 +3708,28 @@
       ]
     },
     {
+      "id": "koszty_do_dochodow.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_do_dochodow",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 0.317,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "• wskaźnik C/I wyniósł 31,7%, wobec 29,9% rok wcześniej, przy szybszym wzroście kosztów działania niż wyniku na",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "kredyty_dla_klientow.2016-12-31",
       "rodzaj": "raportowany",
       "pozycja": "kredyty_dla_klientow",
@@ -3795,6 +3979,27 @@
       },
       "kontrole": [
         "drugie_zrodlo:doc-045:115.7:0.00%:ok"
+      ]
+    },
+    {
+      "id": "laczny_wspolczynnik_kapitalowy.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "laczny_wspolczynnik_kapitalowy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 0.1718,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "• łączny współczynnik kapitałowy wyniósł 17,18%, a współczynnik kapitału Tier 1 15,28%. Współczynniki pozostawały",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -4425,6 +4630,25 @@
       ]
     },
     {
+      "id": "marza_netto.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "marza_netto",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 0.36356988532491274,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "zysk_netto / przychody",
+      "wejscia": [
+        "zysk_netto.TTM2026-09-30",
+        "przychody.TTM2026-09-30"
+      ]
+    },
+    {
       "id": "marza_operacyjna.FY2016",
       "rodzaj": "wyliczony",
       "pozycja": "marza_operacyjna",
@@ -4686,7 +4910,7 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 0.14197252394668314,
+      "wartosc": 0.14775911818295273,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
@@ -4694,6 +4918,28 @@
       "wejscia": [
         "cagr_przychody_5l.FY2025",
         "implikowany_wzrost_fcf.2026-11-09"
+      ]
+    },
+    {
+      "id": "nim.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "nim",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 0.0443,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "• marża odsetkowa sprawozdawcza wyniosła 4,43% i obniżyła się o 0,44 p.p. r/r. Zmiana odzwierciedla wpływ zmian",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -5230,6 +5476,52 @@
         "uzupelnienie:biznesradar:brak_raportu_spolki_w_archiwum",
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0019%"
+      ]
+    },
+    {
+      "id": "potencjal_oczekiwany.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "potencjal_oczekiwany",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": -0.2731482588318114,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "potencjal oczekiwany",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
+      "id": "prawdopodobienstwo_straty.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "prawdopodobienstwo_straty",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.8,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "prawdopodobienstwo straty",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-09"
       ]
     },
     {
@@ -6259,6 +6551,66 @@
       ]
     },
     {
+      "id": "przychody.FY2025M9",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 22073000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "wynik_odsetkowy + wynik_prowizyjny (dochody podstawowe banku)",
+      "wejscia": [
+        "wynik_odsetkowy.FY2025M9",
+        "wynik_prowizyjny.FY2025M9"
+      ]
+    },
+    {
+      "id": "przychody.FY2025Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 7393000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody.FY2025 - przychody.FY2025M9",
+      "wejscia": [
+        "przychody.FY2025",
+        "przychody.FY2025M9"
+      ]
+    },
+    {
+      "id": "przychody.FY2026M9",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 22692000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "wynik_odsetkowy + wynik_prowizyjny (dochody podstawowe banku)",
+      "wejscia": [
+        "wynik_odsetkowy.FY2026M9",
+        "wynik_prowizyjny.FY2026M9"
+      ]
+    },
+    {
       "id": "przychody.TTM2025-12-31",
       "rodzaj": "wyliczony",
       "pozycja": "przychody",
@@ -6278,6 +6630,27 @@
       ]
     },
     {
+      "id": "przychody.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 30085000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody.FY2025 + przychody.FY2026M9 - przychody.FY2025M9",
+      "wejscia": [
+        "przychody.FY2025",
+        "przychody.FY2026M9",
+        "przychody.FY2025M9"
+      ]
+    },
+    {
       "id": "rentownosc_10l.2026-11-10",
       "rodzaj": "raportowany",
       "pozycja": "rentownosc_10l",
@@ -6294,6 +6667,30 @@
         "wiersz": "Polska 10-letnie",
         "kolumna": "rentowność aktualna"
       }
+    },
+    {
+      "id": "rezerwy_ochrona_konsumentow.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "rezerwy_ochrona_konsumentow",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 649.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "w wysokości 649 mln PLN (197 mln PLN w 2025 r.) oraz rezerw na karę KNF dotyczącą lokat strukturyzowanych",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "roe.FY2016",
@@ -6514,6 +6911,164 @@
       ]
     },
     {
+      "id": "roe.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "roe",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 0.19143127165809093,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "zysk_netto / kapital_wlasny (koniec)",
+      "wejscia": [
+        "zysk_netto.TTM2026-09-30",
+        "kapital_wlasny_z_udzialami_niekontrolujacymi.2026-09-30"
+      ]
+    },
+    {
+      "id": "roe_raportowane.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "roe_raportowane",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 0.191,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "• ROE wyniósł 19,1%, wobec 19,6% rok wcześniej;",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "scenariusz_marza_fcf.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.26,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Dochody rosną w tempie nominalnego PKB; marża odsetkowa spada wraz z obniżkami stóp, wyższa stawka CIT dla banków utrzymuje się; bank wypłaca większość zysku jako dywidendę przy współczynnikach powyżej wymogów."
+    },
+    {
+      "id": "scenariusz_marza_fcf.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.3,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Bank: „marża FCF” oznacza tu zysk możliwy do wypłaty akcjonariuszom jako część dochodów podstawowych (zysk netto razy wypłata, która nie obniża kapitału). Byk: wzrost kredytów kilka procent szybciej niż gospodarka, koszt ryzyka prawnego CHF wygasa, stopy procentowe stabilne."
+    },
+    {
+      "id": "scenariusz_marza_fcf.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.2,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Obniżki stóp NBP ściskają marżę odsetkową, nowe obciążenia podatkowe i rezerwy konsumenckie obniżają zysk, wyższe bufory kapitałowe ograniczają dywidendę; stopa bazowa: zwroty banków szybko wracają do średniej (Mauboussin, korelacja roczna ROIC banków niższa niż w innych branżach)."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.5,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Dochody rosną w tempie nominalnego PKB; marża odsetkowa spada wraz z obniżkami stóp, wyższa stawka CIT dla banków utrzymuje się; bank wypłaca większość zysku jako dywidendę przy współczynnikach powyżej wymogów."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.2,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Bank: „marża FCF” oznacza tu zysk możliwy do wypłaty akcjonariuszom jako część dochodów podstawowych (zysk netto razy wypłata, która nie obniża kapitału). Byk: wzrost kredytów kilka procent szybciej niż gospodarka, koszt ryzyka prawnego CHF wygasa, stopy procentowe stabilne."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.3,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Obniżki stóp NBP ściskają marżę odsetkową, nowe obciążenia podatkowe i rezerwy konsumenckie obniżają zysk, wyższe bufory kapitałowe ograniczają dywidendę; stopa bazowa: zwroty banków szybko wracają do średniej (Mauboussin, korelacja roczna ROIC banków niższa niż w innych branżach)."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.04,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Dochody rosną w tempie nominalnego PKB; marża odsetkowa spada wraz z obniżkami stóp, wyższa stawka CIT dla banków utrzymuje się; bank wypłaca większość zysku jako dywidendę przy współczynnikach powyżej wymogów."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.07,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Bank: „marża FCF” oznacza tu zysk możliwy do wypłaty akcjonariuszom jako część dochodów podstawowych (zysk netto razy wypłata, która nie obniża kapitału). Byk: wzrost kredytów kilka procent szybciej niż gospodarka, koszt ryzyka prawnego CHF wygasa, stopy procentowe stabilne."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.01,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Obniżki stóp NBP ściskają marżę odsetkową, nowe obciążenia podatkowe i rezerwy konsumenckie obniżają zysk, wyższe bufory kapitałowe ograniczają dywidendę; stopa bazowa: zwroty banków szybko wracają do średniej (Mauboussin, korelacja roczna ROIC banków niższa niż w innych branżach)."
+    },
+    {
       "id": "spread_kraju.2026-11-10",
       "rodzaj": "raportowany",
       "pozycja": "spread_kraju",
@@ -6563,6 +7118,72 @@
       ]
     },
     {
+      "id": "stopa_zwrotu_implikowana.bazowy",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.087137235595379,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza bazowy równa się kursowi",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-11-10",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
+      "id": "stopa_zwrotu_implikowana.byk",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.1126669851592742,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza byk równa się kursowi",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.byk",
+        "scenariusz_marza_fcf.byk",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-11-10",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
+      "id": "stopa_zwrotu_implikowana.niedzwiedz",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.06262574733281509,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza niedzwiedz równa się kursowi",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.niedzwiedz",
+        "scenariusz_marza_fcf.niedzwiedz",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-11-10",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
       "id": "udzial_pvgo.2026-11-09",
       "rodzaj": "wyliczony",
       "pozycja": "udzial_pvgo",
@@ -6570,15 +7191,129 @@
         "typ": "dzien",
         "koniec": "2026-11-09"
       },
-      "wartosc": 0.31293039335892747,
+      "wartosc": 0.29646439267552416,
       "jednostka": "ulamek",
       "metoda": "kod",
       "status": "jedno_zrodlo",
-      "wzor": "1 − (zysk_netto.TTM2025-12-31 / koszt_kapitalu_wlasnego) / kapitalizacja",
+      "wzor": "1 − (zysk_netto.TTM2026-09-30 / koszt_kapitalu_wlasnego) / kapitalizacja",
       "wejscia": [
-        "zysk_netto.TTM2025-12-31",
+        "zysk_netto.TTM2026-09-30",
         "koszt_kapitalu_wlasnego.2026-11-09",
         "kapitalizacja.2026-11-09"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.bazowy",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 86.46087659099668,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09",
+        "akcje_w_obrocie.2026-11-10"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.byk",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 123.60205957131707,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.byk",
+        "scenariusz_marza_fcf.byk",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09",
+        "akcje_w_obrocie.2026-11-10"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.niedzwiedz",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 53.8196541446589,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.niedzwiedz",
+        "scenariusz_marza_fcf.niedzwiedz",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09",
+        "akcje_w_obrocie.2026-11-10"
+      ]
+    },
+    {
+      "id": "wartosc_oczekiwana_na_akcje.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_oczekiwana_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 84.09674645315943,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "wartosc oczekiwana na akcje",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-09"
+      ]
+    },
+    {
+      "id": "wspolczynnik_tier1.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "wspolczynnik_tier1",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 0.1528,
+      "jednostka": "ulamek",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 15
+      },
+      "cytat": "• łączny współczynnik kapitałowy wyniósł 17,18%, a współczynnik kapitału Tier 1 15,28%. Współczynniki pozostawały",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -6822,6 +7557,74 @@
       ]
     },
     {
+      "id": "wynik_odsetkowy.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "wynik_odsetkowy",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 18197.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Wynik odsetkowy 18 499 18 197 4 322 4 295",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wynik_odsetkowy.FY2025Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "wynik_odsetkowy",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 6026000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "wynik_odsetkowy.FY2025 - wynik_odsetkowy.FY2025M9",
+      "wejscia": [
+        "wynik_odsetkowy.FY2025",
+        "wynik_odsetkowy.FY2025M9"
+      ]
+    },
+    {
+      "id": "wynik_odsetkowy.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "wynik_odsetkowy",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 18499.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Wynik odsetkowy 18 499 18 197 4 322 4 295",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "wynik_odsetkowy.TTM2025-12-31",
       "rodzaj": "wyliczony",
       "pozycja": "wynik_odsetkowy",
@@ -6838,6 +7641,27 @@
       "wzor": "wynik_odsetkowy.FY2025",
       "wejscia": [
         "wynik_odsetkowy.FY2025"
+      ]
+    },
+    {
+      "id": "wynik_odsetkowy.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "wynik_odsetkowy",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 24525000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "wynik_odsetkowy.FY2025 + wynik_odsetkowy.FY2026M9 - wynik_odsetkowy.FY2025M9",
+      "wejscia": [
+        "wynik_odsetkowy.FY2025",
+        "wynik_odsetkowy.FY2026M9",
+        "wynik_odsetkowy.FY2025M9"
       ]
     },
     {
@@ -7081,6 +7905,74 @@
       ]
     },
     {
+      "id": "wynik_prowizyjny.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "wynik_prowizyjny",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 3876.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Wynik z prowizji i opłat 4 193 3 876 980 915",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wynik_prowizyjny.FY2025Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "wynik_prowizyjny",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 1367000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "wynik_prowizyjny.FY2025 - wynik_prowizyjny.FY2025M9",
+      "wejscia": [
+        "wynik_prowizyjny.FY2025",
+        "wynik_prowizyjny.FY2025M9"
+      ]
+    },
+    {
+      "id": "wynik_prowizyjny.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "wynik_prowizyjny",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 4193.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Wynik z prowizji i opłat 4 193 3 876 980 915",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "wynik_prowizyjny.TTM2025-12-31",
       "rodzaj": "wyliczony",
       "pozycja": "wynik_prowizyjny",
@@ -7097,6 +7989,27 @@
       "wzor": "wynik_prowizyjny.FY2025",
       "wejscia": [
         "wynik_prowizyjny.FY2025"
+      ]
+    },
+    {
+      "id": "wynik_prowizyjny.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "wynik_prowizyjny",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 5560000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "wynik_prowizyjny.FY2025 + wynik_prowizyjny.FY2026M9 - wynik_prowizyjny.FY2025M9",
+      "wejscia": [
+        "wynik_prowizyjny.FY2025",
+        "wynik_prowizyjny.FY2026M9",
+        "wynik_prowizyjny.FY2025M9"
       ]
     },
     {
@@ -7423,6 +8336,25 @@
       ]
     },
     {
+      "id": "wzrost_przychody.FY2026M9",
+      "rodzaj": "wyliczony",
+      "pozycja": "wzrost_przychody",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 0.028043310832238433,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody.FY2026M9 / przychody.FY2025M9 - 1",
+      "wejscia": [
+        "przychody.FY2026M9",
+        "przychody.FY2025M9"
+      ]
+    },
+    {
       "id": "wzrost_rezydualny.zalozenie",
       "rodzaj": "zalozenie",
       "pozycja": "wzrost_rezydualny",
@@ -7585,6 +8517,25 @@
       "wejscia": [
         "zysk_netto.FY2025",
         "zysk_netto.FY2024"
+      ]
+    },
+    {
+      "id": "wzrost_zysk_netto.FY2026M9",
+      "rodzaj": "wyliczony",
+      "pozycja": "wzrost_zysk_netto",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 0.03213254675536592,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "zysk_netto.FY2026M9 / zysk_netto.FY2025M9 - 1",
+      "wejscia": [
+        "zysk_netto.FY2026M9",
+        "zysk_netto.FY2025M9"
       ]
     },
     {
@@ -8489,6 +9440,74 @@
       ]
     },
     {
+      "id": "zysk_netto.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 7967.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Zysk netto przypadający akcjonariuszom jednostki 8 223 7 967 1 921 1 881",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zysk_netto.FY2025Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 2715000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "zysk_netto.FY2025 - zysk_netto.FY2025M9",
+      "wejscia": [
+        "zysk_netto.FY2025",
+        "zysk_netto.FY2025M9"
+      ]
+    },
+    {
+      "id": "zysk_netto.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 8223.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-051",
+      "miejsce": {
+        "strona": 2
+      },
+      "cytat": "Zysk netto przypadający akcjonariuszom jednostki 8 223 7 967 1 921 1 881",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "zysk_netto.TTM2025-12-31",
       "rodzaj": "wyliczony",
       "pozycja": "zysk_netto",
@@ -8505,6 +9524,27 @@
       "wzor": "zysk_netto.FY2025",
       "wejscia": [
         "zysk_netto.FY2025"
+      ]
+    },
+    {
+      "id": "zysk_netto.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 10938000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "zysk_netto.FY2025 + zysk_netto.FY2026M9 - zysk_netto.FY2025M9",
+      "wejscia": [
+        "zysk_netto.FY2025",
+        "zysk_netto.FY2026M9",
+        "zysk_netto.FY2025M9"
       ]
     },
     {
