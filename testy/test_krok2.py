@@ -145,3 +145,38 @@ def test_parser_stock_analysis():
 def test_parser_bez_danych_zglasza_blad():
     with pytest.raises(stockanalysis.BladStockAnalysis):
         stockanalysis.parsuj("<html>nic</html>")
+
+
+# --- ticker → CIK -------------------------------------------------------------
+
+
+def test_cik_z_konfiguracji_bez_sieci(tmp_path, monkeypatch):
+    from silnik.pobieranie import http
+
+    plik = tmp_path / "sec-cik.yaml"
+    plik.write_text("MSFT: 789019\n", encoding="utf-8")
+    monkeypatch.setattr(http, "pobierz", lambda url: pytest.fail("nie powinien pobierać"))
+    assert sec.cik_dla("msft", plik) == 789019
+
+
+def test_cik_bez_kontaktu_zglasza_blad(tmp_path, monkeypatch):
+    from silnik.pobieranie import http
+
+    plik = tmp_path / "sec-cik.yaml"
+    plik.write_text("", encoding="utf-8")
+    monkeypatch.setattr(http, "USER_AGENT", "narzedzie bez adresu")
+    with pytest.raises(sec.BladSEC, match="ANALIZA_USER_AGENT"):
+        sec.cik_dla("NVDA", plik)
+
+
+def test_cik_z_listy_sec_dopisuje_do_konfiguracji(tmp_path, monkeypatch):
+    from silnik.pobieranie import http
+
+    plik = tmp_path / "sec-cik.yaml"
+    plik.write_text("MSFT: 789019\n", encoding="utf-8")
+    lista = tmp_path / "lista.json"
+    lista.write_text('{"0": {"cik_str": 1045810, "ticker": "NVDA", "title": "NVIDIA"}}', encoding="utf-8")
+    monkeypatch.setattr(http, "USER_AGENT", "analiza-fundamentalna kontakt@example.com")
+    monkeypatch.setattr(http, "pobierz", lambda url: lista)
+    assert sec.cik_dla("NVDA", plik) == 1045810
+    assert "NVDA: 1045810" in plik.read_text(encoding="utf-8")

@@ -35,19 +35,44 @@ class BladSEC(Exception):
     pass
 
 
-def cik_dla(ticker: str) -> int:
-    """CIK z konfiguracja/sec-cik.yaml.
+URL_TICKERY = "https://www.sec.gov/files/company_tickers.json"
 
-    Plik company_tickers.json z www.sec.gov odrzuca zapytania bez adresu
-    kontaktowego w User-Agent, dlatego mapowanie trzymamy w konfiguracji.
+
+def _ma_kontakt(user_agent: str) -> bool:
+    return "@" in user_agent
+
+
+def cik_dla(ticker: str, plik: Optional[Path] = None) -> int:
+    """CIK z konfiguracja/sec-cik.yaml, a gdy go brak — z listy SEC.
+
+    Lista company_tickers.json z www.sec.gov wymaga adresu kontaktowego
+    w User-Agent (zasady dostępu SEC). Silnik pobiera ją tylko wtedy, gdy
+    zmienna ANALIZA_USER_AGENT zawiera adres e-mail. Znaleziony CIK dopisuje
+    do konfiguracja/sec-cik.yaml, więc kolejne analizy nie pytają SEC ponownie.
     """
-    mapa = yaml.safe_load((KONFIGURACJA / "sec-cik.yaml").read_text(encoding="utf-8")) or {}
-    cik = mapa.get(ticker.upper())
-    if cik is None:
+    from silnik.pobieranie import http
+
+    plik = plik or KONFIGURACJA / "sec-cik.yaml"
+    ticker = ticker.upper()
+    mapa = yaml.safe_load(plik.read_text(encoding="utf-8")) or {}
+    if ticker in mapa:
+        return int(mapa[ticker])
+    if not _ma_kontakt(http.USER_AGENT):
         raise BladSEC(
-            f"brak CIK dla {ticker} w konfiguracja/sec-cik.yaml; znajdź go w EDGAR (pole CIK) i dopisz"
+            f"brak CIK dla {ticker} w {plik.name}; dopisz go ręcznie albo ustaw ANALIZA_USER_AGENT "
+            "z nazwą narzędzia i adresem e-mail, żeby silnik pobrał listę SEC"
         )
-    return int(cik)
+    pobrany = http.pobierz(URL_TICKERY)
+    try:
+        lista = json.loads(pobrany.read_text(encoding="utf-8"))
+    finally:
+        pobrany.unlink(missing_ok=True)
+    cik = next((int(x["cik_str"]) for x in lista.values() if x["ticker"].upper() == ticker), None)
+    if cik is None:
+        raise BladSEC(f"SEC nie zna tickera {ticker} (spółka spoza EDGAR?)")
+    with open(plik, "a", encoding="utf-8") as f:
+        f.write(f"{ticker}: {cik}\n")
+    return cik
 
 
 def url_companyfacts(cik: int) -> str:
