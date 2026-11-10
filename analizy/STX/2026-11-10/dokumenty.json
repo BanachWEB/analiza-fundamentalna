@@ -1,0 +1,236 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "STX",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001137789.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-10T11:28:06.392680Z",
+      "sha256": "427554dd43058a9b743b8cfabff1e59f481448c3bd99927b100a87c403955829",
+      "plik": "427554dd43058a9b.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0001137789.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-10T11:28:06.734815Z",
+      "sha256": "d1f19dd6cded357dcd6b7f7fa1b4ec364c08c2f6a0835f4eeb75e465c6a487db",
+      "plik": "d1f19dd6cded357d.json"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/stx/financials/income-statement/",
+      "opis": "income-statement",
+      "pobrano": "2026-11-10T11:28:07.012431Z",
+      "sha256": "f64e6f6c35bd7b3f20d3a62b385b7daae22d72e12bffc9450ee87441f140141f",
+      "plik": "f64e6f6c35bd7b3f.html"
+    },
+    {
+      "id": "doc-004",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/stx/financials/balance-sheet/",
+      "opis": "balance-sheet",
+      "pobrano": "2026-11-10T11:28:07.791929Z",
+      "sha256": "b73affbf767949d8c47e35aa789b3ad85d28fedd09e55c4bf080c555c6692060",
+      "plik": "b73affbf767949d8.html"
+    },
+    {
+      "id": "doc-005",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/stx/financials/cash-flow-statement/",
+      "opis": "cash-flow-statement",
+      "pobrano": "2026-11-10T11:28:08.436811Z",
+      "sha256": "dec0748da009dbfe8e28b39eaf11daae1f4d16cc664ac34c5f652c7d8127b651",
+      "plik": "dec0748da009dbfe.html"
+    },
+    {
+      "id": "doc-006",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/stx/history/",
+      "opis": "historia kursu",
+      "pobrano": "2026-11-10T11:28:09.082362Z",
+      "sha256": "c79786ac2b5704affac86fc9c9751f2087dd20ff5144168a3f881f53d3baf8c3",
+      "plik": "c79786ac2b5704af.html"
+    },
+    {
+      "id": "doc-007",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/STX?range=2y&interval=1d",
+      "opis": "notowania dzienne STX",
+      "pobrano": "2026-11-10T11:28:09.267858Z",
+      "sha256": "35f16894630bd9090faea35c5b91bc426c3edc58cf4a73b5bc7bfb8914c7d595",
+      "plik": "35f16894630bd909.json"
+    },
+    {
+      "id": "doc-008",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=2y&interval=1d",
+      "opis": "notowania dzienne %5EGSPC",
+      "pobrano": "2026-11-10T11:28:41.697476Z",
+      "sha256": "a54d16ca888f274e5ba9a6ef63dc1d902d4aba56e6127325d59c7f87783a7ece",
+      "plik": "a54d16ca888f274e.json"
+    },
+    {
+      "id": "doc-009",
+      "typ": "strona",
+      "zrodlo": "Damodaran (NYU Stern)",
+      "adres": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+      "opis": "premie za ryzyko krajów",
+      "pobrano": "2026-11-10T11:28:41.964164Z",
+      "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+      "plik": "ea30d57fc0858072.html"
+    },
+    {
+      "id": "doc-010",
+      "typ": "strona",
+      "zrodlo": "U.S. Treasury",
+      "adres": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "opis": "rentowności obligacji",
+      "pobrano": "2026-11-10T11:29:00.498755Z",
+      "sha256": "2079e573e24d2560d0ec0ad2e949f6bf39e3262beefe526c537edb1435a3bc41",
+      "plik": "2079e573e24d2560.csv"
+    },
+    {
+      "id": "doc-011",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/stx/forecast/",
+      "opis": "prognozy analityków",
+      "pobrano": "2026-11-10T11:29:00.678296Z",
+      "sha256": "50c250c90272ae3bb35fef6292b0b7eaef18cc685ac5f3f0f8f1631a3576f802",
+      "plik": "50c250c90272ae3b.html"
+    },
+    {
+      "id": "doc-012",
+      "typ": "strona",
+      "zrodlo": "SEC EDGAR (wyszukiwanie)",
+      "adres": "https://efts.sec.gov/LATEST/search-index?q=%22substantial%20doubt%22&forms=10-K,10-Q&dateRange=custom&startdt=2026-08-03&enddt=2026-11-10&ciks=0001137789",
+      "opis": "wyszukiwanie: substantial doubt",
+      "pobrano": "2026-11-10T11:29:01.606803Z",
+      "sha256": "eee3311e7de0c33ad532142a2ccad371d246c4c5fa7e1ee7e610993d0a480097",
+      "plik": "eee3311e7de0c33a.json"
+    },
+    {
+      "id": "doc-013",
+      "typ": "strona",
+      "zrodlo": "SEC EDGAR (wyszukiwanie)",
+      "adres": "https://efts.sec.gov/LATEST/search-index?q=%22material%20weakness%22&forms=10-K&dateRange=custom&startdt=2026-08-03&enddt=2026-11-10&ciks=0001137789",
+      "opis": "wyszukiwanie: material weakness",
+      "pobrano": "2026-11-10T11:29:02.433944Z",
+      "sha256": "3cafc1f8499d95a6304cde8dbbddd346f7b77c1e03c902ae2d2abd5dd1339995",
+      "plik": "3cafc1f8499d95a6.json"
+    },
+    {
+      "id": "doc-014",
+      "typ": "10-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000159/stx-20260703.htm",
+      "opis": "10-K FY2026 (do 3.07.2026)",
+      "pobrano": "2026-11-10T11:30:00.495270Z",
+      "sha256": "b80d72e482028bdbb50f7c47bf84c8dbafcc0e6a754e05e914e62d2c60323476",
+      "plik": "b80d72e482028bdb.htm"
+    },
+    {
+      "id": "doc-015",
+      "typ": "10-Q",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000309/stx-20261002.htm",
+      "opis": "10-Q Q1 FY2027 (do 2.10.2026)",
+      "pobrano": "2026-11-10T11:30:01.048302Z",
+      "sha256": "abebc16ec3aa1fa9e3384fe393c586cc33910aa4138fac06427089052c4b553f",
+      "plik": "abebc16ec3aa1fa9.htm"
+    },
+    {
+      "id": "doc-016",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000207/stx-20260908.htm",
+      "opis": "DEF 14A 2026",
+      "pobrano": "2026-11-10T11:30:15.981987Z",
+      "sha256": "352b449b2e152d65d48fd42e777f2383190c06b022e6fb6d123259b5796f8a98",
+      "plik": "352b449b2e152d65.htm"
+    },
+    {
+      "id": "doc-017",
+      "typ": "8-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1137789/000119312526385961/d109585d8k.htm",
+      "opis": "8-K 9.09.2026 (pozycja 3.02)",
+      "pobrano": "2026-11-10T11:30:16.405944Z",
+      "sha256": "85f6cbbd679647795f9383f1db22b86f2451981596adcad55da392e6062071fc",
+      "plik": "85f6cbbd67964779.htm"
+    },
+    {
+      "id": "doc-018",
+      "typ": "8-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000300/stx-20261027.htm",
+      "opis": "8-K 27.10.2026 wyniki Q1 FY2027",
+      "pobrano": "2026-11-10T11:30:16.814161Z",
+      "sha256": "20fe68e59957dd8b746c3edec8b0ebc9cb329fcdb2d617979348a5e03148c263",
+      "plik": "20fe68e59957dd8b.htm"
+    },
+    {
+      "id": "doc-019",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/STX?range=2y&interval=1d",
+      "opis": "notowania dzienne STX",
+      "pobrano": "2026-11-10T11:34:25.393384Z",
+      "sha256": "542ef19f90e91eead41c34846f02160f824f7ee16e82f250bfececca367b13d3",
+      "plik": "542ef19f90e91eea.json"
+    },
+    {
+      "id": "doc-020",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=2y&interval=1d",
+      "opis": "notowania dzienne %5EGSPC",
+      "pobrano": "2026-11-10T11:34:27.086188Z",
+      "sha256": "71ef0864dc8454100cb97da5a158a6dc7fcd1a9fb1ffdb5f77ef156ff53a0b78",
+      "plik": "71ef0864dc845410.json"
+    },
+    {
+      "id": "doc-021",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000318/xslF345X06/wk-form4_1793743164.xml",
+      "opis": "Form 4 z 3.11.2026 (-000318)",
+      "pobrano": "2026-11-10T11:35:32.118036Z",
+      "sha256": "d3b5a4ecdc9b55415423573c330f459913ef5d8e9fedc752a55dcd53b82e6d57",
+      "plik": "d3b5a4ecdc9b5541.html"
+    },
+    {
+      "id": "doc-022",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000317/xslF345X06/wk-form4_1793743158.xml",
+      "opis": "Form 4 z 3.11.2026 (-000317)",
+      "pobrano": "2026-11-10T11:35:32.604328Z",
+      "sha256": "9bb07d478635c53086aa7e86240904e1bc0af900ffbd45c43ad27f7339fdf74c",
+      "plik": "9bb07d478635c530.html"
+    },
+    {
+      "id": "doc-023",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000316/xslF345X06/wk-form4_1793743152.xml",
+      "opis": "Form 4 z 3.11.2026 (-000316)",
+      "pobrano": "2026-11-10T11:35:33.055096Z",
+      "sha256": "1c3fb80cf792e9b2481cd2e9feee63e1bc03a1f8f4237ad1832ba34ed3ba4d40",
+      "plik": "1c3fb80cf792e9b2.html"
+    }
+  ]
+}

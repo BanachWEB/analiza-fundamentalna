@@ -1,0 +1,53 @@
+{
+  "dowody": [
+    {
+      "bramka": "B1.slabosc_kontroli_wzmianka",
+      "poziom": "ok",
+      "opis": "Zarząd uznał kontrolę wewnętrzną za skuteczną, a Ernst & Young wydał o niej opinię bez zastrzeżeń; „material weakness” pada tylko w opisie procedury badania",
+      "dokument": "doc-014",
+      "cytat": "our management has concluded that our internal control over financial reporting was effective as of July 3, 2026"
+    },
+    {
+      "bramka": "B1.opinia_bieglego",
+      "poziom": "ok",
+      "opis": "Ernst & Young: opinia bez zastrzeżeń o sprawozdaniach za rok obrotowy do 3.07.2026",
+      "dokument": "doc-014",
+      "cytat": "In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company at July 3, 2026 and June 27, 2025"
+    },
+    {
+      "bramka": "B1.sankcja_regulatora",
+      "poziom": "flaga",
+      "opis": "Ugoda z BIS (Departament Handlu USA) za sprzedaż dysków do Huawei w latach 2020–2021, płatna w ratach do 2028 r. Sankcja dotyczy kontroli eksportu, nie raportów finansowych, więc to flaga, nie stop. Osobno spółka zawarła ugodę w pozwie zbiorowym akcjonariuszy za okres 2020–2023 (ostateczne zatwierdzenie 17.11.2026).",
+      "dokument": "doc-014",
+      "cytat": "entered into a settlement agreement (the “Settlement Agreement”) with the U.S. Department of Commerce’s Bureau of Industry and Security (“BIS”) that resolves BIS’ allegations regarding Seagate’s sales of hard disk drives to Huawei between August 17, 2020 and September 29, 2021"
+    },
+    {
+      "bramka": "B2.rozwodnienie_szkodliwe",
+      "poziom": "flaga",
+      "opis": "Spółka wydaje akcje przy wymianie obligacji wymiennych z terminem 2028; to rozwodnienie wynika z warunków długu, a nie z emisji na szkodę mniejszości",
+      "dokument": "doc-017",
+      "cytat": "delivered 1,647,862 ordinary shares of Seagate, par value $0.00001 per share (the “Ordinary Shares”) to settle exchanges of $150.51 million aggregate principal amount of the Issuer’s outstanding 3.50% Exchangeable Senior Notes due 2028"
+    },
+    {
+      "bramka": "B4.akcjonariusz_90",
+      "poziom": "ok",
+      "opis": "Akcjonariat rozproszony; największy akcjonariusz (Vanguard) ma kilka procent akcji",
+      "dokument": "doc-016",
+      "cytat": "Vanguard Capital Management(b)"
+    },
+    {
+      "bramka": "B4.podmioty_powiazane",
+      "poziom": "ok",
+      "opis": "DEF 14A opisuje tylko politykę zatwierdzania transakcji z podmiotami powiązanymi i nie wymienia żadnej takiej transakcji",
+      "dokument": "doc-016",
+      "cytat": "Our Board has adopted a written policy for approval of transactions with our directors, director nominees, executive officers, shareholders that beneficially own more than 5% of our ordinary shares"
+    },
+    {
+      "bramka": "B4.insiderzy",
+      "poziom": "ok",
+      "opis": "Sprzedaż akcji przez prezesa (W. Mosley) i drugiego członka kierownictwa z początku listopada 2026 odbyła się według planów 10b5-1 przyjętych wcześniej; to szum, nie sygnał",
+      "dokument": "doc-021",
+      "cytat": "All transactions reported in this Form 4 were effected pursuant to a Rule 10b5-1 trading plan adopted by the Reporting Person on February 18, 2026."
+    }
+  ]
+}

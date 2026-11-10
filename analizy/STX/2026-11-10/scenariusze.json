@@ -1,0 +1,27 @@
+{
+  "scenariusze": [
+    {
+      "nazwa": "byk",
+      "prawdopodobienstwo": 0.25,
+      "wzrost_przychodow": 0.04,
+      "marza_fcf": 0.35,
+      "sciezka_przychodow": ["przychody_konsensus.FY2027", "przychody_konsensus.FY2028"],
+      "uzasadnienie": "Ścieżka konsensusu: przychody w FY2027 i FY2028 równe prognozie S&P Global, potem wzrost umiarkowany. W dekadzie daje to wzrost przychodów blisko 90. percentyla stopy bazowej dla spółek tej wielkości (Mauboussin). Warunek: popyt chmury i AI na dyski nearline rośnie szybciej niż podaż przez wiele lat, trzech producentów HDD utrzymuje dyscyplinę podaży, a Mozaic (HAMR) daje Seagate przewagę kosztową na terabajt; marża FCF zostaje w pobliżu poziomu z kwartału do 2.10.2026."
+    },
+    {
+      "nazwa": "bazowy",
+      "prawdopodobienstwo": 0.4,
+      "wzrost_przychodow": 0.01,
+      "marza_fcf": 0.2,
+      "sciezka_przychodow": ["przychody_konsensus.FY2027"],
+      "uzasadnienie": "Spółka korzysta jeszcze przez rok obrotowy FY2027 z wysokich cen (przychody jak w konsensusie), potem ceny dysków wracają do normy, jak po każdym szczycie cyklu HDD (spadek przychodów w FY2023), a wzrost liczby eksabajtów tylko równoważy spadek ceny za terabajt. Marża FCF stabilizuje się między średnią z FY2022–FY2025 a obecnym szczytem: konsolidacja do trzech producentów i umowy długoterminowe z klientami chmurowymi trwale podnoszą marżę w cyklu, ale jej nie utrzymują na szczycie."
+    },
+    {
+      "nazwa": "niedzwiedz",
+      "prawdopodobienstwo": 0.35,
+      "wzrost_przychodow": 0.02,
+      "marza_fcf": 0.12,
+      "uzasadnienie": "10.–20. percentyl stopy bazowej i powrót marży FCF w okolice poziomu z lat FY2022–FY2025. Warunek: klienci chmurowi ograniczają inwestycje w AI albo budują zapasy, konkurenci nadrabiają technologię zapisu, pamięć flash tanieje i przejmuje część zastosowań nearline; cykl jak w FY2023 wraca z obecnego szczytu cen już w FY2027."
+    }
+  ]
+}

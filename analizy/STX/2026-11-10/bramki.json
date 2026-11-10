@@ -1,0 +1,214 @@
+{
+  "decyzja": "DALEJ",
+  "etap": null,
+  "powod": "brak twardej flagi",
+  "wyniki": [
+    {
+      "id": "B0.pokrycie",
+      "etap": 0,
+      "kategoria": "rynek_i_status",
+      "poziom": "ok",
+      "opis": "Pokrycie analityczne duże (26 analityków)",
+      "dowody": [
+        "liczba_analitykow.2026-11-10"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.sankcja_regulatora",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "flaga",
+      "opis": "Ugoda z BIS (Departament Handlu USA) za sprzedaż dysków do Huawei w latach 2020–2021, płatna w ratach do 2028 r. Sankcja dotyczy kontroli eksportu, nie raportów finansowych, więc to flaga, nie stop. Osobno spółka zawarła ugodę w pozwie zbiorowym akcjonariuszy za okres 2020–2023 (ostateczne zatwierdzenie 17.11.2026).",
+      "dowody": [
+        "doc-014: „entered into a settlement agreement (the “Settlement Agreement”) with the U.S. Department of Commerce’s Bureau of Industry and Security (“BIS”) that resolves BIS’ allegations regarding Seagate’s sales”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.korekta_sprawozdan",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Brak 8-K z pozycją 4.02 (korekta sprawozdań)",
+      "dowody": [],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.opinia_bieglego",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Ernst & Young: opinia bez zastrzeżeń o sprawozdaniach za rok obrotowy do 3.07.2026",
+      "dowody": [
+        "doc-014: „In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company at July 3, 2026 and June 27, 2025”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.opoznione_raporty",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Brak zawiadomień NT 10-K/NT 10-Q",
+      "dowody": [],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.slabosc_kontroli_wzmianka",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Zarząd uznał kontrolę wewnętrzną za skuteczną, a Ernst & Young wydał o niej opinię bez zastrzeżeń; „material weakness” pada tylko w opisie procedury badania",
+      "dowody": [
+        "doc-014: „our management has concluded that our internal control over financial reporting was effective as of July 3, 2026”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.zmiana_bieglego",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Brak zmiany biegłego rewidenta",
+      "dowody": [],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B2.rozwodnienie_szkodliwe",
+      "etap": 2,
+      "kategoria": "kapital",
+      "poziom": "flaga",
+      "opis": "Spółka wydaje akcje przy wymianie obligacji wymiennych z terminem 2028; to rozwodnienie wynika z warunków długu, a nie z emisji na szkodę mniejszości",
+      "dowody": [
+        "doc-017: „delivered 1,647,862 ordinary shares of Seagate, par value $0.00001 per share (the “Ordinary Shares”) to settle exchanges of $150.51 million aggregate principal amount of the Issuer’s outstanding 3.50%”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B2.rozwodnienie",
+      "etap": 2,
+      "kategoria": "kapital",
+      "poziom": "ok",
+      "opis": "Brak rozwodnienia powyżej progu",
+      "dowody": [
+        "zmiana_liczby_akcji.FY2026"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B3.altman",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "ok",
+      "opis": "Altman Z'' 2,50 (strefa zagrożenia poniżej 1,10)",
+      "dowody": [
+        "altman_z2.FY2026"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B3.beneish",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "ok",
+      "opis": "Beneish M-score -2,27 (próg -1,78): poniżej progu",
+      "dowody": [
+        "beneish_m.FY2026"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B3.kontynuacja_wzmianka",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "ok",
+      "opis": "Brak wzmianki „substantial doubt” w raportach od 2026-08-03",
+      "dowody": [
+        "doc-012: 0 trafień od 2026-08-03"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B3.przeplywy_do_zysku",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "ok",
+      "opis": "Przepływy operacyjne pokrywają zysk netto",
+      "dowody": [
+        "przeplywy_operacyjne.FY2024",
+        "przeplywy_operacyjne.FY2025",
+        "przeplywy_operacyjne.FY2026",
+        "zysk_netto.FY2024",
+        "zysk_netto.FY2025",
+        "zysk_netto.FY2026"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.akcjonariusz_90",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "ok",
+      "opis": "Akcjonariat rozproszony; największy akcjonariusz (Vanguard) ma kilka procent akcji",
+      "dowody": [
+        "doc-016: „Vanguard Capital Management(b)”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.insiderzy",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "ok",
+      "opis": "Sprzedaż akcji przez prezesa (W. Mosley) i drugiego członka kierownictwa z początku listopada 2026 odbyła się według planów 10b5-1 przyjętych wcześniej; to szum, nie sygnał",
+      "dowody": [
+        "doc-021: „All transactions reported in this Form 4 were effected pursuant to a Rule 10b5-1 trading plan adopted by the Reporting Person on February 18, 2026.”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.podmioty_powiazane",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "ok",
+      "opis": "DEF 14A opisuje tylko politykę zatwierdzania transakcji z podmiotami powiązanymi i nie wymienia żadnej takiej transakcji",
+      "dowody": [
+        "doc-016: „Our Board has adopted a written policy for approval of transactions with our directors, director nominees, executive officers, shareholders that beneficially own more than 5% of our ordinary shares”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    }
+  ]
+}

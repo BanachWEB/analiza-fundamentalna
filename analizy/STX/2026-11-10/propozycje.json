@@ -1,0 +1,441 @@
+{
+  "opis": "Propozycje modelu z 10-K FY2026 (doc-014), 10-Q Q1 FY2027 (doc-015) i 8-K z 27.10.2026 (doc-018).",
+  "fakty": [
+    {
+      "id": "eksabajty_hdd.FY2026",
+      "pozycja": "eksabajty_hdd",
+      "okres": {
+        "typ": "FY",
+        "poczatek": "2025-06-28",
+        "koniec": "2026-07-03"
+      },
+      "wartosc": 789,
+      "skala": "jedn",
+      "jednostka": "liczba",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "HDD Exabytes Shipped Nearline 695 497 Non-nearline 94 98 Total 789 595"
+    },
+    {
+      "id": "eksabajty_hdd.FY2025",
+      "pozycja": "eksabajty_hdd",
+      "okres": {
+        "typ": "FY",
+        "poczatek": "2024-06-29",
+        "koniec": "2025-06-27"
+      },
+      "wartosc": 595,
+      "skala": "jedn",
+      "jednostka": "liczba",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "HDD Exabytes Shipped Nearline 695 497 Non-nearline 94 98 Total 789 595"
+    },
+    {
+      "id": "eksabajty_nearline.FY2026",
+      "pozycja": "eksabajty_nearline",
+      "okres": {
+        "typ": "FY",
+        "poczatek": "2025-06-28",
+        "koniec": "2026-07-03"
+      },
+      "wartosc": 695,
+      "skala": "jedn",
+      "jednostka": "liczba",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "HDD Exabytes Shipped Nearline 695 497 Non-nearline 94 98 Total 789 595"
+    },
+    {
+      "id": "eksabajty_nearline.FY2025",
+      "pozycja": "eksabajty_nearline",
+      "okres": {
+        "typ": "FY",
+        "poczatek": "2024-06-29",
+        "koniec": "2025-06-27"
+      },
+      "wartosc": 497,
+      "skala": "jedn",
+      "jednostka": "liczba",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "HDD Exabytes Shipped Nearline 695 497 Non-nearline 94 98 Total 789 595"
+    },
+    {
+      "id": "udzial_data_center.FY2026",
+      "pozycja": "udzial_data_center",
+      "okres": {
+        "typ": "FY",
+        "poczatek": "2025-06-28",
+        "koniec": "2026-07-03"
+      },
+      "wartosc": 0.8,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "Revenues by Market (%) Data Center 80 % 75 % Edge IoT 20 % 25 %"
+    },
+    {
+      "id": "udzial_data_center.FY2025",
+      "pozycja": "udzial_data_center",
+      "okres": {
+        "typ": "FY",
+        "poczatek": "2024-06-29",
+        "koniec": "2025-06-27"
+      },
+      "wartosc": 0.75,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "Revenues by Market (%) Data Center 80 % 75 % Edge IoT 20 % 25 %"
+    },
+    {
+      "id": "udzial_oem.FY2026",
+      "pozycja": "udzial_oem",
+      "okres": {
+        "typ": "FY",
+        "poczatek": "2025-06-28",
+        "koniec": "2026-07-03"
+      },
+      "wartosc": 0.81,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "Revenues by Channel (%) OEMs 81 % 80 %"
+    },
+    {
+      "id": "udzial_najwiekszego_klienta.FY2026",
+      "pozycja": "udzial_najwiekszego_klienta",
+      "okres": {
+        "typ": "FY",
+        "poczatek": "2025-06-28",
+        "koniec": "2026-07-03"
+      },
+      "wartosc": 0.14,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "In fiscal year 2026, one customer accounted for approximately 14% of consolidated revenue."
+    },
+    {
+      "id": "zatrudnienie.2026-07-03",
+      "pozycja": "zatrudnienie",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-07-03"
+      },
+      "wartosc": 30000,
+      "skala": "jedn",
+      "jednostka": "liczba",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "As of July 3, 2026, we employed approximately 30,000 full-time employees worldwide"
+    },
+    {
+      "id": "cagr_datasfery_idc.2030",
+      "pozycja": "cagr_datasfery_idc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-07-03"
+      },
+      "wartosc": 0.27,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "the global datasphere is expected to grow at a compound annual growth rate of approximately 27% through 2030"
+    },
+    {
+      "id": "redukcja_dlugu.FY2026",
+      "pozycja": "redukcja_dlugu",
+      "okres": {
+        "typ": "FY",
+        "poczatek": "2025-06-28",
+        "koniec": "2026-07-03"
+      },
+      "wartosc": 1.4,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "We reduced our outstanding debt by $1.4 billion through exchanges of our 2028 Notes",
+      "waluta": "USD"
+    },
+    {
+      "id": "eksabajty_hdd.FY2027Q1",
+      "pozycja": "eksabajty_hdd",
+      "okres": {
+        "typ": "Q1",
+        "poczatek": "2026-07-04",
+        "koniec": "2026-10-02"
+      },
+      "wartosc": 220,
+      "skala": "jedn",
+      "jednostka": "liczba",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "10-Q Q1 FY2027"
+      },
+      "cytat": "HDD Exabytes Shipped Nearline 198 195 160 Non-nearline 22 23 22 Total 220 218 182"
+    },
+    {
+      "id": "eksabajty_nearline.FY2027Q1",
+      "pozycja": "eksabajty_nearline",
+      "okres": {
+        "typ": "Q1",
+        "poczatek": "2026-07-04",
+        "koniec": "2026-10-02"
+      },
+      "wartosc": 198,
+      "skala": "jedn",
+      "jednostka": "liczba",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "10-Q Q1 FY2027"
+      },
+      "cytat": "HDD Exabytes Shipped Nearline 198 195 160 Non-nearline 22 23 22 Total 220 218 182"
+    },
+    {
+      "id": "eksabajty_hdd.FY2026Q4",
+      "pozycja": "eksabajty_hdd",
+      "okres": {
+        "typ": "Q4",
+        "poczatek": "2026-03-28",
+        "koniec": "2026-07-03"
+      },
+      "wartosc": 218,
+      "skala": "jedn",
+      "jednostka": "liczba",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "10-Q Q1 FY2027"
+      },
+      "cytat": "HDD Exabytes Shipped Nearline 198 195 160 Non-nearline 22 23 22 Total 220 218 182"
+    },
+    {
+      "id": "eksabajty_hdd.FY2026Q1",
+      "pozycja": "eksabajty_hdd",
+      "okres": {
+        "typ": "Q1",
+        "poczatek": "2025-06-28",
+        "koniec": "2025-10-03"
+      },
+      "wartosc": 182,
+      "skala": "jedn",
+      "jednostka": "liczba",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "10-Q Q1 FY2027"
+      },
+      "cytat": "HDD Exabytes Shipped Nearline 198 195 160 Non-nearline 22 23 22 Total 220 218 182"
+    },
+    {
+      "id": "udzial_data_center.FY2027Q1",
+      "pozycja": "udzial_data_center",
+      "okres": {
+        "typ": "Q1",
+        "poczatek": "2026-07-04",
+        "koniec": "2026-10-02"
+      },
+      "wartosc": 0.81,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "10-Q Q1 FY2027"
+      },
+      "cytat": "Revenues by Market (%) Data Center 81 % 81 % 80 %"
+    },
+    {
+      "id": "marza_brutto_raportowana.FY2027Q1",
+      "pozycja": "marza_brutto_raportowana",
+      "okres": {
+        "typ": "Q1",
+        "poczatek": "2026-07-04",
+        "koniec": "2026-10-02"
+      },
+      "wartosc": 0.573,
+      "skala": "jedn",
+      "jednostka": "ulamek",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "10-Q Q1 FY2027"
+      },
+      "cytat": "We generated revenue of approximately $4.2 billion with a gross margin of 57.3%"
+    },
+    {
+      "id": "zmiana_marzy_brutto_kw.FY2027Q1",
+      "pozycja": "zmiana_marzy_brutto_kw",
+      "okres": {
+        "typ": "Q1",
+        "poczatek": "2026-07-04",
+        "koniec": "2026-10-02"
+      },
+      "wartosc": 5,
+      "skala": "jedn",
+      "jednostka": "liczba",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "10-Q Q1 FY2027"
+      },
+      "cytat": "Gross margin for the September 2026 quarter increased by 5 percentage points compared to the June 2026 quarter, primarily driven by pricing actions"
+    },
+    {
+      "id": "redukcja_dlugu.FY2027Q1",
+      "pozycja": "redukcja_dlugu",
+      "okres": {
+        "typ": "Q1",
+        "poczatek": "2026-07-04",
+        "koniec": "2026-10-02"
+      },
+      "wartosc": 1.2,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "10-Q Q1 FY2027"
+      },
+      "cytat": "We reduced our outstanding principal amount of debt by $1.2 billion",
+      "waluta": "USD"
+    },
+    {
+      "id": "skup_akcji_kw.FY2027Q1",
+      "pozycja": "skup_akcji_kw",
+      "okres": {
+        "typ": "Q1",
+        "poczatek": "2026-07-04",
+        "koniec": "2026-10-02"
+      },
+      "wartosc": 400,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-015",
+      "miejsce": {
+        "sekcja": "10-Q Q1 FY2027"
+      },
+      "cytat": "we repurchased approximately 0.5 million of our ordinary shares for $400 million",
+      "waluta": "USD"
+    },
+    {
+      "id": "dywidenda_kwartalna.2026-10-27",
+      "pozycja": "dywidenda_kwartalna",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-10-27"
+      },
+      "wartosc": 0.76,
+      "skala": "jedn",
+      "jednostka": "pieniadz_na_akcje",
+      "dokument": "doc-018",
+      "miejsce": {
+        "sekcja": "8-K 27.10.2026"
+      },
+      "cytat": "declared a quarterly cash dividend of $0.76 per share",
+      "waluta": "USD"
+    },
+    {
+      "id": "kara_bis.2023-04-18",
+      "pozycja": "kara_bis",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2023-04-18"
+      },
+      "wartosc": 300,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "Seagate has agreed to pay $300 million to BIS in quarterly installments of $15 million",
+      "waluta": "USD"
+    },
+    {
+      "id": "ugoda_pozew_zbiorowy.2026-04-03",
+      "pozycja": "ugoda_pozew_zbiorowy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-04-03"
+      },
+      "wartosc": 175,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "dokument": "doc-014",
+      "miejsce": {
+        "sekcja": "10-K FY2026"
+      },
+      "cytat": "the parties agreed to a settlement in principle to resolve the matter for a total amount of $175 million",
+      "waluta": "USD"
+    },
+    {
+      "id": "przychody_konsensus.FY2027",
+      "rodzaj": "prognoza",
+      "pozycja": "przychody_konsensus",
+      "okres": {
+        "typ": "FY",
+        "poczatek": "2026-07-04",
+        "koniec": "2027-07-02"
+      },
+      "wartosc": 20.32,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "dokument": "doc-011",
+      "dostawca": "S&P Global (Stock Analysis)",
+      "data_prognozy": "2026-11-09",
+      "liczba_analitykow": 26,
+      "miejsce": {
+        "sekcja": "Financial Forecast"
+      },
+      "cytat": "Revenue This Year 20.32B from 12.20B"
+    },
+    {
+      "id": "przychody_konsensus.FY2028",
+      "rodzaj": "prognoza",
+      "pozycja": "przychody_konsensus",
+      "okres": {
+        "typ": "FY",
+        "poczatek": "2027-07-03",
+        "koniec": "2028-06-30"
+      },
+      "wartosc": 28.41,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "dokument": "doc-011",
+      "dostawca": "S&P Global (Stock Analysis)",
+      "data_prognozy": "2026-11-09",
+      "liczba_analitykow": 26,
+      "miejsce": {
+        "sekcja": "Financial Forecast"
+      },
+      "cytat": "Revenue Next Year 28.41B from 20.32B"
+    }
+  ]
+}
