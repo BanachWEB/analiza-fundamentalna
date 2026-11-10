@@ -209,3 +209,28 @@ def test_procent_w_cytacie(tmp_path):
     p.write_text("Azure and other cloud services revenue grew 41% driven by demand", encoding="utf-8")
     assert cytat.sprawdz(p, None, "Azure and other cloud services revenue grew 41%", 0.41, procent=True)[0]
     assert not cytat.sprawdz(p, None, "Azure and other cloud services revenue grew 41%", 0.41)[0]
+
+
+def test_lata_uzupelnione_tylko_z_faktow_sprawozdawczych():
+    """Prognozy i dane rynkowe z parsera strony nie trafiają do sekcji lat uzupełnionych."""
+    from silnik.fakty.schemat import Fakt
+    from silnik.fakty.weryfikacja import Raport, lata_uzupelnione, podsumowanie_md
+
+    naglowek = "## Lata uzupełnione z serwisu danych (bez raportu spółki w archiwum)\n\n"
+    dzien = date(2026, 11, 10)
+    r = RejestrFaktow("STX", dzien)
+    r.dodaj(Fakt(id=f"wzrost_eps_konsensus.{dzien.isoformat()}", rodzaj="prognoza", pozycja="wzrost_eps_konsensus",
+                 okres={"typ": "dzien", "koniec": dzien}, wartosc=0.25, jednostka="ulamek", metoda="parser_strony",
+                 status="jedno_zrodlo", dokument="doc-001", dostawca="Stock Analysis", data_prognozy=dzien,
+                 liczba_analitykow=20, miejsce={"pole": "epsThis.growth"}))
+    r.dodaj(Fakt(id=f"premia_ryzyka_akcji.{dzien.isoformat()}", rodzaj="raportowany", pozycja="premia_ryzyka_akcji",
+                 okres={"typ": "dzien", "koniec": dzien}, wartosc=0.0433, jednostka="ulamek", metoda="parser_strony",
+                 status="jedno_zrodlo", dokument="doc-002", miejsce={"kraj": "United States"}))
+    assert lata_uzupelnione(r.fakty()) == []
+    assert naglowek + "Brak." in podsumowanie_md(r, Raport())
+
+    dane = {("przychody", "FY", date(2019, 12, 31)): (10_000_000.0, "doc-009")}
+    for f in biznesradar.fakty_uzupelniajace(dane, set()):
+        r.dodaj(f)
+    assert lata_uzupelnione(r.fakty()) == [2019]
+    assert naglowek + "2019\n" in podsumowanie_md(r, Raport())

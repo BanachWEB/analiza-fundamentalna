@@ -11,10 +11,17 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from datetime import date
-from typing import Optional
+from functools import lru_cache
+from pathlib import Path
+from typing import Iterable, Optional
+
+import yaml
 
 from .rejestr import RejestrFaktow
 from .schemat import Fakt, Status
+
+KONFIGURACJA = Path(__file__).resolve().parents[2] / "konfiguracja"
+SLAD_UZUPELNIENIA = "uzupelnienie:biznesradar"
 
 TOLERANCJA_DRUGIE_ZRODLO = 0.005  # 0,5%
 TOLERANCJA_TOZSAMOSCI = 0.001  # 0,1%
@@ -155,6 +162,36 @@ def pozycje_przestarzale(rejestr: RejestrFaktow) -> list[str]:
     return sorted(p for p, k in ostatni.items() if k < najnowszy)
 
 
+@lru_cache(maxsize=1)
+def pozycje_sprawozdawcze() -> frozenset[str]:
+    """Pozycje ze sprawozdań finansowych: klucze mapowań US GAAP i MSSF."""
+    pozycje: set[str] = set()
+    for nazwa in ("mapowanie-us-gaap.yaml", "mapowanie-mssf.yaml"):
+        pozycje |= set(yaml.safe_load((KONFIGURACJA / nazwa).read_text(encoding="utf-8")) or {})
+    return frozenset(pozycje)
+
+
+def lata_uzupelnione(fakty: Iterable[Fakt]) -> list[int]:
+    """Lata, za które dane sprawozdawcze pochodzą z serwisu danych, a nie z raportu spółki.
+
+    Liczy się fakt ze śladem „uzupelnienie:biznesradar” albo fakt raportowany z parsera strony,
+    który dotyczy pozycji ze sprawozdań i roku obrotowego (FY) lub stanu na koniec roku obrotowego.
+    Kursy, premie za ryzyko i konsensus analityków z parsera strony się nie liczą.
+    """
+    fakty = list(fakty)
+    konce_roku = {f.okres.koniec for f in fakty if f.okres.typ.value == "FY"}
+    sprawozdawcze = pozycje_sprawozdawcze()
+
+    def z_serwisu(f: Fakt) -> bool:
+        if any(c.startswith(SLAD_UZUPELNIENIA) for c in f.kontrole):
+            return True
+        if f.metoda.value != "parser_strony" or f.rodzaj.value != "raportowany" or f.pozycja not in sprawozdawcze:
+            return False
+        return f.okres.typ.value == "FY" or (f.okres.typ.value == "dzien" and f.okres.koniec in konce_roku)
+
+    return sorted({f.okres.koniec.year for f in fakty if z_serwisu(f)})
+
+
 def podsumowanie_md(rejestr: RejestrFaktow, raport: Raport) -> str:
     """Raport z weryfikacji w Markdown (generowany przez kod; bez liczb od modelu)."""
     licznik = {s: len(rejestr.ze_statusem(s)) for s in Status}
@@ -185,7 +222,7 @@ def podsumowanie_md(rejestr: RejestrFaktow, raport: Raport) -> str:
     linie.append(
         "Spółka mogła zmienić znacznik XBRL; sprawdź mapowanie: " + ", ".join(przestarzale) if przestarzale else "Brak."
     )
-    uzup = sorted({f.okres.koniec.year for f in rejestr.fakty() if f.metoda.value == "parser_strony"})
+    uzup = lata_uzupelnione(rejestr.fakty())
     linie += ["", "## Lata uzupełnione z serwisu danych (bez raportu spółki w archiwum)", ""]
     linie.append(", ".join(str(r) for r in uzup) if uzup else "Brak.")
     zmiany = [f.id for f in rejestr.fakty() if any(c.startswith("zmiana_wersji") for c in f.kontrole)]

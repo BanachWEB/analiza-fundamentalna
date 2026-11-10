@@ -12,6 +12,7 @@ import json
 from pathlib import Path
 
 from silnik.fakty.schemat import Fakt, Status
+from silnik.fakty.weryfikacja import lata_uzupelnione
 from silnik.obliczenia import uruchom as obliczenia_uruchom
 from silnik.obliczenia.raport import karta_tabela, panel_md, scenariusze_tabela, wycena_tabela
 from silnik.pobieranie.archiwum import Archiwum
@@ -58,7 +59,7 @@ def jakosc_danych(rejestr, archiwum: Archiwum, katalog: Path) -> list[str]:
         bledy = [c for c in f.kontrole if ":blad" in c]
         return bledy[-1].split(":")[1] if bledy else "konflikt"
     linie += ["", "**Konflikty źródeł:** " + ("; ".join(f"{f.id} ({powod(f)})" for f in konflikty[:10]) if konflikty else "brak.")]
-    uzup = sorted({f.okres.koniec.year for f in fakty if f.metoda.value == "parser_strony" and f.okres.typ.value == "FY"})
+    uzup = lata_uzupelnione(rejestr.fakty())
     if uzup:
         linie.append(f"**Lata z serwisu danych (bez raportu spółki):** {', '.join(map(str, uzup))}.")
     odrz = [f for f in rejestr.fakty() if f.status == Status.odrzucony]
