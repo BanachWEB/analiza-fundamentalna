@@ -125,6 +125,22 @@ def stopa_zwrotu_12_1(sesje: list[Sesja]) -> Optional[tuple[float, date, date]]:
     return b.zamkniecie / a.zamkniecie - 1, a.dzien, b.dzien
 
 
+def zmiana_kursu_3m(sesje: list[Sesja]) -> Optional[tuple[float, date]]:
+    """Zmiana kursu od ostatniej sesji sprzed ok. 3 miesięcy (91 dni) do ostatniej sesji.
+
+    Zasady właściciela: „pauza po rajdzie” — nie kupuje, gdy kurs jest o ponad 25% wyższy niż 3 miesiące wcześniej.
+    """
+    if not sesje:
+        return None
+    koniec = sesje[-1].dzien
+    cel = date.fromordinal(koniec.toordinal() - 91)
+    kandydaci = [s for s in sesje if s.dzien <= cel]
+    if not kandydaci or (cel - kandydaci[-1].dzien).days > 7:
+        return None
+    a = kandydaci[-1]
+    return sesje[-1].zamkniecie / a.zamkniecie - 1, a.dzien
+
+
 # --- fakty rynkowe -------------------------------------------------------------------
 
 
@@ -134,7 +150,7 @@ def _fakt(fid, pozycja, okres, wartosc, jednostka, dok, miejsce, waluta=None, me
 
 
 def fakty_z_historii(sesje: list[Sesja], dok_ids: list[str], waluta: str, prefiks: str = "") -> list[Fakt]:
-    """Kurs ostatni, momentum 12–1 i średnie dzienne obroty z 60 sesji."""
+    """Kurs ostatni, momentum 12–1, zmiana kursu z 3 miesięcy i średnie dzienne obroty z 60 sesji."""
     if not sesje:
         return []
     ost = sesje[-1]
@@ -149,6 +165,12 @@ def fakty_z_historii(sesje: list[Sesja], dok_ids: list[str], waluta: str, prefik
         wynik.append(_fakt(f"{p}momentum_12_1.{ost.dzien.isoformat()}", f"{p}momentum_12_1",
                            Okres(typ="dzien", koniec=ost.dzien), m[0], Jednostka.ulamek, dok,
                            {"od": m[1].isoformat(), "do": m[2].isoformat(), "obliczenie": "kurs(do) / kurs(od) - 1",
+                            "dokumenty": dok_ids}, metoda=metoda))
+    z3 = zmiana_kursu_3m(sesje)
+    if z3 and not p:
+        wynik.append(_fakt(f"zmiana_kursu_3m.{ost.dzien.isoformat()}", "zmiana_kursu_3m",
+                           Okres(typ="dzien", koniec=ost.dzien), z3[0], Jednostka.ulamek, dok,
+                           {"od": z3[1].isoformat(), "do": ost.dzien.isoformat(), "obliczenie": "kurs(do) / kurs(od) - 1",
                             "dokumenty": dok_ids}, metoda=metoda))
     if not p:
         ostatnie = sesje[-60:]

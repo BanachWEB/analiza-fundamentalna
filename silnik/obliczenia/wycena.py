@@ -44,8 +44,21 @@ def wartosc_fcf(fcf0: float, g: float, n: int, gT: float, k: float) -> float:
     return w + f * (1 + gT) / ((k - gT) * (1 + k) ** n)
 
 
-def wartosc_przychody_marza(r0: float, g: float, n: int, gT: float, k: float, marza: float) -> float:
-    return wartosc_fcf(r0 * marza, g, n, gT, k)
+def wartosc_przychody_marza(r0: float, g: float, n: int, gT: float, k: float, marza: float,
+                            sciezka: tuple[float, ...] = ()) -> float:
+    """Wartość z przychodów × marża FCF. `sciezka`: przychody w pierwszych latach (np. konsensus);
+    od ostatniego roku ścieżki przychody rosną o g do roku n, potem wzrost rezydualny gT."""
+    if not sciezka:
+        return wartosc_fcf(r0 * marza, g, n, gT, k)
+    if len(sciezka) >= n:
+        raise BrakSensu("ścieżka przychodów nie może być dłuższa niż okres prognozy minus jeden rok")
+    if k <= gT:
+        raise BrakSensu("koszt kapitału nie jest wyższy od wzrostu rezydualnego")
+    w, r = 0.0, r0
+    for t in range(1, n + 1):
+        r = sciezka[t - 1] if t <= len(sciezka) else r * (1 + g)
+        w += r * marza / (1 + k) ** t
+    return w + r * marza * (1 + gT) / ((k - gT) * (1 + k) ** n)
 
 
 def bisekcja(fn, cel: float, lo: float, hi: float, iteracji: int = 200) -> float:

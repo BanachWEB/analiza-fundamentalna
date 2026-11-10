@@ -62,6 +62,17 @@ S = lambda n, p, g=0.05, m=0.1: {"nazwa": n, "prawdopodobienstwo": p, "wzrost_pr
                                  "uzasadnienie": "test"}
 
 
+def test_wartosc_ze_sciezka_przychodow():
+    # ścieżka równa stałemu wzrostowi daje tę samą wartość co model bez ścieżki
+    bez = wycena.wartosc_przychody_marza(100, 0.1, 10, 0.02, 0.09, 0.2)
+    ze = wycena.wartosc_przychody_marza(100, 0.1, 10, 0.02, 0.09, 0.2, (110.0, 121.0))
+    assert ze == pytest.approx(bez)
+    # skok przychodów na początku podnosi wartość
+    assert wycena.wartosc_przychody_marza(100, 0.1, 10, 0.02, 0.09, 0.2, (150.0, 200.0)) > bez
+    with pytest.raises(Exception):
+        wycena.wartosc_przychody_marza(100, 0.1, 3, 0.02, 0.09, 0.2, (1.0, 2.0, 3.0))
+
+
 def test_scenariusze_walidacja(tmp_path):
     assert len(scenariusze.wczytaj(zapisz(tmp_path, [S("byk", 0.3), S("bazowy", 0.5), S("niedzwiedz", 0.2)]))) == 3
     with pytest.raises(scenariusze.BladScenariuszy, match="sumują"):
@@ -159,6 +170,16 @@ def test_yahoo_i_momentum():
     zwrot, od, do = m
     assert (sesje[-1].dzien - od).days == 365 and (sesje[-1].dzien - do).days == 30
     assert zwrot == pytest.approx(ceny[399 - 30] / ceny[399 - 365] - 1)
+
+
+def test_zmiana_kursu_3m():
+    sesje = [rynek.Sesja(date(2026, 1, 1) + timedelta(days=i), 100.0 + i, 1.0) for i in range(200)]
+    zmiana, od = rynek.zmiana_kursu_3m(sesje)
+    assert (sesje[-1].dzien - od).days == 91
+    assert zmiana == pytest.approx(299 / (100 + 199 - 91) - 1)
+    assert rynek.zmiana_kursu_3m(sesje[:60]) is None  # za krótka historia
+    fakty = {f.pozycja: f for f in rynek.fakty_z_historii(sesje, ["doc-001"], "USD")}
+    assert fakty["zmiana_kursu_3m"].wartosc == pytest.approx(zmiana)
 
 
 def test_momentum_za_krotka_historia():

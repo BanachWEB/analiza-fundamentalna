@@ -37,7 +37,7 @@ def uruchom_w_katalogu(katalog: Path, rynek: Optional[str] = None) -> Path:
             from silnik.pobieranie.rynek import notowania_biznesradar
             nazwa = notowania_biznesradar(archiwum.tekst(strona.id)).get("nazwa")
         wyniki += automaty.z_gpw(archiwum, ticker, nazwa)
-    od_modelu, odrzucone = dowody.wczytaj(katalog / "bramki_dowody.json", archiwum)
+    od_modelu, odrzucone = dowody.wczytaj(katalog / "bramki_dowody.json", archiwum, wyniki)
     # dowód modelu zastępuje automatyczny wynik tej samej bramki (np. ocena przyczyny NT)
     ids_modelu = {w.id for w in od_modelu}
     wyniki = [w for w in wyniki if w.id not in ids_modelu] + od_modelu

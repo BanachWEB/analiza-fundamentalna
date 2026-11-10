@@ -142,6 +142,20 @@ def test_dowody_modelu(tmp_path):
     assert any("nieznana bramka" in o for o in odrzucone)
 
 
+def test_dowod_modelu_dla_bramki_automatycznej(tmp_path):
+    # model ocenia flagę z kodu (np. wzmiankę „material weakness”); silnik zna tę bramkę z wyników kodu
+    from silnik.bramki import Wynik
+    a = Archiwum("X", tmp_path / "a", tmp_path / "p")
+    plik = tmp_path / "bramki_dowody.json"
+    plik.write_text(json.dumps({"dowody": [
+        {"bramka": "B1.slabosc_kontroli_wzmianka", "poziom": "ok", "opis": "kontrola skuteczna"}]}), encoding="utf-8")
+    auto = [Wynik("B1.slabosc_kontroli_wzmianka", 1, "biegly_i_regulator", "flaga", "wzmianka")]
+    przyjete, odrzucone = dowody.wczytaj(plik, a, auto)
+    assert not odrzucone and przyjete[0].poziom == "ok" and przyjete[0].kategoria == "biegly_i_regulator"
+    _, odrzucone = dowody.wczytaj(plik, a)
+    assert any("nieznana bramka" in o for o in odrzucone)
+
+
 @pytest.mark.parametrize("rynek,n,poziom", [("USA", 58, "ok"), ("USA", 3, "stop"), ("GPW", 3, "flaga"),
                                            ("GPW", 7, "ok")])
 def test_pokrycie_wg_zasad(rynek, n, poziom):

@@ -5,7 +5,8 @@ Model zapisuje analizy/<TICKER>/<data>/bramki_dowody.json:
              "dokument": "doc-012", "strona": 5, "cytat": "…dosłowny fragment…",
              "testy": {"strukturalny": "…", "uczciwosc_liczb": "…", "zarzad_rozwiazuje": "…", "termin": "…"},
              "warunek_powrotu": "…"}]}
-Silnik przyjmuje dowód tylko wtedy, gdy bramka jest w konfiguracji, a cytat występuje w dokumencie
+Silnik przyjmuje dowód tylko wtedy, gdy bramka jest w konfiguracji (albo jest bramką automatyczną,
+którą model ocenia, np. B1.slabosc_kontroli_wzmianka), a cytat występuje w dokumencie
 z archiwum (test cytatu bez liczby). STOP wymaga też czterech testów i warunku powrotu.
 Odrzucony dowód nie zmienia decyzji, ale trafia do raportu bramek.
 """
@@ -14,6 +15,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from typing import Optional
 
 from silnik.fakty.cytat import tekst_dokumentu, ujednolic
 from silnik.pobieranie.archiwum import Archiwum
@@ -23,10 +25,13 @@ from . import Wynik, konfiguracja
 TESTY = ("strukturalny", "uczciwosc_liczb", "zarzad_rozwiazuje", "termin")
 
 
-def wczytaj(plik: Path, archiwum: Archiwum) -> tuple[list[Wynik], list[str]]:
+def wczytaj(plik: Path, archiwum: Archiwum, automatyczne: Optional[list[Wynik]] = None) -> tuple[list[Wynik], list[str]]:
+    """automatyczne: wyniki bramek z kodu; dowód modelu może zastąpić każdą z nich (etap i kategoria z wyniku kodu)."""
     if not plik.exists():
         return [], []
-    cfg = konfiguracja()["bramki_modelu"]
+    cfg = dict(konfiguracja()["bramki_modelu"])
+    for w in automatyczne or []:
+        cfg.setdefault(w.id, {"etap": w.etap, "kategoria": w.kategoria, "opis": w.opis})
     przyjete, odrzucone = [], []
     for d in json.loads(plik.read_text(encoding="utf-8"))["dowody"]:
         bid = d.get("bramka")

@@ -3,7 +3,10 @@
 Model zapisuje analizy/<TICKER>/<data>/scenariusze.json:
 {"scenariusze": [
   {"nazwa": "bazowy", "prawdopodobienstwo": 0.5, "wzrost_przychodow": 0.08, "marza_fcf": 0.25,
-   "uzasadnienie": "…stopa bazowa…, dowody…"}, …]}
+   "uzasadnienie": "…stopa bazowa…, dowody…",
+   "sciezka_przychodow": ["przychody_konsensus.FY2027", "przychody_konsensus.FY2028"]}, …]}
+Pole „sciezka_przychodow” jest opcjonalne: id faktów z przychodami na kolejne lata (np. konsensus);
+przez te lata przychody biorą się z faktów, potem rosną o wzrost_przychodow do końca okresu prognozy.
 Silnik liczy wartość na akcję w każdym scenariuszu (przychody × marża FCF, ten sam koszt kapitału
 i wzrost rezydualny co wycena odwrotna), wartość oczekiwaną, potencjał wobec kursu,
 prawdopodobieństwo straty i asymetrię (oczekiwany zysk ÷ oczekiwana strata).
@@ -22,9 +25,9 @@ from .kalkulator import Kalkulator
 from .wycena import bisekcja, parametry, wartosc_przychody_marza
 
 
-def stopa_implikowana(r0, g, n, gT, marza, akcje, kurs) -> float:
+def stopa_implikowana(r0, g, n, gT, marza, akcje, kurs, sciezka=()) -> float:
     """Stopa dyskontowa k, przy której wartość scenariusza na akcję równa się kursowi."""
-    return bisekcja(lambda k: -wartosc_przychody_marza(r0, g, n, gT, k, marza) / akcje, -kurs, gT + 0.001, 0.60)
+    return bisekcja(lambda k: -wartosc_przychody_marza(r0, g, n, gT, k, marza, sciezka) / akcje, -kurs, gT + 0.001, 0.60)
 
 U = Jednostka.ulamek
 
@@ -47,6 +50,9 @@ def wczytaj(plik: Path) -> list[dict]:
             raise BladScenariuszy(f"{s['nazwa']}: brak uzasadnienia")
         if not re.fullmatch(r"[a-z0-9_]+", s["nazwa"]):
             raise BladScenariuszy(f"{s['nazwa']}: nazwa tylko z małych liter, cyfr i _")
+        sc = s.get("sciezka_przychodow", [])
+        if not isinstance(sc, list) or not all(isinstance(x, str) for x in sc):
+            raise BladScenariuszy(f"{s['nazwa']}: sciezka_przychodow to lista id faktów")
     return dane
 
 
@@ -73,10 +79,12 @@ def oblicz(k: Kalkulator, plik: Path, wycena: dict) -> Optional[dict]:
                            wartosc=s[par], jednostka=U, metoda=Metoda.model, status=Status.jedno_zrodlo,
                            uzasadnienie=s["uzasadnienie"]), zastap=True)
             ids.append(fid)
-        wej = [f"przychody.{S}", ids[1], ids[2], "wzrost_rezydualny.zalozenie", ke_id, akcje.id]
+        sc = list(s.get("sciezka_przychodow", []))
+        opis_sc = f"; przychody w pierwszych {len(sc)} latach ze ścieżki" if sc else ""
+        wej = [f"przychody.{S}", ids[1], ids[2], "wzrost_rezydualny.zalozenie", ke_id, akcje.id] + sc
         f = k.wylicz(f"wartosc_na_akcje.{s['nazwa']}", "wartosc_na_akcje",
-                     f"(przychody × marża FCF, wzrost przez {n} lat, potem rezydualny) / akcje_w_obrocie", wej,
-                     lambda r, g, mz, gt, kk, a: wartosc_przychody_marza(r, g, n, gt, kk, mz) / a,
+                     f"(przychody × marża FCF, wzrost przez {n} lat, potem rezydualny{opis_sc}) / akcje_w_obrocie", wej,
+                     lambda r, g, mz, gt, kk, a, *p: wartosc_przychody_marza(r, g, n, gt, kk, mz, p) / a,
                      Jednostka.pieniadz_na_akcje, okres, kurs.waluta)
         if f is None:
             return None
@@ -84,8 +92,8 @@ def oblicz(k: Kalkulator, plik: Path, wycena: dict) -> Optional[dict]:
         # stopa zwrotu implikowana: koszt kapitału, przy którym wartość scenariusza = obecny kurs
         k.wylicz(f"stopa_zwrotu_implikowana.{s['nazwa']}", "stopa_zwrotu_implikowana",
                  f"stopa dyskontowa, przy której wartość scenariusza {s['nazwa']} równa się kursowi",
-                 [f"przychody.{S}", ids[1], ids[2], "wzrost_rezydualny.zalozenie", akcje.id, kurs.id],
-                 lambda r, g, mz, gt, a, ku: stopa_implikowana(r, g, n, gt, mz, a, ku), U, okres)
+                 [f"przychody.{S}", ids[1], ids[2], "wzrost_rezydualny.zalozenie", akcje.id, kurs.id] + sc,
+                 lambda r, g, mz, gt, a, ku, *p: stopa_implikowana(r, g, n, gt, mz, a, ku, p), U, okres)
     wej = [x for para in wartosci for x in para] + [kurs.id]
 
     def oczekiwana(*a):
