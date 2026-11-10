@@ -43,8 +43,24 @@ MAPOWANIE = {
     "CashflowFinancingCashflow": "przeplywy_finansowe",
     "CashflowAmortization": "amortyzacja",
     "CashflowNetCashflow": "zmiana_gotowki",
+    "BalanceCurrentAssets": "aktywa_obrotowe",
+    "BalanceCurrentLiabilities": "zobowiazania_krotkoterminowe",
+    "BalanceNoncurrentBorrowings": "kredyty_dlugoterminowe",
+    "BalanceCurrentBorrowings": "kredyty_krotkoterminowe",
+    "BalanceNoncurrentObligations": "obligacje_dlugoterminowe",
+    "BalanceCurrentObligations": "obligacje_krotkoterminowe",
+    "BalanceNoncurrentLeasing": "leasing_dlugoterminowy",
+    "BalanceCurrentLeasing": "leasing_krotkoterminowy",
+    "IncomeDistributionExpenses": "koszty_dystrybucji",
+    "IncomeAdministrativExpenses": "koszty_zarzadu",
+    "IncomeFinanceCosts": "koszty_finansowe",
+    "CashflowCapex": "capex",  # Biznesradar: rzeczowe + niematerialne razem, jako liczba dodatnia
 }
-POZYCJE_STANU = {"aktywa", "pasywa_razem", "kapital_wlasny", "gotowka", "zapasy"}
+POZYCJE_STANU = {
+    "aktywa", "pasywa_razem", "kapital_wlasny", "gotowka", "zapasy", "aktywa_obrotowe", "zobowiazania_krotkoterminowe",
+    "kredyty_dlugoterminowe", "kredyty_krotkoterminowe", "obligacje_dlugoterminowe",
+    "obligacje_krotkoterminowe", "leasing_dlugoterminowy", "leasing_krotkoterminowy",
+}
 MIESIACE = {"sty": 1, "lut": 2, "mar": 3, "kwi": 4, "maj": 5, "cze": 6, "lip": 7, "sie": 8, "wrz": 9, "paź": 10, "paz": 10, "lis": 11, "gru": 12}
 
 

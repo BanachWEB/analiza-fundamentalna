@@ -30,6 +30,10 @@ zysk_netto_razem:
   rodzaj: okres
   jednostka: pieniadz
   znaczniki: ["ifrs-full:ProfitLoss"]
+liczba_akcji_rozwodniona:
+  rodzaj: okres
+  jednostka: akcje
+  znaczniki: ["ifrs-full:AdjustedWeightedAverageShares", "ifrs-full:WeightedAverageShares"]
 eps_rozwodniony:
   rodzaj: okres
   jednostka: pieniadz_na_akcje
@@ -118,3 +122,70 @@ zobowiazania_leasingowe:
   rodzaj: stan
   jednostka: pieniadz
   znaczniki: ["ifrs-full:LeaseLiabilities"]
+
+# --- pozycje do wskaźników jakości (F-score, M-score, Z'') i długu ---
+aktywa_obrotowe:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:CurrentAssets"]
+zobowiazania_krotkoterminowe:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:CurrentLiabilities"]
+zyski_zatrzymane:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:RetainedEarnings"]
+rzeczowe_aktywa_trwale:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:PropertyPlantAndEquipment"]
+# Dług: silnik bierze sumę zbiorczą, a gdy jej nie ma — sumuje kredyty i obligacje.
+dlug_dlugoterminowy:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:NoncurrentPortionOfNoncurrentBorrowings", "ifrs-full:LongtermBorrowings"]
+dlug_krotkoterminowy:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings", "ifrs-full:ShorttermBorrowings"]
+kredyty_dlugoterminowe:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:NoncurrentPortionOfNoncurrentLoansReceived"]
+kredyty_krotkoterminowe:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:CurrentLoansReceivedAndCurrentPortionOfNoncurrentLoansReceived"]
+obligacje_dlugoterminowe:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:NoncurrentPortionOfNoncurrentBondsIssued"]
+obligacje_krotkoterminowe:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:CurrentBondsIssuedAndCurrentPortionOfNoncurrentBondsIssued"]
+leasing_dlugoterminowy:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:NoncurrentLeaseLiabilities"]
+leasing_krotkoterminowy:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:CurrentLeaseLiabilities"]
+koszty_dystrybucji:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:DistributionCosts"]
+koszty_zarzadu:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:AdministrativeExpense"]
+koszty_finansowe:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:FinanceCosts"]
+podatek_dochodowy:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:IncomeTaxExpenseContinuingOperations"]

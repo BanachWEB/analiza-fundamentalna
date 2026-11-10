@@ -83,7 +83,20 @@ sbc:
 amortyzacja:
   rodzaj: okres
   jednostka: pieniadz
-  znaczniki: [DepreciationDepletionAndAmortization, DepreciationAmortizationAndOther, DepreciationAndAmortization]
+  znaczniki:
+    - DepreciationDepletionAndAmortization
+    - DepreciationAmortizationAndAccretionNet
+    - DepreciationAmortizationAndOther
+    - DepreciationAndAmortization
+# Gdy spółka podaje amortyzację w częściach, silnik sumuje je do pozycji „amortyzacja” (obliczenia/okresy.py).
+amortyzacja_srodkow_trwalych:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [Depreciation]
+amortyzacja_wnip:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [AmortizationOfIntangibleAssets]
 dywidendy_wyplacone:
   rodzaj: okres
   jednostka: pieniadz
@@ -134,3 +147,47 @@ akcje_w_obrocie:
   jednostka: akcje
   jednostka_xbrl: shares
   znaczniki: ["dei:EntityCommonStockSharesOutstanding"]
+
+# --- pozycje do wskaźników jakości (F-score, M-score, Z'') ---
+aktywa_obrotowe:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [AssetsCurrent]
+zobowiazania_krotkoterminowe:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [LiabilitiesCurrent]
+zyski_zatrzymane:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [RetainedEarningsAccumulatedDeficit]
+naleznosci_handlowe:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [AccountsReceivableNetCurrent, ReceivablesNetCurrent]
+zapasy:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [InventoryNet]
+rzeczowe_aktywa_trwale:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [PropertyPlantAndEquipmentNet]
+koszty_sprzedazy_i_zarzadu:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [SellingGeneralAndAdministrativeExpense]
+koszty_odsetek:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [InterestExpense, InterestExpenseNonoperating, InterestExpenseDebt]
+podatek_dochodowy:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [IncomeTaxExpenseBenefit]
+zysk_przed_opodatkowaniem:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki:
+    - IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest
+    - IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments

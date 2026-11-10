@@ -36,6 +36,7 @@ Repozytorium buduje skill, który robi wstępną analizę fundamentalną spółk
 | Drugie źródło dla GPW | `silnik/pobieranie/biznesradar.py` |
 | Test cytatu dla liczb z PDF i tekstu | `silnik/fakty/cytat.py` |
 | Przebieg danych dla spółki z GPW | `silnik/gpw.py` |
+| Obliczenia: okresy pochodne, wskaźniki, F/M/Z'' | `silnik/obliczenia/` |
 | Wyniki analiz | `analizy/<TICKER>/<RRRR-MM-DD>/` |
 | Zasady inwestowania właściciela (limity, pauza po rajdzie, benchmarki) | repozytorium `inwestowanie`, plik `zasady-inwestowania.md` |
 | Zasady pisania (rozmowa, pliki, raporty) | ten plik, sekcja „Język i styl” |

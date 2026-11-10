@@ -8,7 +8,7 @@
       "zrodlo": "SEC",
       "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
       "opis": "XBRL companyfacts",
-      "pobrano": "2026-11-10T07:45:27.449784Z",
+      "pobrano": "2026-11-10T08:10:52.972067Z",
       "sha256": "8c1903c041f5c27e86ed15f37debb1f41882b7904bba129ef9edc76478b1e8ea",
       "plik": "8c1903c041f5c27e.json"
     },
@@ -18,7 +18,7 @@
       "zrodlo": "SEC",
       "adres": "https://data.sec.gov/submissions/CIK0000789019.json",
       "opis": "lista raportów",
-      "pobrano": "2026-11-10T07:45:27.881696Z",
+      "pobrano": "2026-11-10T08:10:53.410066Z",
       "sha256": "8402c941d578290c8d3dc5c8a5889298fa4f32baafd9f1564e8c4731683cc139",
       "plik": "8402c941d578290c.json"
     },
@@ -28,9 +28,9 @@
       "zrodlo": "Stock Analysis",
       "adres": "https://stockanalysis.com/stocks/msft/financials/income-statement/",
       "opis": "income-statement",
-      "pobrano": "2026-11-10T07:45:28.129198Z",
-      "sha256": "be9650ea9e02dd64c9da5bcc5f8ea400fa8835308b5e0c0967b72b79dcf4682d",
-      "plik": "be9650ea9e02dd64.html"
+      "pobrano": "2026-11-10T08:10:53.943890Z",
+      "sha256": "fb7e748b5d580785869a7b1e681a7fd8e9f98f6a858a24234aee0a726421066c",
+      "plik": "fb7e748b5d580785.html"
     },
     {
       "id": "doc-004",
@@ -38,7 +38,7 @@
       "zrodlo": "Stock Analysis",
       "adres": "https://stockanalysis.com/stocks/msft/financials/balance-sheet/",
       "opis": "balance-sheet",
-      "pobrano": "2026-11-10T07:45:28.809237Z",
+      "pobrano": "2026-11-10T08:10:54.634544Z",
       "sha256": "74efd319fd7c16574a5256b5672dbd195ac62c639b9ffbe655cd99f5632f3594",
       "plik": "74efd319fd7c1657.html"
     },
@@ -48,7 +48,7 @@
       "zrodlo": "Stock Analysis",
       "adres": "https://stockanalysis.com/stocks/msft/financials/cash-flow-statement/",
       "opis": "cash-flow-statement",
-      "pobrano": "2026-11-10T07:45:29.485942Z",
+      "pobrano": "2026-11-10T08:10:55.313779Z",
       "sha256": "9fa0ae928843917c8993c0fc90d073d7c1eba3cd6d45a73e1886591a4c4e1c4c",
       "plik": "9fa0ae928843917c.html"
     }

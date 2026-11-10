@@ -4,8 +4,8 @@ Plik wygenerował silnik (2026-11-10). Nie edytuj go ręcznie.
 
 | Status | Liczba faktów |
 |---|---:|
-| zweryfikowany | 120 |
-| jedno_zrodlo | 73 |
+| zweryfikowany | 164 |
+| jedno_zrodlo | 157 |
 | konflikt | 0 |
 | odrzucony | 0 |
 
@@ -14,7 +14,7 @@ Plik wygenerował silnik (2026-11-10). Nie edytuj go ręcznie.
 | Kontrola | Zaliczone | Niezaliczone |
 |---|---:|---:|
 | aktywa=pasywa | 10 | 0 |
-| drugie_zrodlo | 64 | 0 |
+| drugie_zrodlo | 108 | 0 |
 | przeplywy=zmiana_gotowki(bez_kursow) | 10 | 0 |
 | przeplywy=zmiana_gotowki_przed_kursami | 2 | 0 |
 | przychody-koszt_sprzedazy=zysk_brutto | 3 | 0 |

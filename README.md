@@ -11,7 +11,7 @@ Plan ma 7 kroków (`specyfikacja.md`, część 11).
 | 1 | Schemat rejestru faktów, rejestr, archiwum dokumentów | gotowy |
 | 2 | Pobieranie z API SEC i weryfikacja (tożsamości, drugie źródło) | gotowy |
 | 3 | Odczyt ESEF i PDF dla GPW, test cytatu | gotowy |
-| 4 | Obliczenia: wskaźniki, wycena odwrotna, scenariusze, karta Treli | — |
+| 4 | Obliczenia: wskaźniki, wycena odwrotna, scenariusze, karta Treli | 4a gotowy (okresy, wskaźniki, jakość); 4b w budowie |
 | 5 | Bramki stopu | — |
 | 6 | Raport: szablon z miejscami na liczby, lint, PDF | — |
 | 7 | SKILL.md i pełne przebiegi na 6 spółkach testowych | — |
@@ -69,6 +69,17 @@ Format propozycji (wartość tak, jak stoi w raporcie, razem ze skalą z nagłó
 ```
 
 Znane ograniczenie: test cytatu nie wykryje wartości z niewłaściwej kolumny (np. rok poprzedni zamiast bieżącego). Taki błąd łapie drugie źródło.
+
+## Obliczenia (krok 4a)
+
+Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają obliczenia same. Osobno: `python -m silnik.obliczenia analizy/<TICKER>/<data>`.
+
+- **Okresy pochodne:** Q2, Q3 i Q4 z danych narastających (np. Q4 = rok − 9 miesięcy) oraz TTM = ostatni rok + bieżący okres narastający − ten sam okres rok wcześniej.
+- **Uzupełnienia ze składników** (z jawnym wzorem): amortyzacja z części (Microsoft), zobowiązania = pasywa − kapitał (Walmart), dług z kredytów i obligacji (spółki z GPW).
+- **Panel:** marże, EBITDA, FCF dla właścicieli (po capeksie, SBC i spłacie leasingu, jeśli spółka je podaje), konwersja FCF, capex ÷ amortyzacja, ROE, ROIC (NOPAT przy stawce ustawowej: 21% USA, 19% Polska — założenie zapisane w rejestrze), dług netto ÷ EBITDA (z leasingiem i bez), pokrycie odsetek, dynamika r/r i CAGR 3/5 lat, zmiana liczby akcji.
+- **Jakość:** Piotroski F-score, Beneish M-score (próg −1,78), Altman Z'' (strefy 1,10 / 2,60). To diagnostyka, nie stop.
+- **Podział akcji:** gdy liczba akcji zmienia się o całkowitą krotność (np. 3:1), silnik nie liczy dynamiki liczby akcji ani EPS przez tę granicę.
+- Wskaźnik bez danych albo bez sensu (np. dynamika od ujemnej bazy) nie powstaje; powód trafia do sekcji „Braki danych” w `obliczenia.md`.
 
 ## Jak działa rejestr faktów
 

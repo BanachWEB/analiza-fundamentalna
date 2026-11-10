@@ -223,6 +223,10 @@ def wyciagnij_fakty(
                         klucz = ("FY", w.start, w.koniec)
                     elif 80 <= d <= 100 and w.forma in FORMY_KWARTALNE:
                         klucz = ("Q", w.start, w.koniec)
+                    elif 170 <= d <= 190 and w.forma in FORMY_KWARTALNE:
+                        klucz = ("H1", w.start, w.koniec)
+                    elif 260 <= d <= 285 and w.forma in FORMY_KWARTALNE:
+                        klucz = ("M9", w.start, w.koniec)
                     else:
                         continue
                 grupy[klucz].append(w)
@@ -231,9 +235,13 @@ def wyciagnij_fakty(
 
         roczne = sorted([k for k in okresy if k[0] == "FY"], key=lambda k: k[2])[-lat:]
         kwartalne = sorted([k for k in okresy if k[0] == "Q"], key=lambda k: k[2])[-kwartalow:]
-        stany = sorted([k for k in okresy if k[0] == "dzien"], key=lambda k: k[2])[-(lat + kwartalow):]
+        narastajace = sorted([k for k in okresy if k[0] in ("H1", "M9")], key=lambda k: k[2])[-(kwartalow * 2 // 3):]
+        # stany: wszystkie końce roku obrotowego z ostatnich lat + ostatnie końce kwartałów
+        wszystkie_stany = sorted([k for k in okresy if k[0] == "dzien"], key=lambda k: k[2])
+        konce_roku = [k for k in wszystkie_stany if kal.kwartal(k[2]) == "Q4"][-(lat + 1):]
+        stany = sorted(set(konce_roku) | set(wszystkie_stany[-kwartalow:]), key=lambda k: k[2])
 
-        for klucz in roczne + kwartalne + stany:
+        for klucz in roczne + kwartalne + narastajace + stany:
             wpisy = sorted(okresy[klucz], key=lambda w: (w.zlozono, w.accn))
             ostatni = wpisy[-1]
             kontrole = []
@@ -249,6 +257,9 @@ def wyciagnij_fakty(
                 if typ == "FY":
                     okres = Okres(typ="FY", poczatek=start, koniec=koniec)
                     fid = f"{pozycja}.FY{fy}"
+                elif typ in ("H1", "M9"):
+                    okres = Okres(typ=typ, poczatek=start, koniec=koniec)
+                    fid = f"{pozycja}.FY{fy}{typ}"
                 else:
                     fp = kal.kwartal(koniec)
                     okres = Okres(typ=fp, poczatek=start, koniec=koniec)

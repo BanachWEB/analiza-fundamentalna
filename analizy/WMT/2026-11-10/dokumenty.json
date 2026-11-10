@@ -8,7 +8,7 @@
       "zrodlo": "SEC",
       "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000104169.json",
       "opis": "XBRL companyfacts",
-      "pobrano": "2026-11-10T07:45:32.582550Z",
+      "pobrano": "2026-11-10T08:10:58.647260Z",
       "sha256": "49330f98609f70fcef4054edc90bc811398a58c4bf26dc0b218d607967a8dbe4",
       "plik": "49330f98609f70fc.json"
     },
@@ -18,7 +18,7 @@
       "zrodlo": "SEC",
       "adres": "https://data.sec.gov/submissions/CIK0000104169.json",
       "opis": "lista raportów",
-      "pobrano": "2026-11-10T07:45:33.014927Z",
+      "pobrano": "2026-11-10T08:10:59.071014Z",
       "sha256": "974a8f4fe73fc5e16ea8bf18ba149f747fe778ce05a749e46e3006e7bc73216b",
       "plik": "974a8f4fe73fc5e1.json"
     },
@@ -28,7 +28,7 @@
       "zrodlo": "Stock Analysis",
       "adres": "https://stockanalysis.com/stocks/wmt/financials/income-statement/",
       "opis": "income-statement",
-      "pobrano": "2026-11-10T07:45:33.274850Z",
+      "pobrano": "2026-11-10T08:10:59.381430Z",
       "sha256": "8a853fb4cfdebe1143977d6fe4e8fd11856fa9dee261c37cdcc344bf56c47884",
       "plik": "8a853fb4cfdebe11.html"
     },
@@ -38,7 +38,7 @@
       "zrodlo": "Stock Analysis",
       "adres": "https://stockanalysis.com/stocks/wmt/financials/balance-sheet/",
       "opis": "balance-sheet",
-      "pobrano": "2026-11-10T07:45:33.952899Z",
+      "pobrano": "2026-11-10T08:11:00.074958Z",
       "sha256": "aaa1aa6003da7e2aa6b2e0e18d2ad5888bfc50a9000376aa911c34ddb603364b",
       "plik": "aaa1aa6003da7e2a.html"
     },
@@ -48,7 +48,7 @@
       "zrodlo": "Stock Analysis",
       "adres": "https://stockanalysis.com/stocks/wmt/financials/cash-flow-statement/",
       "opis": "cash-flow-statement",
-      "pobrano": "2026-11-10T07:45:34.627917Z",
+      "pobrano": "2026-11-10T08:11:00.757785Z",
       "sha256": "b5a455160ee3cfcaa0f7bc622c97284510f49dc5bf69c246ca9923708a22cf9c",
       "plik": "b5a455160ee3cfca.html"
     }

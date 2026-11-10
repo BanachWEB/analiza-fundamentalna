@@ -225,8 +225,8 @@ class Fakt(BaseModel):
         elif r == Rodzaj.zalozenie:
             if not self.uzasadnienie:
                 raise ValueError(f"{self.id}: założenie musi mieć uzasadnienie")
-            if self.metoda not in (Metoda.model, Metoda.uzytkownik):
-                raise ValueError(f"{self.id}: założenie podaje model albo użytkownik")
+            if self.metoda not in (Metoda.model, Metoda.uzytkownik, Metoda.kod):
+                raise ValueError(f"{self.id}: założenie podaje model, użytkownik albo kod (wartość domyślna)")
         elif r == Rodzaj.prognoza:
             if not (self.dokument and self.dostawca and self.data_prognozy and self.liczba_analitykow is not None):
                 raise ValueError(

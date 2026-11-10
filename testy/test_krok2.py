@@ -75,10 +75,12 @@ def test_korekta_w_pozniejszym_raporcie():
     assert any(c.startswith("zmiana_wersji") for c in x.kontrole)
 
 
-def test_okres_spoza_roku_i_kwartalu_pominiety():
+def test_okresy_narastajace_i_nietypowe():
     f = facts(Revenues=[wpis(300, "2025-07-01", "2026-06-30"),
-                        wpis(150, "2026-01-01", "2026-06-30", form="10-Q")])  # półrocze YTD
-    assert [x.id for x in sec.wyciagnij_fakty(f, "doc-001", MAPA)] == ["przychody.FY2026"]
+                        wpis(150, "2025-07-01", "2025-12-31", form="10-Q", fy=2026, fp="Q2"),  # półrocze narastająco
+                        wpis(90, "2025-07-01", "2025-10-31", form="10-Q")])  # 4 miesiące: pomijamy
+    ids = sorted(x.id for x in sec.wyciagnij_fakty(f, "doc-001", MAPA))
+    assert ids == ["przychody.FY2026", "przychody.FY2026H1"]
 
 
 # --- weryfikacja ------------------------------------------------------------
