@@ -34,17 +34,30 @@ def _ostatni_stan(r: RejestrFaktow, pozycja: str):
 # --- z rejestru faktów ----------------------------------------------------------------------
 
 
-def z_rejestru(r: RejestrFaktow, finansowa: bool = False) -> list[Wynik]:
+def z_rejestru(r: RejestrFaktow, finansowa: bool = False, rynek: str = "USA") -> list[Wynik]:
     p = konfiguracja()["progi"]
     w: list[Wynik] = []
 
-    # B0: pokrycie analityczne
+    # B0: pokrycie analityczne (zasady właściciela v1.6)
     an = _ostatni_stan(r, "liczba_analitykow")
-    if an is None or an.wartosc < p["analitycy_min"]:
+    prog, duze = p["analitycy_wystarczy_ponad"], p["analitycy_duze_ponad"]
+    if an is None:
         w.append(Wynik("B0.pokrycie", 0, "rynek_i_status", "informacja",
-                       "Pokrycie analityczne małe albo nieznane — nie można na nim polegać"
-                       + (f" ({int(an.wartosc)} analityków)" if an else " (brak danych o liczbie analityków)"),
-                       [an.id] if an else []))
+                       "Brak danych o liczbie analityków — pokrycia nie można ocenić" +
+                       (" (dla GPW: wklejka z InvestingPro)" if rynek == "GPW" else "")))
+    else:
+        n = int(an.wartosc)
+        skala = "duże" if n > duze else ("średnie" if n >= 3 else "słabe")
+        if n > prog:
+            w.append(Wynik("B0.pokrycie", 0, "rynek_i_status", "ok", f"Pokrycie analityczne {skala} ({n} analityków)", [an.id]))
+        elif rynek == "USA":
+            w.append(Wynik("B0.pokrycie", 0, "rynek_i_status", "flaga_powazna",
+                           f"Pokrycie analityczne {skala} ({n} analityków) — wg twoich zasad: spółki zagranicznej "
+                           "z 3 analitykami lub mniej nie kupujesz", [an.id]))
+        else:
+            w.append(Wynik("B0.pokrycie", 0, "rynek_i_status", "flaga",
+                           f"Pokrycie analityczne małe ({n} analityków) — na GPW to tylko flaga; "
+                           "nie można polegać na konsensusie", [an.id]))
 
     # B2: rozwodnienie
     zm = _fy(r, "zmiana_liczby_akcji")[-5:]

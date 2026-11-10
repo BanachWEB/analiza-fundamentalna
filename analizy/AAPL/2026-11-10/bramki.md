@@ -6,7 +6,7 @@ Plik wygenerował silnik (2026-11-10). Nie edytuj go ręcznie.
 
 | Etap | Bramka | Wynik | Opis | Dowody | Źródło |
 |---:|---|---|---|---|---|
-| 0 | B0.pokrycie | informacja | Pokrycie analityczne małe albo nieznane — nie można na nim polegać (brak danych o liczbie analityków) |  | kod |
+| 0 | B0.pokrycie | informacja | Brak danych o liczbie analityków — pokrycia nie można ocenić |  | kod |
 | 1 | B1.slabosc_kontroli_wzmianka | flaga | Raport roczny wspomina o istotnej słabości kontroli wewnętrznej („material weakness”); często to ogólny opis ryzyka — model sprawdza; STOP, jeśli słabość jest nieusunięta | doc-012: 1 trafień od 2026-11-02 | kod |
 | 1 | B1.korekta_sprawozdan | ok | Brak 8-K z pozycją 4.02 (korekta sprawozdań) |  | kod |
 | 1 | B1.opoznione_raporty | ok | Brak zawiadomień NT 10-K/NT 10-Q |  | kod |

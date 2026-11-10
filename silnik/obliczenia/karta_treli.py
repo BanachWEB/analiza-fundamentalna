@@ -2,7 +2,7 @@
 
 Karta jest informacją, a nie bramką. Filar bez danych dostaje „brak danych”, a jego waga
 przechodzi proporcjonalnie na pozostałe; raport pokazuje, z ilu filarów powstała karta.
-Przy pokryciu analitycznym poniżej 3 analityków filar „analitycy” zawsze ma brak danych.
+Przy pokryciu analitycznym 3 analityków lub mniej (zasady właściciela v1.6) filar „analitycy” zawsze ma brak danych.
 """
 
 from __future__ import annotations
@@ -77,7 +77,7 @@ def oblicz(k: Kalkulator, rynek: str, wycena: dict, ttm_sufiks: Optional[str], l
         filar = Filar(nazwa, f_cfg["waga"], None)
         wyniki = []
         for miara, progi in f_cfg["miary"].items():
-            if nazwa == "analitycy" and (liczba_analitykow is None or liczba_analitykow < 3):
+            if nazwa == "analitycy" and (liczba_analitykow is None or liczba_analitykow <= 3):
                 filar.miary[miara] = None
                 continue
             pref = d if miara in ("fcf_yield", "ev_ebit", "nadwyzka_wzrostu", "potencjal_do_ceny_docelowej") else ttm_sufiks

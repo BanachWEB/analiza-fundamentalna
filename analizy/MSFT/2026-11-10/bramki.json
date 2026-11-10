@@ -4,6 +4,19 @@
   "powod": "brak twardej flagi",
   "wyniki": [
     {
+      "id": "B0.pokrycie",
+      "etap": 0,
+      "kategoria": "rynek_i_status",
+      "poziom": "ok",
+      "opis": "Pokrycie analityczne duże (58 analityków)",
+      "dowody": [
+        "liczba_analitykow.2026-11-10"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
       "id": "B1.slabosc_kontroli_wzmianka",
       "etap": 1,
       "kategoria": "biegly_i_regulator",

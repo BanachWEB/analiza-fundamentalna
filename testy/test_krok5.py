@@ -58,7 +58,7 @@ def test_rozwodnienie_seryjne_i_przeplywy():
     w = {x.id: x for x in automaty.z_rejestru(r)}
     assert w["B2.rozwodnienie_seryjne"].poziom == "flaga_powazna"
     assert w["B3.przeplywy_do_zysku"].poziom == "flaga"
-    assert w["B0.pokrycie"].poziom == "informacja"
+    assert w["B0.pokrycie"].poziom == "informacja"  # brak danych o liczbie analityków
 
 
 def test_ujemny_kapital_aktualny_przestarzaly_i_wyjasniony():
@@ -140,3 +140,14 @@ def test_dowody_modelu(tmp_path):
     assert any("cytatu nie ma" in o for o in odrzucone)
     assert any("czterech testów" in o for o in odrzucone)
     assert any("nieznana bramka" in o for o in odrzucone)
+
+
+@pytest.mark.parametrize("rynek,n,poziom", [("USA", 58, "ok"), ("USA", 3, "flaga_powazna"), ("GPW", 3, "flaga"),
+                                           ("GPW", 7, "ok")])
+def test_pokrycie_wg_zasad(rynek, n, poziom):
+    r = RejestrFaktow("X", date(2026, 11, 10))
+    r.dodaj(Fakt(id="liczba_analitykow.2026-11-10", rodzaj="raportowany", pozycja="liczba_analitykow",
+                 okres={"typ": "dzien", "koniec": date(2026, 11, 10)}, wartosc=n, jednostka="liczba",
+                 metoda="parser_strony", status="jedno_zrodlo", dokument="doc-001", miejsce={}))
+    w = {x.id: x for x in automaty.z_rejestru(r, rynek=rynek)}
+    assert w["B0.pokrycie"].poziom == poziom

@@ -188,8 +188,8 @@ def karta_tabela(k: Kalkulator, wynik: dict) -> list[str]:
             miary = "; ".join(f"{m}: " + ("brak" if v is None else f"{v[2]:.1f}".replace(".", ",")) for m, v in f.miary.items())
             pkt = "brak danych" if f.punkty is None else f"{f.punkty:.1f}".replace(".", ",")
             linie.append(f"| {f.nazwa} | {f.waga:.0%} | {pkt} | {miary} |")
-        if wynik.get("analitycy") is None or wynik["analitycy"] < 3:
-            linie += ["", "Filar „analitycy”: brak danych albo pokrycie poniżej 3 analityków — nie można na nim polegać."]
+        if wynik.get("analitycy") is None or wynik["analitycy"] <= 3:
+            linie += ["", "Filar „analitycy”: brak danych albo 3 analityków lub mniej — nie można na nim polegać."]
     return linie or ["Brak karty (brak wyceny)."]
 
 

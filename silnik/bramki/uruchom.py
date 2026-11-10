@@ -18,10 +18,12 @@ def uruchom_w_katalogu(katalog: Path, rynek: Optional[str] = None) -> Path:
     ticker = dok["ticker"]
     archiwum = Archiwum(ticker, katalog)
     rejestr = RejestrFaktow.z_pliku(katalog / "fakty.json", archiwum.ids())
+    if rynek is None and (katalog / "analiza.json").exists():
+        rynek = json.loads((katalog / "analiza.json").read_text(encoding="utf-8")).get("rynek")
     if rynek is None:
         rynek = "GPW" if any(f.waluta == "PLN" for f in rejestr.fakty() if f.pozycja == "przychody") else "USA"
     from silnik.obliczenia import sektor
-    wyniki = automaty.z_rejestru(rejestr, sektor(katalog) == "finanse")
+    wyniki = automaty.z_rejestru(rejestr, sektor(katalog) == "finanse", rynek)
     if rynek == "USA":
         sub = next((d for d in archiwum.rejestr.dokumenty if d.zrodlo == "SEC" and d.opis == "lista raportów"), None)
         if sub:

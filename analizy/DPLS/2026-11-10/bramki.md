@@ -6,7 +6,7 @@ Plik wygenerował silnik (2026-11-10). Nie edytuj go ręcznie.
 
 | Etap | Bramka | Wynik | Opis | Dowody | Źródło |
 |---:|---|---|---|---|---|
-| 0 | B0.pokrycie | informacja | Pokrycie analityczne małe albo nieznane — nie można na nim polegać (brak danych o liczbie analityków) |  | kod |
+| 0 | B0.pokrycie | informacja | Brak danych o liczbie analityków — pokrycia nie można ocenić |  | kod |
 | 1 | B1.opoznione_raporty | flaga poważna | 9 zawiadomień o opóźnieniu raportu (NT) w 3 latach; przyczynę sprawdza model (przyczyny księgowe = STOP) | doc-002: NT 10-Q 2026-08-14 0001683168-26-006462; doc-002: NT 10-Q 2026-05-15 0001683168-26-003993; doc-002: NT 10-K 2026-03-31 0001683168-26-002553 … | kod |
 | 1 | B1.zmiana_bieglego | flaga | Zmiana biegłego rewidenta (8-K, pozycja 4.01); model sprawdza, czy były spory | doc-002: 8-K 4.01 2026-09-24 0001683168-26-007352; doc-002: 8-K 4.01 2026-09-17 0001683168-26-007212; doc-002: 8-K 4.01 2024-07-03 0001683168-24-004669 … | kod |
 | 1 | B1.korekta_sprawozdan | ok | Brak 8-K z pozycją 4.02 (korekta sprawozdań) |  | kod |

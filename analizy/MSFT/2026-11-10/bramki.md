@@ -6,6 +6,7 @@ Plik wygenerował silnik (2026-11-10). Nie edytuj go ręcznie.
 
 | Etap | Bramka | Wynik | Opis | Dowody | Źródło |
 |---:|---|---|---|---|---|
+| 0 | B0.pokrycie | ok | Pokrycie analityczne duże (58 analityków) | liczba_analitykow.2026-11-10 | kod |
 | 1 | B1.slabosc_kontroli_wzmianka | flaga | Raport roczny wspomina o istotnej słabości kontroli wewnętrznej („material weakness”); często to ogólny opis ryzyka — model sprawdza; STOP, jeśli słabość jest nieusunięta | doc-011: 1 trafień od 2026-07-28 | kod |
 | 1 | B1.korekta_sprawozdan | ok | Brak 8-K z pozycją 4.02 (korekta sprawozdań) |  | kod |
 | 1 | B1.opinia_bieglego | ok | Deloitte & Touche: opinia bez zastrzeżeń o sprawozdaniach za FY2026 | doc-015: „In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company as of June 30, 2026 and 2025” | model |

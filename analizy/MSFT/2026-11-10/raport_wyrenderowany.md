@@ -4,7 +4,7 @@ Data analizy: 10.11.2026. Rynek: USA (Nasdaq). Instrument w XTB: MSFT.US (akcja)
 
 ## TL;DR
 
-> Microsoft sprzedaje oprogramowanie biurowe w abonamencie, chmurę Azure i usługi AI, Windows, Xbox i reklamę w wyszukiwarce. Spółka rośnie szybko jak na swoją wielkość i jest bardzo rentowna, ale rekordowe inwestycje w centra danych obniżyły FCF dla właścicieli do 43,9 mld USD[^1], czyli 30,8%[^2] zysku netto. Obecna cena zakłada, że FCF dla właścicieli będzie rósł o 27,0%[^3] rocznie przez dekadę. Moim zdaniem to oczekiwanie wymaga, by inwestycje w AI zwróciły się szybko i w pełni; w żadnym z moich scenariuszy wartość nie dochodzi do obecnego kursu przy koszcie kapitału 9,3%[^4]. Wg twoich zasad: spółka z USA wymaga zmiany zasady „Tylko spółki z GPW”, którą zapowiedziałeś.
+> Microsoft sprzedaje oprogramowanie biurowe w abonamencie, chmurę Azure i usługi AI, Windows, Xbox i reklamę w wyszukiwarce. Spółka rośnie szybko jak na swoją wielkość i jest bardzo rentowna, ale rekordowe inwestycje w centra danych obniżyły FCF dla właścicieli do 43,9 mld USD[^1], czyli 30,8%[^2] zysku netto. Obecna cena zakłada, że FCF dla właścicieli będzie rósł o 27,0%[^3] rocznie przez dekadę. Moim zdaniem to oczekiwanie wymaga, by inwestycje w AI zwróciły się szybko i w pełni; w żadnym z moich scenariuszy wartość nie dochodzi do obecnego kursu przy koszcie kapitału 9,3%[^4]. Wg twoich zasad: spółka trafia do koszyka „Akcje zagraniczne”, a pokrycie analityczne (duże) spełnia warunek zakupu.
 
 - Przewaga konkurencyjna: szeroka (efekt sieciowy i koszty zmiany dostawcy w oprogramowaniu dla firm, skala w chmurze), trend stabilny z ryzykiem słabnięcia kosztów zmiany dostawcy przez AI.
 - Wycena: kapitalizacja 4,05 bln USD[^5], C/Z 28,4×[^6], EV/EBIT 24,6×[^7], FCF yield 1,1%[^8].
@@ -195,6 +195,7 @@ Instrument: MSFT.US, akcja notowana na Nasdaq, w dolarach. XTB pobiera pół pro
 
 ## 13. Projekt karty
 
+- **Pokrycie analityczne:** 58[^13] analityków (S&P Global przez Stock Analysis, 10.11.2026) — pokrycie duże.
 - **Teza w trzech zdaniach:** Microsoft rośnie szybciej niż stopy bazowe dla gigantów dzięki chmurze i AI. Inwestycje w centra danych zaczną zarabiać, a marża FCF wróci do średniej sprzed fali AI. Rynek wycenia już oba te warunki, więc przewaga wymagałaby, by spełniły się z nadwyżką.
 - **Co jest w cenie:** wzrost FCF o 27,0%[^3] rocznie przez dekadę; marża FCF 31,6%[^53] przy wzroście historycznym.
 - **Antytezy z progami:** w części „Teza, antytezy, pre-mortem”.
