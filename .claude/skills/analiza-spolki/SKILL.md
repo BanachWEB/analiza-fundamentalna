@@ -55,7 +55,7 @@ Według `references/teza-i-scenariusze.md`:
 - Napisz `D/raport.md` według `references/szablon-raportu.md` (TL;DR na początku, potem 14 części).
 - `python -m silnik.raport D` — lint, renderowanie, PDF. Lint odrzucił → popraw tekst (zamień liczbę na miejsce `{{…}}` albo na słowa bez liczb) i uruchom ponownie.
 - Obejrzyj PDF (`pdftoppm -r 60 -png D/raport.pdf /tmp/strona`), sprawdź, czy tabele i wykresy są czytelne.
-- Przeczytaj raport jako recenzent: czy każde twierdzenie jakościowe ma źródło w dokumentach, czy oceny zaczynają się od „Moim zdaniem”, czy nie ma rekomendacji.
+- Przeczytaj raport jako recenzent: każde zdanie z faktem (także jakościowym, np. „spółka posiada nieruchomości”) sprawdź poleceniem `python -m silnik.dokumenty tekst D doc-… --szukaj …`; czego nie znajdziesz w archiwum, usuń albo oznacz jako niesprawdzone. Sprawdź też, czy oceny zaczynają się od „Moim zdaniem” i czy nie ma rekomendacji. (Przebieg Dino z 10.11.2026: model wpisał z pamięci fakt o nieruchomościach, którego nie było w dokumentach.)
 
 ### Etap 6. Zapis
 
