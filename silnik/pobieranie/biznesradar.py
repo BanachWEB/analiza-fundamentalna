@@ -54,12 +54,24 @@ MAPOWANIE = {
     "IncomeDistributionExpenses": "koszty_dystrybucji",
     "IncomeAdministrativExpenses": "koszty_zarzadu",
     "IncomeFinanceCosts": "koszty_finansowe",
+    # banki (inne pola rachunku i bilansu)
+    "IncomeNetIntrestIncome": "wynik_odsetkowy",
+    "IncomeNetFeeExpense": "wynik_prowizyjny",
+    "IncomeImpairmentLosses": "odpisy_kredytowe",
+    "IncomeAdministrationCosts": "koszty_administracyjne",
+    "IncomeNetoperatingProfit": "zysk_operacyjny",
+    "IncomeBeforTaxProfit": "zysk_przed_opodatkowaniem",
+    "BalanceOwnCapital": "kapital_wlasny_z_udzialami_niekontrolujacymi",
+    "BalanceTotalLiabilities": "zobowiazania",
+    "BalanceLoansToCustomers": "kredyty_dla_klientow",
+    "BalanceLiabilitiesToCustomers": "depozyty_klientow",
     "CashflowCapex": "capex",  # Biznesradar: rzeczowe + niematerialne razem, jako liczba dodatnia
 }
 POZYCJE_STANU = {
     "aktywa", "pasywa_razem", "kapital_wlasny", "gotowka", "zapasy", "aktywa_obrotowe", "zobowiazania_krotkoterminowe",
     "kredyty_dlugoterminowe", "kredyty_krotkoterminowe", "obligacje_dlugoterminowe",
     "obligacje_krotkoterminowe", "leasing_dlugoterminowy", "leasing_krotkoterminowy",
+    "kapital_wlasny_z_udzialami_niekontrolujacymi", "zobowiazania", "kredyty_dla_klientow", "depozyty_klientow",
 }
 MIESIACE = {"sty": 1, "lut": 2, "mar": 3, "kwi": 4, "maj": 5, "cze": 6, "lip": 7, "sie": 8, "wrz": 9, "paź": 10, "paz": 10, "lis": 11, "gru": 12}
 

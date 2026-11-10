@@ -120,10 +120,11 @@ def test_punkty_liniowe_i_odwrocone():
 
 
 def test_wynik_ogolny_przenosi_wage_brakujacego_filaru():
-    filary = [karta_treli.Filar("a", 0.5, 8.0), karta_treli.Filar("b", 0.3, 4.0), karta_treli.Filar("c", 0.2, None)]
+    filary = [karta_treli.Filar("a", 0.4, 8.0), karta_treli.Filar("b", 0.3, 4.0), karta_treli.Filar("c", 0.2, 6.0),
+              karta_treli.Filar("d", 0.1, None)]
     wynik, n = karta_treli.wynik_ogolny(filary)
-    assert n == 2
-    assert wynik == pytest.approx((8 * 0.5 + 4 * 0.3) / 0.8)
+    assert n == 3
+    assert wynik == pytest.approx((8 * 0.4 + 4 * 0.3 + 6 * 0.2) / 0.9)
 
 
 # --- parsery danych rynkowych ------------------------------------------------------------------
@@ -180,3 +181,8 @@ def test_biznesradar_notowania_i_historia():
          '<td>37.17</td><td>38.15</td><td>3 755 268</td><td>1</td></tr></table>')
     s = rynek.sesje_biznesradar(h)
     assert s[0].zamkniecie == 38.15 and s[0].wolumen == 3755268
+
+
+def test_karta_wymaga_trzech_filarow():
+    filary = [karta_treli.Filar("a", 0.5, 8.0), karta_treli.Filar("b", 0.3, 4.0), karta_treli.Filar("c", 0.2, None)]
+    assert karta_treli.wynik_ogolny(filary) == (None, 2)

@@ -14,7 +14,19 @@ Plan ma 7 kroków (`specyfikacja.md`, część 11).
 | 4 | Obliczenia: wskaźniki, wycena odwrotna, scenariusze, karta Treli | gotowy |
 | 5 | Bramki stopu | gotowy |
 | 6 | Raport: szablon z miejscami na liczby, lint, PDF | gotowy |
-| 7 | SKILL.md i pełne przebiegi na 6 spółkach testowych | — |
+| 7 | SKILL.md i pełne przebiegi na spółkach testowych | gotowy: skill, pełny raport MSFT, stopy PBG i DPLS, dane i bramki PKO i DNP |
+
+## Skill
+
+Skill „analiza-spolki” jest w `.claude/skills/analiza-spolki/` (SKILL.md i pliki referencyjne). Działa w sesjach Claude Code otwartych na tym repozytorium. Polecenie dla modelu do pracy z dokumentami: `python -m silnik.dokumenty` (pobieranie do archiwum, wklejka, tekst do cytatów).
+
+| Spółka testowa | Ścieżka | Wynik |
+|---|---|---|
+| Microsoft (MSFT) | USA, głębokie pokrycie | pełny raport PDF |
+| PBG | GPW, Lista Alertów | STOP na etapie 0, PDF stopu |
+| DarkPulse (DPLS) | USA, kontynuacja działalności | STOP na etapie 3, PDF stopu |
+| PKO BP (PKO) | GPW, bank (sektor finanse) | dane, obliczenia i bramki; bez pełnego raportu |
+| Dino (DNP) | GPW, ESEF + PDF | dane, obliczenia i bramki; bez pełnego raportu |
 
 ## Uruchomienie
 

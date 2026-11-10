@@ -94,9 +94,12 @@ def oblicz(k: Kalkulator, rynek: str, wycena: dict, ttm_sufiks: Optional[str], l
     return filary
 
 
+MIN_FILAROW = 3  # karta z mniejszej liczby filarów wprowadza w błąd
+
+
 def wynik_ogolny(filary: list[Filar]) -> tuple[Optional[float], int]:
     dostepne = [f for f in filary if f.punkty is not None]
-    if not dostepne:
-        return None, 0
+    if len(dostepne) < MIN_FILAROW:
+        return None, len(dostepne)
     suma_wag = sum(f.waga for f in dostepne)
     return sum(f.punkty * f.waga / suma_wag for f in dostepne), len(dostepne)

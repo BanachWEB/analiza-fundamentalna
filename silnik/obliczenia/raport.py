@@ -182,7 +182,7 @@ def karta_tabela(k: Kalkulator, wynik: dict) -> list[str]:
         ogolny, n = wynik_ogolny(karta)
         linie += [
                   (f"Wynik: **{ogolny:.1f} / 10** z {n} filarów z 5.".replace(".", ",", 1) if ogolny is not None
-                   else "Wynik: brak danych."), "",
+                   else f"Wynik: nie liczę — dane tylko dla {n} filarów z 5 (minimum 3)."), "",
                   "| Filar | Waga | Punkty | Miary |", "|---|---:|---:|---|"]
         for f in karta:
             miary = "; ".join(f"{m}: " + ("brak" if v is None else f"{v[2]:.1f}".replace(".", ",")) for m, v in f.miary.items())

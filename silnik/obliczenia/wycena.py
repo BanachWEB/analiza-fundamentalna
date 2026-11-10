@@ -176,7 +176,7 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str) -> dict:
     m("c_z", f"kapitalizacja / zysk_netto.{S}", [cap.id, f"zysk_netto.{S}"],
       lambda c, z: c / z if z > 0 else (_ for _ in ()).throw(BrakSensu("zysk netto ≤ 0")))
     m("fcf_yield", f"fcf_wlascicieli.{S} / kapitalizacja", [f"fcf_wlascicieli.{S}", cap.id], lambda f, c: f / c, U)
-    kw = ostatni(k, "kapital_wlasny", D)
+    kw = ostatni(k, "kapital_wlasny", D) or ostatni(k, "kapital_wlasny_z_udzialami_niekontrolujacymi", D)
     if kw:
         m("c_wk", "kapitalizacja / kapital_wlasny", [cap.id, kw.id], lambda c, b: c / b)
     dn = ostatni(k, "dlug_netto", D)

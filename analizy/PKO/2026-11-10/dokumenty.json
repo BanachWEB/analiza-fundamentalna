@@ -1,0 +1,496 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "PKO",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/PKO",
+      "opis": "rachunek roczne",
+      "pobrano": "2026-11-10T08:54:03.456625Z",
+      "sha256": "a14a337ae4d933afded526adcaee55cefca14c99805bcba128f236c32ed81cbe",
+      "plik": "a14a337ae4d933af.html"
+    },
+    {
+      "id": "doc-002",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/PKO,Q",
+      "opis": "rachunek kwartalne",
+      "pobrano": "2026-11-10T08:54:05.341321Z",
+      "sha256": "36c9cefca211ad2b6d50c93beefaaade0f095ddf260dddeb1e2468d27e15d1fc",
+      "plik": "36c9cefca211ad2b.html"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/PKO",
+      "opis": "bilans roczne",
+      "pobrano": "2026-11-10T08:54:07.055910Z",
+      "sha256": "b545ebb24b5ef08c9bc64d8d36c428183749b0a3b27bd262ef98881e8870224e",
+      "plik": "b545ebb24b5ef08c.html"
+    },
+    {
+      "id": "doc-004",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/PKO,Q",
+      "opis": "bilans kwartalne",
+      "pobrano": "2026-11-10T08:54:08.958832Z",
+      "sha256": "18b0e77fcdb8bfd11c0915c6c57399260f82dd01d0bf1b138df657cd9d892262",
+      "plik": "18b0e77fcdb8bfd1.html"
+    },
+    {
+      "id": "doc-005",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/PKO",
+      "opis": "przeplywy roczne",
+      "pobrano": "2026-11-10T08:54:10.469247Z",
+      "sha256": "2aa886495bfb149a220daea281197bd0b5b01d7224ae1f304ec97fbc8b0b942f",
+      "plik": "2aa886495bfb149a.html"
+    },
+    {
+      "id": "doc-006",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/PKO,Q",
+      "opis": "przeplywy kwartalne",
+      "pobrano": "2026-11-10T08:54:12.113828Z",
+      "sha256": "172fa42eb28a9ee8d8880aa7799f3aed4d1bf4a760492d1292683877f0471222",
+      "plik": "172fa42eb28a9ee8.html"
+    },
+    {
+      "id": "doc-007",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/PKO",
+      "opis": "notowania historyczne PKO, strona 1",
+      "pobrano": "2026-11-10T08:54:13.574497Z",
+      "sha256": "87360225410d5b2e4de8ec83098484c3740a9a57a45362e303363bcadd0a2a8e",
+      "plik": "87360225410d5b2e.html"
+    },
+    {
+      "id": "doc-008",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/PKO,2",
+      "opis": "notowania historyczne PKO, strona 2",
+      "pobrano": "2026-11-10T08:54:15.166450Z",
+      "sha256": "bcce8db05b3ae046699f7060ba64a1578a6acfcb519a4f247079c3c561b53ac1",
+      "plik": "bcce8db05b3ae046.html"
+    },
+    {
+      "id": "doc-009",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/PKO,3",
+      "opis": "notowania historyczne PKO, strona 3",
+      "pobrano": "2026-11-10T08:54:16.659749Z",
+      "sha256": "3ec4e3ec7e1ea2cfacb95a1c56d136bac5a7258e9a3077d2190eaf0006abb5cd",
+      "plik": "3ec4e3ec7e1ea2cf.html"
+    },
+    {
+      "id": "doc-010",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/PKO,4",
+      "opis": "notowania historyczne PKO, strona 4",
+      "pobrano": "2026-11-10T08:54:18.104755Z",
+      "sha256": "17465de440cafbab56d07e0d545ab84df4d2a3c0f4d81ee5491f483cd67d31b3",
+      "plik": "17465de440cafbab.html"
+    },
+    {
+      "id": "doc-011",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/PKO,5",
+      "opis": "notowania historyczne PKO, strona 5",
+      "pobrano": "2026-11-10T08:54:19.662710Z",
+      "sha256": "e77dfa252a07c33bfce0420859cc595b34cbcd2b95d0b6d13fb473b857e4758b",
+      "plik": "e77dfa252a07c33b.html"
+    },
+    {
+      "id": "doc-012",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/PKO,6",
+      "opis": "notowania historyczne PKO, strona 6",
+      "pobrano": "2026-11-10T08:54:21.129239Z",
+      "sha256": "7c31de53493ffc3b7e16cb2a12cea5de63262c8c4b9024238e714ba0f7472aca",
+      "plik": "7c31de53493ffc3b.html"
+    },
+    {
+      "id": "doc-013",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG",
+      "opis": "notowania historyczne WIG, strona 1",
+      "pobrano": "2026-11-10T08:54:22.574105Z",
+      "sha256": "581cf3e097671940341dd84a8c1aa0b359c9e0712178650829c0f46cd17d73df",
+      "plik": "581cf3e097671940.html"
+    },
+    {
+      "id": "doc-014",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,2",
+      "opis": "notowania historyczne WIG, strona 2",
+      "pobrano": "2026-11-10T08:54:24.028228Z",
+      "sha256": "f86fcf1b5e19029c0a6d7b63ee3396576542ba387c349a40be637a23e50b77fa",
+      "plik": "f86fcf1b5e19029c.html"
+    },
+    {
+      "id": "doc-015",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,3",
+      "opis": "notowania historyczne WIG, strona 3",
+      "pobrano": "2026-11-10T08:54:25.563657Z",
+      "sha256": "6f08dff05c6f0db152a085dcee408cd7305dea527655daa91c212586b4ead308",
+      "plik": "6f08dff05c6f0db1.html"
+    },
+    {
+      "id": "doc-016",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,4",
+      "opis": "notowania historyczne WIG, strona 4",
+      "pobrano": "2026-11-10T08:54:27.054171Z",
+      "sha256": "cc11cb401c215bd0387d06eba06dc95d7a8ac610079c0df1896addd43f321cfb",
+      "plik": "cc11cb401c215bd0.html"
+    },
+    {
+      "id": "doc-017",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,5",
+      "opis": "notowania historyczne WIG, strona 5",
+      "pobrano": "2026-11-10T08:54:28.574909Z",
+      "sha256": "163f38ffcf035e658c8b67c8696a55b1343031c08a9bd5de0edfb33805fa7fd7",
+      "plik": "163f38ffcf035e65.html"
+    },
+    {
+      "id": "doc-018",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,6",
+      "opis": "notowania historyczne WIG, strona 6",
+      "pobrano": "2026-11-10T08:54:30.036555Z",
+      "sha256": "8ab53ffc04e25a49bdb4d9fc85284edbfb1ebe521c069a30e2ca1520f019d906",
+      "plik": "8ab53ffc04e25a49.html"
+    },
+    {
+      "id": "doc-019",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania/PKO",
+      "opis": "notowania (liczba akcji)",
+      "pobrano": "2026-11-10T08:54:31.234845Z",
+      "sha256": "f03199aae36792f55dfb33d3fcc3ea7df6408d008ebe33d336ec336a92038007",
+      "plik": "f03199aae36792f5.html"
+    },
+    {
+      "id": "doc-020",
+      "typ": "strona",
+      "zrodlo": "Damodaran (NYU Stern)",
+      "adres": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+      "opis": "premie za ryzyko krajów",
+      "pobrano": "2026-11-10T08:54:31.565896Z",
+      "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+      "plik": "ea30d57fc0858072.html"
+    },
+    {
+      "id": "doc-021",
+      "typ": "strona",
+      "zrodlo": "Strefa Inwestorów",
+      "adres": "https://strefainwestorow.pl/wiadomosci/20261110/rentownosci-obligacji-wybranych-panstw-tabela",
+      "opis": "rentowności obligacji",
+      "pobrano": "2026-11-10T08:54:32.912703Z",
+      "sha256": "4599ff090fe547be99f5a6d45b8cdc7e8fdcc1dabedf85740bcb1675108a7de7",
+      "plik": "4599ff090fe547be.html"
+    },
+    {
+      "id": "doc-022",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/PKO.WA?range=2y&interval=1d",
+      "opis": "kurs (kontrola)",
+      "pobrano": "2026-11-10T08:54:34.229254Z",
+      "sha256": "75cb9ee2883b77f17fe792fa68c8d413944e831d20458fe7644a50a62c299b64",
+      "plik": "75cb9ee2883b77f1.json"
+    },
+    {
+      "id": "doc-023",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/lista-alertow-notowania",
+      "opis": "lista alertow",
+      "pobrano": "2026-11-10T08:54:36.009841Z",
+      "sha256": "7de30c5141f2b9e9dd2810e31d2537f4489e3d00627ec00b9c957ef3365545d8",
+      "plik": "7de30c5141f2b9e9.html"
+    },
+    {
+      "id": "doc-024",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/spolki-ze-szczegolnym-oznaczeniem-notowania-ciagle",
+      "opis": "oznaczenie ciagle",
+      "pobrano": "2026-11-10T08:54:38.881833Z",
+      "sha256": "ef510dd4a6f1db2bf83cc41d57c55644b82b769f51dcc93bd6767383985b1e6a",
+      "plik": "ef510dd4a6f1db2b.html"
+    },
+    {
+      "id": "doc-025",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/spolki-ze-szczegolnym-oznaczeniem-notowania-jednolite",
+      "opis": "oznaczenie jednolite",
+      "pobrano": "2026-11-10T08:54:46.501287Z",
+      "sha256": "81dfb4d3affbb647f1bcff1831b9b43ce6bd2265f65d3015e1869e774b43fb90",
+      "plik": "81dfb4d3affbb647.html"
+    },
+    {
+      "id": "doc-026",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/zawieszenia-i-wykluczenia",
+      "opis": "zawieszenia",
+      "pobrano": "2026-11-10T08:54:48.799058Z",
+      "sha256": "9b68ce4df237b7af091d370f8bd0a8e9161a964a02da0d08810e246284ff4159",
+      "plik": "9b68ce4df237b7af.html"
+    },
+    {
+      "id": "doc-027",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/PKO",
+      "opis": "rachunek roczne",
+      "pobrano": "2026-11-10T08:55:33.599607Z",
+      "sha256": "7a9246102142897f0a48441e59e7c6bcb43de2bbfee5bb51f1eeab91f14934a3",
+      "plik": "7a9246102142897f.html"
+    },
+    {
+      "id": "doc-028",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/PKO,Q",
+      "opis": "rachunek kwartalne",
+      "pobrano": "2026-11-10T08:55:35.357189Z",
+      "sha256": "710d4b1406d97dfa31deccf0b572126f66fe19b79aada04869e7096ca5c5aceb",
+      "plik": "710d4b1406d97dfa.html"
+    },
+    {
+      "id": "doc-029",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/PKO",
+      "opis": "bilans roczne",
+      "pobrano": "2026-11-10T08:55:36.985294Z",
+      "sha256": "51d823a592cc218241836a03191be0e94f578569fa9dd4f95a0682a366d54de2",
+      "plik": "51d823a592cc2182.html"
+    },
+    {
+      "id": "doc-030",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/PKO,Q",
+      "opis": "bilans kwartalne",
+      "pobrano": "2026-11-10T08:55:38.895334Z",
+      "sha256": "cfe1d46fe7fa7a07da63909edd982ccbf9ce72690de5d0fc0555966d3068b977",
+      "plik": "cfe1d46fe7fa7a07.html"
+    },
+    {
+      "id": "doc-031",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/PKO",
+      "opis": "przeplywy roczne",
+      "pobrano": "2026-11-10T08:55:40.374968Z",
+      "sha256": "393494d811a7492f31e115a74234448cfe07279c0a8b6d65359599345201532c",
+      "plik": "393494d811a7492f.html"
+    },
+    {
+      "id": "doc-032",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/PKO,Q",
+      "opis": "przeplywy kwartalne",
+      "pobrano": "2026-11-10T08:55:42.217066Z",
+      "sha256": "cfd43e5a32b29d4605f600490b68f0e327acc974458f9b6461fa67fc438160e9",
+      "plik": "cfd43e5a32b29d46.html"
+    },
+    {
+      "id": "doc-033",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/PKO",
+      "opis": "notowania historyczne PKO, strona 1",
+      "pobrano": "2026-11-10T08:55:43.790656Z",
+      "sha256": "0fc937d98b38de3b7f86aeb426941de6c9e18cbc170abe880290950beb504155",
+      "plik": "0fc937d98b38de3b.html"
+    },
+    {
+      "id": "doc-034",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/PKO,2",
+      "opis": "notowania historyczne PKO, strona 2",
+      "pobrano": "2026-11-10T08:55:45.251444Z",
+      "sha256": "1b415f978873d9e5fdb1e93244b7b3601833c414e832b5ac995f26d3ce96b37a",
+      "plik": "1b415f978873d9e5.html"
+    },
+    {
+      "id": "doc-035",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/PKO,3",
+      "opis": "notowania historyczne PKO, strona 3",
+      "pobrano": "2026-11-10T08:55:46.774814Z",
+      "sha256": "ece1a73096919b02842a05b1fe94d0de7086bbe7746601ac261c25a544230525",
+      "plik": "ece1a73096919b02.html"
+    },
+    {
+      "id": "doc-036",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/PKO,4",
+      "opis": "notowania historyczne PKO, strona 4",
+      "pobrano": "2026-11-10T08:55:48.306196Z",
+      "sha256": "9151d7c327c36fff0de713ef5c78b986f8924791c3aed0b4f3891458dea26416",
+      "plik": "9151d7c327c36fff.html"
+    },
+    {
+      "id": "doc-037",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/PKO,5",
+      "opis": "notowania historyczne PKO, strona 5",
+      "pobrano": "2026-11-10T08:55:49.747789Z",
+      "sha256": "12807b2dba76869d49ed349483be457abba9b0a525256bad8c1b7791586a3e26",
+      "plik": "12807b2dba76869d.html"
+    },
+    {
+      "id": "doc-038",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/PKO,6",
+      "opis": "notowania historyczne PKO, strona 6",
+      "pobrano": "2026-11-10T08:55:51.238406Z",
+      "sha256": "0343cc433c52266af9361cfd04127cabeae50a47c04960fa54f20b31b74fdf8d",
+      "plik": "0343cc433c52266a.html"
+    },
+    {
+      "id": "doc-039",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG",
+      "opis": "notowania historyczne WIG, strona 1",
+      "pobrano": "2026-11-10T08:55:52.437694Z",
+      "sha256": "183180bbdda522776139f7ff95c8cc8c944e36234b7aae00ecde25a099ca2f3d",
+      "plik": "183180bbdda52277.html"
+    },
+    {
+      "id": "doc-040",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,2",
+      "opis": "notowania historyczne WIG, strona 2",
+      "pobrano": "2026-11-10T08:55:53.894918Z",
+      "sha256": "1f76c26de7f2c82ca6bda9799d495dd1175689d0ba1cfce68c1288038db256b5",
+      "plik": "1f76c26de7f2c82c.html"
+    },
+    {
+      "id": "doc-041",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,3",
+      "opis": "notowania historyczne WIG, strona 3",
+      "pobrano": "2026-11-10T08:55:55.359065Z",
+      "sha256": "8fc5c12a6e3dfe19948f707f2b11629609eddf4c9b93c44d4b65b44e8c259c87",
+      "plik": "8fc5c12a6e3dfe19.html"
+    },
+    {
+      "id": "doc-042",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,4",
+      "opis": "notowania historyczne WIG, strona 4",
+      "pobrano": "2026-11-10T08:55:56.781330Z",
+      "sha256": "94e144bf5aab439ba7dadda07ce4008f501054c7ce70f389adb093cbdfd2158c",
+      "plik": "94e144bf5aab439b.html"
+    },
+    {
+      "id": "doc-043",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,5",
+      "opis": "notowania historyczne WIG, strona 5",
+      "pobrano": "2026-11-10T08:55:58.223492Z",
+      "sha256": "c3a1a8932519630c718195f644678cf98631dc4aaf57579511fde0645bf4df8c",
+      "plik": "c3a1a8932519630c.html"
+    },
+    {
+      "id": "doc-044",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,6",
+      "opis": "notowania historyczne WIG, strona 6",
+      "pobrano": "2026-11-10T08:55:59.641899Z",
+      "sha256": "6a2568ef84b380d0fd3c513495b24d8739e11fb7573685db501dee6d405ec506",
+      "plik": "6a2568ef84b380d0.html"
+    },
+    {
+      "id": "doc-045",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/PKO.WA?range=2y&interval=1d",
+      "opis": "kurs (kontrola)",
+      "pobrano": "2026-11-10T08:56:00.216903Z",
+      "sha256": "ff2194df05e940120f51b379ce46c696a33e7529313c629bb72295864c7652a6",
+      "plik": "ff2194df05e94012.json"
+    },
+    {
+      "id": "doc-046",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/lista-alertow-notowania",
+      "opis": "lista alertow",
+      "pobrano": "2026-11-10T08:56:01.765222Z",
+      "sha256": "aa0e524c7a896fbe6058300ada74203bd02afb733c1b7660222c7185dd0da6e6",
+      "plik": "aa0e524c7a896fbe.html"
+    },
+    {
+      "id": "doc-047",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/spolki-ze-szczegolnym-oznaczeniem-notowania-ciagle",
+      "opis": "oznaczenie ciagle",
+      "pobrano": "2026-11-10T08:56:04.685431Z",
+      "sha256": "c14d5181afefb55ba3571b34379fddf942ebb3bede7ad6220e24fb99f2cbd8e2",
+      "plik": "c14d5181afefb55b.html"
+    },
+    {
+      "id": "doc-048",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/spolki-ze-szczegolnym-oznaczeniem-notowania-jednolite",
+      "opis": "oznaczenie jednolite",
+      "pobrano": "2026-11-10T08:56:06.887317Z",
+      "sha256": "c2a34cc4e7ace36058caf05b4e83ba8a9002483e091cdedef4a88e2ed52bf819",
+      "plik": "c2a34cc4e7ace360.html"
+    },
+    {
+      "id": "doc-049",
+      "typ": "strona",
+      "zrodlo": "GPW",
+      "adres": "https://www.gpw.pl/zawieszenia-i-wykluczenia",
+      "opis": "zawieszenia",
+      "pobrano": "2026-11-10T08:56:09.047583Z",
+      "sha256": "81aae83d0472c2c589bcbb685e0c9019e667791c356a0a826cb1a6f13ee53dbc",
+      "plik": "81aae83d0472c2c5.html"
+    }
+  ]
+}

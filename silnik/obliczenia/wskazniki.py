@@ -130,8 +130,8 @@ def dla_okresu(k: Kalkulator, S: str, okres: Okres, B: date, B_prev: Optional[da
                  [i("zysk_operacyjny"), odsetki[0]], lambda z, o: z / o, X, okres)
 
     # rentowność kapitału (średnia z początku i końca okresu, gdy jest bilans z początku)
-    kw = k.stan("kapital_wlasny", B)
-    kw_p = k.stan("kapital_wlasny", B_prev) if B_prev else None
+    kw = k.stan("kapital_wlasny", B) or k.stan("kapital_wlasny_z_udzialami_niekontrolujacymi", B)
+    kw_p = (k.stan("kapital_wlasny", B_prev) or k.stan("kapital_wlasny_z_udzialami_niekontrolujacymi", B_prev)) if B_prev else None
     if kw:
         wej = [i("zysk_netto"), kw.id] + ([kw_p.id] if kw_p else [])
         k.wylicz(i("roe"), "roe", "zysk_netto / średni kapitał_wlasny" if kw_p else "zysk_netto / kapital_wlasny (koniec)",

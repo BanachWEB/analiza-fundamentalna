@@ -36,7 +36,8 @@ def uzupelnij_skladniki(k: Kalkulator) -> None:
     """Pozycje, które spółki podają w częściach albo wcale (z jawnym wzorem w rejestrze).
 
     - amortyzacja = amortyzacja środków trwałych + amortyzacja WNiP (np. Microsoft od FY2024);
-    - zobowiązania = pasywa razem − kapitał własny (np. Walmart nie podaje zobowiązań razem).
+    - zobowiązania = pasywa razem − kapitał własny (np. Walmart nie podaje zobowiązań razem);
+    - bank: przychody = wynik odsetkowy + wynik prowizyjny (dochody podstawowe).
     """
     for f in list(k.r.fakty()):
         if f.pozycja == "amortyzacja_srodkow_trwalych" and f.status != Status.odrzucony:
@@ -44,6 +45,12 @@ def uzupelnij_skladniki(k: Kalkulator) -> None:
             if not k.jest(f"amortyzacja.{S}") and k.jest(f"amortyzacja_wnip.{S}"):
                 k.wylicz(f"amortyzacja.{S}", "amortyzacja", "amortyzacja_srodkow_trwalych + amortyzacja_wnip",
                          [f.id, f"amortyzacja_wnip.{S}"], lambda a, b: a + b, f.jednostka, f.okres, f.waluta)
+        if f.pozycja == "wynik_odsetkowy" and f.status != Status.odrzucony:
+            # bank: „przychody” = dochody podstawowe (wynik odsetkowy + wynik prowizyjny)
+            S = f.id.split(".", 1)[1]
+            if not k.jest(f"przychody.{S}") and k.jest(f"wynik_prowizyjny.{S}"):
+                k.wylicz(f"przychody.{S}", "przychody", "wynik_odsetkowy + wynik_prowizyjny (dochody podstawowe banku)",
+                         [f.id, f"wynik_prowizyjny.{S}"], lambda a, b: a + b, f.jednostka, f.okres, f.waluta)
         if f.pozycja == "pasywa_razem" and f.status != Status.odrzucony:
             d = f.id.split(".", 1)[1]
             if k.jest(f"zobowiazania.{d}"):
