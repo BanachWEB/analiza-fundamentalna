@@ -18,20 +18,45 @@ def rynek_z_waluty(rejestr: RejestrFaktow) -> str:
     return "GPW" if "PLN" in waluty else "USA"
 
 
+def sektor(katalog: Optional[Path]) -> str:
+    """Sektor z analiza.json (zapisuje go model na etapie 0): „finanse” wyłącza miary, które dla banków nie działają."""
+    if katalog and (katalog / "analiza.json").exists():
+        return json.loads((katalog / "analiza.json").read_text(encoding="utf-8")).get("sektor", "ogolny")
+    return "ogolny"
+
+
+def dodaj_propozycje_jesli_sa(rejestr: RejestrFaktow, katalog: Optional[Path]) -> None:
+    """Propozycje modelu (PDF, wklejka z InvestingPro) — tylko te, których jeszcze nie ma w rejestrze."""
+    if not katalog or not (katalog / "propozycje.json").exists():
+        return
+    from silnik.fakty.cytat import dodaj_propozycje, wczytaj_propozycje
+    from silnik.pobieranie.archiwum import Archiwum
+
+    nowe = [p for p in wczytaj_propozycje(katalog / "propozycje.json") if p["id"] not in rejestr]
+    if nowe:
+        archiwum = Archiwum(rejestr.ticker, katalog)
+        rejestr.znane_dokumenty(archiwum.ids())
+        dodaj_propozycje(rejestr, archiwum.sciezka, nowe)
+
+
 def uruchom(rejestr: RejestrFaktow, katalog: Optional[Path] = None, rynek: Optional[str] = None):
     rynek = rynek or rynek_z_waluty(rejestr)
+    finansowa = sektor(katalog) == "finanse"
+    dodaj_propozycje_jesli_sa(rejestr, katalog)
     k = Kalkulator(rejestr)
     okresy.uzupelnij_skladniki(k)
     okresy.dodaj_kwartaly(k)
     koniec = okresy.dodaj_ttm(k)
     wskazniki.oblicz(k, koniec)
-    jakosc.oblicz(k)
+    if not finansowa:
+        jakosc.oblicz(k)
     w = wycena.oblicz(k, koniec, rynek)
     sc = scenariusze.oblicz(k, katalog / "scenariusze.json", w) if katalog else None
     analitycy = [f for f in rejestr.fakty() if f.pozycja == "liczba_analitykow"]
     liczba = int(max(analitycy, key=lambda f: f.okres.koniec or f.id).wartosc) if analitycy else None
-    karta = karta_treli.oblicz(k, rynek, w, w.get("okres_bazowy"), liczba) if w.get("kapitalizacja") else []
-    return k, {"ttm": koniec, "rynek": rynek, "wycena": w, "scenariusze": sc, "karta": karta, "analitycy": liczba}
+    karta = karta_treli.oblicz(k, rynek, w, w.get("okres_bazowy"), liczba, finansowa) if w.get("kapitalizacja") else []
+    return k, {"ttm": koniec, "rynek": rynek, "wycena": w, "scenariusze": sc, "karta": karta, "analitycy": liczba,
+               "sektor": "finanse" if finansowa else "ogolny"}
 
 
 def uruchom_w_katalogu(katalog: Path, rynek: Optional[str] = None) -> Path:

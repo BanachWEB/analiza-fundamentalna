@@ -10,6 +10,7 @@ filary:
       cagr_przychody_3l: {USA: {zero: 0.0, dziesiec: 0.25}, GPW: {zero: 0.0, dziesiec: 0.20}}
       cagr_eps_rozwodniony_3l: {USA: {zero: 0.0, dziesiec: 0.30}, GPW: {zero: 0.0, dziesiec: 0.25}}
       cagr_zysk_netto_3l: {USA: {zero: 0.0, dziesiec: 0.30}, GPW: {zero: 0.0, dziesiec: 0.25}}
+      wzrost_eps_konsensus: {USA: {zero: 0.0, dziesiec: 0.30}, GPW: {zero: 0.0, dziesiec: 0.25}}  # prognoza analityków
   jakosc:
     waga: 0.25
     miary:
@@ -32,3 +33,10 @@ filary:
     waga: 0.10
     miary:
       nadwyzka_momentum: {USA: {zero: -0.20, dziesiec: 0.20}, GPW: {zero: -0.20, dziesiec: 0.20}}  # 12–1 spółki − 12–1 indeksu
+
+# Spółki finansowe (sektor „finanse” w analiza.json): zamienniki miar jakości i wyceny.
+jakosc_finansowe:
+  roe: {USA: {zero: 0.06, dziesiec: 0.20}, GPW: {zero: 0.06, dziesiec: 0.20}}
+wycena_finansowe:
+  c_z: {USA: {zero: 25.0, dziesiec: 8.0}, GPW: {zero: 15.0, dziesiec: 5.0}}
+  c_wk: {USA: {zero: 3.0, dziesiec: 0.8}, GPW: {zero: 2.0, dziesiec: 0.7}}

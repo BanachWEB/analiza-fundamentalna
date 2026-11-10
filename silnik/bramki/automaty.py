@@ -34,7 +34,7 @@ def _ostatni_stan(r: RejestrFaktow, pozycja: str):
 # --- z rejestru faktów ----------------------------------------------------------------------
 
 
-def z_rejestru(r: RejestrFaktow) -> list[Wynik]:
+def z_rejestru(r: RejestrFaktow, finansowa: bool = False) -> list[Wynik]:
     p = konfiguracja()["progi"]
     w: list[Wynik] = []
 
@@ -61,6 +61,10 @@ def z_rejestru(r: RejestrFaktow) -> list[Wynik]:
     else:
         w.append(Wynik("B2.rozwodnienie", 2, "kapital", "brak_danych", "Brak danych o liczbie akcji"))
 
+    if finansowa:  # bank: przepływy operacyjne, M-score i Z'' nie mają sensu; kapitał ocenia model (CET1)
+        w.append(Wynik("B3.finanse", 3, "wyplacalnosc_i_jakosc", "informacja",
+                       "Spółka finansowa: przepływy ÷ zysk, M-score i Z'' pominięte; adekwatność kapitałową (CET1) ocenia model"))
+        return w
     # B3: przepływy operacyjne a zysk netto (3 lata)
     cfo = {f.id.split(".", 1)[1]: f for f in _fy(r, "przeplywy_operacyjne")}
     ni = {f.id.split(".", 1)[1]: f for f in _fy(r, "zysk_netto")}

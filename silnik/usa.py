@@ -15,7 +15,7 @@ from silnik.bramki.uruchom import uruchom_w_katalogu as bramki_uruchom
 from silnik.fakty.rejestr import RejestrFaktow
 from silnik.fakty.weryfikacja import Raport, drugie_zrodlo, podsumowanie_md, tozsamosci
 from silnik.fakty.schemat import TypDokumentu
-from silnik.pobieranie import rynek, sec, stockanalysis
+from silnik.pobieranie import konsensus, rynek, sec, stockanalysis
 from silnik.pobieranie.archiwum import Archiwum
 from silnik.pobieranie.http import BladPobierania, pobierz
 
@@ -80,6 +80,12 @@ def uruchom(ticker: str, dzien: date, katalog_plikow: Path | None = None) -> Pat
             rejestr.dodaj(f, zastap=True)
     except (BladPobierania, rynek.BladRynku) as e:
         print(f"Stopy i premie niedostępne: {e}")
+    try:
+        for f in konsensus.fakty(archiwum, ticker, dzien):
+            rejestr.znane_dokumenty(archiwum.ids())
+            rejestr.dodaj(f, zastap=True)
+    except BladPobierania as e:
+        print(f"Konsensus niedostępny: {e}")
     if hist_sa and zrodlo_kursu == "Yahoo":
         sa = rynek.sesje_stockanalysis(archiwum.tekst(hist_sa.id))[-10:]  # porównanie kursu z tego samego dnia
         drugie_zrodlo(rejestr, {("kurs", "dzien", x.dzien): (x.zamkniecie, hist_sa.id) for x in sa}, raport)

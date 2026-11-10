@@ -43,8 +43,13 @@ def _ostatnia(k: Kalkulator, pozycja: str, preferowany: Optional[str]) -> Option
     return max(stany, key=lambda f: f.okres.koniec) if stany else None
 
 
-def oblicz(k: Kalkulator, rynek: str, wycena: dict, ttm_sufiks: Optional[str], liczba_analitykow: Optional[int]) -> list[Filar]:
-    cfg = yaml.safe_load(KONFIGURACJA.read_text(encoding="utf-8"))["filary"]
+def oblicz(k: Kalkulator, rynek: str, wycena: dict, ttm_sufiks: Optional[str], liczba_analitykow: Optional[int],
+           finansowa: bool = False) -> list[Filar]:
+    pelna = yaml.safe_load(KONFIGURACJA.read_text(encoding="utf-8"))
+    cfg = pelna["filary"]
+    if finansowa:  # banki, ubezpieczyciele, brokerzy: marża, FCF, dług netto i Z'' nie działają
+        cfg = {**cfg, "jakosc": {**cfg["jakosc"], "miary": pelna["jakosc_finansowe"]},
+               "wycena": {**cfg["wycena"], "miary": pelna["wycena_finansowe"]}}
     D = k.fakt(wycena["kapitalizacja"]).okres.koniec if wycena.get("kapitalizacja") else None
     d = D.isoformat() if D else None
 
@@ -53,6 +58,13 @@ def oblicz(k: Kalkulator, rynek: str, wycena: dict, ttm_sufiks: Optional[str], l
         k.wylicz(f"nadwyzka_wzrostu.{d}", "nadwyzka_wzrostu", "CAGR przychodów historyczny − implikowany wzrost FCF",
                  [wycena["wzrost_historyczny"], wycena["implikowany_wzrost_fcf"]], lambda h, i: h - i,
                  Jednostka.ulamek, Okres(typ="dzien", koniec=D))
+    cel = [f for f in k.r.fakty() if f.pozycja == "cena_docelowa_srednia" and f.status.value != "odrzucony"]
+    kursy = [f for f in k.r.fakty() if f.pozycja == "kurs"]
+    if cel and kursy:
+        c, ku = max(cel, key=lambda f: f.okres.koniec), max(kursy, key=lambda f: f.okres.koniec)
+        k.wylicz(f"potencjal_do_ceny_docelowej.{ku.okres.koniec.isoformat()}", "potencjal_do_ceny_docelowej",
+                 "cena_docelowa_srednia / kurs − 1", [c.id, ku.id], lambda a, b: a / b - 1, Jednostka.ulamek,
+                 Okres(typ="dzien", koniec=ku.okres.koniec))
     mom = [f for f in k.r.fakty() if f.pozycja == "momentum_12_1"]
     mom_i = [f for f in k.r.fakty() if f.pozycja == "indeks_momentum_12_1"]
     if mom and mom_i:
@@ -68,7 +80,7 @@ def oblicz(k: Kalkulator, rynek: str, wycena: dict, ttm_sufiks: Optional[str], l
             if nazwa == "analitycy" and (liczba_analitykow is None or liczba_analitykow < 3):
                 filar.miary[miara] = None
                 continue
-            pref = d if miara in ("fcf_yield", "ev_ebit", "nadwyzka_wzrostu") else ttm_sufiks
+            pref = d if miara in ("fcf_yield", "ev_ebit", "nadwyzka_wzrostu", "potencjal_do_ceny_docelowej") else ttm_sufiks
             fakt = _ostatnia(k, miara, pref)
             if fakt is None:
                 filar.miary[miara] = None

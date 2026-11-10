@@ -108,7 +108,23 @@ def tekst_dokumentu(sciezka: Path, strona: int | None) -> str:
         if not 1 <= strona <= len(strony):
             raise ValueError(f"strona {strona} poza zakresem 1–{len(strony)}")
         return strony[strona - 1]
-    return sciezka.read_text(encoding="utf-8", errors="replace")
+    tresc = sciezka.read_text(encoding="utf-8", errors="replace")
+    if sciezka.suffix.lower() in (".htm", ".html", ".xhtml"):
+        return _tekst_html(tresc)
+    return tresc
+
+
+@lru_cache(maxsize=16)
+def _tekst_html(tresc: str) -> str:
+    """Tekst strony HTML (bez znaczników, skryptów i stylów), wiersz na blok — tego używa test cytatu."""
+    from lxml import html as lhtml
+
+    drzewo = lhtml.fromstring(tresc)
+    for el in drzewo.xpath("//script|//style|//noscript"):
+        el.drop_tree()
+    for el in drzewo.xpath("//br|//p|//div|//tr|//li|//h1|//h2|//h3|//h4|//td"):
+        el.tail = ("\n" + el.tail) if el.tail else "\n"
+    return "\n".join(l.strip() for l in drzewo.text_content().splitlines() if l.strip())
 
 
 def zapisy_liczby(wartosc: float) -> list[str]:
