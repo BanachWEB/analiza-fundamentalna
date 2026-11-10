@@ -1,0 +1,7 @@
+# Parametry wyceny odwrotnej i scenariuszy. Zmiana wymaga zgody właściciela repozytorium.
+# Wszystkie wartości trafiają do rejestru faktów jako założenia z uzasadnieniem.
+
+lata_prognozy: 10          # długość okresu wzrostu w wycenie odwrotnej
+wzrost_rezydualny_max: 0.025  # wzrost po okresie prognozy; nie wyżej niż stopa wolna od ryzyka (Damodaran)
+beta_domyslna: 1.0         # gdy brak wiarygodnej bety: rynek jako całość
+cap_max_lat: 40            # górna granica szukania okresu przewagi (CAP)

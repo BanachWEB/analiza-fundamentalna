@@ -11,7 +11,7 @@ Plan ma 7 kroków (`specyfikacja.md`, część 11).
 | 1 | Schemat rejestru faktów, rejestr, archiwum dokumentów | gotowy |
 | 2 | Pobieranie z API SEC i weryfikacja (tożsamości, drugie źródło) | gotowy |
 | 3 | Odczyt ESEF i PDF dla GPW, test cytatu | gotowy |
-| 4 | Obliczenia: wskaźniki, wycena odwrotna, scenariusze, karta Treli | 4a gotowy (okresy, wskaźniki, jakość); 4b w budowie |
+| 4 | Obliczenia: wskaźniki, wycena odwrotna, scenariusze, karta Treli | gotowy |
 | 5 | Bramki stopu | — |
 | 6 | Raport: szablon z miejscami na liczby, lint, PDF | — |
 | 7 | SKILL.md i pełne przebiegi na 6 spółkach testowych | — |
@@ -80,6 +80,35 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają obliczenia same. Osobno: `pyt
 - **Jakość:** Piotroski F-score, Beneish M-score (próg −1,78), Altman Z'' (strefy 1,10 / 2,60). To diagnostyka, nie stop.
 - **Podział akcji:** gdy liczba akcji zmienia się o całkowitą krotność (np. 3:1), silnik nie liczy dynamiki liczby akcji ani EPS przez tę granicę.
 - Wskaźnik bez danych albo bez sensu (np. dynamika od ujemnej bazy) nie powstaje; powód trafia do sekcji „Braki danych” w `obliczenia.md`.
+
+## Wycena, scenariusze i karta Treli (krok 4b)
+
+**Dane rynkowe** (pobiera je przebieg danych):
+
+| Dane | USA | GPW |
+|---|---|---|
+| Kurs, obroty, momentum 12–1 | Yahoo (gdy odmawia: Stock Analysis, 6 miesięcy, bez momentum) | Biznesradar, notowania historyczne |
+| Indeks do momentum | S&P 500 (Yahoo) | WIG (Biznesradar) |
+| Kontrola kursu (drugie źródło, ten sam dzień) | Stock Analysis | Yahoo |
+| Liczba akcji | SEC (dei:EntityCommonStockSharesOutstanding) | Biznesradar, strona notowań |
+| Rentowność obligacji 10-letnich | Treasury.gov | Strefa Inwestorów (tabela rentowności); `--rf` nadpisuje |
+| Premia za ryzyko akcji, spread kraju | Damodaran (ctryprem) | Damodaran (ctryprem) |
+
+**Wycena** (`silnik/obliczenia/wycena.py`, parametry w `konfiguracja/wycena.yaml`):
+- koszt kapitału własnego = stopa wolna od ryzyka + beta × premia za ryzyko akcji; dla GPW stopa wolna od ryzyka = rentowność 10-letnich obligacji − spread niewypłacalności Polski (bez podwójnego liczenia ryzyka kraju); beta domyślnie 1 (założenie w rejestrze);
+- mnożniki: C/Z, EV/EBIT, EV/EBITDA, C/WK, FCF yield; udział PVGO w cenie;
+- wycena odwrotna w trzech wariantach: implikowany wzrost FCF przez 10 lat, implikowany okres przewagi (CAP) przy wzroście historycznym, implikowana marża FCF przy wzroście historycznym. Wzrost historyczny = niższy z CAGR przychodów 3- i 5-letniego.
+
+**Scenariusze:** model zapisuje `analizy/<TICKER>/<data>/scenariusze.json` (2–5 scenariuszy, prawdopodobieństwa 5–85% sumujące się do 1, wzrost przychodów, marża FCF, uzasadnienie). Silnik liczy wartość na akcję w każdym scenariuszu, wartość oczekiwaną, potencjał wobec kursu, prawdopodobieństwo straty i asymetrię.
+
+```json
+{"scenariusze": [
+  {"nazwa": "byk", "prawdopodobienstwo": 0.25, "wzrost_przychodow": 0.12, "marza_fcf": 0.30, "uzasadnienie": "…"},
+  {"nazwa": "bazowy", "prawdopodobienstwo": 0.50, "wzrost_przychodow": 0.08, "marza_fcf": 0.25, "uzasadnienie": "…"},
+  {"nazwa": "niedzwiedz", "prawdopodobienstwo": 0.25, "wzrost_przychodow": 0.03, "marza_fcf": 0.18, "uzasadnienie": "…"}]}
+```
+
+**Karta w stylu Treli** (`konfiguracja/karta-treli.yaml`): pięć filarów (wzrost 30%, jakość 25%, wycena 20%, analitycy 15%, momentum 10%), każda miara 0–10 pkt liniowo między progami, osobnymi dla USA i GPW. Filar bez danych (np. „analitycy” przy pokryciu poniżej 3 analityków) przekazuje wagę pozostałym. Karta jest informacją, nie bramką.
 
 ## Jak działa rejestr faktów
 

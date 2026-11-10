@@ -5,7 +5,7 @@ Plik wygenerował silnik (2026-11-10). Nie edytuj go ręcznie.
 | Status | Liczba faktów |
 |---|---:|
 | zweryfikowany | 164 |
-| jedno_zrodlo | 157 |
+| jedno_zrodlo | 166 |
 | konflikt | 0 |
 | odrzucony | 0 |
 
@@ -30,7 +30,7 @@ Spółka mogła zmienić znacznik XBRL; sprawdź mapowanie: zmiana_gotowki_przed
 
 ## Lata uzupełnione z serwisu danych (bez raportu spółki w archiwum)
 
-2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023
+2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2026
 
 ## Fakty zmienione w kolejnych raportach spółki
 

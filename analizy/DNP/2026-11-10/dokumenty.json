@@ -351,6 +351,246 @@
       "pobrano": "2026-11-10T08:11:21.469183Z",
       "sha256": "bcb9518dd2a0ef2471cde2d32366cb393ddf55a94b80050a035708835a2ad506",
       "plik": "bcb9518dd2a0ef24.html"
+    },
+    {
+      "id": "doc-036",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/DNP",
+      "opis": "rachunek roczne",
+      "pobrano": "2026-11-10T08:19:48.738114Z",
+      "sha256": "87d17a9763e586f28cad28a74827ffdf4879f6a1b273c2aeb4fe184bb05ddce8",
+      "plik": "87d17a9763e586f2.html"
+    },
+    {
+      "id": "doc-037",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/DNP,Q",
+      "opis": "rachunek kwartalne",
+      "pobrano": "2026-11-10T08:19:50.389933Z",
+      "sha256": "f61f30b2b077218472c6125efd466f301acf3af0f46518394a1343cc8be849c2",
+      "plik": "f61f30b2b0772184.html"
+    },
+    {
+      "id": "doc-038",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/DNP",
+      "opis": "bilans roczne",
+      "pobrano": "2026-11-10T08:19:51.999617Z",
+      "sha256": "e0dea6d9c5f000d3b42d2629baf0ab4f9cc95bbadc696066ca9d3fbd3aada7ef",
+      "plik": "e0dea6d9c5f000d3.html"
+    },
+    {
+      "id": "doc-039",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/DNP,Q",
+      "opis": "bilans kwartalne",
+      "pobrano": "2026-11-10T08:19:53.763601Z",
+      "sha256": "57edaf9d60f832d916ff1e8aabb8935fb0bcaf23f934a0e3dd6e02e79b8e2f03",
+      "plik": "57edaf9d60f832d9.html"
+    },
+    {
+      "id": "doc-040",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/DNP",
+      "opis": "przeplywy roczne",
+      "pobrano": "2026-11-10T08:19:55.253490Z",
+      "sha256": "5f8e88319908026d74a763246c29912d571aa989172c5b162da97fd68ce2a6cc",
+      "plik": "5f8e88319908026d.html"
+    },
+    {
+      "id": "doc-041",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/DNP,Q",
+      "opis": "przeplywy kwartalne",
+      "pobrano": "2026-11-10T08:19:56.875306Z",
+      "sha256": "91a11b843a84771cca32ea9b51a83850c6a35584e01908830390663f83739dd8",
+      "plik": "91a11b843a84771c.html"
+    },
+    {
+      "id": "doc-042",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/DNP",
+      "opis": "notowania historyczne DNP, strona 1",
+      "pobrano": "2026-11-10T08:19:58.255074Z",
+      "sha256": "a2ad1d0f11241e1a7818ec064c8ab4f6f47ede6774f5335051c3d5f6fa7d596e",
+      "plik": "a2ad1d0f11241e1a.html"
+    },
+    {
+      "id": "doc-043",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/DNP,2",
+      "opis": "notowania historyczne DNP, strona 2",
+      "pobrano": "2026-11-10T08:19:59.663625Z",
+      "sha256": "04fa4aecc355976bac9a8455b8cd7f4ce40c0b87c205bb65ad54b08f85b2fedb",
+      "plik": "04fa4aecc355976b.html"
+    },
+    {
+      "id": "doc-044",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/DNP,3",
+      "opis": "notowania historyczne DNP, strona 3",
+      "pobrano": "2026-11-10T08:20:01.396233Z",
+      "sha256": "7a81ed471fc0f21ee464e8096e7457602ec228fcbc144f5c38edd0a73c0d1c94",
+      "plik": "7a81ed471fc0f21e.html"
+    },
+    {
+      "id": "doc-045",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/DNP,4",
+      "opis": "notowania historyczne DNP, strona 4",
+      "pobrano": "2026-11-10T08:20:02.808882Z",
+      "sha256": "ea48cd6783633367890f85aca0352bb4f10dbd2787d00fa3a6d170014f0e302a",
+      "plik": "ea48cd6783633367.html"
+    },
+    {
+      "id": "doc-046",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/DNP,5",
+      "opis": "notowania historyczne DNP, strona 5",
+      "pobrano": "2026-11-10T08:20:04.202870Z",
+      "sha256": "b1b651c7bd77a3e7ad01aa09a77a6d742f8654dadafac27562b16da3a529fb22",
+      "plik": "b1b651c7bd77a3e7.html"
+    },
+    {
+      "id": "doc-047",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/DNP,6",
+      "opis": "notowania historyczne DNP, strona 6",
+      "pobrano": "2026-11-10T08:20:05.571623Z",
+      "sha256": "40f12eeb72d710bcb9c53844b5118fc9fd16f2e6a8621826936863c2be6fa05e",
+      "plik": "40f12eeb72d710bc.html"
+    },
+    {
+      "id": "doc-048",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG",
+      "opis": "notowania historyczne WIG, strona 1",
+      "pobrano": "2026-11-10T08:20:06.762636Z",
+      "sha256": "9e6a28b277f42ff623243b0c1a786324f644173de24777fd005e4997d9a60bc5",
+      "plik": "9e6a28b277f42ff6.html"
+    },
+    {
+      "id": "doc-049",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,2",
+      "opis": "notowania historyczne WIG, strona 2",
+      "pobrano": "2026-11-10T08:20:08.274316Z",
+      "sha256": "c1c22c09dac82f1696029c7f138508ef9d0d79064fac5c76bdee1aa14ccde11b",
+      "plik": "c1c22c09dac82f16.html"
+    },
+    {
+      "id": "doc-050",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,3",
+      "opis": "notowania historyczne WIG, strona 3",
+      "pobrano": "2026-11-10T08:20:09.754522Z",
+      "sha256": "7f44c1ae565a57e614828a0b72ef5d73c40249320878bf5c55bdc80496002d2e",
+      "plik": "7f44c1ae565a57e6.html"
+    },
+    {
+      "id": "doc-051",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,4",
+      "opis": "notowania historyczne WIG, strona 4",
+      "pobrano": "2026-11-10T08:20:11.242530Z",
+      "sha256": "a1ca83642f3d1ba2e699b764eb9346729f30fea3fd57d904d31e3036db1d84b4",
+      "plik": "a1ca83642f3d1ba2.html"
+    },
+    {
+      "id": "doc-052",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,5",
+      "opis": "notowania historyczne WIG, strona 5",
+      "pobrano": "2026-11-10T08:20:12.706179Z",
+      "sha256": "451c6f8286dd9e04f38379cdd4e8c8fb9d54cb13bbd665b29fa93c184eb771d2",
+      "plik": "451c6f8286dd9e04.html"
+    },
+    {
+      "id": "doc-053",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,6",
+      "opis": "notowania historyczne WIG, strona 6",
+      "pobrano": "2026-11-10T08:20:14.167010Z",
+      "sha256": "feedab6029faf641a3f03fb2345a3f5c65f8010ac8c5af1e98d1b0feefa24488",
+      "plik": "feedab6029faf641.html"
+    },
+    {
+      "id": "doc-054",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania/DNP",
+      "opis": "notowania (liczba akcji)",
+      "pobrano": "2026-11-10T08:20:15.370289Z",
+      "sha256": "3cbcc616f7f2e5544df39303f1ca7fc43586d8937c2e28ebdeb348ed87e0a1d0",
+      "plik": "3cbcc616f7f2e554.html"
+    },
+    {
+      "id": "doc-055",
+      "typ": "strona",
+      "zrodlo": "Damodaran (NYU Stern)",
+      "adres": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+      "opis": "premie za ryzyko krajów",
+      "pobrano": "2026-11-10T08:20:15.733312Z",
+      "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+      "plik": "ea30d57fc0858072.html"
+    },
+    {
+      "id": "doc-056",
+      "typ": "strona",
+      "zrodlo": "Strefa Inwestorów",
+      "adres": "https://strefainwestorow.pl/wiadomosci/20261110/rentownosci-obligacji-wybranych-panstw-tabela",
+      "opis": "rentowności obligacji",
+      "pobrano": "2026-11-10T08:20:16.710759Z",
+      "sha256": "82f23a6fd40d773fdd0fe34e57455e45bf19f741a1038cc61f0305ad86723262",
+      "plik": "82f23a6fd40d773f.html"
+    },
+    {
+      "id": "doc-057",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/DNP.WA?range=2y&interval=1d",
+      "opis": "kurs (kontrola)",
+      "pobrano": "2026-11-10T08:20:16.951291Z",
+      "sha256": "95e8fe908ce45ccd5ea0eeb77616c973c04dba81dc7eb52132b83db1ad945297",
+      "plik": "95e8fe908ce45ccd.json"
+    },
+    {
+      "id": "doc-058",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG",
+      "opis": "notowania historyczne WIG, strona 1",
+      "pobrano": "2026-11-10T08:21:07.886556Z",
+      "sha256": "7d0dea4116e2dc96d73d7f94732ace17f17ebb671a05742033d1052167e01125",
+      "plik": "7d0dea4116e2dc96.html"
+    },
+    {
+      "id": "doc-059",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/DNP.WA?range=2y&interval=1d",
+      "opis": "kurs (kontrola)",
+      "pobrano": "2026-11-10T08:21:14.444846Z",
+      "sha256": "ec1922294befda99541ad75bdf1cd6bc5e23a017ca43f9b0f9bc7dc37e3667d9",
+      "plik": "ec1922294befda99.json"
     }
   ]
 }

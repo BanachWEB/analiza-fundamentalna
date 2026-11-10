@@ -37,6 +37,39 @@ Plik wygenerował silnik (2026-11-10). Kwoty w mln PLN. ¹ = co najmniej jedno w
 - Beneish M-score -2,85¹: poniżej progu.
 - Altman Z'' 2,06¹: strefa szara.
 
+## Co jest w cenie (kurs z 2026-11-09, przepływy: FY2025)
+
+| Miara | Wartość | Uwagi |
+|---|---:|---|
+| Kurs | 38,15 PLN¹ |  |
+| Kapitalizacja | 37 402 mln PLN¹ |  |
+| EV | 37 092 mln PLN¹ |  |
+| Koszt kapitału własnego | 10,8%¹ | stopa wolna od ryzyka + beta × premia (Damodaran) |
+| C/Z | 24,00¹ |  |
+| EV/EBIT | 18,17¹ |  |
+| EV/EBITDA | 14,57¹ |  |
+| C/WK | 4,32¹ |  |
+| FCF yield | 1,4%¹ | FCF dla właścicieli ÷ kapitalizacja |
+| Udział PVGO w cenie | 61,2%¹ | część ceny za przyszły wzrost |
+| Implikowany wzrost FCF (10 lat) | 26,5%¹ | wariant 1 |
+| Implikowany okres przewagi (CAP) | 15,5 lat¹ | wariant 2, wzrost w tempie historycznym |
+| Implikowana marża FCF | 2,7%¹ | wariant 3, wzrost w tempie historycznym |
+| Wzrost historyczny (CAGR przychodów) | 19,3%¹ |  |
+
+## Karta w stylu Treli (informacja, nie bramka)
+
+Wynik: **4,6 / 10** z 4 filarów z 5.
+
+| Filar | Waga | Punkty | Miary |
+|---|---:|---:|---|
+| wzrost | 30% | 7,1 | cagr_przychody_3l: 9,7; cagr_eps_rozwodniony_3l: brak; cagr_zysk_netto_3l: 4,5 |
+| jakosc | 25% | 5,8 | roic: 7,4; konwersja_fcf: 0,6; dlug_netto_do_ebitda: 10,0; altman_z2: 5,1 |
+| wycena | 20% | 1,7 | fcf_yield: 0,0; ev_ebit: 3,6; nadwyzka_wzrostu: 1,4 |
+| analitycy | 15% | brak danych | rewizje_eps_90d: brak; potencjal_do_ceny_docelowej: brak |
+| momentum | 10% | 0,0 | nadwyzka_momentum: 0,0 |
+
+Filar „analitycy”: brak danych albo pokrycie poniżej 3 analityków — nie można na nim polegać.
+
 ## Braki danych
 
 - altman_z2.FY2016: brak zyski_zatrzymane.2016-12-31

@@ -4,8 +4,8 @@ Plik wygenerował silnik (2026-11-10). Nie edytuj go ręcznie.
 
 | Status | Liczba faktów |
 |---|---:|
-| zweryfikowany | 224 |
-| jedno_zrodlo | 638 |
+| zweryfikowany | 225 |
+| jedno_zrodlo | 644 |
 | konflikt | 1 |
 | odrzucony | 0 |
 
@@ -14,7 +14,7 @@ Plik wygenerował silnik (2026-11-10). Nie edytuj go ręcznie.
 | Kontrola | Zaliczone | Niezaliczone |
 |---|---:|---:|
 | aktywa=pasywa | 20 | 0 |
-| drugie_zrodlo | 44 | 1 |
+| drugie_zrodlo | 45 | 1 |
 | przeplywy=zmiana_gotowki | 30 | 0 |
 
 ## Konflikty
@@ -29,7 +29,7 @@ Spółka mogła zmienić znacznik XBRL; sprawdź mapowanie: amortyzacja_srodkow_
 
 ## Lata uzupełnione z serwisu danych (bez raportu spółki w archiwum)
 
-Brak.
+2026
 
 ## Fakty zmienione w kolejnych raportach spółki
 

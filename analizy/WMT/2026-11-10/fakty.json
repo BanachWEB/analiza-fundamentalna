@@ -2766,6 +2766,55 @@
       ]
     },
     {
+      "id": "beta.zalozenie",
+      "rodzaj": "zalozenie",
+      "pozycja": "beta",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 1.0,
+      "jednostka": "liczba",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Beta = 1 (rynek jako całość): brak wiarygodnej bety z własnych danych; do zmiany przez model z uzasadnieniem."
+    },
+    {
+      "id": "c_wk.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "c_wk",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 10.148359918751465,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "kapitalizacja / kapital_wlasny",
+      "wejscia": [
+        "kapitalizacja.2026-11-09",
+        "kapital_wlasny.2026-07-31"
+      ]
+    },
+    {
+      "id": "c_z.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "c_z",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 45.1601096982382,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "kapitalizacja / zysk_netto.TTM2026-07-31",
+      "wejscia": [
+        "kapitalizacja.2026-11-09",
+        "zysk_netto.TTM2026-07-31"
+      ]
+    },
+    {
       "id": "cagr_eps_rozwodniony_3l.FY2020",
       "rodzaj": "wyliczony",
       "pozycja": "cagr_eps_rozwodniony_3l",
@@ -8513,6 +8562,61 @@
       ]
     },
     {
+      "id": "ev.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "ev",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 1025357581698.3065,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "kapitalizacja + dlug_netto",
+      "wejscia": [
+        "kapitalizacja.2026-11-09",
+        "dlug_netto.2026-07-31"
+      ]
+    },
+    {
+      "id": "ev_ebit.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "ev_ebit",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 31.76448518272325,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "ev / zysk_operacyjny.TTM2026-07-31",
+      "wejscia": [
+        "ev.2026-11-09",
+        "zysk_operacyjny.TTM2026-07-31"
+      ]
+    },
+    {
+      "id": "ev_ebitda.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "ev_ebitda",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 21.64434554911672,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "ev / ebitda.TTM2026-07-31",
+      "wejscia": [
+        "ev.2026-11-09",
+        "ebitda.TTM2026-07-31"
+      ]
+    },
+    {
       "id": "fcf.FY2017",
       "rodzaj": "wyliczony",
       "pozycja": "fcf",
@@ -8952,6 +9056,24 @@
       ]
     },
     {
+      "id": "fcf_yield.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "fcf_yield",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.013550266228765902,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "fcf_wlascicieli.TTM2026-07-31 / kapitalizacja",
+      "wejscia": [
+        "fcf_wlascicieli.TTM2026-07-31",
+        "kapitalizacja.2026-11-09"
+      ]
+    },
+    {
       "id": "gotowka.2016-01-31",
       "rodzaj": "raportowany",
       "pozycja": "gotowka",
@@ -9369,6 +9491,87 @@
         "accn": "0000104169-26-000154",
         "forma": "10-Q",
         "zlozono": "2026-08-28"
+      }
+    },
+    {
+      "id": "implikowana_marza_fcf.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "implikowana_marza_fcf",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.0751303968701165,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "marża FCF przy wzroście przychodów w tempie cagr_przychody_5l przez 10 lat",
+      "wejscia": [
+        "kapitalizacja.2026-11-09",
+        "przychody.TTM2026-07-31",
+        "cagr_przychody_5l.FY2026",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09"
+      ]
+    },
+    {
+      "id": "implikowany_wzrost_fcf.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "implikowany_wzrost_fcf",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.23954830435104668,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "wzrost FCF przez 10 lat, przy którym wartość = kapitalizacja",
+      "wejscia": [
+        "kapitalizacja.2026-11-09",
+        "fcf_wlascicieli.TTM2026-07-31",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09"
+      ]
+    },
+    {
+      "id": "indeks_kurs.2026-11-09",
+      "rodzaj": "raportowany",
+      "pozycja": "indeks_kurs",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 7549.93994140625,
+      "jednostka": "punkty",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-008",
+      "miejsce": {
+        "sesja": "2026-11-09",
+        "pole": "zamknięcie"
+      }
+    },
+    {
+      "id": "indeks_momentum_12_1.2026-11-09",
+      "rodzaj": "raportowany",
+      "pozycja": "indeks_momentum_12_1",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.1609113461245686,
+      "jednostka": "ulamek",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-008",
+      "miejsce": {
+        "od": "2025-11-07",
+        "do": "2026-10-09",
+        "obliczenie": "kurs(do) / kurs(od) - 1",
+        "dokumenty": [
+          "doc-008"
+        ]
       }
     },
     {
@@ -10227,6 +10430,25 @@
       }
     },
     {
+      "id": "kapitalizacja.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "kapitalizacja",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 996954581698.3065,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "kurs × akcje_w_obrocie",
+      "wejscia": [
+        "kurs.2026-11-09",
+        "akcje_w_obrocie.2026-08-26"
+      ]
+    },
+    {
       "id": "konwersja_fcf.FY2017",
       "rodzaj": "wyliczony",
       "pozycja": "konwersja_fcf",
@@ -10433,6 +10655,25 @@
       "wejscia": [
         "fcf_wlascicieli.TTM2026-07-31",
         "zysk_netto.TTM2026-07-31"
+      ]
+    },
+    {
+      "id": "koszt_kapitalu_wlasnego.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszt_kapitalu_wlasnego",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.0934,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "stopa_wolna_od_ryzyka + beta × premia_ryzyka_akcji",
+      "wejscia": [
+        "stopa_wolna_od_ryzyka.2026-11-09",
+        "beta.zalozenie",
+        "premia_ryzyka_akcji.2026-11-10"
       ]
     },
     {
@@ -12719,6 +12960,28 @@
       ]
     },
     {
+      "id": "kurs.2026-11-09",
+      "rodzaj": "raportowany",
+      "pozycja": "kurs",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 125.66000366210938,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "api",
+      "status": "zweryfikowany",
+      "dokument": "doc-007",
+      "miejsce": {
+        "sesja": "2026-11-09",
+        "pole": "zamknięcie"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-006:125.66:0.00%:ok"
+      ]
+    },
+    {
       "id": "liczba_akcji_rozwodniona.FY2017",
       "rodzaj": "raportowany",
       "pozycja": "liczba_akcji_rozwodniona",
@@ -14444,6 +14707,64 @@
       ]
     },
     {
+      "id": "momentum_12_1.2026-11-09",
+      "rodzaj": "raportowany",
+      "pozycja": "momentum_12_1",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.08538846329010985,
+      "jednostka": "ulamek",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-007",
+      "miejsce": {
+        "od": "2025-11-07",
+        "do": "2026-10-09",
+        "obliczenie": "kurs(do) / kurs(od) - 1",
+        "dokumenty": [
+          "doc-007"
+        ]
+      }
+    },
+    {
+      "id": "nadwyzka_momentum.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "nadwyzka_momentum",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": -0.07552288283445874,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "momentum_12_1 − indeks_momentum_12_1",
+      "wejscia": [
+        "momentum_12_1.2026-11-09",
+        "indeks_momentum_12_1.2026-11-09"
+      ]
+    },
+    {
+      "id": "nadwyzka_wzrostu.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "nadwyzka_wzrostu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": -0.18968697435526072,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "CAGR przychodów historyczny − implikowany wzrost FCF",
+      "wejscia": [
+        "cagr_przychody_5l.FY2026",
+        "implikowany_wzrost_fcf.2026-11-09"
+      ]
+    },
+    {
       "id": "naleznosci_handlowe.2016-01-31",
       "rodzaj": "raportowany",
       "pozycja": "naleznosci_handlowe",
@@ -14861,6 +15182,28 @@
         "accn": "0000104169-26-000154",
         "forma": "10-Q",
         "zlozono": "2026-08-28"
+      }
+    },
+    {
+      "id": "obroty_dzienne_60s.2026-11-09",
+      "rodzaj": "raportowany",
+      "pozycja": "obroty_dzienne_60s",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 2720900716.6269174,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-007",
+      "miejsce": {
+        "obliczenie": "średnia z 60 sesji: zamknięcie × wolumen",
+        "od": "2026-08-17",
+        "dokumenty": [
+          "doc-007"
+        ]
       }
     },
     {
@@ -16592,6 +16935,25 @@
         "zysk_operacyjny.TTM2026-07-31",
         "koszty_odsetek.TTM2026-07-31"
       ]
+    },
+    {
+      "id": "premia_ryzyka_akcji.2026-11-10",
+      "rodzaj": "raportowany",
+      "pozycja": "premia_ryzyka_akcji",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 0.0446,
+      "jednostka": "ulamek",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-009",
+      "miejsce": {
+        "kraj": "United States",
+        "kolumna": "Total Equity Risk Premium",
+        "rating": "Aa1"
+      }
     },
     {
       "id": "przeplywy_finansowe.FY2016Q1",
@@ -20293,6 +20655,24 @@
       ]
     },
     {
+      "id": "rentownosc_10l.2026-11-09",
+      "rodzaj": "raportowany",
+      "pozycja": "rentownosc_10l",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.048799999999999996,
+      "jednostka": "ulamek",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-010",
+      "miejsce": {
+        "kolumna": "10 Yr",
+        "dzien": "2026-11-09"
+      }
+    },
+    {
       "id": "roe.FY2017",
       "rodzaj": "wyliczony",
       "pozycja": "roe",
@@ -22288,6 +22668,42 @@
       "uzasadnienie": "Domyślna stawka ustawowa podatku dochodowego od firm (USA); do NOPAT w ROIC i wycenie."
     },
     {
+      "id": "stopa_wolna_od_ryzyka.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_wolna_od_ryzyka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.048799999999999996,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "rentownosc_10l",
+      "wejscia": [
+        "rentownosc_10l.2026-11-09"
+      ]
+    },
+    {
+      "id": "udzial_pvgo.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "udzial_pvgo",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.7629182438401078,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "1 − (zysk_netto.TTM2026-07-31 / koszt_kapitalu_wlasnego) / kapitalizacja",
+      "wejscia": [
+        "zysk_netto.TTM2026-07-31",
+        "koszt_kapitalu_wlasnego.2026-11-09",
+        "kapitalizacja.2026-11-09"
+      ]
+    },
+    {
       "id": "wplyw_kursow_na_gotowke.FY2016Q1",
       "rodzaj": "raportowany",
       "pozycja": "wplyw_kursow_na_gotowke",
@@ -23938,6 +24354,19 @@
         "przychody.FY2027Q1",
         "przychody.FY2026Q1"
       ]
+    },
+    {
+      "id": "wzrost_rezydualny.zalozenie",
+      "rodzaj": "zalozenie",
+      "pozycja": "wzrost_rezydualny",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.025,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wzrost po okresie prognozy: nie wyżej niż stopa wolna od ryzyka (Damodaran); domyślnie 2,5% rocznie."
     },
     {
       "id": "wzrost_zysk_netto.FY2018",

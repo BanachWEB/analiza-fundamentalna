@@ -4079,6 +4079,406 @@
       ]
     },
     {
+      "id": "beneish_m.FY2018",
+      "rodzaj": "wyliczony",
+      "pozycja": "beneish_m",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-06-30",
+        "poczatek": "2017-07-01"
+      },
+      "wartosc": -2.844790757036234,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "Beneish M-score, model 8-zmiennowy (1999); próg −1,78",
+      "wejscia": [
+        "naleznosci_handlowe.2018-06-30",
+        "przychody.FY2018",
+        "naleznosci_handlowe.2017-06-30",
+        "przychody.FY2017",
+        "marza_brutto.FY2018",
+        "marza_brutto.FY2017",
+        "aktywa_obrotowe.2018-06-30",
+        "rzeczowe_aktywa_trwale.2018-06-30",
+        "aktywa.2018-06-30",
+        "aktywa_obrotowe.2017-06-30",
+        "rzeczowe_aktywa_trwale.2017-06-30",
+        "aktywa.2017-06-30",
+        "amortyzacja.FY2018",
+        "amortyzacja.FY2017",
+        "koszty_sprzedazy_i_zarzadu.FY2018",
+        "koszty_sprzedazy_i_zarzadu.FY2017",
+        "zobowiazania_krotkoterminowe.2018-06-30",
+        "dlug_dlugoterminowy_f.2018-06-30",
+        "zobowiazania_krotkoterminowe.2017-06-30",
+        "dlug_dlugoterminowy_f.2017-06-30",
+        "zysk_netto.FY2018",
+        "przeplywy_operacyjne.FY2018"
+      ]
+    },
+    {
+      "id": "beneish_m.FY2019",
+      "rodzaj": "wyliczony",
+      "pozycja": "beneish_m",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-06-30",
+        "poczatek": "2018-07-01"
+      },
+      "wartosc": -2.5009468458207635,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "Beneish M-score, model 8-zmiennowy (1999); próg −1,78",
+      "wejscia": [
+        "naleznosci_handlowe.2019-06-30",
+        "przychody.FY2019",
+        "naleznosci_handlowe.2018-06-30",
+        "przychody.FY2018",
+        "marza_brutto.FY2019",
+        "marza_brutto.FY2018",
+        "aktywa_obrotowe.2019-06-30",
+        "rzeczowe_aktywa_trwale.2019-06-30",
+        "aktywa.2019-06-30",
+        "aktywa_obrotowe.2018-06-30",
+        "rzeczowe_aktywa_trwale.2018-06-30",
+        "aktywa.2018-06-30",
+        "amortyzacja.FY2019",
+        "amortyzacja.FY2018",
+        "koszty_sprzedazy_i_zarzadu.FY2019",
+        "koszty_sprzedazy_i_zarzadu.FY2018",
+        "zobowiazania_krotkoterminowe.2019-06-30",
+        "dlug_dlugoterminowy_f.2019-06-30",
+        "zobowiazania_krotkoterminowe.2018-06-30",
+        "dlug_dlugoterminowy_f.2018-06-30",
+        "zysk_netto.FY2019",
+        "przeplywy_operacyjne.FY2019"
+      ]
+    },
+    {
+      "id": "beneish_m.FY2020",
+      "rodzaj": "wyliczony",
+      "pozycja": "beneish_m",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-06-30",
+        "poczatek": "2019-07-01"
+      },
+      "wartosc": -2.6378136380481054,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "Beneish M-score, model 8-zmiennowy (1999); próg −1,78",
+      "wejscia": [
+        "naleznosci_handlowe.2020-06-30",
+        "przychody.FY2020",
+        "naleznosci_handlowe.2019-06-30",
+        "przychody.FY2019",
+        "marza_brutto.FY2020",
+        "marza_brutto.FY2019",
+        "aktywa_obrotowe.2020-06-30",
+        "rzeczowe_aktywa_trwale.2020-06-30",
+        "aktywa.2020-06-30",
+        "aktywa_obrotowe.2019-06-30",
+        "rzeczowe_aktywa_trwale.2019-06-30",
+        "aktywa.2019-06-30",
+        "amortyzacja.FY2020",
+        "amortyzacja.FY2019",
+        "koszty_sprzedazy_i_zarzadu.FY2020",
+        "koszty_sprzedazy_i_zarzadu.FY2019",
+        "zobowiazania_krotkoterminowe.2020-06-30",
+        "dlug_dlugoterminowy_f.2020-06-30",
+        "zobowiazania_krotkoterminowe.2019-06-30",
+        "dlug_dlugoterminowy_f.2019-06-30",
+        "zysk_netto.FY2020",
+        "przeplywy_operacyjne.FY2020"
+      ]
+    },
+    {
+      "id": "beneish_m.FY2021",
+      "rodzaj": "wyliczony",
+      "pozycja": "beneish_m",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-06-30",
+        "poczatek": "2020-07-01"
+      },
+      "wartosc": -2.4219776818007324,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "Beneish M-score, model 8-zmiennowy (1999); próg −1,78",
+      "wejscia": [
+        "naleznosci_handlowe.2021-06-30",
+        "przychody.FY2021",
+        "naleznosci_handlowe.2020-06-30",
+        "przychody.FY2020",
+        "marza_brutto.FY2021",
+        "marza_brutto.FY2020",
+        "aktywa_obrotowe.2021-06-30",
+        "rzeczowe_aktywa_trwale.2021-06-30",
+        "aktywa.2021-06-30",
+        "aktywa_obrotowe.2020-06-30",
+        "rzeczowe_aktywa_trwale.2020-06-30",
+        "aktywa.2020-06-30",
+        "amortyzacja.FY2021",
+        "amortyzacja.FY2020",
+        "koszty_sprzedazy_i_zarzadu.FY2021",
+        "koszty_sprzedazy_i_zarzadu.FY2020",
+        "zobowiazania_krotkoterminowe.2021-06-30",
+        "dlug_dlugoterminowy_f.2021-06-30",
+        "zobowiazania_krotkoterminowe.2020-06-30",
+        "dlug_dlugoterminowy_f.2020-06-30",
+        "zysk_netto.FY2021",
+        "przeplywy_operacyjne.FY2021"
+      ]
+    },
+    {
+      "id": "beneish_m.FY2022",
+      "rodzaj": "wyliczony",
+      "pozycja": "beneish_m",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-06-30",
+        "poczatek": "2021-07-01"
+      },
+      "wartosc": -2.4180724808578775,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "Beneish M-score, model 8-zmiennowy (1999); próg −1,78",
+      "wejscia": [
+        "naleznosci_handlowe.2022-06-30",
+        "przychody.FY2022",
+        "naleznosci_handlowe.2021-06-30",
+        "przychody.FY2021",
+        "marza_brutto.FY2022",
+        "marza_brutto.FY2021",
+        "aktywa_obrotowe.2022-06-30",
+        "rzeczowe_aktywa_trwale.2022-06-30",
+        "aktywa.2022-06-30",
+        "aktywa_obrotowe.2021-06-30",
+        "rzeczowe_aktywa_trwale.2021-06-30",
+        "aktywa.2021-06-30",
+        "amortyzacja.FY2022",
+        "amortyzacja.FY2021",
+        "koszty_sprzedazy_i_zarzadu.FY2022",
+        "koszty_sprzedazy_i_zarzadu.FY2021",
+        "zobowiazania_krotkoterminowe.2022-06-30",
+        "dlug_dlugoterminowy_f.2022-06-30",
+        "zobowiazania_krotkoterminowe.2021-06-30",
+        "dlug_dlugoterminowy_f.2021-06-30",
+        "zysk_netto.FY2022",
+        "przeplywy_operacyjne.FY2022"
+      ]
+    },
+    {
+      "id": "beneish_m.FY2023",
+      "rodzaj": "wyliczony",
+      "pozycja": "beneish_m",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-06-30",
+        "poczatek": "2022-07-01"
+      },
+      "wartosc": -2.5186225508922386,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "Beneish M-score, model 8-zmiennowy (1999); próg −1,78",
+      "wejscia": [
+        "naleznosci_handlowe.2023-06-30",
+        "przychody.FY2023",
+        "naleznosci_handlowe.2022-06-30",
+        "przychody.FY2022",
+        "marza_brutto.FY2023",
+        "marza_brutto.FY2022",
+        "aktywa_obrotowe.2023-06-30",
+        "rzeczowe_aktywa_trwale.2023-06-30",
+        "aktywa.2023-06-30",
+        "aktywa_obrotowe.2022-06-30",
+        "rzeczowe_aktywa_trwale.2022-06-30",
+        "aktywa.2022-06-30",
+        "amortyzacja.FY2023",
+        "amortyzacja.FY2022",
+        "koszty_sprzedazy_i_zarzadu.FY2023",
+        "koszty_sprzedazy_i_zarzadu.FY2022",
+        "zobowiazania_krotkoterminowe.2023-06-30",
+        "dlug_dlugoterminowy_f.2023-06-30",
+        "zobowiazania_krotkoterminowe.2022-06-30",
+        "dlug_dlugoterminowy_f.2022-06-30",
+        "zysk_netto.FY2023",
+        "przeplywy_operacyjne.FY2023"
+      ]
+    },
+    {
+      "id": "beneish_m.FY2024",
+      "rodzaj": "wyliczony",
+      "pozycja": "beneish_m",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-06-30",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": -2.449879244466741,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "Beneish M-score, model 8-zmiennowy (1999); próg −1,78",
+      "wejscia": [
+        "naleznosci_handlowe.2024-06-30",
+        "przychody.FY2024",
+        "naleznosci_handlowe.2023-06-30",
+        "przychody.FY2023",
+        "marza_brutto.FY2024",
+        "marza_brutto.FY2023",
+        "aktywa_obrotowe.2024-06-30",
+        "rzeczowe_aktywa_trwale.2024-06-30",
+        "aktywa.2024-06-30",
+        "aktywa_obrotowe.2023-06-30",
+        "rzeczowe_aktywa_trwale.2023-06-30",
+        "aktywa.2023-06-30",
+        "amortyzacja.FY2024",
+        "amortyzacja.FY2023",
+        "koszty_sprzedazy_i_zarzadu.FY2024",
+        "koszty_sprzedazy_i_zarzadu.FY2023",
+        "zobowiazania_krotkoterminowe.2024-06-30",
+        "dlug_dlugoterminowy_f.2024-06-30",
+        "zobowiazania_krotkoterminowe.2023-06-30",
+        "dlug_dlugoterminowy_f.2023-06-30",
+        "zysk_netto.FY2024",
+        "przeplywy_operacyjne.FY2024"
+      ]
+    },
+    {
+      "id": "beneish_m.FY2025",
+      "rodzaj": "wyliczony",
+      "pozycja": "beneish_m",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": -2.535037966327512,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "Beneish M-score, model 8-zmiennowy (1999); próg −1,78",
+      "wejscia": [
+        "naleznosci_handlowe.2025-06-30",
+        "przychody.FY2025",
+        "naleznosci_handlowe.2024-06-30",
+        "przychody.FY2024",
+        "marza_brutto.FY2025",
+        "marza_brutto.FY2024",
+        "aktywa_obrotowe.2025-06-30",
+        "rzeczowe_aktywa_trwale.2025-06-30",
+        "aktywa.2025-06-30",
+        "aktywa_obrotowe.2024-06-30",
+        "rzeczowe_aktywa_trwale.2024-06-30",
+        "aktywa.2024-06-30",
+        "amortyzacja.FY2025",
+        "amortyzacja.FY2024",
+        "koszty_sprzedazy_i_zarzadu.FY2025",
+        "koszty_sprzedazy_i_zarzadu.FY2024",
+        "zobowiazania_krotkoterminowe.2025-06-30",
+        "dlug_dlugoterminowy_f.2025-06-30",
+        "zobowiazania_krotkoterminowe.2024-06-30",
+        "dlug_dlugoterminowy_f.2024-06-30",
+        "zysk_netto.FY2025",
+        "przeplywy_operacyjne.FY2025"
+      ]
+    },
+    {
+      "id": "beneish_m.FY2026",
+      "rodzaj": "wyliczony",
+      "pozycja": "beneish_m",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": -2.6261928234298746,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "Beneish M-score, model 8-zmiennowy (1999); próg −1,78",
+      "wejscia": [
+        "naleznosci_handlowe.2026-06-30",
+        "przychody.FY2026",
+        "naleznosci_handlowe.2025-06-30",
+        "przychody.FY2025",
+        "marza_brutto.FY2026",
+        "marza_brutto.FY2025",
+        "aktywa_obrotowe.2026-06-30",
+        "rzeczowe_aktywa_trwale.2026-06-30",
+        "aktywa.2026-06-30",
+        "aktywa_obrotowe.2025-06-30",
+        "rzeczowe_aktywa_trwale.2025-06-30",
+        "aktywa.2025-06-30",
+        "amortyzacja.FY2026",
+        "amortyzacja.FY2025",
+        "koszty_sprzedazy_i_zarzadu.FY2026",
+        "koszty_sprzedazy_i_zarzadu.FY2025",
+        "zobowiazania_krotkoterminowe.2026-06-30",
+        "dlug_dlugoterminowy_f.2026-06-30",
+        "zobowiazania_krotkoterminowe.2025-06-30",
+        "dlug_dlugoterminowy_f.2025-06-30",
+        "zysk_netto.FY2026",
+        "przeplywy_operacyjne.FY2026"
+      ]
+    },
+    {
+      "id": "beta.zalozenie",
+      "rodzaj": "zalozenie",
+      "pozycja": "beta",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 1.0,
+      "jednostka": "liczba",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Beta = 1 (rynek jako całość): brak wiarygodnej bety z własnych danych; do zmiany przez model z uzasadnieniem."
+    },
+    {
+      "id": "c_wk.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "c_wk",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 8.604750909885592,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "kapitalizacja / kapital_wlasny",
+      "wejscia": [
+        "kapitalizacja.2026-11-09",
+        "kapital_wlasny.2026-09-30"
+      ]
+    },
+    {
+      "id": "c_z.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "c_z",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 28.385223029070538,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "kapitalizacja / zysk_netto.TTM2026-09-30",
+      "wejscia": [
+        "kapitalizacja.2026-11-09",
+        "zysk_netto.TTM2026-09-30"
+      ]
+    },
+    {
       "id": "cagr_eps_rozwodniony_3l.FY2020",
       "rodzaj": "wyliczony",
       "pozycja": "cagr_eps_rozwodniony_3l",
@@ -9648,6 +10048,61 @@
       ]
     },
     {
+      "id": "ev.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "ev",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 4019584745859.36,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "kapitalizacja + dlug_netto",
+      "wejscia": [
+        "kapitalizacja.2026-11-09",
+        "dlug_netto.2026-09-30"
+      ]
+    },
+    {
+      "id": "ev_ebit.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "ev_ebit",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 24.631166828191258,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "ev / zysk_operacyjny.TTM2026-09-30",
+      "wejscia": [
+        "ev.2026-11-09",
+        "zysk_operacyjny.TTM2026-09-30"
+      ]
+    },
+    {
+      "id": "ev_ebitda.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "ev_ebitda",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 19.54186010014711,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "ev / ebitda.TTM2026-09-30",
+      "wejscia": [
+        "ev.2026-11-09",
+        "ebitda.TTM2026-09-30"
+      ]
+    },
+    {
       "id": "fcf.FY2017",
       "rodzaj": "wyliczony",
       "pozycja": "fcf",
@@ -10088,6 +10543,24 @@
       ]
     },
     {
+      "id": "fcf_yield.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "fcf_yield",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.01170796096724204,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "fcf_wlascicieli.TTM2026-09-30 / kapitalizacja",
+      "wejscia": [
+        "fcf_wlascicieli.TTM2026-09-30",
+        "kapitalizacja.2026-11-09"
+      ]
+    },
+    {
       "id": "gotowka.2016-06-30",
       "rodzaj": "raportowany",
       "pozycja": "gotowka",
@@ -10505,6 +10978,108 @@
         "accn": "0001193125-26-436133",
         "forma": "10-Q",
         "zlozono": "2026-10-28"
+      }
+    },
+    {
+      "id": "implikowana_marza_fcf.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "implikowana_marza_fcf",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.3161620655292786,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "marża FCF przy wzroście przychodów w tempie cagr_przychody_5l przez 10 lat",
+      "wejscia": [
+        "kapitalizacja.2026-11-09",
+        "przychody.TTM2026-09-30",
+        "cagr_przychody_5l.FY2026",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09"
+      ]
+    },
+    {
+      "id": "implikowany_cap.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "implikowany_cap",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 22.845512299208895,
+      "jednostka": "lata",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "lata wzrostu FCF w tempie cagr_przychody_5l, które uzasadniają kapitalizację",
+      "wejscia": [
+        "kapitalizacja.2026-11-09",
+        "fcf_wlascicieli.TTM2026-09-30",
+        "cagr_przychody_5l.FY2026",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09"
+      ]
+    },
+    {
+      "id": "implikowany_wzrost_fcf.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "implikowany_wzrost_fcf",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.2597686294466257,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "wzrost FCF przez 10 lat, przy którym wartość = kapitalizacja",
+      "wejscia": [
+        "kapitalizacja.2026-11-09",
+        "fcf_wlascicieli.TTM2026-09-30",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-09"
+      ]
+    },
+    {
+      "id": "indeks_kurs.2026-11-09",
+      "rodzaj": "raportowany",
+      "pozycja": "indeks_kurs",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 7549.93994140625,
+      "jednostka": "punkty",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-007",
+      "miejsce": {
+        "sesja": "2026-11-09",
+        "pole": "zamknięcie"
+      }
+    },
+    {
+      "id": "indeks_momentum_12_1.2026-11-09",
+      "rodzaj": "raportowany",
+      "pozycja": "indeks_momentum_12_1",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.1609113461245686,
+      "jednostka": "ulamek",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-007",
+      "miejsce": {
+        "od": "2025-11-07",
+        "do": "2026-10-09",
+        "obliczenie": "kurs(do) / kurs(od) - 1",
+        "dokumenty": [
+          "doc-007"
+        ]
       }
     },
     {
@@ -11373,6 +11948,25 @@
       ]
     },
     {
+      "id": "kapitalizacja.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "kapitalizacja",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 4048612745859.36,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "kurs × akcje_w_obrocie",
+      "wejscia": [
+        "kurs.2026-11-09",
+        "akcje_w_obrocie.2026-10-22"
+      ]
+    },
+    {
       "id": "konwersja_fcf.FY2017",
       "rodzaj": "wyliczony",
       "pozycja": "konwersja_fcf",
@@ -11579,6 +12173,25 @@
       "wejscia": [
         "fcf_wlascicieli.TTM2026-09-30",
         "zysk_netto.TTM2026-09-30"
+      ]
+    },
+    {
+      "id": "koszt_kapitalu_wlasnego.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszt_kapitalu_wlasnego",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.0934,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "stopa_wolna_od_ryzyka + beta × premia_ryzyka_akcji",
+      "wejscia": [
+        "stopa_wolna_od_ryzyka.2026-11-09",
+        "beta.zalozenie",
+        "premia_ryzyka_akcji.2026-11-10"
       ]
     },
     {
@@ -12433,6 +13046,770 @@
       ]
     },
     {
+      "id": "koszty_dystrybucji.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-06-30",
+        "poczatek": "2016-07-01"
+      },
+      "wartosc": 15461000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001564590-19-027952",
+        "forma": "10-K",
+        "zlozono": "2019-08-01"
+      },
+      "kontrole": [
+        "zmiana_wersji:2_wartosci:wybrano_najnowsza"
+      ]
+    },
+    {
+      "id": "koszty_dystrybucji.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-06-30",
+        "poczatek": "2017-07-01"
+      },
+      "wartosc": 17469000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001564590-20-034944",
+        "forma": "10-K",
+        "zlozono": "2020-07-30"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-06-30",
+        "poczatek": "2018-07-01"
+      },
+      "wartosc": 18213000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001564590-21-039151",
+        "forma": "10-K",
+        "zlozono": "2021-07-29"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-06-30",
+        "poczatek": "2019-07-01"
+      },
+      "wartosc": 19598000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001564590-22-026876",
+        "forma": "10-K",
+        "zlozono": "2022-07-28"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-06-30",
+        "poczatek": "2020-07-01"
+      },
+      "wartosc": 20117000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0000950170-23-035122",
+        "forma": "10-K",
+        "zlozono": "2023-07-27"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-06-30",
+        "poczatek": "2021-07-01"
+      },
+      "wartosc": 21825000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0000950170-24-087843",
+        "forma": "10-K",
+        "zlozono": "2024-07-30"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-06-30",
+        "poczatek": "2022-07-01"
+      },
+      "wartosc": 22759000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0000950170-25-100235",
+        "forma": "10-K",
+        "zlozono": "2025-07-30"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2023H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-07-01"
+      },
+      "wartosc": 10805000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0000950170-24-008814",
+        "forma": "10-Q",
+        "zlozono": "2024-01-30"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2023M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2023-03-31",
+        "poczatek": "2022-07-01"
+      },
+      "wartosc": 16555000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0000950170-24-048288",
+        "forma": "10-Q",
+        "zlozono": "2024-04-25"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2023Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-10-01"
+      },
+      "wartosc": 5679000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0000950170-24-008814",
+        "forma": "10-Q",
+        "zlozono": "2024-01-30"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2023Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2023-03-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 5750000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0000950170-24-048288",
+        "forma": "10-Q",
+        "zlozono": "2024-04-25"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2023Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2023-06-30",
+        "poczatek": "2023-04-01"
+      },
+      "wartosc": 6204000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji.FY2023 - koszty_dystrybucji.FY2023M9",
+      "wejscia": [
+        "koszty_dystrybucji.FY2023",
+        "koszty_dystrybucji.FY2023M9"
+      ]
+    },
+    {
+      "id": "koszty_dystrybucji.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-06-30",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 24456000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-323660",
+        "forma": "10-K",
+        "zlozono": "2026-07-29"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2024H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 11433000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0000950170-25-010491",
+        "forma": "10-Q",
+        "zlozono": "2025-01-29"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2024M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2024-03-31",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 17640000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0000950170-25-061046",
+        "forma": "10-Q",
+        "zlozono": "2025-04-30"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2024Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2023-09-30",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 5187000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0000950170-24-118967",
+        "forma": "10-Q",
+        "zlozono": "2024-10-30"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2024Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-10-01"
+      },
+      "wartosc": 6246000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0000950170-25-010491",
+        "forma": "10-Q",
+        "zlozono": "2025-01-29"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2024Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2024-03-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 6207000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0000950170-25-061046",
+        "forma": "10-Q",
+        "zlozono": "2025-04-30"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2024Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2024-06-30",
+        "poczatek": "2024-04-01"
+      },
+      "wartosc": 6816000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji.FY2024 - koszty_dystrybucji.FY2024M9",
+      "wejscia": [
+        "koszty_dystrybucji.FY2024",
+        "koszty_dystrybucji.FY2024M9"
+      ]
+    },
+    {
+      "id": "koszty_dystrybucji.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 25654000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-323660",
+        "forma": "10-K",
+        "zlozono": "2026-07-29"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 12157000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-027207",
+        "forma": "10-Q",
+        "zlozono": "2026-01-28"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-03-31",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 18369000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-191507",
+        "forma": "10-Q",
+        "zlozono": "2026-04-29"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2024-09-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 5717000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-25-256321",
+        "forma": "10-Q",
+        "zlozono": "2025-10-29"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-10-01"
+      },
+      "wartosc": 6440000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-027207",
+        "forma": "10-Q",
+        "zlozono": "2026-01-28"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 6212000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-191507",
+        "forma": "10-Q",
+        "zlozono": "2026-04-29"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2025Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 7285000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji.FY2025 - koszty_dystrybucji.FY2025M9",
+      "wejscia": [
+        "koszty_dystrybucji.FY2025",
+        "koszty_dystrybucji.FY2025M9"
+      ]
+    },
+    {
+      "id": "koszty_dystrybucji.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 26710000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-323660",
+        "forma": "10-K",
+        "zlozono": "2026-07-29"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 12301000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-027207",
+        "forma": "10-Q",
+        "zlozono": "2026-01-28"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-03-31",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 19115000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-191507",
+        "forma": "10-Q",
+        "zlozono": "2026-04-29"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 5717000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-436133",
+        "forma": "10-Q",
+        "zlozono": "2026-10-28"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 6584000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-027207",
+        "forma": "10-Q",
+        "zlozono": "2026-01-28"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 6814000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-191507",
+        "forma": "10-Q",
+        "zlozono": "2026-04-29"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2026Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 7595000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji.FY2026 - koszty_dystrybucji.FY2026M9",
+      "wejscia": [
+        "koszty_dystrybucji.FY2026",
+        "koszty_dystrybucji.FY2026M9"
+      ]
+    },
+    {
+      "id": "koszty_dystrybucji.FY2027Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 5716000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001193125-26-436133",
+        "forma": "10-Q",
+        "zlozono": "2026-10-28"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 26709000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji.FY2026 + koszty_dystrybucji.FY2027Q1 - koszty_dystrybucji.FY2026Q1",
+      "wejscia": [
+        "koszty_dystrybucji.FY2026",
+        "koszty_dystrybucji.FY2027Q1",
+        "koszty_dystrybucji.FY2026Q1"
+      ]
+    },
+    {
       "id": "koszty_odsetek.FY2017",
       "rodzaj": "raportowany",
       "pozycja": "koszty_odsetek",
@@ -13192,6 +14569,1006 @@
         "koszty_odsetek.FY2027Q1",
         "koszty_odsetek.FY2026Q1"
       ]
+    },
+    {
+      "id": "koszty_sprzedazy_i_zarzadu.FY2017",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_sprzedazy_i_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-06-30",
+        "poczatek": "2016-07-01"
+      },
+      "wartosc": 19942000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji + koszty_zarzadu",
+      "wejscia": [
+        "koszty_dystrybucji.FY2017",
+        "koszty_zarzadu.FY2017"
+      ]
+    },
+    {
+      "id": "koszty_sprzedazy_i_zarzadu.FY2018",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_sprzedazy_i_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-06-30",
+        "poczatek": "2017-07-01"
+      },
+      "wartosc": 22223000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji + koszty_zarzadu",
+      "wejscia": [
+        "koszty_dystrybucji.FY2018",
+        "koszty_zarzadu.FY2018"
+      ]
+    },
+    {
+      "id": "koszty_sprzedazy_i_zarzadu.FY2019",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_sprzedazy_i_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-06-30",
+        "poczatek": "2018-07-01"
+      },
+      "wartosc": 23098000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji + koszty_zarzadu",
+      "wejscia": [
+        "koszty_dystrybucji.FY2019",
+        "koszty_zarzadu.FY2019"
+      ]
+    },
+    {
+      "id": "koszty_sprzedazy_i_zarzadu.FY2020",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_sprzedazy_i_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-06-30",
+        "poczatek": "2019-07-01"
+      },
+      "wartosc": 24709000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji + koszty_zarzadu",
+      "wejscia": [
+        "koszty_dystrybucji.FY2020",
+        "koszty_zarzadu.FY2020"
+      ]
+    },
+    {
+      "id": "koszty_sprzedazy_i_zarzadu.FY2021",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_sprzedazy_i_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-06-30",
+        "poczatek": "2020-07-01"
+      },
+      "wartosc": 25224000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji + koszty_zarzadu",
+      "wejscia": [
+        "koszty_dystrybucji.FY2021",
+        "koszty_zarzadu.FY2021"
+      ]
+    },
+    {
+      "id": "koszty_sprzedazy_i_zarzadu.FY2022",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_sprzedazy_i_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-06-30",
+        "poczatek": "2021-07-01"
+      },
+      "wartosc": 27725000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji + koszty_zarzadu",
+      "wejscia": [
+        "koszty_dystrybucji.FY2022",
+        "koszty_zarzadu.FY2022"
+      ]
+    },
+    {
+      "id": "koszty_sprzedazy_i_zarzadu.FY2023",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_sprzedazy_i_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-06-30",
+        "poczatek": "2022-07-01"
+      },
+      "wartosc": 30334000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji + koszty_zarzadu",
+      "wejscia": [
+        "koszty_dystrybucji.FY2023",
+        "koszty_zarzadu.FY2023"
+      ]
+    },
+    {
+      "id": "koszty_sprzedazy_i_zarzadu.FY2024",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_sprzedazy_i_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-06-30",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 32065000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji + koszty_zarzadu",
+      "wejscia": [
+        "koszty_dystrybucji.FY2024",
+        "koszty_zarzadu.FY2024"
+      ]
+    },
+    {
+      "id": "koszty_sprzedazy_i_zarzadu.FY2025",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_sprzedazy_i_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 32877000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji + koszty_zarzadu",
+      "wejscia": [
+        "koszty_dystrybucji.FY2025",
+        "koszty_zarzadu.FY2025"
+      ]
+    },
+    {
+      "id": "koszty_sprzedazy_i_zarzadu.FY2026",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_sprzedazy_i_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 34666000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji + koszty_zarzadu",
+      "wejscia": [
+        "koszty_dystrybucji.FY2026",
+        "koszty_zarzadu.FY2026"
+      ]
+    },
+    {
+      "id": "koszty_sprzedazy_i_zarzadu.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_sprzedazy_i_zarzadu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 34740000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_dystrybucji + koszty_zarzadu",
+      "wejscia": [
+        "koszty_dystrybucji.TTM2026-09-30",
+        "koszty_zarzadu.TTM2026-09-30"
+      ]
+    },
+    {
+      "id": "koszty_zarzadu.FY2017",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2017-06-30",
+        "poczatek": "2016-07-01"
+      },
+      "wartosc": 4481000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001564590-19-027952",
+        "forma": "10-K",
+        "zlozono": "2019-08-01"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2018",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-06-30",
+        "poczatek": "2017-07-01"
+      },
+      "wartosc": 4754000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001564590-20-034944",
+        "forma": "10-K",
+        "zlozono": "2020-07-30"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2019",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-06-30",
+        "poczatek": "2018-07-01"
+      },
+      "wartosc": 4885000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001564590-21-039151",
+        "forma": "10-K",
+        "zlozono": "2021-07-29"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2020",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-06-30",
+        "poczatek": "2019-07-01"
+      },
+      "wartosc": 5111000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001564590-22-026876",
+        "forma": "10-K",
+        "zlozono": "2022-07-28"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2021",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-06-30",
+        "poczatek": "2020-07-01"
+      },
+      "wartosc": 5107000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0000950170-23-035122",
+        "forma": "10-K",
+        "zlozono": "2023-07-27"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2022",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-06-30",
+        "poczatek": "2021-07-01"
+      },
+      "wartosc": 5900000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0000950170-24-087843",
+        "forma": "10-K",
+        "zlozono": "2024-07-30"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2023",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-06-30",
+        "poczatek": "2022-07-01"
+      },
+      "wartosc": 7575000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0000950170-25-100235",
+        "forma": "10-K",
+        "zlozono": "2025-07-30"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2023H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-07-01"
+      },
+      "wartosc": 3735000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0000950170-24-008814",
+        "forma": "10-Q",
+        "zlozono": "2024-01-30"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2023M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2023-03-31",
+        "poczatek": "2022-07-01"
+      },
+      "wartosc": 5378000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0000950170-24-048288",
+        "forma": "10-Q",
+        "zlozono": "2024-04-25"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2023Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2022-12-31",
+        "poczatek": "2022-10-01"
+      },
+      "wartosc": 2337000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0000950170-24-008814",
+        "forma": "10-Q",
+        "zlozono": "2024-01-30"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2023Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2023-03-31",
+        "poczatek": "2023-01-01"
+      },
+      "wartosc": 1643000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0000950170-24-048288",
+        "forma": "10-Q",
+        "zlozono": "2024-04-25"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2023Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2023-06-30",
+        "poczatek": "2023-04-01"
+      },
+      "wartosc": 2197000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_zarzadu.FY2023 - koszty_zarzadu.FY2023M9",
+      "wejscia": [
+        "koszty_zarzadu.FY2023",
+        "koszty_zarzadu.FY2023M9"
+      ]
+    },
+    {
+      "id": "koszty_zarzadu.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-06-30",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 7609000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-323660",
+        "forma": "10-K",
+        "zlozono": "2026-07-29"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2024H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 3451000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0000950170-25-010491",
+        "forma": "10-Q",
+        "zlozono": "2025-01-29"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2024M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2024-03-31",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 5363000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0000950170-25-061046",
+        "forma": "10-Q",
+        "zlozono": "2025-04-30"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2024Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2023-09-30",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 1474000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0000950170-24-118967",
+        "forma": "10-Q",
+        "zlozono": "2024-10-30"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2024Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2023-12-31",
+        "poczatek": "2023-10-01"
+      },
+      "wartosc": 1977000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0000950170-25-010491",
+        "forma": "10-Q",
+        "zlozono": "2025-01-29"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2024Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2024-03-31",
+        "poczatek": "2024-01-01"
+      },
+      "wartosc": 1912000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0000950170-25-061046",
+        "forma": "10-Q",
+        "zlozono": "2025-04-30"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2024Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2024-06-30",
+        "poczatek": "2024-04-01"
+      },
+      "wartosc": 2246000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_zarzadu.FY2024 - koszty_zarzadu.FY2024M9",
+      "wejscia": [
+        "koszty_zarzadu.FY2024",
+        "koszty_zarzadu.FY2024M9"
+      ]
+    },
+    {
+      "id": "koszty_zarzadu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 7223000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-323660",
+        "forma": "10-K",
+        "zlozono": "2026-07-29"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 3496000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-027207",
+        "forma": "10-Q",
+        "zlozono": "2026-01-28"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-03-31",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 5233000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-191507",
+        "forma": "10-Q",
+        "zlozono": "2026-04-29"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2024-09-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 1673000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-25-256321",
+        "forma": "10-Q",
+        "zlozono": "2025-10-29"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2024-12-31",
+        "poczatek": "2024-10-01"
+      },
+      "wartosc": 1823000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-027207",
+        "forma": "10-Q",
+        "zlozono": "2026-01-28"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 1737000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-191507",
+        "forma": "10-Q",
+        "zlozono": "2026-04-29"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2025Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 1990000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_zarzadu.FY2025 - koszty_zarzadu.FY2025M9",
+      "wejscia": [
+        "koszty_zarzadu.FY2025",
+        "koszty_zarzadu.FY2025M9"
+      ]
+    },
+    {
+      "id": "koszty_zarzadu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 7956000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-323660",
+        "forma": "10-K",
+        "zlozono": "2026-07-29"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 3738000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-027207",
+        "forma": "10-Q",
+        "zlozono": "2026-01-28"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-03-31",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 5669000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-191507",
+        "forma": "10-Q",
+        "zlozono": "2026-04-29"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 1806000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-436133",
+        "forma": "10-Q",
+        "zlozono": "2026-10-28"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-12-31",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 1932000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-027207",
+        "forma": "10-Q",
+        "zlozono": "2026-01-28"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 1931000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-191507",
+        "forma": "10-Q",
+        "zlozono": "2026-04-29"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2026Q4",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 2287000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_zarzadu.FY2026 - koszty_zarzadu.FY2026M9",
+      "wejscia": [
+        "koszty_zarzadu.FY2026",
+        "koszty_zarzadu.FY2026M9"
+      ]
+    },
+    {
+      "id": "koszty_zarzadu.FY2027Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 1881000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001193125-26-436133",
+        "forma": "10-Q",
+        "zlozono": "2026-10-28"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 8031000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "koszty_zarzadu.FY2026 + koszty_zarzadu.FY2027Q1 - koszty_zarzadu.FY2026Q1",
+      "wejscia": [
+        "koszty_zarzadu.FY2026",
+        "koszty_zarzadu.FY2027Q1",
+        "koszty_zarzadu.FY2026Q1"
+      ]
+    },
+    {
+      "id": "kurs.2026-11-09",
+      "rodzaj": "raportowany",
+      "pozycja": "kurs",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 545.18,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-006",
+      "miejsce": {
+        "sesja": "2026-11-09",
+        "pole": "zamknięcie"
+      }
     },
     {
       "id": "liczba_akcji_rozwodniona.FY2017",
@@ -14902,6 +17279,24 @@
       ]
     },
     {
+      "id": "nadwyzka_wzrostu.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "nadwyzka_wzrostu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": -0.1140495556370944,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "CAGR przychodów historyczny − implikowany wzrost FCF",
+      "wejscia": [
+        "cagr_przychody_5l.FY2026",
+        "implikowany_wzrost_fcf.2026-11-09"
+      ]
+    },
+    {
       "id": "naleznosci_handlowe.2016-06-30",
       "rodzaj": "raportowany",
       "pozycja": "naleznosci_handlowe",
@@ -15322,6 +17717,28 @@
         "accn": "0001193125-26-436133",
         "forma": "10-Q",
         "zlozono": "2026-10-28"
+      }
+    },
+    {
+      "id": "obroty_dzienne_60s.2026-11-09",
+      "rodzaj": "raportowany",
+      "pozycja": "obroty_dzienne_60s",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 11876196257.380499,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-006",
+      "miejsce": {
+        "obliczenie": "średnia z 60 sesji: zamknięcie × wolumen",
+        "od": "2026-08-17",
+        "dokumenty": [
+          "doc-006"
+        ]
       }
     },
     {
@@ -17078,6 +19495,25 @@
         "zysk_operacyjny.TTM2026-09-30",
         "koszty_odsetek.TTM2026-09-30"
       ]
+    },
+    {
+      "id": "premia_ryzyka_akcji.2026-11-10",
+      "rodzaj": "raportowany",
+      "pozycja": "premia_ryzyka_akcji",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 0.0446,
+      "jednostka": "ulamek",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-008",
+      "miejsce": {
+        "kraj": "United States",
+        "kolumna": "Total Equity Risk Premium",
+        "rating": "Aa1"
+      }
     },
     {
       "id": "przeplywy_finansowe.FY2017",
@@ -20494,6 +22930,24 @@
       ]
     },
     {
+      "id": "rentownosc_10l.2026-11-09",
+      "rodzaj": "raportowany",
+      "pozycja": "rentownosc_10l",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.048799999999999996,
+      "jednostka": "ulamek",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-009",
+      "miejsce": {
+        "kolumna": "10 Yr",
+        "dzien": "2026-11-09"
+      }
+    },
+    {
       "id": "roe.FY2017",
       "rodzaj": "wyliczony",
       "pozycja": "roe",
@@ -22935,6 +25389,42 @@
       "uzasadnienie": "Domyślna stawka ustawowa podatku dochodowego od firm (USA); do NOPAT w ROIC i wycenie."
     },
     {
+      "id": "stopa_wolna_od_ryzyka.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_wolna_od_ryzyka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.048799999999999996,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "rentownosc_10l",
+      "wejscia": [
+        "rentownosc_10l.2026-11-09"
+      ]
+    },
+    {
+      "id": "udzial_pvgo.2026-11-09",
+      "rodzaj": "wyliczony",
+      "pozycja": "udzial_pvgo",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-09"
+      },
+      "wartosc": 0.6228094419174879,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "1 − (zysk_netto.TTM2026-09-30 / koszt_kapitalu_wlasnego) / kapitalizacja",
+      "wejscia": [
+        "zysk_netto.TTM2026-09-30",
+        "koszt_kapitalu_wlasnego.2026-11-09",
+        "kapitalizacja.2026-11-09"
+      ]
+    },
+    {
       "id": "wplyw_kursow_na_gotowke.FY2017",
       "rodzaj": "raportowany",
       "pozycja": "wplyw_kursow_na_gotowke",
@@ -24486,6 +26976,19 @@
         "przychody.FY2027Q1",
         "przychody.FY2026Q1"
       ]
+    },
+    {
+      "id": "wzrost_rezydualny.zalozenie",
+      "rodzaj": "zalozenie",
+      "pozycja": "wzrost_rezydualny",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.025,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Wzrost po okresie prognozy: nie wyżej niż stopa wolna od ryzyka (Damodaran); domyślnie 2,5% rocznie."
     },
     {
       "id": "wzrost_zysk_netto.FY2018",

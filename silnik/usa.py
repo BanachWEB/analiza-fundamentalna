@@ -13,11 +13,20 @@ from pathlib import Path
 from silnik import obliczenia
 from silnik.fakty.rejestr import RejestrFaktow
 from silnik.fakty.weryfikacja import Raport, drugie_zrodlo, podsumowanie_md, tozsamosci
-from silnik.pobieranie import sec, stockanalysis
+from silnik.fakty.schemat import TypDokumentu
+from silnik.pobieranie import rynek, sec, stockanalysis
 from silnik.pobieranie.archiwum import Archiwum
-from silnik.pobieranie.http import BladPobierania
+from silnik.pobieranie.http import BladPobierania, pobierz
 
 REPO = Path(__file__).resolve().parents[1]
+
+
+def _strona(archiwum: Archiwum, url: str, zrodlo: str, opis: str):
+    plik = pobierz(url, rozszerzenie=".html")
+    try:
+        return archiwum.dodaj_plik(plik, TypDokumentu.strona, zrodlo, adres=url, opis=opis)
+    finally:
+        plik.unlink(missing_ok=True)
 
 
 def uruchom(ticker: str, dzien: date, katalog_plikow: Path | None = None) -> Path:
@@ -40,9 +49,43 @@ def uruchom(ticker: str, dzien: date, katalog_plikow: Path | None = None) -> Pat
     except (BladPobierania, stockanalysis.BladStockAnalysis) as e:
         print(f"Drugie źródło niedostępne: {e}")
 
+    # dane rynkowe: kurs, momentum, obroty, S&P 500, rentowność obligacji, premia za ryzyko
+    adres_sa = f"https://stockanalysis.com/stocks/{ticker.lower()}/history/"
+    hist_sa = None
+    try:
+        hist_sa = archiwum.po_adresie(adres_sa) or _strona(archiwum, adres_sa, "Stock Analysis", "historia kursu")
+        rejestr.znane_dokumenty(archiwum.ids())
+    except BladPobierania as e:
+        print(f"Stock Analysis (historia) niedostępny: {e}")
+    zrodlo_kursu = "Yahoo"
+    try:
+        sesje, ids = rynek.historia(archiwum, "USA", ticker)
+    except (BladPobierania, rynek.BladRynku) as e:
+        print(f"Yahoo niedostępny ({e}); kurs z Stock Analysis, bez momentum")
+        sesje, ids, zrodlo_kursu = (rynek.sesje_stockanalysis(archiwum.tekst(hist_sa.id)), [hist_sa.id], "SA") if hist_sa else ([], [], None)
+    rejestr.znane_dokumenty(archiwum.ids())
+    for f in rynek.fakty_z_historii(sesje, ids, "USD"):
+        rejestr.dodaj(f, zastap=True)
+    try:
+        indeks, ids_i = rynek.historia(archiwum, "USA", "%5EGSPC")
+        rejestr.znane_dokumenty(archiwum.ids())
+        for f in rynek.fakty_z_historii(indeks, ids_i, "USD", "indeks_"):
+            rejestr.dodaj(f, zastap=True)
+    except (BladPobierania, rynek.BladRynku) as e:
+        print(f"S&P 500 niedostępny: {e}")
+    try:
+        for f in rynek.fakty_stop(archiwum, "USA", dzien):
+            rejestr.znane_dokumenty(archiwum.ids())
+            rejestr.dodaj(f, zastap=True)
+    except (BladPobierania, rynek.BladRynku) as e:
+        print(f"Stopy i premie niedostępne: {e}")
+    if hist_sa and zrodlo_kursu == "Yahoo":
+        sa = rynek.sesje_stockanalysis(archiwum.tekst(hist_sa.id))[-10:]  # porównanie kursu z tego samego dnia
+        drugie_zrodlo(rejestr, {("kurs", "dzien", x.dzien): (x.zamkniecie, hist_sa.id) for x in sa}, raport)
+
     rejestr.do_pliku(katalog / "fakty.json")
     (katalog / "weryfikacja.md").write_text(podsumowanie_md(rejestr, raport), encoding="utf-8")
-    obliczenia.uruchom_w_katalogu(katalog)
+    obliczenia.uruchom_w_katalogu(katalog, "USA")
     return katalog
 
 

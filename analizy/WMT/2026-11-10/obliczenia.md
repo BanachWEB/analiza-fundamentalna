@@ -37,10 +37,44 @@ Plik wygenerował silnik (2026-11-10). Kwoty w mln USD. ¹ = co najmniej jedno w
 - Beneish M-score -2,72¹: poniżej progu.
 - Altman Z'' 2,01¹: strefa szara.
 
+## Co jest w cenie (kurs z 2026-11-09, przepływy: TTM2026-07-31)
+
+| Miara | Wartość | Uwagi |
+|---|---:|---|
+| Kurs | 125,66 USD |  |
+| Kapitalizacja | 996 955 mln USD¹ |  |
+| EV | 1 025 358 mln USD¹ |  |
+| Koszt kapitału własnego | 9,3%¹ | stopa wolna od ryzyka + beta × premia (Damodaran) |
+| C/Z | 45,16¹ |  |
+| EV/EBIT | 31,76¹ |  |
+| EV/EBITDA | 21,64¹ |  |
+| C/WK | 10,15¹ |  |
+| FCF yield | 1,4%¹ | FCF dla właścicieli ÷ kapitalizacja |
+| Udział PVGO w cenie | 76,3%¹ | część ceny za przyszły wzrost |
+| Implikowany wzrost FCF (10 lat) | 24,0%¹ | wariant 1 |
+| Implikowany okres przewagi (CAP) | — | wariant 2, wzrost w tempie historycznym |
+| Implikowana marża FCF | 7,5%¹ | wariant 3, wzrost w tempie historycznym |
+| Wzrost historyczny (CAGR przychodów) | 5,0%¹ |  |
+
+## Karta w stylu Treli (informacja, nie bramka)
+
+Wynik: **4,5 / 10** z 4 filarów z 5.
+
+| Filar | Waga | Punkty | Miary |
+|---|---:|---:|---|
+| wzrost | 30% | 6,0 | cagr_przychody_3l: 2,1; cagr_eps_rozwodniony_3l: 8,1; cagr_zysk_netto_3l: 7,8 |
+| jakosc | 25% | 5,8 | roic: 5,7; konwersja_fcf: 4,5; dlug_netto_do_ebitda: 8,5; altman_z2: 4,8 |
+| wycena | 20% | 1,1 | fcf_yield: 0,5; ev_ebit: 2,7; nadwyzka_wzrostu: 0,0 |
+| analitycy | 15% | brak danych | rewizje_eps_90d: brak; potencjal_do_ceny_docelowej: brak |
+| momentum | 10% | 3,1 | nadwyzka_momentum: 3,1 |
+
+Filar „analitycy”: brak danych albo pokrycie poniżej 3 analityków — nie można na nim polegać.
+
 ## Braki danych
 
 - cagr_eps_rozwodniony_3l.FY2022: prawdopodobny podział akcji między okresami; EPS nieporównywalny
 - cagr_eps_rozwodniony_3l.FY2023: prawdopodobny podział akcji między okresami; EPS nieporównywalny
 - cagr_eps_rozwodniony_3l.FY2024: prawdopodobny podział akcji między okresami; EPS nieporównywalny
+- implikowany_cap.2026-11-09: nawet 40 lat wzrostu w tempie historycznym nie uzasadnia ceny
 - wzrost_eps_rozwodniony.FY2022: prawdopodobny podział akcji między okresami; EPS nieporównywalny
 - zmiana_liczby_akcji.FY2022: prawdopodobny podział albo scalenie akcji między okresami; dane nieporównywalne

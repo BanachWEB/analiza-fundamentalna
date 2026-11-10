@@ -1,0 +1,34 @@
+# Karta punktowa w stylu Tomasza Treli (specyfikacja, część 9). Zmiana wymaga zgody właściciela.
+# Wagi i progi to propozycja, a nie publikowana metoda Treli.
+# Każda miara: 0 pkt przy „zero”, 10 pkt przy „dziesiec”, liniowo pomiędzy (odwrócone, gdy zero > dziesiec).
+# Filar bez żadnej miary dostaje „brak danych”, a jego waga przechodzi proporcjonalnie na pozostałe.
+
+filary:
+  wzrost:
+    waga: 0.30
+    miary:
+      cagr_przychody_3l: {USA: {zero: 0.0, dziesiec: 0.25}, GPW: {zero: 0.0, dziesiec: 0.20}}
+      cagr_eps_rozwodniony_3l: {USA: {zero: 0.0, dziesiec: 0.30}, GPW: {zero: 0.0, dziesiec: 0.25}}
+      cagr_zysk_netto_3l: {USA: {zero: 0.0, dziesiec: 0.30}, GPW: {zero: 0.0, dziesiec: 0.25}}
+  jakosc:
+    waga: 0.25
+    miary:
+      roic: {USA: {zero: 0.05, dziesiec: 0.30}, GPW: {zero: 0.05, dziesiec: 0.25}}
+      konwersja_fcf: {USA: {zero: 0.30, dziesiec: 1.00}, GPW: {zero: 0.30, dziesiec: 1.00}}
+      dlug_netto_do_ebitda: {USA: {zero: 4.0, dziesiec: 0.0}, GPW: {zero: 3.5, dziesiec: 0.0}}
+      altman_z2: {USA: {zero: 1.10, dziesiec: 3.00}, GPW: {zero: 1.10, dziesiec: 3.00}}
+  wycena:
+    waga: 0.20
+    miary:
+      fcf_yield: {USA: {zero: 0.01, dziesiec: 0.08}, GPW: {zero: 0.02, dziesiec: 0.10}}
+      ev_ebit: {USA: {zero: 40.0, dziesiec: 10.0}, GPW: {zero: 25.0, dziesiec: 6.0}}
+      nadwyzka_wzrostu: {USA: {zero: -0.10, dziesiec: 0.10}, GPW: {zero: -0.10, dziesiec: 0.10}}  # CAGR historyczny − wzrost implikowany
+  analitycy:
+    waga: 0.15
+    miary:
+      rewizje_eps_90d: {USA: {zero: -0.05, dziesiec: 0.05}, GPW: {zero: -0.05, dziesiec: 0.05}}
+      potencjal_do_ceny_docelowej: {USA: {zero: -0.10, dziesiec: 0.30}, GPW: {zero: -0.10, dziesiec: 0.30}}
+  momentum:
+    waga: 0.10
+    miary:
+      nadwyzka_momentum: {USA: {zero: -0.20, dziesiec: 0.20}, GPW: {zero: -0.20, dziesiec: 0.20}}  # 12–1 spółki − 12–1 indeksu

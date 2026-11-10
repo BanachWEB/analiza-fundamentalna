@@ -8,7 +8,7 @@
       "zrodlo": "SEC",
       "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000104169.json",
       "opis": "XBRL companyfacts",
-      "pobrano": "2026-11-10T08:10:58.647260Z",
+      "pobrano": "2026-11-10T08:22:31.536278Z",
       "sha256": "49330f98609f70fcef4054edc90bc811398a58c4bf26dc0b218d607967a8dbe4",
       "plik": "49330f98609f70fc.json"
     },
@@ -18,7 +18,7 @@
       "zrodlo": "SEC",
       "adres": "https://data.sec.gov/submissions/CIK0000104169.json",
       "opis": "lista raportów",
-      "pobrano": "2026-11-10T08:10:59.071014Z",
+      "pobrano": "2026-11-10T08:22:31.965890Z",
       "sha256": "974a8f4fe73fc5e16ea8bf18ba149f747fe778ce05a749e46e3006e7bc73216b",
       "plik": "974a8f4fe73fc5e1.json"
     },
@@ -28,7 +28,7 @@
       "zrodlo": "Stock Analysis",
       "adres": "https://stockanalysis.com/stocks/wmt/financials/income-statement/",
       "opis": "income-statement",
-      "pobrano": "2026-11-10T08:10:59.381430Z",
+      "pobrano": "2026-11-10T08:22:32.275259Z",
       "sha256": "8a853fb4cfdebe1143977d6fe4e8fd11856fa9dee261c37cdcc344bf56c47884",
       "plik": "8a853fb4cfdebe11.html"
     },
@@ -38,7 +38,7 @@
       "zrodlo": "Stock Analysis",
       "adres": "https://stockanalysis.com/stocks/wmt/financials/balance-sheet/",
       "opis": "balance-sheet",
-      "pobrano": "2026-11-10T08:11:00.074958Z",
+      "pobrano": "2026-11-10T08:22:32.996987Z",
       "sha256": "aaa1aa6003da7e2aa6b2e0e18d2ad5888bfc50a9000376aa911c34ddb603364b",
       "plik": "aaa1aa6003da7e2a.html"
     },
@@ -48,9 +48,59 @@
       "zrodlo": "Stock Analysis",
       "adres": "https://stockanalysis.com/stocks/wmt/financials/cash-flow-statement/",
       "opis": "cash-flow-statement",
-      "pobrano": "2026-11-10T08:11:00.757785Z",
+      "pobrano": "2026-11-10T08:22:33.673705Z",
       "sha256": "b5a455160ee3cfcaa0f7bc622c97284510f49dc5bf69c246ca9923708a22cf9c",
       "plik": "b5a455160ee3cfca.html"
+    },
+    {
+      "id": "doc-006",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/wmt/history/",
+      "opis": "historia kursu",
+      "pobrano": "2026-11-10T08:22:34.354440Z",
+      "sha256": "faf9963a11c4ebfbda5bf832299179a0b29fb0bdfdd55ceb15f1af8cb2268b43",
+      "plik": "faf9963a11c4ebfb.html"
+    },
+    {
+      "id": "doc-007",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/WMT?range=2y&interval=1d",
+      "opis": "notowania dzienne WMT",
+      "pobrano": "2026-11-10T08:22:35.576208Z",
+      "sha256": "ea82daa40fbb3aa5f25cd0a9746302ca4102342899868aeb4199ba744a0e6e35",
+      "plik": "ea82daa40fbb3aa5.json"
+    },
+    {
+      "id": "doc-008",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=2y&interval=1d",
+      "opis": "notowania dzienne %5EGSPC",
+      "pobrano": "2026-11-10T08:22:52.664729Z",
+      "sha256": "9c2872a53d4cc29d03b42123a1c50e6fc8b2ec70085016114c283fde25d43479",
+      "plik": "9c2872a53d4cc29d.json"
+    },
+    {
+      "id": "doc-009",
+      "typ": "strona",
+      "zrodlo": "Damodaran (NYU Stern)",
+      "adres": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+      "opis": "premie za ryzyko krajów",
+      "pobrano": "2026-11-10T08:22:52.957529Z",
+      "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+      "plik": "ea30d57fc0858072.html"
+    },
+    {
+      "id": "doc-010",
+      "typ": "strona",
+      "zrodlo": "U.S. Treasury",
+      "adres": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "opis": "rentowności obligacji",
+      "pobrano": "2026-11-10T08:22:53.283541Z",
+      "sha256": "2079e573e24d2560d0ec0ad2e949f6bf39e3262beefe526c537edb1435a3bc41",
+      "plik": "2079e573e24d2560.csv"
     }
   ]
 }

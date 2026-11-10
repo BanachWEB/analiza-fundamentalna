@@ -4,8 +4,8 @@ Plik wygenerował silnik (2026-11-10). Nie edytuj go ręcznie.
 
 | Status | Liczba faktów |
 |---|---:|
-| zweryfikowany | 312 |
-| jedno_zrodlo | 638 |
+| zweryfikowany | 313 |
+| jedno_zrodlo | 672 |
 | konflikt | 0 |
 | odrzucony | 0 |
 
@@ -14,7 +14,7 @@ Plik wygenerował silnik (2026-11-10). Nie edytuj go ręcznie.
 | Kontrola | Zaliczone | Niezaliczone |
 |---|---:|---:|
 | aktywa=pasywa | 20 | 0 |
-| drugie_zrodlo | 60 | 0 |
+| drugie_zrodlo | 61 | 0 |
 | przeplywy=zmiana_gotowki(bez_kursow) | 28 | 0 |
 | przychody-koszt_sprzedazy=zysk_brutto | 30 | 0 |
 | zobowiazania+kapital=pasywa | 20 | 0 |
@@ -29,7 +29,7 @@ Spółka mogła zmienić znacznik XBRL; sprawdź mapowanie: koszty_odsetek
 
 ## Lata uzupełnione z serwisu danych (bez raportu spółki w archiwum)
 
-Brak.
+2026
 
 ## Fakty zmienione w kolejnych raportach spółki
 

@@ -177,6 +177,14 @@ koszty_sprzedazy_i_zarzadu:
   rodzaj: okres
   jednostka: pieniadz
   znaczniki: [SellingGeneralAndAdministrativeExpense]
+koszty_dystrybucji:  # USA: sprzedaż i marketing, gdy spółka nie podaje SG&A razem (np. Microsoft)
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [SellingAndMarketingExpense]
+koszty_zarzadu:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [GeneralAndAdministrativeExpense]
 koszty_odsetek:
   rodzaj: okres
   jednostka: pieniadz

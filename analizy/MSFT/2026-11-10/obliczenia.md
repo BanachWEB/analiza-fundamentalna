@@ -22,7 +22,7 @@ Plik wygenerował silnik (2026-11-10). Kwoty w mln USD. ¹ = co najmniej jedno w
 | Pokrycie odsetek (EBIT ÷ odsetki) | 40,42¹ | 44,98¹ | 37,29¹ | 53,89¹ | 50,88¹ | 50,63¹ |
 | Zmiana liczby akcji r/r | -0,9%¹ | -0,9% | -0,0% | -0,1% | -0,2% | — |
 | Piotroski F-score (0–9) | 7,00¹ | 6,00¹ | 8,00¹ | 6,00¹ | 6,00¹ | — |
-| Beneish M-score (próg −1,78) | — | — | — | — | — | — |
+| Beneish M-score (próg −1,78) | -2,42¹ | -2,52¹ | -2,45¹ | -2,54¹ | -2,63¹ | — |
 | Altman Z'' (strefy 1,10 / 2,60) | 4,51¹ | 4,71¹ | 4,14¹ | 4,49¹ | 4,59¹ | — |
 
 ## Dynamika wieloletnia (do FY2026)
@@ -34,16 +34,42 @@ Plik wygenerował silnik (2026-11-10). Kwoty w mln USD. ¹ = co najmniej jedno w
 
 ## Sygnały do sprawdzenia (diagnostyka, nie stop)
 
+- Beneish M-score -2,63¹: poniżej progu.
 - Altman Z'' 4,59¹: strefa bezpieczna.
+
+## Co jest w cenie (kurs z 2026-11-09, przepływy: TTM2026-09-30)
+
+| Miara | Wartość | Uwagi |
+|---|---:|---|
+| Kurs | 545,18 USD¹ |  |
+| Kapitalizacja | 4 048 613 mln USD¹ |  |
+| EV | 4 019 585 mln USD¹ |  |
+| Koszt kapitału własnego | 9,3%¹ | stopa wolna od ryzyka + beta × premia (Damodaran) |
+| C/Z | 28,39¹ |  |
+| EV/EBIT | 24,63¹ |  |
+| EV/EBITDA | 19,54¹ |  |
+| C/WK | 8,60¹ |  |
+| FCF yield | 1,2%¹ | FCF dla właścicieli ÷ kapitalizacja |
+| Udział PVGO w cenie | 62,3%¹ | część ceny za przyszły wzrost |
+| Implikowany wzrost FCF (10 lat) | 26,0%¹ | wariant 1 |
+| Implikowany okres przewagi (CAP) | 22,8 lat¹ | wariant 2, wzrost w tempie historycznym |
+| Implikowana marża FCF | 31,6%¹ | wariant 3, wzrost w tempie historycznym |
+| Wzrost historyczny (CAGR przychodów) | 14,6% |  |
+
+## Karta w stylu Treli (informacja, nie bramka)
+
+Wynik: **5,9 / 10** z 3 filarów z 5.
+
+| Filar | Waga | Punkty | Miary |
+|---|---:|---:|---|
+| wzrost | 30% | 7,2 | cagr_przychody_3l: 6,4; cagr_eps_rozwodniony_3l: 7,6; cagr_zysk_netto_3l: 7,6 |
+| jakosc | 25% | 7,5 | roic: 9,7; konwersja_fcf: 0,5; dlug_netto_do_ebitda: 10,0; altman_z2: 10,0 |
+| wycena | 20% | 1,8 | fcf_yield: 0,2; ev_ebit: 5,1; nadwyzka_wzrostu: 0,0 |
+| analitycy | 15% | brak danych | rewizje_eps_90d: brak; potencjal_do_ceny_docelowej: brak |
+| momentum | 10% | brak danych | nadwyzka_momentum: brak |
+
+Filar „analitycy”: brak danych albo pokrycie poniżej 3 analityków — nie można na nim polegać.
 
 ## Braki danych
 
-- beneish_m.FY2018: brak koszty_sprzedazy_i_zarzadu.FY2018, koszty_sprzedazy_i_zarzadu.FY2017
-- beneish_m.FY2019: brak koszty_sprzedazy_i_zarzadu.FY2019, koszty_sprzedazy_i_zarzadu.FY2018
-- beneish_m.FY2020: brak koszty_sprzedazy_i_zarzadu.FY2020, koszty_sprzedazy_i_zarzadu.FY2019
-- beneish_m.FY2021: brak koszty_sprzedazy_i_zarzadu.FY2021, koszty_sprzedazy_i_zarzadu.FY2020
-- beneish_m.FY2022: brak koszty_sprzedazy_i_zarzadu.FY2022, koszty_sprzedazy_i_zarzadu.FY2021
-- beneish_m.FY2023: brak koszty_sprzedazy_i_zarzadu.FY2023, koszty_sprzedazy_i_zarzadu.FY2022
-- beneish_m.FY2024: brak koszty_sprzedazy_i_zarzadu.FY2024, koszty_sprzedazy_i_zarzadu.FY2023
-- beneish_m.FY2025: brak koszty_sprzedazy_i_zarzadu.FY2025, koszty_sprzedazy_i_zarzadu.FY2024
-- beneish_m.FY2026: brak koszty_sprzedazy_i_zarzadu.FY2026, koszty_sprzedazy_i_zarzadu.FY2025
+Brak.

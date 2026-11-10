@@ -20,7 +20,7 @@ from urllib.parse import urlparse
 USER_AGENT = os.environ.get("ANALIZA_USER_AGENT", "analiza-fundamentalna/0.1 (narzedzie badawcze)")
 
 # SEC pozwala na 10 zapytań na sekundę; trzymamy się wyraźnie poniżej.
-_ODSTEP = {"data.sec.gov": 0.2, "www.sec.gov": 0.2}
+_ODSTEP = {"data.sec.gov": 0.2, "www.sec.gov": 0.2, "query1.finance.yahoo.com": 1.5}
 _ostatnie: dict[str, float] = {}
 
 
@@ -36,15 +36,25 @@ def pobierz(url: str, limit_s: int = 60, rozszerzenie: str | None = None) -> Pat
     if czekaj > 0:
         time.sleep(czekaj)
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept-Encoding": "identity"})
-    try:
-        with urllib.request.urlopen(req, timeout=limit_s) as odp:
-            dane = odp.read()
-    except urllib.error.HTTPError as e:
-        raise BladPobierania(f"{url}: HTTP {e.code}") from None
-    except urllib.error.URLError as e:
-        raise BladPobierania(f"{url}: {e.reason}") from None
-    finally:
-        _ostatnie[host] = time.monotonic()
+    for proba in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=limit_s) as odp:
+                dane = odp.read()
+            break
+        except urllib.error.HTTPError as e:
+            # 429 = serwis prosi o wolniejsze zapytania: czekamy tyle, ile podaje (Retry-After), najwyżej 2 razy
+            if e.code == 429 and proba < 2:
+                try:
+                    czekaj = min(float(e.headers.get("Retry-After", 15)), 60)
+                except ValueError:
+                    czekaj = 15
+                time.sleep(czekaj)
+                continue
+            raise BladPobierania(f"{url}: HTTP {e.code}") from None
+        except urllib.error.URLError as e:
+            raise BladPobierania(f"{url}: {e.reason}") from None
+        finally:
+            _ostatnie[host] = time.monotonic()
     if rozszerzenie is None:
         sufiks = Path(urlparse(url).path).suffix.lower()
         rozszerzenie = sufiks if re.fullmatch(r"\.[a-z0-9]{1,5}", sufiks) else ".bin"
