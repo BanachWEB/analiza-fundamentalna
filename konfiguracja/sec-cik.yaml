@@ -1,0 +1,5 @@
+# Ticker → CIK w EDGAR (SEC). Dopisz spółkę przed pierwszą analizą.
+# CIK znajdziesz na stronie spółki w EDGAR (https://www.sec.gov/edgar/search/).
+MSFT: 789019
+AAPL: 320193
+WMT: 104169

@@ -26,6 +26,12 @@ Repozytorium buduje skill, który robi wstępną analizę fundamentalną spółk
 | Schemat rejestru faktów i dokumentów | `silnik/fakty/schemat.py` (plik `schemat/*.schema.json` jest z niego generowany) |
 | Rejestr faktów: dodawanie, wyliczanie, zapis | `silnik/fakty/rejestr.py` |
 | Archiwum dokumentów źródłowych | `silnik/pobieranie/archiwum.py` |
+| Dane z SEC i kalendarz fiskalny | `silnik/pobieranie/sec.py` |
+| Mapowanie znaczników XBRL na pozycje | `konfiguracja/mapowanie-us-gaap.yaml` |
+| Ticker → CIK | `konfiguracja/sec-cik.yaml` |
+| Drugie źródło dla USA | `silnik/pobieranie/stockanalysis.py` |
+| Tożsamości księgowe i porównanie z drugim źródłem | `silnik/fakty/weryfikacja.py` |
+| Przebieg danych dla spółki z USA | `silnik/usa.py` |
 | Wyniki analiz | `analizy/<TICKER>/<RRRR-MM-DD>/` |
 | Zasady inwestowania właściciela (limity, pauza po rajdzie, benchmarki) | repozytorium `inwestowanie`, plik `zasady-inwestowania.md` |
 | Zasady pisania (rozmowa, pliki, raporty) | ten plik, sekcja „Język i styl” |
@@ -61,5 +67,6 @@ Dotyczy wszystkiego, co piszesz: odpowiedzi w rozmowie, plików w repozytorium i
 ## Środowisko
 
 - `pip install -r requirements.txt`, potem `python -m pytest`.
-- Internet tylko przez narzędzia WebSearch i WebFetch; sieć powłoki jest ograniczona.
+- Powłoka i Python mają dostęp do data.sec.gov i stockanalysis.com (sprawdzone 10.11.2026). Pobieraj dane kodem (`silnik/pobieranie/`), bo WebFetch przepuszcza strony przez model streszczający. WebFetch i WebSearch służą tylko do szukania informacji, nigdy do przepisywania liczb.
+- Zmienna `ANALIZA_USER_AGENT`: SEC prosi o nazwę narzędzia i adres kontaktowy w nagłówku. Silnik nie podmienia nagłówków i nie omija blokad.
 - Pliki źródłowe z archiwum trzymaj poza repozytorium (domyślnie `~/.cache/analiza-fundamentalna/archiwum`, zmienna `ANALIZA_ARCHIWUM`). Do repozytorium trafia tylko `dokumenty.json` z adresem i sumą SHA-256 każdego pliku.

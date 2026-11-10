@@ -9,7 +9,7 @@ Plan ma 7 kroków (`specyfikacja.md`, część 11).
 | Krok | Zakres | Stan |
 |---|---|---|
 | 1 | Schemat rejestru faktów, rejestr, archiwum dokumentów | gotowy |
-| 2 | Pobieranie z API SEC i weryfikacja (tożsamości, drugie źródło) | — |
+| 2 | Pobieranie z API SEC i weryfikacja (tożsamości, drugie źródło) | gotowy |
 | 3 | Odczyt ESEF i PDF dla GPW, test cytatu | — |
 | 4 | Obliczenia: wskaźniki, wycena odwrotna, scenariusze, karta Treli | — |
 | 5 | Bramki stopu | — |
@@ -31,6 +31,20 @@ Po zmianie `silnik/fakty/schemat.py` wygeneruj schemat JSON od nowa:
 ```bash
 python -m silnik.fakty.eksport_schematu
 ```
+
+## Dane spółki z USA (krok 2)
+
+```bash
+python -m silnik.usa MSFT
+```
+
+- Spółka musi mieć CIK w `konfiguracja/sec-cik.yaml`.
+- Silnik pobiera z SEC dane XBRL (companyfacts) i listę raportów, a ze Stock Analysis trzy strony ze sprawozdaniami. Wszystkie pliki trafiają do archiwum.
+- Fakty z SEC trafiają do rejestru bez udziału modelu: 10 lat obrotowych, 12 kwartałów i stany na koniec okresów.
+- Weryfikacja sprawdza cztery tożsamości księgowe (aktywa = pasywa; zobowiązania + kapitał = pasywa; przychody − koszt sprzedaży = zysk brutto; przepływy = zmiana gotówki) i porównuje 12 pozycji rocznych ze Stock Analysis, z progiem 0,5%.
+- Wynik: `analizy/<TICKER>/<data>/` z plikami `dokumenty.json`, `fakty.json` i `weryfikacja.md`.
+
+Znane ograniczenia: kwartał Q4 i przepływy kwartalne (raporty 10-Q podają je narastająco) policzy dopiero krok 4. Stock Analysis za darmo daje tylko dane roczne, więc fakty kwartalne mają zwykle status „jedno_zrodlo”. Spółki zagraniczne z raportami 20-F (taksonomia IFRS) wymagają osobnego mapowania.
 
 ## Jak działa rejestr faktów
 

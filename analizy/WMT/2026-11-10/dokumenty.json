@@ -1,0 +1,56 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "WMT",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000104169.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-10T07:45:32.582550Z",
+      "sha256": "49330f98609f70fcef4054edc90bc811398a58c4bf26dc0b218d607967a8dbe4",
+      "plik": "49330f98609f70fc.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0000104169.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-10T07:45:33.014927Z",
+      "sha256": "974a8f4fe73fc5e16ea8bf18ba149f747fe778ce05a749e46e3006e7bc73216b",
+      "plik": "974a8f4fe73fc5e1.json"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/wmt/financials/income-statement/",
+      "opis": "income-statement",
+      "pobrano": "2026-11-10T07:45:33.274850Z",
+      "sha256": "8a853fb4cfdebe1143977d6fe4e8fd11856fa9dee261c37cdcc344bf56c47884",
+      "plik": "8a853fb4cfdebe11.html"
+    },
+    {
+      "id": "doc-004",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/wmt/financials/balance-sheet/",
+      "opis": "balance-sheet",
+      "pobrano": "2026-11-10T07:45:33.952899Z",
+      "sha256": "aaa1aa6003da7e2aa6b2e0e18d2ad5888bfc50a9000376aa911c34ddb603364b",
+      "plik": "aaa1aa6003da7e2a.html"
+    },
+    {
+      "id": "doc-005",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/wmt/financials/cash-flow-statement/",
+      "opis": "cash-flow-statement",
+      "pobrano": "2026-11-10T07:45:34.627917Z",
+      "sha256": "b5a455160ee3cfcaa0f7bc622c97284510f49dc5bf69c246ca9923708a22cf9c",
+      "plik": "b5a455160ee3cfca.html"
+    }
+  ]
+}

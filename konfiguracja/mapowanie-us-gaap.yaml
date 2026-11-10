@@ -1,0 +1,136 @@
+# Mapowanie znaczników XBRL (US GAAP) na pozycje kanoniczne rejestru faktów.
+#
+# Dla każdego okresu silnik bierze pierwszy znacznik z listy, który ma wartość
+# w tym okresie (spółki zmieniają znaczniki, np. Revenues → RevenueFromContract...).
+# Znacznik bez prefiksu należy do us-gaap; inny zbiór zapisuj jako "dei:Znacznik".
+#
+# rodzaj: okres (wartość za okres: rok albo kwartał) | stan (wartość na dzień)
+# jednostka: jak w silnik/fakty/schemat.py (Jednostka)
+# jednostka_xbrl: klucz w "units" w companyfacts (USD, shares, USD/shares)
+
+przychody:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki:
+    # Revenues pierwsze: to przychody razem (np. Walmart: sprzedaż + członkostwo).
+    - Revenues
+    - RevenueFromContractWithCustomerExcludingAssessedTax
+    - SalesRevenueNet
+    - RevenueFromContractWithCustomerIncludingAssessedTax
+koszt_sprzedazy:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [CostOfRevenue, CostOfGoodsAndServicesSold]
+zysk_brutto:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [GrossProfit]
+badania_i_rozwoj:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [ResearchAndDevelopmentExpense]
+zysk_operacyjny:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [OperatingIncomeLoss]
+zysk_netto:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [NetIncomeLoss]
+eps_rozwodniony:
+  rodzaj: okres
+  jednostka: pieniadz_na_akcje
+  jednostka_xbrl: USD/shares
+  znaczniki: [EarningsPerShareDiluted]
+liczba_akcji_rozwodniona:
+  rodzaj: okres
+  jednostka: akcje
+  jednostka_xbrl: shares
+  znaczniki: [WeightedAverageNumberOfDilutedSharesOutstanding]
+przeplywy_operacyjne:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [NetCashProvidedByUsedInOperatingActivities]
+przeplywy_inwestycyjne:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [NetCashProvidedByUsedInInvestingActivities]
+przeplywy_finansowe:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [NetCashProvidedByUsedInFinancingActivities]
+wplyw_kursow_na_gotowke:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki:
+    - EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
+    - EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations
+    - EffectOfExchangeRateOnCashAndCashEquivalents
+zmiana_gotowki:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki:
+    - CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect
+    - CashAndCashEquivalentsPeriodIncreaseDecrease
+capex:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [PaymentsToAcquirePropertyPlantAndEquipment]
+sbc:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [ShareBasedCompensation, AllocatedShareBasedCompensationExpense]
+amortyzacja:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [DepreciationDepletionAndAmortization, DepreciationAmortizationAndOther, DepreciationAndAmortization]
+dywidendy_wyplacone:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [PaymentsOfDividendsCommonStock, PaymentsOfDividends]
+skup_akcji:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [PaymentsForRepurchaseOfCommonStock]
+
+aktywa:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [Assets]
+zobowiazania:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [Liabilities]
+kapital_wlasny:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [StockholdersEquity]
+kapital_wlasny_z_udzialami_niekontrolujacymi:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest]
+pasywa_razem:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [LiabilitiesAndStockholdersEquity]
+gotowka:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [CashAndCashEquivalentsAtCarryingValue]
+inwestycje_krotkoterminowe:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [ShortTermInvestments, MarketableSecuritiesCurrent, AvailableForSaleSecuritiesDebtSecuritiesCurrent]
+dlug_dlugoterminowy:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [LongTermDebtNoncurrent]
+dlug_krotkoterminowy:
+  rodzaj: stan
+  jednostka: pieniadz
+  znaczniki: [LongTermDebtCurrent, DebtCurrent]
+akcje_w_obrocie:
+  rodzaj: stan
+  jednostka: akcje
+  jednostka_xbrl: shares
+  znaczniki: ["dei:EntityCommonStockSharesOutstanding"]

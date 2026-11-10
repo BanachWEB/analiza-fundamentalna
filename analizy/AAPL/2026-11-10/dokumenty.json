@@ -1,0 +1,56 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "AAPL",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-10T07:45:30.009319Z",
+      "sha256": "f085735b4d08fb116ade18d24247ffabe11df8eb52eae6556b165831f15ef1ad",
+      "plik": "f085735b4d08fb11.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0000320193.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-10T07:45:30.389072Z",
+      "sha256": "88bb6d5b8501d766e129c3b384bb4afeb9ba8e3d2cd5b2ce05d4b350d23ffe86",
+      "plik": "88bb6d5b8501d766.json"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/aapl/financials/income-statement/",
+      "opis": "income-statement",
+      "pobrano": "2026-11-10T07:45:30.654162Z",
+      "sha256": "d2354fc1bb03759f9d73039164f3c02499dd219b9ceb379eaeaceb88ed68fcb3",
+      "plik": "d2354fc1bb03759f.html"
+    },
+    {
+      "id": "doc-004",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/aapl/financials/balance-sheet/",
+      "opis": "balance-sheet",
+      "pobrano": "2026-11-10T07:45:31.339851Z",
+      "sha256": "ab3168f3937b935b03a8060a52b9e36a2619f02636916b9d2937145aa3ffb2e8",
+      "plik": "ab3168f3937b935b.html"
+    },
+    {
+      "id": "doc-005",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/aapl/financials/cash-flow-statement/",
+      "opis": "cash-flow-statement",
+      "pobrano": "2026-11-10T07:45:32.021845Z",
+      "sha256": "f3cb9eca920cf82712df58ff0668c8385ad4e742361624fff0b98529dcfda39c",
+      "plik": "f3cb9eca920cf827.html"
+    }
+  ]
+}

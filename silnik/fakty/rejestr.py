@@ -34,6 +34,11 @@ class RejestrFaktow:
 
     # --- dodawanie -------------------------------------------------------
 
+    def znane_dokumenty(self, ids: Iterable[str]) -> None:
+        """Dopisuje id dokumentów, które pojawiły się w archiwum po utworzeniu rejestru."""
+        if self._dokumenty is not None:
+            self._dokumenty.update(ids)
+
     def dodaj(self, fakt: Fakt, zastap: bool = False) -> Fakt:
         if fakt.id in self._fakty and not zastap:
             raise BladRejestru(f"fakt {fakt.id} już istnieje; użyj zastap=True, jeśli to świadoma zmiana")
