@@ -1,0 +1,8 @@
+{"scenariusze": [
+  {"nazwa": "byk", "prawdopodobienstwo": 0.20, "wzrost_przychodow": 0.12, "marza_fcf": 0.10,
+   "uzasadnienie": "Okolice osiemdziesiątego percentyla stopy bazowej dla małych spółek sprzętowych. Warunek: systemy bezzałogowe i oprogramowanie rosną zgodnie z zapowiedziami zarządu, marża FCF przekracza najlepszy rok z historii, a spółka nie emituje nowych akcji."},
+  {"nazwa": "bazowy", "prawdopodobienstwo": 0.45, "wzrost_przychodow": 0.06, "marza_fcf": 0.06,
+   "uzasadnienie": "Okolice mediany stopy bazowej dla spółek tej wielkości. Drony rosną, ale część starszych produktów dalej spada; marża FCF wraca do poziomu z najlepszych lat spółki i tam zostaje."},
+  {"nazwa": "niedzwiedz", "prawdopodobienstwo": 0.35, "wzrost_przychodow": 0.01, "marza_fcf": 0.02,
+   "uzasadnienie": "Okolice dwudziestego percentyla. Zamówienia w obronności są nieregularne, ceny pamięci obniżają marżę brutto, a strata operacyjna wymusza kolejną emisję z półki S-3; marża FCF zostaje przy średniej z ostatnich lat. Waga wyższa niż zwykle, bo spółka nie miała zysku netto w żadnym z pięciu ostatnich lat obrotowych."}
+]}
