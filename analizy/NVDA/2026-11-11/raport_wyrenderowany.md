@@ -4,13 +4,13 @@ Data analizy: 11.11.2026. Rynek: USA. Instrument w XTB: NVDA.US. Decyzja bramek:
 
 ## TL;DR
 
-> NVIDIA sprzedaje platformy obliczeniowe dla centrów danych AI: układy GPU, procesory, sieć i oprogramowanie. Spółka nie ma własnych fabryk. W Q2 FY2027 centra danych dały 89,0 mld USD[^1] z 96,2 mld USD[^2] przychodów. Kurs 168,89 USD[^3] zakłada, że FCF dla właścicieli będzie rósł o 13,7%[^4] rocznie przez dziesięć lat. Moim zdaniem to oczekiwanie leży powyżej stopy bazowej dla spółek tej wielkości, więc szansę, że spółka pobije oczekiwania zawarte w cenie, oceniam na około jedną trzecią. Największe ryzyka to cykl nakładów na centra danych, koncentracja klientów i ograniczenia eksportowe. Do tego dochodzi świeże dochodzenie rady w sprawie prezesa. Wg twoich zasad: spółka ma duże pokrycie analityczne, pauza po rajdzie jej nie dotyczy, a przed zakupem potrzebujesz karty w `spolki/NVDA.md`.
+> NVIDIA sprzedaje platformy obliczeniowe dla centrów danych AI: układy GPU, procesory, sieć i oprogramowanie. Spółka nie ma własnych fabryk. W Q2 FY2027 centra danych dały 89,0 mld USD[^1] z 96,2 mld USD[^2] przychodów. Kurs 168,89 USD[^3] zakłada, że FCF dla właścicieli będzie rósł o 13,7%[^4] rocznie przez dziesięć lat. Moim zdaniem to oczekiwanie leży powyżej stopy bazowej dla spółek tej wielkości, więc szansę, że spółka pobije oczekiwania zawarte w cenie, oceniam na około jedną trzecią. Największe ryzyka to cykl nakładów na centra danych, koncentracja klientów i ograniczenia eksportowe. Do tego dochodzi świeże dochodzenie rady w sprawie prezesa. Wg twoich zasad: spółka ma duże pokrycie analityczne, a pauza po rajdzie jej nie dotyczy, bo kurs zmienił się w trzy miesiące o -22,3%[^5]; a przed zakupem potrzebujesz karty w `spolki/NVDA.md`.
 
 - Przewaga konkurencyjna: wąska, trend niepewny (uzasadnienie w części czwartej).
-- Wycena: kapitalizacja 4,07 bln USD[^5], C/Z 21,1×[^6], FCF yield 2,9%[^7].
-- Wartość oczekiwana ze scenariuszy: 104,87 USD[^8] przy kursie 168,89 USD[^3]; prawdopodobieństwo straty 75,0%[^9]. Model scenariuszy przyjmuje stały wzrost przez dziesięć lat, więc nie oddaje prognozy zarządu na najbliższe dwa lata (część dziesiąta).
+- Wycena: kapitalizacja 4,07 bln USD[^6], C/Z 21,1×[^7], FCF yield 2,9%[^8].
+- Wartość oczekiwana ze scenariuszy: 104,87 USD[^9] przy kursie 168,89 USD[^3]; prawdopodobieństwo straty 75,0%[^10]. Model scenariuszy przyjmuje stały wzrost przez dziesięć lat, więc nie oddaje prognozy zarządu na najbliższe dwa lata (część dziesiąta).
 - Karta w stylu Treli: wynik wysoki; wycenę i momentum karta ocenia słabiej niż wzrost i jakość (część jedenasta).
-- Pokrycie analityczne: duże, 62[^10] analityków.
+- Pokrycie analityczne: duże, 62[^11] analityków.
 
 ## 1. Jak działa firma
 
@@ -22,7 +22,7 @@ Bezpośrednimi klientami są producenci kart, dystrybutorzy, producenci serweró
 
 W 2026 roku spółka dodała nowy element modelu. Pomaga wybranym chmurom AI zdobyć grunt, energię i budynki pod centra danych, bo ci klienci rosną szybciej niż ich bilanse (`doc-031`). W zamian sprzedaje im infrastrukturę i przy spełnieniu warunków dostaje udział w ich przychodach (`doc-031`).
 
-Jedno zdanie: dostawcy chmury, twórcy modeli i przedsiębiorstwa płacą NVIDII za kompletną infrastrukturę do trenowania i uruchamiania modeli AI. Wybierają ją, bo prawie całe oprogramowanie AI powstaje na jej platformie, a konkurencyjne układy nie mają tak szerokiego ekosystemu.
+Jedno zdanie: dostawcy chmury, twórcy modeli i przedsiębiorstwa płacą NVIDII za kompletną infrastrukturę do trenowania i uruchamiania modeli AI. Moim zdaniem klienci wybierają ją, bo platforma ma najszerszy ekosystem oprogramowania; spółka sama opisuje swój ekosystem jako duży i rosnący (`doc-019`).
 
 Czynniki wartości do śledzenia co kwartał:
 1. przychody centrów danych i ich podział na hiperskalerów oraz grupę ACIE (chmury AI, przemysł, przedsiębiorstwa);
@@ -38,28 +38,28 @@ Test `3P` (Damodaran), moja ocena:
 
 ## 2. Na czym zarabia
 
-Spółka raportuje dwa segmenty: Compute & Networking oraz Graphics (`doc-019`). W Q2 FY2027 segment Compute & Networking dał 88,3 mld USD[^11] przychodów i 62,7 mld USD[^12] zysku operacyjnego. Segment Graphics dał 7,9 mld USD[^13] przychodów i 3,9 mld USD[^14] zysku operacyjnego (`doc-031`, `doc-020`). Zysk pochodzi więc prawie w całości z segmentu, o którym mówią nagłówki.
+Spółka raportuje dwa segmenty: Compute & Networking oraz Graphics (`doc-019`). W Q2 FY2027 segment Compute & Networking dał 88,3 mld USD[^12] przychodów i 62,7 mld USD[^13] zysku operacyjnego. Segment Graphics dał 7,9 mld USD[^14] przychodów i 3,9 mld USD[^15] zysku operacyjnego (`doc-031`, `doc-020`). Zysk pochodzi więc prawie w całości z segmentu, o którym mówią nagłówki.
 
-Od Q1 FY2027 spółka pokazuje też przychody według platform rynkowych (`doc-020`). W Q2 FY2027 centra danych dały 89,0 mld USD[^1], w tym hiperskalerzy 48,7 mld USD[^15] i grupa ACIE 40,3 mld USD[^16]. Edge Computing dał 7,2 mld USD[^17] (`doc-031`). W Q2 FY2027 spółka przeniosła jednego klienta z ACIE do hiperskalerów i przeliczyła okres porównawczy, więc podział na te dwie grupy nie jest ciągły (`doc-031`).
+Od Q1 FY2027 spółka pokazuje też przychody według platform rynkowych (`doc-020`). W Q2 FY2027 centra danych dały 89,0 mld USD[^1], w tym hiperskalerzy 48,7 mld USD[^16] i grupa ACIE 40,3 mld USD[^17]. Edge Computing dał 7,2 mld USD[^18] (`doc-031`). W Q2 FY2027 spółka przeniosła jednego klienta z ACIE do hiperskalerów i przeliczyła okres porównawczy, więc podział na te dwie grupy nie jest ciągły (`doc-031`).
 
-Przychody są skoncentrowane. W Q2 FY2027 jeden klient bezpośredni dał 16,0%[^18] przychodów (`doc-020`). W Q1 FY2027 trzech klientów bezpośrednich dało 21,0%[^19], 17,0%[^20] i 16,0%[^21] przychodów (`doc-021`). W FY2026 dwóch klientów dało 22,0%[^22] i 14,0%[^23] przychodów (`doc-019`).
+Przychody są skoncentrowane. W Q2 FY2027 jeden klient bezpośredni dał 16,0%[^19] przychodów (`doc-020`). W Q1 FY2027 trzech klientów bezpośrednich dało 21,0%[^20], 17,0%[^21] i 16,0%[^22] przychodów (`doc-021`). W FY2026 dwóch klientów dało 22,0%[^23] i 14,0%[^24] przychodów (`doc-019`).
 
-Według siedziby klienta bezpośredniego USA dały w Q2 FY2027 60,1 mld USD[^24], Tajwan 27,0 mld USD[^25], a Chiny z Hongkongiem 7,9 mld USD[^26] (`doc-020`). Spółka zastrzega, że siedziba klienta nie musi być miejscem wysyłki ani użytkowania (`doc-020`).
+Według siedziby klienta bezpośredniego USA dały w Q2 FY2027 60,1 mld USD[^25], Tajwan 27,0 mld USD[^26], a Chiny z Hongkongiem 7,9 mld USD[^27] (`doc-020`). Spółka zastrzega, że siedziba klienta nie musi być miejscem wysyłki ani użytkowania (`doc-020`).
 
-Zarząd prognozuje na Q3 FY2027 przychody 108,0 mld USD[^27] i marżę brutto 74,0%[^28]. W Q2 FY2027 marża brutto wyniosła 75,0%[^29] (`doc-030`, `doc-031`). Prognoza nie zakłada żadnych przychodów z centrów danych w Chinach (`doc-031`).
+Zarząd prognozuje na Q3 FY2027 przychody 108,0 mld USD[^28] i marżę brutto 74,0%[^29]. W Q2 FY2027 marża brutto wyniosła 75,0%[^30] (`doc-030`, `doc-031`). Prognoza nie zakłada żadnych przychodów z centrów danych w Chinach (`doc-031`).
 
 ## 3. Najważniejsze fakty (akcjonariat, zarząd, płynność, kalendarz)
 
-- Akcjonariat: zarząd i rada mają razem 3,9%[^30] akcji, prezes Jensen Huang 3,6%[^31], BlackRock 7,4%[^32], a Vanguard 7,3%[^33] (`doc-022`). Nikt nie kontroluje spółki.
+- Akcjonariat: zarząd i rada mają razem 3,9%[^31] akcji, prezes Jensen Huang 3,6%[^32], BlackRock 7,4%[^33], a Vanguard 7,3%[^34] (`doc-022`). Moim zdaniem żaden akcjonariusz nie kontroluje spółki.
 - Prezes: Jensen Huang założył spółkę w 1993 roku i od początku kieruje nią jako prezes (`doc-022`). `DEF 14A` nie opisuje planu sukcesji. W raporcie rocznym spółka pisze, że w dużym stopniu zależy od wieloletniego zespołu kierowniczego (`doc-019`).
-- Dochodzenie rady: 8.11.2026 rada ogłosiła niezależne dochodzenie po doniesieniach, że prezes był celem działań obcego wywiadu (`doc-045`). Rada pisze, że nie ma powodu sądzić, by naruszono bezpieczeństwo narodowe albo tajemnice spółki, i deklaruje zaufanie do prezesa (`doc-045`). 10.11.2026 niezależni członkowie rady zatrudnili do dochodzenia kancelarię Wachtell, Lipton, Rosen & Katz (`doc-043`). Spółka nie złożyła w tej sprawie raportu 8-K.
-- Płynność: średnie obroty dzienne z sześćdziesięciu sesji wynoszą 27,7 mld USD[^34].
-- Kurs: 168,89 USD[^3], zmiana w trzy miesiące -22,3%[^35], RSI czternastodniowy 23,95[^36].
-- Kalendarz: spółka poda wyniki za Q3 FY2027 17.11.2026 (komunikat spółki z 28.10.2026, według przeglądu wiadomości). Przejęcie Hugging Face za 11,9 mld USD[^37] ma się zamknąć w pierwszej połowie 2027 roku, po zgodach regulatorów (`doc-024`).
+- Dochodzenie rady: 8.11.2026 rada ogłosiła niezależne dochodzenie po doniesieniach, że prezes był celem działań obcego wywiadu (`doc-045`). Rada pisze, że nie ma powodu sądzić, by naruszono bezpieczeństwo narodowe albo tajemnice spółki, i deklaruje zaufanie do prezesa (`doc-045`). Tego samego dnia prezes w liście do pracowników przyznał, że był niewierny żonie (`doc-044`). 10.11.2026 niezależni członkowie rady zatrudnili do dochodzenia kancelarię Wachtell, Lipton, Rosen & Katz (`doc-043`). Na liście zgłoszeń EDGAR (`doc-002`, pobranej 11.11.2026) nie ma raportu 8-K po 3.09.2026.
+- Płynność: średnie obroty dzienne z sześćdziesięciu sesji wynoszą 27,7 mld USD[^35].
+- Kurs: 168,89 USD[^3], zmiana w trzy miesiące -22,3%[^5], RSI czternastodniowy 23,95[^36].
+- Kalendarz: wyniki za Q3 FY2027 mają się ukazać 17.11.2026. Tę datę podaje materiał InvestingPro (`doc-016`) i przegląd wiadomości (komunikat spółki z 28.10.2026); komunikatu spółki nie ma w archiwum. Przejęcie Hugging Face za 11,9 mld USD[^37] ma się zamknąć w pierwszej połowie 2027 roku, po zgodach regulatorów (`doc-024`).
 
 ## 4. Branża, konkurencja i przewaga konkurencyjna
 
-Spółka wymienia jako konkurentów w akceleratorach AMD, Huawei i Intel (`doc-019`). Własne układy AI projektują duzi dostawcy chmury: Alibaba, Alphabet, Amazon, Baidu, Huawei i Microsoft (`doc-019`). Czterech z nich to jednocześnie klienci NVIDII. W sieciach spółka konkuruje między innymi z Aristą, Broadcomem, Cisco i Marvellem (`doc-019`). Spółka oczekuje silniejszej konkurencji, w tym tańszych produktów nowych graczy (`doc-019`).
+Spółka wymienia jako konkurentów w akceleratorach AMD, Huawei i Intel (`doc-019`). Własne układy AI projektują duzi dostawcy chmury: Alibaba, Alphabet, Amazon, Baidu, Huawei i Microsoft (`doc-019`). W sieciach spółka konkuruje między innymi z Aristą, Broadcomem, Cisco i Marvellem (`doc-019`). Spółka oczekuje silniejszej konkurencji, w tym tańszych produktów nowych graczy (`doc-019`).
 
 Chiny są dla spółki praktycznie zamknięte. W 10-Q za Q2 FY2027 spółka pisze, że ograniczenia eksportowe wykluczyły ją z chińskiego rynku centrów danych, a to pomogło konkurentom zbudować większe ekosystemy (`doc-020`). Rząd Chin zachęca klientów do zakupów u chińskich producentów (`doc-020`). Organy ochrony konkurencji w UE, USA, Wielkiej Brytanii, Chinach i Korei Południowej wysyłają spółce zapytania o sprzedaż i przydział dostaw (`doc-020`).
 
@@ -72,7 +72,7 @@ Kandydaci na źródło przewagi:
 
 Liczby: ROIC wynosi 65,1%[^40], a w FY2023, roku spadku, wyniósł 16,9%‼[^41]. Koszt kapitału własnego to 9,4%[^42]. Marża brutto spadła w FY2023 do 56,9%[^43], a potem wróciła do 74,7%[^44].
 
-Moim zdaniem przewaga jest wąska, a trend niepewny. Zwroty powyżej kosztu kapitału przez dziesięć lat są bardziej prawdopodobne niż nie, bo ekosystem CUDA działa jak efekt sieciowy. Nie uznaję jej za szeroką z trzech powodów. Po pierwsze, najwięksi klienci budują własne układy i mają skalę, by przenieść część pracy. Po drugie, rząd USA już odebrał spółce chiński rynek centrów danych, a dalsze ograniczenia są możliwe. Po trzecie, dzisiejsze zwroty powstały w okresie niedoboru, a nie w pełnym cyklu. Stopa bazowa: nawet spółka z najwyższego kwintyla ROIC ma około połowy szans, że zostanie w nim po dekadzie.
+Moim zdaniem przewaga jest wąska, a trend niepewny. Zwroty powyżej kosztu kapitału przez dziesięć lat są bardziej prawdopodobne niż nie, bo ekosystem CUDA działa jak efekt sieciowy. Nie uznaję jej za szeroką z trzech powodów. Po pierwsze, najwięksi klienci budują własne układy i mają skalę, by przenieść część pracy. Po drugie, rząd USA już odebrał spółce chiński rynek centrów danych, a dalsze ograniczenia są możliwe. Po trzecie, dzisiejsze zwroty powstały w okresie niedoboru, a nie w pełnym cyklu. Stopa bazowa z badania metody w repozytorium (Mauboussin): nawet spółka z najwyższego kwintyla ROIC ma mniej więcej połowę szans, że zostanie w nim po dekadzie.
 
 Test AI (moja ocena):
 1. Przychody nie zależą od godzin pracy ludzi; AI to źródło popytu.
@@ -94,7 +94,7 @@ Nowe zastosowania kapitału zmieniają profil ryzyka:
 - W sierpniu 2026 spółka udzieliła gwarancji wartości rezydualnej dzierżaw kampusu SB Energy, którego najemcą jest spółka powiązana z OpenAI, z limitem 105,0 mld USD[^57] (`doc-023`). Łączna maksymalna ekspozycja z gwarancji wynosi 108,5 mld USD[^58] (`doc-031`). OpenAI zobowiązał się zwrócić NVIDII wypłaty, a gwarancje zaczną działać etapami od FY2029 (`doc-023`, `doc-031`).
 - W Q2 FY2027 spółka wyemitowała obligacje za 25,0 mld USD[^59] (`doc-031`). Dług wynosi 33,4 mld USD[^60], a gotówka z papierami dłużnymi 56,6 mld USD[^61] (`doc-020`, `doc-031`).
 
-Moim zdaniem spółka finansuje dziś własnych klientów: inwestuje w nich, gwarantuje ich dzierżawy i wydłuża im terminy płatności. To wspiera sprzedaż, ale wiąże wynik NVIDII z kondycją kilku klientów bez ratingu inwestycyjnego. Spółka sama pisze, że te zobowiązania zależą od wyników klientów i partnerów (`doc-020`).
+Moim zdaniem spółka finansuje dziś własnych klientów: inwestuje w nich, gwarantuje ich dzierżawy i wydłuża im terminy płatności. To wspiera sprzedaż, ale wiąże wynik NVIDII z kondycją kilku klientów, w tym chmur AI, które według spółki nie mają dziś finansowania na poziomie inwestycyjnym (`doc-020`). Spółka sama pisze, że te zobowiązania zależą od wyników klientów i partnerów (`doc-020`).
 
 ## 6. Sprawozdania finansowe
 
@@ -143,9 +143,9 @@ Jakość zysków: FCF dla właścicieli za cztery kwartały wyniósł 119,8 mld
 
 Kapitał obrotowy: zapasy wzrosły do 31,6 mld USD[^73] z 25,8 mld USD[^74] kwartał wcześniej; spółka tłumaczy to przygotowaniem do premiery Vera Rubin (`doc-031`). Należności handlowe wynoszą 63,1 mld USD[^75], a DSO wzrosło do 60 dni[^76] z 45 dni[^77] (`doc-031`). Spółka podaje jako przyczynę dłuższe terminy płatności, do roku, w dużych umowach z klientami o ratingu inwestycyjnym (`doc-020`).
 
-Zadłużenie: dług netto do EBITDA wynosi 0,1×[^78], a pokrycie odsetek 425,8×[^79]. Spółka ma bilans bez napięcia mimo emisji obligacji.
+Zadłużenie: dług netto do EBITDA wynosi 0,1×[^78], a pokrycie odsetek 425,8×[^79]. Moim zdaniem bilans spółki nie jest napięty mimo emisji obligacji.
 
-Rozwodnienie: spółka skupuje więcej akcji, niż wydaje w programach motywacyjnych; liczba akcji (średnia ważona) spadła w FY2026 o -1,2%[^80]. Wynagrodzenia akcyjne w Q2 FY2027 wyniosły 2,0 mld USD[^81].
+Rozwodnienie: liczba akcji (średnia ważona) spadła w FY2026 o -1,2%[^80]. Wynagrodzenia akcyjne w Q2 FY2027 wyniosły 2,0 mld USD[^81].
 
 ## 7. Jakość zysków i czerwone flagi
 
@@ -162,11 +162,11 @@ Rozwodnienie: spółka skupuje więcej akcji, niż wydaje w programach motywacyj
 
 
 Opis flag:
-- **Dochodzenie rady wobec prezesa (flaga).** Rada bada, czy prezes był celem obcego wywiadu, i deklaruje zaufanie do niego (`doc-045`). Nie ma dowodu oszustwa, więc to flaga, a nie stop. Z materiału InvestingPro nie potwierdziłem dokumentem spółki zarzutów o ułatwianie wysyłek układów do Chin ani udziału FBI.
-- **Chiny (flaga).** Spółka pisze, że jest praktycznie wykluczona z chińskiego rynku centrów danych (`doc-020`). Poniosła odpis na zapasy i zobowiązania związane z układami `H200` w wysokości 400,0 mln USD[^82] (`doc-020`). Rdzeń biznesu działa jednak bez Chin, więc to flaga, a nie stop.
+- **Dochodzenie rady wobec prezesa (flaga).** Rada bada, czy prezes był celem obcego wywiadu, i deklaruje zaufanie do niego (`doc-045`). Prezes przyznał w liście do pracowników, że był niewierny żonie (`doc-044`). Moim zdaniem brak dowodu oszustwa oznacza flagę, a nie stop. Z materiału InvestingPro nie potwierdziłem dokumentem spółki zarzutów o ułatwianie wysyłek układów do Chin ani udziału FBI.
+- **Chiny (flaga).** Spółka pisze, że jest praktycznie wykluczona z chińskiego rynku centrów danych (`doc-020`). Poniosła odpis na zapasy i zobowiązania związane z układami `H200` w wysokości 400,0 mln USD[^82] (`doc-020`). Moim zdaniem rdzeń biznesu działa bez Chin, więc to flaga, a nie stop.
 - **Beneish M-score (flaga diagnostyczna).** M-score za FY2026 wynosi -1,15[^83], powyżej progu. Wskaźnik reaguje na szybki wzrost należności. Spółka tłumaczy ten wzrost dłuższymi terminami płatności (`doc-020`). Moim zdaniem to nie dowód manipulacji, ale realne ryzyko kredytowe, które warto śledzić.
 - **„Material weakness”.** Zwrot występuje w raporcie rocznym tylko w opisie ryzyk. Zarząd i biegły stwierdzają skuteczną kontrolę wewnętrzną, a opinia biegłego jest bez zastrzeżeń (`doc-019`).
-- **Insiderzy.** Sprzedaże dyrektorów i członków zarządu w ostatnich miesiącach idą głównie w planach `10b5-1`. Prezes we wrześniu 2026 przekazał akcje na podatek i w darowiznach (`doc-042`). Jeden dyrektor sprzedał akcje we wrześniu bez wzmianki o planie, w otwartym oknie transakcyjnym (`doc-033`).
+- **Insiderzy.** Sprzedaże radcy prawnego, dyrektor finansowej i jednego z dyrektorów z ostatnich miesięcy są oznaczone jako transakcje w planach `10b5-1` (`doc-035`, `doc-037`, `doc-041`). Prezes we wrześniu 2026 przekazał akcje na podatek i w darowiznach (`doc-042`). Jeden dyrektor sprzedał akcje we wrześniu bez wzmianki o planie (`doc-033`).
 
 Wskaźniki statystyczne: Altman Z'' wynosi 12,85[^84] (strefa bezpieczna), Piotroski F-score 4,00[^85], a prawdopodobieństwo upadłości wg Ohlsona 0,0%[^86]. Żaden z nich nie zatrzymuje analizy.
 
@@ -200,9 +200,9 @@ Trzy liczby obok siebie:
 - konsensus wzrostu EPS: 95,3%[^89] na najbliższy rok, a konsensus przychodów na rok obrotowy do 31.01.2027 to 411,9 mld USD[^90];
 - mój scenariusz bazowy: wzrost przychodów 9,0%[^91] rocznie przez dziesięć lat.
 
-Moim zdaniem spółka cykliczna na szczycie wzrostu nie powinna być wyceniana od zysku z jednego roku. Cena zakłada, że FCF za dekadę będzie kilka razy wyższy niż dziś, a dzisiejszy FCF i tak powstaje w warunkach niedoboru i przy marży bliskiej rekordu.
+Moim zdaniem spółka cykliczna na szczycie wzrostu nie powinna być wyceniana od zysku z jednego roku. Cena zakłada, że FCF za dekadę będzie kilka razy wyższy niż dziś, a dzisiejszy FCF i tak powstaje w warunkach niedoboru i przy marży operacyjnej bliskiej rekordu.
 
-Konsensus: średnia cena docelowa analityków to 325,25 USD[^92], czyli 92,6%[^93] powyżej kursu. Cena docelowa to kontekst, a nie wartość godziwa. Analitycy historycznie zawyżają długoterminowy wzrost.
+Konsensus: średnia cena docelowa analityków to 325,25 USD[^92], czyli 92,6%[^93] powyżej kursu. Cena docelowa to kontekst, a nie wartość godziwa. Według badania metody w repozytorium analitycy historycznie zawyżają długoterminowy wzrost.
 
 
 Wycena właściciela z arkusza „Cena docelowa” (metoda Tomasza Treli, dane ze Scrab; doc-013, ticker w arkuszu: NVDA). Silnik przepisuje wyniki arkusza i niczego nie przelicza.
@@ -244,14 +244,14 @@ Wg twojego arkusza: cena docelowa wynosi 440,89 USD[^94] w wariancie konserwaty
 **Prawdopodobieństwo.** Rozkładam tezę na trzy warunki konieczne:
 1. nakłady na centra danych AI nie spadną przed FY2029 (moja ocena: około trzech na cztery, bo zarząd ma zamówienia i zabezpieczone dostawy na kilka lat);
 2. własne układy klientów nie odbiorą istotnej części sprzedaży do hiperskalerów (około czterech na pięć w tym horyzoncie);
-3. marża nie zapadnie się przez koszty pamięci i konkurencję cenową (około czterech na pięć).
+3. marża brutto nie zapadnie się przez koszty pamięci i konkurencję cenową (około czterech na pięć).
 
-Iloczyn daje mniej więcej połowę szans. Prawdopodobieństwo, że spółka pobije oczekiwania zawarte w cenie, czyli wzrost FCF w tempie 13,7%[^4] przez dekadę, oceniam niżej, na około jedną trzecią. Stopa bazowa: w klasie spółek z ponad stu miliardów USD przychodów praktycznie żadna nie rosła przez dziesięć lat w tempie kilkunastu procent rocznie (Base Rate Book). Liczby, które tę wartość podnoszą: zamówienia ograniczone podażą i prognoza na Q3 FY2027 (108,0 mld USD[^27]). Liczby, które ją obniżają: koncentracja klientów i finansowanie klientów przez spółkę.
+Iloczyn daje mniej więcej połowę szans. Prawdopodobieństwo, że spółka pobije oczekiwania zawarte w cenie, czyli wzrost FCF w tempie 13,7%[^4] przez dekadę, oceniam niżej, na około jedną trzecią. Stopa bazowa z badania metody w repozytorium (Base Rate Book, Mauboussin): żadna spółka z co najmniej stu miliardami USD przychodów nie rosła przez dziesięć lat w tempie kilkunastu procent rocznie. Liczby, które tę wartość podnoszą: zamówienia ograniczone podażą i prognoza na Q3 FY2027 (108,0 mld USD[^28]). Liczby, które ją obniżają: koncentracja klientów i finansowanie klientów przez spółkę.
 
-**Dlaczego rynek może się mylić.** Moim zdaniem rynek patrzy dziś na dochodzenie wobec prezesa i na wskaźniki techniczne (RSI 23,95[^36]). Mnożnik C/Z na rok naprzód wygląda nisko, ale liczy się od zysku z okresu niedoboru. Nie mam przewagi informacyjnej nad rynkiem. Moja odmienność dotyczy tylko jednego czynnika: zakładam, że wzrost po FY2028 będzie dużo niższy, niż sugeruje konsensus, bo cykl nakładów kiedyś się odwróci.
+**Dlaczego rynek może się mylić.** Moim zdaniem rynek patrzy dziś na dochodzenie wobec prezesa i na wskaźniki techniczne (RSI 23,95[^36]). Mnożnik C/Z na rok naprzód wygląda nisko, ale liczy się od zysku z okresu niedoboru. Nie mam przewagi informacyjnej nad rynkiem. Moja odmienność dotyczy tylko jednego czynnika: zakładam, że wzrost przychodów r/r po FY2028 będzie dużo niższy, niż sugeruje konsensus, bo cykl nakładów kiedyś się odwróci.
 
 **Katalizatory z datami:**
-1. 17.11.2026: wyniki Q3 FY2027 i prognoza na Q4 FY2027 (marża brutto wobec 74,0%[^28]).
+1. 17.11.2026 (data z materiału InvestingPro): wyniki Q3 FY2027 i prognoza na Q4 FY2027 (marża brutto wobec 74,0%[^29]).
 2. Wynik dochodzenia rady w sprawie prezesa (bez terminu).
 3. Pierwsza połowa 2027 roku: zamknięcie przejęcia Hugging Face.
 4. Luty 2027: raport roczny za FY2027 z danymi o klientach i zobowiązaniach.
@@ -260,11 +260,11 @@ Iloczyn daje mniej więcej połowę szans. Prawdopodobieństwo, że spółka pob
 **Antytezy z progami** (dokładne progi wpiszesz w karcie po swoim „tak”):
 - Rynkowe: Fed podnosi stopy, a koszt kapitału rośnie powyżej dzisiejszego 9,4%[^42]. Wpływa na horyzont i wielkość pozycji.
 - Specyficzne i sprawdzalne:
-  - marża brutto spada poniżej prognozy na Q3 FY2027 (74,0%[^28]) przez dwa kwartały z rzędu;
+  - marża brutto spada poniżej prognozy na Q3 FY2027 (74,0%[^29]) przez dwa kwartały z rzędu;
   - DSO rośnie powyżej poziomu z Q2 FY2027 (60 dni[^76]);
   - zapasy rosną szybciej niż przychody przez dwa kwartały, przy zobowiązaniach na dostawy rzędu 279,0 mld USD[^39];
   - przychody hiperskalerów spadają kwartał do kwartału;
-  - udział największego klienta rośnie powyżej poziomu z FY2026 (22,0%[^22]).
+  - udział największego klienta rośnie powyżej poziomu z FY2026 (22,0%[^23]).
 - Nieprzewidywalne (wpływają tylko na wielkość pozycji): odejście prezesa po dochodzeniu, nowe ograniczenia eksportowe, zakłócenia na Tajwanie.
 
 **Pre-mortem: za dwa lata pozycja jest na minusie o połowę. Co się stało?** Hiperskalerzy przenieśli część pracy na własne układy. Nowe moce w chmurach AI okazały się nadwyżką. Klienci finansowani przez NVIDIĘ zaczęli mieć kłopoty z płatnościami, więc spółka odpisała należności i inwestycje. Spółka zamówiła pamięć i moce na lata i musiała odpisać zobowiązania zakupowe, a marża brutto spadła tak jak w FY2023. Do tego prezes odszedł, a rynek obniżył mnożnik za ryzyko zarządzania.
@@ -274,9 +274,9 @@ Iloczyn daje mniej więcej połowę szans. Prawdopodobieństwo, że spółka pob
 ## 10. Wiadomości i scenariusze
 
 Ostatnie wiadomości i ich wpływ na czynniki wartości (moja ocena):
-- Negatywne: po pierwsze, 9.11.2026 kurs spadł po artykule New York Times o tym, że prezes był celem chińskiego wywiadu, i po ogłoszeniu dochodzenia rady. Ta wiadomość podnosi koszt kapitału przez ryzyko zarządzania. Po drugie, spółka wyłączyła Chiny z prognozy, co obniża wzrost. Po trzecie, zobowiązania zakupowe na pamięć wzrosły, a spółka prognozuje niższą marżę brutto na Q3 FY2027.
+- Negatywne: po pierwsze, rada ogłosiła 8.11.2026 dochodzenie w sprawie doniesień, że prezes był celem obcego wywiadu (`doc-045`); według materiału InvestingPro (`doc-016`) doniesienia opublikował New York Times, a kurs spadł w kolejnych dniach. Moim zdaniem ta wiadomość podnosi koszt kapitału przez ryzyko zarządzania. Po drugie, spółka wyłączyła Chiny z prognozy, co obniża wzrost. Po trzecie, zobowiązania zakupowe na pamięć wzrosły, a spółka prognozuje niższą marżę brutto na Q3 FY2027.
 - Pozytywne: po pierwsze, zarząd prognozuje dalszy wzrost przychodów w Q3 FY2027; po drugie, spółka odkupuje akcje i podniosła dywidendę, co zmniejsza liczbę akcji; po trzecie, premiera Vera Rubin może utrzymać przewagę wydajności.
-- Media opisują doniesienia, których nie potwierdzam dokumentem: udział FBI, artykuł The Information o wysyłkach układów do Chin, reakcję Kongresu. Komisja Izby Reprezentantów miała poprosić prezesa o zamknięte spotkanie 18.11.2026; to informacja z jednego wtórnego źródła.
+- Media opisują doniesienia, których nie potwierdzam dokumentem: udział FBI, artykuł The Information o wysyłkach układów do Chin, reakcję Kongresu. Przegląd wiadomości znalazł też w jednym wtórnym serwisie informację o prośbie komisji Izby Reprezentantów o spotkanie z prezesem; nie potwierdziłem jej.
 
 
 | Scenariusz | Prawdopodobieństwo | Wartość na akcję | Stopa zwrotu przy obecnym kursie |
@@ -291,13 +291,13 @@ Ostatnie wiadomości i ich wpływ na czynniki wartości (moja ocena):
 
 
 Scenariusze (prawdopodobieństwa i założenia to moje oceny):
-- **Byk (25,0%[^98]):** przychody rosną o 15,0%[^99] rocznie przez dekadę przy marży FCF 40,0%[^100]. Warunek: budowa infrastruktury AI trwa dekadę, a własne układy klientów nie odbierają udziału. To powyżej dziewięćdziesiątego percentyla stopy bazowej.
+- **Byk (25,0%[^98]):** przychody rosną o 15,0%[^99] rocznie przez dekadę przy marży FCF 40,0%[^100]. Warunek: budowa infrastruktury AI trwa dekadę, a własne układy klientów nie odbierają udziału. Moim zdaniem to powyżej dziewięćdziesiątego percentyla stopy bazowej.
 - **Bazowy (45,0%[^101]):** dwa mocne lata, potem normalizacja nakładów; średnio 9,0%[^91] rocznie przy marży FCF 33,0%[^102].
-- **Niedźwiedź (30,0%[^103]):** cykl nakładów pęka jak w półprzewodnikach w latach 2001 i 2022; wzrost 2,0%[^104] rocznie przy marży FCF 25,0%[^105].
+- **Niedźwiedź (30,0%[^103]):** cykl nakładów pęka, jak w FY2023, gdy przychody spółki stanęły w miejscu; wzrost 2,0%[^104] rocznie przy marży FCF 25,0%[^105].
 
-Silnik liczy wartość oczekiwaną 104,87 USD[^8], potencjał oczekiwany -37,9%[^106] i asymetrię 0,1×[^107]. Nawet scenariusz byka daje wartość na akcję 188,16 USD[^108], niewiele powyżej kursu. Zakładam, że model zaniża wartość, bo przyjmuje stały wzrost przez dziesięć lat. Nie umie opisać dwóch lat bardzo szybkiego wzrostu, które zapowiada zarząd, a potem normalizacji. Brak zapisałem w `braki-silnika.md`. Wniosek jakościowy pozostaje: cena wymaga wzrostu powyżej stopy bazowej.
+Silnik liczy wartość oczekiwaną 104,87 USD[^9], potencjał oczekiwany -37,9%[^106] i asymetrię 0,1×[^107]. Nawet scenariusz byka daje wartość na akcję 188,16 USD[^108], niewiele powyżej kursu. Zakładam, że model zaniża wartość, bo przyjmuje stały wzrost przez dziesięć lat. Nie umie opisać dwóch lat bardzo szybkiego wzrostu, które zapowiada zarząd, a potem normalizacji. Brak zapisałem w `braki-silnika.md`. Wniosek jakościowy pozostaje: cena wymaga wzrostu powyżej stopy bazowej.
 
-Byki mówią: NVIDIA ma zamówienia ograniczone podażą, jedyną platformę z pełnym ekosystemem oprogramowania i mnożnik C/Z na rok naprzód niższy niż w historii. Dochodzenie wobec prezesa to jednorazowy szok. Niedźwiedzie mówią: zyski są na szczycie cyklu, kilku klientów odpowiada za dużą część sprzedaży i projektuje własne układy, a spółka coraz mocniej finansuje swoich klientów. Ryzyko prezesa jest realne, bo spółka nie ujawnia planu sukcesji.
+Argumenty za (moja ocena): NVIDIA ma zamówienia ograniczone podażą, jedyną platformę z pełnym ekosystemem oprogramowania i mnożnik C/Z na rok naprzód niższy niż w historii. Dochodzenie wobec prezesa to jednorazowy szok. Argumenty przeciw (moja ocena): zyski są na szczycie cyklu, kilku klientów odpowiada za dużą część sprzedaży i projektuje własne układy, a spółka coraz mocniej finansuje swoich klientów. Ryzyko prezesa jest realne, bo spółka nie ujawnia planu sukcesji.
 
 ## 11. Karta w stylu Treli
 
@@ -313,22 +313,22 @@ Wynik: **8,6 / 10** z 5 filarów z 5.
 | momentum | 10% | 5,2 | nadwyzka_momentum: 5,2 |
 
 
-Karta daje wysoki wynik, bo filary wzrostu i jakości mają maksymalne punkty. Moim zdaniem filar wzrostu nagradza tu przeszłość: CAGR z trzech lat obejmuje skok z niskiej bazy FY2023, a Trela wymienia wzrost z bazy bliskiej zera wśród swoich czerwonych flag. Karta jest informacją, a nie bramką.
+Karta daje wysoki wynik, bo filary wzrostu i jakości mają maksymalne punkty. Moim zdaniem filar wzrostu nagradza tu przeszłość: CAGR z trzech lat obejmuje skok z niskiej bazy FY2023, a według pliku referencyjnego skilla o metodzie Treli wzrost z bazy bliskiej zera należy do jego czerwonych flag. Karta jest informacją, a nie bramką.
 
 ## 12. Dostęp przez IKE
 
-NVDA.US jest dostępna w XTB i notowana w dolarach. Każde przewalutowanie kosztuje pół procenta. Od dywidend pobierany jest piętnastoprocentowy podatek u źródła przy złożonym formularzu W-8BEN; dywidenda NVIDII jest symboliczna wobec kursu. Wg twoich zasad NVDA.US trafiłaby do koszyka „Akcje zagraniczne” w części Agresywnej IKE z benchmarkiem S&P 500. Instrument nie ma jeszcze wpisu w bloku `instrumenty` w twoich zasadach. Nvidia jest jednym z największych składników SMH, który już masz, i jest w CNDX oraz IWDA. Pozycja w NVDA zwiększy udział półprzewodników w całym IKE, o czym wspomina historia zmian twoich zasad (`v1.4`).
+NVDA.US jest dostępna w XTB i notowana w dolarach. Każde przewalutowanie kosztuje pół procenta. Zakładam, że USA pobiorą od dywidend piętnastoprocentowy podatek u źródła przy złożonym formularzu W-8BEN (bez dokumentu w archiwum); dywidenda NVIDII jest symboliczna wobec kursu. Wg twoich zasad NVDA.US trafiłaby do koszyka „Akcje zagraniczne” w części Agresywnej IKE z benchmarkiem S&P 500. Instrument nie ma jeszcze wpisu w bloku `instrumenty` w twoich zasadach. Według twojej karty SMH Nvidia jest dużym składnikiem tego funduszu, a według twoich zasad półprzewodniki są też w CNDX, IWDA i EIMI. Pozycja w NVDA zwiększy udział półprzewodników w całym IKE, o czym wspomina historia zmian twoich zasad (`v1.4`).
 
 ## 13. Projekt karty
 
 - **Teza w trzech zdaniach.** NVIDIA ma najszerszy ekosystem oprogramowania AI i zamówienia ograniczone podażą na najbliższe kwartały. Cena zakłada jednak wzrost FCF o 13,7%[^4] rocznie przez dekadę, czyli powyżej stopy bazowej dla spółek tej wielkości. Zakładam, że teza o utrzymaniu przychodów i marży do FY2029 ma mniej więcej połowę szans, a pobicie oczekiwań w cenie około jedną trzecią.
 - **Co jest w cenie:** wzrost FCF 13,7%[^4] rocznie przez dziesięć lat; udział PVGO 49,8%[^87].
-- **Pokrycie analityczne:** 62[^10] analityków · 2026-11-11 · Stock Analysis.
-- **Antytezy z progami:** marża brutto poniżej 74,0%[^28] przez dwa kwartały; DSO powyżej 60 dni[^76]; zapasy rosną szybciej niż przychody przez dwa kwartały; spadek przychodów hiperskalerów kwartał do kwartału; odejście prezesa.
+- **Pokrycie analityczne:** 62[^11] analityków · 2026-11-11 · Stock Analysis.
+- **Antytezy z progami:** marża brutto poniżej 74,0%[^29] przez dwa kwartały; DSO powyżej 60 dni[^76]; zapasy rosną szybciej niż przychody przez dwa kwartały; spadek przychodów hiperskalerów kwartał do kwartału; odejście prezesa.
 - **Pre-mortem:** część dziewiąta.
 - **Wielkość pozycji:** decyzja właściciela. Zasada: przy pozycji X procent IKE scenariusz niedźwiedzia (44,28 USD[^109] na akcję) zabiera Y procent IKE. Wg twoich zasad kupujesz w transzach.
 - **Kiedy sprzedam:** gdy teza jest złamana (dwie antytezy specyficzne naraz), gdy masz lepszą spółkę z kartą albo gdy uznasz, że nie kupiłbyś jej dziś.
-- **Data przeglądu:** po wynikach Q3 FY2027 (17.11.2026) i po ogłoszeniu wyniku dochodzenia rady.
+- **Data przeglądu:** po wynikach Q3 FY2027 (według materiału InvestingPro 17.11.2026) i po ogłoszeniu wyniku dochodzenia rady.
 - **Co śledzić:** marżę brutto wobec prognozy, DSO, zapasy i zobowiązania zakupowe, udział największych klientów, przychody hiperskalerów, wynik dochodzenia rady.
 
 ## 14. Jakość danych
@@ -353,7 +353,7 @@ Czego nie sprawdziłem:
 - Silnik nie znalazł spłaty leasingu za ostatnie lata; FCF dla właścicieli może jej nie uwzględniać.
 
 Tropy z materiału InvestingPro (`doc-016`) i wynik sprawdzenia:
-1. Kryzys wokół prezesa: potwierdzony co do dochodzenia rady i kancelarii Wachtell (`doc-045`, `doc-043`). Niepotwierdzony co do udziału FBI i treści zarzutów.
+1. Kryzys wokół prezesa: potwierdzony co do dochodzenia rady, kancelarii Wachtell i przyznania się prezesa do niewierności (`doc-045`, `doc-043`, `doc-044`). Niepotwierdzony co do udziału FBI i tożsamości osoby z doniesień.
 2. Ułatwianie wysyłek układów do Chin (The Information): niepotwierdzony. Spółka opisuje tylko ogólne ryzyko obchodzenia ograniczeń (`doc-020`).
 3. Trzech niezależnych dyrektorów od lat dziewięćdziesiątych: potwierdzony (`doc-022`).
 4. Udział prezesa w akcjach: potwierdzony (`doc-022`). Brak następcy: `DEF 14A` nie opisuje sukcesji.
@@ -366,7 +366,7 @@ Tropy z materiału InvestingPro (`doc-016`) i wynik sprawdzenia:
 11. Rosnące zapasy i należności: potwierdzony (`doc-020`, `doc-031`).
 12. Wzrost długu: potwierdzony (`doc-029`, `doc-031`).
 13. Rozbieżność EPS w materiale: liczby w raporcie pochodzą z SEC, a nie z materiału.
-14. Termin wyników Q3 FY2027: potwierdzony komunikatem spółki według przeglądu wiadomości; komunikatu nie ma w archiwum.
+14. Termin wyników Q3 FY2027: niepotwierdzony dokumentem w archiwum; przegląd wiadomości wskazuje komunikat spółki z 28.10.2026.
 
 Tropy z materiału, które zmieniły analizę: wątek prezesa skierował mnie do komunikatów rady, a wątek finansowania laboratoriów AI do 8-K z 17.08.2026 z gwarancjami dla kampusu SB Energy.
 
@@ -377,37 +377,37 @@ Tropy z materiału, które zmieniły analizę: wątek prezesa skierował mnie do
 [^2]: 96,2 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — XBRL companyfacts (doc-001, pobrano 2026-11-11; xbrl: us-gaap:Revenues); status: zweryfikowany.
 [^3]: 168,89 USD, na 10.11.2026; źródło: Yahoo Finance — notowania dzienne NVDA (doc-017, pobrano 2026-11-11; pole: zamknięcie); status: zweryfikowany; kontrola: 0.00% różnicy z drugim źródłem.
 [^4]: 13,7%, na 10.11.2026; wyliczenie: wzrost FCF przez 10 lat, przy którym wartość = kapitalizacja; status: jedno źródło.
-[^5]: 4,07 bln USD, na 10.11.2026; wyliczenie: kurs × akcje_w_obrocie; status: jedno źródło.
-[^6]: 21,1×, na 10.11.2026; wyliczenie: kapitalizacja / zysk_netto.TTM2026-07-26; status: jedno źródło.
-[^7]: 2,9%, na 10.11.2026; wyliczenie: fcf_wlascicieli.TTM2026-07-26 / kapitalizacja; status: jedno źródło.
-[^8]: 104,87 USD, na 10.11.2026; wyliczenie: wartosc oczekiwana na akcje; status: jedno źródło.
-[^9]: 75,0%, na 10.11.2026; wyliczenie: prawdopodobienstwo straty; status: jedno źródło.
-[^10]: 62, na 11.11.2026; źródło: Stock Analysis — prognozy analityków (doc-011, pobrano 2026-11-11); status: jedno źródło.
-[^11]: 88,3 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „Compute & Networking $88,299 $74,550 $41,331”; status: jedno źródło.
-[^12]: 62,7 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 10-Q Q2 FY2027 (do 26.07.2026) (doc-020, pobrano 2026-11-11); cytat: „Compute & Networking $ 62,696 $ 28,363 $ 34,333 121 %”; status: jedno źródło.
-[^13]: 7,9 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „Graphics 7,922 7,065 5,412”; status: jedno źródło.
-[^14]: 3,9 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 10-Q Q2 FY2027 (do 26.07.2026) (doc-020, pobrano 2026-11-11); cytat: „Graphics 3,899 2,242 1,657 74 %”; status: jedno źródło.
-[^15]: 48,7 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „Hyperscale 48,710 43,050 24,168”; status: jedno źródło.
-[^16]: 40,3 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928”; status: jedno źródło.
-[^17]: 7,2 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „Edge Computing 7,198 6,369 5,647”; status: jedno źródło.
-[^18]: 16,0%, Q2 (27.04.2026–26.07.2026); źródło: SEC — 10-Q Q2 FY2027 (do 26.07.2026) (doc-020, pobrano 2026-11-11); cytat: „For the second quarter of fiscal year 2027, one direct customer represented 16% of total revenue”; status: jedno źródło.
-[^19]: 21,0%, Q1 (26.01.2026–26.04.2026); źródło: SEC — 10-Q Q1 FY2027 (do 26.04.2026) (doc-021, pobrano 2026-11-11); cytat: „For the first quarter of fiscal year 2027, three direct customers represented 21%, 17%, and 16% of total revenue”; status: jedno źródło.
-[^20]: 17,0%, Q1 (26.01.2026–26.04.2026); źródło: SEC — 10-Q Q1 FY2027 (do 26.04.2026) (doc-021, pobrano 2026-11-11); cytat: „For the first quarter of fiscal year 2027, three direct customers represented 21%, 17%, and 16% of total revenue”; status: jedno źródło.
-[^21]: 16,0%, Q1 (26.01.2026–26.04.2026); źródło: SEC — 10-Q Q1 FY2027 (do 26.04.2026) (doc-021, pobrano 2026-11-11); cytat: „For the first quarter of fiscal year 2027, three direct customers represented 21%, 17%, and 16% of total revenue”; status: jedno źródło.
-[^22]: 22,0%, rok obrotowy 2026 (do 25.01.2026); źródło: SEC — 10-K FY2026 (do 25.01.2026) (doc-019, pobrano 2026-11-11); cytat: „For fiscal year 2026, sales to one direct customer represented 22% of total revenue and sales to another direct customer represented 14% of total revenue”; status: jedno źródło.
-[^23]: 14,0%, rok obrotowy 2026 (do 25.01.2026); źródło: SEC — 10-K FY2026 (do 25.01.2026) (doc-019, pobrano 2026-11-11); cytat: „For fiscal year 2026, sales to one direct customer represented 22% of total revenue and sales to another direct customer represented 14% of total revenue”; status: jedno źródło.
-[^24]: 60,1 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 10-Q Q2 FY2027 (do 26.07.2026) (doc-020, pobrano 2026-11-11); cytat: „United States $ 60,074 $ 32,897 $ 123,843 $ 58,582”; status: jedno źródło.
-[^25]: 27,0 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 10-Q Q2 FY2027 (do 26.07.2026) (doc-020, pobrano 2026-11-11); cytat: „Taiwan 26,985 8,902 38,991 16,550”; status: jedno źródło.
-[^26]: 7,9 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 10-Q Q2 FY2027 (do 26.07.2026) (doc-020, pobrano 2026-11-11); cytat: „China (including Hong Kong) 7,880 3,985 12,430 13,644”; status: jedno źródło.
-[^27]: 108,0 mld USD, Q3 (27.07.2026–25.10.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „Revenue is expected to be $108.0 billion, plus or minus 2%.”; status: jedno źródło.
-[^28]: 74,0%, Q3 (27.07.2026–25.10.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „GAAP and non-GAAP gross margins are expected to be 74.0%, plus or minus 50 basis points.”; status: jedno źródło.
-[^29]: 75,0%, Q2 (27.04.2026–26.07.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.1: wyniki Q2 FY2027 (doc-030, pobrano 2026-11-11); cytat: „For the quarter, GAAP and non-GAAP gross margins were both 75.0%.”; status: jedno źródło.
-[^30]: 3,9%, na 23.03.2026; źródło: SEC — DEF 14A 2026 (doc-022, pobrano 2026-11-11); cytat: „Directors and executive officers as a group (14 persons) 957,307,217 (13) 6,300 957,313,517 3.94%”; status: jedno źródło.
-[^31]: 3,6%, na 23.03.2026; źródło: SEC — DEF 14A 2026 (doc-022, pobrano 2026-11-11); cytat: „Jen-Hsun Huang 870,604,104 (1) — 870,604,104 3.58%”; status: jedno źródło.
-[^32]: 7,4%, na 23.03.2026; źródło: SEC — DEF 14A 2026 (doc-022, pobrano 2026-11-11); cytat: „BlackRock, Inc. 1,805,935,550 (14) — 1,805,935,550 7.43%”; status: jedno źródło.
-[^33]: 7,3%, na 23.03.2026; źródło: SEC — DEF 14A 2026 (doc-022, pobrano 2026-11-11); cytat: „Vanguard Capital Management 1,777,408,252 (15) — 1,777,408,252 7.31%”; status: jedno źródło.
-[^34]: 27,7 mld USD, na 10.11.2026; źródło: Yahoo Finance — notowania dzienne NVDA (doc-017, pobrano 2026-11-11); status: jedno źródło.
-[^35]: -22,3%, na 10.11.2026; źródło: Yahoo Finance — notowania dzienne NVDA (doc-017, pobrano 2026-11-11); status: jedno źródło.
+[^5]: -22,3%, na 10.11.2026; źródło: Yahoo Finance — notowania dzienne NVDA (doc-017, pobrano 2026-11-11); status: jedno źródło.
+[^6]: 4,07 bln USD, na 10.11.2026; wyliczenie: kurs × akcje_w_obrocie; status: jedno źródło.
+[^7]: 21,1×, na 10.11.2026; wyliczenie: kapitalizacja / zysk_netto.TTM2026-07-26; status: jedno źródło.
+[^8]: 2,9%, na 10.11.2026; wyliczenie: fcf_wlascicieli.TTM2026-07-26 / kapitalizacja; status: jedno źródło.
+[^9]: 104,87 USD, na 10.11.2026; wyliczenie: wartosc oczekiwana na akcje; status: jedno źródło.
+[^10]: 75,0%, na 10.11.2026; wyliczenie: prawdopodobienstwo straty; status: jedno źródło.
+[^11]: 62, na 11.11.2026; źródło: Stock Analysis — prognozy analityków (doc-011, pobrano 2026-11-11); status: jedno źródło.
+[^12]: 88,3 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „Compute & Networking $88,299 $74,550 $41,331”; status: jedno źródło.
+[^13]: 62,7 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 10-Q Q2 FY2027 (do 26.07.2026) (doc-020, pobrano 2026-11-11); cytat: „Compute & Networking $ 62,696 $ 28,363 $ 34,333 121 %”; status: jedno źródło.
+[^14]: 7,9 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „Graphics 7,922 7,065 5,412”; status: jedno źródło.
+[^15]: 3,9 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 10-Q Q2 FY2027 (do 26.07.2026) (doc-020, pobrano 2026-11-11); cytat: „Graphics 3,899 2,242 1,657 74 %”; status: jedno źródło.
+[^16]: 48,7 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „Hyperscale 48,710 43,050 24,168”; status: jedno źródło.
+[^17]: 40,3 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928”; status: jedno źródło.
+[^18]: 7,2 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „Edge Computing 7,198 6,369 5,647”; status: jedno źródło.
+[^19]: 16,0%, Q2 (27.04.2026–26.07.2026); źródło: SEC — 10-Q Q2 FY2027 (do 26.07.2026) (doc-020, pobrano 2026-11-11); cytat: „For the second quarter of fiscal year 2027, one direct customer represented 16% of total revenue”; status: jedno źródło.
+[^20]: 21,0%, Q1 (26.01.2026–26.04.2026); źródło: SEC — 10-Q Q1 FY2027 (do 26.04.2026) (doc-021, pobrano 2026-11-11); cytat: „For the first quarter of fiscal year 2027, three direct customers represented 21%, 17%, and 16% of total revenue”; status: jedno źródło.
+[^21]: 17,0%, Q1 (26.01.2026–26.04.2026); źródło: SEC — 10-Q Q1 FY2027 (do 26.04.2026) (doc-021, pobrano 2026-11-11); cytat: „For the first quarter of fiscal year 2027, three direct customers represented 21%, 17%, and 16% of total revenue”; status: jedno źródło.
+[^22]: 16,0%, Q1 (26.01.2026–26.04.2026); źródło: SEC — 10-Q Q1 FY2027 (do 26.04.2026) (doc-021, pobrano 2026-11-11); cytat: „For the first quarter of fiscal year 2027, three direct customers represented 21%, 17%, and 16% of total revenue”; status: jedno źródło.
+[^23]: 22,0%, rok obrotowy 2026 (do 25.01.2026); źródło: SEC — 10-K FY2026 (do 25.01.2026) (doc-019, pobrano 2026-11-11); cytat: „For fiscal year 2026, sales to one direct customer represented 22% of total revenue and sales to another direct customer represented 14% of total revenue”; status: jedno źródło.
+[^24]: 14,0%, rok obrotowy 2026 (do 25.01.2026); źródło: SEC — 10-K FY2026 (do 25.01.2026) (doc-019, pobrano 2026-11-11); cytat: „For fiscal year 2026, sales to one direct customer represented 22% of total revenue and sales to another direct customer represented 14% of total revenue”; status: jedno źródło.
+[^25]: 60,1 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 10-Q Q2 FY2027 (do 26.07.2026) (doc-020, pobrano 2026-11-11); cytat: „United States $ 60,074 $ 32,897 $ 123,843 $ 58,582”; status: jedno źródło.
+[^26]: 27,0 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 10-Q Q2 FY2027 (do 26.07.2026) (doc-020, pobrano 2026-11-11); cytat: „Taiwan 26,985 8,902 38,991 16,550”; status: jedno źródło.
+[^27]: 7,9 mld USD, Q2 (27.04.2026–26.07.2026); źródło: SEC — 10-Q Q2 FY2027 (do 26.07.2026) (doc-020, pobrano 2026-11-11); cytat: „China (including Hong Kong) 7,880 3,985 12,430 13,644”; status: jedno źródło.
+[^28]: 108,0 mld USD, Q3 (27.07.2026–25.10.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „Revenue is expected to be $108.0 billion, plus or minus 2%.”; status: jedno źródło.
+[^29]: 74,0%, Q3 (27.07.2026–25.10.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027 (doc-031, pobrano 2026-11-11); cytat: „GAAP and non-GAAP gross margins are expected to be 74.0%, plus or minus 50 basis points.”; status: jedno źródło.
+[^30]: 75,0%, Q2 (27.04.2026–26.07.2026); źródło: SEC — 8-K 26.08.2026, załącznik 99.1: wyniki Q2 FY2027 (doc-030, pobrano 2026-11-11); cytat: „For the quarter, GAAP and non-GAAP gross margins were both 75.0%.”; status: jedno źródło.
+[^31]: 3,9%, na 23.03.2026; źródło: SEC — DEF 14A 2026 (doc-022, pobrano 2026-11-11); cytat: „Directors and executive officers as a group (14 persons) 957,307,217 (13) 6,300 957,313,517 3.94%”; status: jedno źródło.
+[^32]: 3,6%, na 23.03.2026; źródło: SEC — DEF 14A 2026 (doc-022, pobrano 2026-11-11); cytat: „Jen-Hsun Huang 870,604,104 (1) — 870,604,104 3.58%”; status: jedno źródło.
+[^33]: 7,4%, na 23.03.2026; źródło: SEC — DEF 14A 2026 (doc-022, pobrano 2026-11-11); cytat: „BlackRock, Inc. 1,805,935,550 (14) — 1,805,935,550 7.43%”; status: jedno źródło.
+[^34]: 7,3%, na 23.03.2026; źródło: SEC — DEF 14A 2026 (doc-022, pobrano 2026-11-11); cytat: „Vanguard Capital Management 1,777,408,252 (15) — 1,777,408,252 7.31%”; status: jedno źródło.
+[^35]: 27,7 mld USD, na 10.11.2026; źródło: Yahoo Finance — notowania dzienne NVDA (doc-017, pobrano 2026-11-11); status: jedno źródło.
 [^36]: 23,95, na 10.11.2026; źródło: Yahoo Finance — notowania dzienne NVDA (doc-017, pobrano 2026-11-11); status: jedno źródło.
 [^37]: 11,9 mld USD, na 02.09.2026; źródło: SEC — 8-K 3.09.2026 (pozycja 8.01) (doc-024, pobrano 2026-11-11); cytat: „The transaction includes an approximately $11.9 billion purchase price payable to Hugging Face stockholders”; status: jedno źródło.
 [^38]: 15,7%, rok obrotowy 2023 (do 29.01.2023); wyliczenie: zysk_operacyjny / przychody; status: KONFLIKT źródeł.

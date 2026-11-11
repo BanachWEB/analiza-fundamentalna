@@ -4,7 +4,7 @@ Data analizy: 11.11.2026. Rynek: USA. Instrument w XTB: NVDA.US. Decyzja bramek:
 
 ## TL;DR
 
-> NVIDIA sprzedaje platformy obliczeniowe dla centrów danych AI: układy GPU, procesory, sieć i oprogramowanie. Spółka nie ma własnych fabryk. W Q2 FY2027 centra danych dały {{przychody_centra_danych.FY2027Q2}} z {{przychody.FY2027Q2}} przychodów. Kurs {{kurs.2026-11-10}} zakłada, że FCF dla właścicieli będzie rósł o {{implikowany_wzrost_fcf.2026-11-10}} rocznie przez dziesięć lat. Moim zdaniem to oczekiwanie leży powyżej stopy bazowej dla spółek tej wielkości, więc szansę, że spółka pobije oczekiwania zawarte w cenie, oceniam na około jedną trzecią. Największe ryzyka to cykl nakładów na centra danych, koncentracja klientów i ograniczenia eksportowe. Do tego dochodzi świeże dochodzenie rady w sprawie prezesa. Wg twoich zasad: spółka ma duże pokrycie analityczne, pauza po rajdzie jej nie dotyczy, a przed zakupem potrzebujesz karty w `spolki/NVDA.md`.
+> NVIDIA sprzedaje platformy obliczeniowe dla centrów danych AI: układy GPU, procesory, sieć i oprogramowanie. Spółka nie ma własnych fabryk. W Q2 FY2027 centra danych dały {{przychody_centra_danych.FY2027Q2}} z {{przychody.FY2027Q2}} przychodów. Kurs {{kurs.2026-11-10}} zakłada, że FCF dla właścicieli będzie rósł o {{implikowany_wzrost_fcf.2026-11-10}} rocznie przez dziesięć lat. Moim zdaniem to oczekiwanie leży powyżej stopy bazowej dla spółek tej wielkości, więc szansę, że spółka pobije oczekiwania zawarte w cenie, oceniam na około jedną trzecią. Największe ryzyka to cykl nakładów na centra danych, koncentracja klientów i ograniczenia eksportowe. Do tego dochodzi świeże dochodzenie rady w sprawie prezesa. Wg twoich zasad: spółka ma duże pokrycie analityczne, a pauza po rajdzie jej nie dotyczy, bo kurs zmienił się w trzy miesiące o {{zmiana_kursu_3m.2026-11-10}}; a przed zakupem potrzebujesz karty w `spolki/NVDA.md`.
 
 - Przewaga konkurencyjna: wąska, trend niepewny (uzasadnienie w części czwartej).
 - Wycena: kapitalizacja {{kapitalizacja.2026-11-10}}, C/Z {{c_z.2026-11-10}}, FCF yield {{fcf_yield.2026-11-10}}.
@@ -22,7 +22,7 @@ Bezpośrednimi klientami są producenci kart, dystrybutorzy, producenci serweró
 
 W 2026 roku spółka dodała nowy element modelu. Pomaga wybranym chmurom AI zdobyć grunt, energię i budynki pod centra danych, bo ci klienci rosną szybciej niż ich bilanse (`doc-031`). W zamian sprzedaje im infrastrukturę i przy spełnieniu warunków dostaje udział w ich przychodach (`doc-031`).
 
-Jedno zdanie: dostawcy chmury, twórcy modeli i przedsiębiorstwa płacą NVIDII za kompletną infrastrukturę do trenowania i uruchamiania modeli AI. Wybierają ją, bo prawie całe oprogramowanie AI powstaje na jej platformie, a konkurencyjne układy nie mają tak szerokiego ekosystemu.
+Jedno zdanie: dostawcy chmury, twórcy modeli i przedsiębiorstwa płacą NVIDII za kompletną infrastrukturę do trenowania i uruchamiania modeli AI. Moim zdaniem klienci wybierają ją, bo platforma ma najszerszy ekosystem oprogramowania; spółka sama opisuje swój ekosystem jako duży i rosnący (`doc-019`).
 
 Czynniki wartości do śledzenia co kwartał:
 1. przychody centrów danych i ich podział na hiperskalerów oraz grupę ACIE (chmury AI, przemysł, przedsiębiorstwa);
@@ -50,16 +50,16 @@ Zarząd prognozuje na Q3 FY2027 przychody {{prognoza_zarzadu_przychody.FY2027Q3}
 
 ## 3. Najważniejsze fakty (akcjonariat, zarząd, płynność, kalendarz)
 
-- Akcjonariat: zarząd i rada mają razem {{zarzad_udzial_w_akcjach.2026-03-23}} akcji, prezes Jensen Huang {{huang_udzial_w_akcjach.2026-03-23}}, BlackRock {{blackrock_udzial_w_akcjach.2026-03-23}}, a Vanguard {{vanguard_udzial_w_akcjach.2026-03-23}} (`doc-022`). Nikt nie kontroluje spółki.
+- Akcjonariat: zarząd i rada mają razem {{zarzad_udzial_w_akcjach.2026-03-23}} akcji, prezes Jensen Huang {{huang_udzial_w_akcjach.2026-03-23}}, BlackRock {{blackrock_udzial_w_akcjach.2026-03-23}}, a Vanguard {{vanguard_udzial_w_akcjach.2026-03-23}} (`doc-022`). Moim zdaniem żaden akcjonariusz nie kontroluje spółki.
 - Prezes: Jensen Huang założył spółkę w 1993 roku i od początku kieruje nią jako prezes (`doc-022`). `DEF 14A` nie opisuje planu sukcesji. W raporcie rocznym spółka pisze, że w dużym stopniu zależy od wieloletniego zespołu kierowniczego (`doc-019`).
-- Dochodzenie rady: 8.11.2026 rada ogłosiła niezależne dochodzenie po doniesieniach, że prezes był celem działań obcego wywiadu (`doc-045`). Rada pisze, że nie ma powodu sądzić, by naruszono bezpieczeństwo narodowe albo tajemnice spółki, i deklaruje zaufanie do prezesa (`doc-045`). 10.11.2026 niezależni członkowie rady zatrudnili do dochodzenia kancelarię Wachtell, Lipton, Rosen & Katz (`doc-043`). Spółka nie złożyła w tej sprawie raportu 8-K.
+- Dochodzenie rady: 8.11.2026 rada ogłosiła niezależne dochodzenie po doniesieniach, że prezes był celem działań obcego wywiadu (`doc-045`). Rada pisze, że nie ma powodu sądzić, by naruszono bezpieczeństwo narodowe albo tajemnice spółki, i deklaruje zaufanie do prezesa (`doc-045`). Tego samego dnia prezes w liście do pracowników przyznał, że był niewierny żonie (`doc-044`). 10.11.2026 niezależni członkowie rady zatrudnili do dochodzenia kancelarię Wachtell, Lipton, Rosen & Katz (`doc-043`). Na liście zgłoszeń EDGAR (`doc-002`, pobranej 11.11.2026) nie ma raportu 8-K po 3.09.2026.
 - Płynność: średnie obroty dzienne z sześćdziesięciu sesji wynoszą {{obroty_dzienne_60s.2026-11-10}}.
 - Kurs: {{kurs.2026-11-10}}, zmiana w trzy miesiące {{zmiana_kursu_3m.2026-11-10}}, RSI czternastodniowy {{rsi_14.2026-11-10}}.
-- Kalendarz: spółka poda wyniki za Q3 FY2027 17.11.2026 (komunikat spółki z 28.10.2026, według przeglądu wiadomości). Przejęcie Hugging Face za {{hugging_face_cena.2026-09-02}} ma się zamknąć w pierwszej połowie 2027 roku, po zgodach regulatorów (`doc-024`).
+- Kalendarz: wyniki za Q3 FY2027 mają się ukazać 17.11.2026. Tę datę podaje materiał InvestingPro (`doc-016`) i przegląd wiadomości (komunikat spółki z 28.10.2026); komunikatu spółki nie ma w archiwum. Przejęcie Hugging Face za {{hugging_face_cena.2026-09-02}} ma się zamknąć w pierwszej połowie 2027 roku, po zgodach regulatorów (`doc-024`).
 
 ## 4. Branża, konkurencja i przewaga konkurencyjna
 
-Spółka wymienia jako konkurentów w akceleratorach AMD, Huawei i Intel (`doc-019`). Własne układy AI projektują duzi dostawcy chmury: Alibaba, Alphabet, Amazon, Baidu, Huawei i Microsoft (`doc-019`). Czterech z nich to jednocześnie klienci NVIDII. W sieciach spółka konkuruje między innymi z Aristą, Broadcomem, Cisco i Marvellem (`doc-019`). Spółka oczekuje silniejszej konkurencji, w tym tańszych produktów nowych graczy (`doc-019`).
+Spółka wymienia jako konkurentów w akceleratorach AMD, Huawei i Intel (`doc-019`). Własne układy AI projektują duzi dostawcy chmury: Alibaba, Alphabet, Amazon, Baidu, Huawei i Microsoft (`doc-019`). W sieciach spółka konkuruje między innymi z Aristą, Broadcomem, Cisco i Marvellem (`doc-019`). Spółka oczekuje silniejszej konkurencji, w tym tańszych produktów nowych graczy (`doc-019`).
 
 Chiny są dla spółki praktycznie zamknięte. W 10-Q za Q2 FY2027 spółka pisze, że ograniczenia eksportowe wykluczyły ją z chińskiego rynku centrów danych, a to pomogło konkurentom zbudować większe ekosystemy (`doc-020`). Rząd Chin zachęca klientów do zakupów u chińskich producentów (`doc-020`). Organy ochrony konkurencji w UE, USA, Wielkiej Brytanii, Chinach i Korei Południowej wysyłają spółce zapytania o sprzedaż i przydział dostaw (`doc-020`).
 
@@ -72,7 +72,7 @@ Kandydaci na źródło przewagi:
 
 Liczby: ROIC wynosi {{roic.TTM2026-07-26}}, a w FY2023, roku spadku, wyniósł {{roic.FY2023}}. Koszt kapitału własnego to {{koszt_kapitalu_wlasnego.2026-11-10}}. Marża brutto spadła w FY2023 do {{marza_brutto.FY2023}}, a potem wróciła do {{marza_brutto.TTM2026-07-26}}.
 
-Moim zdaniem przewaga jest wąska, a trend niepewny. Zwroty powyżej kosztu kapitału przez dziesięć lat są bardziej prawdopodobne niż nie, bo ekosystem CUDA działa jak efekt sieciowy. Nie uznaję jej za szeroką z trzech powodów. Po pierwsze, najwięksi klienci budują własne układy i mają skalę, by przenieść część pracy. Po drugie, rząd USA już odebrał spółce chiński rynek centrów danych, a dalsze ograniczenia są możliwe. Po trzecie, dzisiejsze zwroty powstały w okresie niedoboru, a nie w pełnym cyklu. Stopa bazowa: nawet spółka z najwyższego kwintyla ROIC ma około połowy szans, że zostanie w nim po dekadzie.
+Moim zdaniem przewaga jest wąska, a trend niepewny. Zwroty powyżej kosztu kapitału przez dziesięć lat są bardziej prawdopodobne niż nie, bo ekosystem CUDA działa jak efekt sieciowy. Nie uznaję jej za szeroką z trzech powodów. Po pierwsze, najwięksi klienci budują własne układy i mają skalę, by przenieść część pracy. Po drugie, rząd USA już odebrał spółce chiński rynek centrów danych, a dalsze ograniczenia są możliwe. Po trzecie, dzisiejsze zwroty powstały w okresie niedoboru, a nie w pełnym cyklu. Stopa bazowa z badania metody w repozytorium (Mauboussin): nawet spółka z najwyższego kwintyla ROIC ma mniej więcej połowę szans, że zostanie w nim po dekadzie.
 
 Test AI (moja ocena):
 1. Przychody nie zależą od godzin pracy ludzi; AI to źródło popytu.
@@ -94,7 +94,7 @@ Nowe zastosowania kapitału zmieniają profil ryzyka:
 - W sierpniu 2026 spółka udzieliła gwarancji wartości rezydualnej dzierżaw kampusu SB Energy, którego najemcą jest spółka powiązana z OpenAI, z limitem {{gwarancje_sb_energy_limit.2026-08-17}} (`doc-023`). Łączna maksymalna ekspozycja z gwarancji wynosi {{gwarancje_razem_maks_ekspozycja.2026-08-17}} (`doc-031`). OpenAI zobowiązał się zwrócić NVIDII wypłaty, a gwarancje zaczną działać etapami od FY2029 (`doc-023`, `doc-031`).
 - W Q2 FY2027 spółka wyemitowała obligacje za {{emisja_obligacji.FY2027Q2}} (`doc-031`). Dług wynosi {{dlug.2026-07-26}}, a gotówka z papierami dłużnymi {{gotowka_i_papiery_dluzne.2026-07-26}} (`doc-020`, `doc-031`).
 
-Moim zdaniem spółka finansuje dziś własnych klientów: inwestuje w nich, gwarantuje ich dzierżawy i wydłuża im terminy płatności. To wspiera sprzedaż, ale wiąże wynik NVIDII z kondycją kilku klientów bez ratingu inwestycyjnego. Spółka sama pisze, że te zobowiązania zależą od wyników klientów i partnerów (`doc-020`).
+Moim zdaniem spółka finansuje dziś własnych klientów: inwestuje w nich, gwarantuje ich dzierżawy i wydłuża im terminy płatności. To wspiera sprzedaż, ale wiąże wynik NVIDII z kondycją kilku klientów, w tym chmur AI, które według spółki nie mają dziś finansowania na poziomie inwestycyjnym (`doc-020`). Spółka sama pisze, że te zobowiązania zależą od wyników klientów i partnerów (`doc-020`).
 
 ## 6. Sprawozdania finansowe
 
@@ -116,20 +116,20 @@ Jakość zysków: FCF dla właścicieli za cztery kwartały wyniósł {{fcf_wlas
 
 Kapitał obrotowy: zapasy wzrosły do {{zapasy.2026-07-26}} z {{zapasy_komentarz_cfo.2026-04-26}} kwartał wcześniej; spółka tłumaczy to przygotowaniem do premiery Vera Rubin (`doc-031`). Należności handlowe wynoszą {{naleznosci_handlowe.2026-07-26}}, a DSO wzrosło do {{dso.2026-07-26}} z {{dso.2026-04-26}} (`doc-031`). Spółka podaje jako przyczynę dłuższe terminy płatności, do roku, w dużych umowach z klientami o ratingu inwestycyjnym (`doc-020`).
 
-Zadłużenie: dług netto do EBITDA wynosi {{dlug_netto_do_ebitda.TTM2026-07-26}}, a pokrycie odsetek {{pokrycie_odsetek.TTM2026-07-26}}. Spółka ma bilans bez napięcia mimo emisji obligacji.
+Zadłużenie: dług netto do EBITDA wynosi {{dlug_netto_do_ebitda.TTM2026-07-26}}, a pokrycie odsetek {{pokrycie_odsetek.TTM2026-07-26}}. Moim zdaniem bilans spółki nie jest napięty mimo emisji obligacji.
 
-Rozwodnienie: spółka skupuje więcej akcji, niż wydaje w programach motywacyjnych; liczba akcji (średnia ważona) spadła w FY2026 o {{zmiana_liczby_akcji.FY2026}}. Wynagrodzenia akcyjne w Q2 FY2027 wyniosły {{sbc.FY2027Q2}}.
+Rozwodnienie: liczba akcji (średnia ważona) spadła w FY2026 o {{zmiana_liczby_akcji.FY2026}}. Wynagrodzenia akcyjne w Q2 FY2027 wyniosły {{sbc.FY2027Q2}}.
 
 ## 7. Jakość zysków i czerwone flagi
 
 {{tabela:bramki}}
 
 Opis flag:
-- **Dochodzenie rady wobec prezesa (flaga).** Rada bada, czy prezes był celem obcego wywiadu, i deklaruje zaufanie do niego (`doc-045`). Nie ma dowodu oszustwa, więc to flaga, a nie stop. Z materiału InvestingPro nie potwierdziłem dokumentem spółki zarzutów o ułatwianie wysyłek układów do Chin ani udziału FBI.
-- **Chiny (flaga).** Spółka pisze, że jest praktycznie wykluczona z chińskiego rynku centrów danych (`doc-020`). Poniosła odpis na zapasy i zobowiązania związane z układami `H200` w wysokości {{h200_oplata_zapasy_zobowiazania.FY2027H1}} (`doc-020`). Rdzeń biznesu działa jednak bez Chin, więc to flaga, a nie stop.
+- **Dochodzenie rady wobec prezesa (flaga).** Rada bada, czy prezes był celem obcego wywiadu, i deklaruje zaufanie do niego (`doc-045`). Prezes przyznał w liście do pracowników, że był niewierny żonie (`doc-044`). Moim zdaniem brak dowodu oszustwa oznacza flagę, a nie stop. Z materiału InvestingPro nie potwierdziłem dokumentem spółki zarzutów o ułatwianie wysyłek układów do Chin ani udziału FBI.
+- **Chiny (flaga).** Spółka pisze, że jest praktycznie wykluczona z chińskiego rynku centrów danych (`doc-020`). Poniosła odpis na zapasy i zobowiązania związane z układami `H200` w wysokości {{h200_oplata_zapasy_zobowiazania.FY2027H1}} (`doc-020`). Moim zdaniem rdzeń biznesu działa bez Chin, więc to flaga, a nie stop.
 - **Beneish M-score (flaga diagnostyczna).** M-score za FY2026 wynosi {{beneish_m.FY2026}}, powyżej progu. Wskaźnik reaguje na szybki wzrost należności. Spółka tłumaczy ten wzrost dłuższymi terminami płatności (`doc-020`). Moim zdaniem to nie dowód manipulacji, ale realne ryzyko kredytowe, które warto śledzić.
 - **„Material weakness”.** Zwrot występuje w raporcie rocznym tylko w opisie ryzyk. Zarząd i biegły stwierdzają skuteczną kontrolę wewnętrzną, a opinia biegłego jest bez zastrzeżeń (`doc-019`).
-- **Insiderzy.** Sprzedaże dyrektorów i członków zarządu w ostatnich miesiącach idą głównie w planach `10b5-1`. Prezes we wrześniu 2026 przekazał akcje na podatek i w darowiznach (`doc-042`). Jeden dyrektor sprzedał akcje we wrześniu bez wzmianki o planie, w otwartym oknie transakcyjnym (`doc-033`).
+- **Insiderzy.** Sprzedaże radcy prawnego, dyrektor finansowej i jednego z dyrektorów z ostatnich miesięcy są oznaczone jako transakcje w planach `10b5-1` (`doc-035`, `doc-037`, `doc-041`). Prezes we wrześniu 2026 przekazał akcje na podatek i w darowiznach (`doc-042`). Jeden dyrektor sprzedał akcje we wrześniu bez wzmianki o planie (`doc-033`).
 
 Wskaźniki statystyczne: Altman Z'' wynosi {{altman_z2.FY2026}} (strefa bezpieczna), Piotroski F-score {{piotroski_f.FY2026}}, a prawdopodobieństwo upadłości wg Ohlsona {{ohlson_p.FY2026}}. Żaden z nich nie zatrzymuje analizy.
 
@@ -144,9 +144,9 @@ Trzy liczby obok siebie:
 - konsensus wzrostu EPS: {{wzrost_eps_konsensus.2026-11-11}} na najbliższy rok, a konsensus przychodów na rok obrotowy do 31.01.2027 to {{przychody_konsensus.2027-01-31}};
 - mój scenariusz bazowy: wzrost przychodów {{scenariusz_wzrost_przychodow.bazowy}} rocznie przez dziesięć lat.
 
-Moim zdaniem spółka cykliczna na szczycie wzrostu nie powinna być wyceniana od zysku z jednego roku. Cena zakłada, że FCF za dekadę będzie kilka razy wyższy niż dziś, a dzisiejszy FCF i tak powstaje w warunkach niedoboru i przy marży bliskiej rekordu.
+Moim zdaniem spółka cykliczna na szczycie wzrostu nie powinna być wyceniana od zysku z jednego roku. Cena zakłada, że FCF za dekadę będzie kilka razy wyższy niż dziś, a dzisiejszy FCF i tak powstaje w warunkach niedoboru i przy marży operacyjnej bliskiej rekordu.
 
-Konsensus: średnia cena docelowa analityków to {{cena_docelowa_srednia.2026-11-11}}, czyli {{potencjal_do_ceny_docelowej.2026-11-10}} powyżej kursu. Cena docelowa to kontekst, a nie wartość godziwa. Analitycy historycznie zawyżają długoterminowy wzrost.
+Konsensus: średnia cena docelowa analityków to {{cena_docelowa_srednia.2026-11-11}}, czyli {{potencjal_do_ceny_docelowej.2026-11-10}} powyżej kursu. Cena docelowa to kontekst, a nie wartość godziwa. Według badania metody w repozytorium analitycy historycznie zawyżają długoterminowy wzrost.
 
 {{tabela:cena_docelowa_trela}}
 
@@ -161,14 +161,14 @@ Wg twojego arkusza: cena docelowa wynosi {{cena_docelowa_trela_kons.2026-11-11}}
 **Prawdopodobieństwo.** Rozkładam tezę na trzy warunki konieczne:
 1. nakłady na centra danych AI nie spadną przed FY2029 (moja ocena: około trzech na cztery, bo zarząd ma zamówienia i zabezpieczone dostawy na kilka lat);
 2. własne układy klientów nie odbiorą istotnej części sprzedaży do hiperskalerów (około czterech na pięć w tym horyzoncie);
-3. marża nie zapadnie się przez koszty pamięci i konkurencję cenową (około czterech na pięć).
+3. marża brutto nie zapadnie się przez koszty pamięci i konkurencję cenową (około czterech na pięć).
 
-Iloczyn daje mniej więcej połowę szans. Prawdopodobieństwo, że spółka pobije oczekiwania zawarte w cenie, czyli wzrost FCF w tempie {{implikowany_wzrost_fcf.2026-11-10}} przez dekadę, oceniam niżej, na około jedną trzecią. Stopa bazowa: w klasie spółek z ponad stu miliardów USD przychodów praktycznie żadna nie rosła przez dziesięć lat w tempie kilkunastu procent rocznie (Base Rate Book). Liczby, które tę wartość podnoszą: zamówienia ograniczone podażą i prognoza na Q3 FY2027 ({{prognoza_zarzadu_przychody.FY2027Q3}}). Liczby, które ją obniżają: koncentracja klientów i finansowanie klientów przez spółkę.
+Iloczyn daje mniej więcej połowę szans. Prawdopodobieństwo, że spółka pobije oczekiwania zawarte w cenie, czyli wzrost FCF w tempie {{implikowany_wzrost_fcf.2026-11-10}} przez dekadę, oceniam niżej, na około jedną trzecią. Stopa bazowa z badania metody w repozytorium (Base Rate Book, Mauboussin): żadna spółka z co najmniej stu miliardami USD przychodów nie rosła przez dziesięć lat w tempie kilkunastu procent rocznie. Liczby, które tę wartość podnoszą: zamówienia ograniczone podażą i prognoza na Q3 FY2027 ({{prognoza_zarzadu_przychody.FY2027Q3}}). Liczby, które ją obniżają: koncentracja klientów i finansowanie klientów przez spółkę.
 
-**Dlaczego rynek może się mylić.** Moim zdaniem rynek patrzy dziś na dochodzenie wobec prezesa i na wskaźniki techniczne (RSI {{rsi_14.2026-11-10}}). Mnożnik C/Z na rok naprzód wygląda nisko, ale liczy się od zysku z okresu niedoboru. Nie mam przewagi informacyjnej nad rynkiem. Moja odmienność dotyczy tylko jednego czynnika: zakładam, że wzrost po FY2028 będzie dużo niższy, niż sugeruje konsensus, bo cykl nakładów kiedyś się odwróci.
+**Dlaczego rynek może się mylić.** Moim zdaniem rynek patrzy dziś na dochodzenie wobec prezesa i na wskaźniki techniczne (RSI {{rsi_14.2026-11-10}}). Mnożnik C/Z na rok naprzód wygląda nisko, ale liczy się od zysku z okresu niedoboru. Nie mam przewagi informacyjnej nad rynkiem. Moja odmienność dotyczy tylko jednego czynnika: zakładam, że wzrost przychodów r/r po FY2028 będzie dużo niższy, niż sugeruje konsensus, bo cykl nakładów kiedyś się odwróci.
 
 **Katalizatory z datami:**
-1. 17.11.2026: wyniki Q3 FY2027 i prognoza na Q4 FY2027 (marża brutto wobec {{prognoza_zarzadu_marza_brutto.FY2027Q3}}).
+1. 17.11.2026 (data z materiału InvestingPro): wyniki Q3 FY2027 i prognoza na Q4 FY2027 (marża brutto wobec {{prognoza_zarzadu_marza_brutto.FY2027Q3}}).
 2. Wynik dochodzenia rady w sprawie prezesa (bez terminu).
 3. Pierwsza połowa 2027 roku: zamknięcie przejęcia Hugging Face.
 4. Luty 2027: raport roczny za FY2027 z danymi o klientach i zobowiązaniach.
@@ -191,30 +191,30 @@ Iloczyn daje mniej więcej połowę szans. Prawdopodobieństwo, że spółka pob
 ## 10. Wiadomości i scenariusze
 
 Ostatnie wiadomości i ich wpływ na czynniki wartości (moja ocena):
-- Negatywne: po pierwsze, 9.11.2026 kurs spadł po artykule New York Times o tym, że prezes był celem chińskiego wywiadu, i po ogłoszeniu dochodzenia rady. Ta wiadomość podnosi koszt kapitału przez ryzyko zarządzania. Po drugie, spółka wyłączyła Chiny z prognozy, co obniża wzrost. Po trzecie, zobowiązania zakupowe na pamięć wzrosły, a spółka prognozuje niższą marżę brutto na Q3 FY2027.
+- Negatywne: po pierwsze, rada ogłosiła 8.11.2026 dochodzenie w sprawie doniesień, że prezes był celem obcego wywiadu (`doc-045`); według materiału InvestingPro (`doc-016`) doniesienia opublikował New York Times, a kurs spadł w kolejnych dniach. Moim zdaniem ta wiadomość podnosi koszt kapitału przez ryzyko zarządzania. Po drugie, spółka wyłączyła Chiny z prognozy, co obniża wzrost. Po trzecie, zobowiązania zakupowe na pamięć wzrosły, a spółka prognozuje niższą marżę brutto na Q3 FY2027.
 - Pozytywne: po pierwsze, zarząd prognozuje dalszy wzrost przychodów w Q3 FY2027; po drugie, spółka odkupuje akcje i podniosła dywidendę, co zmniejsza liczbę akcji; po trzecie, premiera Vera Rubin może utrzymać przewagę wydajności.
-- Media opisują doniesienia, których nie potwierdzam dokumentem: udział FBI, artykuł The Information o wysyłkach układów do Chin, reakcję Kongresu. Komisja Izby Reprezentantów miała poprosić prezesa o zamknięte spotkanie 18.11.2026; to informacja z jednego wtórnego źródła.
+- Media opisują doniesienia, których nie potwierdzam dokumentem: udział FBI, artykuł The Information o wysyłkach układów do Chin, reakcję Kongresu. Przegląd wiadomości znalazł też w jednym wtórnym serwisie informację o prośbie komisji Izby Reprezentantów o spotkanie z prezesem; nie potwierdziłem jej.
 
 {{tabela:scenariusze}}
 
 Scenariusze (prawdopodobieństwa i założenia to moje oceny):
-- **Byk ({{scenariusz_prawdopodobienstwo.byk}}):** przychody rosną o {{scenariusz_wzrost_przychodow.byk}} rocznie przez dekadę przy marży FCF {{scenariusz_marza_fcf.byk}}. Warunek: budowa infrastruktury AI trwa dekadę, a własne układy klientów nie odbierają udziału. To powyżej dziewięćdziesiątego percentyla stopy bazowej.
+- **Byk ({{scenariusz_prawdopodobienstwo.byk}}):** przychody rosną o {{scenariusz_wzrost_przychodow.byk}} rocznie przez dekadę przy marży FCF {{scenariusz_marza_fcf.byk}}. Warunek: budowa infrastruktury AI trwa dekadę, a własne układy klientów nie odbierają udziału. Moim zdaniem to powyżej dziewięćdziesiątego percentyla stopy bazowej.
 - **Bazowy ({{scenariusz_prawdopodobienstwo.bazowy}}):** dwa mocne lata, potem normalizacja nakładów; średnio {{scenariusz_wzrost_przychodow.bazowy}} rocznie przy marży FCF {{scenariusz_marza_fcf.bazowy}}.
-- **Niedźwiedź ({{scenariusz_prawdopodobienstwo.niedzwiedz}}):** cykl nakładów pęka jak w półprzewodnikach w latach 2001 i 2022; wzrost {{scenariusz_wzrost_przychodow.niedzwiedz}} rocznie przy marży FCF {{scenariusz_marza_fcf.niedzwiedz}}.
+- **Niedźwiedź ({{scenariusz_prawdopodobienstwo.niedzwiedz}}):** cykl nakładów pęka, jak w FY2023, gdy przychody spółki stanęły w miejscu; wzrost {{scenariusz_wzrost_przychodow.niedzwiedz}} rocznie przy marży FCF {{scenariusz_marza_fcf.niedzwiedz}}.
 
 Silnik liczy wartość oczekiwaną {{wartosc_oczekiwana_na_akcje.2026-11-10}}, potencjał oczekiwany {{potencjal_oczekiwany.2026-11-10}} i asymetrię {{asymetria.2026-11-10}}. Nawet scenariusz byka daje wartość na akcję {{wartosc_na_akcje.byk}}, niewiele powyżej kursu. Zakładam, że model zaniża wartość, bo przyjmuje stały wzrost przez dziesięć lat. Nie umie opisać dwóch lat bardzo szybkiego wzrostu, które zapowiada zarząd, a potem normalizacji. Brak zapisałem w `braki-silnika.md`. Wniosek jakościowy pozostaje: cena wymaga wzrostu powyżej stopy bazowej.
 
-Byki mówią: NVIDIA ma zamówienia ograniczone podażą, jedyną platformę z pełnym ekosystemem oprogramowania i mnożnik C/Z na rok naprzód niższy niż w historii. Dochodzenie wobec prezesa to jednorazowy szok. Niedźwiedzie mówią: zyski są na szczycie cyklu, kilku klientów odpowiada za dużą część sprzedaży i projektuje własne układy, a spółka coraz mocniej finansuje swoich klientów. Ryzyko prezesa jest realne, bo spółka nie ujawnia planu sukcesji.
+Argumenty za (moja ocena): NVIDIA ma zamówienia ograniczone podażą, jedyną platformę z pełnym ekosystemem oprogramowania i mnożnik C/Z na rok naprzód niższy niż w historii. Dochodzenie wobec prezesa to jednorazowy szok. Argumenty przeciw (moja ocena): zyski są na szczycie cyklu, kilku klientów odpowiada za dużą część sprzedaży i projektuje własne układy, a spółka coraz mocniej finansuje swoich klientów. Ryzyko prezesa jest realne, bo spółka nie ujawnia planu sukcesji.
 
 ## 11. Karta w stylu Treli
 
 {{tabela:karta}}
 
-Karta daje wysoki wynik, bo filary wzrostu i jakości mają maksymalne punkty. Moim zdaniem filar wzrostu nagradza tu przeszłość: CAGR z trzech lat obejmuje skok z niskiej bazy FY2023, a Trela wymienia wzrost z bazy bliskiej zera wśród swoich czerwonych flag. Karta jest informacją, a nie bramką.
+Karta daje wysoki wynik, bo filary wzrostu i jakości mają maksymalne punkty. Moim zdaniem filar wzrostu nagradza tu przeszłość: CAGR z trzech lat obejmuje skok z niskiej bazy FY2023, a według pliku referencyjnego skilla o metodzie Treli wzrost z bazy bliskiej zera należy do jego czerwonych flag. Karta jest informacją, a nie bramką.
 
 ## 12. Dostęp przez IKE
 
-NVDA.US jest dostępna w XTB i notowana w dolarach. Każde przewalutowanie kosztuje pół procenta. Od dywidend pobierany jest piętnastoprocentowy podatek u źródła przy złożonym formularzu W-8BEN; dywidenda NVIDII jest symboliczna wobec kursu. Wg twoich zasad NVDA.US trafiłaby do koszyka „Akcje zagraniczne” w części Agresywnej IKE z benchmarkiem S&P 500. Instrument nie ma jeszcze wpisu w bloku `instrumenty` w twoich zasadach. Nvidia jest jednym z największych składników SMH, który już masz, i jest w CNDX oraz IWDA. Pozycja w NVDA zwiększy udział półprzewodników w całym IKE, o czym wspomina historia zmian twoich zasad (`v1.4`).
+NVDA.US jest dostępna w XTB i notowana w dolarach. Każde przewalutowanie kosztuje pół procenta. Zakładam, że USA pobiorą od dywidend piętnastoprocentowy podatek u źródła przy złożonym formularzu W-8BEN (bez dokumentu w archiwum); dywidenda NVIDII jest symboliczna wobec kursu. Wg twoich zasad NVDA.US trafiłaby do koszyka „Akcje zagraniczne” w części Agresywnej IKE z benchmarkiem S&P 500. Instrument nie ma jeszcze wpisu w bloku `instrumenty` w twoich zasadach. Według twojej karty SMH Nvidia jest dużym składnikiem tego funduszu, a według twoich zasad półprzewodniki są też w CNDX, IWDA i EIMI. Pozycja w NVDA zwiększy udział półprzewodników w całym IKE, o czym wspomina historia zmian twoich zasad (`v1.4`).
 
 ## 13. Projekt karty
 
@@ -225,7 +225,7 @@ NVDA.US jest dostępna w XTB i notowana w dolarach. Każde przewalutowanie koszt
 - **Pre-mortem:** część dziewiąta.
 - **Wielkość pozycji:** decyzja właściciela. Zasada: przy pozycji X procent IKE scenariusz niedźwiedzia ({{wartosc_na_akcje.niedzwiedz}} na akcję) zabiera Y procent IKE. Wg twoich zasad kupujesz w transzach.
 - **Kiedy sprzedam:** gdy teza jest złamana (dwie antytezy specyficzne naraz), gdy masz lepszą spółkę z kartą albo gdy uznasz, że nie kupiłbyś jej dziś.
-- **Data przeglądu:** po wynikach Q3 FY2027 (17.11.2026) i po ogłoszeniu wyniku dochodzenia rady.
+- **Data przeglądu:** po wynikach Q3 FY2027 (według materiału InvestingPro 17.11.2026) i po ogłoszeniu wyniku dochodzenia rady.
 - **Co śledzić:** marżę brutto wobec prognozy, DSO, zapasy i zobowiązania zakupowe, udział największych klientów, przychody hiperskalerów, wynik dochodzenia rady.
 
 ## 14. Jakość danych
@@ -240,7 +240,7 @@ Czego nie sprawdziłem:
 - Silnik nie znalazł spłaty leasingu za ostatnie lata; FCF dla właścicieli może jej nie uwzględniać.
 
 Tropy z materiału InvestingPro (`doc-016`) i wynik sprawdzenia:
-1. Kryzys wokół prezesa: potwierdzony co do dochodzenia rady i kancelarii Wachtell (`doc-045`, `doc-043`). Niepotwierdzony co do udziału FBI i treści zarzutów.
+1. Kryzys wokół prezesa: potwierdzony co do dochodzenia rady, kancelarii Wachtell i przyznania się prezesa do niewierności (`doc-045`, `doc-043`, `doc-044`). Niepotwierdzony co do udziału FBI i tożsamości osoby z doniesień.
 2. Ułatwianie wysyłek układów do Chin (The Information): niepotwierdzony. Spółka opisuje tylko ogólne ryzyko obchodzenia ograniczeń (`doc-020`).
 3. Trzech niezależnych dyrektorów od lat dziewięćdziesiątych: potwierdzony (`doc-022`).
 4. Udział prezesa w akcjach: potwierdzony (`doc-022`). Brak następcy: `DEF 14A` nie opisuje sukcesji.
@@ -253,6 +253,6 @@ Tropy z materiału InvestingPro (`doc-016`) i wynik sprawdzenia:
 11. Rosnące zapasy i należności: potwierdzony (`doc-020`, `doc-031`).
 12. Wzrost długu: potwierdzony (`doc-029`, `doc-031`).
 13. Rozbieżność EPS w materiale: liczby w raporcie pochodzą z SEC, a nie z materiału.
-14. Termin wyników Q3 FY2027: potwierdzony komunikatem spółki według przeglądu wiadomości; komunikatu nie ma w archiwum.
+14. Termin wyników Q3 FY2027: niepotwierdzony dokumentem w archiwum; przegląd wiadomości wskazuje komunikat spółki z 28.10.2026.
 
 Tropy z materiału, które zmieniły analizę: wątek prezesa skierował mnie do komunikatów rady, a wątek finansowania laboratoriów AI do 8-K z 17.08.2026 z gwarancjami dla kampusu SB Energy.
