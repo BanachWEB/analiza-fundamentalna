@@ -1,0 +1,8 @@
+{"scenariusze": [
+  {"nazwa": "byk", "prawdopodobienstwo": 0.25, "wzrost_przychodow": 0.15, "marza_fcf": 0.40,
+   "uzasadnienie": "Powyżej 90. percentyla stopy bazowej: w klasie spółek z ponad 100 mld USD przychodów praktycznie żadna nie rosła przez 10 lat w tempie kilkunastu procent rocznie (Base Rate Book). Warunek: budowa infrastruktury AI trwa przez dekadę, własne układy hiperskalerów nie odbierają udziału, marża FCF zostaje na obecnym poziomie. Wynik roku FY2028 (prognoza zarządu wzrostu ograniczonego podażą) daje silny start, co uzasadnia scenariusz powyżej stopy bazowej."},
+  {"nazwa": "bazowy", "prawdopodobienstwo": 0.45, "wzrost_przychodow": 0.09, "marza_fcf": 0.33,
+   "uzasadnienie": "Okolice 70.–80. percentyla stopy bazowej, a nie mediana, bo spółka wchodzi w okres z zamówieniami ograniczonymi podażą: dwa mocne lata, potem normalizacja nakładów na centra danych i presja własnych układów klientów. Marża FCF spada o kilka punktów od obecnej, bo konkurencja i koszty pamięci obniżają marżę brutto."},
+  {"nazwa": "niedzwiedz", "prawdopodobienstwo": 0.30, "wzrost_przychodow": 0.02, "marza_fcf": 0.25,
+   "uzasadnienie": "Mediana i niżej stopy bazowej dla spółek tej wielkości (wzrost niski jednocyfrowy): cykl nakładów na AI pęka jak cykle półprzewodników z lat 2001 i 2022, nadwyżka mocy obniża ceny, a ograniczenia eksportowe i ryzyko odejścia prezesa osłabiają pozycję. Wyższe prawdopodobieństwo niż typowe 20–25%, bo przychody są dziś na szczycie wieloletniego wzrostu i silnie skoncentrowane u kilku klientów."}
+]}

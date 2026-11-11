@@ -1,0 +1,426 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "NVDA",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-11T12:02:08.012480Z",
+      "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff",
+      "plik": "19ef503a5770f566.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0001045810.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-11T12:02:08.418905Z",
+      "sha256": "db787ea656392c0442099ee6498a978e5b0bfba2c14e47a68dda393ddaff0375",
+      "plik": "db787ea656392c04.json"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/nvda/financials/income-statement/",
+      "opis": "income-statement",
+      "pobrano": "2026-11-11T12:02:08.668623Z",
+      "sha256": "13cd82ab047f5c441989a69cb3c48d99c629e3f97d3c4706754bce21c6a1ae74",
+      "plik": "13cd82ab047f5c44.html"
+    },
+    {
+      "id": "doc-004",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/nvda/financials/balance-sheet/",
+      "opis": "balance-sheet",
+      "pobrano": "2026-11-11T12:02:09.348559Z",
+      "sha256": "09f3b985d885ff0ffb3c36f8162172a408e2336404b13df409a74fbbda1b7fbc",
+      "plik": "09f3b985d885ff0f.html"
+    },
+    {
+      "id": "doc-005",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/nvda/financials/cash-flow-statement/",
+      "opis": "cash-flow-statement",
+      "pobrano": "2026-11-11T12:02:09.995169Z",
+      "sha256": "3488526bda321ae098550a243319c5f99b3221bf8bdfb9d6c3e6034e1a83780e",
+      "plik": "3488526bda321ae0.html"
+    },
+    {
+      "id": "doc-006",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/nvda/history/",
+      "opis": "historia kursu",
+      "pobrano": "2026-11-11T12:02:10.708662Z",
+      "sha256": "72b35ec0aecefe8b96d4c7a2bcdee98e25e1e4ae9041d596393d996cf6a93815",
+      "plik": "72b35ec0aecefe8b.html"
+    },
+    {
+      "id": "doc-007",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?range=2y&interval=1d",
+      "opis": "notowania dzienne NVDA",
+      "pobrano": "2026-11-11T12:02:11.017859Z",
+      "sha256": "8f08cdb9aaa0cd125c3245b9dac1510acb392e49d8af8ec1fd7b7ac7533b22b4",
+      "plik": "8f08cdb9aaa0cd12.json"
+    },
+    {
+      "id": "doc-008",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=2y&interval=1d",
+      "opis": "notowania dzienne %5EGSPC",
+      "pobrano": "2026-11-11T12:02:12.714939Z",
+      "sha256": "89dd89da21ad44e4a606c34e615b8dc63baed48953041bb690bf21d54133e22c",
+      "plik": "89dd89da21ad44e4.json"
+    },
+    {
+      "id": "doc-009",
+      "typ": "strona",
+      "zrodlo": "Damodaran (NYU Stern)",
+      "adres": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+      "opis": "premie za ryzyko krajów",
+      "pobrano": "2026-11-11T12:02:12.936650Z",
+      "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+      "plik": "ea30d57fc0858072.html"
+    },
+    {
+      "id": "doc-010",
+      "typ": "strona",
+      "zrodlo": "U.S. Treasury",
+      "adres": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "opis": "rentowności obligacji",
+      "pobrano": "2026-11-11T12:02:33.370814Z",
+      "sha256": "782e0953ac34dd4c9751bc061feae3b1a2e18f0be8c7c181a3d2a472d1bdcbe5",
+      "plik": "782e0953ac34dd4c.csv"
+    },
+    {
+      "id": "doc-011",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/nvda/forecast/",
+      "opis": "prognozy analityków",
+      "pobrano": "2026-11-11T12:02:33.572461Z",
+      "sha256": "0f9544629dc85b958afd28c30351dca55be29184f11cfdb858092263f2d51e2b",
+      "plik": "0f9544629dc85b95.html"
+    },
+    {
+      "id": "doc-012",
+      "typ": "strona",
+      "zrodlo": "FRED (St. Louis Fed)",
+      "adres": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPDEF",
+      "opis": "deflator PKB USA (GDPDEF)",
+      "pobrano": "2026-11-11T12:02:33.739849Z",
+      "sha256": "30bb0472781765e94efbbeaf63f0056106c5ff3786f6713485d3daff182b6010",
+      "plik": "30bb0472781765e9.csv"
+    },
+    {
+      "id": "doc-013",
+      "typ": "wklejka",
+      "zrodlo": "arkusz właściciela (metoda Treli)",
+      "adres": null,
+      "opis": "cena-docelowa.xlsx: cena docelowa wg arkusza właściciela",
+      "pobrano": "2026-11-11T12:02:33.989574Z",
+      "sha256": "418d84f0b291a5a790159de1fd6bb86e69ac2589ecd6d620c40dcd11df2a9b17",
+      "plik": "418d84f0b291a5a7.xlsx"
+    },
+    {
+      "id": "doc-014",
+      "typ": "strona",
+      "zrodlo": "SEC EDGAR (wyszukiwanie)",
+      "adres": "https://efts.sec.gov/LATEST/search-index?q=%22substantial%20doubt%22&forms=10-K,10-Q&dateRange=custom&startdt=2026-02-24&enddt=2026-11-11&ciks=0001045810",
+      "opis": "wyszukiwanie: substantial doubt",
+      "pobrano": "2026-11-11T12:02:34.745985Z",
+      "sha256": "fb84a94e1d1d61ddc55fbb8ef8aba4f6df2f13f73b43e2f66d1f028638d8e483",
+      "plik": "fb84a94e1d1d61dd.json"
+    },
+    {
+      "id": "doc-015",
+      "typ": "strona",
+      "zrodlo": "SEC EDGAR (wyszukiwanie)",
+      "adres": "https://efts.sec.gov/LATEST/search-index?q=%22material%20weakness%22&forms=10-K&dateRange=custom&startdt=2026-02-24&enddt=2026-11-11&ciks=0001045810",
+      "opis": "wyszukiwanie: material weakness",
+      "pobrano": "2026-11-11T12:02:35.816333Z",
+      "sha256": "15ab94a6275ae25092f2f9f8567101d911d09c7e43ec213b8a10a1368286f620",
+      "plik": "15ab94a6275ae250.json"
+    },
+    {
+      "id": "doc-016",
+      "typ": "wklejka",
+      "zrodlo": "InvestingPro",
+      "adres": null,
+      "opis": "raport Pro Research NVDA z 11.11.2026 (materiał od właściciela)",
+      "pobrano": "2026-11-11T12:02:44.316963Z",
+      "sha256": "0c43fb38765f3874abd2df5999505ccfad16b483ca1a6a4ba4af543216103837",
+      "plik": "0c43fb38765f3874.txt"
+    },
+    {
+      "id": "doc-017",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?range=2y&interval=1d",
+      "opis": "notowania dzienne NVDA",
+      "pobrano": "2026-11-11T12:03:21.282342Z",
+      "sha256": "c94450ae151ac226e87ac58c3604876347c5fb441b112bb711760e9bd2b83c28",
+      "plik": "c94450ae151ac226.json"
+    },
+    {
+      "id": "doc-018",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=2y&interval=1d",
+      "opis": "notowania dzienne %5EGSPC",
+      "pobrano": "2026-11-11T12:03:22.975285Z",
+      "sha256": "daf4cfc48fea0dbd8451bf9bf48c73af323f73ed1e69ebaec62489caa521c767",
+      "plik": "daf4cfc48fea0dbd.json"
+    },
+    {
+      "id": "doc-019",
+      "typ": "10-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+      "opis": "10-K FY2026 (do 25.01.2026)",
+      "pobrano": "2026-11-11T12:04:21.403217Z",
+      "sha256": "7dd1a4a422091eb32f2715b1427af54bc64df7b6869298bfae40c4ad5fec3349",
+      "plik": "7dd1a4a422091eb3.htm"
+    },
+    {
+      "id": "doc-020",
+      "typ": "10-Q",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "opis": "10-Q Q2 FY2027 (do 26.07.2026)",
+      "pobrano": "2026-11-11T12:04:22.275547Z",
+      "sha256": "704372e5482fcadf2c52d3d50400ee2cd71824ec30f688af63b44dbd95a1c5fe",
+      "plik": "704372e5482fcadf.htm"
+    },
+    {
+      "id": "doc-021",
+      "typ": "10-Q",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm",
+      "opis": "10-Q Q1 FY2027 (do 26.04.2026)",
+      "pobrano": "2026-11-11T12:04:23.076943Z",
+      "sha256": "3f1c46cdeea4fe38b1287369ed26599fe919f017411dbcb1b94e62b48dd4c1a2",
+      "plik": "3f1c46cdeea4fe38.htm"
+    },
+    {
+      "id": "doc-022",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm",
+      "opis": "DEF 14A 2026",
+      "pobrano": "2026-11-11T12:04:23.895376Z",
+      "sha256": "9b4a4bb968024ccd7385b2e63038ddc67fb125923ae3dbbcd76c398286e3ec2e",
+      "plik": "9b4a4bb968024ccd.htm"
+    },
+    {
+      "id": "doc-023",
+      "typ": "8-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+      "opis": "8-K 17.08.2026 (pozycje 1.01, 2.03, 7.01)",
+      "pobrano": "2026-11-11T12:04:24.565607Z",
+      "sha256": "d047e4ecce6954bb94447f99697b510f5f7b8b45b240a1c5f141dc1711964742",
+      "plik": "d047e4ecce6954bb.htm"
+    },
+    {
+      "id": "doc-024",
+      "typ": "8-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm",
+      "opis": "8-K 3.09.2026 (pozycja 8.01)",
+      "pobrano": "2026-11-11T12:04:25.227928Z",
+      "sha256": "d9a5c26a65e4b2afc060174fc80c9851c72f6d3e27b7eb3acf7f6fbd1d16ecd2",
+      "plik": "d9a5c26a65e4b2af.htm"
+    },
+    {
+      "id": "doc-025",
+      "typ": "8-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000060/nvda-20260628.htm",
+      "opis": "8-K 2.07.2026 (pozycja 5.02)",
+      "pobrano": "2026-11-11T12:04:25.924487Z",
+      "sha256": "7e7512da4bf4c63a541ec1680d2205e24d67fd67a9d24b46d6145d51e80cd9bc",
+      "plik": "7e7512da4bf4c63a.htm"
+    },
+    {
+      "id": "doc-026",
+      "typ": "8-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000028/nvda-20260507.htm",
+      "opis": "8-K 8.05.2026 (pozycja 5.02)",
+      "pobrano": "2026-11-11T12:04:26.608170Z",
+      "sha256": "74e8af82dd00f01cde0a37c6c526ce207087db07e8dbaa856c2b3377b632fab6",
+      "plik": "74e8af82dd00f01c.htm"
+    },
+    {
+      "id": "doc-027",
+      "typ": "8-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000026/nvda-20260424.htm",
+      "opis": "8-K 27.04.2026 (pozycja 5.02)",
+      "pobrano": "2026-11-11T12:04:27.275070Z",
+      "sha256": "32acc2cd602acece653a7fe5036aaac37ec5f53e87ad5e76db9df09464b5307a",
+      "plik": "32acc2cd602acece.htm"
+    },
+    {
+      "id": "doc-028",
+      "typ": "8-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000024/nvda-20260302.htm",
+      "opis": "8-K 6.03.2026 (pozycja 5.02)",
+      "pobrano": "2026-11-11T12:04:27.946777Z",
+      "sha256": "68fd265a26f1346020b2403239aff4c75eba2d7884d1a14d84f01567389baf20",
+      "plik": "68fd265a26f13460.htm"
+    },
+    {
+      "id": "doc-029",
+      "typ": "8-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000119312526275783/d48176d8k.htm",
+      "opis": "8-K 18.06.2026 (pozycja 8.01, emisja obligacji)",
+      "pobrano": "2026-11-11T12:04:28.630522Z",
+      "sha256": "f170c7f125fd905c7f99b8093523b88d05ee2da0d3305f8a194c4e525cd3298f",
+      "plik": "f170c7f125fd905c.htm"
+    },
+    {
+      "id": "doc-030",
+      "typ": "8-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm",
+      "opis": "8-K 26.08.2026, załącznik 99.1: wyniki Q2 FY2027",
+      "pobrano": "2026-11-11T12:04:49.055669Z",
+      "sha256": "396c9343d7455a81e141d802a41ed18afc75c513d4cdb97379acbef66f6d14a8",
+      "plik": "396c9343d7455a81.htm"
+    },
+    {
+      "id": "doc-031",
+      "typ": "8-K",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm",
+      "opis": "8-K 26.08.2026, załącznik 99.2: komentarz CFO do Q2 FY2027",
+      "pobrano": "2026-11-11T12:04:49.752664Z",
+      "sha256": "7f3bf361ef7cad3dfa34393994d39fa80fd3d16975a5b394a70b0cf1780badfd",
+      "plik": "7f3bf361ef7cad3d.htm"
+    },
+    {
+      "id": "doc-032",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000014/xslF345X06/wk-form4_1790196985.xml",
+      "opis": "Form 4 z 23.09.2026",
+      "pobrano": "2026-11-11T12:04:52.638156Z",
+      "sha256": "03ceb0e87a043fbf9d119709fe8ca7aa77af9652c03cc6ce3c28eae35b0db1dd",
+      "plik": "03ceb0e87a043fbf.html"
+    },
+    {
+      "id": "doc-033",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000119903926000016/xslF345X06/wk-form4_1790110579.xml",
+      "opis": "Form 4 z 22.09.2026",
+      "pobrano": "2026-11-11T12:04:53.327759Z",
+      "sha256": "2f3fc444dc64c45251f9b65b804cc245f5893870d18c9b451830a7d105cfcac7",
+      "plik": "2f3fc444dc64c452.html"
+    },
+    {
+      "id": "doc-034",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000119764726000009/xslF345X06/wk-form4_1788555631.xml",
+      "opis": "Form 4 z 4.09.2026",
+      "pobrano": "2026-11-11T12:04:54.030428Z",
+      "sha256": "dafd84ab9f3b9da4a014fecdc046bdd74af39014bb08c844b6c57f75843b25b8",
+      "plik": "dafd84ab9f3b9da4.html"
+    },
+    {
+      "id": "doc-035",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000119764726000013/wk-form4_1793999520.xml",
+      "opis": "Form 4 z 6.11.2026",
+      "pobrano": "2026-11-11T12:06:53.867175Z",
+      "sha256": "1488ef1a14107224ff366fa9164f2ec6c9e2b709c236206b8e8da43e3d95295d",
+      "plik": "1488ef1a14107224.html"
+    },
+    {
+      "id": "doc-036",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000215218826000007/wk-form4a_1791925767.xml",
+      "opis": "Form 4 z 4/A 13.10.2026",
+      "pobrano": "2026-11-11T12:06:54.221030Z",
+      "sha256": "2ac0f16ab6661c9ccd85c35f476657b9dbdc4b4109b15607709522e45de92f56",
+      "plik": "2ac0f16ab6661c9c.html"
+    },
+    {
+      "id": "doc-037",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000119764726000011/wk-form4_1791579847.xml",
+      "opis": "Form 4 z 9.10.2026",
+      "pobrano": "2026-11-11T12:06:54.731056Z",
+      "sha256": "708b054a77a77701bd7bb39802e4ac07cdf15876c461825ecb14cd4695374985",
+      "plik": "708b054a77a77701.html"
+    },
+    {
+      "id": "doc-038",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000124382126000007/wk-form4_1789766132.xml",
+      "opis": "Form 4 z 18.09.2026 (a)",
+      "pobrano": "2026-11-11T12:06:55.184240Z",
+      "sha256": "3b434b21cb3b6e0d166dfd360fc1fabb67a4b804797be0b6042f08a515d40c23",
+      "plik": "3b434b21cb3b6e0d.html"
+    },
+    {
+      "id": "doc-039",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000128385426000010/wk-form4_1789766082.xml",
+      "opis": "Form 4 z 18.09.2026 (b)",
+      "pobrano": "2026-11-11T12:06:55.529759Z",
+      "sha256": "9030fa885d369e1b4d9d5f1247dd18205e9f233667a710a68f905c623fecfde7",
+      "plik": "9030fa885d369e1b.html"
+    },
+    {
+      "id": "doc-040",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000012/wk-form4_1789766007.xml",
+      "opis": "Form 4 z 18.09.2026 (c)",
+      "pobrano": "2026-11-11T12:06:55.868434Z",
+      "sha256": "7f70894a4cf331995cf3a1fa40388d6db78b7c19836a834fae28b909d1ceb80c",
+      "plik": "7f70894a4cf33199.html"
+    },
+    {
+      "id": "doc-041",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000158867026000014/wk-form4_1789765959.xml",
+      "opis": "Form 4 z 18.09.2026 (d)",
+      "pobrano": "2026-11-11T12:06:56.263130Z",
+      "sha256": "1f019bc438b269561e5c054aec78c42956daa558e4d6bc89a0900c9f532c3afd",
+      "plik": "1f019bc438b26956.html"
+    },
+    {
+      "id": "doc-042",
+      "typ": "inny",
+      "zrodlo": "SEC",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1045810/000119764926000012/wk-form4_1789765856.xml",
+      "opis": "Form 4 z 18.09.2026 (e)",
+      "pobrano": "2026-11-11T12:06:56.652767Z",
+      "sha256": "822eaaac11fc1cd84bead616a51b338fc8b5511b763a5ad0ac1e694272cecfab",
+      "plik": "822eaaac11fc1cd8.html"
+    }
+  ]
+}

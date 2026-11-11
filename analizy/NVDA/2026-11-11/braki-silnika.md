@@ -1,0 +1,7 @@
+# Braki silnika wykryte w analizie NVDA (11.11.2026)
+
+1. **Capex pod innym znacznikiem XBRL.** NVIDIA od 2020 raportuje zakupy środków trwałych i WNiP jako `PaymentsToAcquireProductiveAssets`. Bez tego znacznika silnik nie liczył FCF ani wyceny odwrotnej. Poprawka w tej sesji: znacznik dopisany jako drugi w `konfiguracja/mapowanie-us-gaap.yaml` (pozycja `capex`). Sugerowane zadanie: test na danych NVDA i przegląd innych popularnych znaczników capex.
+2. **Spłata leasingu bez danych od FY2017.** Weryfikacja zgłasza brak `splata_leasingu` za ostatni rok. Nie sprawdziłem, czy NVIDIA ma leasing finansowy pod innym znacznikiem. Sugerowane zadanie: przejrzeć znaczniki `FinanceLease*` w companyfacts NVDA.
+3. **Scenariusze ze stałym wzrostem przez 10 lat.** Model scenariuszy nie umie opisać ścieżki „dwa lata bardzo szybkiego wzrostu, potem normalizacja”. Dla NVDA, gdzie zarząd prognozuje wzrost ograniczony podażą w FY2028, stały wzrost zaniża wartość w pierwszych latach i zawyża ją później. Sugerowane zadanie: scenariusz dwufazowy (wzrost w latach 1–3 i w latach 4–10, marża docelowa).
+4. **Form 4 składane przez agentów pod innym CIK.** Adresy Form 4 z listy raportów, złożone pod numerem akcesji osoby raportującej (np. 0001197647-26-000013), zwracały HTTP 404 pod ścieżką emitenta. Sugerowane zadanie: budować adres Form 4 z katalogu osoby raportującej albo z indeksu zgłoszenia.
+5. **Lata uzupełnione z serwisu danych: 2026.** Weryfikacja zgłasza rok FY2026 jako uzupełniony z Stock Analysis, choć 10-K FY2026 jest w EDGAR. Nie sprawdziłem przyczyny.

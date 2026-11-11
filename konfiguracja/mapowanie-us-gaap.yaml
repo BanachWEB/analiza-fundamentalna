@@ -80,7 +80,7 @@ zmiana_gotowki:
 capex:
   rodzaj: okres
   jednostka: pieniadz
-  znaczniki: [PaymentsToAcquirePropertyPlantAndEquipment]
+  znaczniki: [PaymentsToAcquirePropertyPlantAndEquipment, PaymentsToAcquireProductiveAssets]  # NVIDIA od 2020: zakup rzeczowych aktywów trwałych i WNiP
 sbc:
   rodzaj: okres
   jednostka: pieniadz
