@@ -42,6 +42,8 @@ Data analizy: <dd.mm.rrrr>. Rynek: <USA|GPW>. Instrument w XTB: <TICKER.US|TICKE
 {{tabela:bramki}}
 ## 8. Co jest w cenie
 {{tabela:wycena}}
+{{tabela:cena_docelowa_trela}}
+<cena docelowa wg Treli (gdy jest D/scrab.yaml): co zakłada powrót mnożnika do mediany, który wariant opiera się na danych z jednego źródła, jak cena docelowa ma się do wyceny odwrotnej; bez słów „kupuj” i „sprzedawaj”>
 ## 9. Teza, antytezy, pre-mortem
 ## 10. Wiadomości i scenariusze
 {{tabela:scenariusze}}

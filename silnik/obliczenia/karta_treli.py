@@ -89,6 +89,8 @@ def oblicz(k: Kalkulator, rynek: str, wycena: dict, ttm_sufiks: Optional[str], l
                 filar.miary[miara] = None
                 continue
             pref = d if miara in ("fcf_yield", "ev_ebit", "nadwyzka_wzrostu", "potencjal_do_ceny_docelowej") else ttm_sufiks
+            if miara == "potencjal_trela_kons":  # fakt z datą odczytu Scrab (scrab.yaml), nie z datą kursu
+                pref = None
             fakt = _ostatnia(k, miara, pref)
             if fakt is None:
                 filar.miary[miara] = None

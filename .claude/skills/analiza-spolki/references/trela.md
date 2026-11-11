@@ -15,6 +15,10 @@
 
 Liczy ją silnik (`konfiguracja/karta-treli.yaml`): wzrost 30%, jakość i stabilność 25%, wycena 20%, analitycy 15%, momentum 10%; progi osobne dla USA i GPW. Filar bez danych przekazuje wagę pozostałym. Wagi i progi to propozycja zatwierdzona przez właściciela, nie publikowana metoda Treli. Karta jest informacją, nie bramką. W raporcie: `{{tabela:karta}}`.
 
+## Cena docelowa wg Treli
+
+Liczy ją silnik z pliku `D/scrab.yaml` (`specyfikacja.md`, punkt 7.1; parametry w `konfiguracja/cena-docelowa-trela.yaml`). W raporcie: `{{tabela:cena_docelowa_trela}}` w części 8. Wariant konserwatywny zakłada powrót mnożnika do mediany z 5 lat, więc potencjał konserwatywny to w praktyce stosunek mediany mnożnika do mnożnika bieżącego. Opisuj go jako wycenę wobec własnej historii spółki, a nie jako prognozę kursu.
+
 ## Podział pracy ze Scrab
 
 1. Właściciel: sito w Scrab (osobne progi dla USA i GPW), szybki przegląd, krótka lista.

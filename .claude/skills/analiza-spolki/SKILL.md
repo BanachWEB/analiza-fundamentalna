@@ -41,6 +41,7 @@ Pracujesz w katalogu repozytorium. `D` = `analizy/<TICKER>/<RRRR-MM-DD>` (data a
 - Zapisz `D/analiza.json`: `{"ticker": "…", "rynek": "USA|GPW", "nazwa": "…", "sektor": "ogolny|finanse", "xtb": "…"}`. Sektor „finanse” (bank, ubezpieczyciel, broker, windykacja) wyłącza miary, które tam nie działają (`references/sektory.md`).
 - USA: sprawdź CIK w `konfiguracja/sec-cik.yaml` (silnik dopisze go sam, gdy ma adres kontaktowy w `ANALIZA_USER_AGENT`).
 - Jeśli właściciel dołączył materiał (InvestingPro, Scrab, TipRanks, zrzut ekranu, notatki), zapisz go w archiwum (`python -m silnik.dokumenty wklejka`; PDF najpierw zamień na tekst `pdftotext -layout`) i spisz tropy w `D/tropy.md`. Materiał to lista tematów i poszlak, a nie źródło prawdy ani teza do potwierdzenia: zasady w `specyfikacja.md`, punkt 3.3, „Materiały od właściciela”.
+- Cena docelowa wg Treli: jeśli właściciel podał plik `scrab.yaml` (format w `silnik/obliczenia/trela.py`, opcjonalnie z plikami CSV serii mnożników), skopiuj go bez zmian do `D/scrab.yaml`. Silnik sam zapisze go w archiwum i policzy cenę docelową. Nie przepisuj liczb ze zrzutu ekranu do pliku: gdy właściciel dał tylko zrzut, poproś go o plik.
 
 ### Etap 1. Dane (kod)
 
@@ -64,7 +65,7 @@ Zleć subagentowi `badacz-biznesu` zebranie faktów (podaj `D`; jeśli jest `D/t
 ### Etap 4. Co jest w cenie, teza, scenariusze
 
 Według `references/teza-i-scenariusze.md`:
-- przeczytaj wycenę odwrotną z `obliczenia.md` (implikowany wzrost FCF, CAP, implikowana marża FCF, PVGO, konsensus);
+- przeczytaj wycenę odwrotną z `obliczenia.md` (implikowany wzrost FCF, CAP, implikowana marża FCF, PVGO, konsensus) i cenę docelową wg Treli (gdy jest `D/scrab.yaml`; tropy z kontroli kursu i mediany są w „Braki danych”);
 - przyczyny ostatnich ruchów kursu zleć subagentowi `wiadomosci`, a wyciąg z zasad właściciela subagentowi `zasady-wlasciciela` (podaj mu `D` i ścieżkę do repozytorium `inwestowanie`);
 - napisz tezę z prawdopodobieństwem (procedura w 7 krokach) i antytezy z progami;
 - zapisz `D/scenariusze.json` (2–5 scenariuszy, prawdopodobieństwa 5–85% sumujące się do 1, uzasadnienie ze stopą bazową); silnik policzy wartości.

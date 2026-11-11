@@ -1,4 +1,5 @@
-"""Obliczenia na rejestrze faktów: okresy pochodne, wskaźniki, jakość, wycena, scenariusze, karta Treli."""
+"""Obliczenia na rejestrze faktów: okresy pochodne, wskaźniki, jakość, wycena, scenariusze, cena docelowa wg Treli,
+karta Treli."""
 
 from __future__ import annotations
 
@@ -8,7 +9,7 @@ from typing import Optional
 
 from silnik.fakty.rejestr import RejestrFaktow
 
-from . import jakosc, karta_treli, okresy, scenariusze, wskazniki, wycena
+from . import jakosc, karta_treli, okresy, scenariusze, trela, wskazniki, wycena
 from .kalkulator import Kalkulator
 from .raport import obliczenia_md
 
@@ -56,10 +57,11 @@ def uruchom(rejestr: RejestrFaktow, katalog: Optional[Path] = None, rynek: Optio
         jakosc.oblicz(k)
     w = wycena.oblicz(k, koniec, rynek, finansowa)
     sc = scenariusze.oblicz(k, katalog / "scenariusze.json", w) if katalog else None
+    tr = trela.oblicz(k, katalog)  # przed kartą: potencjał konserwatywny to miara filaru „wycena”
     analitycy = [f for f in rejestr.fakty() if f.pozycja == "liczba_analitykow"]
     liczba = int(max(analitycy, key=lambda f: f.okres.koniec or f.id).wartosc) if analitycy else None
     karta = karta_treli.oblicz(k, rynek, w, w.get("okres_bazowy"), liczba, finansowa) if w.get("kapitalizacja") else []
-    return k, {"ttm": koniec, "rynek": rynek, "wycena": w, "scenariusze": sc, "karta": karta, "analitycy": liczba,
+    return k, {"ttm": koniec, "rynek": rynek, "wycena": w, "scenariusze": sc, "trela": tr, "karta": karta, "analitycy": liczba,
                "sektor": "finanse" if finansowa else "ogolny"}
 
 

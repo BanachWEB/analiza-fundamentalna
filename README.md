@@ -129,6 +129,8 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają obliczenia same. Osobno: `pyt
 
 **Karta w stylu Treli** (`konfiguracja/karta-treli.yaml`): pięć filarów (wzrost 30%, jakość 25%, wycena 20%, analitycy 15%, momentum 10%), każda miara 0–10 pkt liniowo między progami, osobnymi dla USA i GPW. Filar bez danych (np. „analitycy” przy pokryciu poniżej 3 analityków) przekazuje wagę pozostałym. Karta jest informacją, nie bramką.
 
+**Cena docelowa wg Treli** (`silnik/obliczenia/trela.py`, `konfiguracja/cena-docelowa-trela.yaml`, `specyfikacja.md` punkt 7.1): mnożnik z historii × prognoza na akcję na rok naprzód. Wariant konserwatywny używa mediany P/E i P/S 1-Year Forward z 5 lat, a wariant optymistyczny percentyla P90 serii. Dane podaje właściciel w `analizy/<TICKER>/<data>/scrab.yaml`; format pliku opisuje nagłówek `silnik/obliczenia/trela.py`. Bez serii mnożnika (CSV albo lista) silnik nie liczy wariantu optymistycznego. Potencjał konserwatywny jest miarą filaru „wycena” w karcie Treli.
+
 ## Bramki stopu (krok 5)
 
 Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają bramki same. Osobno: `python -m silnik.bramki analizy/<TICKER>/<data>`. Progi i lista bramek: `konfiguracja/bramki.yaml`.
@@ -172,7 +174,7 @@ Miejsca w `raport.md`:
 | Miejsce | Co wstawia silnik |
 |---|---|
 | `{{id_faktu}}`, np. `{{marza_operacyjna.TTM2026-09-30}}` | wartość po polsku (np. „47,1%”, „331,8 mld USD”) i przypis: okres, źródło albo wzór, status weryfikacji |
-| `{{tabela:panel}}`, `{{tabela:wycena}}`, `{{tabela:scenariusze}}`, `{{tabela:karta}}`, `{{tabela:bramki}}`, `{{tabela:jakosc_danych}}` | tabele z obliczeń, bramek i weryfikacji |
+| `{{tabela:panel}}`, `{{tabela:wycena}}`, `{{tabela:cena_docelowa_trela}}`, `{{tabela:scenariusze}}`, `{{tabela:karta}}`, `{{tabela:bramki}}`, `{{tabela:jakosc_danych}}` | tabele z obliczeń, bramek i weryfikacji |
 | `{{wykres:przychody}}`, `{{wykres:marze}}`, `{{wykres:fcf_zysk}}`, `{{wykres:roic}}` | wykresy z faktów rejestru |
 
 **Lint** odrzuca raport, gdy w tekście modelu jest jakakolwiek cyfra albo znak % poza miejscami na liczby. Wyjątki: lata (1990–2049; starsze tylko z „r.”/„roku”), daty, etykiety okresów (FY2025, Q3, H1, M9, TTM), numeracja nagłówków i list, nazwy typu S&P 500, MSSF 16, 10-K. Lint odrzuca też miejsce wskazujące nieistniejący albo odrzucony fakt.
