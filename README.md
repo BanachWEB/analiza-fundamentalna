@@ -14,7 +14,7 @@ Plan ma 7 kroków (`specyfikacja.md`, część 11).
 | 4 | Obliczenia: wskaźniki, wycena odwrotna, scenariusze, karta Treli | gotowy |
 | 5 | Bramki stopu | gotowy |
 | 6 | Raport: szablon z miejscami na liczby, lint, PDF | gotowy |
-| 7 | SKILL.md i pełne przebiegi na spółkach testowych | gotowy: skill, pełne raporty MSFT, DNP i PKO, stopy PBG i DPLS |
+| 7 | SKILL.md i pełne przebiegi na spółkach testowych | gotowy: skill i pełne przebiegi testowe (MSFT, DNP, PKO, stopy PBG i DPLS; wyniki usunięte z `analizy/`) |
 | 8 | Podział pracy między modele: subagenci, fragmenty do bramek, lista miejsc na liczby (`specyfikacja.md`, punkt 3.7) | gotowy w kodzie; pierwszy przebieg na nowej spółce sprawdzi koszt i jakość |
 
 ## Skill
@@ -25,11 +25,13 @@ Skill zleca czytanie dokumentów subagentom z `.claude/agents/` na tańszych mod
 
 | Spółka testowa | Ścieżka | Wynik |
 |---|---|---|
-| Microsoft (MSFT) | USA, głębokie pokrycie | pełny raport PDF |
-| PBG | GPW, Lista Alertów | STOP na etapie 0, PDF stopu |
-| DarkPulse (DPLS) | USA, kontynuacja działalności | STOP na etapie 3, PDF stopu |
-| PKO BP (PKO) | GPW, bank (sektor finanse) | pełny raport PDF |
-| Dino (DNP) | GPW, ESEF + PDF | pełny raport PDF |
+| Microsoft (MSFT) | USA, głębokie pokrycie | pełny raport PDF (usunięty) |
+| PBG | GPW, Lista Alertów | STOP na etapie 0, PDF stopu (usunięty) |
+| DarkPulse (DPLS) | USA, kontynuacja działalności | STOP na etapie 3, PDF stopu (usunięty) |
+| PKO BP (PKO) | GPW, bank (sektor finanse) | pełny raport PDF (usunięty) |
+| Dino (DNP) | GPW, ESEF + PDF | pełny raport PDF (usunięty) |
+
+Wyniki przebiegów testowych usunąłem z repozytorium 11.11.2026, bo pochodziły z wcześniejszych wersji silnika. W `analizy/` zostaje tylko pierwsza analiza z gotowego skilla: Seagate (STX) z 10.11.2026.
 
 ## Uruchomienie
 
@@ -149,7 +151,7 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają bramki same. Osobno: `python 
   "warunek_powrotu": "…"}]}
 ```
 
-Przypadki testowe w `analizy/`: PBG (Lista Alertów → STOP na etapie 0) i DarkPulse, DPLS (istotna niepewność kontynuacji + ujemne przepływy + brak pokrycia zobowiązań → STOP na etapie 3).
+Przypadki testowe bramek (wyniki usunięte z `analizy/`): PBG (Lista Alertów → STOP na etapie 0) i DarkPulse, DPLS (istotna niepewność kontynuacji + ujemne przepływy + brak pokrycia zobowiązań → STOP na etapie 3).
 
 ## Raport PDF (krok 6)
 
