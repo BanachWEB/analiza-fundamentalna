@@ -20,6 +20,25 @@ from . import formaty, lint, wykresy
 from .lint import MIEJSCE
 
 TABELE = ("panel", "wycena", "scenariusze", "karta", "bramki", "jakosc_danych")
+WYKRESY = ("przychody", "marze", "fcf_zysk", "roic")
+
+
+def miejsca(katalog: Path, ostatnie: int = 3) -> list[str]:
+    """Zwarta lista miejsc na liczby: pozycja, liczba okresów i ostatnie okresy (bez faktów odrzuconych)."""
+    fakty = json.loads((katalog / "fakty.json").read_text(encoding="utf-8"))["fakty"]
+    okresy: dict[str, list[str]] = {}
+    for f in fakty:
+        if f.get("status") == Status.odrzucony.value:
+            continue
+        pozycja, okres = f["id"].split(".", 1)
+        okresy.setdefault(pozycja, []).append(okres)
+    wynik = [f"Tabele: {', '.join('{{tabela:' + t + '}}' for t in TABELE)}",
+             f"Wykresy: {', '.join('{{wykres:' + w + '}}' for w in WYKRESY)}",
+             "Fakty: pozycja (liczba okresów): ostatnie okresy → miejsce {{pozycja.okres}}"]
+    for pozycja in sorted(okresy):
+        lista = sorted(set(okresy[pozycja]))
+        wynik.append(f"- {pozycja} ({len(lista)}): {', '.join(lista[-ostatnie:])}")
+    return wynik
 
 
 class BladRaportu(Exception):

@@ -15,10 +15,13 @@ Plan ma 7 kroków (`specyfikacja.md`, część 11).
 | 5 | Bramki stopu | gotowy |
 | 6 | Raport: szablon z miejscami na liczby, lint, PDF | gotowy |
 | 7 | SKILL.md i pełne przebiegi na spółkach testowych | gotowy: skill, pełne raporty MSFT, DNP i PKO, stopy PBG i DPLS |
+| 8 | Podział pracy między modele: subagenci, fragmenty do bramek, lista miejsc na liczby (`specyfikacja.md`, punkt 3.7) | gotowy w kodzie; pierwszy przebieg na nowej spółce sprawdzi koszt i jakość |
 
 ## Skill
 
-Skill „analiza-spolki” jest w `.claude/skills/analiza-spolki/` (SKILL.md i pliki referencyjne). Działa w sesjach Claude Code otwartych na tym repozytorium. Polecenie dla modelu do pracy z dokumentami: `python -m silnik.dokumenty` (pobieranie do archiwum, wklejka, tekst do cytatów).
+Skill „analiza-spolki” jest w `.claude/skills/analiza-spolki/` (SKILL.md i pliki referencyjne). Działa w sesjach Claude Code otwartych na tym repozytorium. Polecenie dla modelu do pracy z dokumentami: `python -m silnik.dokumenty` (pobieranie do archiwum, wklejka, tekst do cytatów, fragmenty do bramek).
+
+Skill zleca czytanie dokumentów subagentom z `.claude/agents/` na tańszych modelach: `fakty-z-pdf`, `dowody-bramek`, `badacz-biznesu`, `zasady-wlasciciela`, `wiadomosci` i `recenzent`. Wątek główny rozstrzyga bramki i pisze tezę, scenariusze i raport. Podział i jego uzasadnienie: `specyfikacja.md`, punkt 3.7.
 
 | Spółka testowa | Ścieżka | Wynik |
 |---|---|---|
@@ -152,7 +155,10 @@ Przypadki testowe w `analizy/`: PBG (Lista Alertów → STOP na etapie 0) i Dark
 
 ```bash
 python -m silnik.raport analizy/<TICKER>/<data>
+python -m silnik.raport analizy/<TICKER>/<data> --miejsca
 ```
+
+Drugie polecenie wypisuje zwartą listę miejsc na liczby: tabele, wykresy i dla każdej pozycji rejestru liczbę okresów oraz trzy ostatnie okresy.
 
 - **STOP z bramek:** krótki PDF ze `stop.md` i tabelą wszystkich bramek.
 - **Inaczej:** model pisze `raport.md` z miejscami na liczby; silnik sprawdza tekst (lint), wstawia wartości z rejestru z przypisami źródeł, dokłada tabele i wykresy generowane przez kod i buduje `raport.pdf` (oraz `raport_wyrenderowany.md` do wglądu).

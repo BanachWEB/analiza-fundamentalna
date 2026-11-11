@@ -1,0 +1,38 @@
+# Wzorce, po których `python -m silnik.dokumenty fragmenty-bramek D` wyciąga fragmenty dokumentów
+# do bramek modelu (lista bramek: konfiguracja/bramki.yaml, sekcja bramki_modelu).
+# Wzorce to wyrażenia regularne bez rozróżniania wielkości liter, po angielsku i po polsku.
+# Plik nie zmienia progów ani decyzji bramek: tylko wskazuje fragmenty, które model ocenia.
+
+B1.opinia_bieglego:
+  - "present fairly, in all material respects"
+  - "adverse opinion|disclaimer of opinion|qualified opinion"
+  - "przedstawia rzetelny i jasny obraz"
+  - "opini[ia] (z zastrzeżeniem|negatywn)|odmow\\w* wyrażenia opinii"
+B1.slabosc_kontroli:
+  - "material weakness"
+  - "internal control over financial reporting (was|is) (not )?effective"
+  - "istotn\\w* słaboś\\w* kontroli"
+B1.nt_ksiegowe:
+  - "notification of late filing|Form 12b-25|NT 10-[KQ]"
+  - "przesunięci\\w* terminu publikacji raportu"
+B1.sankcja_regulatora:
+  - "cease-and-desist|Wells notice|SEC (enforcement|investigation)|civil penalt"
+  - "Komisj\\w* Nadzoru Finansowego.{0,80}(kar|sankcj)"
+B2.rozwodnienie_szkodliwe:
+  - "at-the-market (offering|program)|registered direct offering|private placement"
+  - "bez prawa poboru|wyłączeni\\w* prawa poboru|emisj\\w* akcji serii"
+B3.kontynuacja:
+  - "substantial doubt|going concern"
+  - "kontynuacj\\w* działalności"
+B4.akcjonariusz_90:
+  - "percent of class|beneficial owner"
+  - "ogóln\\w* liczb\\w* głosów|struktur\\w* akcjonariatu|akcjonariusz\\w* posiadając\\w*"
+B4.podmioty_powiazane:
+  - "related.person transactions?|related.party transactions?"
+  - "transakcj\\w* z podmiotami powiązanymi"
+B4.insiderzy:
+  - "10b5-1"
+  - "explanation of responses"
+B5.decyzja_organu:
+  - "consent decree|settlement agreement|Department of (Justice|Commerce)|export control"
+  - "decyzj\\w* (prezesa )?UOKiK|cofnięci\\w* (koncesji|licencji|zezwolenia)"

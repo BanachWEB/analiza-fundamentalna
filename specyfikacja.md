@@ -124,6 +124,28 @@ Konflikty i fakty z jednego źródła trafiają do ramki „Jakość danych” w
 - Oceny jakościowe weryfikuje tylko recenzent, a nie kod.
 - Skany PDF bez warstwy tekstowej skill oznacza jako „brak danych”, a nie odczytuje na siłę.
 
+### 3.7. Podział pracy między modele
+
+Wątek główny skilla działa na najlepszym modelu, a pracę, która wymaga czytania wielu dokumentów, zleca subagentom na tańszych modelach. Subagenci są w `.claude/agents/`. Model, effort i narzędzia każdego z nich ustala nagłówek jego pliku i ten nagłówek jest źródłem prawdy; tabela niżej opisuje decyzję z 11.11.2026.
+
+| Kto | Model / effort | Zadanie |
+|---|---|---|
+| Wątek główny | Opus 5.5 / medium | etap 0, decyzje bramek (w tym każdy STOP), teza, prawdopodobieństwa, scenariusze, raport, zapis |
+| `fakty-z-pdf` | Sonnet 5.5 / low | propozycje faktów z raportów PDF (GPW) |
+| `dowody-bramek` | Sonnet 5.5 / medium | dowody z cytatami do bramek modelu |
+| `badacz-biznesu` | Sonnet 5.5 / medium | fakty o biznesie, konkurencji i zarządzie z cytatami |
+| `zasady-wlasciciela` | Sonnet 5.5 / low | wyciąg z zasad właściciela dotyczących spółki |
+| `recenzent` | Sonnet 5.5 / medium | recenzja raportu na tle archiwum (punkt 3.5) |
+| `wiadomosci` | Haiku 5.5 / low | przyczyny ruchów kursu z linkami, bez liczb |
+
+Zasady podziału:
+- Tańszy model dostaje tylko zadania, których wynik sprawdza kod (test cytatu, tożsamości księgowe, drugie źródło) albo wątek główny (każdy STOP i każda flaga poważna). Oceny i tekst raportu zostają na najlepszym modelu.
+- Subagent zapisuje wynik w pliku w katalogu analizy i oddaje krótkie streszczenie, więc dokumenty źródłowe nie trafiają do kontekstu wątku głównego.
+- Kod wyręcza model w pracy mechanicznej: `python -m silnik.dokumenty fragmenty-bramek` wyciąga fragmenty do bramek, a `python -m silnik.raport D --miejsca` wypisuje miejsca na liczby.
+- Analiza nie rozwija silnika. Braki trafiają do `D/braki-silnika.md` i do osobnej sesji. Wyjątek stanowi błąd, który uniemożliwia decyzję bramki.
+
+Podstawa decyzji (pomiar z 10.11.2026, analiza Seagate na jednym modelu Opus 5.5 / medium): 86 zapytań, 14,75 mln tokenów odczytu z cache, 0,20 mln zapisu do cache i 55,9 tys. tokenów wyjścia, razem 5,67 USD. Każde zapytanie czyta cały kontekst rozmowy od nowa, więc koszt rośnie z liczbą zapytań w wątku głównym. Rozwijanie silnika w trakcie analizy kosztowało około 1,0 USD. Szacunek po podziale pracy: 2,1–2,6 USD za podobną analizę. Szacunek sprawdzimy na pierwszej analizie nowej spółki.
+
 ## 4. Etapy i bramki stopu
 
 Skill pracuje w kolejności „najtańsze rozstrzygające sprawdzenia najpierw”. Stop zawsze wskazuje fakt albo dokument z archiwum.
@@ -204,6 +226,7 @@ analiza-fundamentalna/
 ├── .claude/skills/analiza-spolki/
 │   ├── SKILL.md                  # etapy, bramki, lista kontrolna (< 500 linii)
 │   └── references/               # etapy-i-flagi.md, rynki.md, wycena.md, sektory.md, trela.md, pdf.md
+├── .claude/agents/               # subagenci skilla na tańszych modelach (punkt 3.7)
 ├── silnik/                       # pakiet Python
 │   ├── pobieranie/               # sec.py, esef.py, pdf.py, wklejka.py, archiwum.py
 │   ├── fakty/                    # schemat.py, rejestr.py, weryfikacja.py

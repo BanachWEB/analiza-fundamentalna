@@ -28,7 +28,10 @@ python -m silnik.dokumenty tekst   D doc-012 --strona 47
 python -m silnik.dokumenty tekst   D doc-012 --szukaj "Przychody ze sprzedaży"
 python -m silnik.dokumenty wklejka D wklejka.txt --zrodlo InvestingPro --opis "konsensus"
 python -m silnik.dokumenty lista   D
+python -m silnik.dokumenty fragmenty-bramek D
 ```
+
+`fragmenty-bramek` zapisuje `D/fragmenty_bramek.md`: fragmenty wszystkich dokumentów archiwum, które pasują do wzorców bramek modelu (`konfiguracja/fragmenty-bramek.yaml`). Z fragmentów wolno cytować, bo pochodzą z tego samego tekstu co polecenie `tekst`.
 
 Typy dokumentów: `10-K`, `10-Q`, `8-K`, `raport_pdf`, `espi`, `strona`, `wklejka`, `inny`. Dla stron SEC w HTML (10-K) użyj `--typ 10-K`. Cytuj wyłącznie z wyjścia polecenia `tekst`: to ten sam tekst, w którym silnik szuka cytatu.
 

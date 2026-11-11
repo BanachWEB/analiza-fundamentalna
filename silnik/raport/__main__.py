@@ -1,4 +1,5 @@
 """Budowa PDF: python -m silnik.raport analizy/<TICKER>/<data>
+Lista miejsc na liczby: python -m silnik.raport analizy/<TICKER>/<data> --miejsca
 
 - decyzja bramek STOP → krótki PDF ze stop.md i tabelą bramek;
 - inaczej → raport.md od modelu: lint (żadnych liczb poza miejscami), renderowanie, PDF.
@@ -10,7 +11,7 @@ import sys
 from pathlib import Path
 
 from .pdf import zbuduj
-from .render import BladRaportu, bramki_tabela, renderuj
+from .render import BladRaportu, bramki_tabela, miejsca, renderuj
 
 
 def main(katalog: Path) -> int:
@@ -40,4 +41,7 @@ def main(katalog: Path) -> int:
 
 
 if __name__ == "__main__":
+    if "--miejsca" in sys.argv[2:]:
+        print("\n".join(miejsca(Path(sys.argv[1]))))
+        sys.exit(0)
     sys.exit(main(Path(sys.argv[1])))
