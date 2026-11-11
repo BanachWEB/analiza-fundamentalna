@@ -146,7 +146,8 @@ def pozycje_przestarzale(rejestr: RejestrFaktow) -> list[str]:
     """Pozycje okresowe, których ostatni rok obrotowy jest starszy niż ostatni rok w rejestrze."""
     ostatni: dict[str, date] = {}
     for f in rejestr.fakty():
-        if f.rodzaj.value == "raportowany" and f.okres.typ.value == "FY":
+        # fakty odczytane przez model (notatki, wklejki) nie mają znacznika XBRL do sprawdzenia
+        if f.rodzaj.value == "raportowany" and f.okres.typ.value == "FY" and f.metoda.value not in ("model", "wklejka"):
             if f.pozycja not in ostatni or f.okres.koniec > ostatni[f.pozycja]:
                 ostatni[f.pozycja] = f.okres.koniec
     if not ostatni:
@@ -185,7 +186,9 @@ def podsumowanie_md(rejestr: RejestrFaktow, raport: Raport) -> str:
     linie.append(
         "Spółka mogła zmienić znacznik XBRL; sprawdź mapowanie: " + ", ".join(przestarzale) if przestarzale else "Brak."
     )
-    uzup = sorted({f.okres.koniec.year for f in rejestr.fakty() if f.metoda.value == "parser_strony"})
+    # tylko fakty raportowane: prognoza z serwisu (np. konsensus przychodów) nie uzupełnia lat sprawozdań
+    uzup = sorted({f.okres.koniec.year for f in rejestr.fakty()
+                   if f.metoda.value == "parser_strony" and f.rodzaj.value == "raportowany"})
     linie += ["", "## Lata uzupełnione z serwisu danych (bez raportu spółki w archiwum)", ""]
     linie.append(", ".join(str(r) for r in uzup) if uzup else "Brak.")
     zmiany = [f.id for f in rejestr.fakty() if any(c.startswith("zmiana_wersji") for c in f.kontrole)]

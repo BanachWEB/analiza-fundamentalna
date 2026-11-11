@@ -280,3 +280,33 @@ def test_konsensus_przychodow_i_c_s():
     w = wycena.oblicz(k, None, "USA")
     assert r[w["c_s_konsensus"]].wartosc == pytest.approx(200_000_000 / 137_782_330)
     assert "przychody_konsensus.2027-06-30" in r[w["c_s_konsensus"]].wejscia
+
+
+def test_weryfikacja_pomija_prognozy_i_fakty_modelu():
+    from silnik.fakty.weryfikacja import Raport, podsumowanie_md, pozycje_przestarzale
+
+    r = RejestrFaktow("X", D)
+    r.dodaj(FY("przychody.FY2026", 100, 2026))
+    r.dodaj(Fakt(id="przychody_konsensus.2027-06-30", rodzaj="prognoza", pozycja="przychody_konsensus",
+                 okres={"typ": "FY", "koniec": date(2027, 6, 30)}, wartosc=120, jednostka="pieniadz", waluta="USD",
+                 metoda="parser_strony", status="jedno_zrodlo", dokument="doc-001", dostawca="S&P Global",
+                 data_prognozy=D, liczba_analitykow=6))
+    r.dodaj(Fakt(id="pracownicy_segment.FY2025", rodzaj="raportowany", pozycja="pracownicy_segment",
+                 okres={"typ": "FY", "koniec": date(2025, 6, 30)}, wartosc=40, jednostka="liczba", metoda="model",
+                 status="jedno_zrodlo", dokument="doc-001", cytat="40 employees"))
+    assert pozycje_przestarzale(r) == []
+    md = podsumowanie_md(r, Raport())
+    assert md.split("## Lata uzupełnione z serwisu danych (bez raportu spółki w archiwum)\n\n")[1].startswith("Brak.")
+
+
+def test_karta_nie_bierze_wskaznika_z_nieaktualnego_roku():
+    from silnik.obliczenia import karta_treli
+
+    r = RejestrFaktow("X", D)
+    for rok in (2023, 2026):
+        r.dodaj(FY(f"przychody.FY{rok}", 100, rok))
+    r.dodaj(FY("dlug_netto_do_ebitda.FY2023", 6.37, 2023, "mnoznik"))
+    k = Kalkulator(r)
+    assert karta_treli._ostatnia(k, "dlug_netto_do_ebitda", "TTM2026-09-30") is None
+    r.dodaj(FY("dlug_netto_do_ebitda.FY2026", 1.0, 2026, "mnoznik"))
+    assert karta_treli._ostatnia(k, "dlug_netto_do_ebitda", "TTM2026-09-30").id == "dlug_netto_do_ebitda.FY2026"

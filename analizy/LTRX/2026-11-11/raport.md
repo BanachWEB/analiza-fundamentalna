@@ -4,7 +4,7 @@ Data analizy: 11.11.2026. Rynek: USA. Instrument w XTB: LTRX.US. Decyzja bramek:
 
 ## TL;DR
 
-> Lantronix projektuje moduły obliczeniowe, bramki i konsole do zdalnego zarządzania urządzeniami. Produkcję zleca podwykonawcom, a nowym motorem przychodów są moduły do dronów zgodne z wymogami armii USA. Spółka nie miała zysku netto w żadnym z pięciu ostatnich lat obrotowych. W połowie 2026 r. zebrała kapitał z emisji akcji, a w pierwszym kwartale FY2027 jej przepływy operacyjne były ujemne. Moim zdaniem przy kursie {{kurs.2026-11-10}} cena zakłada wyraźnie lepszą rentowność niż ta, którą spółka kiedykolwiek osiągała. Moje scenariusze dają wartość oczekiwaną {{wartosc_oczekiwana_na_akcje.2026-11-10}} na akcję i prawdopodobieństwo straty {{prawdopodobienstwo_straty.2026-11-10}}. Silnik nie dolicza do tych wartości gotówki netto. Moim zdaniem największe ryzyko to kolejna emisja akcji przy trwałej stracie operacyjnej. Wg twoich zasad: spółka spełnia warunek pokrycia analitycznego i nie podlega pauzie po rajdzie, ale przed zakupem potrzebuje karty spółki w `spolki/LTRX.md`.
+> Lantronix projektuje moduły obliczeniowe, bramki i konsole do zdalnego zarządzania urządzeniami. Produkcję zleca podwykonawcom, a nowym motorem przychodów są moduły do dronów zgodne z wymogami armii USA. Spółka nie miała zysku netto w żadnym z pięciu ostatnich lat obrotowych. W połowie 2026 r. zebrała kapitał z emisji akcji, a w pierwszym kwartale FY2027 jej przepływy operacyjne były ujemne. Moim zdaniem przy kursie {{kurs.2026-11-10}} cena zakłada wyraźnie lepszą rentowność niż ta, którą spółka kiedykolwiek osiągała. Moje scenariusze dają wartość oczekiwaną {{wartosc_oczekiwana_na_akcje.2026-11-10}} na akcję i prawdopodobieństwo straty {{prawdopodobienstwo_straty.2026-11-10}}. Wartości scenariuszy obejmują gotówkę netto spółki. Moim zdaniem największe ryzyko to kolejna emisja akcji przy trwałej stracie operacyjnej. Wg twoich zasad: spółka spełnia warunek pokrycia analitycznego i nie podlega pauzie po rajdzie, ale przed zakupem potrzebuje karty spółki w `spolki/LTRX.md`.
 
 - Przewaga konkurencyjna (moja ocena): brak, trend niepewny.
 - Wycena: kapitalizacja {{kapitalizacja.2026-11-10}}, C/Z nie ma sensu przy stracie netto, FCF yield {{fcf_yield.2026-11-10}}.
@@ -39,7 +39,7 @@ Przychody zależą od kilku odbiorców. Pięciu największych klientów dało {{
 ## 3. Najważniejsze fakty (akcjonariat, zarząd, płynność, kalendarz)
 
 - Największy akcjonariusz, Needham Investment Management, ma {{udzial_needham_im.2026-09-08}} akcji spółki (`doc-022`). Zarząd i rada mają razem {{udzial_zarzadu_i_rady_w_akcjach.2026-09-08}} akcji (`doc-022`). Moim zdaniem akcjonariat jest rozproszony.
-- Spółka miała {{akcje_okladka_10q.2026-10-30}} akcji na 30.10.2026 wobec {{akcje_wyemitowane_bilans.2025-06-30}} na 30.06.2025 (`doc-016`, `doc-015`).
+- Spółka miała {{akcje_okladka_10q.2026-10-30}} na 30.10.2026 wobec {{akcje_wyemitowane_bilans.2025-06-30}} na 30.06.2025 (`doc-016`, `doc-015`).
 - Prezesem jest Saleel Awsare, od listopada 2023 r. (`doc-015`).
 - Kapitalizacja wynosi {{kapitalizacja.2026-11-10}}, a średnie dzienne obroty z ostatnich sześćdziesięciu sesji wynoszą {{obroty_dzienne_60s.2026-11-10}}.
 - Gotówka i krótkoterminowe papiery wartościowe wyniosły {{gotowka_i_papiery_wartosciowe.2026-09-30}} na 30.09.2026 (`doc-018`). Dług netto wyniósł {{dlug_netto.2026-09-30}}, czyli spółka ma gotówkę netto.
@@ -69,9 +69,9 @@ Premia roczna zależy od przychodów i od zysku na akcję skorygowanego (`doc-02
 
 W dwóch ostatnich prognozach, które mam w archiwum, zarząd trafił w przedział. Przychody pierwszego kwartału FY2027 mieszczą się w prognozie od {{prognoza_zarzadu_przychody_dolna.FY2027Q1}} do {{prognoza_zarzadu_przychody_gorna.FY2027Q1}} (`doc-019`, `doc-017`). Przychody z systemów bezzałogowych w FY2026 też trafiły w prognozę (`doc-019`). Starszych prognoz nie sprawdziłem.
 
-Źródła gotówki w FY2026 to głównie emisje akcji. Spółka sprzedała w maju 2026 r. {{liczba_akcji_emisja_2026_05_29.2026-05-29}} akcji w ofercie publicznej i {{liczba_akcji_atm.FY2026}} akcji w programie sprzedaży na rynku (`doc-015`). Łączne wpływy netto z emisji wyniosły {{wplywy_netto_emisje_akcji.FY2026}} (`doc-015`). W FY2026 spółka spłaciła raty dawnego kredytu terminowego (`doc-015`). Po końcu roku obrotowego zaciągnęła jednak nowy kredyt i miała {{dlug_brutto_nowy_kredyt.2026-09-30}} długu na 30.09.2026 (`doc-016`). Spółka kupiła Nero Global Tracking za około {{cena_przejecia_nero.2026-08-01}} (`doc-015`). Spółka nigdy nie wypłaciła dywidendy i nie skupowała akcji w FY2026 (`doc-015`).
+Źródła gotówki w FY2026 to głównie emisje akcji. Spółka sprzedała w maju 2026 r. {{liczba_akcji_emisja_2026_05_29.2026-05-29}} w ofercie publicznej i {{liczba_akcji_atm.FY2026}} w programie sprzedaży na rynku (`doc-015`). Łączne wpływy netto z emisji wyniosły {{wplywy_netto_emisje_akcji.FY2026}} (`doc-015`). W FY2026 spółka spłaciła raty dawnego kredytu terminowego (`doc-015`). Po końcu roku obrotowego zaciągnęła jednak nowy kredyt i miała {{dlug_brutto_nowy_kredyt.2026-09-30}} długu na 30.09.2026 (`doc-016`). Spółka kupiła Nero Global Tracking za około {{cena_przejecia_nero.2026-08-01}} (`doc-015`). Spółka nigdy nie wypłaciła dywidendy i nie skupowała akcji w FY2026 (`doc-015`).
 
-Walne zgromadzenie z 3.11.2026 zwiększyło pulę planu motywacyjnego o {{pula_planu_motywacyjnego_zwiekszenie.2026-11-03}} akcji (`doc-020`). Moim zdaniem zarząd alokuje kapitał w sposób typowy dla małej spółki wzrostowej: emituje akcje i kupuje małe firmy. Moim zdaniem taki sposób działa tylko wtedy, gdy przejęcia szybko dają dodatni FCF.
+Walne zgromadzenie z 3.11.2026 zwiększyło pulę planu motywacyjnego o {{pula_planu_motywacyjnego_zwiekszenie.2026-11-03}} (`doc-020`). Moim zdaniem zarząd alokuje kapitał w sposób typowy dla małej spółki wzrostowej: emituje akcje i kupuje małe firmy. Moim zdaniem taki sposób działa tylko wtedy, gdy przejęcia szybko dają dodatni FCF.
 
 ## 6. Sprawozdania finansowe
 
@@ -89,19 +89,19 @@ Walne zgromadzenie z 3.11.2026 zwiększyło pulę planu motywacyjnego o {{pula_p
 
 **Jakość zysków.** FCF dla właścicieli (po koszcie wynagrodzeń w akcjach) wyniósł {{fcf_wlascicieli.FY2026}} w FY2026 i {{fcf_wlascicieli.TTM2026-09-30}} TTM. Przepływy operacyjne w pierwszym kwartale FY2027 były ujemne i wyniosły {{przeplywy_operacyjne.FY2027Q1}}. Zarząd tłumaczy to zakupami modułów i pamięci na zapas: zapasy netto wzrosły z {{zapasy_netto_przyblizone.2026-06-30}} do {{zapasy_netto_przyblizone.2026-09-30}} (`doc-018`).
 
-**Zadłużenie.** Spółka ma gotówkę netto: dług netto na 30.09.2026 wyniósł {{dlug_netto.2026-09-30}}. Wskaźnik dług netto ÷ EBITDA w panelu nie ma sensu, bo zarówno dług netto, jak i EBITDA są ujemne. Nowa umowa kredytowa zastawia praktycznie wszystkie aktywa spółki (`doc-015`, `doc-016`).
+**Zadłużenie.** Spółka ma gotówkę netto: dług netto na 30.09.2026 wyniósł {{dlug_netto.2026-09-30}}. Panel pokazuje w wierszu dług netto ÷ EBITDA opis „gotówka netto”. Sam wskaźnik nie ma sensu, bo EBITDA jest ujemna. Nowa umowa kredytowa zastawia praktycznie wszystkie aktywa spółki (`doc-015`, `doc-016`).
 
-**Rozwodnienie.** Panel pokazuje zmianę średniej liczby akcji r/r o {{zmiana_liczby_akcji.FY2026}} w FY2026. Moim zdaniem ta miara zaniża skalę rozwodnienia, bo emisje przypadły na koniec roku obrotowego. Liczba akcji na koniec okresu wzrosła z {{akcje_wyemitowane_bilans.2025-06-30}} do {{akcje_okladka_10q.2026-10-30}} (`doc-015`, `doc-016`).
+**Rozwodnienie.** Średnia ważona liczba akcji rozwodnionych wzrosła r/r o {{zmiana_liczby_akcji.FY2026}} w FY2026. Liczba akcji na koniec roku obrotowego wzrosła r/r o {{zmiana_liczby_akcji_koniec.FY2026}}. Średnia zaniża skalę rozwodnienia, bo emisje przypadły na koniec roku obrotowego. Na 30.10.2026 spółka miała {{akcje_okladka_10q.2026-10-30}} wobec {{akcje_wyemitowane_bilans.2025-06-30}} na 30.06.2025 (`doc-015`, `doc-016`).
 
 ## 7. Jakość zysków i czerwone flagi
 
 {{tabela:bramki}}
 
-Bramki nie znalazły twardej flagi. Biegły (Baker Tilly) wydał opinię bez zastrzeżeń, a zarząd i biegły stwierdzają skuteczną kontrolę wewnętrzną na 30.06.2026 (`doc-015`). Flaga „material weakness” pochodzi z ogólnego opisu zakresu badania.
+Bramki nie znalazły twardej flagi. Silnik oznaczył jednak seryjne rozwodnienie jako flagę poważną: liczba akcji rosła o ponad dziesięć procent r/r w trzech z pięciu ostatnich lat obrotowych (FY2022, FY2023 i FY2026). Biegły (Baker Tilly) wydał opinię bez zastrzeżeń, a zarząd i biegły stwierdzają skuteczną kontrolę wewnętrzną na 30.06.2026 (`doc-015`). Flaga „material weakness” pochodzi z ogólnego opisu zakresu badania.
 
 Trzy flagi wymagają uwagi:
 
-1. **Rozwodnienie.** Spółka wyemitowała akcje dwa razy w ciągu miesiąca, w tym w ofercie publicznej z dyskontem do kursu (`doc-025`, `doc-026`). Moim zdaniem to nie jest szkoda dla mniejszości, bo oferta była publiczna i bez warrantów. Spółka ma jednak aktywną półkę rejestracyjną i niewykorzystaną część programu sprzedaży akcji na rynku (`doc-015`).
+1. **Rozwodnienie.** W FY2026 liczba akcji na koniec roku wzrosła r/r o {{zmiana_liczby_akcji_koniec.FY2026}}. Spółka wyemitowała akcje dwa razy w ciągu miesiąca, w tym w ofercie publicznej z dyskontem do kursu (`doc-025`, `doc-026`). Moim zdaniem to nie jest szkoda dla mniejszości, bo oferta była publiczna i bez warrantów. Spółka ma jednak aktywną półkę rejestracyjną i niewykorzystaną część programu sprzedaży akcji na rynku (`doc-015`).
 2. **Sprzedaż przez insidera.** Dyrektor ds. produktu i strategii Mathi Gurusamy sprzedał akcje na rynku 13.03.2026, a zawiadomienie nie wskazuje planu sprzedaży ustalonego z góry (`doc-060`). To jedyna sprzedaż na rynku w przejrzanych zawiadomieniach z 2026 r. Prezes kupił akcje na rynku 9.09.2026 (`doc-036`).
 3. **Kluczowa sprawa badania.** Biegły wskazał rezerwę na zapasy nadmiarowe i przestarzałe (`doc-015`). Moim zdaniem ta sprawa ma znaczenie, bo spółka w pierwszym kwartale FY2027 świadomie zwiększyła zapasy.
 
@@ -119,7 +119,9 @@ Konsensus: {{liczba_analitykow.2026-11-11}} analityków (S&P Global, przez Stock
 
 Trzy liczby obok siebie: cena przy wzroście historycznym zakłada marżę FCF {{implikowana_marza_fcf.2026-11-10}}. Konsensus zakłada szybki wzrost EPS skorygowanego. Mój scenariusz bazowy zakłada wzrost przychodów {{scenariusz_wzrost_przychodow.bazowy}} rocznie i marżę FCF {{scenariusz_marza_fcf.bazowy}}.
 
-**Ważne zastrzeżenie.** Silnik liczy wartość scenariuszy z przepływów i nie dodaje gotówki netto ({{dlug_netto.2026-09-30}} długu netto, czyli gotówka netto). Gotówka netto podniosłaby wartość każdego scenariusza, a prawdopodobieństwo straty może być przez to zawyżone. Ten brak jest opisany w `braki-silnika.md`; poprawioną wartość policzy silnik po uzupełnieniu kodu.
+**Gotówka netto w scenariuszach.** Silnik liczy wartość kapitału w scenariuszach jako wartość przepływów minus dług netto ({{dlug_netto.2026-09-30}}), więc gotówka netto podnosi wartość każdego scenariusza. Mimo to wartość oczekiwana ({{wartosc_oczekiwana_na_akcje.2026-11-10}}) jest niższa od kursu, a prawdopodobieństwo straty wynosi {{prawdopodobienstwo_straty.2026-11-10}}.
+
+Cena ÷ sprzedaż na rok obrotowy do 30.06.2027 wynosi {{c_s_konsensus.2026-11-10}}. Silnik dzieli kapitalizację przez konsensus przychodów {{przychody_konsensus.2027-06-30}} (S&P Global, przez Stock Analysis). To informacja, a nie bramka.
 
 ## 9. Teza, antytezy, pre-mortem
 
@@ -195,7 +197,7 @@ Wg twoich zasad: LTRX trafia do koszyka „Akcje zagraniczne” w portfelu Agres
 
 {{tabela:jakosc_danych}}
 
-Silnik wykrył dwa problemy z danymi. Spółka oznacza znacznikiem XBRL dla kosztu sprzedaży tylko drobną pozycję, więc tożsamość „przychody − koszt sprzedaży = zysk brutto” nie przechodzi. Przychody i zysk brutto są poprawne, więc marża brutto też. Zysk operacyjny z drugiego źródła (S&P Global przez Stock Analysis) różni się od danych spółki. Raport używa danych spółki z XBRL.
+Spółka oznacza znacznikiem XBRL `CostOfRevenue` tylko drobną pozycję, a pełny koszt sprzedaży podaje pod znacznikiem `CostOfGoodsAndServicesSold`. Silnik bierze koszt sprzedaży ze znacznika, który spełnia tożsamość „przychody − koszt sprzedaży = zysk brutto”, więc tożsamość przechodzi we wszystkich okresach. Koszt sprzedaży FY2026 wyniósł {{koszt_sprzedazy.FY2026}}. Zysk operacyjny z drugiego źródła (S&P Global przez Stock Analysis) różni się od danych spółki. Raport używa danych spółki z XBRL.
 
 Czego nie sprawdziłem: nazw konkurentów i wielkości rynku, nazwy Klienta A, marży brutto modułów do dronów, wartości zamówień rządowych, daty kolejnych wyników, dostępności akcji w IKE.
 
@@ -217,7 +219,7 @@ Tropy z materiałów od ciebie (InvestingPro `doc-028`, zrzut ekranu `doc-029`):
 - `T14`, zawiadomienie prezesa z listopada 2026 r.: potwierdzony. Zawiadomienie nie pokazuje sprzedaży na rynku (`doc-035`).
 - `T15`, zmiana w radzie: potwierdzony (`doc-022`, `doc-020`).
 - `T16`, wartość godziwa i oceny kondycji InvestingPro: nie wchodzą do raportu, bo nie mają jawnej metody.
-- `T17`, cena docelowa na zrzucie ekranu: różni się od średniej z drugiego źródła ({{cena_docelowa_srednia.2026-11-11}}). Wskaźnika cena ÷ sprzedaż na rok naprzód silnik nie liczy, więc tej części tropu nie sprawdziłem.
-- `T18`, RSI blisko strefy wyprzedania: niesprawdzony, bo silnik nie liczy RSI.
+- `T17`, cena docelowa na zrzucie ekranu: różni się od średniej z drugiego źródła ({{cena_docelowa_srednia.2026-11-11}}). Cena ÷ sprzedaż na rok obrotowy do 30.06.2027 wynosi według silnika {{c_s_konsensus.2026-11-10}}.
+- `T18`, RSI blisko strefy wyprzedania: potwierdzony. RSI z czternastu sesji na 10.11.2026 wynosi {{rsi_14.2026-11-10}}, czyli leży tuż nad umownym progiem wyprzedania.
 
 Przychody TTM ze zrzutu ekranu zgadzają się z danymi silnika ({{przychody.TTM2026-09-30}}).

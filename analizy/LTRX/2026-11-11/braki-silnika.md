@@ -8,3 +8,7 @@
 6. **Test cytatu odrzuca liczbę z zerem końcowym.** Cena emisji „$7.20” nie przeszła testu cytatu jako wartość 7.2 (zgłosił badacz biznesu). Propozycja: normalizacja zer końcowych w `silnik/fakty/cytat.py`.
 7. **Brak RSI i wskaźnika cena ÷ sprzedaż na rok naprzód** (tropy T17, T18 ze zrzutu ekranu). Propozycja: dodać do `silnik/obliczenia/` jako informację, nie bramkę.
 8. **Schemat przyjmuje skalę „tys” dla ułamka i liczby.** Badacz biznesu przepisał skalę z nagłówka tabeli („USD tys.”) do udziałów procentowych i liczby pracowników; silnik przyjął je i raport pokazał np. „44 300,0%”. Poprawiłem propozycje (skala „jedn”). Propozycja: walidacja w `silnik/fakty/schemat.py` odrzuca skalę inną niż „jedn” dla jednostek `ulamek` i `liczba`.
+
+## Stan po poprawkach (11.11.2026)
+
+Silnik ma poprawki punktów 1, 2 i 4–8, a punkt 3 poprawiłem w trakcie analizy. Analizę przeliczyłem poprawionym silnikiem na tych samych dokumentach źródłowych (sumy SHA-256 zgodne z `dokumenty.json`). Wyjątki: RSI pochodzi z nowego pliku notowań Yahoo, obciętego do sesji 10.11.2026, a bramka „substantial doubt” wyszukała raporty w EDGAR ponownie. Raport i PDF są wygenerowane od nowa.

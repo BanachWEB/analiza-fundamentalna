@@ -3,6 +3,246 @@
   "data_analizy": "2026-11-11",
   "fakty": [
     {
+      "id": "akcje_koniec_okresu.2015-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_koniec_okresu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2015-06-30"
+      },
+      "wartosc": 15089720.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CommonStockSharesOutstanding",
+        "accn": "0001019687-16-007351",
+        "forma": "10-K",
+        "zlozono": "2016-08-24"
+      }
+    },
+    {
+      "id": "akcje_koniec_okresu.2016-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_koniec_okresu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2016-06-30"
+      },
+      "wartosc": 17253799.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CommonStockSharesOutstanding",
+        "accn": "0001683168-17-002211",
+        "forma": "10-K",
+        "zlozono": "2017-08-24"
+      }
+    },
+    {
+      "id": "akcje_koniec_okresu.2017-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_koniec_okresu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2017-06-30"
+      },
+      "wartosc": 17808696.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CommonStockSharesOutstanding",
+        "accn": "0001683168-18-002477",
+        "forma": "10-K",
+        "zlozono": "2018-08-23"
+      }
+    },
+    {
+      "id": "akcje_koniec_okresu.2018-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_koniec_okresu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2018-06-30"
+      },
+      "wartosc": 18908196.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CommonStockSharesOutstanding",
+        "accn": "0001683168-19-002888",
+        "forma": "10-K",
+        "zlozono": "2019-09-11"
+      }
+    },
+    {
+      "id": "akcje_koniec_okresu.2019-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_koniec_okresu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2019-06-30"
+      },
+      "wartosc": 22811743.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CommonStockSharesOutstanding",
+        "accn": "0001683168-20-003098",
+        "forma": "10-K",
+        "zlozono": "2020-09-11"
+      }
+    },
+    {
+      "id": "akcje_koniec_okresu.2020-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_koniec_okresu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2020-06-30"
+      },
+      "wartosc": 28231054.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CommonStockSharesOutstanding",
+        "accn": "0001683168-21-003966",
+        "forma": "10-K",
+        "zlozono": "2021-08-27"
+      }
+    },
+    {
+      "id": "akcje_koniec_okresu.2021-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_koniec_okresu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2021-06-30"
+      },
+      "wartosc": 29087714.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CommonStockSharesOutstanding",
+        "accn": "0001683168-22-006109",
+        "forma": "10-K",
+        "zlozono": "2022-08-29"
+      }
+    },
+    {
+      "id": "akcje_koniec_okresu.2022-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_koniec_okresu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2022-06-30"
+      },
+      "wartosc": 35129301.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CommonStockSharesOutstanding",
+        "accn": "0001683168-23-006386",
+        "forma": "10-K",
+        "zlozono": "2023-09-12"
+      }
+    },
+    {
+      "id": "akcje_koniec_okresu.2023-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_koniec_okresu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2023-06-30"
+      },
+      "wartosc": 36875586.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CommonStockSharesOutstanding",
+        "accn": "0001683168-24-006264",
+        "forma": "10-K",
+        "zlozono": "2024-09-09"
+      }
+    },
+    {
+      "id": "akcje_koniec_okresu.2024-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_koniec_okresu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2024-06-30"
+      },
+      "wartosc": 37872883.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CommonStockSharesOutstanding",
+        "accn": "0001683168-25-006532",
+        "forma": "10-K",
+        "zlozono": "2025-08-29"
+      }
+    },
+    {
+      "id": "akcje_koniec_okresu.2025-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_koniec_okresu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-06-30"
+      },
+      "wartosc": 39102563.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CommonStockSharesOutstanding",
+        "accn": "0001683168-26-006754",
+        "forma": "10-K",
+        "zlozono": "2026-08-27"
+      }
+    },
+    {
+      "id": "akcje_koniec_okresu.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_koniec_okresu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 46594283.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CommonStockSharesOutstanding",
+        "accn": "0001683168-26-006754",
+        "forma": "10-K",
+        "zlozono": "2026-08-27"
+      }
+    },
+    {
       "id": "akcje_okladka_10q.2026-10-30",
       "rodzaj": "raportowany",
       "pozycja": "akcje_okladka_10q",
@@ -4075,10 +4315,10 @@
         "typ": "dzien",
         "koniec": "2026-11-10"
       },
-      "wartosc": 0.36671852917007963,
+      "wartosc": 0.8073972088625759,
       "jednostka": "mnoznik",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "asymetria",
       "wejscia": [
         "scenariusz_prawdopodobienstwo.byk",
@@ -5100,7 +5340,7 @@
       "wartosc": -2.9123715145766242,
       "jednostka": "punkty",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "Beneish M-score, model 8-zmiennowy (1999); próg −1,78",
       "wejscia": [
         "naleznosci_handlowe.2026-06-30",
@@ -5139,6 +5379,24 @@
       "metoda": "kod",
       "status": "jedno_zrodlo",
       "uzasadnienie": "Beta = 1 (rynek jako całość): brak wiarygodnej bety z własnych danych; do zmiany przez model z uzasadnieniem."
+    },
+    {
+      "id": "c_s_konsensus.2026-11-10",
+      "rodzaj": "wyliczony",
+      "pozycja": "c_s_konsensus",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 1.4957293235081153,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "kapitalizacja / przychody_konsensus.2027-06-30",
+      "wejscia": [
+        "kapitalizacja.2026-11-10",
+        "przychody_konsensus.2027-06-30"
+      ]
     },
     {
       "id": "c_wk.2026-11-10",
@@ -5246,7 +5504,7 @@
       "wartosc": 0.30902151106361364,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "(przychody.FY2024 / przychody.FY2021)^(1/3) - 1",
       "wejscia": [
         "przychody.FY2024",
@@ -5265,7 +5523,7 @@
       "wartosc": -0.017615970013242443,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "(przychody.FY2025 / przychody.FY2022)^(1/3) - 1",
       "wejscia": [
         "przychody.FY2025",
@@ -5284,7 +5542,7 @@
       "wartosc": -0.0268605120273,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "(przychody.FY2026 / przychody.FY2023)^(1/3) - 1",
       "wejscia": [
         "przychody.FY2026",
@@ -5341,7 +5599,7 @@
       "wartosc": 0.278748939941746,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "(przychody.FY2024 / przychody.FY2019)^(1/5) - 1",
       "wejscia": [
         "przychody.FY2024",
@@ -5360,7 +5618,7 @@
       "wartosc": 0.1547106543145249,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "(przychody.FY2025 / przychody.FY2020)^(1/5) - 1",
       "wejscia": [
         "przychody.FY2025",
@@ -5379,7 +5637,7 @@
       "wartosc": 0.11083940841883089,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "(przychody.FY2026 / przychody.FY2021)^(1/5) - 1",
       "wejscia": [
         "przychody.FY2026",
@@ -8777,82 +9035,6 @@
       ]
     },
     {
-      "id": "dlug_netto_do_ebitda.FY2019",
-      "rodzaj": "wyliczony",
-      "pozycja": "dlug_netto_do_ebitda",
-      "okres": {
-        "typ": "FY",
-        "koniec": "2019-06-30",
-        "poczatek": "2018-07-01"
-      },
-      "wartosc": 761.75,
-      "jednostka": "mnoznik",
-      "metoda": "kod",
-      "status": "jedno_zrodlo",
-      "wzor": "dlug_netto / ebitda",
-      "wejscia": [
-        "dlug_netto.2019-06-30",
-        "ebitda.FY2019"
-      ]
-    },
-    {
-      "id": "dlug_netto_do_ebitda.FY2020",
-      "rodzaj": "wyliczony",
-      "pozycja": "dlug_netto_do_ebitda",
-      "okres": {
-        "typ": "FY",
-        "koniec": "2020-06-30",
-        "poczatek": "2019-07-01"
-      },
-      "wartosc": 0.3280744859692228,
-      "jednostka": "mnoznik",
-      "metoda": "kod",
-      "status": "jedno_zrodlo",
-      "wzor": "dlug_netto / ebitda",
-      "wejscia": [
-        "dlug_netto.2020-06-30",
-        "ebitda.FY2020"
-      ]
-    },
-    {
-      "id": "dlug_netto_do_ebitda.FY2021",
-      "rodzaj": "wyliczony",
-      "pozycja": "dlug_netto_do_ebitda",
-      "okres": {
-        "typ": "FY",
-        "koniec": "2021-06-30",
-        "poczatek": "2020-07-01"
-      },
-      "wartosc": 2.4035714285714285,
-      "jednostka": "mnoznik",
-      "metoda": "kod",
-      "status": "jedno_zrodlo",
-      "wzor": "dlug_netto / ebitda",
-      "wejscia": [
-        "dlug_netto.2021-06-30",
-        "ebitda.FY2021"
-      ]
-    },
-    {
-      "id": "dlug_netto_do_ebitda.FY2022",
-      "rodzaj": "wyliczony",
-      "pozycja": "dlug_netto_do_ebitda",
-      "okres": {
-        "typ": "FY",
-        "koniec": "2022-06-30",
-        "poczatek": "2021-07-01"
-      },
-      "wartosc": 0.32036153653025357,
-      "jednostka": "mnoznik",
-      "metoda": "kod",
-      "status": "konflikt",
-      "wzor": "dlug_netto / ebitda",
-      "wejscia": [
-        "dlug_netto.2022-06-30",
-        "ebitda.FY2022"
-      ]
-    },
-    {
       "id": "dlug_netto_do_ebitda.FY2023",
       "rodzaj": "wyliczony",
       "pozycja": "dlug_netto_do_ebitda",
@@ -8869,82 +9051,6 @@
       "wejscia": [
         "dlug_netto.2023-06-30",
         "ebitda.FY2023"
-      ]
-    },
-    {
-      "id": "dlug_netto_do_ebitda.FY2024",
-      "rodzaj": "wyliczony",
-      "pozycja": "dlug_netto_do_ebitda",
-      "okres": {
-        "typ": "FY",
-        "koniec": "2024-06-30",
-        "poczatek": "2023-07-01"
-      },
-      "wartosc": 14.32904148783977,
-      "jednostka": "mnoznik",
-      "metoda": "kod",
-      "status": "konflikt",
-      "wzor": "dlug_netto / ebitda",
-      "wejscia": [
-        "dlug_netto.2024-06-30",
-        "ebitda.FY2024"
-      ]
-    },
-    {
-      "id": "dlug_netto_do_ebitda.FY2025",
-      "rodzaj": "wyliczony",
-      "pozycja": "dlug_netto_do_ebitda",
-      "okres": {
-        "typ": "FY",
-        "koniec": "2025-06-30",
-        "poczatek": "2024-07-01"
-      },
-      "wartosc": 0.9357407199730852,
-      "jednostka": "mnoznik",
-      "metoda": "kod",
-      "status": "konflikt",
-      "wzor": "dlug_netto / ebitda",
-      "wejscia": [
-        "dlug_netto.2025-06-30",
-        "ebitda.FY2025"
-      ]
-    },
-    {
-      "id": "dlug_netto_do_ebitda.FY2026",
-      "rodzaj": "wyliczony",
-      "pozycja": "dlug_netto_do_ebitda",
-      "okres": {
-        "typ": "FY",
-        "koniec": "2026-06-30",
-        "poczatek": "2025-07-01"
-      },
-      "wartosc": 24.00396982929734,
-      "jednostka": "mnoznik",
-      "metoda": "kod",
-      "status": "konflikt",
-      "wzor": "dlug_netto / ebitda",
-      "wejscia": [
-        "dlug_netto.2026-06-30",
-        "ebitda.FY2026"
-      ]
-    },
-    {
-      "id": "dlug_netto_do_ebitda.TTM2026-09-30",
-      "rodzaj": "wyliczony",
-      "pozycja": "dlug_netto_do_ebitda",
-      "okres": {
-        "typ": "TTM",
-        "koniec": "2026-09-30",
-        "poczatek": "2025-10-01"
-      },
-      "wartosc": 28.664004914004913,
-      "jednostka": "mnoznik",
-      "metoda": "kod",
-      "status": "konflikt",
-      "wzor": "dlug_netto / ebitda",
-      "wejscia": [
-        "dlug_netto.2026-09-30",
-        "ebitda.TTM2026-09-30"
       ]
     },
     {
@@ -10852,7 +10958,7 @@
       "wartosc": 0.16510069944201558,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "marża FCF przy wzroście przychodów w tempie cagr_przychody_3l przez 10 lat",
       "wejscia": [
         "kapitalizacja.2026-11-10",
@@ -11981,20 +12087,21 @@
         "koniec": "2024-06-30",
         "poczatek": "2023-07-01"
       },
-      "wartosc": 376000.0,
+      "wartosc": 95973000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
-        "xbrl": "us-gaap:CostOfRevenue",
+        "xbrl": "us-gaap:CostOfGoodsAndServicesSold",
         "accn": "0001683168-25-006532",
         "forma": "10-K",
         "zlozono": "2025-08-29"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:59.7664%"
+        "znacznik_wg_tozsamosci:pominieto_CostOfRevenue",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -12131,11 +12238,11 @@
         "koniec": "2024-06-30",
         "poczatek": "2024-04-01"
       },
-      "wartosc": -65244000.0,
+      "wartosc": 30353000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "koszt_sprzedazy.FY2024 - koszt_sprzedazy.FY2024M9",
       "wejscia": [
         "koszt_sprzedazy.FY2024",
@@ -12151,20 +12258,21 @@
         "koniec": "2025-06-30",
         "poczatek": "2024-07-01"
       },
-      "wartosc": 220000.0,
+      "wartosc": 71224000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
-        "xbrl": "us-gaap:CostOfRevenue",
+        "xbrl": "us-gaap:CostOfGoodsAndServicesSold",
         "accn": "0001683168-26-006754",
         "forma": "10-K",
         "zlozono": "2026-08-27"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:57.8666%"
+        "znacznik_wg_tozsamosci:pominieto_CostOfRevenue",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -12176,20 +12284,21 @@
         "koniec": "2024-12-31",
         "poczatek": "2024-07-01"
       },
-      "wartosc": 220000.0,
+      "wartosc": 37825000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
-        "xbrl": "us-gaap:CostOfRevenue",
-        "accn": "0001683168-25-000793",
+        "xbrl": "us-gaap:CostOfGoodsAndServicesSold",
+        "accn": "0001683168-26-000774",
         "forma": "10-Q",
-        "zlozono": "2025-02-07"
+        "zlozono": "2026-02-05"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:57.5317%"
+        "znacznik_wg_tozsamosci:pominieto_CostOfRevenue",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -12201,20 +12310,21 @@
         "koniec": "2025-03-31",
         "poczatek": "2024-07-01"
       },
-      "wartosc": 277000.0,
+      "wartosc": 53922000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
-        "xbrl": "us-gaap:CostOfRevenue",
-        "accn": "0001683168-25-003319",
+        "xbrl": "us-gaap:CostOfGoodsAndServicesSold",
+        "accn": "0001683168-26-003564",
         "forma": "10-Q",
-        "zlozono": "2025-05-09"
+        "zlozono": "2026-05-07"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:57.1866%"
+        "znacznik_wg_tozsamosci:pominieto_CostOfRevenue",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -12301,11 +12411,11 @@
         "koniec": "2025-06-30",
         "poczatek": "2025-04-01"
       },
-      "wartosc": -57000.0,
+      "wartosc": 17302000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "koszt_sprzedazy.FY2025 - koszt_sprzedazy.FY2025M9",
       "wejscia": [
         "koszt_sprzedazy.FY2025",
@@ -12321,20 +12431,21 @@
         "koniec": "2026-06-30",
         "poczatek": "2025-07-01"
       },
-      "wartosc": 255000.0,
+      "wartosc": 67976000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
-        "xbrl": "us-gaap:CostOfRevenue",
+        "xbrl": "us-gaap:CostOfGoodsAndServicesSold",
         "accn": "0001683168-26-006754",
         "forma": "10-K",
         "zlozono": "2026-08-27"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:56.1329%"
+        "znacznik_wg_tozsamosci:pominieto_CostOfRevenue",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -12346,20 +12457,21 @@
         "koniec": "2025-12-31",
         "poczatek": "2025-07-01"
       },
-      "wartosc": 152000.0,
+      "wartosc": 33255000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
-        "xbrl": "us-gaap:CostOfRevenue",
+        "xbrl": "us-gaap:CostOfGoodsAndServicesSold",
         "accn": "0001683168-26-000774",
         "forma": "10-Q",
         "zlozono": "2026-02-05"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:55.7139%"
+        "znacznik_wg_tozsamosci:pominieto_CostOfRevenue",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -12371,20 +12483,21 @@
         "koniec": "2026-03-31",
         "poczatek": "2025-07-01"
       },
-      "wartosc": 233000.0,
+      "wartosc": 50427000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
-        "xbrl": "us-gaap:CostOfRevenue",
+        "xbrl": "us-gaap:CostOfGoodsAndServicesSold",
         "accn": "0001683168-26-003564",
         "forma": "10-Q",
         "zlozono": "2026-05-07"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:56.0752%"
+        "znacznik_wg_tozsamosci:pominieto_CostOfRevenue",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -12396,20 +12509,21 @@
         "koniec": "2025-09-30",
         "poczatek": "2025-07-01"
       },
-      "wartosc": 77000.0,
+      "wartosc": 16448000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
-        "xbrl": "us-gaap:CostOfRevenue",
-        "accn": "0001683168-25-008030",
+        "xbrl": "us-gaap:CostOfGoodsAndServicesSold",
+        "accn": "0001683168-26-008447",
         "forma": "10-Q",
-        "zlozono": "2025-11-06"
+        "zlozono": "2026-11-09"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:55.0897%"
+        "znacznik_wg_tozsamosci:pominieto_CostOfRevenue",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -12471,11 +12585,11 @@
         "koniec": "2026-06-30",
         "poczatek": "2026-04-01"
       },
-      "wartosc": 22000.0,
+      "wartosc": 17549000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "koszt_sprzedazy.FY2026 - koszt_sprzedazy.FY2026M9",
       "wejscia": [
         "koszt_sprzedazy.FY2026",
@@ -12491,20 +12605,21 @@
         "koniec": "2026-09-30",
         "poczatek": "2026-07-01"
       },
-      "wartosc": 106000.0,
+      "wartosc": 17856000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
-        "xbrl": "us-gaap:CostOfRevenue",
+        "xbrl": "us-gaap:CostOfGoodsAndServicesSold",
         "accn": "0001683168-26-008447",
         "forma": "10-Q",
         "zlozono": "2026-11-09"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:55.0166%"
+        "znacznik_wg_tozsamosci:pominieto_CostOfRevenue",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -12516,11 +12631,11 @@
         "koniec": "2026-09-30",
         "poczatek": "2025-10-01"
       },
-      "wartosc": 284000.0,
+      "wartosc": 69384000.0,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "koszt_sprzedazy.FY2026 + koszt_sprzedazy.FY2027Q1 - koszt_sprzedazy.FY2026Q1",
       "wejscia": [
         "koszt_sprzedazy.FY2026",
@@ -14076,6 +14191,7 @@
         "pole": "zamknięcie"
       },
       "kontrole": [
+        "drugie_zrodlo:doc-006:4.39:0.00%:ok",
         "drugie_zrodlo:doc-006:4.39:0.00%:ok"
       ]
     },
@@ -15031,7 +15147,7 @@
       "wartosc": 0.42058036331687315,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "zysk_brutto / przychody",
       "wejscia": [
         "zysk_brutto.FY2025",
@@ -15050,7 +15166,7 @@
       "wartosc": 0.4377455562080745,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "zysk_brutto / przychody",
       "wejscia": [
         "zysk_brutto.FY2026",
@@ -15069,7 +15185,7 @@
       "wartosc": 0.4380679333300938,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "zysk_brutto / przychody",
       "wejscia": [
         "zysk_brutto.TTM2026-09-30",
@@ -15430,7 +15546,7 @@
       "wartosc": 0.05354681369950164,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / przychody",
       "wejscia": [
         "fcf_wlascicieli.FY2024",
@@ -15449,7 +15565,7 @@
       "wartosc": 0.003538800712641247,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / przychody",
       "wejscia": [
         "fcf_wlascicieli.FY2025",
@@ -15468,7 +15584,7 @@
       "wartosc": 0.02378018015037345,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / przychody",
       "wejscia": [
         "fcf_wlascicieli.FY2026",
@@ -15487,7 +15603,7 @@
       "wartosc": -0.02418322885789721,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "fcf_wlascicieli / przychody",
       "wejscia": [
         "fcf_wlascicieli.TTM2026-09-30",
@@ -15639,7 +15755,7 @@
       "wartosc": -0.028167432809196206,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "zysk_netto / przychody",
       "wejscia": [
         "zysk_netto.FY2024",
@@ -15658,7 +15774,7 @@
       "wartosc": -0.0925213344939515,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "zysk_netto / przychody",
       "wejscia": [
         "zysk_netto.FY2025",
@@ -15677,7 +15793,7 @@
       "wartosc": -0.03458258546389962,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "zysk_netto / przychody",
       "wejscia": [
         "zysk_netto.FY2026",
@@ -15696,7 +15812,7 @@
       "wartosc": -0.026264638709363915,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "zysk_netto / przychody",
       "wejscia": [
         "zysk_netto.TTM2026-09-30",
@@ -17465,7 +17581,7 @@
       "wartosc": 7.0,
       "jednostka": "punkty",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "9 sygnałów Piotroskiego (ROA>0, CFO>0, ΔROA>0, CFO>ROA, Δdźwignia<0, Δpłynność>0, brak emisji, Δmarża brutto>0, Δrotacja aktywów>0)",
       "wejscia": [
         "zysk_netto.FY2026",
@@ -18357,10 +18473,10 @@
         "typ": "dzien",
         "koniec": "2026-11-10"
       },
-      "wartosc": -0.27526286496521135,
+      "wartosc": -0.048827249232808345,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "potencjal oczekiwany",
       "wejscia": [
         "scenariusz_prawdopodobienstwo.byk",
@@ -18402,7 +18518,7 @@
       "wartosc": 0.8,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "prawdopodobienstwo straty",
       "wejscia": [
         "scenariusz_prawdopodobienstwo.byk",
@@ -21838,7 +21954,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:Revenues",
@@ -21847,7 +21963,7 @@
         "zlozono": "2025-08-29"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:59.7664%",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
         "drugie_zrodlo:doc-003:1.60327e+08:0.00%:ok"
       ]
     },
@@ -21989,7 +22105,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2024 - przychody.FY2024M9",
       "wejscia": [
         "przychody.FY2024",
@@ -22009,7 +22125,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:Revenues",
@@ -22018,7 +22134,7 @@
         "zlozono": "2026-08-27"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:57.8666%",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
         "drugie_zrodlo:doc-003:1.22923e+08:0.00%:ok"
       ]
     },
@@ -22035,7 +22151,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:Revenues",
@@ -22044,7 +22160,7 @@
         "zlozono": "2026-02-05"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:57.5317%"
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -22060,7 +22176,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:Revenues",
@@ -22069,7 +22185,7 @@
         "zlozono": "2026-05-07"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:57.1866%"
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -22160,7 +22276,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2025 - przychody.FY2025M9",
       "wejscia": [
         "przychody.FY2025",
@@ -22180,7 +22296,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:Revenues",
@@ -22189,7 +22305,7 @@
         "zlozono": "2026-08-27"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:56.1329%",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
         "drugie_zrodlo:doc-003:1.20899e+08:0.00%:ok"
       ]
     },
@@ -22206,7 +22322,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:Revenues",
@@ -22215,7 +22331,7 @@
         "zlozono": "2026-02-05"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:55.7139%"
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -22231,7 +22347,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:Revenues",
@@ -22240,7 +22356,7 @@
         "zlozono": "2026-05-07"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:56.0752%"
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -22256,7 +22372,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:Revenues",
@@ -22265,7 +22381,7 @@
         "zlozono": "2026-11-09"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:55.0897%"
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -22331,7 +22447,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2026 - przychody.FY2026M9",
       "wejscia": [
         "przychody.FY2026",
@@ -22351,7 +22467,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:Revenues",
@@ -22360,7 +22476,7 @@
         "zlozono": "2026-11-09"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:55.0166%"
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -22376,7 +22492,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2026 + przychody.FY2027Q1 - przychody.FY2026Q1",
       "wejscia": [
         "przychody.FY2026",
@@ -22740,6 +22856,27 @@
         "przychody_iot_systems.FY2027Q1",
         "przychody_iot_systems.FY2026Q1"
       ]
+    },
+    {
+      "id": "przychody_konsensus.2027-06-30",
+      "rodzaj": "prognoza",
+      "pozycja": "przychody_konsensus",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2027-06-30"
+      },
+      "wartosc": 137782330.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-011",
+      "miejsce": {
+        "pole": "revenue[2027-06-30].avg (rok obrotowy z prognozą)"
+      },
+      "dostawca": "S&P Global (przez Stock Analysis)",
+      "data_prognozy": "2026-11-11",
+      "liczba_analitykow": 6
     },
     {
       "id": "przychody_roczne_nero_oczekiwane.FY2027",
@@ -23382,6 +23519,27 @@
         "gotowka.2026-09-30",
         "inwestycje_krotkoterminowe.2026-09-30"
       ]
+    },
+    {
+      "id": "rsi_14.2026-11-10",
+      "rodzaj": "raportowany",
+      "pozycja": "rsi_14",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 30.40013139353198,
+      "jednostka": "liczba",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-067",
+      "miejsce": {
+        "obliczenie": "RSI Wildera z 14 sesji, zamknięcia",
+        "od": "2024-11-11",
+        "dokumenty": [
+          "doc-067"
+        ]
+      }
     },
     {
       "id": "rzeczowe_aktywa_trwale.2016-06-30",
@@ -25014,10 +25172,10 @@
         "typ": "dzien",
         "koniec": "2026-11-10"
       },
-      "wartosc": 0.07372930739214645,
+      "wartosc": 0.08718459302745762,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "stopa dyskontowa, przy której wartość scenariusza bazowy równa się kursowi",
       "wejscia": [
         "przychody.TTM2026-09-30",
@@ -25025,7 +25183,8 @@
         "scenariusz_marza_fcf.bazowy",
         "wzrost_rezydualny.zalozenie",
         "akcje_w_obrocie.2026-10-30",
-        "kurs.2026-11-10"
+        "kurs.2026-11-10",
+        "dlug_netto.2026-09-30"
       ]
     },
     {
@@ -25036,10 +25195,10 @@
         "typ": "dzien",
         "koniec": "2026-11-10"
       },
-      "wartosc": 0.1392015771521255,
+      "wartosc": 0.16615464639663696,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "stopa dyskontowa, przy której wartość scenariusza byk równa się kursowi",
       "wejscia": [
         "przychody.TTM2026-09-30",
@@ -25047,7 +25206,8 @@
         "scenariusz_marza_fcf.byk",
         "wzrost_rezydualny.zalozenie",
         "akcje_w_obrocie.2026-10-30",
-        "kurs.2026-11-10"
+        "kurs.2026-11-10",
+        "dlug_netto.2026-09-30"
       ]
     },
     {
@@ -25058,10 +25218,10 @@
         "typ": "dzien",
         "koniec": "2026-11-10"
       },
-      "wartosc": 0.03567277013615241,
+      "wartosc": 0.03882375687197781,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "stopa dyskontowa, przy której wartość scenariusza niedzwiedz równa się kursowi",
       "wejscia": [
         "przychody.TTM2026-09-30",
@@ -25069,7 +25229,8 @@
         "scenariusz_marza_fcf.niedzwiedz",
         "wzrost_rezydualny.zalozenie",
         "akcje_w_obrocie.2026-10-30",
-        "kurs.2026-11-10"
+        "kurs.2026-11-10",
+        "dlug_netto.2026-09-30"
       ]
     },
     {
@@ -25513,19 +25674,20 @@
         "typ": "dzien",
         "koniec": "2026-11-10"
       },
-      "wartosc": 3.0230722880169205,
+      "wartosc": 4.017124610849754,
       "jednostka": "pieniadz_na_akcje",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
-      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "status": "jedno_zrodlo",
+      "wzor": "(wartość przepływów: przychody × marża FCF, wzrost przez 10 lat, potem rezydualny − dlug_netto) / akcje_w_obrocie",
       "wejscia": [
         "przychody.TTM2026-09-30",
         "scenariusz_wzrost_przychodow.bazowy",
         "scenariusz_marza_fcf.bazowy",
         "wzrost_rezydualny.zalozenie",
         "koszt_kapitalu_wlasnego.2026-11-10",
-        "akcje_w_obrocie.2026-10-30"
+        "akcje_w_obrocie.2026-10-30",
+        "dlug_netto.2026-09-30"
       ]
     },
     {
@@ -25536,19 +25698,20 @@
         "typ": "dzien",
         "koniec": "2026-11-10"
       },
-      "wartosc": 7.888792552641716,
+      "wartosc": 8.882844875474548,
       "jednostka": "pieniadz_na_akcje",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
-      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "status": "jedno_zrodlo",
+      "wzor": "(wartość przepływów: przychody × marża FCF, wzrost przez 10 lat, potem rezydualny − dlug_netto) / akcje_w_obrocie",
       "wejscia": [
         "przychody.TTM2026-09-30",
         "scenariusz_wzrost_przychodow.byk",
         "scenariusz_marza_fcf.byk",
         "wzrost_rezydualny.zalozenie",
         "koszt_kapitalu_wlasnego.2026-11-10",
-        "akcje_w_obrocie.2026-10-30"
+        "akcje_w_obrocie.2026-10-30",
+        "dlug_netto.2026-09-30"
       ]
     },
     {
@@ -25559,19 +25722,20 @@
         "typ": "dzien",
         "koniec": "2026-11-10"
       },
-      "wartosc": 0.6955853882969079,
+      "wartosc": 1.6896377111297411,
       "jednostka": "pieniadz_na_akcje",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
-      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "status": "jedno_zrodlo",
+      "wzor": "(wartość przepływów: przychody × marża FCF, wzrost przez 10 lat, potem rezydualny − dlug_netto) / akcje_w_obrocie",
       "wejscia": [
         "przychody.TTM2026-09-30",
         "scenariusz_wzrost_przychodow.niedzwiedz",
         "scenariusz_marza_fcf.niedzwiedz",
         "wzrost_rezydualny.zalozenie",
         "koszt_kapitalu_wlasnego.2026-11-10",
-        "akcje_w_obrocie.2026-10-30"
+        "akcje_w_obrocie.2026-10-30",
+        "dlug_netto.2026-09-30"
       ]
     },
     {
@@ -25582,11 +25746,11 @@
         "typ": "dzien",
         "koniec": "2026-11-10"
       },
-      "wartosc": 3.181595926039875,
+      "wartosc": 4.175648248872708,
       "jednostka": "pieniadz_na_akcje",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "jedno_zrodlo",
       "wzor": "wartosc oczekiwana na akcje",
       "wejscia": [
         "scenariusz_prawdopodobienstwo.byk",
@@ -26210,7 +26374,7 @@
       "wartosc": 0.2221070364131139,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2024 / przychody.FY2023 - 1",
       "wejscia": [
         "przychody.FY2024",
@@ -26267,7 +26431,7 @@
       "wartosc": -0.23329819681026898,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2025 / przychody.FY2024 - 1",
       "wejscia": [
         "przychody.FY2025",
@@ -26286,7 +26450,7 @@
       "wartosc": -0.06400833464156763,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2025H1 / przychody.FY2024H1 - 1",
       "wejscia": [
         "przychody.FY2025H1",
@@ -26305,7 +26469,7 @@
       "wartosc": -0.15431632689749397,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2025M9 / przychody.FY2024M9 - 1",
       "wejscia": [
         "przychody.FY2025M9",
@@ -26343,7 +26507,7 @@
       "wartosc": -0.016465592281346808,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2026 / przychody.FY2025 - 1",
       "wejscia": [
         "przychody.FY2026",
@@ -26362,7 +26526,7 @@
       "wartosc": -0.09172969016833377,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2026H1 / przychody.FY2025H1 - 1",
       "wejscia": [
         "przychody.FY2026H1",
@@ -26381,7 +26545,7 @@
       "wartosc": -0.046118362314527483,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2026M9 / przychody.FY2025M9 - 1",
       "wejscia": [
         "przychody.FY2026M9",
@@ -26400,7 +26564,7 @@
       "wartosc": -0.13447404351741565,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2026Q1 / przychody.FY2025Q1 - 1",
       "wejscia": [
         "przychody.FY2026Q1",
@@ -26419,7 +26583,7 @@
       "wartosc": 0.08642679734174674,
       "jednostka": "ulamek",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "przychody.FY2027Q1 / przychody.FY2026Q1 - 1",
       "wejscia": [
         "przychody.FY2027Q1",
@@ -27896,6 +28060,177 @@
       ]
     },
     {
+      "id": "zmiana_liczby_akcji_koniec.FY2018",
+      "rodzaj": "wyliczony",
+      "pozycja": "zmiana_liczby_akcji_koniec",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2018-06-30",
+        "poczatek": "2017-07-01"
+      },
+      "wartosc": 0.06173950074727541,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "akcje_koniec_okresu.2018-06-30 / akcje_koniec_okresu.2017-06-30 - 1",
+      "wejscia": [
+        "akcje_koniec_okresu.2018-06-30",
+        "akcje_koniec_okresu.2017-06-30"
+      ]
+    },
+    {
+      "id": "zmiana_liczby_akcji_koniec.FY2019",
+      "rodzaj": "wyliczony",
+      "pozycja": "zmiana_liczby_akcji_koniec",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2019-06-30",
+        "poczatek": "2018-07-01"
+      },
+      "wartosc": 0.20644735224872846,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "akcje_koniec_okresu.2019-06-30 / akcje_koniec_okresu.2018-06-30 - 1",
+      "wejscia": [
+        "akcje_koniec_okresu.2019-06-30",
+        "akcje_koniec_okresu.2018-06-30"
+      ]
+    },
+    {
+      "id": "zmiana_liczby_akcji_koniec.FY2020",
+      "rodzaj": "wyliczony",
+      "pozycja": "zmiana_liczby_akcji_koniec",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2020-06-30",
+        "poczatek": "2019-07-01"
+      },
+      "wartosc": 0.23756672166611725,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "akcje_koniec_okresu.2020-06-30 / akcje_koniec_okresu.2019-06-30 - 1",
+      "wejscia": [
+        "akcje_koniec_okresu.2020-06-30",
+        "akcje_koniec_okresu.2019-06-30"
+      ]
+    },
+    {
+      "id": "zmiana_liczby_akcji_koniec.FY2021",
+      "rodzaj": "wyliczony",
+      "pozycja": "zmiana_liczby_akcji_koniec",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2021-06-30",
+        "poczatek": "2020-07-01"
+      },
+      "wartosc": 0.03034459854031657,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "akcje_koniec_okresu.2021-06-30 / akcje_koniec_okresu.2020-06-30 - 1",
+      "wejscia": [
+        "akcje_koniec_okresu.2021-06-30",
+        "akcje_koniec_okresu.2020-06-30"
+      ]
+    },
+    {
+      "id": "zmiana_liczby_akcji_koniec.FY2022",
+      "rodzaj": "wyliczony",
+      "pozycja": "zmiana_liczby_akcji_koniec",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2022-06-30",
+        "poczatek": "2021-07-01"
+      },
+      "wartosc": 0.20770236533541264,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "akcje_koniec_okresu.2022-06-30 / akcje_koniec_okresu.2021-06-30 - 1",
+      "wejscia": [
+        "akcje_koniec_okresu.2022-06-30",
+        "akcje_koniec_okresu.2021-06-30"
+      ]
+    },
+    {
+      "id": "zmiana_liczby_akcji_koniec.FY2023",
+      "rodzaj": "wyliczony",
+      "pozycja": "zmiana_liczby_akcji_koniec",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2023-06-30",
+        "poczatek": "2022-07-01"
+      },
+      "wartosc": 0.04971021199653247,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "akcje_koniec_okresu.2023-06-30 / akcje_koniec_okresu.2022-06-30 - 1",
+      "wejscia": [
+        "akcje_koniec_okresu.2023-06-30",
+        "akcje_koniec_okresu.2022-06-30"
+      ]
+    },
+    {
+      "id": "zmiana_liczby_akcji_koniec.FY2024",
+      "rodzaj": "wyliczony",
+      "pozycja": "zmiana_liczby_akcji_koniec",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-06-30",
+        "poczatek": "2023-07-01"
+      },
+      "wartosc": 0.027044912587965486,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "akcje_koniec_okresu.2024-06-30 / akcje_koniec_okresu.2023-06-30 - 1",
+      "wejscia": [
+        "akcje_koniec_okresu.2024-06-30",
+        "akcje_koniec_okresu.2023-06-30"
+      ]
+    },
+    {
+      "id": "zmiana_liczby_akcji_koniec.FY2025",
+      "rodzaj": "wyliczony",
+      "pozycja": "zmiana_liczby_akcji_koniec",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 0.032468613493195075,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "akcje_koniec_okresu.2025-06-30 / akcje_koniec_okresu.2024-06-30 - 1",
+      "wejscia": [
+        "akcje_koniec_okresu.2025-06-30",
+        "akcje_koniec_okresu.2024-06-30"
+      ]
+    },
+    {
+      "id": "zmiana_liczby_akcji_koniec.FY2026",
+      "rodzaj": "wyliczony",
+      "pozycja": "zmiana_liczby_akcji_koniec",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.19159153327110556,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "akcje_koniec_okresu.2026-06-30 / akcje_koniec_okresu.2025-06-30 - 1",
+      "wejscia": [
+        "akcje_koniec_okresu.2026-06-30",
+        "akcje_koniec_okresu.2025-06-30"
+      ]
+    },
+    {
       "id": "zobowiazania.2016-06-30",
       "rodzaj": "raportowany",
       "pozycja": "zobowiazania",
@@ -29120,7 +29455,7 @@
         "zlozono": "2025-08-29"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:59.7664%",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
         "drugie_zrodlo:doc-003:6.5176e+07:1.26%:blad"
       ]
     },
@@ -29282,7 +29617,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:GrossProfit",
@@ -29291,7 +29626,7 @@
         "zlozono": "2026-08-27"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:57.8666%",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
         "drugie_zrodlo:doc-003:5.1787e+07:0.17%:ok"
       ]
     },
@@ -29308,7 +29643,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:GrossProfit",
@@ -29317,7 +29652,7 @@
         "zlozono": "2026-02-05"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:57.5317%"
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -29333,7 +29668,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:GrossProfit",
@@ -29342,7 +29677,7 @@
         "zlozono": "2026-05-07"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:57.1866%"
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -29433,7 +29768,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "zysk_brutto.FY2025 - zysk_brutto.FY2025M9",
       "wejscia": [
         "zysk_brutto.FY2025",
@@ -29453,7 +29788,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:GrossProfit",
@@ -29462,7 +29797,7 @@
         "zlozono": "2026-08-27"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:56.1329%",
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%",
         "drugie_zrodlo:doc-003:5.2941e+07:0.03%:ok"
       ]
     },
@@ -29479,7 +29814,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:GrossProfit",
@@ -29488,7 +29823,7 @@
         "zlozono": "2026-02-05"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:55.7139%"
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -29504,7 +29839,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:GrossProfit",
@@ -29513,7 +29848,7 @@
         "zlozono": "2026-05-07"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:56.0752%"
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -29529,7 +29864,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:GrossProfit",
@@ -29538,7 +29873,7 @@
         "zlozono": "2026-11-09"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:55.0897%"
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -29604,7 +29939,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "zysk_brutto.FY2026 - zysk_brutto.FY2026M9",
       "wejscia": [
         "zysk_brutto.FY2026",
@@ -29624,7 +29959,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "xbrl",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "dokument": "doc-001",
       "miejsce": {
         "xbrl": "us-gaap:GrossProfit",
@@ -29633,7 +29968,7 @@
         "zlozono": "2026-11-09"
       },
       "kontrole": [
-        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:blad:55.0166%"
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
       ]
     },
     {
@@ -29649,7 +29984,7 @@
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "kod",
-      "status": "konflikt",
+      "status": "zweryfikowany",
       "wzor": "zysk_brutto.FY2026 + zysk_brutto.FY2027Q1 - zysk_brutto.FY2026Q1",
       "wejscia": [
         "zysk_brutto.FY2026",

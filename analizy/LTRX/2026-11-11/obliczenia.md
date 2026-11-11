@@ -4,38 +4,39 @@ Plik wygenerował silnik (2026-11-11). Kwoty w mln USD. ¹ = co najmniej jedno w
 
 | Wskaźnik | FY2022 | FY2023 | FY2024 | FY2025 | FY2026 | TTM2026-09-30 |
 |---|---:|---:|---:|---:|---:|---:|
-| Przychody | 130 | 131 | 160‼ | 123‼ | 121‼ | 123‼ |
-| Wzrost przychodów r/r | 81,4% | 1,2% | 22,2%‼ | -23,3%‼ | -1,6%‼ | — |
-| Marża brutto | 42,9%‼ | 42,9% | 40,1%‼ | 42,1%‼ | 43,8%‼ | 43,8%‼ |
+| Przychody | 130 | 131 | 160 | 123 | 121 | 123 |
+| Wzrost przychodów r/r | 81,4% | 1,2% | 22,2% | -23,3% | -1,6% | — |
+| Marża brutto | 42,9%‼ | 42,9% | 40,1%‼ | 42,1% | 43,8% | 43,8% |
 | Marża operacyjna | -3,9%‼ | -5,1%‼ | -1,8%‼ | -8,9%‼ | -3,4%‼ | -2,6%‼ |
-| Marża netto | -4,1% | -6,8% | -2,8%‼ | -9,3%‼ | -3,5%‼ | -2,6%‼ |
+| Marża netto | -4,1% | -6,8% | -2,8% | -9,3% | -3,5% | -2,6%¹ |
 | Zysk netto | -5 | -9 | -5 | -11 | -4 | -3¹ |
 | EBITDA | -4‼ | 1‼ | -1‼ | -9‼ | -3‼ | -2‼ |
 | FCF dla właścicieli | -18¹ | -9¹ | 9¹ | 0¹ | 3¹ | -3¹ |
 | FCF dla właścicieli ÷ zysk netto | 331,8%¹ | 96,6%¹ | -190,1%¹ | -3,8%¹ | -68,8%¹ | 92,1%¹ |
-| Marża FCF | -13,7%¹ | -6,6%¹ | 5,4%‼ | 0,4%‼ | 2,4%‼ | -2,4%‼ |
+| Marża FCF | -13,7%¹ | -6,6%¹ | 5,4%¹ | 0,4%¹ | 2,4%¹ | -2,4%¹ |
 | Capex ÷ amortyzacja | 2,06¹ | 0,35¹ | 0,68¹ | 0,24¹ | 0,38¹ | 0,43¹ |
 | ROE | -8,5% | -11,4% | -5,7% | -14,6% | -4,3% | -3,3%¹ |
 | ROIC | -5,0%‼ | -6,3%‼ | -3,2%‼ | -13,2%‼ | -5,5%‼ | -3,4%‼ |
-| Dług netto ÷ EBITDA | 0,32‼ | 6,37‼ | 14,33‼ | 0,94‼ | 24,00‼ | 28,66‼ |
+| Dług netto ÷ EBITDA | gotówka netto¹ | 6,37‼ | gotówka netto¹ | gotówka netto¹ | gotówka netto¹ | gotówka netto¹ |
 | Dług netto z leasingiem ÷ EBITDA | — | — | — | — | — | — |
 | Pokrycie odsetek (EBIT ÷ odsetki) | — | — | — | — | — | — |
-| Zmiana liczby akcji r/r | 13,8%¹ | 11,0% | 3,1% | 3,3% | 4,0% | — |
-| Piotroski F-score (0–9) | 2,00‼ | 4,00‼ | 6,00‼ | 4,00‼ | 7,00‼ | — |
-| Beneish M-score (próg −1,78) | -1,52‼ | -2,83‼ | -2,95‼ | -3,38‼ | -2,91‼ | — |
+| Zmiana liczby akcji r/r (średnia ważona) | 13,8%¹ | 11,0% | 3,1% | 3,3% | 4,0% | — |
+| Zmiana liczby akcji r/r (koniec okresu) | 20,8%¹ | 5,0%¹ | 2,7%¹ | 3,2%¹ | 19,2%¹ | — |
+| Piotroski F-score (0–9) | 2,00‼ | 4,00‼ | 6,00‼ | 4,00‼ | 7,00¹ | — |
+| Beneish M-score (próg −1,78) | -1,52‼ | -2,83‼ | -2,95‼ | -3,38‼ | -2,91¹ | — |
 | Altman Z'' (strefy 1,10 / 2,60) | -1,15‼ | -1,72‼ | -1,09‼ | -2,70‼ | 1,52‼ | — |
 | Ohlson: prawdopodobieństwo upadłości w roku (próg 3,8%) | 2,3%¹ | 3,7%¹ | 1,5%¹ | 3,6%¹ | 0,5%¹ | — |
 
 ## Dynamika wieloletnia (do FY2026)
 
-- CAGR przychody: 3 lata -2,7%‼, 5 lat 11,1%‼
+- CAGR przychody: 3 lata -2,7%, 5 lat 11,1%
 - CAGR zysk_netto: 3 lata —, 5 lat —
 - CAGR eps_rozwodniony: 3 lata —, 5 lat —
 - CAGR fcf_wlascicieli: 3 lata —, 5 lat —
 
 ## Sygnały do sprawdzenia (diagnostyka, nie stop)
 
-- Beneish M-score -2,91‼: poniżej progu.
+- Beneish M-score -2,91¹: poniżej progu.
 - Altman Z'' 1,52‼: strefa szara.
 - Ohlson O-score -5,32¹, prawdopodobieństwo upadłości w ciągu roku 0,5%¹: poniżej progu Ohlsona 3,8%.
 
@@ -51,33 +52,35 @@ Plik wygenerował silnik (2026-11-11). Kwoty w mln USD. ¹ = co najmniej jedno w
 | EV/EBIT | -50,58‼ |  |
 | EV/EBITDA | -97,92‼ |  |
 | C/WK | 1,73¹ |  |
+| C/S na rok naprzód | 1,50¹ | informacja; kapitalizacja ÷ konsensus przychodów na rok obrotowy do 2027-06-30 |
 | FCF yield | -1,4%¹ | FCF dla właścicieli ÷ kapitalizacja |
 | Udział PVGO w cenie | 116,7%¹ | część ceny za przyszły wzrost |
 | Implikowany wzrost FCF (10 lat) | — | wariant 1 |
 | Implikowany okres przewagi (CAP) | — | wariant 2, wzrost w tempie historycznym |
-| Implikowana marża FCF | 16,5%‼ | wariant 3, wzrost w tempie historycznym |
-| Wzrost historyczny (CAGR przychodów) | -2,7%‼ |  |
+| Implikowana marża FCF | 16,5%¹ | wariant 3, wzrost w tempie historycznym |
+| Wzrost historyczny (CAGR przychodów) | -2,7% |  |
+| RSI 14-dniowy | 30,40¹ | informacja, nie bramka; umowne progi 70 i 30 |
 
 ## Scenariusze
 
 | Scenariusz | Prawdopodobieństwo | Wartość na akcję | Stopa zwrotu przy obecnym kursie |
 |---|---:|---:|---:|
-| bazowy | 45,0%¹ | 3,02 USD | 7,4%‼ |
-| byk | 20,0%¹ | 7,89 USD | 13,9%‼ |
-| niedzwiedz | 35,0%¹ | 0,70 USD | 3,6%‼ |
-| Wartość oczekiwana na akcję | 3,18 USD‼ |  | |
-| Potencjał oczekiwany | -27,5%‼ |  | |
-| Prawdopodobieństwo straty | 80,0%‼ |  | |
-| Asymetria (zysk ÷ strata) | 0,37‼ |  | |
+| byk | 20,0%¹ | 8,88 USD | 16,6%¹ |
+| bazowy | 45,0%¹ | 4,02 USD | 8,7%¹ |
+| niedzwiedz | 35,0%¹ | 1,69 USD | 3,9%¹ |
+| Wartość oczekiwana na akcję | 4,18 USD¹ |  | |
+| Potencjał oczekiwany | -4,9%¹ |  | |
+| Prawdopodobieństwo straty | 80,0%¹ |  | |
+| Asymetria (zysk ÷ strata) | 0,81¹ |  | |
 
 ## Karta w stylu Treli (informacja, nie bramka)
 
-Wynik: **5,7 / 10** z 5 filarów z 5.
+Wynik: **5,9 / 10** z 5 filarów z 5.
 
 | Filar | Waga | Punkty | Miary |
 |---|---:|---:|---|
 | wzrost | 30% | 5,0 | cagr_przychody_3l: 0,0; cagr_eps_rozwodniony_3l: brak; cagr_zysk_netto_3l: brak; wzrost_eps_konsensus: 10,0 |
-| jakosc | 25% | 2,8 | roic: 0,0; konwersja_fcf: 8,9; dlug_netto_do_ebitda: 0,0; altman_z2: 2,2 |
+| jakosc | 25% | 3,7 | roic: 0,0; konwersja_fcf: 8,9; dlug_netto_do_ebitda: brak; altman_z2: 2,2 |
 | wycena | 20% | 5,0 | fcf_yield: 0,0; ev_ebit: 10,0; nadwyzka_wzrostu: brak |
 | analitycy | 15% | 10,0 | rewizje_eps_90d: brak; potencjal_do_ceny_docelowej: 10,0 |
 | momentum | 10% | 10,0 | nadwyzka_momentum: 10,0 |
@@ -140,6 +143,14 @@ Wynik: **5,7 / 10** z 5 filarów z 5.
 - dlug_dlugoterminowy_f.2018-06-30: brak długu długoterminowego
 - dlug_netto.2017-06-30: brak długu, nie liczę
 - dlug_netto.2018-06-30: brak długu, nie liczę
+- dlug_netto_do_ebitda.FY2019: EBITDA ≤ 0, dług netto ÷ EBITDA nie ma sensu
+- dlug_netto_do_ebitda.FY2020: EBITDA ≤ 0, dług netto ÷ EBITDA nie ma sensu
+- dlug_netto_do_ebitda.FY2021: EBITDA ≤ 0, dług netto ÷ EBITDA nie ma sensu
+- dlug_netto_do_ebitda.FY2022: EBITDA ≤ 0, dług netto ÷ EBITDA nie ma sensu
+- dlug_netto_do_ebitda.FY2024: EBITDA ≤ 0, dług netto ÷ EBITDA nie ma sensu
+- dlug_netto_do_ebitda.FY2025: EBITDA ≤ 0, dług netto ÷ EBITDA nie ma sensu
+- dlug_netto_do_ebitda.FY2026: EBITDA ≤ 0, dług netto ÷ EBITDA nie ma sensu
+- dlug_netto_do_ebitda.TTM2026-09-30: EBITDA ≤ 0, dług netto ÷ EBITDA nie ma sensu
 - ebitda.FY2017: brak amortyzacja.FY2017
 - ebitda.FY2018: brak amortyzacja.FY2018
 - implikowany_cap.2026-11-10: FCF dla właścicieli ≤ 0: CAP przez FCF nie działa

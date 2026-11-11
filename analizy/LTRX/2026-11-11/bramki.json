@@ -102,15 +102,18 @@
       "warunek_powrotu": null
     },
     {
-      "id": "B2.rozwodnienie",
+      "id": "B2.rozwodnienie_seryjne",
       "etap": 2,
       "kategoria": "kapital",
-      "poziom": "flaga",
-      "opis": "Poza wzrostem liczby akcji w FY2022-FY2023 spółka w maju-czerwcu 2026 wyemitowała ok. 4,2 mln akcji w ofercie publicznej i ok. 1,8 mln w programie ATM; akcji po ofercie 43,98 mln wobec 39,8 mln na 31.03.2026.",
+      "poziom": "flaga_powazna",
+      "opis": "Liczba akcji rosła o ponad 10% r/r w 3 z 5 ostatnich lat; miara: na koniec okresu, średnia ważona; sprawdź, czy emisje szły bez prawa poboru (wtedy STOP wymaga dowodu)",
       "dowody": [
-        "doc-025: „43,983,597 shares (or 44,608,597 shares if the underwriters”"
+        "zmiana_liczby_akcji.FY2022",
+        "zmiana_liczby_akcji_koniec.FY2022",
+        "zmiana_liczby_akcji.FY2023",
+        "zmiana_liczby_akcji_koniec.FY2026"
       ],
-      "zrodlo": "model",
+      "zrodlo": "kod",
       "testy": null,
       "warunek_powrotu": null
     },
@@ -173,7 +176,7 @@
       "poziom": "ok",
       "opis": "Brak wzmianki „substantial doubt” w raportach od 2026-08-26",
       "dowody": [
-        "doc-013: 0 trafień od 2026-08-26"
+        "doc-068: 0 trafień od 2026-08-26"
       ],
       "zrodlo": "kod",
       "testy": null,

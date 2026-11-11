@@ -33,11 +33,19 @@ def punkty(wartosc: float, zero: float, dziesiec: float) -> float:
     return max(0.0, min(10.0, 10 * t))
 
 
+BEZ_STARSZYCH_LAT = {"dlug_netto_do_ebitda", "dlug_netto_z_leasingiem_do_ebitda"}
+
+
 def _ostatnia(k: Kalkulator, pozycja: str, preferowany: Optional[str]) -> Optional[Fakt]:
     if preferowany and k.jest(f"{pozycja}.{preferowany}"):
         return k.fakt(f"{pozycja}.{preferowany}")
     fy = k.okresy_fy(pozycja)
     if fy:
+        # Dług netto ÷ EBITDA nie powstaje przy EBITDA ≤ 0; wtedy starszy rok dałby punkty
+        # za nieaktualny stan spółki. Dla innych miar zostaje dotychczasowa zasada (ostatni rok z wartością).
+        lata = k.okresy_fy()
+        if pozycja in BEZ_STARSZYCH_LAT and lata and fy[-1].okres.koniec < lata[-1].okres.koniec:
+            return None
         return fy[-1]
     stany = [f for f in k.r.fakty() if f.pozycja == pozycja and f.okres.typ.value == "dzien"]
     return max(stany, key=lambda f: f.okres.koniec) if stany else None

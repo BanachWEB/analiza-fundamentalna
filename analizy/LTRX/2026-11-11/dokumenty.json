@@ -661,6 +661,36 @@
       "pobrano": "2026-11-11T09:10:57.237451Z",
       "sha256": "a86128a0736ce528fd0fb6b807951273e2a175d01556a9b482411091404984f1",
       "plik": "a86128a0736ce528.json"
+    },
+    {
+      "id": "doc-067",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/LTRX?range=2y&interval=1d",
+      "opis": "notowania dzienne LTRX (do RSI)",
+      "pobrano": "2026-11-11T09:57:23.129319Z",
+      "sha256": "7c0359b99f7f4526761bb96bb592f4093ed3a36793ea854027148ef5a05d84bb",
+      "plik": "7c0359b99f7f4526"
+    },
+    {
+      "id": "doc-068",
+      "typ": "strona",
+      "zrodlo": "SEC EDGAR (wyszukiwanie)",
+      "adres": "https://efts.sec.gov/LATEST/search-index?q=%22substantial%20doubt%22&forms=10-K,10-Q&dateRange=custom&startdt=2026-08-26&enddt=2026-11-11&ciks=0001114925",
+      "opis": "wyszukiwanie: substantial doubt",
+      "pobrano": "2026-11-11T09:57:24.175674Z",
+      "sha256": "789100c1531950b6ba307d9312467da94b6845d504a31ea9782644ae195f294c",
+      "plik": "789100c1531950b6.json"
+    },
+    {
+      "id": "doc-069",
+      "typ": "strona",
+      "zrodlo": "SEC EDGAR (wyszukiwanie)",
+      "adres": "https://efts.sec.gov/LATEST/search-index?q=%22material%20weakness%22&forms=10-K&dateRange=custom&startdt=2026-08-26&enddt=2026-11-11&ciks=0001114925",
+      "opis": "wyszukiwanie: material weakness",
+      "pobrano": "2026-11-11T09:57:25.008048Z",
+      "sha256": "2646552ab39ff11dffb46d2d1dd78e5f9c483c504c9a93b3e25ef42dabcccf2d",
+      "plik": "2646552ab39ff11d.json"
     }
   ]
 }
