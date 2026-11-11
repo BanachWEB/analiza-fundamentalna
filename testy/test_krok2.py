@@ -144,6 +144,13 @@ def test_parser_stock_analysis():
     assert d[("kapital_wlasny_razem", "dzien", date(2025, 6, 30))] == 3
 
 
+def test_parser_liczby_bez_zera_przed_kropka():
+    # LTRX, 11.11.2026: EPS zapisany jako „-.077152”, parser wywracał cały przebieg USA.
+    html = 'x{datekey:["TTM","2026-06-30","2025-06-30"],epsdil:[-.077152,.104147,-1.5],revenue:[3,2,1]}'
+    assert stockanalysis._tablica(html, html.find("datekey:["), "epsdil") == [-0.077152, 0.104147, -1.5]
+    stockanalysis.parsuj(html)
+
+
 def test_parser_bez_danych_zglasza_blad():
     with pytest.raises(stockanalysis.BladStockAnalysis):
         stockanalysis.parsuj("<html>nic</html>")
