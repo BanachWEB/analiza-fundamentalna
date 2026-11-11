@@ -129,7 +129,7 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają obliczenia same. Osobno: `pyt
 
 **Karta w stylu Treli** (`konfiguracja/karta-treli.yaml`): pięć filarów (wzrost 30%, jakość 25%, wycena 20%, analitycy 15%, momentum 10%), każda miara 0–10 pkt liniowo między progami, osobnymi dla USA i GPW. Filar bez danych (np. „analitycy” przy pokryciu poniżej 3 analityków) przekazuje wagę pozostałym. Karta jest informacją, nie bramką.
 
-**Cena docelowa wg Treli** (`silnik/obliczenia/trela.py`, `konfiguracja/cena-docelowa-trela.yaml`, `specyfikacja.md` punkt 7.1): mnożnik z historii × prognoza na akcję na rok naprzód. Wariant konserwatywny używa mediany P/E i P/S 1-Year Forward z 5 lat, a wariant optymistyczny percentyla P90 serii. Dane podaje właściciel w `analizy/<TICKER>/<data>/scrab.yaml`; format pliku opisuje nagłówek `silnik/obliczenia/trela.py`. Bez serii mnożnika (CSV albo lista) silnik nie liczy wariantu optymistycznego. Potencjał konserwatywny jest miarą filaru „wycena” w karcie Treli.
+**Cena docelowa z arkusza właściciela** (`silnik/obliczenia/trela.py`, `specyfikacja.md` punkt 7.1): gdy właściciel dołączy swój arkusz `Cena-docelowa.xlsx` (metoda Treli), skill zapisuje go jako `analizy/<TICKER>/<data>/cena-docelowa.xlsx`, a silnik odczytuje wyniki arkusza bez przeliczania. Bez pliku raport pomija tę część. Potencjał konserwatywny z arkusza jest miarą filaru „wycena” w karcie Treli.
 
 ## Bramki stopu (krok 5)
 

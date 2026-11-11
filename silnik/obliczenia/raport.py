@@ -10,7 +10,6 @@ from silnik.fakty.schemat import Fakt, Jednostka, Status
 from .jakosc import PROG_M, PROG_OHLSON, STREFY_Z
 from .kalkulator import Kalkulator
 from .karta_treli import wynik_ogolny
-from .trela import parametry as parametry_treli, siatka
 
 ZNAK = {Status.zweryfikowany: "", Status.jedno_zrodlo: "¹", Status.konflikt: "‼", Status.odrzucony: "✗"}
 
@@ -244,66 +243,45 @@ def _komorka(k: Kalkulator, fid: Optional[str]) -> str:
     return format_(f)
 
 
-def _siatka_md(k: Kalkulator, mnoznik_id: str, prognoza_id: str, kurs: Optional[float], kroki_m: list, kroki_p: list,
-               nazwa_m: str, nazwa_p: str, waluta: str, punkty: str) -> list[str]:
-    m, p = k.fakt(mnoznik_id).wartosc_bazowa(), k.fakt(prognoza_id).wartosc_bazowa()
-    naglowki = [f"{nazwa_p} {dp * 100:+.0f}%" if dp else f"{nazwa_p} konsensus" for dp in kroki_p]
-    linie = [f"| {nazwa_m} ↓ / prognoza → | " + " | ".join(naglowki) + " |", "|---|" + "---:|" * len(kroki_p)]
-    for dm, wiersz in zip(kroki_m, siatka(m, p, kroki_m, kroki_p)):
-        etykieta = "mediana" if not dm else (f"{dm:+.{punkty}f}".replace(".", ",") + " pkt")
-        komorki = [_kwota(v, waluta) + (" ↓" if kurs is not None and v < kurs else "") for v in wiersz]
-        linie.append(f"| {etykieta} | " + " | ".join(komorki) + " |")
-    return linie
-
-
 def trela_tabela(k: Kalkulator, wynik: dict) -> list[str]:
-    """Część 8 raportu: cena docelowa wg Treli (dane ze Scrab, wyniki, siatki wrażliwości, założenia)."""
+    """Część 8 raportu: cena docelowa wg arkusza właściciela (metoda Treli). Brak arkusza → pusta lista (pomijamy)."""
     t = wynik.get("trela") or {}
     if not t:
-        return ["Brak ceny docelowej wg Treli: brak pliku scrab.yaml z danymi ze Scrab."]
-    par = parametry_treli()
-    waluta, p = t["waluta"], t["percentyl"]
-    pc = f"P{p * 100:.0f}"
-    rok = f" (rok obrotowy {t['rok_obrotowy_prognozy']})" if t.get("rok_obrotowy_prognozy") else ""
-    kurs = k.fakt(t["kurs"]) if t.get("kurs") else None
-    linie = [f"Dane ze Scrab z {t['data_odczytu'].strftime('%d.%m.%Y')} ({t['dokument']}); kurs pobrany przez silnik"
-             + (f" z {kurs.okres.koniec.strftime('%d.%m.%Y')}: {_komorka(k, kurs.id)}." if kurs else ": brak."), "",
-             "| Dane wejściowe | P/E 1-Year Forward | P/S 1-Year Forward |", "|---|---:|---:|",
-             f"| Prognoza na akcję na rok naprzód{rok} | EPS {_komorka(k, t.get('eps'))} | "
-             f"sprzedaż {_komorka(k, t.get('sps'))} |",
-             f"| Mnożnik bieżący | {_komorka(k, t.get('pe_biezacy'))} | {_komorka(k, t.get('ps_biezacy'))} |",
-             f"| Mediana mnożnika z {par['okno_lat']} lat | {_komorka(k, t.get('pe_mediana'))} | {_komorka(k, t.get('ps_mediana'))} |",
-             f"| Percentyl {pc} mnożnika z {par['okno_lat']} lat | {_komorka(k, t.get('pe_percentyl'))} | "
-             f"{_komorka(k, t.get('ps_percentyl'))} |",
-             "", "| Cena docelowa na 12 miesięcy | Konserwatywna (mediana) | Optymistyczna (" + pc + ") |",
-             "|---|---:|---:|",
-             f"| Z P/E (mnożnik × prognoza EPS) | {_komorka(k, t.get('pe_kons'))} | {_komorka(k, t.get('pe_optym'))} |",
-             f"| Z P/S (mnożnik × prognoza sprzedaży na akcję) | {_komorka(k, t.get('ps_kons'))} | {_komorka(k, t.get('ps_optym'))} |",
-             f"| **Cena docelowa** ({'średnia z P/E i P/S' if len(t.get('metody', [])) == 2 else 'jedna metoda'}) | "
-             f"**{_komorka(k, t.get('kons'))}** | **{_komorka(k, t.get('optym'))}** |",
-             f"| Potencjał do ceny docelowej | {_komorka(k, t.get('potencjal_kons'))} | {_komorka(k, t.get('potencjal_optym'))} |"]
-    ku = kurs.wartosc_bazowa() if kurs else None
-    s = par["siatka"]
-    if t.get("pe_mediana") and t.get("eps") and k.fakt(t["eps"]).wartosc_bazowa() > 0:
-        linie += ["", "Siatka wrażliwości P/E: mediana P/E przesunięta o punkty × rewizja prognozy EPS"
-                  + (" (↓ = poniżej kursu)." if ku else "."), ""]
-        linie += _siatka_md(k, t["pe_mediana"], t["eps"], ku, s["pe_mnoznik"], s["prognoza"], "P/E", "EPS", waluta, "0")
-    if t.get("ps_mediana") and t.get("sps") and k.fakt(t["sps"]).wartosc_bazowa() > 0:
-        linie += ["", "Siatka wrażliwości P/S: mediana P/S przesunięta o punkty × rewizja prognozy sprzedaży na akcję"
-                  + (" (↓ = poniżej kursu)." if ku else "."), ""]
-        linie += _siatka_md(k, t["ps_mediana"], t["sps"], ku, s["ps_mnoznik"], s["prognoza"], "P/S", "Sprzedaż", waluta, "2")
-    linie += ["", "Założenia modelu:", "",
-              f"- Mnożnik wraca do mediany z {par['okno_lat']} lat (wariant konserwatywny) albo do percentyla {pc} "
-              f"z {par['okno_lat']} lat (wariant optymistyczny; percentyl zamiast maksimum, bo maksimum bywa jednorazowym szczytem).",
-              "- Konsensus EPS i konsensus sprzedaży na akcję na rok naprzód się sprawdzą.",
-              "- Horyzont wynosi 12 miesięcy: za rok dzisiejsza prognoza stanie się wynikiem raportowanym, "
-              "a mnożniki z historii liczy się od wyników raportowanych.",
-              "- Cena docelowa to średnia z metody P/E i metody P/S; przy EPS ≤ 0 liczy się tylko metoda P/S.",
-              "- Dane ze Scrab to materiał od właściciela z jednego źródła (¹), a nie dane ze sprawozdań spółki.",
-              "",
-              "Metoda: Tomasz Trela, arkusz „Cena docelowa” (tradingforaliving.pl). To wycena przy powyższych założeniach, "
-              "a nie prognoza kursu ani rekomendacja."]
-    return linie
+        return []
+    kurs = max((f for f in k.r.fakty() if f.pozycja == "kurs" and f.status != Status.odrzucony),
+               key=lambda f: f.okres.koniec, default=None)
+    return [
+        f"Wycena właściciela z arkusza „Cena docelowa” (metoda Tomasza Treli, dane ze Scrab; {t['dokument']}, "
+        f"ticker w arkuszu: {t['ticker']}). Silnik przepisuje wyniki arkusza i niczego nie przelicza.", "",
+        "| Dane wejściowe z arkusza | P/E 1-Year Forward | P/S 1-Year Forward |", "|---|---:|---:|",
+        f"| Prognoza na akcję na 12 miesięcy | EPS {_komorka(k, t.get('eps_prognoza_arkusz'))} | "
+        f"sprzedaż {_komorka(k, t.get('sprzedaz_na_akcje_prognoza_arkusz'))} |",
+        f"| Mediana mnożnika (wariant konserwatywny) | {_komorka(k, t.get('pe_forward_mediana_arkusz'))} | "
+        f"{_komorka(k, t.get('ps_forward_mediana_arkusz'))} |",
+        f"| Maksimum mnożnika (wariant optymistyczny) | {_komorka(k, t.get('pe_forward_maksimum_arkusz'))} | "
+        f"{_komorka(k, t.get('ps_forward_maksimum_arkusz'))} |",
+        "",
+        "| Cena docelowa na 12 miesięcy | Konserwatywna | Optymistyczna | Potencjał kons. | Potencjał optym. |",
+        "|---|---:|---:|---:|---:|",
+        *[f"| {nazwa} | {_komorka(k, t.get(p + 'kons'))} | {_komorka(k, t.get(p + 'optym'))} | "
+          f"{_komorka(k, t.get(p + 'potencjal_kons'))} | {_komorka(k, t.get(p + 'potencjal_optym'))} |"
+          for nazwa, p in (("Z P/E (mediana albo maksimum P/E × prognoza EPS)", "pe_"),
+                           ("Z P/S (mediana albo maksimum P/S × prognoza sprzedaży na akcję)", "ps_"),
+                           ("**Cena docelowa** (średnia z P/E i P/S)", ""))],
+        "",
+        f"Potencjał liczy arkusz od kursu z arkusza: {_komorka(k, t.get('kurs_arkusz'))}. "
+        + (f"Kurs pobrany przez silnik z {kurs.okres.koniec.strftime('%d.%m.%Y')}: {_komorka(k, kurs.id)}." if kurs else ""),
+        "",
+        "Założenia arkusza (ustawia je właściciel):", "",
+        "- Wariant konserwatywny: mnożnik wraca do mediany historycznego P/E i P/S 1-Year Forward.",
+        "- Wariant optymistyczny: mnożnik wraca do maksimum z historii, czyli do poziomu z „dobrych czasów” spółki.",
+        "- Konsensus EPS i konsensus sprzedaży na akcję na kolejne 12 miesięcy się sprawdzą.",
+        "- Horyzont wynosi 12 miesięcy: za rok dzisiejsza prognoza stanie się wynikiem raportowanym.",
+        "- Cena docelowa to średnia z metody P/E i metody P/S; przy EPS = 0 liczy się tylko metoda P/S.",
+        "- Dane pochodzą z jednego źródła (¹): ze Scrab, przez arkusz właściciela, a nie ze sprawozdań spółki.",
+        "",
+        "To wycena przy założeniach właściciela, a nie prognoza kursu ani rekomendacja.",
+    ]
 
 
 def _wycena_md(k: Kalkulator, wynik: dict) -> list[str]:
@@ -313,5 +291,5 @@ def _wycena_md(k: Kalkulator, wynik: dict) -> list[str]:
         cap = k.fakt(w["kapitalizacja"])
         naglowek += f" (kurs z {cap.okres.koniec.isoformat()}, przepływy: {w.get('okres_bazowy')})"
     return (["", naglowek, ""] + wycena_tabela(k, wynik) + ["", "## Scenariusze", ""] + scenariusze_tabela(k, wynik)
-            + ["", "## Cena docelowa wg Treli", ""] + trela_tabela(k, wynik)
+            + (["", "## Cena docelowa wg arkusza właściciela", ""] + trela_tabela(k, wynik) if wynik.get("trela") else [])
             + ["", "## Karta w stylu Treli (informacja, nie bramka)", ""] + karta_tabela(k, wynik))

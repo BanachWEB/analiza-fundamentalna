@@ -203,16 +203,14 @@ Banki, ubezpieczyciele, brokerzy, windykacja, deweloperzy, studia gier, handel d
 - Prawdopodobieństwo tezy: stopa bazowa jako punkt wyjścia, korekta o dowody, rozbicie na warunki konieczne, pre-mortem, krok 5 pp, przedział 15–85%.
 - Skill zapisuje prawdopodobieństwo z datą rozstrzygnięcia, żeby można było później liczyć Brier score.
 
-### 7.1. Cena docelowa wg Treli
+### 7.1. Cena docelowa wg arkusza właściciela
 
-Metoda pochodzi z arkusza Tomasza Treli „Cena docelowa” (tradingforaliving.pl). Decyzje właściciela z 11.11.2026: dane w pliku YAML, miejsce w części 8 raportu, percentyl zamiast maksimum, miara w karcie Treli, jedno wyliczenie na datę analizy (bez dziennika rewizji).
+Właściciel liczy cenę docelową w swoim arkuszu „Cena-docelowa.xlsx” (metoda Tomasza Treli, tradingforaliving.pl; dane ze Scrab). Decyzje właściciela z 11.11.2026: skill nie liczy tej wyceny sam, tylko przepisuje wyniki arkusza i traktuje je jako wycenę właściciela według jego założeń; plik dołącza właściciel do rozmowy; miejsce w części 8 raportu; potencjał konserwatywny jest miarą karty Treli; jedno wyliczenie na datę analizy, bez dziennika rewizji.
 
-- Wzór: cena docelowa = mnożnik z historii × prognoza na akcję na rok naprzód. Metoda P/E mnoży P/E 1-Year Forward przez prognozę EPS, a metoda P/S mnoży P/S 1-Year Forward przez prognozę sprzedaży na akcję.
-- Wariant konserwatywny używa mediany mnożnika z 5 lat. Wariant optymistyczny używa percentyla serii mnożnika z 5 lat (parametr w `konfiguracja/cena-docelowa-trela.yaml`), a nie maksimum, bo maksimum bywa jednorazowym szczytem.
-- Cena docelowa to średnia z metody P/E i metody P/S. Przy EPS ≤ 0 silnik liczy tylko metodę P/S. Potencjał = cena docelowa ÷ kurs − 1, gdzie kurs pobiera silnik.
-- Dane wejściowe podaje właściciel w pliku `D/scrab.yaml` (format w `silnik/obliczenia/trela.py`). Silnik zapisuje plik i pliki serii w archiwum jako `wklejka` ze źródłem „Scrab”, a każdą liczbę dodaje do rejestru ze statusem `jedno_zrodlo` i z dosłownym wierszem pliku jako cytatem (punkt 3.3).
-- Kontrole: kurs ze Scrab porównany z kursem silnika oraz mediana policzona z serii porównana z medianą 5Y odczytaną ze Scrab. Rozbieżność ponad tolerancję to trop do sprawdzenia, a nie stop.
-- Raport (część 8) pokazuje dane wejściowe, oba warianty, siatki wrażliwości (mnożnik ± punkty × prognoza ± 5% i ± 10%) i założenia. Cena docelowa to wycena przy założeniach, a nie prognoza kursu ani rekomendacja.
+- Plik jest opcjonalny. Skill kopiuje go do `D/cena-docelowa.xlsx`. Bez pliku raport i karta pomijają tę część bez wpisu w brakach danych.
+- Silnik odczytuje z zakładki „Cena docelowa” wartości policzone przez arkusz (dane wejściowe, ceny docelowe z P/E i P/S, średnią, potencjały) i zapisuje plik w archiwum jako `wklejka`. Każda liczba trafia do rejestru ze statusem `jedno_zrodlo` i z adresem komórki (punkt 3.3).
+- Ticker w arkuszu musi zgadzać się z analizowaną spółką; inaczej silnik nie wstawia żadnej liczby.
+- Raport podaje wynik jako „wg twojego arkusza”, z założeniami arkusza. To wycena przy założeniach właściciela, a nie prognoza kursu ani rekomendacja.
 
 ## 8. Strona TL;DR i układ PDF
 
@@ -228,7 +226,7 @@ Każda miara dostaje 0–10 punktów na liniowej skali między dwoma progami. Wy
 |---|---|---|
 | Wzrost | 30% | przychody i EPS: CAGR z 3 lat oraz prognoza na 2 lata |
 | Jakość i stabilność | 25% | ROIC, FCF po SBC ÷ zysk netto, dług netto/EBITDA, Z'' |
-| Wycena | 20% | EV/EBIT i FCF yield wobec własnej historii z 5 lat i sektora; wzrost implikowany z wyceny odwrotnej; potencjał do ceny docelowej wg Treli, wariant konserwatywny (punkt 7.1) |
+| Wycena | 20% | EV/EBIT i FCF yield wobec własnej historii z 5 lat i sektora; wzrost implikowany z wyceny odwrotnej; potencjał do ceny docelowej z arkusza właściciela, wariant konserwatywny (punkt 7.1) |
 | Analitycy | 15% | kierunek rewizji EPS z 90 dni, potencjał do średniej ceny docelowej |
 | Momentum | 10% | stopa zwrotu z 12 mies. bez ostatniego miesiąca, wobec benchmarku |
 

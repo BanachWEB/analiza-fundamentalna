@@ -24,8 +24,8 @@ filary:
       fcf_yield: {USA: {zero: 0.01, dziesiec: 0.08}, GPW: {zero: 0.02, dziesiec: 0.10}}
       ev_ebit: {USA: {zero: 40.0, dziesiec: 10.0}, GPW: {zero: 25.0, dziesiec: 6.0}}
       nadwyzka_wzrostu: {USA: {zero: -0.10, dziesiec: 0.10}, GPW: {zero: -0.10, dziesiec: 0.10}}  # CAGR historyczny − wzrost implikowany
-      # Potencjał do ceny docelowej wg Treli, wariant konserwatywny (mediana mnożnika z 5 lat; scrab.yaml).
-      # Mnożnik równy medianie daje 5 pkt. Zgoda właściciela na miarę: 11.11.2026; progi do potwierdzenia.
+      # Potencjał do ceny docelowej z arkusza właściciela (metoda Treli), wariant konserwatywny: mediana mnożnika.
+      # Mnożnik równy medianie daje 5 pkt. Brak arkusza → miara ma brak danych. Zgoda właściciela: 11.11.2026; progi do potwierdzenia.
       potencjal_trela_kons: {USA: {zero: -0.40, dziesiec: 0.40}, GPW: {zero: -0.40, dziesiec: 0.40}}
   analitycy:
     waga: 0.15

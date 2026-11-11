@@ -42,7 +42,7 @@ Repozytorium buduje skill, który robi wstępną analizę fundamentalną spółk
 | Dane rynkowe: kursy, stopy, premie za ryzyko | `silnik/pobieranie/rynek.py` |
 | Dane makro do Ohlson O-score: deflator PKB USA, kurs USD/PLN | `silnik/pobieranie/makro.py` |
 | Parametry wyceny odwrotnej | `konfiguracja/wycena.yaml` |
-| Cena docelowa wg Treli: obliczenia i format `scrab.yaml` / parametry | `silnik/obliczenia/trela.py` / `konfiguracja/cena-docelowa-trela.yaml` |
+| Cena docelowa z arkusza właściciela (odczyt `Cena-docelowa.xlsx`) | `silnik/obliczenia/trela.py` |
 | Wagi i progi karty Treli | `konfiguracja/karta-treli.yaml` |
 | Bramki stopu: lista, progi, decyzja | `konfiguracja/bramki.yaml`, `silnik/bramki/` |
 | Wzorce fragmentów do bramek modelu | `konfiguracja/fragmenty-bramek.yaml` |
