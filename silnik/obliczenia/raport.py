@@ -7,7 +7,7 @@ from typing import Optional
 
 from silnik.fakty.schemat import Fakt, Jednostka, Status
 
-from .jakosc import PROG_M, STREFY_Z
+from .jakosc import PROG_M, PROG_OHLSON, STREFY_Z
 from .kalkulator import Kalkulator
 from .karta_treli import wynik_ogolny
 
@@ -34,6 +34,7 @@ WIERSZE = [
     ("piotroski_f", "Piotroski F-score (0–9)"),
     ("beneish_m", "Beneish M-score (próg −1,78)"),
     ("altman_z2", "Altman Z'' (strefy 1,10 / 2,60)"),
+    ("ohlson_p", "Ohlson: prawdopodobieństwo upadłości w roku (próg 3,8%)"),
 ]
 
 
@@ -112,6 +113,11 @@ def obliczenia_md(k: Kalkulator, wynik: dict) -> str:
         if z:
             strefa = "zagrożenia" if z.wartosc < STREFY_Z[0] else ("szara" if z.wartosc < STREFY_Z[1] else "bezpieczna")
             linie.append(f"- Altman Z'' {format_(z)}: strefa {strefa}.")
+        o, op = k.fakt(f"ohlson_o.{ost}"), k.fakt(f"ohlson_p.{ost}")
+        if o and op:
+            linie.append(f"- Ohlson O-score {format_(o)}, prawdopodobieństwo upadłości w ciągu roku {format_(op)}: "
+                         + ("powyżej progu Ohlsona 3,8% — sprawdź wypłacalność (dźwignia, płynność, przepływy)."
+                            if op.wartosc > PROG_OHLSON else "poniżej progu Ohlsona 3,8%."))
     linie += _wycena_md(k, wynik)
     linie += ["", "## Braki danych", ""]
     linie += [f"- {b}" for b in sorted(set(k.braki))] or ["Brak."]

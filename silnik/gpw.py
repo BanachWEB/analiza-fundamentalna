@@ -22,7 +22,7 @@ from silnik.fakty.rejestr import RejestrFaktow
 from silnik.fakty.schemat import Status, TypDokumentu
 from silnik.fakty.weryfikacja import Raport, drugie_zrodlo, grupa_okresu, podsumowanie_md, tozsamosci
 from silnik.fakty.schemat import Fakt
-from silnik.pobieranie import biznesradar, esef, rynek
+from silnik.pobieranie import biznesradar, esef, makro, rynek
 from silnik.pobieranie.archiwum import Archiwum
 from silnik.pobieranie.http import BladPobierania, pobierz
 
@@ -125,6 +125,14 @@ def uruchom(ticker: str, dzien: date, esef_urls: list[str], pdf_urls: list[str],
             print(f"Kontrola kursu niedostępna: {e}")
     except (BladPobierania, rynek.BladRynku) as e:
         print(f"Dane rynkowe niepełne: {e}")
+    # deflator PKB USA i kurs USD/PLN z NBP do Ohlson O-score
+    try:
+        dni = sorted({f.okres.koniec for f in rejestr.fakty() if f.pozycja == "przychody" and f.okres.typ.value == "FY"})
+        for f in makro.fakty(archiwum, dni, "PLN"):
+            rejestr.znane_dokumenty(archiwum.ids())
+            rejestr.dodaj(f, zastap=True)
+    except (BladPobierania, makro.BladMakro) as e:
+        print(f"Dane do Ohlson O-score niedostępne: {e}")
     if rf is not None:
         rejestr.dodaj(Fakt(id="rentownosc_10l.zalozenie", rodzaj="zalozenie", pozycja="rentownosc_10l",
                            okres={"typ": "brak"}, wartosc=rf, jednostka="ulamek", metoda="model", status="jedno_zrodlo",

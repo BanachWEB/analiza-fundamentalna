@@ -92,7 +92,7 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają obliczenia same. Osobno: `pyt
 - **Okresy pochodne:** Q2, Q3 i Q4 z danych narastających (np. Q4 = rok − 9 miesięcy) oraz TTM = ostatni rok + bieżący okres narastający − ten sam okres rok wcześniej.
 - **Uzupełnienia ze składników** (z jawnym wzorem): amortyzacja z części (Microsoft), zobowiązania = pasywa − kapitał (Walmart), dług z kredytów i obligacji (spółki z GPW).
 - **Panel:** marże, EBITDA, FCF dla właścicieli (po capeksie, SBC i spłacie leasingu, jeśli spółka je podaje), konwersja FCF, capex ÷ amortyzacja, ROE, ROIC (NOPAT przy stawce ustawowej: 21% USA, 19% Polska — założenie zapisane w rejestrze), dług netto ÷ EBITDA (z leasingiem i bez), pokrycie odsetek, dynamika r/r i CAGR 3/5 lat, zmiana liczby akcji.
-- **Jakość:** Piotroski F-score, Beneish M-score (próg −1,78), Altman Z'' (strefy 1,10 / 2,60). To diagnostyka, nie stop.
+- **Jakość:** Piotroski F-score, Beneish M-score (próg −1,78), Altman Z'' (strefy 1,10 / 2,60), Ohlson O-score z prawdopodobieństwem upadłości w ciągu roku (próg Ohlsona 3,8%; deflator PKB USA z FRED, dla GPW kurs USD z NBP). To diagnostyka, nie stop.
 - **Podział akcji:** gdy liczba akcji zmienia się o całkowitą krotność (np. 3:1), silnik nie liczy dynamiki liczby akcji ani EPS przez tę granicę.
 - Wskaźnik bez danych albo bez sensu (np. dynamika od ujemnej bazy) nie powstaje; powód trafia do sekcji „Braki danych” w `obliczenia.md`.
 

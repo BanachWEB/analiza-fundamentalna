@@ -37,8 +37,9 @@ Repozytorium buduje skill, który robi wstępną analizę fundamentalną spółk
 | Drugie źródło dla GPW | `silnik/pobieranie/biznesradar.py` |
 | Test cytatu dla liczb z PDF i tekstu | `silnik/fakty/cytat.py` |
 | Przebieg danych dla spółki z GPW | `silnik/gpw.py` |
-| Obliczenia: okresy pochodne, wskaźniki, F/M/Z'', wycena, scenariusze, karta Treli | `silnik/obliczenia/` |
+| Obliczenia: okresy pochodne, wskaźniki, F/M/Z''/O, wycena, scenariusze, karta Treli | `silnik/obliczenia/` |
 | Dane rynkowe: kursy, stopy, premie za ryzyko | `silnik/pobieranie/rynek.py` |
+| Dane makro do Ohlson O-score: deflator PKB USA, kurs USD/PLN | `silnik/pobieranie/makro.py` |
 | Parametry wyceny odwrotnej | `konfiguracja/wycena.yaml` |
 | Wagi i progi karty Treli | `konfiguracja/karta-treli.yaml` |
 | Bramki stopu: lista, progi, decyzja | `konfiguracja/bramki.yaml`, `silnik/bramki/` |
@@ -80,6 +81,6 @@ Dotyczy wszystkiego, co piszesz: odpowiedzi w rozmowie, plików w repozytorium i
 ## Środowisko
 
 - `pip install -r requirements.txt`, potem `python -m pytest`.
-- Powłoka i Python mają dostęp do data.sec.gov, stockanalysis.com, biznesradar.pl i stron relacji inwestorskich spółek oraz query1.finance.yahoo.com, home.treasury.gov, pages.stern.nyu.edu i strefainwestorow.pl, efts.sec.gov i gpw.pl (strony notowań i komunikatów) (sprawdzone 10.11.2026; bankier.pl odmawia, 403; Yahoo ogranicza liczbę zapytań, 429). Pobieraj dane kodem (`silnik/pobieranie/`), bo WebFetch przepuszcza strony przez model streszczający. WebFetch i WebSearch służą tylko do szukania informacji, nigdy do przepisywania liczb.
+- Powłoka i Python mają dostęp do data.sec.gov, stockanalysis.com, biznesradar.pl i stron relacji inwestorskich spółek oraz query1.finance.yahoo.com, home.treasury.gov, pages.stern.nyu.edu i strefainwestorow.pl, efts.sec.gov i gpw.pl (strony notowań i komunikatów), fred.stlouisfed.org i api.nbp.pl (sprawdzone 10–11.11.2026; bankier.pl odmawia, 403; Yahoo ogranicza liczbę zapytań, 429). Pobieraj dane kodem (`silnik/pobieranie/`), bo WebFetch przepuszcza strony przez model streszczający. WebFetch i WebSearch służą tylko do szukania informacji, nigdy do przepisywania liczb.
 - Zmienna `ANALIZA_USER_AGENT`: SEC prosi o nazwę narzędzia i adres kontaktowy w nagłówku. Silnik nie podmienia nagłówków i nie omija blokad.
 - Pliki źródłowe z archiwum trzymaj poza repozytorium (domyślnie `~/.cache/analiza-fundamentalna/archiwum`, zmienna `ANALIZA_ARCHIWUM`). Do repozytorium trafia tylko `dokumenty.json` z adresem i sumą SHA-256 każdego pliku.

@@ -1,4 +1,4 @@
-"""Wskaźniki jakości zysków i ryzyka: Piotroski F-score, Beneish M-score, Altman Z''.
+"""Wskaźniki jakości zysków i ryzyka: Piotroski F-score, Beneish M-score, Altman Z'', Ohlson O-score.
 
 To diagnostyka, nie wyrok (specyfikacja, część 4): wynik poza progiem daje
 flagę do sprawdzenia, a nie stop. Wskaźniki nie mają sensu dla banków
@@ -9,9 +9,21 @@ i ubezpieczycieli; dla nich silnik ich nie liczy (sektor ustala krok 5).
 - Beneish (1999), model 8-zmiennowy; próg −1,78.
 - Altman Z'' (1995) dla spółek nieprodukcyjnych i rynków wschodzących:
   6,56·X1 + 3,26·X2 + 6,72·X3 + 1,05·X4; strefy: > 2,60 bezpieczna, < 1,10 zagrożenia.
+- Ohlson (1980), model 1 (upadłość w ciągu roku):
+  O = −1,32 − 0,407·SIZE + 6,03·TL/TA − 1,43·WC/TA + 0,0757·CL/CA − 1,72·X − 2,37·NI/TA
+      − 1,83·FFO/TL + 0,285·Y − 0,521·(NI_t − NI_t−1) / (|NI_t| + |NI_t−1|),
+  SIZE = ln(aktywa w USD / indeks cen), indeks = 100 w 1968 r., z roku poprzedzającego bilans
+  (deflator PKB USA, FRED GDPDEF); X = 1, gdy zobowiązania > aktywa; Y = 1, gdy strata netto
+  w obu ostatnich latach; FFO = zysk netto + amortyzacja (przybliżenie „funds from operations”).
+  Prawdopodobieństwo upadłości = 1 / (1 + e^(−O)). Ohlson podał próg 0,038 jako minimalizujący
+  sumę błędów obu rodzajów w swojej próbie. Model powstał na spółkach przemysłowych z USA;
+  dla GPW silnik przelicza aktywa na USD kursem NBP z dnia bilansu, więc wynik jest przybliżony.
 """
 
 from __future__ import annotations
+
+import math
+from datetime import timedelta
 
 from silnik.fakty.schemat import Jednostka, Okres
 
@@ -19,6 +31,8 @@ from .kalkulator import Kalkulator
 
 PROG_M = -1.78
 STREFY_Z = (1.10, 2.60)
+PROG_OHLSON = 0.038
+ROK_BAZOWY_OHLSON = 1968
 
 
 def _ids(k: Kalkulator, pary: list[tuple[str, str]]) -> list[str] | None:
@@ -109,6 +123,59 @@ def altman(k: Kalkulator, lata: list) -> None:
                  wej, fn, Jednostka.punkty, Okres(typ="FY", poczatek=t.okres.poczatek, koniec=t.okres.koniec))
 
 
+def _kwartaly(rok: int) -> list[str]:
+    return [f"deflator_pkb_usa.{rok}-03-31", f"deflator_pkb_usa.{rok}-06-30",
+            f"deflator_pkb_usa.{rok}-09-30", f"deflator_pkb_usa.{rok}-12-31"]
+
+
+def _kurs_usd(k: Kalkulator, waluta: str | None, dzien, dni_wstecz: int = 10) -> list[str] | None:
+    """[] dla USD, [id kursu] dla PLN (NBP z dnia bilansu albo sprzed niego), None dla innej waluty."""
+    if waluta == "USD":
+        return []
+    if waluta == "PLN":
+        for d in range(dni_wstecz + 1):
+            fid = f"kurs_usd_pln.{(dzien - timedelta(days=d)).isoformat()}"
+            if k.jest(fid):
+                return [fid]
+        return [f"kurs_usd_pln.{dzien.isoformat()}"]  # brak → wylicz zapisze brak
+    return None
+
+
+def ohlson(k: Kalkulator, lata: list) -> None:
+    for n in range(1, len(lata)):
+        t, t1 = lata[n], lata[n - 1]
+        S, S1 = t.id.split(".", 1)[1], t1.id.split(".", 1)[1]
+        dzien = t.okres.koniec
+        B = dzien.isoformat()
+        aktywa = k.fakt(f"aktywa.{B}")
+        waluta = aktywa.waluta if aktywa else t.waluta
+        kurs = _kurs_usd(k, waluta, dzien)
+        if kurs is None:
+            k.braki.append(f"ohlson_o.{S}: brak kursu {waluta}/USD (silnik przelicza tylko PLN)")
+            continue
+        wej = [f"aktywa.{B}", f"zobowiazania.{B}", f"aktywa_obrotowe.{B}", f"zobowiazania_krotkoterminowe.{B}",
+               f"zysk_netto.{S}", f"zysk_netto.{S1}", f"amortyzacja.{S}",
+               *_kwartaly(dzien.year - 1), *_kwartaly(ROK_BAZOWY_OHLSON), *kurs]
+
+        def fn(ta, tl, ca, cl, ni, ni1, dep, r1, r2, r3, r4, b1, b2, b3, b4, *kurs_pln):
+            ta_usd = ta / kurs_pln[0] if kurs_pln else ta
+            indeks = (r1 + r2 + r3 + r4) / (b1 + b2 + b3 + b4) * 100  # 1968 = 100
+            size = math.log(ta_usd / indeks)
+            x = 1.0 if tl > ta else 0.0
+            y = 1.0 if ni < 0 and ni1 < 0 else 0.0
+            chin = (ni - ni1) / (abs(ni) + abs(ni1))
+            return (-1.32 - 0.407 * size + 6.03 * tl / ta - 1.43 * (ca - cl) / ta + 0.0757 * cl / ca
+                    - 1.72 * x - 2.37 * ni / ta - 1.83 * (ni + dep) / tl + 0.285 * y - 0.521 * chin)
+
+        okres = Okres(typ="FY", poczatek=t.okres.poczatek, koniec=t.okres.koniec)
+        o = k.wylicz(f"ohlson_o.{S}", "ohlson_o",
+                     "Ohlson O-score, model 1 (1980); SIZE = ln(aktywa USD / deflator PKB USA, 1968 = 100, rok przed bilansem); "
+                     "FFO = zysk netto + amortyzacja", wej, fn, Jednostka.punkty, okres)
+        if o:
+            k.wylicz(f"ohlson_p.{S}", "ohlson_p", "1 / (1 + e^(−O)); próg Ohlsona 0,038", [o.id],
+                     lambda v: 1 / (1 + math.exp(-v)), Jednostka.ulamek, okres)
+
+
 def dlug_dlugoterminowy_f(k: Kalkulator, lata: list) -> None:
     """Pomocniczo: dług długoterminowy (zbiorczy albo z kredytów i obligacji) jako jeden fakt."""
     for t in lata:
@@ -130,3 +197,4 @@ def oblicz(k: Kalkulator) -> None:
     piotroski(k, lata)
     beneish(k, lata)
     altman(k, lata)
+    ohlson(k, lata)
