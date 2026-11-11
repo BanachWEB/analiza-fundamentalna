@@ -60,7 +60,9 @@ def _tablica(html: str, start: int, klucz: str):
     m = re.compile(r"[,{]" + re.escape(klucz) + r":\[([^\]]*)\]").search(html, start)
     if not m:
         return None
-    return json.loads("[" + m.group(1) + "]")
+    # Strona zapisuje liczby jak JavaScript: „.5” i „-.077” bez zera przed kropką; JSON go wymaga.
+    tekst = re.sub(r"(^|,)(-?)\.(\d)", r"\1\g<2>0.\3", m.group(1))
+    return json.loads("[" + tekst + "]")
 
 
 POZYCJE_STANU = {"aktywa", "zobowiazania", "kapital_wlasny_razem"}
