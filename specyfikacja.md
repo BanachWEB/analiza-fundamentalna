@@ -210,6 +210,8 @@ Właściciel liczy cenę docelową w swoim arkuszu „Cena-docelowa.xlsx” (met
 - Plik jest opcjonalny. Skill kopiuje go do `D/cena-docelowa.xlsx`. Bez pliku raport i karta pomijają tę część bez wpisu w brakach danych.
 - Silnik odczytuje z zakładki „Cena docelowa” wartości policzone przez arkusz (dane wejściowe, ceny docelowe z P/E i P/S, średnią, potencjały) i zapisuje plik w archiwum jako `wklejka`. Każda liczba trafia do rejestru ze statusem `jedno_zrodlo` i z adresem komórki (punkt 3.3).
 - Ticker w arkuszu musi zgadzać się z analizowaną spółką; inaczej silnik nie wstawia żadnej liczby.
+- Datą wyceny jest zawsze data analizy (decyzja właściciela z 11.11.2026), bo zakładka „Cena docelowa” nie ma własnej daty.
+- Progi miary w karcie Treli: potencjał konserwatywny −40% daje 0 pkt, a +40% daje 10 pkt (`konfiguracja/karta-treli.yaml`; zgoda właściciela z 11.11.2026).
 - Raport podaje wynik jako „wg twojego arkusza”, z założeniami arkusza. To wycena przy założeniach właściciela, a nie prognoza kursu ani rekomendacja.
 
 ## 8. Strona TL;DR i układ PDF
