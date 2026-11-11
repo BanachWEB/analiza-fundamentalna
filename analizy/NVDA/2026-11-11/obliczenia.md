@@ -65,8 +65,8 @@ Plik wygenerował silnik (2026-11-11). Kwoty w mln USD. ¹ = co najmniej jedno w
 
 | Scenariusz | Prawdopodobieństwo | Wartość na akcję | Stopa zwrotu przy obecnym kursie |
 |---|---:|---:|---:|
-| byk | 25,0%¹ | 188,16 USD | 10,1%¹ |
 | bazowy | 45,0%¹ | 98,98 USD | 6,8%¹ |
+| byk | 25,0%¹ | 188,16 USD | 10,1%¹ |
 | niedzwiedz | 30,0%¹ | 44,28 USD | 4,3%¹ |
 | Wartość oczekiwana na akcję | 104,87 USD¹ |  | |
 | Potencjał oczekiwany | -37,9%¹ |  | |

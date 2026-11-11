@@ -1,0 +1,1589 @@
+{
+ "fakty": [
+  {
+   "id": "przychody_centra_danych.FY2027Q2",
+   "pozycja": "przychody_centra_danych",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 89023,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Revenue by Market Platform / Reportable Segments"
+   },
+   "cytat": "Data Center $89,023 $75,246 $41,096",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "przychody_hyperscale.FY2027Q2",
+   "pozycja": "przychody_hyperscale",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 48710,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Revenue by Market Platform / Reportable Segments"
+   },
+   "cytat": "Hyperscale 48,710 43,050 24,168",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "przychody_acie.FY2027Q2",
+   "pozycja": "przychody_acie",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 40313,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Revenue by Market Platform / Reportable Segments"
+   },
+   "cytat": "AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "przychody_edge_computing.FY2027Q2",
+   "pozycja": "przychody_edge_computing",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 7198,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Revenue by Market Platform / Reportable Segments"
+   },
+   "cytat": "Edge Computing 7,198 6,369 5,647",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "przychody_compute_networking.FY2027Q2",
+   "pozycja": "przychody_compute_networking",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 88299,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Revenue by Market Platform / Reportable Segments"
+   },
+   "cytat": "Compute & Networking $88,299 $74,550 $41,331",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "przychody_graphics.FY2027Q2",
+   "pozycja": "przychody_graphics",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 7922,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Revenue by Market Platform / Reportable Segments"
+   },
+   "cytat": "Graphics 7,922 7,065 5,412",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zysk_operacyjny_compute_networking.FY2027Q2",
+   "pozycja": "zysk_operacyjny_compute_networking",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 62696,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, MD&A, Operating Income by Reportable Segments"
+   },
+   "cytat": "Compute & Networking $ 62,696 $ 28,363 $ 34,333 121 %",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zysk_operacyjny_graphics.FY2027Q2",
+   "pozycja": "zysk_operacyjny_graphics",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 3899,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, MD&A, Operating Income by Reportable Segments"
+   },
+   "cytat": "Graphics 3,899 2,242 1,657 74 %",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zysk_operacyjny_compute_networking.FY2026",
+   "pozycja": "zysk_operacyjny_compute_networking",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-27",
+    "koniec": "2026-01-25"
+   },
+   "wartosc": 130141,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-019",
+   "miejsce": {
+    "sekcja": "10-K FY2026, MD&A, Operating Income by Reportable Segments"
+   },
+   "cytat": "Compute & Networking $ 130,141 $ 82,875 $ 47,266 57 %",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zysk_operacyjny_graphics.FY2026",
+   "pozycja": "zysk_operacyjny_graphics",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-27",
+    "koniec": "2026-01-25"
+   },
+   "wartosc": 9156,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-019",
+   "miejsce": {
+    "sekcja": "10-K FY2026, MD&A, Operating Income by Reportable Segments"
+   },
+   "cytat": "Graphics 9,156 5,085 4,071 80 %",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "przychody_compute_networking.FY2026",
+   "pozycja": "przychody_compute_networking",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-27",
+    "koniec": "2026-01-25"
+   },
+   "wartosc": 193479,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-019",
+   "miejsce": {
+    "sekcja": "10-K FY2026, MD&A, Revenue by Reportable Segments"
+   },
+   "cytat": "Compute & Networking $ 193,479 $ 116,193 $ 77,286 67 %",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "przychody_graphics.FY2026",
+   "pozycja": "przychody_graphics",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-27",
+    "koniec": "2026-01-25"
+   },
+   "wartosc": 22459,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-019",
+   "miejsce": {
+    "sekcja": "10-K FY2026, MD&A, Revenue by Reportable Segments"
+   },
+   "cytat": "Graphics 22,459 14,304 8,155 57 %",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "przychody_usa.FY2027Q2",
+   "pozycja": "przychody_usa",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 60074,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 13, Geographic Revenue based upon Customer Headquarters Location"
+   },
+   "cytat": "United States $ 60,074 $ 32,897 $ 123,843 $ 58,582",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "przychody_tajwan.FY2027Q2",
+   "pozycja": "przychody_tajwan",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 26985,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 13, Geographic Revenue based upon Customer Headquarters Location"
+   },
+   "cytat": "Taiwan 26,985 8,902 38,991 16,550",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "przychody_chiny.FY2027Q2",
+   "pozycja": "przychody_chiny",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 7880,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 13, Geographic Revenue based upon Customer Headquarters Location"
+   },
+   "cytat": "China (including Hong Kong) 7,880 3,985 12,430 13,644",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "chiny_hopper_udzial_centra_danych_max.FY2027Q2",
+   "pozycja": "chiny_hopper_udzial_centra_danych_max",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 0.01,
+   "jednostka": "ulamek",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Revenue (górna granica: „less than 1%”)"
+   },
+   "cytat": "Shipments of Data Center Hopper products to China during the quarter were less than 1% of Data Center revenue.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "klient_bezposredni_1_udzial.FY2027Q2",
+   "pozycja": "klient_bezposredni_1_udzial",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 0.16,
+   "jednostka": "ulamek",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q, Note 13, Concentration of Revenue / Direct Customers"
+   },
+   "cytat": "For the second quarter of fiscal year 2027, one direct customer represented 16% of total revenue",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "klient_bezposredni_1_udzial.FY2027H1",
+   "pozycja": "klient_bezposredni_1_udzial",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-26",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 0.16,
+   "jednostka": "ulamek",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q, Note 13, Concentration of Revenue / Direct Customers"
+   },
+   "cytat": "For the first half of fiscal year 2027, three direct customers represented 16%, 15%, and 13% of total revenue",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "klient_bezposredni_2_udzial.FY2027H1",
+   "pozycja": "klient_bezposredni_2_udzial",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-26",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 0.15,
+   "jednostka": "ulamek",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q, Note 13, Concentration of Revenue / Direct Customers"
+   },
+   "cytat": "For the first half of fiscal year 2027, three direct customers represented 16%, 15%, and 13% of total revenue",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "klient_bezposredni_3_udzial.FY2027H1",
+   "pozycja": "klient_bezposredni_3_udzial",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-26",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 0.13,
+   "jednostka": "ulamek",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q, Note 13, Concentration of Revenue / Direct Customers"
+   },
+   "cytat": "For the first half of fiscal year 2027, three direct customers represented 16%, 15%, and 13% of total revenue",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "klient_bezposredni_1_udzial.FY2027Q1",
+   "pozycja": "klient_bezposredni_1_udzial",
+   "okres": {
+    "typ": "Q1",
+    "poczatek": "2026-01-26",
+    "koniec": "2026-04-26"
+   },
+   "wartosc": 0.21,
+   "jednostka": "ulamek",
+   "dokument": "doc-021",
+   "miejsce": {
+    "sekcja": "10-Q, Note 13, Concentration of Revenue / Direct Customers"
+   },
+   "cytat": "For the first quarter of fiscal year 2027, three direct customers represented 21%, 17%, and 16% of total revenue",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "klient_bezposredni_2_udzial.FY2027Q1",
+   "pozycja": "klient_bezposredni_2_udzial",
+   "okres": {
+    "typ": "Q1",
+    "poczatek": "2026-01-26",
+    "koniec": "2026-04-26"
+   },
+   "wartosc": 0.17,
+   "jednostka": "ulamek",
+   "dokument": "doc-021",
+   "miejsce": {
+    "sekcja": "10-Q, Note 13, Concentration of Revenue / Direct Customers"
+   },
+   "cytat": "For the first quarter of fiscal year 2027, three direct customers represented 21%, 17%, and 16% of total revenue",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "klient_bezposredni_3_udzial.FY2027Q1",
+   "pozycja": "klient_bezposredni_3_udzial",
+   "okres": {
+    "typ": "Q1",
+    "poczatek": "2026-01-26",
+    "koniec": "2026-04-26"
+   },
+   "wartosc": 0.16,
+   "jednostka": "ulamek",
+   "dokument": "doc-021",
+   "miejsce": {
+    "sekcja": "10-Q, Note 13, Concentration of Revenue / Direct Customers"
+   },
+   "cytat": "For the first quarter of fiscal year 2027, three direct customers represented 21%, 17%, and 16% of total revenue",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "klient_bezposredni_1_udzial.FY2026",
+   "pozycja": "klient_bezposredni_1_udzial",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-27",
+    "koniec": "2026-01-25"
+   },
+   "wartosc": 0.22,
+   "jednostka": "ulamek",
+   "dokument": "doc-019",
+   "miejsce": {
+    "sekcja": "10-K FY2026, MD&A, Concentration of Revenue"
+   },
+   "cytat": "For fiscal year 2026, sales to one direct customer represented 22% of total revenue and sales to another direct customer represented 14% of total revenue",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "klient_bezposredni_2_udzial.FY2026",
+   "pozycja": "klient_bezposredni_2_udzial",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-27",
+    "koniec": "2026-01-25"
+   },
+   "wartosc": 0.14,
+   "jednostka": "ulamek",
+   "dokument": "doc-019",
+   "miejsce": {
+    "sekcja": "10-K FY2026, MD&A, Concentration of Revenue"
+   },
+   "cytat": "For fiscal year 2026, sales to one direct customer represented 22% of total revenue and sales to another direct customer represented 14% of total revenue",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "naleznosci_klient_1_udzial.2026-07-26",
+   "pozycja": "naleznosci_klient_1_udzial",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 0.22,
+   "jednostka": "ulamek",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 1 (Financial Statement Information), accounts receivable concentration"
+   },
+   "cytat": "Five direct customers accounted for 22%, 14%, 13%, 11%, and 10% of our accounts receivable balance as of July 26, 2026.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "naleznosci_klient_1_udzial.2026-01-25",
+   "pozycja": "naleznosci_klient_1_udzial",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-01-25"
+   },
+   "wartosc": 0.25,
+   "jednostka": "ulamek",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 1 (Financial Statement Information), accounts receivable concentration"
+   },
+   "cytat": "Three direct customers accounted for 25%, 18%, and 13% of our accounts receivable balance as of January 25, 2026.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "dso.2026-07-26",
+   "pozycja": "dso",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 60,
+   "jednostka": "dni",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Balance Sheet and Cash Flow"
+   },
+   "cytat": "with 60 days sales outstanding (DSO), up from 45 days sequentially",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "dso.2026-04-26",
+   "pozycja": "dso",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-04-26"
+   },
+   "wartosc": 45,
+   "jednostka": "dni",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Balance Sheet and Cash Flow"
+   },
+   "cytat": "with 60 days sales outstanding (DSO), up from 45 days sequentially",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zapasy_surowce.2026-07-26",
+   "pozycja": "zapasy_surowce",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 11341,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 1, Inventories"
+   },
+   "cytat": "Raw materials $ 11,341 $ 3,807",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zapasy_surowce.2026-01-25",
+   "pozycja": "zapasy_surowce",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-01-25"
+   },
+   "wartosc": 3807,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 1, Inventories"
+   },
+   "cytat": "Raw materials $ 11,341 $ 3,807",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zapasy_produkcja_w_toku.2026-07-26",
+   "pozycja": "zapasy_produkcja_w_toku",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 13377,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 1, Inventories"
+   },
+   "cytat": "Work in process 13,377 8,822",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zapasy_wyroby_gotowe.2026-07-26",
+   "pozycja": "zapasy_wyroby_gotowe",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 6857,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 1, Inventories"
+   },
+   "cytat": "Finished goods 6,857 8,774",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zapasy_komentarz_cfo.2026-04-26",
+   "pozycja": "zapasy_komentarz_cfo",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-04-26"
+   },
+   "wartosc": 25.8,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Balance Sheet and Cash Flow"
+   },
+   "cytat": "Inventory was $31.6 billion, up from $25.8 billion sequentially",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "odpis_zapasow_i_zobowiazan_zakupowych.FY2027Q2",
+   "pozycja": "odpis_zapasow_i_zobowiazan_zakupowych",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 985,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, MD&A, Gross Margin"
+   },
+   "cytat": "Provisions for inventory and excess inventory purchase obligations totaled $985 million and $2.1 billion for the second quarter and first half of fiscal year 2027",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zobowiazania_nadmiar_zapasow.2026-07-26",
+   "pozycja": "zobowiazania_nadmiar_zapasow",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 2138,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 1, Accrued and Other Current Liabilities"
+   },
+   "cytat": "Excess inventory purchase obligations (2) 2,138 2,739",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "naleznosci_dluzszy_termin_platnosci_min_dni.2026-07-26",
+   "pozycja": "naleznosci_dluzszy_termin_platnosci_min_dni",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 90,
+   "jednostka": "dni",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 1, Financial Statement Information"
+   },
+   "cytat": "we have and may in the future provide longer payment terms ranging from 90 days up to one year",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zobowiazania_zaopatrzenie_pojemnosc.2026-07-26",
+   "pozycja": "zobowiazania_zaopatrzenie_pojemnosc",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 279,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 10, Future commitments by fiscal year"
+   },
+   "cytat": "Supply and capacity $ 92 $ 87 $ 88 $ 6 $ 5 $ 1 $ 279",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zobowiazania_zaopatrzenie_pojemnosc.2026-04-26",
+   "pozycja": "zobowiazania_zaopatrzenie_pojemnosc",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-04-26"
+   },
+   "wartosc": 119,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 10, Future commitments by fiscal year"
+   },
+   "cytat": "increasing supply commitments from $119 billion last quarter to $279 billion as of July 26, 2026",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zobowiazania_uslugi_chmurowe.2026-07-26",
+   "pozycja": "zobowiazania_uslugi_chmurowe",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 29,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 10, Future commitments by fiscal year"
+   },
+   "cytat": "Cloud service agreements 3 8 7 6 4 1 29",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zobowiazania_leasing_nierozpoczety.2026-07-26",
+   "pozycja": "zobowiazania_leasing_nierozpoczety",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 25,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 10, Future commitments by fiscal year"
+   },
+   "cytat": "Data center leases not commenced — 1 1 2 1 20 25",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zobowiazania_inwestycje_kapitalowe.2026-07-26",
+   "pozycja": "zobowiazania_inwestycje_kapitalowe",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 25,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 10, Future commitments by fiscal year"
+   },
+   "cytat": "Equity investments 18 3 2 2 — — 25",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zobowiazania_capex.2026-07-26",
+   "pozycja": "zobowiazania_capex",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 8,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 10, Future commitments by fiscal year"
+   },
+   "cytat": "Capital expenditures 7 1 — — — — 8",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zobowiazania_umowne_razem.2026-07-26",
+   "pozycja": "zobowiazania_umowne_razem",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 366,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 10, Future commitments by fiscal year"
+   },
+   "cytat": "Total $ 120 $ 100 $ 98 $ 16 $ 10 $ 22 $ 366",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zobowiazania_dodatkowe_umowy_ai_cloud.2026-07-26",
+   "pozycja": "zobowiazania_dodatkowe_umowy_ai_cloud",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 36,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 10, Additional Commitments"
+   },
+   "cytat": "AI cloud agreements $ — $ 6 $ 8 $ 7 $ 6 $ 9 $ 36",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zobowiazania_dodatkowe_razem.2026-07-26",
+   "pozycja": "zobowiazania_dodatkowe_razem",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 56,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 10, Additional Commitments"
+   },
+   "cytat": "Total $ — $ 6 $ 9 $ 8 $ 7 $ 26 $ 56",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "gwarancje_ai_cloud_maks_ekspozycja.2026-07-26",
+   "pozycja": "gwarancje_ai_cloud_maks_ekspozycja",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 3.5,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Guarantees"
+   },
+   "cytat": "The maximum gross exposure under all agreements is $3.5 billion.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "gwarancje_sb_energy_limit.2026-08-17",
+   "pozycja": "gwarancje_sb_energy_limit",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-08-17"
+   },
+   "wartosc": 105,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-023",
+   "miejsce": {
+    "sekcja": "8-K 17.08.2026, Item 1.01, Residual Value Guaranties"
+   },
+   "cytat": "NVIDIA’s aggregate payment obligation is cumulatively capped at $105 billion for its initial commitment under the Agreements.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "gwarancje_razem_maks_ekspozycja.2026-08-17",
+   "pozycja": "gwarancje_razem_maks_ekspozycja",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-08-17"
+   },
+   "wartosc": 108.5,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Guarantees"
+   },
+   "cytat": "Land, power, and shell guarantees for AI clouds $ 3.5 SB Energy Corp. guarantees 105.0 Total $ 108.5",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "gwarancje_ai_cloud_depozyt_powierniczy.2026-07-26",
+   "pozycja": "gwarancje_ai_cloud_depozyt_powierniczy",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 712,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 8, Derivative Financial Instrument Notional Values"
+   },
+   "cytat": "The partners have placed $712 million in escrow to partially mitigate our potential exposure",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "papiery_nienotowane.2026-07-26",
+   "pozycja": "papiery_nienotowane",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 51157,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Condensed Consolidated Balance Sheets"
+   },
+   "cytat": "Non-marketable securities 51,157 22,251",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "papiery_nienotowane.2026-01-25",
+   "pozycja": "papiery_nienotowane",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-01-25"
+   },
+   "wartosc": 22251,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Condensed Consolidated Balance Sheets"
+   },
+   "cytat": "Non-marketable securities 51,157 22,251",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "akcje_notowane_inwestycje.2026-07-26",
+   "pozycja": "akcje_notowane_inwestycje",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 42783,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Condensed Consolidated Balance Sheets"
+   },
+   "cytat": "Marketable equity securities 42,783 12,886",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zakup_papierow_kapitalowych.FY2027H1",
+   "pozycja": "zakup_papierow_kapitalowych",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-26",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": -42404,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Condensed Consolidated Statements of Cash Flows"
+   },
+   "cytat": "Purchases of equity securities (42,404) (1,245)",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zyski_z_papierow_kapitalowych_komunikat.FY2027Q2",
+   "pozycja": "zyski_z_papierow_kapitalowych_komunikat",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 7.8,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Other Income, Net and Income Tax"
+   },
+   "cytat": "Net gains from equity securities for the second quarter were $7.8 billion.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "platnosc_groq.FY2027H1",
+   "pozycja": "platnosc_groq",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-26",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": -2944,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Condensed Consolidated Statements of Cash Flows, financing"
+   },
+   "cytat": "Groq, Inc. (2,944) —",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "hugging_face_cena.2026-09-02",
+   "pozycja": "hugging_face_cena",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-09-02"
+   },
+   "wartosc": 11.9,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-024",
+   "miejsce": {
+    "sekcja": "8-K 3.09.2026, Item 8.01"
+   },
+   "cytat": "The transaction includes an approximately $11.9 billion purchase price payable to Hugging Face stockholders",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "emisja_obligacji.FY2027Q2",
+   "pozycja": "emisja_obligacji",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 25.0,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Balance Sheet and Cash Flow"
+   },
+   "cytat": "We issued $25.0 billion of senior unsecured notes in the second quarter to be used for general corporate purposes.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "obligacje_nominal.2026-07-26",
+   "pozycja": "obligacje_nominal",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 33.5,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Item 1A, risk factor on indebtedness"
+   },
+   "cytat": "As of July 26, 2026, we had $33.5 billion aggregate principal amount of senior notes outstanding.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "gotowka_i_papiery_dluzne.2026-07-26",
+   "pozycja": "gotowka_i_papiery_dluzne",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 56.6,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Balance Sheet and Cash Flow"
+   },
+   "cytat": "Cash, cash equivalents, and marketable debt securities were $56.6 billion",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "obligacje_2056_nominal.2026-06-18",
+   "pozycja": "obligacje_2056_nominal",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-18"
+   },
+   "wartosc": 3500000000,
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-029",
+   "miejsce": {
+    "sekcja": "8-K 18.06.2026, Item 8.01"
+   },
+   "cytat": "$3,500,000,000 aggregate principal amount of its 5.625% Notes due 2056",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zwrot_dla_akcjonariuszy_komunikat.FY2027Q2",
+   "pozycja": "zwrot_dla_akcjonariuszy_komunikat",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 26.0,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-030",
+   "miejsce": {
+    "sekcja": "Komunikat wyników Q2 FY2027, akapit o zwrocie kapitału"
+   },
+   "cytat": "NVIDIA returned approximately $26.0 billion to shareholders in the form of shares repurchased and cash dividends.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "odkup_akcji_kwota.FY2027Q2",
+   "pozycja": "odkup_akcji_kwota",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 19.7,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 12, Capital Return Program"
+   },
+   "cytat": "We repurchased 94 million and 67 million shares of our common stock for $19.7 billion and $9.7 billion during the second quarter",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "odkup_akcji_liczba.FY2027Q2",
+   "pozycja": "odkup_akcji_liczba",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 94,
+   "skala": "mln",
+   "jednostka": "akcje",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 12, Capital Return Program"
+   },
+   "cytat": "We repurchased 94 million and 67 million shares of our common stock for $19.7 billion and $9.7 billion during the second quarter",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "odkup_akcji_liczba.FY2027H1",
+   "pozycja": "odkup_akcji_liczba",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-26",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 203,
+   "skala": "mln",
+   "jednostka": "akcje",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 12, Capital Return Program"
+   },
+   "cytat": "and 203 million and 193 million shares of our common stock for $39.8 billion and $24.2 billion during the first half of fiscal years 2027 and 2026",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "odkup_akcji_kwota.FY2027H1",
+   "pozycja": "odkup_akcji_kwota",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-26",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 39.8,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 12, Capital Return Program"
+   },
+   "cytat": "and 203 million and 193 million shares of our common stock for $39.8 billion and $24.2 billion during the first half of fiscal years 2027 and 2026",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "autoryzacja_odkupu_nowa.2026-05-18",
+   "pozycja": "autoryzacja_odkupu_nowa",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-05-18"
+   },
+   "wartosc": 80.0,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 12, Capital Return Program"
+   },
+   "cytat": "On May 18, 2026, our Board of Directors approved an additional $80.0 billion in share repurchase authorization, without expiration.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "autoryzacja_odkupu_pozostala.2026-07-26",
+   "pozycja": "autoryzacja_odkupu_pozostala",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 99.3,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 12, Capital Return Program"
+   },
+   "cytat": "As of July 26, 2026, we were authorized, subject to certain specifications, to repurchase up to $99.3 billion of our common stock.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "dywidenda_kwartalna_na_akcje.2026-10-01",
+   "pozycja": "dywidenda_kwartalna_na_akcje",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-10-01"
+   },
+   "wartosc": 0.25,
+   "jednostka": "pieniadz_na_akcje",
+   "waluta": "USD",
+   "dokument": "doc-030",
+   "miejsce": {
+    "sekcja": "Komunikat wyników Q2 FY2027"
+   },
+   "cytat": "NVIDIA will pay its next quarterly cash dividend of $0.25 per share on October 1, 2026",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "dywidenda_kwartalna_na_akcje.2026-05-18",
+   "pozycja": "dywidenda_kwartalna_na_akcje",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-05-18"
+   },
+   "wartosc": 0.01,
+   "jednostka": "pieniadz_na_akcje",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Note 12, Capital Return Program"
+   },
+   "cytat": "we increased our quarterly cash dividend from $0.01 per share to $0.25 per share",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "prognoza_zarzadu_przychody.FY2027Q3",
+   "pozycja": "prognoza_zarzadu_przychody",
+   "okres": {
+    "typ": "Q3",
+    "poczatek": "2026-07-27",
+    "koniec": "2026-10-25"
+   },
+   "wartosc": 108.0,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Outlook"
+   },
+   "cytat": "Revenue is expected to be $108.0 billion, plus or minus 2%.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "prognoza_zarzadu_marza_brutto.FY2027Q3",
+   "pozycja": "prognoza_zarzadu_marza_brutto",
+   "okres": {
+    "typ": "Q3",
+    "poczatek": "2026-07-27",
+    "koniec": "2026-10-25"
+   },
+   "wartosc": 0.74,
+   "jednostka": "ulamek",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Outlook"
+   },
+   "cytat": "GAAP and non-GAAP gross margins are expected to be 74.0%, plus or minus 50 basis points.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "prognoza_zarzadu_koszty_operacyjne_gaap.FY2027Q3",
+   "pozycja": "prognoza_zarzadu_koszty_operacyjne_gaap",
+   "okres": {
+    "typ": "Q3",
+    "poczatek": "2026-07-27",
+    "koniec": "2026-10-25"
+   },
+   "wartosc": 9.2,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-031",
+   "miejsce": {
+    "sekcja": "CFO Commentary, Outlook"
+   },
+   "cytat": "GAAP and non-GAAP operating expenses are expected to be approximately $9.2 billion and $9.0 billion, respectively.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "marza_brutto_komunikat.FY2027Q2",
+   "pozycja": "marza_brutto_komunikat",
+   "okres": {
+    "typ": "Q2",
+    "poczatek": "2026-04-27",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 0.75,
+   "jednostka": "ulamek",
+   "dokument": "doc-030",
+   "miejsce": {
+    "sekcja": "Komunikat wyników Q2 FY2027"
+   },
+   "cytat": "For the quarter, GAAP and non-GAAP gross margins were both 75.0%.",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "h200_oplata_zapasy_zobowiazania.FY2027H1",
+   "pozycja": "h200_oplata_zapasy_zobowiazania",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-26",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 0.4,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Item 1A, risk factor on China"
+   },
+   "cytat": "we incurred a $0.4 billion charge associated with H200 for excess inventory and purchase obligations",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "clo_h200_import.2026-07-26",
+   "pozycja": "clo_h200_import",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-26"
+   },
+   "wartosc": 0.25,
+   "jednostka": "ulamek",
+   "dokument": "doc-020",
+   "miejsce": {
+    "sekcja": "10-Q Q2 FY2027, Item 1A, risk factor on China"
+   },
+   "cytat": "any H200s shipped under the new licensing program are subject to a 25% tariff upon importation into the United States",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "huang_akcje.2026-03-23",
+   "pozycja": "huang_akcje",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-03-23"
+   },
+   "wartosc": 870604104,
+   "jednostka": "akcje",
+   "dokument": "doc-022",
+   "miejsce": {
+    "sekcja": "DEF 14A 2026, Security Ownership of Certain Beneficial Owners and Management"
+   },
+   "cytat": "Jen-Hsun Huang 870,604,104 (1) — 870,604,104 3.58%",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "huang_udzial_w_akcjach.2026-03-23",
+   "pozycja": "huang_udzial_w_akcjach",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-03-23"
+   },
+   "wartosc": 0.0358,
+   "jednostka": "ulamek",
+   "dokument": "doc-022",
+   "miejsce": {
+    "sekcja": "DEF 14A 2026, Security Ownership of Certain Beneficial Owners and Management"
+   },
+   "cytat": "Jen-Hsun Huang 870,604,104 (1) — 870,604,104 3.58%",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "zarzad_udzial_w_akcjach.2026-03-23",
+   "pozycja": "zarzad_udzial_w_akcjach",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-03-23"
+   },
+   "wartosc": 0.0394,
+   "jednostka": "ulamek",
+   "dokument": "doc-022",
+   "miejsce": {
+    "sekcja": "DEF 14A 2026, Security Ownership of Certain Beneficial Owners and Management"
+   },
+   "cytat": "Directors and executive officers as a group (14 persons) 957,307,217 (13) 6,300 957,313,517 3.94%",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "blackrock_udzial_w_akcjach.2026-03-23",
+   "pozycja": "blackrock_udzial_w_akcjach",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-03-23"
+   },
+   "wartosc": 0.0743,
+   "jednostka": "ulamek",
+   "dokument": "doc-022",
+   "miejsce": {
+    "sekcja": "DEF 14A 2026, Security Ownership of Certain Beneficial Owners and Management"
+   },
+   "cytat": "BlackRock, Inc. 1,805,935,550 (14) — 1,805,935,550 7.43%",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "vanguard_udzial_w_akcjach.2026-03-23",
+   "pozycja": "vanguard_udzial_w_akcjach",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-03-23"
+   },
+   "wartosc": 0.0731,
+   "jednostka": "ulamek",
+   "dokument": "doc-022",
+   "miejsce": {
+    "sekcja": "DEF 14A 2026, Security Ownership of Certain Beneficial Owners and Management"
+   },
+   "cytat": "Vanguard Capital Management 1,777,408,252 (15) — 1,777,408,252 7.31%",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "huang_wynagrodzenie_razem.FY2026",
+   "pozycja": "huang_wynagrodzenie_razem",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-27",
+    "koniec": "2026-01-25"
+   },
+   "wartosc": 36343830,
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-022",
+   "miejsce": {
+    "sekcja": "DEF 14A 2026, Summary Compensation Table"
+   },
+   "cytat": "Jen-Hsun Huang 2026 1,497,627 24,800,511 6,000,000 4,045,691 (4) 36,343,830",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "huang_wynagrodzenie_razem.FY2025",
+   "pozycja": "huang_wynagrodzenie_razem",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2024-01-29",
+    "koniec": "2025-01-26"
+   },
+   "wartosc": 49866251,
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-022",
+   "miejsce": {
+    "sekcja": "DEF 14A 2026, Summary Compensation Table"
+   },
+   "cytat": "Jen-Hsun Huang 2026 1,497,627 24,800,511 6,000,000 4,045,691 (4) 36,343,830 President and CEO 2025 1,486,199 38,811,306 6,000,000 3,568,746 49,866,251",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  },
+  {
+   "id": "huang_ochrona_osobista_koszt.FY2026",
+   "pozycja": "huang_ochrona_osobista_koszt",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-27",
+    "koniec": "2026-01-25"
+   },
+   "wartosc": 3975533,
+   "jednostka": "pieniadz",
+   "waluta": "USD",
+   "dokument": "doc-022",
+   "miejsce": {
+    "sekcja": "DEF 14A 2026, Summary Compensation Table, przypis (4)"
+   },
+   "cytat": "(in the amount of $3,975,533, reflecting the full cost to the Company)",
+   "rodzaj": "raportowany",
+   "metoda": "model"
+  }
+ ]
+}
