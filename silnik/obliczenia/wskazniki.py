@@ -120,10 +120,11 @@ def dla_okresu(k: Kalkulator, S: str, okres: Okres, B: date, B_prev: Optional[da
         k.braki.append(f"dlug_netto.{d}: brak długu, nie liczę")
     if dn and ebitda:
         k.wylicz(i("dlug_netto_do_ebitda"), "dlug_netto_do_ebitda", "dlug_netto / ebitda", [dn.id, ebitda.id],
-                 lambda a, b: a / b, X, okres)
+                 lambda a, b: _do_ebitda(a, b), X, okres)
         if leasing_id:
             k.wylicz(i("dlug_netto_z_leasingiem_do_ebitda"), "dlug_netto_z_leasingiem_do_ebitda",
-                     "(dlug_netto + leasing) / ebitda", [dn.id, leasing_id, ebitda.id], lambda a, l, b: (a + l) / b, X, okres)
+                     "(dlug_netto + leasing) / ebitda", [dn.id, leasing_id, ebitda.id],
+                     lambda a, l, b: _do_ebitda(a + l, b), X, okres)
     odsetki = _opcjonalne(k, [i("koszty_odsetek")]) or _opcjonalne(k, [i("koszty_finansowe")])
     if odsetki:
         k.wylicz(i("pokrycie_odsetek"), "pokrycie_odsetek", f"zysk_operacyjny / {odsetki[0].split('.')[0]}",
@@ -142,6 +143,15 @@ def dla_okresu(k: Kalkulator, S: str, okres: Okres, B: date, B_prev: Optional[da
         wej = [i("zysk_operacyjny"), stawka, kapital_razem.id, dlug_id] + gotowka
         k.wylicz(i("roic"), "roic", "zysk_operacyjny × (1 - stawka_podatku) / (kapital_wlasny + dlug - gotowka)", wej,
                  lambda z, t, kap, dl, *g: z * (1 - t) / (kap + dl - sum(g)), U, okres)
+
+
+def _do_ebitda(dlug_netto: float, ebitda: float) -> float:
+    """Dług netto ÷ EBITDA. Przy EBITDA ≤ 0 wskaźnik nie ma sensu: ujemny dług netto podzielony
+    przez ujemną EBITDA daje dodatni wynik, który wygląda jak zadłużenie. Gotówkę netto
+    (ujemny dług netto przy dodatniej EBITDA) raport opisuje słowami „gotówka netto”."""
+    if ebitda <= 0:
+        raise BrakSensu("EBITDA ≤ 0, dług netto ÷ EBITDA nie ma sensu")
+    return dlug_netto / ebitda
 
 
 def _bez_podzialu(x: float, y: float) -> float:
@@ -201,6 +211,20 @@ def dynamika(k: Kalkulator) -> None:
         f, p = akcje[b], akcje[a]
         k.wylicz(f"zmiana_liczby_akcji.{b}", "zmiana_liczby_akcji", f"{f.id} / {p.id} - 1", [f.id, p.id],
                  _bez_podzialu, U, Okres(typ="FY", poczatek=f.okres.poczatek, koniec=f.okres.koniec))
+    # liczba akcji na koniec roku obrotowego: średnia ważona zaniża skutek emisji z końca roku
+    for poprz, f in zip(lata, lata[1:]):
+        a, p = _akcje_na_koniec(k, f.okres.koniec), _akcje_na_koniec(k, poprz.okres.koniec)
+        if a is None or p is None:
+            continue
+        S = f.id.split(".", 1)[1]
+        k.wylicz(f"zmiana_liczby_akcji_koniec.{S}", "zmiana_liczby_akcji_koniec", f"{a.id} / {p.id} - 1",
+                 [a.id, p.id], _bez_podzialu, U, Okres(typ="FY", poczatek=f.okres.poczatek, koniec=f.okres.koniec))
+
+
+def _akcje_na_koniec(k: Kalkulator, dzien: date) -> Optional[Fakt]:
+    """Liczba akcji na dzień bilansowy: z bilansu (akcje_koniec_okresu), a gdy jej brak — akcje w obrocie
+    z dnia oddalonego najwyżej o 5 dni (lata 52/53-tygodniowe)."""
+    return k.stan("akcje_koniec_okresu", dzien) or k.stan("akcje_w_obrocie", dzien)
 
 
 def oblicz(k: Kalkulator, ttm_koniec: Optional[date]) -> None:

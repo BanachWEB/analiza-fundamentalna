@@ -141,6 +141,22 @@ def zmiana_kursu_3m(sesje: list[Sesja]) -> Optional[tuple[float, date]]:
     return sesje[-1].zamkniecie / a.zamkniecie - 1, a.dzien
 
 
+def rsi(sesje: list[Sesja], okno: int = 14) -> Optional[float]:
+    """RSI Wildera z cen zamknięcia (0–100). Pierwsza średnia to średnia arytmetyczna z `okno` zmian,
+    kolejne wygładzamy: średnia = (poprzednia × (okno − 1) + zmiana) / okno. Informacja, nie bramka."""
+    if len(sesje) < okno + 1:
+        return None
+    zmiany = [b.zamkniecie - a.zamkniecie for a, b in zip(sesje, sesje[1:])]
+    wzrost = sum(max(z, 0) for z in zmiany[:okno]) / okno
+    spadek = sum(max(-z, 0) for z in zmiany[:okno]) / okno
+    for z in zmiany[okno:]:
+        wzrost = (wzrost * (okno - 1) + max(z, 0)) / okno
+        spadek = (spadek * (okno - 1) + max(-z, 0)) / okno
+    if spadek == 0:
+        return 100.0
+    return 100 - 100 / (1 + wzrost / spadek)
+
+
 # --- fakty rynkowe -------------------------------------------------------------------
 
 
@@ -150,7 +166,7 @@ def _fakt(fid, pozycja, okres, wartosc, jednostka, dok, miejsce, waluta=None, me
 
 
 def fakty_z_historii(sesje: list[Sesja], dok_ids: list[str], waluta: str, prefiks: str = "") -> list[Fakt]:
-    """Kurs ostatni, momentum 12–1, zmiana kursu z 3 miesięcy i średnie dzienne obroty z 60 sesji."""
+    """Kurs ostatni, momentum 12–1, zmiana kursu z 3 miesięcy, RSI 14-dniowy i średnie dzienne obroty z 60 sesji."""
     if not sesje:
         return []
     ost = sesje[-1]
@@ -171,6 +187,12 @@ def fakty_z_historii(sesje: list[Sesja], dok_ids: list[str], waluta: str, prefik
         wynik.append(_fakt(f"zmiana_kursu_3m.{ost.dzien.isoformat()}", "zmiana_kursu_3m",
                            Okres(typ="dzien", koniec=ost.dzien), z3[0], Jednostka.ulamek, dok,
                            {"od": z3[1].isoformat(), "do": ost.dzien.isoformat(), "obliczenie": "kurs(do) / kurs(od) - 1",
+                            "dokumenty": dok_ids}, metoda=metoda))
+    r14 = rsi(sesje) if not p else None
+    if r14 is not None:
+        wynik.append(_fakt(f"rsi_14.{ost.dzien.isoformat()}", "rsi_14", Okres(typ="dzien", koniec=ost.dzien), r14,
+                           Jednostka.liczba, dok,
+                           {"obliczenie": "RSI Wildera z 14 sesji, zamknięcia", "od": sesje[0].dzien.isoformat(),
                             "dokumenty": dok_ids}, metoda=metoda))
     if not p:
         ostatnie = sesje[-60:]

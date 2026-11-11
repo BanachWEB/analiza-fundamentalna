@@ -10,6 +10,9 @@ przez te lata przychody biorą się z faktów, potem rosną o wzrost_przychodow 
 Silnik liczy wartość na akcję w każdym scenariuszu (przychody × marża FCF, ten sam koszt kapitału
 i wzrost rezydualny co wycena odwrotna), wartość oczekiwaną, potencjał wobec kursu,
 prawdopodobieństwo straty i asymetrię (oczekiwany zysk ÷ oczekiwana strata).
+Wartość kapitału = wartość bieżąca przepływów − dług netto (ten sam fakt dlug_netto co w EV),
+więc gotówka netto podnosi wartość na akcję, a dług ją obniża. Gdy długu netto brak
+(np. bank), silnik liczy bez niego i zapisuje to w braku oraz we wzorze.
 """
 
 from __future__ import annotations
@@ -22,12 +25,18 @@ from typing import Optional
 from silnik.fakty.schemat import Fakt, Jednostka, Metoda, Okres, Rodzaj, Status
 
 from .kalkulator import Kalkulator
-from .wycena import bisekcja, parametry, wartosc_przychody_marza
+from .wycena import bisekcja, ostatni, parametry, wartosc_przychody_marza
 
 
-def stopa_implikowana(r0, g, n, gT, marza, akcje, kurs, sciezka=()) -> float:
+def wartosc_kapitalu(r0, g, n, gT, k, marza, dlug_netto=0.0, sciezka=()) -> float:
+    """Wartość kapitału własnego: wartość bieżąca przepływów (przychody × marża FCF) − dług netto."""
+    return wartosc_przychody_marza(r0, g, n, gT, k, marza, sciezka) - dlug_netto
+
+
+def stopa_implikowana(r0, g, n, gT, marza, akcje, kurs, sciezka=(), dlug_netto=0.0) -> float:
     """Stopa dyskontowa k, przy której wartość scenariusza na akcję równa się kursowi."""
-    return bisekcja(lambda k: -wartosc_przychody_marza(r0, g, n, gT, k, marza, sciezka) / akcje, -kurs, gT + 0.001, 0.60)
+    return bisekcja(lambda k: -wartosc_kapitalu(r0, g, n, gT, k, marza, dlug_netto, sciezka) / akcje, -kurs,
+                    gT + 0.001, 0.60)
 
 U = Jednostka.ulamek
 
@@ -56,6 +65,24 @@ def wczytaj(plik: Path) -> list[dict]:
     return dane
 
 
+def _dlug_netto(k: Kalkulator, wycena: dict, cap: Fakt) -> Optional[Fakt]:
+    """Dług netto z EV wyceny (ten sam fakt), a gdy EV brak — ostatni dług netto przed dniem kursu."""
+    ev = k.fakt(wycena["ev"]) if wycena.get("ev") else None
+    if ev:
+        for fid in ev.wejscia:
+            f = k.fakt(fid)
+            if f and f.pozycja == "dlug_netto":
+                return f
+    return ostatni(k, "dlug_netto", cap.okres.koniec)
+
+
+def _na_akcje(r, g, n, gt, kk, mz, akcje, reszta, z_dlugiem: bool) -> float:
+    """reszta: [dlug_netto, *ścieżka przychodów] albo [*ścieżka przychodów], gdy długu netto brak."""
+    dlug = reszta[0] if z_dlugiem else 0.0
+    sciezka = tuple(reszta[1:] if z_dlugiem else reszta)
+    return wartosc_kapitalu(r, g, n, gt, kk, mz, dlug, sciezka) / akcje
+
+
 def oblicz(k: Kalkulator, plik: Path, wycena: dict) -> Optional[dict]:
     if not plik.exists():
         return None
@@ -70,6 +97,11 @@ def oblicz(k: Kalkulator, plik: Path, wycena: dict) -> Optional[dict]:
     kurs = next(f for f in k.r.fakty() if f.pozycja == "kurs" and f.id in k.r[cap_id].wejscia)
     n = parametry()["lata_prognozy"]
     okres = Okres(typ="dzien", koniec=cap.okres.koniec)
+    dn = _dlug_netto(k, wycena, cap)
+    dn_wej = [dn.id] if dn else []
+    opis_dn = " − dlug_netto" if dn else " (bez długu netto: brak danych)"
+    if dn is None:
+        k.braki.append("scenariusze: brak długu netto; wartość kapitału bez korekty o dług albo gotówkę netto")
     wartosci = []
     for s in scen:
         ids = []
@@ -81,10 +113,11 @@ def oblicz(k: Kalkulator, plik: Path, wycena: dict) -> Optional[dict]:
             ids.append(fid)
         sc = list(s.get("sciezka_przychodow", []))
         opis_sc = f"; przychody w pierwszych {len(sc)} latach ze ścieżki" if sc else ""
-        wej = [f"przychody.{S}", ids[1], ids[2], "wzrost_rezydualny.zalozenie", ke_id, akcje.id] + sc
+        wej = [f"przychody.{S}", ids[1], ids[2], "wzrost_rezydualny.zalozenie", ke_id, akcje.id] + dn_wej + sc
         f = k.wylicz(f"wartosc_na_akcje.{s['nazwa']}", "wartosc_na_akcje",
-                     f"(przychody × marża FCF, wzrost przez {n} lat, potem rezydualny{opis_sc}) / akcje_w_obrocie", wej,
-                     lambda r, g, mz, gt, kk, a, *p: wartosc_przychody_marza(r, g, n, gt, kk, mz, p) / a,
+                     f"(wartość przepływów: przychody × marża FCF, wzrost przez {n} lat, potem rezydualny{opis_sc}"
+                     f"{opis_dn}) / akcje_w_obrocie", wej,
+                     lambda r, g, mz, gt, kk, a, *p: _na_akcje(r, g, n, gt, kk, mz, a, p, bool(dn)),
                      Jednostka.pieniadz_na_akcje, okres, kurs.waluta)
         if f is None:
             return None
@@ -92,8 +125,9 @@ def oblicz(k: Kalkulator, plik: Path, wycena: dict) -> Optional[dict]:
         # stopa zwrotu implikowana: koszt kapitału, przy którym wartość scenariusza = obecny kurs
         k.wylicz(f"stopa_zwrotu_implikowana.{s['nazwa']}", "stopa_zwrotu_implikowana",
                  f"stopa dyskontowa, przy której wartość scenariusza {s['nazwa']} równa się kursowi",
-                 [f"przychody.{S}", ids[1], ids[2], "wzrost_rezydualny.zalozenie", akcje.id, kurs.id] + sc,
-                 lambda r, g, mz, gt, a, ku, *p: stopa_implikowana(r, g, n, gt, mz, a, ku, p), U, okres)
+                 [f"przychody.{S}", ids[1], ids[2], "wzrost_rezydualny.zalozenie", akcje.id, kurs.id] + dn_wej + sc,
+                 lambda r, g, mz, gt, a, ku, *p: stopa_implikowana(r, g, n, gt, mz, a, ku, p[1:] if dn else p,
+                                                                   p[0] if dn else 0.0), U, okres)
     wej = [x for para in wartosci for x in para] + [kurs.id]
 
     def oczekiwana(*a):

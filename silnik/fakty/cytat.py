@@ -164,7 +164,7 @@ def _tekst_html(tresc: str) -> str:
 
 
 def zapisy_liczby(wartosc: float) -> list[str]:
-    """Możliwe zapisy liczby w raportach: 1 234 567 / 1234567 / 1,234,567 / 1 234,5 / (1 234) / -1 234."""
+    """Możliwe zapisy liczby w raportach: 1 234 567 / 1234567 / 1,234,567 / 1 234,5 / 7.20 / (1 234) / -1 234."""
     ujemna = wartosc < 0
     a = abs(wartosc)
     calkowita = abs(a - round(a)) < 1e-9
@@ -175,12 +175,12 @@ def zapisy_liczby(wartosc: float) -> list[str]:
             podstawy |= {f"{n}.{zera}", f"{n},{zera}", f"{n:,}.{zera}", f"{n:,}".replace(",", " ") + f",{zera}"}
     else:
         podstawy = set()
-        for miejsca in (1, 2, 3, 4):
-            if abs(round(a, miejsca) - a) < 1e-9:
-                s = f"{a:,.{miejsca}f}"
-                podstawy |= {s.replace(",", " ").replace(".", ","), s.replace(",", ""), s,
-                             s.replace(",", "").replace(".", ",")}
-                break
+        najmniej = next((m for m in (1, 2, 3, 4) if abs(round(a, m) - a) < 1e-9), None)
+        # „$7.20” to 7,2: dopuszczamy zera końcowe do 4 miejsc po przecinku
+        for miejsca in range(najmniej, 5) if najmniej else ():
+            s = f"{a:,.{miejsca}f}"
+            podstawy |= {s.replace(",", " ").replace(".", ","), s.replace(",", ""), s,
+                         s.replace(",", "").replace(".", ",")}
     if not ujemna:
         return sorted(podstawy, key=len, reverse=True)
     wynik = set()

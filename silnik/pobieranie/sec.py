@@ -191,6 +191,65 @@ def _dni(w: _Wpis) -> int:
     return (w.koniec - w.start).days if w.start else 0
 
 
+def _klucz_okresu(w: _Wpis, rodzaj: str) -> Optional[tuple]:
+    if rodzaj == "stan":
+        return None if w.start is not None else ("dzien", None, w.koniec)
+    d = _dni(w)
+    if 350 <= d <= 380 and w.forma in FORMY_ROCZNE:
+        return ("FY", w.start, w.koniec)
+    if 80 <= d <= 100 and w.forma in FORMY_KWARTALNE:
+        return ("Q", w.start, w.koniec)
+    if 170 <= d <= 190 and w.forma in FORMY_KWARTALNE:
+        return ("H1", w.start, w.koniec)
+    if 260 <= d <= 285 and w.forma in FORMY_KWARTALNE:
+        return ("M9", w.start, w.koniec)
+    return None
+
+
+def _kandydaci(facts: dict, cfg: dict) -> dict[tuple, list[list[_Wpis]]]:
+    """Klucz okresu → wpisy każdego znacznika z wartością, w kolejności priorytetu z mapowania."""
+    wynik: dict[tuple, list[list[_Wpis]]] = defaultdict(list)
+    for znacznik in cfg["znaczniki"]:
+        grupy = defaultdict(list)
+        for w in _wpisy(facts, znacznik, cfg.get("jednostka_xbrl", "USD")):
+            klucz = _klucz_okresu(w, cfg["rodzaj"])
+            if klucz is not None:
+                grupy[klucz].append(w)
+        for klucz, wpisy in grupy.items():
+            wynik[klucz].append(wpisy)
+    return wynik
+
+
+TOLERANCJA_TOZSAMOSCI_ZNACZNIKA = 0.001  # 0,1% przychodów, jak w silnik/fakty/weryfikacja.py
+
+
+def _wybor_wg_tozsamosci(lista: list[list[_Wpis]], klucz: tuple, tozsamosc: dict,
+                         kandydaci: dict[str, dict[tuple, list[list[_Wpis]]]]) -> list[_Wpis]:
+    """Wybiera znacznik, którego wartość spełnia tożsamość z innymi pozycjami w tym samym raporcie.
+
+    tozsamosc: {"plus": pozycja, "wynik": pozycja}, czyli plus − ta pozycja = wynik
+    (np. przychody − koszt_sprzedazy = zysk_brutto). Pozostałe pozycje bierzemy z pierwszego
+    znacznika z wartością i z raportu (accn) tego samego co wpis kandydata. Gdy żaden znacznik
+    nie spełnia tożsamości, zostaje pierwszy z listy, a konflikt pokaże weryfikacja.
+    """
+    def wartosc_w_raporcie(pozycja: str, accn: str) -> Optional[float]:
+        listy = kandydaci.get(pozycja, {}).get(klucz)
+        if not listy:
+            return None
+        w = [x for x in listy[0] if x.accn == accn]
+        return w[-1].wartosc if w else None
+
+    for wpisy in lista:
+        ostatni = sorted(wpisy, key=lambda w: (w.zlozono, w.accn))[-1]
+        plus = wartosc_w_raporcie(tozsamosc["plus"], ostatni.accn)
+        wynik = wartosc_w_raporcie(tozsamosc["wynik"], ostatni.accn)
+        if plus is None or wynik is None:
+            continue
+        if abs(plus - ostatni.wartosc - wynik) <= TOLERANCJA_TOZSAMOSCI_ZNACZNIKA * max(abs(plus), 1.0):
+            return wpisy
+    return lista[0]
+
+
 def wyciagnij_fakty(
     facts: dict,
     dok_id: str,
@@ -202,36 +261,23 @@ def wyciagnij_fakty(
         mapowanie = yaml.safe_load((KONFIGURACJA / "mapowanie-us-gaap.yaml").read_text(encoding="utf-8"))
     kal = kalendarz(facts)
     wyniki: list[Fakt] = []
+    kandydaci = {poz: _kandydaci(facts, cfg) for poz, cfg in mapowanie.items()}
 
     for pozycja, cfg in mapowanie.items():
         jednostka = Jednostka(cfg["jednostka"])
         jedn_xbrl = cfg.get("jednostka_xbrl", "USD")
         waluta = jedn_xbrl.split("/")[0] if jednostka in (Jednostka.pieniadz, Jednostka.pieniadz_na_akcje) else None
 
-        # klucz okresu → wpisy w kolejności priorytetu znaczników
+        # klucz okresu → wpisy znacznika, który wygrał (pierwszy z wartością albo ten, który spełnia tożsamość)
         okresy: dict[tuple, list[_Wpis]] = {}
-        for priorytet, znacznik in enumerate(cfg["znaczniki"]):
-            grupy = defaultdict(list)
-            for w in _wpisy(facts, znacznik, jedn_xbrl):
-                if cfg["rodzaj"] == "stan":
-                    if w.start is not None:
-                        continue
-                    klucz = ("dzien", None, w.koniec)
-                else:
-                    d = _dni(w)
-                    if 350 <= d <= 380 and w.forma in FORMY_ROCZNE:
-                        klucz = ("FY", w.start, w.koniec)
-                    elif 80 <= d <= 100 and w.forma in FORMY_KWARTALNE:
-                        klucz = ("Q", w.start, w.koniec)
-                    elif 170 <= d <= 190 and w.forma in FORMY_KWARTALNE:
-                        klucz = ("H1", w.start, w.koniec)
-                    elif 260 <= d <= 285 and w.forma in FORMY_KWARTALNE:
-                        klucz = ("M9", w.start, w.koniec)
-                    else:
-                        continue
-                grupy[klucz].append(w)
-            for klucz, wpisy in grupy.items():
-                okresy.setdefault(klucz, wpisy)  # pierwszy znacznik z wartością wygrywa
+        wybrane_wg_tozsamosci: dict[tuple, str] = {}
+        for klucz, lista in kandydaci[pozycja].items():
+            okresy[klucz] = lista[0]
+            if "tozsamosc" in cfg and len(lista) > 1:
+                wpisy = _wybor_wg_tozsamosci(lista, klucz, cfg["tozsamosc"], kandydaci)
+                if wpisy is not lista[0]:
+                    okresy[klucz] = wpisy
+                    wybrane_wg_tozsamosci[klucz] = lista[0][0].znacznik
 
         roczne = sorted([k for k in okresy if k[0] == "FY"], key=lambda k: k[2])[-lat:]
         kwartalne = sorted([k for k in okresy if k[0] == "Q"], key=lambda k: k[2])[-kwartalow:]
@@ -248,6 +294,8 @@ def wyciagnij_fakty(
             rozne = sorted({w.wartosc for w in wpisy})
             if len(rozne) > 1:
                 kontrole.append(f"zmiana_wersji:{len(rozne)}_wartosci:wybrano_najnowsza")
+            if klucz in wybrane_wg_tozsamosci:
+                kontrole.append(f"znacznik_wg_tozsamosci:pominieto_{wybrane_wg_tozsamosci[klucz].split(':')[-1]}")
             typ, start, koniec = klucz
             if typ == "dzien":
                 okres = Okres(typ="dzien", koniec=koniec)

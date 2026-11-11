@@ -204,6 +204,9 @@ class Fakt(BaseModel):
             raise ValueError(f"{self.id}: kwota pieniężna musi mieć walutę")
         if self.jednostka not in (Jednostka.pieniadz, Jednostka.pieniadz_na_akcje) and self.waluta:
             raise ValueError(f"{self.id}: waluta tylko przy kwotach pieniężnych")
+        if self.jednostka in (Jednostka.ulamek, Jednostka.liczba) and self.skala != Skala.jedn:
+            # skala z nagłówka tabeli („USD tys.”) nie dotyczy udziałów procentowych ani liczby pracowników
+            raise ValueError(f"{self.id}: jednostka {self.jednostka.value} wymaga skali „jedn”, jest {self.skala.value!r}")
 
         r = self.rodzaj
         if r == Rodzaj.raportowany:

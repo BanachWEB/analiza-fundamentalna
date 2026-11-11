@@ -1,7 +1,7 @@
 """Konsensus analityków dla USA ze strony prognoz Stock Analysis (dane S&P Global).
 
-Strona podaje za darmo: liczbę analityków, średnią cenę docelową i konsensus EPS na bieżący rok
-obrotowy (z dynamiką). Rewizji prognoz z 90 dni nie ma; dla GPW konsensus przychodzi
+Strona podaje za darmo: liczbę analityków, średnią cenę docelową, konsensus EPS na bieżący rok
+obrotowy (z dynamiką) i konsensus przychodów na ten rok. Rewizji prognoz z 90 dni nie ma; dla GPW konsensus przychodzi
 z wklejki z InvestingPro (propozycje z testem cytatu).
 """
 
@@ -33,6 +33,10 @@ def parsuj(tresc: str) -> dict:
     if m:
         wynik["eps_konsensus"] = float(m.group(2))
         wynik["wzrost_eps_konsensus"] = float(m.group(3)) / 100
+    # średni konsensus przychodów na pierwszy rok obrotowy z prognozą (pierwszy wpis tabeli „revenue”)
+    m = re.search(r'revenue:\{"(\d{4}-\d{2}-\d{2})":\{no:(\d+),avg:([-\d.e+]+)', tresc)
+    if m:
+        wynik["przychody_konsensus"] = (date.fromisoformat(m.group(1)), int(m.group(2)), float(m.group(3)))
     return wynik
 
 
@@ -63,4 +67,11 @@ def fakty(archiwum: Archiwum, ticker: str, dzien: date) -> list[Fakt]:
                           wartosc=d["wzrost_eps_konsensus"], jednostka=Jednostka.ulamek, metoda=Metoda.parser_strony,
                           dostawca=DOSTAWCA, data_prognozy=dzien, liczba_analitykow=n,
                           miejsce={"pole": "epsThis.growth (bieżący rok obrotowy)"}, **wspolne))
+    if "przychody_konsensus" in d:
+        koniec, n_przych, wartosc = d["przychody_konsensus"]
+        wynik.append(Fakt(id=f"przychody_konsensus.{koniec.isoformat()}", rodzaj=Rodzaj.prognoza,
+                          pozycja="przychody_konsensus", okres=Okres(typ="FY", koniec=koniec), status=Status.jedno_zrodlo,
+                          dokument=dok.id, wartosc=wartosc, jednostka=Jednostka.pieniadz, waluta="USD",
+                          metoda=Metoda.parser_strony, dostawca=DOSTAWCA, data_prognozy=dzien, liczba_analitykow=n_przych,
+                          miejsce={"pole": f"revenue[{koniec.isoformat()}].avg (rok obrotowy z prognozą)"}))
     return wynik

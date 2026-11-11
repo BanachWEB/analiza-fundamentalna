@@ -113,6 +113,12 @@ def _zalozenie(k: Kalkulator, fid: str, pozycja: str, wartosc: float, uzasadnien
     return fid
 
 
+def _cena_do_sprzedazy(kapitalizacja: float, przychody: float) -> float:
+    if przychody <= 0:
+        raise BrakSensu("konsensus przychodów ≤ 0, cena ÷ sprzedaż nie ma sensu")
+    return kapitalizacja / przychody
+
+
 def ostatni(k: Kalkulator, pozycja: str, przed: Optional[date] = None) -> Optional[Fakt]:
     fakty = [f for f in k.r.fakty() if f.pozycja == pozycja and f.okres.typ.value == "dzien" and f.status != Status.odrzucony
              and (przed is None or f.okres.koniec <= przed)]
@@ -146,6 +152,16 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str, finansowa: bool = Fal
     if not cap:
         return wynik
     wynik["kapitalizacja"] = cap.id
+
+    # cena ÷ sprzedaż na rok naprzód (informacja, nie bramka): najbliższy rok obrotowy z konsensusem przychodów
+    prz = sorted([f for f in k.r.fakty() if f.pozycja == "przychody_konsensus" and f.status != Status.odrzucony
+                  and f.okres.koniec and f.okres.koniec > D], key=lambda f: f.okres.koniec)
+    if prz and prz[0].waluta == cap.waluta:
+        f = k.wylicz(f"c_s_konsensus.{d}", "c_s_konsensus", f"kapitalizacja / {prz[0].id}", [cap.id, prz[0].id],
+                     _cena_do_sprzedazy, X, okres_d)
+        wynik["c_s_konsensus"] = f.id if f else None
+    elif prz:
+        k.braki.append(f"c_s_konsensus: waluta konsensusu ({prz[0].waluta}) inna niż kapitalizacji ({cap.waluta})")
 
     # koszt kapitału własnego
     beta = _zalozenie(k, "beta.zalozenie", "beta", par["beta_domyslna"],

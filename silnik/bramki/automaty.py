@@ -64,18 +64,28 @@ def z_rejestru(r: RejestrFaktow, finansowa: bool = False, rynek: str = "USA") ->
                            f"Pokrycie analityczne małe ({n} analityków) — na GPW to tylko flaga; "
                            "nie można polegać na konsensusie", [an.id]))
 
-    # B2: rozwodnienie
-    zm = _fy(r, "zmiana_liczby_akcji")[-5:]
-    ponad = [f for f in zm if f.wartosc > p["rozwodnienie_roczne"]]
+    # B2: rozwodnienie. Dwie miary na rok: zmiana średniej ważonej liczby akcji rozwodnionych
+    # i zmiana liczby akcji na koniec okresu (średnia zaniża skutek emisji z końca roku).
+    # Rok jest „ponad progiem”, gdy którakolwiek miara przekracza próg.
+    po_roku: dict[date, list] = {}
+    for poz in ("zmiana_liczby_akcji", "zmiana_liczby_akcji_koniec"):
+        for f in _fy(r, poz):
+            po_roku.setdefault(f.okres.koniec, []).append(f)
+    zm = [po_roku[d] for d in sorted(po_roku)][-5:]
+    ponad = [[f for f in rok if f.wartosc > p["rozwodnienie_roczne"]] for rok in zm]
+    ponad = [x for x in ponad if x]
+    dowody = [f.id for rok in ponad for f in rok]
+    opis_miar = ("; miara: " + ", ".join(sorted({"na koniec okresu" if f.pozycja.endswith("_koniec") else "średnia ważona"
+                                                   for rok in ponad for f in rok})))
     if len(ponad) >= p["rozwodnienie_seryjne_lat"]:
         w.append(Wynik("B2.rozwodnienie_seryjne", 2, "kapital", "flaga_powazna",
-                       f"Liczba akcji rosła o ponad {p['rozwodnienie_roczne']:.0%} r/r w {len(ponad)} z {len(zm)} ostatnich lat; "
-                       "sprawdź, czy emisje szły bez prawa poboru (wtedy STOP wymaga dowodu)", [f.id for f in ponad]))
+                       f"Liczba akcji rosła o ponad {p['rozwodnienie_roczne']:.0%} r/r w {len(ponad)} z {len(zm)} ostatnich lat{opis_miar}; "
+                       "sprawdź, czy emisje szły bez prawa poboru (wtedy STOP wymaga dowodu)", dowody))
     elif ponad:
         w.append(Wynik("B2.rozwodnienie", 2, "kapital", "flaga",
-                       f"Liczba akcji wzrosła o ponad {p['rozwodnienie_roczne']:.0%} r/r", [f.id for f in ponad]))
+                       f"Liczba akcji wzrosła o ponad {p['rozwodnienie_roczne']:.0%} r/r{opis_miar}", dowody))
     elif zm:
-        w.append(Wynik("B2.rozwodnienie", 2, "kapital", "ok", "Brak rozwodnienia powyżej progu", [zm[-1].id]))
+        w.append(Wynik("B2.rozwodnienie", 2, "kapital", "ok", "Brak rozwodnienia powyżej progu", [f.id for f in zm[-1]]))
     else:
         w.append(Wynik("B2.rozwodnienie", 2, "kapital", "brak_danych", "Brak danych o liczbie akcji"))
 

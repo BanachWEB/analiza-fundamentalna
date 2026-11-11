@@ -58,6 +58,7 @@ python -m silnik.usa MSFT
 - CIK spółki silnik bierze z `konfiguracja/sec-cik.yaml`. Gdy go tam nie ma, a zmienna `ANALIZA_USER_AGENT` zawiera adres e-mail, pobiera listę SEC i sam dopisuje CIK do tego pliku.
 - Silnik pobiera z SEC dane XBRL (companyfacts) i listę raportów, a ze Stock Analysis trzy strony ze sprawozdaniami. Wszystkie pliki trafiają do archiwum.
 - Fakty z SEC trafiają do rejestru bez udziału modelu: 10 lat obrotowych, 12 kwartałów i stany na koniec okresów.
+- Dla kosztu sprzedaży silnik wybiera znacznik, który spełnia tożsamość przychody − koszt sprzedaży = zysk brutto w tym samym raporcie (pole `tozsamosc` w `konfiguracja/mapowanie-us-gaap.yaml`). Lantronix oznacza drobną pozycję jako `CostOfRevenue`, a pełny koszt podaje pod `CostOfGoodsAndServicesSold`.
 - Weryfikacja sprawdza cztery tożsamości księgowe (aktywa = pasywa; zobowiązania + kapitał = pasywa; przychody − koszt sprzedaży = zysk brutto; przepływy = zmiana gotówki) i porównuje 12 pozycji rocznych ze Stock Analysis, z progiem 0,5%.
 - Wynik: `analizy/<TICKER>/<data>/` z plikami `dokumenty.json`, `fakty.json` i `weryfikacja.md`.
 
@@ -93,7 +94,7 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają obliczenia same. Osobno: `pyt
 
 - **Okresy pochodne:** Q2, Q3 i Q4 z danych narastających (np. Q4 = rok − 9 miesięcy) oraz TTM = ostatni rok + bieżący okres narastający − ten sam okres rok wcześniej.
 - **Uzupełnienia ze składników** (z jawnym wzorem): amortyzacja z części (Microsoft), zobowiązania = pasywa − kapitał (Walmart), dług z kredytów i obligacji (spółki z GPW).
-- **Panel:** marże, EBITDA, FCF dla właścicieli (po capeksie, SBC i spłacie leasingu, jeśli spółka je podaje), konwersja FCF, capex ÷ amortyzacja, ROE, ROIC (NOPAT przy stawce ustawowej: 21% USA, 19% Polska — założenie zapisane w rejestrze), dług netto ÷ EBITDA (z leasingiem i bez), pokrycie odsetek, dynamika r/r i CAGR 3/5 lat, zmiana liczby akcji.
+- **Panel:** marże, EBITDA, FCF dla właścicieli (po capeksie, SBC i spłacie leasingu, jeśli spółka je podaje), konwersja FCF, capex ÷ amortyzacja, ROE, ROIC (NOPAT przy stawce ustawowej: 21% USA, 19% Polska — założenie zapisane w rejestrze), dług netto ÷ EBITDA (z leasingiem i bez; przy EBITDA ≤ 0 wskaźnik nie powstaje, przy ujemnym długu netto tabela pokazuje „gotówka netto”), pokrycie odsetek, dynamika r/r i CAGR 3/5 lat, zmiana liczby akcji r/r (średnia ważona i liczba akcji na koniec okresu).
 - **Jakość:** Piotroski F-score, Beneish M-score (próg −1,78), Altman Z'' (strefy 1,10 / 2,60), Ohlson O-score z prawdopodobieństwem upadłości w ciągu roku (próg Ohlsona 3,8%; deflator PKB USA z FRED, dla GPW kurs USD z NBP). To diagnostyka, nie stop.
 - **Podział akcji:** gdy liczba akcji zmienia się o całkowitą krotność (np. 3:1), silnik nie liczy dynamiki liczby akcji ani EPS przez tę granicę.
 - Wskaźnik bez danych albo bez sensu (np. dynamika od ujemnej bazy) nie powstaje; powód trafia do sekcji „Braki danych” w `obliczenia.md`.
@@ -114,9 +115,10 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają obliczenia same. Osobno: `pyt
 **Wycena** (`silnik/obliczenia/wycena.py`, parametry w `konfiguracja/wycena.yaml`):
 - koszt kapitału własnego = stopa wolna od ryzyka + beta × premia za ryzyko akcji; dla GPW stopa wolna od ryzyka = rentowność 10-letnich obligacji − spread niewypłacalności Polski (bez podwójnego liczenia ryzyka kraju); beta domyślnie 1 (założenie w rejestrze);
 - mnożniki: C/Z, EV/EBIT, EV/EBITDA, C/WK, FCF yield; udział PVGO w cenie;
+- informacje, nie bramki: C/S na rok naprzód (kapitalizacja ÷ konsensus przychodów na najbliższy rok obrotowy, USA: Stock Analysis) i RSI 14-dniowy z historii kursów;
 - wycena odwrotna w trzech wariantach: implikowany wzrost FCF przez 10 lat, implikowany okres przewagi (CAP) przy wzroście historycznym, implikowana marża FCF przy wzroście historycznym. Wzrost historyczny = niższy z CAGR przychodów 3- i 5-letniego.
 
-**Scenariusze:** model zapisuje `analizy/<TICKER>/<data>/scenariusze.json` (2–5 scenariuszy, prawdopodobieństwa 5–85% sumujące się do 1, wzrost przychodów, marża FCF, uzasadnienie). Silnik liczy wartość na akcję w każdym scenariuszu, wartość oczekiwaną, potencjał wobec kursu, prawdopodobieństwo straty i asymetrię.
+**Scenariusze:** model zapisuje `analizy/<TICKER>/<data>/scenariusze.json` (2–5 scenariuszy, prawdopodobieństwa 5–85% sumujące się do 1, wzrost przychodów, marża FCF, uzasadnienie). Silnik liczy wartość na akcję w każdym scenariuszu (wartość kapitału = wartość przepływów − dług netto, ten sam fakt `dlug_netto` co w EV), wartość oczekiwaną, potencjał wobec kursu, prawdopodobieństwo straty i asymetrię.
 
 ```json
 {"scenariusze": [
@@ -139,7 +141,7 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają bramki same. Osobno: `python 
 |---:|---|---|---|
 | 0 | pokrycie analityczne: 3 analityków lub mniej = STOP (zasady właściciela) | Lista Alertów (STOP), szczególne oznaczenie, zawieszenia obrotu; pokrycie: 3 lub mniej = flaga | brak danych o pokryciu = informacja |
 | 1 | 8-K 4.02 — korekta sprawozdań (STOP), NT 10-K/NT 10-Q, 8-K 4.01 — zmiana biegłego, wzmianka „material weakness” | — | — |
-| 2 | — | — | rozwodnienie > 10% r/r; seryjne (3 z 5 lat) = flaga poważna |
+| 2 | — | — | rozwodnienie > 10% r/r (średnia ważona albo liczba akcji na koniec okresu); seryjne (3 z 5 lat) = flaga poważna |
 | 3 | wzmianka „substantial doubt”; razem z ujemnymi przepływami i zobowiązaniami krótkoterminowymi > aktywa obrotowe = STOP | — | przepływy ÷ zysk netto (3 lata) < 70%, M-score > −1,78, Z'' < 1,10, ujemny kapitał niewyjaśniony skupem (STOP) |
 
 **Dowody od modelu** (`bramki_dowody.json`): bramki wymagające oceny (opinia biegłego, sankcje, oszustwo, akcjonariusz > 90%, decyzja organu, brak przewagi itd.). Silnik przyjmuje dowód tylko z cytatem obecnym w dokumencie z archiwum; STOP wymaga też czterech testów i warunku powrotu. Dowód modelu zastępuje automatyczny wynik tej samej bramki (np. model ocenia, czy NT miało przyczyny księgowe).

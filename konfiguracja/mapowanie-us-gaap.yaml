@@ -2,6 +2,8 @@
 #
 # Dla każdego okresu silnik bierze pierwszy znacznik z listy, który ma wartość
 # w tym okresie (spółki zmieniają znaczniki, np. Revenues → RevenueFromContract...).
+# Pole „tozsamosc” (opcjonalne) zmienia tę zasadę: wygrywa pierwszy znacznik, który spełnia
+# tożsamość plus − pozycja = wynik w tym samym raporcie.
 # Znacznik bez prefiksu należy do us-gaap; inny zbiór zapisuj jako "dei:Znacznik".
 #
 # rodzaj: okres (wartość za okres: rok albo kwartał) | stan (wartość na dzień)
@@ -21,6 +23,9 @@ koszt_sprzedazy:
   rodzaj: okres
   jednostka: pieniadz
   znaczniki: [CostOfRevenue, CostOfGoodsAndServicesSold]
+  # Wygrywa znacznik, który spełnia przychody − koszt_sprzedazy = zysk_brutto w tym samym raporcie
+  # (LTRX: CostOfRevenue to drobna pozycja, pełny koszt jest pod CostOfGoodsAndServicesSold).
+  tozsamosc: {plus: przychody, wynik: zysk_brutto}
 zysk_brutto:
   rodzaj: okres
   jednostka: pieniadz
@@ -147,6 +152,12 @@ akcje_w_obrocie:
   jednostka: akcje
   jednostka_xbrl: shares
   znaczniki: ["dei:EntityCommonStockSharesOutstanding"]
+akcje_koniec_okresu:
+  # liczba akcji z bilansu na dzień bilansowy (do zmiany liczby akcji na koniec okresu r/r)
+  rodzaj: stan
+  jednostka: akcje
+  jednostka_xbrl: shares
+  znaczniki: [CommonStockSharesOutstanding]
 
 # --- pozycje do wskaźników jakości (F-score, M-score, Z'') ---
 aktywa_obrotowe:

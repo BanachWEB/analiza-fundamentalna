@@ -30,7 +30,8 @@ WIERSZE = [
     ("dlug_netto_do_ebitda", "Dług netto ÷ EBITDA"),
     ("dlug_netto_z_leasingiem_do_ebitda", "Dług netto z leasingiem ÷ EBITDA"),
     ("pokrycie_odsetek", "Pokrycie odsetek (EBIT ÷ odsetki)"),
-    ("zmiana_liczby_akcji", "Zmiana liczby akcji r/r"),
+    ("zmiana_liczby_akcji", "Zmiana liczby akcji r/r (średnia ważona)"),
+    ("zmiana_liczby_akcji_koniec", "Zmiana liczby akcji r/r (koniec okresu)"),
     ("piotroski_f", "Piotroski F-score (0–9)"),
     ("beneish_m", "Beneish M-score (próg −1,78)"),
     ("altman_z2", "Altman Z'' (strefy 1,10 / 2,60)"),
@@ -55,6 +56,30 @@ def format_(f: Optional[Fakt]) -> str:
     return s.replace(",", " ").replace(".", ",") + ZNAK[f.status]
 
 
+def _dzien_bilansu(k: Kalkulator, S: str) -> Optional[date]:
+    if S.startswith("TTM"):
+        return date.fromisoformat(S[3:])
+    f = k.fakt(f"przychody.{S}")
+    return f.okres.koniec if f else None
+
+
+def komorka(k: Kalkulator, poz: str, S: str) -> str:
+    """Wartość wskaźnika do tabeli. Wskaźniki długu do EBITDA przy ujemnym długu netto opisujemy
+    słowami „gotówka netto”, bo liczba ujemna (albo dodatnia przy ujemnej EBITDA) myli."""
+    f = k.fakt(f"{poz}.{S}")
+    if poz in ("dlug_netto_do_ebitda", "dlug_netto_z_leasingiem_do_ebitda"):
+        dzien = _dzien_bilansu(k, S)
+        dn = k.stan("dlug_netto", dzien) if dzien else None
+        if dn is not None:
+            dlug = dn.wartosc_bazowa()
+            if poz == "dlug_netto_z_leasingiem_do_ebitda":
+                leasing = k.stan("leasing", dzien)
+                dlug = dlug + leasing.wartosc_bazowa() if leasing else None
+            if dlug is not None and dlug < 0:
+                return "gotówka netto" + ZNAK[dn.status]
+    return format_(f)
+
+
 def panel_md(k: Kalkulator, wynik: dict) -> list[str]:
     """Tabela panelu wskaźników: ostatnie 5 lat i TTM."""
     ttm = wynik.get("ttm")
@@ -65,7 +90,7 @@ def panel_md(k: Kalkulator, wynik: dict) -> list[str]:
     naglowki = [S if not S.startswith("TTM") else f"TTM {S[8:10]}.{S[3:7]}" for S in kolumny]
     linie = ["| Wskaźnik | " + " | ".join(naglowki) + " |", "|---|" + "---:|" * len(kolumny)]
     for poz, nazwa in WIERSZE:
-        linie.append(f"| {nazwa} | " + " | ".join(format_(k.fakt(f"{poz}.{S}")) for S in kolumny) + " |")
+        linie.append(f"| {nazwa} | " + " | ".join(komorka(k, poz, S) for S in kolumny) + " |")
     linie += ["", f"Kwoty w mln {lata[-1].waluta if lata else ''}. ¹ = co najmniej jedno wejście z jednego źródła; "
               "‼ = konflikt źródeł; — = brak danych. TTM = ostatnie 12 miesięcy."]
     return linie
@@ -79,12 +104,6 @@ def obliczenia_md(k: Kalkulator, wynik: dict) -> str:
         kolumny.append(f"TTM{ttm.isoformat()}")
     waluta = lata[-1].waluta if lata else ""
 
-    def komorka(poz: str, S: str) -> str:
-        f = k.fakt(f"{poz}.{S}")
-        if f is None and poz.startswith(("dlug_netto_do", "dlug_netto_z")):
-            return "—"
-        return format_(f)
-
     linie = [
         f"# Obliczenia: {k.r.ticker}",
         "",
@@ -95,7 +114,7 @@ def obliczenia_md(k: Kalkulator, wynik: dict) -> str:
         "|---|" + "---:|" * len(kolumny),
     ]
     for poz, nazwa in WIERSZE:
-        linie.append(f"| {nazwa} | " + " | ".join(komorka(poz, S) for S in kolumny) + " |")
+        linie.append(f"| {nazwa} | " + " | ".join(komorka(k, poz, S) for S in kolumny) + " |")
 
     # CAGR z ostatniego roku
     ost = kolumny[len(lata) - 1] if lata else None
@@ -153,6 +172,10 @@ def wycena_tabela(k: Kalkulator, wynik: dict) -> list[str]:
     linie.append(_wiersz(k, "EV/EBIT", w.get("ev_ebit")))
     linie.append(_wiersz(k, "EV/EBITDA", w.get("ev_ebitda")))
     linie.append(_wiersz(k, "C/WK", w.get("c_wk")))
+    cs = k.fakt(w["c_s_konsensus"]) if w.get("c_s_konsensus") else None
+    linie.append(_wiersz(k, "C/S na rok naprzód", w.get("c_s_konsensus"),
+                         "informacja; kapitalizacja ÷ konsensus przychodów" +
+                         (f" na rok obrotowy do {cs.wejscia[1].split('.', 1)[1]}" if cs else "")))
     linie.append(_wiersz(k, "FCF yield", w.get("fcf_yield"), "FCF dla właścicieli ÷ kapitalizacja"))
     linie.append(_wiersz(k, "Udział PVGO w cenie", w.get("udzial_pvgo"), "część ceny za przyszły wzrost"))
     baza = "zysku netto (bank)" if wynik.get("sektor") == "finanse" else "FCF"
@@ -160,6 +183,9 @@ def wycena_tabela(k: Kalkulator, wynik: dict) -> list[str]:
     linie.append(_wiersz(k, "Implikowany okres przewagi (CAP)", w.get("implikowany_cap"), "wariant 2, wzrost w tempie historycznym"))
     linie.append(_wiersz(k, "Implikowana marża FCF", w.get("implikowana_marza_fcf"), "wariant 3, wzrost w tempie historycznym"))
     linie.append(_wiersz(k, "Wzrost historyczny (CAGR przychodów)", w.get("wzrost_historyczny")))
+    rsi = max((f for f in k.r.fakty() if f.pozycja == "rsi_14" and f.status != Status.odrzucony),
+              key=lambda f: f.okres.koniec, default=None)
+    linie.append(_wiersz(k, "RSI 14-dniowy", rsi.id if rsi else None, "informacja, nie bramka; umowne progi 70 i 30"))
     return linie
 
 
