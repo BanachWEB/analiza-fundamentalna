@@ -60,7 +60,15 @@ Plik wygenerował silnik (2026-11-11). Kwoty w mln USD. ¹ = co najmniej jedno w
 
 ## Scenariusze
 
-Brak scenariuszy (plik scenariusze.json).
+| Scenariusz | Prawdopodobieństwo | Wartość na akcję | Stopa zwrotu przy obecnym kursie |
+|---|---:|---:|---:|
+| bazowy | 45,0%¹ | 3,02 USD | 7,4%‼ |
+| byk | 20,0%¹ | 7,89 USD | 13,9%‼ |
+| niedzwiedz | 35,0%¹ | 0,70 USD | 3,6%‼ |
+| Wartość oczekiwana na akcję | 3,18 USD‼ |  | |
+| Potencjał oczekiwany | -27,5%‼ |  | |
+| Prawdopodobieństwo straty | 80,0%‼ |  | |
+| Asymetria (zysk ÷ strata) | 0,37‼ |  | |
 
 ## Karta w stylu Treli (informacja, nie bramka)
 

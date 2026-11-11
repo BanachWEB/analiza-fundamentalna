@@ -641,6 +641,26 @@
       "pobrano": "2026-11-11T08:56:29.049801Z",
       "sha256": "c72eaf4b82e3d78d2439a61e3bc1d47ec5a5a199889c6359a2a666d657cef2dd",
       "plik": "c72eaf4b82e3d78d.html"
+    },
+    {
+      "id": "doc-065",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/LTRX?range=2y&interval=1d",
+      "opis": "notowania dzienne LTRX",
+      "pobrano": "2026-11-11T09:10:55.555811Z",
+      "sha256": "961bb944fcbdb14c8773754e0bf2bc609d48f719191573656fdcbaf2fd9bd50c",
+      "plik": "961bb944fcbdb14c.json"
+    },
+    {
+      "id": "doc-066",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=2y&interval=1d",
+      "opis": "notowania dzienne %5EGSPC",
+      "pobrano": "2026-11-11T09:10:57.237451Z",
+      "sha256": "a86128a0736ce528fd0fb6b807951273e2a175d01556a9b482411091404984f1",
+      "plik": "a86128a0736ce528.json"
     }
   ]
 }

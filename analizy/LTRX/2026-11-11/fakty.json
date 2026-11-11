@@ -3,6 +3,42 @@
   "data_analizy": "2026-11-11",
   "fakty": [
     {
+      "id": "akcje_okladka_10q.2026-10-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_okladka_10q",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-10-30"
+      },
+      "wartosc": 46944209.0,
+      "jednostka": "akcje",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "As of October 30, 2026, there were 46,944,209 shares of the registrant’s common stock outstanding.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "akcje_przed_emisja.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_przed_emisja",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 39816930.0,
+      "jednostka": "akcje",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-025",
+      "cytat": "based upon 39,816,930 shares outstanding",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "akcje_w_obrocie.2016-04-22",
       "rodzaj": "raportowany",
       "pozycja": "akcje_w_obrocie",
@@ -401,6 +437,42 @@
         "forma": "10-Q",
         "zlozono": "2026-11-09"
       }
+    },
+    {
+      "id": "akcje_wyemitowane_bilans.2025-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_wyemitowane_bilans",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-06-30"
+      },
+      "wartosc": 39102563.0,
+      "jednostka": "akcje",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "46,594,283 and 39,102,563 shares issued and outstanding at June 30, 2026 and 2025, respectively",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "akcje_wyemitowane_bilans.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_wyemitowane_bilans",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 46594283.0,
+      "jednostka": "akcje",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "46,594,283 and 39,102,563 shares issued and outstanding at June 30, 2026 and 2025, respectively",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "aktywa.2016-06-30",
@@ -3972,6 +4044,53 @@
       ]
     },
     {
+      "id": "arr_nero_oczekiwany.FY2027",
+      "rodzaj": "prognoza",
+      "pozycja": "arr_nero_oczekiwany",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2027-06-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 4.5,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "which is expected to add approximately $5.3 million of annual revenue, including approximately $4.5 million of ARR, and approximately 125,000 asset tags under management",
+      "dostawca": "Lantronix (zarząd)",
+      "data_prognozy": "2026-08-26",
+      "liczba_analitykow": 0,
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "asymetria.2026-11-10",
+      "rodzaj": "wyliczony",
+      "pozycja": "asymetria",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 0.36671852917007963,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "asymetria",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-10"
+      ]
+    },
+    {
       "id": "badania_i_rozwoj.FY2017",
       "rodzaj": "raportowany",
       "pozycja": "badania_i_rozwoj",
@@ -6375,6 +6494,47 @@
       ]
     },
     {
+      "id": "cel_premii_eps_skorygowany.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "cel_premii_eps_skorygowany",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.16,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "the non-GAAP EPS performance target for purposes of the Bonus Program was $0.16 per share",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "cel_premii_przychody.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "cel_premii_przychody",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 124.5,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "the revenue performance target for purposes of the Bonus Program was $124.5 million, corresponding to a payout equal to 100% of the target bonus opportunity",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "cena_docelowa_srednia.2026-11-11",
       "rodzaj": "prognoza",
       "pozycja": "cena_docelowa_srednia",
@@ -6394,6 +6554,106 @@
       "dostawca": "S&P Global (przez Stock Analysis)",
       "data_prognozy": "2026-11-11",
       "liczba_analitykow": 6
+    },
+    {
+      "id": "cena_przejecia_nero.2026-08-01",
+      "rodzaj": "raportowany",
+      "pozycja": "cena_przejecia_nero",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-08-01"
+      },
+      "wartosc": 11.7,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "for aggregate consideration of approximately $11.7 million, excluding working capital adjustments",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "cena_przejecia_nero_calkowita.2026-08-01",
+      "rodzaj": "raportowany",
+      "pozycja": "cena_przejecia_nero_calkowita",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-08-01"
+      },
+      "wartosc": 11634.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "Total purchase consideration $ 11,634",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "cena_przejecia_nero_gotowka_przy_zamknieciu.2026-08-01",
+      "rodzaj": "raportowany",
+      "pozycja": "cena_przejecia_nero_gotowka_przy_zamknieciu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-08-01"
+      },
+      "wartosc": 10343.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "Cash paid at closing $ 10,343",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "cena_przejecia_nero_wartosc_firmy.2026-08-01",
+      "rodzaj": "raportowany",
+      "pozycja": "cena_przejecia_nero_wartosc_firmy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-08-01"
+      },
+      "wartosc": 3294.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "Goodwill 3,294",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "cena_przejecia_nero_wnip.2026-08-01",
+      "rodzaj": "raportowany",
+      "pozycja": "cena_przejecia_nero_wnip",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-08-01"
+      },
+      "wartosc": 6891.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "Intangible assets 6,891",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "deflator_pkb_usa.1968-03-31",
@@ -7400,6 +7660,26 @@
       "wejscia": [
         "dlug_dlugoterminowy.2026-09-30",
         "dlug_krotkoterminowy.2026-09-30"
+      ]
+    },
+    {
+      "id": "dlug_brutto_nowy_kredyt.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "dlug_brutto_nowy_kredyt",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 4938.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "Outstanding debt $ 4,938",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -10542,6 +10822,26 @@
       }
     },
     {
+      "id": "gotowka_i_papiery_wartosciowe.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka_i_papiery_wartosciowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 51.5,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "cytat": "our total cash and cash equivalents plus short-term marketable securities approximated $51.5 million",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "implikowana_marza_fcf.2026-11-10",
       "rodzaj": "wyliczony",
       "pozycja": "implikowana_marza_fcf",
@@ -10574,7 +10874,7 @@
       "jednostka": "punkty",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-008",
+      "dokument": "doc-066",
       "miejsce": {
         "sesja": "2026-11-10",
         "pole": "zamknięcie"
@@ -10592,13 +10892,13 @@
       "jednostka": "ulamek",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-008",
+      "dokument": "doc-066",
       "miejsce": {
         "od": "2025-11-10",
         "do": "2026-10-09",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-008"
+          "doc-066"
         ]
       }
     },
@@ -13739,6 +14039,25 @@
       ]
     },
     {
+      "id": "kredyt_terminowy_nowy.2026-07-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kredyt_terminowy_nowy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-07-31"
+      },
+      "wartosc": 5000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "provides for a $15,000,000 revolving credit facility and a $5,000,000 term loan",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "kurs.2026-11-10",
       "rodzaj": "raportowany",
       "pozycja": "kurs",
@@ -13751,13 +14070,51 @@
       "waluta": "USD",
       "metoda": "api",
       "status": "zweryfikowany",
-      "dokument": "doc-007",
+      "dokument": "doc-065",
       "miejsce": {
         "sesja": "2026-11-10",
         "pole": "zamknięcie"
       },
       "kontrole": [
         "drugie_zrodlo:doc-006:4.39:0.00%:ok"
+      ]
+    },
+    {
+      "id": "liczba_akcji_atm.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_atm",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 1.8,
+      "skala": "mln",
+      "jednostka": "akcje",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "we sold approximately 1.8 million shares of our common stock under the sales agreement",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "liczba_akcji_emisja_2026_05_29.2026-05-29",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_emisja_2026_05_29",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-05-29"
+      },
+      "wartosc": 4800000.0,
+      "jednostka": "akcje",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "we sold approximately 4,800,000 shares of common stock at $7.20 per share resulting in gross proceeds of $34,500,000",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -14403,6 +14760,24 @@
       ]
     },
     {
+      "id": "liczba_akcji_zarzadu_i_rady_razem.2026-09-08",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_zarzadu_i_rady_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-08"
+      },
+      "wartosc": 1318886.0,
+      "jednostka": "akcje",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "All current executive officers and directors as a group (9 persons)(5) 1,119,429 199,457 1,318,886 2.8%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "liczba_analitykow.2026-11-11",
       "rodzaj": "raportowany",
       "pozycja": "liczba_analitykow",
@@ -14418,6 +14793,79 @@
       "miejsce": {
         "tekst": "According to 6 analysts polled by S&P Global, Lantronix stock has a consensus rating of \"Strong Buy\" and an average price target of $10.58"
       }
+    },
+    {
+      "id": "liczba_pracownikow.2026-08-21",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_pracownikow",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-08-21"
+      },
+      "wartosc": 330.0,
+      "jednostka": "liczba",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "As of August 21, 2026, we had 330 total employees including 327 full-time",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "liczba_stacji_bazowych_projekt_mno.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_stacji_bazowych_projekt_mno",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 50000.0,
+      "jednostka": "liczba",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "backup-power management across more than 50,000 cell sites",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "liczba_znacznikow_nero.2026-08-01",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_znacznikow_nero",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-08-01"
+      },
+      "wartosc": 125000.0,
+      "jednostka": "liczba",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "which is expected to add approximately $5.3 million of annual revenue, including approximately $4.5 million of ARR, and approximately 125,000 asset tags under management",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "limit_linii_kredytowej.2026-07-31",
+      "rodzaj": "raportowany",
+      "pozycja": "limit_linii_kredytowej",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-07-31"
+      },
+      "wartosc": 15000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "provides for a $15,000,000 revolving credit facility and a $5,000,000 term loan",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "marza_brutto.FY2017",
@@ -14626,6 +15074,44 @@
       "wejscia": [
         "zysk_brutto.TTM2026-09-30",
         "przychody.TTM2026-09-30"
+      ]
+    },
+    {
+      "id": "marza_brutto_skorygowana.FY2026Q4",
+      "rodzaj": "raportowany",
+      "pozycja": "marza_brutto_skorygowana",
+      "okres": {
+        "typ": "Q4",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 0.441,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "cytat": "non-GAAP basis, gross margin was 45.3%, up from 44.1% in the prior quarter",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "marza_brutto_skorygowana.FY2027Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "marza_brutto_skorygowana",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 0.453,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "cytat": "non-GAAP basis, gross margin was 45.3%, up from 44.1% in the prior quarter",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -15438,13 +15924,13 @@
       "jednostka": "ulamek",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-007",
+      "dokument": "doc-065",
       "miejsce": {
         "od": "2025-11-10",
         "do": "2026-10-09",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-007"
+          "doc-065"
         ]
       }
     },
@@ -15899,12 +16385,12 @@
       "waluta": "USD",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-007",
+      "dokument": "doc-065",
       "miejsce": {
         "obliczenie": "średnia z 60 sesji: zamknięcie × wolumen",
         "od": "2026-08-18",
         "dokumenty": [
-          "doc-007"
+          "doc-065"
         ]
       }
     },
@@ -16806,6 +17292,25 @@
       "kontrole": [
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
         "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "pensja_ceo_od_2026_08_01.2026-08-01",
+      "rodzaj": "raportowany",
+      "pozycja": "pensja_ceo_od_2026_08_01",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-08-01"
+      },
+      "wartosc": 550000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-021",
+      "cytat": "to increase his annual base salary to $550,000 USD, effective as of August 1, 2026",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -17845,6 +18350,71 @@
       ]
     },
     {
+      "id": "potencjal_oczekiwany.2026-11-10",
+      "rodzaj": "wyliczony",
+      "pozycja": "potencjal_oczekiwany",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": -0.27526286496521135,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "potencjal oczekiwany",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-10"
+      ]
+    },
+    {
+      "id": "pozostala_pojemnosc_atm.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "pozostala_pojemnosc_atm",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 17000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "As of June 30, 2026, we have approximately $17,000,000 remaining of the aggregate offering capacity",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "prawdopodobienstwo_straty.2026-11-10",
+      "rodzaj": "wyliczony",
+      "pozycja": "prawdopodobienstwo_straty",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 0.8,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "prawdopodobienstwo straty",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-10"
+      ]
+    },
+    {
       "id": "premia_ryzyka_akcji.2026-11-11",
       "rodzaj": "raportowany",
       "pozycja": "premia_ryzyka_akcji",
@@ -17862,6 +18432,263 @@
         "kolumna": "Total Equity Risk Premium",
         "rating": "Aa1"
       }
+    },
+    {
+      "id": "prog_premii_przychody.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "prog_premii_przychody",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 119.5,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "Revenue of $119.5 million, representing 96%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "prognoza_zarzadu_przychody_dolna.FY2027Q1",
+      "rodzaj": "prognoza",
+      "pozycja": "prognoza_zarzadu_przychody_dolna",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 31.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "Revenue: $31.0 million to $33.0 million",
+      "dostawca": "Lantronix (zarząd)",
+      "data_prognozy": "2026-08-26",
+      "liczba_analitykow": 0,
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "prognoza_zarzadu_przychody_dolna.FY2027Q2",
+      "rodzaj": "prognoza",
+      "pozycja": "prognoza_zarzadu_przychody_dolna",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-12-31",
+        "poczatek": "2026-10-01"
+      },
+      "wartosc": 32.5,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Net Revenue: $32.5 million to $34.5 million",
+      "dostawca": "Lantronix (zarząd)",
+      "data_prognozy": "2026-11-09",
+      "liczba_analitykow": 0,
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "prognoza_zarzadu_przychody_gorna.FY2027Q1",
+      "rodzaj": "prognoza",
+      "pozycja": "prognoza_zarzadu_przychody_gorna",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 33.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "Revenue: $31.0 million to $33.0 million",
+      "dostawca": "Lantronix (zarząd)",
+      "data_prognozy": "2026-08-26",
+      "liczba_analitykow": 0,
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "prognoza_zarzadu_przychody_gorna.FY2027Q2",
+      "rodzaj": "prognoza",
+      "pozycja": "prognoza_zarzadu_przychody_gorna",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-12-31",
+        "poczatek": "2026-10-01"
+      },
+      "wartosc": 34.5,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Net Revenue: $32.5 million to $34.5 million",
+      "dostawca": "Lantronix (zarząd)",
+      "data_prognozy": "2026-11-09",
+      "liczba_analitykow": 0,
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "prognoza_zarzadu_systemy_bezzalogowe_dolna.FY2026",
+      "rodzaj": "prognoza",
+      "pozycja": "prognoza_zarzadu_systemy_bezzalogowe_dolna",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 10.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "previously communicated $10 million to $14 million outlook",
+      "dostawca": "Lantronix (zarząd)",
+      "data_prognozy": "2026-08-26",
+      "liczba_analitykow": 0,
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "prognoza_zarzadu_systemy_bezzalogowe_gorna.FY2026",
+      "rodzaj": "prognoza",
+      "pozycja": "prognoza_zarzadu_systemy_bezzalogowe_gorna",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 14.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "previously communicated $10 million to $14 million outlook",
+      "dostawca": "Lantronix (zarząd)",
+      "data_prognozy": "2026-08-26",
+      "liczba_analitykow": 0,
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "prognoza_zarzadu_udzial_systemy_bezzalogowe_dolna.FY2027",
+      "rodzaj": "prognoza",
+      "pozycja": "prognoza_zarzadu_udzial_systemy_bezzalogowe_dolna",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2027-06-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 0.15,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "we expect the business to represent 15% to 20% of total revenue in fiscal 2027",
+      "dostawca": "Lantronix (zarząd)",
+      "data_prognozy": "2026-08-26",
+      "liczba_analitykow": 0,
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "prognoza_zarzadu_udzial_systemy_bezzalogowe_gorna.FY2027",
+      "rodzaj": "prognoza",
+      "pozycja": "prognoza_zarzadu_udzial_systemy_bezzalogowe_gorna",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2027-06-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 0.2,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "we expect the business to represent 15% to 20% of total revenue in fiscal 2027",
+      "dostawca": "Lantronix (zarząd)",
+      "data_prognozy": "2026-08-26",
+      "liczba_analitykow": 0,
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "prognoza_zarzadu_zysk_netto_skorygowany_dolna.FY2027Q2",
+      "rodzaj": "prognoza",
+      "pozycja": "prognoza_zarzadu_zysk_netto_skorygowany_dolna",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-12-31",
+        "poczatek": "2026-10-01"
+      },
+      "wartosc": 1.8,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Non-GAAP Net Income: $1.8 million to $2.7 million",
+      "dostawca": "Lantronix (zarząd)",
+      "data_prognozy": "2026-11-09",
+      "liczba_analitykow": 0,
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "prognoza_zarzadu_zysk_netto_skorygowany_gorna.FY2027Q2",
+      "rodzaj": "prognoza",
+      "pozycja": "prognoza_zarzadu_zysk_netto_skorygowany_gorna",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-12-31",
+        "poczatek": "2026-10-01"
+      },
+      "wartosc": 2.7,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Non-GAAP Net Income: $1.8 million to $2.7 million",
+      "dostawca": "Lantronix (zarząd)",
+      "data_prognozy": "2026-11-09",
+      "liczba_analitykow": 0,
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "przeplywy_finansowe.FY2016Q1",
@@ -21558,6 +22385,568 @@
       ]
     },
     {
+      "id": "przychody_ameryki.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_ameryki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 70126.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Americas $ 84,296 69.7% $ 70,126 57.0%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_ameryki.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_ameryki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 84296.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Americas $ 84,296 69.7% $ 70,126 57.0%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_apj.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_apj",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 21899.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "APJ 15,048 12.5% 21,899 17.9%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_apj.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_apj",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 15048.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "APJ 15,048 12.5% 21,899 17.9%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_embedded_iot.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_embedded_iot",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 46380.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Embedded IoT Solutions $ 53,607 44.3% $ 46,380 37.7%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_embedded_iot.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_embedded_iot",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 53607.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Embedded IoT Solutions $ 53,607 44.3% $ 46,380 37.7%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_embedded_iot.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_embedded_iot",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 11467.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "Embedded IoT Solutions $ 15,680 48.4% $ 11,467 38.5%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_embedded_iot.FY2027Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_embedded_iot",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 15680.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "Embedded IoT Solutions $ 15,680 48.4% $ 11,467 38.5%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_embedded_iot.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_embedded_iot",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 57820000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_embedded_iot.FY2026 + przychody_embedded_iot.FY2027Q1 - przychody_embedded_iot.FY2026Q1",
+      "wejscia": [
+        "przychody_embedded_iot.FY2026",
+        "przychody_embedded_iot.FY2027Q1",
+        "przychody_embedded_iot.FY2026Q1"
+      ]
+    },
+    {
+      "id": "przychody_emea.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_emea",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 30898.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "EMEA 21,555 17.8% 30,898 25.1%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_emea.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_emea",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 21555.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "EMEA 21,555 17.8% 30,898 25.1%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_gridspertise.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_gridspertise",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 11.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "We did not recognize any revenue from this customer during fiscal 2026, as compared to just over $11 million of revenue in the prior year",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_iot_systems.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_iot_systems",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 68735.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "IoT System Solutions 58,270 48.2% 68,735 55.9%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_iot_systems.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_iot_systems",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 58270.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "IoT System Solutions 58,270 48.2% 68,735 55.9%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_iot_systems.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_iot_systems",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 16459.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "IoT System Solutions 14,074 43.5% 16,459 55.2%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_iot_systems.FY2027Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_iot_systems",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 14074.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "IoT System Solutions 14,074 43.5% 16,459 55.2%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_iot_systems.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_iot_systems",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 55885000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_iot_systems.FY2026 + przychody_iot_systems.FY2027Q1 - przychody_iot_systems.FY2026Q1",
+      "wejscia": [
+        "przychody_iot_systems.FY2026",
+        "przychody_iot_systems.FY2027Q1",
+        "przychody_iot_systems.FY2026Q1"
+      ]
+    },
+    {
+      "id": "przychody_roczne_nero_oczekiwane.FY2027",
+      "rodzaj": "prognoza",
+      "pozycja": "przychody_roczne_nero_oczekiwane",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2027-06-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 5.3,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "which is expected to add approximately $5.3 million of annual revenue, including approximately $4.5 million of ARR, and approximately 125,000 asset tags under management",
+      "dostawca": "Lantronix (zarząd)",
+      "data_prognozy": "2026-08-26",
+      "liczba_analitykow": 0,
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_software_uslugi.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_software_uslugi",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 7808.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Software & Services 9,022 7.5% 7,808 6.4%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_software_uslugi.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_software_uslugi",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 9022.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Software & Services 9,022 7.5% 7,808 6.4%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_software_uslugi.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_software_uslugi",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 1868.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "Software and Services 2,615 8.1% 1,868 6.3%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_software_uslugi.FY2027Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_software_uslugi",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 2615.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "Software and Services 2,615 8.1% 1,868 6.3%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_software_uslugi.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_software_uslugi",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 9769000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_software_uslugi.FY2026 + przychody_software_uslugi.FY2027Q1 - przychody_software_uslugi.FY2026Q1",
+      "wejscia": [
+        "przychody_software_uslugi.FY2026",
+        "przychody_software_uslugi.FY2027Q1",
+        "przychody_software_uslugi.FY2026Q1"
+      ]
+    },
+    {
+      "id": "przychody_systemy_bezzalogowe.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_systemy_bezzalogowe",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 12.6,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "Generated $12.6 million in fiscal 2026 drone unmanned systems revenue",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "pula_planu_motywacyjnego_limit.2026-11-03",
+      "rodzaj": "raportowany",
+      "pozycja": "pula_planu_motywacyjnego_limit",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-03"
+      },
+      "wartosc": 8949047.0,
+      "jednostka": "akcje",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "cytat": "the new aggregate share limit for the Incentive Plan is 8,949,047 shares",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "pula_planu_motywacyjnego_zwiekszenie.2026-11-03",
+      "rodzaj": "raportowany",
+      "pozycja": "pula_planu_motywacyjnego_zwiekszenie",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-03"
+      },
+      "wartosc": 1800000.0,
+      "jednostka": "akcje",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "cytat": "increase the aggregate number of shares of the Company’s common stock available for award grants under the plan by 1,800,000 shares",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "redukcja_etatow_styczen_2025.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "redukcja_etatow_styczen_2025",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 0.12,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "in January 2025, in which we reduced our headcount by approximately 12% worldwide",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "rentownosc_10l.2026-11-10",
       "rodzaj": "raportowany",
       "pozycja": "rentownosc_10l",
@@ -23191,6 +24580,123 @@
       ]
     },
     {
+      "id": "scenariusz_marza_fcf.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.06,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice mediany stopy bazowej dla spółek tej wielkości. Drony rosną, ale część starszych produktów dalej spada; marża FCF wraca do poziomu z najlepszych lat spółki i tam zostaje."
+    },
+    {
+      "id": "scenariusz_marza_fcf.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.1,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice osiemdziesiątego percentyla stopy bazowej dla małych spółek sprzętowych. Warunek: systemy bezzałogowe i oprogramowanie rosną zgodnie z zapowiedziami zarządu, marża FCF przekracza najlepszy rok z historii, a spółka nie emituje nowych akcji."
+    },
+    {
+      "id": "scenariusz_marza_fcf.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.02,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice dwudziestego percentyla. Zamówienia w obronności są nieregularne, ceny pamięci obniżają marżę brutto, a strata operacyjna wymusza kolejną emisję z półki S-3; marża FCF zostaje przy średniej z ostatnich lat. Waga wyższa niż zwykle, bo spółka nie miała zysku netto w żadnym z pięciu ostatnich lat obrotowych."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.45,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice mediany stopy bazowej dla spółek tej wielkości. Drony rosną, ale część starszych produktów dalej spada; marża FCF wraca do poziomu z najlepszych lat spółki i tam zostaje."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.2,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice osiemdziesiątego percentyla stopy bazowej dla małych spółek sprzętowych. Warunek: systemy bezzałogowe i oprogramowanie rosną zgodnie z zapowiedziami zarządu, marża FCF przekracza najlepszy rok z historii, a spółka nie emituje nowych akcji."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.35,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice dwudziestego percentyla. Zamówienia w obronności są nieregularne, ceny pamięci obniżają marżę brutto, a strata operacyjna wymusza kolejną emisję z półki S-3; marża FCF zostaje przy średniej z ostatnich lat. Waga wyższa niż zwykle, bo spółka nie miała zysku netto w żadnym z pięciu ostatnich lat obrotowych."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.06,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice mediany stopy bazowej dla spółek tej wielkości. Drony rosną, ale część starszych produktów dalej spada; marża FCF wraca do poziomu z najlepszych lat spółki i tam zostaje."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.12,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice osiemdziesiątego percentyla stopy bazowej dla małych spółek sprzętowych. Warunek: systemy bezzałogowe i oprogramowanie rosną zgodnie z zapowiedziami zarządu, marża FCF przekracza najlepszy rok z historii, a spółka nie emituje nowych akcji."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.01,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice dwudziestego percentyla. Zamówienia w obronności są nieregularne, ceny pamięci obniżają marżę brutto, a strata operacyjna wymusza kolejną emisję z półki S-3; marża FCF zostaje przy średniej z ostatnich lat. Waga wyższa niż zwykle, bo spółka nie miała zysku netto w żadnym z pięciu ostatnich lat obrotowych."
+    },
+    {
       "id": "splata_leasingu.FY2020",
       "rodzaj": "raportowany",
       "pozycja": "splata_leasingu",
@@ -23501,6 +25007,336 @@
       ]
     },
     {
+      "id": "stopa_zwrotu_implikowana.bazowy",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 0.07372930739214645,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza bazowy równa się kursowi",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-10-30",
+        "kurs.2026-11-10"
+      ]
+    },
+    {
+      "id": "stopa_zwrotu_implikowana.byk",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 0.1392015771521255,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza byk równa się kursowi",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.byk",
+        "scenariusz_marza_fcf.byk",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-10-30",
+        "kurs.2026-11-10"
+      ]
+    },
+    {
+      "id": "stopa_zwrotu_implikowana.niedzwiedz",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 0.03567277013615241,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza niedzwiedz równa się kursowi",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.niedzwiedz",
+        "scenariusz_marza_fcf.niedzwiedz",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-10-30",
+        "kurs.2026-11-10"
+      ]
+    },
+    {
+      "id": "udzial_ameryki.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_ameryki",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.697,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Americas $ 84,296 69.7% $ 70,126 57.0%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_ameryki.FY2027Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_ameryki",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 0.72,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "Americas $ 23,302 72.0% $ 20,651 69.3%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_apj.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_apj",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.125,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "APJ 15,048 12.5% 21,899 17.9%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_ceo_w_akcjach.2026-09-08",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_ceo_w_akcjach",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-08"
+      },
+      "wartosc": 0.013,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "Saleel Awsare, President, Chief Executive Officer and Director 438,381 156,752 595,133 1.3%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_embedded_iot.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_embedded_iot",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 0.377,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Embedded IoT Solutions $ 53,607 44.3% $ 46,380 37.7%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_embedded_iot.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_embedded_iot",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.443,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Embedded IoT Solutions $ 53,607 44.3% $ 46,380 37.7%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_embedded_iot.FY2027Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_embedded_iot",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 0.484,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "Embedded IoT Solutions $ 15,680 48.4% $ 11,467 38.5%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_emea.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_emea",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.178,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "EMEA 21,555 17.8% 30,898 25.1%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_iot_systems.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_iot_systems",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 0.559,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "IoT System Solutions 58,270 48.2% 68,735 55.9%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_iot_systems.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_iot_systems",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.482,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "IoT System Solutions 58,270 48.2% 68,735 55.9%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_iot_systems.FY2027Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_iot_systems",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 0.435,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "IoT System Solutions 14,074 43.5% 16,459 55.2%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_klienta_a.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_klienta_a",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 0.15,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Top five customers (1) 37% 44% Customer A 13% 15%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_klienta_a.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_klienta_a",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.13,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Top five customers (1) 37% 44% Customer A 13% 15%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_needham_im.2026-09-08",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_needham_im",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-08"
+      },
+      "wartosc": 0.067,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "Needham Investment Management L.L.C.(3) 3,150,000 — 3,150,000 6.7%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "udzial_pvgo.2026-11-10",
       "rodzaj": "wyliczony",
       "pozycja": "udzial_pvgo",
@@ -23517,6 +25353,249 @@
         "zysk_netto.TTM2026-09-30",
         "koszt_kapitalu_wlasnego.2026-11-10",
         "kapitalizacja.2026-11-10"
+      ]
+    },
+    {
+      "id": "udzial_software_uslugi.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_software_uslugi",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 0.064,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Software & Services 9,022 7.5% 7,808 6.4%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_software_uslugi.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_software_uslugi",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.075,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Software & Services 9,022 7.5% 7,808 6.4%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_software_uslugi.FY2027Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_software_uslugi",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 0.081,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-016",
+      "cytat": "Software and Services 2,615 8.1% 1,868 6.3%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_software_uslugi_pro_forma_dolna_granica.2026-08-26",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_software_uslugi_pro_forma_dolna_granica",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-08-26"
+      },
+      "wartosc": 0.1,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "the acquisition increases Software & Services to more than 10% of total company revenue",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_top5_dystrybutorow.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_top5_dystrybutorow",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.32,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "sales through our top five distributors accounted for approximately 32% of our net revenue in fiscal 2026",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_top5_klientow.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_top5_klientow",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-06-30",
+        "poczatek": "2024-07-01"
+      },
+      "wartosc": 0.44,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Top five customers (1) 37% 44% Customer A 13% 15%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_top5_klientow.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_top5_klientow",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.37,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "Top five customers (1) 37% 44% Customer A 13% 15%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_zarzadu_i_rady_w_akcjach.2026-09-08",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_zarzadu_i_rady_w_akcjach",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-08"
+      },
+      "wartosc": 0.028,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "All current executive officers and directors as a group (9 persons)(5) 1,119,429 199,457 1,318,886 2.8%",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.bazowy",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 3.0230722880169205,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-10",
+        "akcje_w_obrocie.2026-10-30"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.byk",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 7.888792552641716,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.byk",
+        "scenariusz_marza_fcf.byk",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-10",
+        "akcje_w_obrocie.2026-10-30"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.niedzwiedz",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 0.6955853882969079,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "(przychody × marża FCF, wzrost przez 10 lat, potem rezydualny) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.TTM2026-09-30",
+        "scenariusz_wzrost_przychodow.niedzwiedz",
+        "scenariusz_marza_fcf.niedzwiedz",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-10",
+        "akcje_w_obrocie.2026-10-30"
+      ]
+    },
+    {
+      "id": "wartosc_oczekiwana_na_akcje.2026-11-10",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_oczekiwana_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-10"
+      },
+      "wartosc": 3.181595926039875,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartosc oczekiwana na akcje",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-10"
       ]
     },
     {
@@ -23710,6 +25789,202 @@
         "forma": "10-Q",
         "zlozono": "2012-11-01"
       }
+    },
+    {
+      "id": "wplywy_brutto_emisja_2026_05_29.2026-05-29",
+      "rodzaj": "raportowany",
+      "pozycja": "wplywy_brutto_emisja_2026_05_29",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-05-29"
+      },
+      "wartosc": 34500000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "at $7.20 per share resulting in gross proceeds of $34,500,000",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wplywy_netto_atm.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wplywy_netto_atm",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 12340000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "generating approximately $12,340,000 in net proceeds",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wplywy_netto_emisja_2026_05_29.2026-05-29",
+      "rodzaj": "raportowany",
+      "pozycja": "wplywy_netto_emisja_2026_05_29",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-05-29"
+      },
+      "wartosc": 31750000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "We received net cash proceeds from the offering of approximately $31,750,000",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wplywy_netto_emisje_akcji.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wplywy_netto_emisje_akcji",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 44090000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-015",
+      "cytat": "net proceeds from our equity offerings of $44,090,000",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wynagrodzenie_ceo_nagrody_akcyjne.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wynagrodzenie_ceo_nagrody_akcyjne",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 1208488.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "Saleel Awsare Chief Executive Officer 2026 500,000 — 1,208,488 — 400,000 6,705 2,115,193",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wynagrodzenie_ceo_pensja.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wynagrodzenie_ceo_pensja",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 500000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "Saleel Awsare Chief Executive Officer 2026 500,000 — 1,208,488 — 400,000 6,705 2,115,193",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wynagrodzenie_ceo_premia_pieniezna.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wynagrodzenie_ceo_premia_pieniezna",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 400000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "Saleel Awsare Chief Executive Officer 2026 500,000 — 1,208,488 — 400,000 6,705 2,115,193",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wynagrodzenie_ceo_razem.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wynagrodzenie_ceo_razem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 2115193.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "Saleel Awsare Chief Executive Officer 2026 500,000 — 1,208,488 — 400,000 6,705 2,115,193",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wyplata_psu_czesc_eps.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wyplata_psu_czesc_eps",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.917,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "Non-GAAP EPS of $0.15 resulted in a 91.7% payout for the Non-GAAP EPS component",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wyplata_psu_czesc_przychodowa.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "wyplata_psu_czesc_przychodowa",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-06-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 0.82,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-022",
+      "cytat": "fiscal 2026 revenue of $120.9 million resulted in an 82% payout for the revenue component",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "wzrost_eps_konsensus.2026-11-11",
@@ -24203,6 +26478,42 @@
       ]
     },
     {
+      "id": "zaangazowania_systemy_bezzalogowe.2025-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zaangazowania_systemy_bezzalogowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-06-30"
+      },
+      "wartosc": 10.0,
+      "jednostka": "liczba",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "Expanded active unmanned systems engagements to more than 30 at year-end from approximately 10 at the beginning of FY 2026",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zaangazowania_systemy_bezzalogowe.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zaangazowania_systemy_bezzalogowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 30.0,
+      "jednostka": "liczba",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-019",
+      "cytat": "Expanded active unmanned systems engagements to more than 30 at year-end from approximately 10 at the beginning of FY 2026",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "zapasy.2016-06-30",
       "rodzaj": "raportowany",
       "pozycja": "zapasy",
@@ -24621,6 +26932,46 @@
         "forma": "10-Q",
         "zlozono": "2026-11-09"
       }
+    },
+    {
+      "id": "zapasy_netto_przyblizone.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy_netto_przyblizone",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 26.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "cytat": "our net inventories increased from approximately $26 million as of June 30, 2026, to $31 million as of September 30, 2026",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zapasy_netto_przyblizone.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy_netto_przyblizone",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 31.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "cytat": "our net inventories increased from approximately $26 million as of June 30, 2026, to $31 million as of September 30, 2026",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "zmiana_gotowki.FY2011",
@@ -25382,13 +27733,13 @@
       "jednostka": "ulamek",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-007",
+      "dokument": "doc-065",
       "miejsce": {
         "od": "2026-08-11",
         "do": "2026-11-10",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-007"
+          "doc-065"
         ]
       }
     },
