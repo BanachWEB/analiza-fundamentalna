@@ -55,6 +55,7 @@ Data analizy: <dd.mm.rrrr>. Rynek: <USA|GPW>. Instrument w XTB: <TICKER.US|TICKE
 ## 14. Jakość danych
 {{tabela:jakosc_danych}}
 <czego nie sprawdziłeś>
+<jeśli był materiał od właściciela: tropy z D/tropy.md i wynik każdego (potwierdzony dokumentem, sprzeczny, niepotwierdzony, niesprawdzony); liczby z materiału tylko przez miejsca {{…}}>
 ```
 
 Uwaga do części 12: koszty i stawki podatku to liczby — opisz je słownie („pół procenta przy każdym przewalutowaniu”, „piętnaście procent podatku u źródła z formularzem W-8BEN”), bo nie ma ich w rejestrze.

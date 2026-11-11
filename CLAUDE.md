@@ -8,6 +8,7 @@ Repozytorium buduje skill, który robi wstępną analizę fundamentalną spółk
 - Model szuka danych w dokumentach i pisze tekst. Liczby liczy i wstawia kod (`silnik/`).
 - Nigdy nie używaj liczb z pamięci. Liczba bez pobranego źródła dostaje „brak danych”.
 - Gdy kod nie umie czegoś policzyć, dopisz kod. Nie licz „w głowie”.
+- Materiał od właściciela na start analizy (InvestingPro, Scrab, TipRanks) to tropy i dane wyjściowe, a nie źródło prawdy. Zasady: `specyfikacja.md`, punkt 3.3, „Materiały od właściciela”.
 
 ## Reguły porządku
 

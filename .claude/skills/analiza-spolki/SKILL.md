@@ -40,6 +40,7 @@ Pracujesz w katalogu repozytorium. `D` = `analizy/<TICKER>/<RRRR-MM-DD>` (data a
 - Ustal rynek (USA albo GPW), pełną nazwę, walutę, typ instrumentu, sektor i ticker w XTB (`<TICKER>.US` albo `<TICKER>.PL`). Właściciel nie podaje instrumentów spoza XTB; jeśli instrument może być niedostępny, dodaj adnotację, nie stop.
 - Zapisz `D/analiza.json`: `{"ticker": "…", "rynek": "USA|GPW", "nazwa": "…", "sektor": "ogolny|finanse", "xtb": "…"}`. Sektor „finanse” (bank, ubezpieczyciel, broker, windykacja) wyłącza miary, które tam nie działają (`references/sektory.md`).
 - USA: sprawdź CIK w `konfiguracja/sec-cik.yaml` (silnik dopisze go sam, gdy ma adres kontaktowy w `ANALIZA_USER_AGENT`).
+- Jeśli właściciel dołączył materiał (InvestingPro, Scrab, TipRanks, zrzut ekranu, notatki), zapisz go w archiwum (`python -m silnik.dokumenty wklejka`; PDF najpierw zamień na tekst `pdftotext -layout`) i spisz tropy w `D/tropy.md`. Materiał to lista tematów i poszlak, a nie źródło prawdy ani teza do potwierdzenia: zasady w `specyfikacja.md`, punkt 3.3, „Materiały od właściciela”.
 
 ### Etap 1. Dane (kod)
 
@@ -58,7 +59,7 @@ Pracujesz w katalogu repozytorium. `D` = `analizy/<TICKER>/<RRRR-MM-DD>` (data a
 
 ### Etap 3. Biznes, branża, przewaga, zarząd (godzina)
 
-Zleć subagentowi `badacz-biznesu` zebranie faktów (podaj `D`). Wynik przeczytaj z `D/notatki-biznes.md` i uruchom przebieg danych jeszcze raz, jeśli subagent dodał propozycje. Oceny według `references/biznes-i-przewaga.md` wydajesz ty: werdykt o przewadze konkurencyjnej, test AI, ocenę zarządu. Każde zdanie z faktem musi dać się wskazać w dokumencie. Fakt, którego nie ma w notatkach ani w archiwum, nie trafia do raportu.
+Zleć subagentowi `badacz-biznesu` zebranie faktów (podaj `D`; jeśli jest `D/tropy.md`, subagent sprawdzi tropy dotyczące biznesu). Wynik przeczytaj z `D/notatki-biznes.md` i uruchom przebieg danych jeszcze raz, jeśli subagent dodał propozycje. Oceny według `references/biznes-i-przewaga.md` wydajesz ty: werdykt o przewadze konkurencyjnej, test AI, ocenę zarządu. Każde zdanie z faktem musi dać się wskazać w dokumencie. Fakt, którego nie ma w notatkach ani w archiwum, nie trafia do raportu.
 
 ### Etap 4. Co jest w cenie, teza, scenariusze
 
@@ -80,7 +81,7 @@ Według `references/teza-i-scenariusze.md`:
 
 - `git add D konfiguracja/sec-cik.yaml && git commit` (opis po polsku), `git pull --rebase`, `git push` na `main`.
 - Jeśli powstał `D/braki-silnika.md`, wymień braki w streszczeniu dla właściciela.
-- Wyślij właścicielowi PDF i streszczenie w 3–5 zdaniach: decyzja bramek, teza z prawdopodobieństwem, co jest w cenie, największe ryzyka, czego nie sprawdziłeś.
+- Wyślij właścicielowi PDF i streszczenie w 3–5 zdaniach: decyzja bramek, teza z prawdopodobieństwem, co jest w cenie, największe ryzyka, czego nie sprawdziłeś. Jeśli był materiał od właściciela, dodaj jedno zdanie o tropach, które coś zmieniły w analizie.
 - Projekt karty (część 13 raportu) trafia do `inwestowanie/spolki/<TICKER>.md` dopiero po „tak” właściciela.
 
 ## Pliki referencyjne

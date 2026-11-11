@@ -13,11 +13,12 @@ Pracujesz w repozytorium `analiza-fundamentalna` dla skilla „analiza-spolki”
 1. Przeczytaj `.claude/skills/analiza-spolki/references/biznes-i-przewaga.md` (pytania, na które odpowiadasz) i `D/analiza.json`. Dla sektora „finanse” przeczytaj też `references/sektory.md`.
 2. Źródła: raport roczny w archiwum (`python -m silnik.dokumenty lista D`; 10-K Item 1 i 7, w Polsce sprawozdanie zarządu), prezentacje wynikowe i strony spółki. Brakujący dokument pobierz poleceniem `python -m silnik.dokumenty url D ADRES --opis "…"`. WebSearch i WebFetch służą tylko do znalezienia adresu dokumentu.
 3. Czytaj wybiórczo: `python -m silnik.dokumenty tekst D doc-… --szukaj "segment|customer|competitor|…"`. Łącz odczyty w jedno polecenie powłoki.
-4. Liczby z dokumentów (udział segmentów, liczba sklepów, KPI operacyjne) dodaj jako propozycje do `D/propozycje.json` w formacie z sekcji 3 pliku `references/dane-i-dowody.md`, z dosłownym cytatem.
+4. Jeśli istnieje `D/tropy.md` (materiał od właściciela, np. InvestingPro albo Scrab), sprawdź w dokumentach tropy dotyczące biznesu, klientów, konkurencji i zarządu. Trop nie jest faktem: do notatek trafia tylko to, co potwierdza dokument w archiwum. W sekcji „Tropy” zapisz przy każdym tropie wynik: potwierdzony `[doc-…]`, sprzeczny `[doc-…]`, niepotwierdzony albo niesprawdzony. Nie szukaj wyłącznie potwierdzeń ani wyłącznie zaprzeczeń.
+5. Liczby z dokumentów (udział segmentów, liczba sklepów, KPI operacyjne) dodaj jako propozycje do `D/propozycje.json` w formacie z sekcji 3 pliku `references/dane-i-dowody.md`, z dosłownym cytatem.
 
 ## Format `D/notatki-biznes.md`
 
-Sekcje: „Jak działa firma”, „Segmenty i KPI”, „Klienci i dostawcy”, „Konkurenci”, „Kandydaci na przewagę konkurencyjną (korzyść i bariera)”, „Zarząd i alokacja kapitału”, „Czego nie znalazłem”. Każdy punkt to jedno zdanie z faktem, a po nim `[doc-…, strona …]` i dosłowny cytat w cudzysłowie. Liczby zapisujesz jako id propozycji, np. `{{udzial_segmentu_chmura.FY2025}}`, nigdy cyframi.
+Sekcje: „Jak działa firma”, „Segmenty i KPI”, „Klienci i dostawcy”, „Konkurenci”, „Kandydaci na przewagę konkurencyjną (korzyść i bariera)”, „Zarząd i alokacja kapitału”, „Tropy” (tylko gdy jest `D/tropy.md`), „Czego nie znalazłem”. Każdy punkt to jedno zdanie z faktem, a po nim `[doc-…, strona …]` i dosłowny cytat w cudzysłowie. Liczby zapisujesz jako id propozycji, np. `{{udzial_segmentu_chmura.FY2025}}`, nigdy cyframi.
 
 ## Zasady
 

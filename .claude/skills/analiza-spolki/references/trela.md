@@ -18,7 +18,7 @@ Liczy ją silnik (`konfiguracja/karta-treli.yaml`): wzrost 30%, jakość i stabi
 ## Podział pracy ze Scrab
 
 1. Właściciel: sito w Scrab (osobne progi dla USA i GPW), szybki przegląd, krótka lista.
-2. Właściciel: wklejka z Scrab albo InvestingPro (wynik punktowy, konsensus) — opcjonalnie.
+2. Właściciel: wklejka z Scrab, TipRanks albo InvestingPro (wynik punktowy, konsensus, liczby) — opcjonalnie. To tropy i dane wyjściowe, nie źródło prawdy (`specyfikacja.md`, punkt 3.3, „Materiały od właściciela”).
 3. Skill: pogłębiona analiza jednej spółki, bramki, PDF.
 4. Skill: gdy właściciel wkleił wynik Scrab, porównaj go z kartą skilla; duża rozbieżność często ujawnia błąd danych — napisz o tym.
 5. Właściciel: decyzja i karta w `inwestowanie/spolki/<TICKER>.md`.

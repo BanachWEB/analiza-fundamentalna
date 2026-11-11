@@ -20,7 +20,7 @@ Najważniejsza zasada architektury: **model nie wpisuje liczb.** Model szuka dan
 | Akcjonariusz z ponad 90% głosów albo ryzyko przymusowego wykupu | STOP |
 | Progi bramek z raportu (np. rozwodnienie 10% rocznie, przepływy operacyjne poniżej 70% zysku netto) | Przyjęte jako wersja 1; kalibrujemy na testach |
 | Karta punktowa w stylu Treli | Tak; wagi i progi w punkcie 9 |
-| Dane z InvestingPro i Scrab | Wklejka |
+| Dane z InvestingPro, Scrab i TipRanks | Wklejka na start analizy: tropy, nie źródło prawdy (punkt 3.3, „Materiały od właściciela”) |
 | Twoje wstępne zdanie przed raportem | Domyślnie skill o nie nie pyta |
 | Długość PDF | Bez limitu; na początku sekcja TL;DR |
 | Zasada „Tylko spółki z GPW” w `inwestowanie` | Zmienisz ją osobno; skill czyta aktualne zasady przy każdym uruchomieniu |
@@ -100,6 +100,14 @@ Status wpisu: `zweryfikowany` (dwa źródła albo dane maszynowe z tożsamościa
 | 4. Wklejka od ciebie | InvestingPro, Scrab | InvestingPro, Scrab |
 
 Model wchodzi do gry dopiero w kroku 2: przypisuje wiersz tabeli do pozycji z tabeli mapowania i podaje dosłowny cytat. ADR (raporty 20-F i 6-K) często nie mają kwartalnych danych XBRL, więc skill traktuje je jako ścieżkę „USA z ograniczonymi danymi”.
+
+**Materiały od właściciela: tropy, nie źródło prawdy.** Właściciel wybiera spółki screenerem (Scrab, TipRanks) i może na początku analizy dołączyć materiał: raport InvestingPro, zrzut ekranu, liczby ze Scrab, własne notatki. Skill traktuje taki materiał tak (decyzja właściciela z 11.11.2026):
+
+1. Materiał to lista tematów i poszlak do dalszej analizy. Skill zapisuje go w archiwum (`wklejka`), a tropy spisuje w `D/tropy.md`: jeden trop w wierszu, z miejscem w materiale.
+2. Analiza nie służy potwierdzeniu ani obaleniu tezy z materiału. Skill prowadzi analizę według własnych etapów, a tropy ma na uwadze: sprawdza je w dokumentach pierwotnych przy etapie, którego dotyczą.
+3. Przy każdym tropie skill zapisuje wynik: potwierdzony dokumentem (numer dokumentu), sprzeczny z dokumentem, niepotwierdzony albo niesprawdzony. Wynik trafia do części 14 raportu.
+4. Liczby ze Scrab skill traktuje jako dobre dane wyjściowe, a liczby z InvestingPro i TipRanks jako dane pomocnicze. Żadne z nich nie zastępują danych z SEC, ESEF ani raportów spółki (krok 4 w tabeli wyżej). Liczba z materiału trafia do rejestru tylko z testem cytatu i statusem `jedno_zrodlo`, a do raportu tylko wtedy, gdy lepszego źródła brak. Rozbieżność między materiałem a silnikiem to trop do sprawdzenia, bo często ujawnia błąd danych po jednej ze stron.
+5. Oceny bez jawnej metody (fair value, oceny kondycji finansowej, teksty pisane przez AI dostawcy) nie wchodzą do raportu jako fakty. Mogą być tylko tropem.
 
 ### 3.4. Weryfikacja
 
