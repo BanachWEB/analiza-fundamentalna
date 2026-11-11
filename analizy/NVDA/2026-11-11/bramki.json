@@ -17,19 +17,6 @@
       "warunek_powrotu": null
     },
     {
-      "id": "B1.slabosc_kontroli_wzmianka",
-      "etap": 1,
-      "kategoria": "biegly_i_regulator",
-      "poziom": "flaga",
-      "opis": "Raport roczny wspomina o istotnej słabości kontroli wewnętrznej („material weakness”); często to ogólny opis ryzyka — model sprawdza; STOP, jeśli słabość jest nieusunięta",
-      "dowody": [
-        "doc-015: 1 trafień od 2026-02-24"
-      ],
-      "zrodlo": "kod",
-      "testy": null,
-      "warunek_powrotu": null
-    },
-    {
       "id": "B1.korekta_sprawozdan",
       "etap": 1,
       "kategoria": "biegly_i_regulator",
@@ -41,6 +28,32 @@
       "warunek_powrotu": null
     },
     {
+      "id": "B1.nt_ksiegowe",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Brak NT 10-K i NT 10-Q na liście raportów SEC (doc-002) w 2026; 10-K złożony 25.02.2026, 10-Q 26.08.2026, terminowo.",
+      "dowody": [
+        "doc-002: „”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.opinia_bieglego",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Opinia bez zastrzeżeń (unqualified) o sprawozdaniu FY2026 i o skuteczności kontroli wewnętrznej. Jedna krytyczna sprawa badania dotyczy rezerw na zapasy i nadmiarowe zobowiązania zakupowe.",
+      "dowody": [
+        "doc-019: „present fairly, in all material respects, the financial position of the Company”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
       "id": "B1.opoznione_raporty",
       "etap": 1,
       "kategoria": "biegly_i_regulator",
@@ -48,6 +61,45 @@
       "opis": "Brak zawiadomień NT 10-K/NT 10-Q",
       "dowody": [],
       "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.sankcja_regulatora",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Brak trafień o sankcji SEC za raporty; 10-K i 10-Q opisują zwykłe postępowania, bez sankcji za sprawozdawczość.",
+      "dowody": [
+        "doc-020: „We are engaged in legal actions not described above arising in the ordinary course of business, as well as regulatory and government inquiries and investigations”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.slabosc_kontroli",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Brak nieusuniętej istotnej słabości: zarząd stwierdza skuteczną kontrolę, biegły potwierdza. Zmiana głównego księgowego w maju 2026 (doc-027) jest planową emeryturą z następcą z Intela, bez wzmianki o problemach kontroli.",
+      "dowody": [
+        "doc-019: „our management concluded that our internal control over financial reporting was effective”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.slabosc_kontroli_wzmianka",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "„Material weakness” pada w 10-K tylko w czynniku ryzyka o ewentualnej słabości. Zarząd stwierdza skuteczną kontrolę wewnętrzną na 25.01.2026, a biegły wydaje opinię bez zastrzeżeń także o kontroli wewnętrznej.",
+      "dowody": [
+        "doc-019: „our management concluded that our internal control over financial reporting was effective”"
+      ],
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     },
@@ -77,15 +129,28 @@
       "warunek_powrotu": null
     },
     {
+      "id": "B2.rozwodnienie_szkodliwe",
+      "etap": 2,
+      "kategoria": "kapital",
+      "poziom": "ok",
+      "opis": "Spółka skupuje akcje, nie emituje ich bez prawa poboru; brak trafień o seryjnych emisjach na szkodę mniejszości.",
+      "dowody": [
+        "doc-020: „we repurchased 94 million and 203 million shares of our common stock”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
       "id": "B3.beneish",
       "etap": 3,
       "kategoria": "wyplacalnosc_i_jakosc",
       "poziom": "flaga",
-      "opis": "Beneish M-score -1,15 (próg -1,78): sprawdź należności i memoriały",
+      "opis": "Wzrost należności 10-Q tłumaczy spółka wydłużonymi terminami płatności w dużych umowach wieloletnich z klientami o ratingu inwestycyjnym; jednocześnie zapasy i zobowiązania zakupowe rosną pod popyt (Vera Rubin). To diagnostyka jakości zysków, nie stop; bez dowodu manipulacji zostaje flaga.",
       "dowody": [
-        "beneish_m.FY2026"
+        "doc-020: „partially offset by an increase in accounts receivable due to extended payment terms on large multi-quarter agreements with certain investment-grade customers.”"
       ],
-      "zrodlo": "kod",
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     },
@@ -130,6 +195,84 @@
         "zysk_netto.FY2026"
       ],
       "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.oszustwo",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "flaga",
+      "opis": "Spółka ogłosiła 8.11.2026 niezależne dochodzenie rady (kancelaria Wachtell, doc-043); rada pisze, że nie ma podstaw sądzić, że bezpieczeństwo narodowe lub tajemnice zostały naruszone. Brak dowodu oszustwa lub tunelowania, więc nie stop; ryzyko ładu do obserwacji do wyniku dochodzenia. Brak 8-K w EDGAR; źródło to komunikaty na nvidianews.nvidia.com (doc-043..045).",
+      "dowody": [
+        "doc-045: „The NVIDIA Board is initiating an independent investigation in light of recent reporting that founder and CEO Jensen Huang has been the target of a foreign intelligence effort.”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.insiderzy",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "informacja",
+      "opis": "Sprzedaże Teter (doc-032), Coxe (doc-034, doc-037), Kress (doc-041) idą w planach 10b5-1; prezes Huang we wrześniu 2026 ma tylko potrącenie podatku i darowizny (doc-042). Wyjątek: dyrektor Stevens 18.09.2026 sprzedał w otwartym oknie akcje bez wzmianki o planie 10b5-1 (doc-033), to legalne, więc informacja, nie flaga.",
+      "dowody": [
+        "doc-033: „Represents weighted average sales price. The shares were sold at prices ranging from $219.40 to $220.35.”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.kontrahenci",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "informacja",
+      "opis": "Klienci bezpośredni to znane firmy (należności: pięciu klientów 22%, 14%, 13%, 11%, 10%), brak niesprawdzalnych kontrahentów. Informacja: gwarancje wartości rezydualnej do $105 mld dla dzierżawy z najemcą OpenAI to ekspozycja na jednego klienta, poza bilansem.",
+      "dowody": [
+        "doc-023: „NVIDIA will pay an amount generally equal to any shortfall between the guaranteed minimum value of a lease”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.akcjonariusz_90",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "ok",
+      "opis": "Zarząd i rada razem mają 3,94% akcji, najwięksi akcjonariusze to BlackRock 7,43% i Vanguard 7,31%. Brak akcjonariusza z 90% głosów.",
+      "dowody": [
+        "doc-022: „Directors and executive officers as a group (14 persons)”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.podmioty_powiazane",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "ok",
+      "opis": "Jedyne ujawnione transakcje z osobami powiązanymi to zatrudnienie dzieci prezesa (ok. 1,2 i 1,3 mln USD) i syna dyrektora, wynagrodzenie wg standardowych zasad, zatwierdza komitet NCGC. Brak dużych transakcji.",
+      "dowody": [
+        "doc-022: „The daughter and son of Jen-Hsun Huang, our President and CEO and a member of our Board, are employed by the Company.”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B5.decyzja_organu",
+      "etap": 5,
+      "kategoria": "biznes",
+      "poziom": "flaga",
+      "opis": "Spółka sama pisze o faktycznym wyłączeniu z chińskiego rynku centrów danych i odpisach H20/H200, ale sprzedaż H200 to poniżej 1% przychodów Data Center, a Chiny są poza prognozą (doc-031). Rdzeń biznesu nie jest odebrany, więc flaga.",
+      "dowody": [
+        "doc-020: „we were effectively foreclosed from competing in China’s data center computing/compute market”"
+      ],
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     }

@@ -1,0 +1,94 @@
+{
+ "dowody": [
+  {
+   "bramka": "B1.slabosc_kontroli_wzmianka",
+   "poziom": "ok",
+   "opis": "„Material weakness” pada w 10-K tylko w czynniku ryzyka o ewentualnej słabości. Zarząd stwierdza skuteczną kontrolę wewnętrzną na 25.01.2026, a biegły wydaje opinię bez zastrzeżeń także o kontroli wewnętrznej.",
+   "dokument": "doc-019",
+   "cytat": "our management concluded that our internal control over financial reporting was effective"
+  },
+  {
+   "bramka": "B1.slabosc_kontroli",
+   "poziom": "ok",
+   "opis": "Brak nieusuniętej istotnej słabości: zarząd stwierdza skuteczną kontrolę, biegły potwierdza. Zmiana głównego księgowego w maju 2026 (doc-027) jest planową emeryturą z następcą z Intela, bez wzmianki o problemach kontroli.",
+   "dokument": "doc-019",
+   "cytat": "our management concluded that our internal control over financial reporting was effective"
+  },
+  {
+   "bramka": "B3.beneish",
+   "poziom": "flaga",
+   "opis": "Wzrost należności 10-Q tłumaczy spółka wydłużonymi terminami płatności w dużych umowach wieloletnich z klientami o ratingu inwestycyjnym; jednocześnie zapasy i zobowiązania zakupowe rosną pod popyt (Vera Rubin). To diagnostyka jakości zysków, nie stop; bez dowodu manipulacji zostaje flaga.",
+   "dokument": "doc-020",
+   "cytat": "partially offset by an increase in accounts receivable due to extended payment terms on large multi-quarter agreements with certain investment-grade customers."
+  },
+  {
+   "bramka": "B1.opinia_bieglego",
+   "poziom": "ok",
+   "opis": "Opinia bez zastrzeżeń (unqualified) o sprawozdaniu FY2026 i o skuteczności kontroli wewnętrznej. Jedna krytyczna sprawa badania dotyczy rezerw na zapasy i nadmiarowe zobowiązania zakupowe.",
+   "dokument": "doc-019",
+   "cytat": "present fairly, in all material respects, the financial position of the Company"
+  },
+  {
+   "bramka": "B1.sankcja_regulatora",
+   "poziom": "ok",
+   "opis": "Brak trafień o sankcji SEC za raporty; 10-K i 10-Q opisują zwykłe postępowania, bez sankcji za sprawozdawczość.",
+   "dokument": "doc-020",
+   "cytat": "We are engaged in legal actions not described above arising in the ordinary course of business, as well as regulatory and government inquiries and investigations"
+  },
+  {
+   "bramka": "B1.nt_ksiegowe",
+   "poziom": "ok",
+   "opis": "Brak NT 10-K i NT 10-Q na liście raportów SEC (doc-002) w 2026; 10-K złożony 25.02.2026, 10-Q 26.08.2026, terminowo.",
+   "dokument": "doc-002"
+  },
+  {
+   "bramka": "B2.rozwodnienie_szkodliwe",
+   "poziom": "ok",
+   "opis": "Spółka skupuje akcje, nie emituje ich bez prawa poboru; brak trafień o seryjnych emisjach na szkodę mniejszości.",
+   "dokument": "doc-020",
+   "cytat": "we repurchased 94 million and 203 million shares of our common stock"
+  },
+  {
+   "bramka": "B4.oszustwo",
+   "poziom": "flaga",
+   "opis": "Spółka ogłosiła 8.11.2026 niezależne dochodzenie rady (kancelaria Wachtell, doc-043); rada pisze, że nie ma podstaw sądzić, że bezpieczeństwo narodowe lub tajemnice zostały naruszone. Brak dowodu oszustwa lub tunelowania, więc nie stop; ryzyko ładu do obserwacji do wyniku dochodzenia. Brak 8-K w EDGAR; źródło to komunikaty na nvidianews.nvidia.com (doc-043..045).",
+   "dokument": "doc-045",
+   "cytat": "The NVIDIA Board is initiating an independent investigation in light of recent reporting that founder and CEO Jensen Huang has been the target of a foreign intelligence effort."
+  },
+  {
+   "bramka": "B4.kontrahenci",
+   "poziom": "informacja",
+   "opis": "Klienci bezpośredni to znane firmy (należności: pięciu klientów 22%, 14%, 13%, 11%, 10%), brak niesprawdzalnych kontrahentów. Informacja: gwarancje wartości rezydualnej do $105 mld dla dzierżawy z najemcą OpenAI to ekspozycja na jednego klienta, poza bilansem.",
+   "dokument": "doc-023",
+   "cytat": "NVIDIA will pay an amount generally equal to any shortfall between the guaranteed minimum value of a lease"
+  },
+  {
+   "bramka": "B4.akcjonariusz_90",
+   "poziom": "ok",
+   "opis": "Zarząd i rada razem mają 3,94% akcji, najwięksi akcjonariusze to BlackRock 7,43% i Vanguard 7,31%. Brak akcjonariusza z 90% głosów.",
+   "dokument": "doc-022",
+   "cytat": "Directors and executive officers as a group (14 persons)"
+  },
+  {
+   "bramka": "B4.podmioty_powiazane",
+   "poziom": "ok",
+   "opis": "Jedyne ujawnione transakcje z osobami powiązanymi to zatrudnienie dzieci prezesa (ok. 1,2 i 1,3 mln USD) i syna dyrektora, wynagrodzenie wg standardowych zasad, zatwierdza komitet NCGC. Brak dużych transakcji.",
+   "dokument": "doc-022",
+   "cytat": "The daughter and son of Jen-Hsun Huang, our President and CEO and a member of our Board, are employed by the Company."
+  },
+  {
+   "bramka": "B4.insiderzy",
+   "poziom": "informacja",
+   "opis": "Sprzedaże Teter (doc-032), Coxe (doc-034, doc-037), Kress (doc-041) idą w planach 10b5-1; prezes Huang we wrześniu 2026 ma tylko potrącenie podatku i darowizny (doc-042). Wyjątek: dyrektor Stevens 18.09.2026 sprzedał w otwartym oknie akcje bez wzmianki o planie 10b5-1 (doc-033), to legalne, więc informacja, nie flaga.",
+   "dokument": "doc-033",
+   "cytat": "Represents weighted average sales price. The shares were sold at prices ranging from $219.40 to $220.35."
+  },
+  {
+   "bramka": "B5.decyzja_organu",
+   "poziom": "flaga",
+   "opis": "Spółka sama pisze o faktycznym wyłączeniu z chińskiego rynku centrów danych i odpisach H20/H200, ale sprzedaż H200 to poniżej 1% przychodów Data Center, a Chiny są poza prognozą (doc-031). Rdzeń biznesu nie jest odebrany, więc flaga.",
+   "dokument": "doc-020",
+   "cytat": "we were effectively foreclosed from competing in China’s data center computing/compute market"
+  }
+ ]
+}

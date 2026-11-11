@@ -421,6 +421,36 @@
       "pobrano": "2026-11-11T12:06:56.652767Z",
       "sha256": "822eaaac11fc1cd84bead616a51b338fc8b5511b763a5ad0ac1e694272cecfab",
       "plik": "822eaaac11fc1cd8.html"
+    },
+    {
+      "id": "doc-043",
+      "typ": "strona",
+      "zrodlo": "spółka",
+      "adres": "https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board",
+      "opis": "Komunikat niezależnych członków rady NVIDIA",
+      "pobrano": "2026-11-11T12:07:36.854449Z",
+      "sha256": "731721e95cb60d1fff50b01428ec890921299a6454f96adf791497c6e8cb885f",
+      "plik": "731721e95cb60d1f.html"
+    },
+    {
+      "id": "doc-044",
+      "typ": "strona",
+      "zrodlo": "spółka",
+      "adres": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+      "opis": "A Message to Our Company (NVIDIA)",
+      "pobrano": "2026-11-11T12:07:37.142851Z",
+      "sha256": "87b6c780360d838f76399d47f9199933ecc62627b73c69e075be497134881000",
+      "plik": "87b6c780360d838f.html"
+    },
+    {
+      "id": "doc-045",
+      "typ": "strona",
+      "zrodlo": "spółka",
+      "adres": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+      "opis": "Statement From NVIDIA Board of Directors",
+      "pobrano": "2026-11-11T12:07:37.419127Z",
+      "sha256": "37ca9cd36989d48f1080fba70ad80c2a7c307f26f2b79d06f960333d9eab79eb",
+      "plik": "37ca9cd36989d48f.html"
     }
   ]
 }
