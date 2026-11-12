@@ -113,6 +113,30 @@ def _zalozenie(k: Kalkulator, fid: str, pozycja: str, wartosc: float, uzasadnien
     return fid
 
 
+def _koszt_kapitalu(k: Kalkulator, beta: str, rynek: str, d: str, okres_d: Okres) -> Optional[Fakt]:
+    erp = ostatni(k, "premia_ryzyka_akcji")
+    rf = k.fakt("rentownosc_10l.zalozenie") or ostatni(k, "rentownosc_10l")  # założenie (--rf) nadpisuje źródło
+    if not erp or not rf:
+        k.braki.append("koszt kapitału: brak premii za ryzyko albo rentowności obligacji 10-letnich")
+        return None
+    if rynek == "GPW":
+        spread = ostatni(k, "spread_kraju")
+        if not spread:
+            k.braki.append("koszt kapitału: brak spreadu niewypłacalności Polski")
+            return None
+        rf_lok = k.wylicz(f"stopa_wolna_od_ryzyka.{d}", "stopa_wolna_od_ryzyka",
+                          "rentownosc_10l − spread_kraju (Damodaran: bez podwójnego liczenia ryzyka kraju)",
+                          [rf.id, spread.id], lambda a, b: a - b, U, okres_d)
+    else:
+        rf_lok = k.wylicz(f"stopa_wolna_od_ryzyka.{d}", "stopa_wolna_od_ryzyka", "rentownosc_10l", [rf.id],
+                          lambda a: a, U, okres_d)
+    if not rf_lok:
+        return None
+    return k.wylicz(f"koszt_kapitalu_wlasnego.{d}", "koszt_kapitalu_wlasnego",
+                    "stopa_wolna_od_ryzyka + beta × premia_ryzyka_akcji", [rf_lok.id, beta, erp.id],
+                    lambda r, b, e: r + b * e, U, okres_d)
+
+
 def wybierz_bete(k: Kalkulator, par: dict, okres_d: Okres) -> str:
     """Beta skorygowana Blume'a z bety z regresji (`beta_regresja`); bez niej beta domyślna jako założenie."""
     reg = ostatni(k, "beta_regresja", przed=okres_d.koniec)
@@ -196,35 +220,13 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str, finansowa: bool = Fal
     elif prz:
         k.braki.append(f"c_s_konsensus: waluta konsensusu ({prz[0].waluta}) inna niż kapitalizacji ({cap.waluta})")
 
-    # koszt kapitału własnego
+    # koszt kapitału własnego (bez niego silnik liczy tylko mnożniki, np. dla konkurentów)
     beta = wybierz_bete(k, par, okres_d)
     wynik["beta"] = beta
-    erp = ostatni(k, "premia_ryzyka_akcji")
-    rf = k.fakt("rentownosc_10l.zalozenie") or ostatni(k, "rentownosc_10l")  # założenie (--rf) nadpisuje źródło
-    if not erp or not rf:
-        k.braki.append("koszt kapitału: brak premii za ryzyko albo rentowności obligacji 10-letnich")
-        return wynik
-    spread = ostatni(k, "spread_kraju")
-    if rynek == "GPW":
-        if not spread:
-            k.braki.append("koszt kapitału: brak spreadu niewypłacalności Polski")
-            return wynik
-        rf_lok = k.wylicz(f"stopa_wolna_od_ryzyka.{d}", "stopa_wolna_od_ryzyka",
-                          "rentownosc_10l − spread_kraju (Damodaran: bez podwójnego liczenia ryzyka kraju)",
-                          [rf.id, spread.id], lambda a, b: a - b, U, okres_d)
-    else:
-        rf_lok = k.wylicz(f"stopa_wolna_od_ryzyka.{d}", "stopa_wolna_od_ryzyka", "rentownosc_10l", [rf.id],
-                          lambda a: a, U, okres_d)
-    if not rf_lok:
-        return wynik
-    ke = k.wylicz(f"koszt_kapitalu_wlasnego.{d}", "koszt_kapitalu_wlasnego",
-                  "stopa_wolna_od_ryzyka + beta × premia_ryzyka_akcji", [rf_lok.id, beta, erp.id],
-                  lambda r, b, e: r + b * e, U, okres_d)
+    ke = _koszt_kapitalu(k, beta, rynek, d, okres_d)
     gT = _zalozenie(k, "wzrost_rezydualny.zalozenie", "wzrost_rezydualny", par["wzrost_rezydualny_max"],
                     "Wzrost po okresie prognozy: nie wyżej niż stopa wolna od ryzyka (Damodaran); domyślnie 2,5% rocznie.")
     wynik.update(ke=ke.id if ke else None)
-    if not ke:
-        return wynik
     n = par["lata_prognozy"]
 
     # mnożniki
@@ -266,6 +268,10 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str, finansowa: bool = Fal
           + ", ".join(skladniki), skladniki + [cap.id],
           lambda *a: sum(z * abs(v) for z, v in zip(znaki, a[:-1])) / a[-1], U)
 
+    wynik["okres_bazowy"] = S
+    if not ke:
+        return wynik
+
     # PVGO
     m("udzial_pvgo", f"1 − (zysk_netto.{S} / koszt_kapitalu_wlasnego) / kapitalizacja",
       [f"zysk_netto.{S}", ke.id, cap.id], lambda z, kk, c: 1 - (z / kk) / c, U)
@@ -287,7 +293,6 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str, finansowa: bool = Fal
           [cap.id, f"przychody.{S}", g_hist, gT, ke.id], lambda c, r, g, gt, kk: implikowana_marza(c, r, g, n, gt, kk), U)
     else:
         k.braki.append("wycena odwrotna: brak historycznego CAGR przychodów (CAP i marża)")
-    wynik["okres_bazowy"] = S
     beta_sektorowa(k, wynik, par, cap, dn, okres_d)
     if not kapitalowa:
         sygnaly_cyklicznosci(k, par, sektor, okres_d)

@@ -69,8 +69,13 @@ def uruchom(rejestr: RejestrFaktow, katalog: Optional[Path] = None, rynek: Optio
     karta = karta_treli.oblicz(k, rynek, w, w.get("okres_bazowy"), liczba, kapitalowa) if w.get("kapitalizacja") else []
     scrab = karta_treli.porownanie_scrab(k, karta) if karta else None
     return k, {"ttm": koniec, "rynek": rynek, "wycena": w, "scenariusze": sc, "trela": tr, "karta": karta, "analitycy": liczba,
-               "scrab": scrab, "wrazliwosc": wr, "pasma": ps,
+               "scrab": scrab, "wrazliwosc": wr, "pasma": ps, "konkurenci": _konkurenci(katalog),
                "sektor": typ}
+
+
+def _konkurenci(katalog: Optional[Path]) -> list:
+    from silnik import konkurenci
+    return konkurenci.wiersze(katalog)
 
 
 def uruchom_w_katalogu(katalog: Path, rynek: Optional[str] = None) -> Path:

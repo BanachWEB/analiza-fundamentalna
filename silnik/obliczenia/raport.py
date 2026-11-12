@@ -424,6 +424,11 @@ def ryzyko_tabela(k: Kalkulator, wynik: dict) -> list[str]:
     return linie
 
 
+def konkurenci_tabela(k: Kalkulator, wynik: dict) -> list[str]:
+    from silnik.konkurenci import tabela
+    return tabela(k, wynik)
+
+
 def _wycena_md(k: Kalkulator, wynik: dict) -> list[str]:
     w = wynik.get("wycena") or {}
     naglowek = "## Co jest w cenie"
@@ -432,6 +437,7 @@ def _wycena_md(k: Kalkulator, wynik: dict) -> list[str]:
         naglowek += f" (kurs z {cap.okres.koniec.isoformat()}, przepływy: {w.get('okres_bazowy')})"
     return (["", naglowek, ""] + wycena_tabela(k, wynik) + ["", "## Historyczne pasma wyceny", ""] + pasma_tabela(k, wynik)
             + ["", "## Profil ryzyka kursu", ""] + ryzyko_tabela(k, wynik)
+            + ["", "## Konkurenci", ""] + konkurenci_tabela(k, wynik)
             + ["", "## Scenariusze", ""] + scenariusze_tabela(k, wynik)
             + ["", "## Wrażliwość wyceny", ""] + wrazliwosc_tabela(k, wynik)
             + (["", "## Cena docelowa wg arkusza właściciela", ""] + trela_tabela(k, wynik) if wynik.get("trela") else [])
