@@ -195,11 +195,14 @@ def tabela(k, wynik: dict) -> list[str]:
         med.append(f"{x * 100:,.1f}%".replace(",", " ").replace(".", ",") if m not in DZIENNE
                    else f"{x:,.2f}".replace(",", " ").replace(".", ","))
     linie.append("| Mediana konkurentów | | " + " | ".join(med) + " |")
+    inne = [w["ticker"] for w in lista if w["rynek"] not in RYNKI]
+    if inne:
+        linie += ["", f"Bez danych (giełda spoza USA i GPW): {', '.join(inne)}."]
     okresy = sorted({f.id.split(".", 1)[1] for w in [glowny] + lista for m, f in w["fakty"].items() if f and m not in DZIENNE})
     linie += ["", f"Marże, wzrost i ROIC z ostatniego okresu TTM albo roku obrotowego każdej spółki ({', '.join(okresy)}); "
               "mnożniki z ostatniego kursu. Mediana liczona przez silnik z wierszy konkurentów. "
               "Dane konkurentów: osobne rejestry w katalogu konkurenci/, z jednego źródła na spółkę."]
-    if any(w["rynek"] != rynek for w in lista):
+    if any(w["rynek"] in RYNKI and w["rynek"] != rynek for w in lista):
         linie.append("Konkurenci z innego rynku: mnożniki z USA i z GPW nie są wprost porównywalne, bo koszt kapitału "
                      "w Polsce jest wyższy niż w USA.")
     return linie

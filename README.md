@@ -16,7 +16,7 @@ Plan ma 7 kroków (`specyfikacja.md`, część 11).
 | 6 | Raport: szablon z miejscami na liczby, lint, PDF | gotowy |
 | 7 | SKILL.md i pełne przebiegi na spółkach testowych | gotowy: skill i pełne przebiegi testowe (MSFT, DNP, PKO, stopy PBG i DPLS; wyniki usunięte z `analizy/`) |
 | 8 | Podział pracy między modele: subagenci, fragmenty do bramek, lista miejsc na liczby (`specyfikacja.md`, punkt 3.7) | gotowy w kodzie; pierwszy przebieg na nowej spółce sprawdzi koszt i jakość |
-| 9 | Wersja 1.1 (`specyfikacja.md`, punkt 13): beta Blume'a, wycena według typu spółki, profil ryzyka, beta sektorowa, pasma wyceny, wrażliwość, konkurenci, dywidendy, aktualność materiałów, nowy układ raportu | gotowy w kodzie i w testach (12.11.2026); parser tabeli Damodarana, pobieranie konkurentów i 5 lat notowań z Biznesradaru sprawdzi pierwszy przebieg z dostępem do sieci |
+| 9 | Wersja 1.1 (`specyfikacja.md`, punkt 13): beta Blume'a, wycena według typu spółki, profil ryzyka, beta sektorowa, pasma wyceny, wrażliwość, konkurenci, dywidendy, aktualność materiałów, nowy układ raportu | gotowy (12.11.2026); na prawdziwych danych sprawdzone: tabele bet Damodarana (HTML dla USA, XLS rynków wschodzących dla GPW), 5 lat notowań z Yahoo (beta, profil ryzyka, pasma), konkurenci z SEC; niesprawdzone: 5 lat notowań i konkurenci z Biznesradaru, bo Biznesradar zrywa połączenia z chmury |
 
 ## Skill
 

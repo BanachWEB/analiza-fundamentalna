@@ -153,6 +153,15 @@ def wybierz_bete(k: Kalkulator, par: dict, okres_d: Okres) -> str:
                       "jest za krótka albo niedostępna.", Jednostka.liczba)
 
 
+def _ev_do(nazwa: str):
+    """EV ÷ podstawa; przy podstawie ≤ 0 mnożnik nie ma sensu (jak C/Z przy stracie netto)."""
+    def fn(ev: float, baza: float) -> float:
+        if baza <= 0:
+            raise BrakSensu(f"{nazwa} ≤ 0")
+        return ev / baza
+    return fn
+
+
 def _cena_do_sprzedazy(kapitalizacja: float, przychody: float) -> float:
     if przychody <= 0:
         raise BrakSensu("konsensus przychodów ≤ 0, cena ÷ sprzedaż nie ma sensu")
@@ -252,8 +261,8 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str, finansowa: bool = Fal
                       kurs.waluta)
         if ev:
             wynik["ev"] = ev.id
-            m("ev_ebit", f"ev / zysk_operacyjny.{S}", [ev.id, f"zysk_operacyjny.{S}"], lambda e, z: e / z)
-            m("ev_ebitda", f"ev / ebitda.{S}", [ev.id, f"ebitda.{S}"], lambda e, z: e / z)
+            m("ev_ebit", f"ev / zysk_operacyjny.{S}", [ev.id, f"zysk_operacyjny.{S}"], _ev_do("zysk operacyjny"))
+            m("ev_ebitda", f"ev / ebitda.{S}", [ev.id, f"ebitda.{S}"], _ev_do("EBITDA"))
     else:
         k.braki.append("wycena: brak długu netto — EV nie policzone")
 

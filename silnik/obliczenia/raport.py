@@ -350,7 +350,8 @@ def pasma_tabela(k: Kalkulator, wynik: dict) -> list[str]:
         return ["Brak pasm wyceny: za krótka historia notowań albo brak danych rocznych."]
     pc = sorted(p for p in next(iter(ps["mnozniki"].values())) if isinstance(p, int))
     linie = [f"Tygodnie od {ps['od']} do {ps['do']}; dane roczne z raportów już opublikowanych. "
-             "Percentyl dzisiejszy: jaka część tygodni miała mnożnik nie wyższy niż dziś.", "",
+             "Percentyl dzisiejszy: jaka część tygodni miała mnożnik nie wyższy niż dziś. "
+             "Dzisiejszy mnożnik liczy się z danych TTM, a historyczny z ostatniego opublikowanego roku obrotowego.", "",
              "| Mnożnik | Dziś | Percentyl dzisiejszy | " + " | ".join(f"P{p}" for p in pc) + " | Tygodni |",
              "|---|---:|---:|" + "---:|" * len(pc) + "---:|"]
     for m, ids in ps["mnozniki"].items():

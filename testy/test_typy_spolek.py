@@ -153,3 +153,12 @@ def test_wyplata_dywidendy_z_zysku_i_fcf():
     wskazniki.dla_okresu(k, "FY2025", Okres(**fy(2025)), date(2025, 12, 31), None)
     assert r["wyplata_dywidendy.FY2025"].wartosc == pytest.approx(0.5)
     assert r["wyplata_dywidendy_z_fcf.FY2025"].wartosc == pytest.approx(0.4)
+
+
+def test_ev_ebit_bez_sensu_przy_ujemnym_zysku_operacyjnym():
+    r, k = rejestr([1000.0] * 3, fcf=[100.0] * 3)
+    r.dodaj(fakt("zysk_operacyjny.FY2025", -20.0, okres=fy(2025)))
+    r.dodaj(fakt("dlug_netto.2025-12-31", 100.0, okres={"typ": "dzien", "koniec": date(2025, 12, 31)}))
+    w = wycena.oblicz(k, None, "USA")
+    assert w.get("ev") and not w.get("ev_ebit")
+    assert any("zysk operacyjny ≤ 0" in b for b in k.braki)
