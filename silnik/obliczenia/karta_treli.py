@@ -64,9 +64,12 @@ def oblicz(k: Kalkulator, rynek: str, wycena: dict, ttm_sufiks: Optional[str], l
     d = D.isoformat() if D else None
 
     # miary złożone jako fakty wyliczone
-    if wycena.get("implikowany_wzrost_fcf") and wycena.get("wzrost_historyczny"):
-        k.wylicz(f"nadwyzka_wzrostu.{d}", "nadwyzka_wzrostu", "CAGR przychodów historyczny − implikowany wzrost FCF",
-                 [wycena["wzrost_historyczny"], wycena["implikowany_wzrost_fcf"]], lambda h, i: h - i,
+    # spółka cykliczna: miary wyceny z FCF znormalizowanego (FCF ze szczytu albo dołka cyklu myli)
+    impl = wycena.get("implikowany_wzrost_fcf_znormalizowany") or wycena.get("implikowany_wzrost_fcf")
+    if impl and wycena.get("wzrost_historyczny"):
+        opis = "FCF znormalizowanego" if impl == wycena.get("implikowany_wzrost_fcf_znormalizowany") else "FCF"
+        k.wylicz(f"nadwyzka_wzrostu.{d}", "nadwyzka_wzrostu", f"CAGR przychodów historyczny − implikowany wzrost {opis}",
+                 [wycena["wzrost_historyczny"], impl], lambda h, i: h - i,
                  Jednostka.ulamek, Okres(typ="dzien", koniec=D))
     cel = [f for f in k.r.fakty() if f.pozycja == "cena_docelowa_srednia" and f.status.value != "odrzucony"]
     kursy = [f for f in k.r.fakty() if f.pozycja == "kurs"]
@@ -94,6 +97,8 @@ def oblicz(k: Kalkulator, rynek: str, wycena: dict, ttm_sufiks: Optional[str], l
             if miara == "potencjal_trela_kons":  # fakt z arkusza właściciela z datą analizy, nie z datą kursu
                 pref = None
             fakt = _ostatnia(k, miara, pref)
+            if miara == "fcf_yield" and wycena.get("fcf_yield_znormalizowany"):
+                fakt = k.fakt(wycena["fcf_yield_znormalizowany"])
             if fakt is None:
                 filar.miary[miara] = None
                 continue

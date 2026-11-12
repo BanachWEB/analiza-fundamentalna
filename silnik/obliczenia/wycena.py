@@ -149,12 +149,29 @@ def okres_bazowy(k: Kalkulator, ttm: Optional[date], baza: str = "fcf_wlasciciel
     return lata[-1].id.split(".", 1)[1] if lata else None
 
 
-def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str, finansowa: bool = False) -> dict:
-    """finansowa=True (bank, ubezpieczyciel): podstawą wyceny odwrotnej jest zysk netto, a nie FCF,
-    bo przepływy banku to ruchy depozytów i kredytów; wariant marży FCF i FCF yield są pomijane."""
-    """Zwraca słownik id kluczowych faktów wyceny (do raportu i karty Treli)."""
+SEKTORY = ("ogolny", "cykliczny", "finanse", "deweloper")
+KAPITALOWE = ("finanse", "deweloper")  # wycena C/WK wobec ROE
+
+
+def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str, finansowa: bool = False, sektor: str = "ogolny") -> dict:
+    """Zwraca słownik id kluczowych faktów wyceny (do raportu i karty Treli).
+
+    Typ spółki (`sektor`, decyzja właściciela z 12.11.2026):
+    - `ogolny`: wycena odwrotna z FCF TTM;
+    - `cykliczny`: jak `ogolny` i wariant z FCF znormalizowanym (marża FCF przez cykl × przychody TTM);
+    - `finanse`, `deweloper`: podstawą wyceny odwrotnej jest zysk netto (przepływy banku to ruchy depozytów,
+      a dewelopera zakupy gruntów), a obok uzasadnione C/WK i ROE implikowane przez kurs.
+    `finansowa=True` to dawny zapis sektora „finanse”.
+    """
+    if finansowa:
+        sektor = "finanse"
+    if sektor not in SEKTORY:
+        k.braki.append(f"wycena: nieznany typ spółki {sektor!r}; liczę jak dla „ogolny”")
+        sektor = "ogolny"
+    kapitalowa = sektor in KAPITALOWE
+    finansowa = kapitalowa  # zysk netto zamiast FCF jako podstawa wyceny odwrotnej
     par = parametry()
-    wynik: dict[str, Optional[str]] = {}
+    wynik: dict[str, Optional[str]] = {"metoda": "kapitalowa" if kapitalowa else sektor}
     kurs = ostatni(k, "kurs")
     akcje = ostatni(k, "akcje_w_obrocie")
     if not kurs or not akcje:
@@ -260,4 +277,127 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str, finansowa: bool = Fal
     else:
         k.braki.append("wycena odwrotna: brak historycznego CAGR przychodów (CAP i marża)")
     wynik["okres_bazowy"] = S
+    if not kapitalowa:
+        sygnaly_cyklicznosci(k, par, sektor, okres_d)
+    if sektor == "cykliczny":
+        cykliczny(k, wynik, par, cap, S, gT, ke.id, n, okres_d)
+    if kapitalowa:
+        kapitalowa_wycena(k, wynik, par, cap, kw, dn, gT, ke.id, okres_d, sektor == "deweloper")
     return wynik
+
+
+# --- typy spółek -----------------------------------------------------------------------------
+
+
+def _lata_pary(k: Kalkulator, a: str, b: str, okno: int) -> list[tuple[str, str]]:
+    """Pary id faktów rocznych (a.FY, b.FY) z tych samych lat obrotowych, najwyżej `okno` ostatnich."""
+    po_b = {f.id.split(".", 1)[1] for f in k.okresy_fy(b)}
+    pary = [(f.id, f"{b}.{f.id.split('.', 1)[1]}") for f in k.okresy_fy(a) if f.id.split(".", 1)[1] in po_b]
+    return pary[-okno:]
+
+
+def sygnaly_cyklicznosci(k: Kalkulator, par: dict, sektor: str, okres_d: Okres) -> None:
+    """Największy spadek przychodów r/r i zmienność marży FCF z najwyżej `okno_cyklu_lat` lat.
+    Spółka oznaczona jako `ogolny` z wynikami typowymi dla spółki cyklicznej dostaje ostrzeżenie."""
+    d = okres_d.koniec.isoformat()
+    przych = k.okresy_fy("przychody")[-par["okno_cyklu_lat"]:]
+    spadek = None
+    if len(przych) >= 3:
+        wej = [f.id for f in przych]
+        spadek = k.wylicz(f"max_spadek_przychodow.{d}", "max_spadek_przychodow",
+                          f"najniższa dynamika przychodów r/r w latach {przych[0].id.split('.', 1)[1]}–{przych[-1].id.split('.', 1)[1]}",
+                          wej, lambda *v: min(b / a - 1 for a, b in zip(v, v[1:]) if a > 0), U, okres_d)
+    pary = _lata_pary(k, "fcf_wlascicieli", "przychody", par["okno_cyklu_lat"])
+    zm = None
+    if len(pary) >= 3:
+        wej = [x for p in pary for x in p]
+        def odchylenie(*v):
+            marze = [v[i] / v[i + 1] for i in range(0, len(v), 2) if v[i + 1] > 0]
+            sr = sum(marze) / len(marze)
+            return (sum((m - sr) ** 2 for m in marze) / (len(marze) - 1)) ** 0.5
+        zm = k.wylicz(f"zmiennosc_marzy_fcf.{d}", "zmiennosc_marzy_fcf",
+                      f"odchylenie standardowe marży FCF (fcf_wlascicieli / przychody) z {len(pary)} lat", wej, odchylenie, U, okres_d)
+    if sektor == "ogolny":
+        powody = []
+        if spadek and spadek.wartosc <= par["prog_spadek_przychodow"]:
+            powody.append("głęboki spadek przychodów r/r")
+        if zm and zm.wartosc >= par["prog_zmiennosc_marzy_fcf"]:
+            powody.append("duża zmienność marży FCF")
+        if powody:
+            k.ostrzezenia.append("Typ spółki: oznaczona jako „ogólna”, ale ma " + " i ".join(powody)
+                                 + " — sprawdź, czy nie jest spółką cykliczną (wariant z FCF znormalizowanym).")
+
+
+def cykliczny(k: Kalkulator, wynik: dict, par: dict, cap: Fakt, S: str, gT: str, ke: str, n: int, okres_d: Okres) -> None:
+    """FCF znormalizowany = marża FCF przez cykl (Σ FCF ÷ Σ przychody) × przychody z okresu bazowego."""
+    d = okres_d.koniec.isoformat()
+    pary = _lata_pary(k, "fcf_wlascicieli", "przychody", par["okno_cyklu_lat"])
+    if len(pary) < par["min_lat_cyklu"]:
+        k.braki.append(f"spółka cykliczna: tylko {len(pary)} lat FCF i przychodów (minimum {par['min_lat_cyklu']}); "
+                       "brak wariantu znormalizowanego")
+        return
+    od, do = pary[0][0].split(".", 1)[1], pary[-1][0].split(".", 1)[1]
+    marza = k.wylicz(f"marza_fcf_cykl.{d}", "marza_fcf_cykl", f"Σ fcf_wlascicieli ÷ Σ przychody, {od}–{do}",
+                     [x for p in pary for x in p],
+                     lambda *v: sum(v[0::2]) / sum(v[1::2]) if sum(v[1::2]) > 0 else (_ for _ in ()).throw(BrakSensu("przychody ≤ 0")),
+                     U, okres_d)
+    wynik["marza_fcf_cykl"] = marza.id if marza else None
+    if not marza:
+        return
+    fcf = k.wylicz(f"fcf_znormalizowany.{d}", "fcf_znormalizowany", f"marza_fcf_cykl × przychody.{S}",
+                   [marza.id, f"przychody.{S}"], lambda m, r: m * r, P, okres_d, cap.waluta)
+    wynik["fcf_znormalizowany"] = fcf.id if fcf else None
+    if not fcf:
+        return
+    def m(nazwa, wzor, wej, fn, jedn=U):
+        f = k.wylicz(f"{nazwa}.{d}", nazwa, wzor, wej, fn, jedn, okres_d)
+        wynik[nazwa] = f.id if f else None
+    m("fcf_yield_znormalizowany", "fcf_znormalizowany / kapitalizacja", [fcf.id, cap.id], lambda f, c: f / c)
+    m("implikowany_wzrost_fcf_znormalizowany", f"wzrost FCF znormalizowanego przez {n} lat, przy którym wartość = kapitalizacja",
+      [cap.id, fcf.id, gT, ke], lambda c, f, g, kk: implikowany_wzrost(c, f, n, g, kk))
+    if wynik.get("wzrost_historyczny"):
+        m("implikowany_cap_znormalizowany", "lata wzrostu FCF znormalizowanego w tempie historycznym, które uzasadniają kapitalizację",
+          [cap.id, fcf.id, wynik["wzrost_historyczny"], gT, ke],
+          lambda c, f, g, gt, kk: implikowany_cap(c, f, g, gt, kk, par["cap_max_lat"]), Jednostka.lata)
+
+
+def cwk_uzasadnione(roe: float, g: float, ke: float) -> float:
+    """C/WK = (ROE − g) ÷ (koszt kapitału − g)."""
+    if ke <= g:
+        raise BrakSensu("koszt kapitału nie jest wyższy od wzrostu rezydualnego")
+    w = (roe - g) / (ke - g)
+    if w <= 0:
+        raise BrakSensu("ROE nie przekracza wzrostu rezydualnego; uzasadnione C/WK ≤ 0")
+    return w
+
+
+def roe_implikowane(cwk: float, g: float, ke: float) -> float:
+    """ROE, przy którym uzasadnione C/WK równa się dzisiejszemu C/WK: g + C/WK × (koszt kapitału − g)."""
+    if ke <= g:
+        raise BrakSensu("koszt kapitału nie jest wyższy od wzrostu rezydualnego")
+    return g + cwk * (ke - g)
+
+
+def kapitalowa_wycena(k: Kalkulator, wynik: dict, par: dict, cap: Fakt, kw: Optional[Fakt], dn: Optional[Fakt],
+                      gT: str, ke: str, okres_d: Okres, deweloper: bool) -> None:
+    d = okres_d.koniec.isoformat()
+    wynik["kapital_wlasny"] = kw.id if kw else None
+    roe = k.okresy_fy("roe")[-par["okno_roe_lat"]:]
+    if len(roe) < par["min_lat_roe"]:
+        k.braki.append(f"wycena C/WK: tylko {len(roe)} lat ROE (minimum {par['min_lat_roe']})")
+    else:
+        sr = k.wylicz(f"roe_srednie.{d}", "roe_srednie", f"średnie ROE z {len(roe)} lat", [f.id for f in roe],
+                      lambda *v: sum(v) / len(v), U, okres_d)
+        wynik["roe_srednie"] = sr.id if sr else None
+        if sr:
+            f = k.wylicz(f"cwk_uzasadnione.{d}", "cwk_uzasadnione", "(roe_srednie − wzrost_rezydualny) / (koszt_kapitalu − wzrost_rezydualny)",
+                         [sr.id, gT, ke], cwk_uzasadnione, X, okres_d)
+            wynik["cwk_uzasadnione"] = f.id if f else None
+    if wynik.get("c_wk"):
+        f = k.wylicz(f"roe_implikowane.{d}", "roe_implikowane", "wzrost_rezydualny + c_wk × (koszt_kapitalu − wzrost_rezydualny)",
+                     [wynik["c_wk"], gT, ke], roe_implikowane, U, okres_d)
+        wynik["roe_implikowane"] = f.id if f else None
+    if deweloper and kw and dn:
+        f = k.wylicz(f"dlug_netto_do_kapitalu.{d}", "dlug_netto_do_kapitalu", "dlug_netto / kapital_wlasny", [dn.id, kw.id],
+                     lambda a, b: a / b if b > 0 else (_ for _ in ()).throw(BrakSensu("kapitał własny ≤ 0")), X, okres_d)
+        wynik["dlug_netto_do_kapitalu"] = f.id if f else None

@@ -138,6 +138,8 @@ def obliczenia_md(k: Kalkulator, wynik: dict) -> str:
             linie.append(f"- Prawdopodobieństwo upadłości w ciągu roku (model Ohlsona): {format_(op)}"
                          + (" — sprawdź wypłacalność (dźwignia, płynność, przepływy)." if op.wartosc > PROG_OHLSON else "."))
     linie += _wycena_md(k, wynik)
+    linie += ["", "## Ostrzeżenia", ""]
+    linie += [f"- {o}" for o in dict.fromkeys(k.ostrzezenia)] or ["Brak."]
     linie += ["", "## Braki danych", ""]
     linie += [f"- {b}" for b in sorted(set(k.braki))] or ["Brak."]
     return "\n".join(linie) + "\n"
@@ -195,11 +197,23 @@ def wycena_tabela(k: Kalkulator, wynik: dict) -> list[str]:
                          (f" na rok obrotowy do {cs.wejscia[1].split('.', 1)[1]}" if cs else "")))
     linie.append(_wiersz(k, "FCF yield", w.get("fcf_yield"), "FCF dla właścicieli ÷ kapitalizacja"))
     linie.append(_wiersz(k, "Udział PVGO w cenie", w.get("udzial_pvgo"), "część ceny za przyszły wzrost"))
-    baza = "zysku netto (bank)" if wynik.get("sektor") == "finanse" else "FCF"
+    baza = {"finanse": "zysku netto (bank)", "deweloper": "zysku netto (deweloper)"}.get(wynik.get("sektor"), "FCF")
     linie.append(_wiersz(k, f"Implikowany wzrost {baza} (10 lat)", w.get("implikowany_wzrost_fcf"), "wariant 1"))
     linie.append(_wiersz(k, "Implikowany okres przewagi (CAP)", w.get("implikowany_cap"), "wariant 2, wzrost w tempie historycznym"))
     linie.append(_wiersz(k, "Implikowana marża FCF", w.get("implikowana_marza_fcf"), "wariant 3, wzrost w tempie historycznym"))
     linie.append(_wiersz(k, "Wzrost historyczny (CAGR przychodów)", w.get("wzrost_historyczny")))
+    if w.get("metoda") == "cykliczny":
+        linie.append(_wiersz(k, "Marża FCF przez cykl", w.get("marza_fcf_cykl"), "spółka cykliczna: Σ FCF ÷ Σ przychody z pełnego cyklu"))
+        linie.append(_wiersz(k, "FCF znormalizowany", w.get("fcf_znormalizowany"), "marża FCF przez cykl × przychody z okresu bazowego"))
+        linie.append(_wiersz(k, "FCF yield (znormalizowany)", w.get("fcf_yield_znormalizowany")))
+        linie.append(_wiersz(k, "Implikowany wzrost FCF znormalizowanego (10 lat)", w.get("implikowany_wzrost_fcf_znormalizowany")))
+        linie.append(_wiersz(k, "Implikowany CAP (FCF znormalizowany)", w.get("implikowany_cap_znormalizowany")))
+    if w.get("metoda") == "kapitalowa":
+        linie.append(_wiersz(k, "ROE średnie", w.get("roe_srednie"), "podstawa uzasadnionego C/WK"))
+        linie.append(_wiersz(k, "Uzasadnione C/WK", w.get("cwk_uzasadnione"), "(ROE − g) ÷ (koszt kapitału − g)"))
+        linie.append(_wiersz(k, "ROE implikowane przez kurs", w.get("roe_implikowane"), "ROE, przy którym dzisiejsze C/WK jest uzasadnione"))
+        if w.get("dlug_netto_do_kapitalu"):
+            linie.append(_wiersz(k, "Dług netto ÷ kapitał własny", w.get("dlug_netto_do_kapitalu"), "deweloper"))
     rsi = max((f for f in k.r.fakty() if f.pozycja == "rsi_14" and f.status != Status.odrzucony),
               key=lambda f: f.okres.koniec, default=None)
     linie.append(_wiersz(k, "RSI 14-dniowy", rsi.id if rsi else None, "informacja, nie bramka; umowne progi 70 i 30"))

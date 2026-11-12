@@ -68,7 +68,7 @@ def _przypis(f: Fakt, archiwum: Archiwum, rejestr) -> str:
     return "; ".join(czesci) + "."
 
 
-def jakosc_danych(rejestr, archiwum: Archiwum, katalog: Path) -> list[str]:
+def jakosc_danych(rejestr, archiwum: Archiwum, katalog: Path, ostrzezenia: list[str] | None = None) -> list[str]:
     fakty = [f for f in rejestr.fakty() if f.rodzaj.value == "raportowany"]
     licz = {s: sum(1 for f in fakty if f.status == s) for s in Status}
     linie = ["| Status faktów z dokumentów | Liczba |", "|---|---:|"]
@@ -86,6 +86,8 @@ def jakosc_danych(rejestr, archiwum: Archiwum, katalog: Path) -> list[str]:
         linie.append(f"**Propozycje odrzucone przez test cytatu:** {', '.join(f.id for f in odrz)}.")
     zrodla = sorted({d.zrodlo for d in archiwum.rejestr.dokumenty})
     linie.append(f"**Źródła w archiwum:** {', '.join(zrodla)} ({len(archiwum.rejestr.dokumenty)} dokumentów).")
+    if ostrzezenia:
+        linie += ["", "**Ostrzeżenia silnika:**"] + [f"- {o}" for o in dict.fromkeys(ostrzezenia)]
     return linie
 
 
@@ -116,7 +118,7 @@ def renderuj(katalog: Path, tekst: str) -> str:
     tabele = {
         "panel": panel_md(k, wynik), "wycena": wycena_tabela(k, wynik), "cena_docelowa_trela": trela_tabela(k, wynik),
         "scenariusze": scenariusze_tabela(k, wynik),
-        "karta": karta_tabela(k, wynik), "bramki": bramki_tabela(katalog), "jakosc_danych": jakosc_danych(rejestr, archiwum, katalog),
+        "karta": karta_tabela(k, wynik), "bramki": bramki_tabela(katalog), "jakosc_danych": jakosc_danych(rejestr, archiwum, katalog, k.ostrzezenia),
     }
     przypisy: dict[str, int] = {}
 

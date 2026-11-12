@@ -40,6 +40,7 @@ class Kalkulator:
     def __init__(self, rejestr: RejestrFaktow):
         self.r = rejestr
         self.braki: list[str] = []
+        self.ostrzezenia: list[str] = []  # sygnały do części „Jakość danych” (np. nieaktualny materiał, typ spółki)
 
     # --- odczyt ---------------------------------------------------------------
 

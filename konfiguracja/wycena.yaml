@@ -11,3 +11,12 @@ beta_min_tygodni: 104      # krótsza wspólna historia notowań (np. świeży d
 blume_waga_regresji: 0.67  # Blume (1971): bety z regresji wracają z czasem w stronę 1
 beta_domyslna: 1.0         # tylko gdy brak bety z regresji: rynek jako całość
 cap_max_lat: 40            # górna granica szukania okresu przewagi (CAP)
+
+# Wycena według typu spółki (decyzja właściciela z 12.11.2026; sektor w analiza.json).
+okno_cyklu_lat: 10          # cykliczny: marża FCF przez cykl z najwyżej tylu lat obrotowych
+min_lat_cyklu: 7            # mniej lat: brak wariantu znormalizowanego
+okno_roe_lat: 5             # finanse, deweloper: średnie ROE do uzasadnionego C/WK
+min_lat_roe: 3
+# Ostrzeżenie dla spółki oznaczonej jako „ogolny”, która wygląda na cykliczną (dane z najwyżej okno_cyklu_lat lat):
+prog_spadek_przychodow: -0.15   # największy spadek przychodów r/r równy albo niższy
+prog_zmiennosc_marzy_fcf: 0.08  # odchylenie standardowe marży FCF równe albo wyższe

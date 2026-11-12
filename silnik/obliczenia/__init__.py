@@ -20,7 +20,8 @@ def rynek_z_waluty(rejestr: RejestrFaktow) -> str:
 
 
 def sektor(katalog: Optional[Path]) -> str:
-    """Sektor z analiza.json (zapisuje go model na etapie 0): „finanse” wyłącza miary, które dla banków nie działają."""
+    """Typ spółki z analiza.json (zapisuje go model na etapie 0): ogolny, cykliczny, finanse albo deweloper.
+    „finanse” wyłącza miary, które dla banków nie działają; typ wybiera też metodę wyceny (wycena.oblicz)."""
     if katalog and (katalog / "analiza.json").exists():
         return json.loads((katalog / "analiza.json").read_text(encoding="utf-8")).get("sektor", "ogolny")
     return "ogolny"
@@ -46,7 +47,9 @@ def dodaj_propozycje_jesli_sa(rejestr: RejestrFaktow, katalog: Optional[Path]) -
 
 def uruchom(rejestr: RejestrFaktow, katalog: Optional[Path] = None, rynek: Optional[str] = None):
     rynek = rynek or rynek_z_waluty(rejestr)
-    finansowa = sektor(katalog) == "finanse"
+    typ = sektor(katalog)
+    finansowa = typ == "finanse"
+    kapitalowa = typ in wycena.KAPITALOWE
     dodaj_propozycje_jesli_sa(rejestr, katalog)
     k = Kalkulator(rejestr)
     okresy.uzupelnij_skladniki(k)
@@ -55,16 +58,16 @@ def uruchom(rejestr: RejestrFaktow, katalog: Optional[Path] = None, rynek: Optio
     wskazniki.oblicz(k, koniec)
     if not finansowa:
         jakosc.oblicz(k)
-    w = wycena.oblicz(k, koniec, rynek, finansowa)
+    w = wycena.oblicz(k, koniec, rynek, sektor=typ)
     sc = scenariusze.oblicz(k, katalog / "scenariusze.json", w) if katalog else None
     tr = trela.oblicz(k, katalog, rynek)  # przed kartą: potencjał konserwatywny to miara filaru „wycena”
     analitycy = [f for f in rejestr.fakty() if f.pozycja == "liczba_analitykow"]
     liczba = int(max(analitycy, key=lambda f: f.okres.koniec or f.id).wartosc) if analitycy else None
-    karta = karta_treli.oblicz(k, rynek, w, w.get("okres_bazowy"), liczba, finansowa) if w.get("kapitalizacja") else []
+    karta = karta_treli.oblicz(k, rynek, w, w.get("okres_bazowy"), liczba, kapitalowa) if w.get("kapitalizacja") else []
     scrab = karta_treli.porownanie_scrab(k, karta) if karta else None
     return k, {"ttm": koniec, "rynek": rynek, "wycena": w, "scenariusze": sc, "trela": tr, "karta": karta, "analitycy": liczba,
                "scrab": scrab,
-               "sektor": "finanse" if finansowa else "ogolny"}
+               "sektor": typ}
 
 
 def uruchom_w_katalogu(katalog: Path, rynek: Optional[str] = None) -> Path:

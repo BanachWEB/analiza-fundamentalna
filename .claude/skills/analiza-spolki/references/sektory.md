@@ -6,6 +6,19 @@ Ustaw w `D/analiza.json` pole `"sektor": "finanse"` dla banków, ubezpieczycieli
 
 Miary sektorowe dodajesz jako propozycje z raportu (PDF albo prezentacja) z nowymi pozycjami.
 
+## Typ spółki w `analiza.json` (wybiera metodę wyceny w silniku)
+
+| `sektor` | Kiedy | Co robi silnik |
+|---|---|---|
+| `ogolny` | pozostałe spółki | wycena odwrotna i scenariusze z FCF TTM |
+| `cykliczny` | wynik zależy od cyklu: surowce, chemia, stal, półprzewodniki, pamięci, przewoźnicy, motoryzacja | dodaje wariant z FCF znormalizowanym (marża FCF z pełnego cyklu × przychody); karta Treli bierze ten wariant |
+| `finanse` | bank, ubezpieczyciel, broker, windykacja | zysk netto zamiast FCF, uzasadnione C/WK, ROE implikowane, scenariusze z polem `roe`; wyłącza F/M/Z''/O |
+| `deweloper` | deweloper mieszkaniowy i komercyjny | jak `finanse`, ale z F/M/Z''; zadłużenie jako dług netto ÷ kapitał własny |
+
+Gdy nie masz pewności między `ogolny` a `cykliczny`, wybierz `ogolny`: silnik ostrzeże w `obliczenia.md`, jeśli spółka ma głęboki spadek przychodów r/r albo dużą zmienność marży FCF. Wtedy zmień typ i uruchom obliczenia jeszcze raz.
+
+## Miary sektorowe
+
 | Typ spółki | Miary główne (pozycje propozycji) | Czego nie używać |
 |---|---|---|
 | Bank | `nim` (marża odsetkowa netto), `koszty_do_dochodow`, `koszt_ryzyka`, `npl`, `cet1`, `wymog_cet1`, ROE (silnik) wobec kosztu kapitału | EBITDA, dług netto, Z'', M-score, FCF |

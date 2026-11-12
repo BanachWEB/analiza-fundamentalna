@@ -24,7 +24,7 @@ from typing import Optional
 
 from silnik.fakty.schemat import Fakt, Jednostka, Metoda, Okres, Rodzaj, Status
 
-from .kalkulator import Kalkulator
+from .kalkulator import BrakSensu, Kalkulator
 from .wycena import bisekcja, ostatni, parametry, wartosc_przychody_marza
 
 
@@ -83,6 +83,48 @@ def _na_akcje(r, g, n, gt, kk, mz, akcje, reszta, z_dlugiem: bool) -> float:
     return wartosc_kapitalu(r, g, n, gt, kk, mz, dlug, sciezka) / akcje
 
 
+def wartosc_roe(kapital: float, roe: float, gT: float, ke: float, akcje: float) -> float:
+    """Wartość na akcję spółki finansowej albo dewelopera: kapitał własny × (ROE − g) ÷ (koszt kapitału − g) ÷ akcje."""
+    if ke <= gT:
+        raise BrakSensu("koszt kapitału nie jest wyższy od wzrostu rezydualnego")
+    return kapital * (roe - gT) / (ke - gT) / akcje
+
+
+def stopa_roe(kapital: float, roe: float, gT: float, akcje: float, kurs: float) -> float:
+    """Stopa dyskontowa, przy której wartość scenariusza ROE równa się kursowi: g + (ROE − g) × kapitał ÷ kapitalizacja."""
+    return gT + (roe - gT) * kapital / (kurs * akcje)
+
+
+def _kapitalowe(k: Kalkulator, scen: list[dict], wycena: dict, ke_id: str, akcje: Fakt, kurs: Fakt, okres: Okres,
+                wartosci: list) -> bool:
+    """Scenariusze opisane przez ROE (typ finanse albo deweloper, decyzja właściciela z 12.11.2026)."""
+    kw = wycena.get("kapital_wlasny")
+    if not kw:
+        k.braki.append("scenariusze ROE: brak kapitału własnego")
+        return False
+    for s in scen:
+        if "roe" not in s:
+            raise BladScenariuszy(f"{s['nazwa']}: typ spółki finanse/deweloper wymaga pola „roe” (zamiast wzrostu i marży FCF)")
+        ids = []
+        for par in ("prawdopodobienstwo", "roe"):
+            fid = f"scenariusz_{par}.{s['nazwa']}"
+            k.r.dodaj(Fakt(id=fid, rodzaj=Rodzaj.zalozenie, pozycja=f"scenariusz_{par}", okres=Okres(typ="brak"),
+                           wartosc=s[par], jednostka=U, metoda=Metoda.model, status=Status.jedno_zrodlo,
+                           uzasadnienie=s["uzasadnienie"]), zastap=True)
+            ids.append(fid)
+        f = k.wylicz(f"wartosc_na_akcje.{s['nazwa']}", "wartosc_na_akcje",
+                     "kapital_wlasny × (roe − wzrost_rezydualny) / (koszt_kapitalu − wzrost_rezydualny) / akcje_w_obrocie",
+                     [kw, ids[1], "wzrost_rezydualny.zalozenie", ke_id, akcje.id], wartosc_roe,
+                     Jednostka.pieniadz_na_akcje, okres, kurs.waluta)
+        if f is None:
+            return False
+        wartosci.append((ids[0], f.id))
+        k.wylicz(f"stopa_zwrotu_implikowana.{s['nazwa']}", "stopa_zwrotu_implikowana",
+                 f"stopa dyskontowa, przy której wartość scenariusza {s['nazwa']} równa się kursowi",
+                 [kw, ids[1], "wzrost_rezydualny.zalozenie", akcje.id, kurs.id], stopa_roe, U, okres)
+    return True
+
+
 def oblicz(k: Kalkulator, plik: Path, wycena: dict) -> Optional[dict]:
     if not plik.exists():
         return None
@@ -103,6 +145,10 @@ def oblicz(k: Kalkulator, plik: Path, wycena: dict) -> Optional[dict]:
     if dn is None:
         k.braki.append("scenariusze: brak długu netto; wartość kapitału bez korekty o dług albo gotówkę netto")
     wartosci = []
+    if wycena.get("metoda") == "kapitalowa":
+        if not _kapitalowe(k, scen, wycena, ke_id, akcje, kurs, okres, wartosci):
+            return None
+        scen = []  # wartości już policzone
     for s in scen:
         ids = []
         for par in ("prawdopodobienstwo", "wzrost_przychodow", "marza_fcf"):
