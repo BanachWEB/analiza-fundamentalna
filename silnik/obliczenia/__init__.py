@@ -9,7 +9,7 @@ from typing import Optional
 
 from silnik.fakty.rejestr import RejestrFaktow
 
-from . import jakosc, karta_treli, okresy, scenariusze, trela, wskazniki, wycena
+from . import aktualnosc, jakosc, karta_treli, okresy, scenariusze, trela, wskazniki, wycena
 from .kalkulator import Kalkulator
 from .raport import obliczenia_md
 
@@ -61,6 +61,7 @@ def uruchom(rejestr: RejestrFaktow, katalog: Optional[Path] = None, rynek: Optio
     w = wycena.oblicz(k, koniec, rynek, sektor=typ)
     sc = scenariusze.oblicz(k, katalog / "scenariusze.json", w) if katalog else None
     tr = trela.oblicz(k, katalog, rynek)  # przed kartą: potencjał konserwatywny to miara filaru „wycena”
+    aktualnosc.sprawdz(k, tr, w)
     analitycy = [f for f in rejestr.fakty() if f.pozycja == "liczba_analitykow"]
     liczba = int(max(analitycy, key=lambda f: f.okres.koniec or f.id).wartosc) if analitycy else None
     karta = karta_treli.oblicz(k, rynek, w, w.get("okres_bazowy"), liczba, kapitalowa) if w.get("kapitalizacja") else []

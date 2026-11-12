@@ -20,3 +20,10 @@ min_lat_roe: 3
 # Ostrzeżenie dla spółki oznaczonej jako „ogolny”, która wygląda na cykliczną (dane z najwyżej okno_cyklu_lat lat):
 prog_spadek_przychodow: -0.15   # największy spadek przychodów r/r równy albo niższy
 prog_zmiennosc_marzy_fcf: 0.08  # odchylenie standardowe marży FCF równe albo wyższe
+
+# Aktualność materiałów od właściciela (decyzja z 12.11.2026): progi ostrzeżeń, nie bramki.
+aktualnosc:
+  kurs: 0.15        # kurs w arkuszu ceny docelowej a dzisiejszy kurs
+  eps: 0.25         # prognoza EPS w arkuszu a EPS rozwodniony TTM albo konsensus EPS
+  dni: 30           # wiek danych z wklejki
+  konsensus: 0.10   # konsensus z wklejki a konsensus silnika
