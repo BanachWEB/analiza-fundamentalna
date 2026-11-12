@@ -17,19 +17,6 @@
       "warunek_powrotu": null
     },
     {
-      "id": "B1.slabosc_kontroli_wzmianka",
-      "etap": 1,
-      "kategoria": "biegly_i_regulator",
-      "poziom": "flaga",
-      "opis": "Raport roczny wspomina o istotnej słabości kontroli wewnętrznej („material weakness”); często to ogólny opis ryzyka — model sprawdza; STOP, jeśli słabość jest nieusunięta",
-      "dowody": [
-        "doc-015: 1 trafień od 2026-08-26"
-      ],
-      "zrodlo": "kod",
-      "testy": null,
-      "warunek_powrotu": null
-    },
-    {
       "id": "B1.korekta_sprawozdan",
       "etap": 1,
       "kategoria": "biegly_i_regulator",
@@ -41,6 +28,19 @@
       "warunek_powrotu": null
     },
     {
+      "id": "B1.opinia_bieglego",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Opinia bez zastrzeżeń (Baker Tilly US, LLP); jedna kluczowa sprawa badania: rezerwa na zapasy nadmiarowe i przestarzałe.",
+      "dowody": [
+        "doc-017: „In our opinion, the consolidated financial statements present fairly, in”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
       "id": "B1.opoznione_raporty",
       "etap": 1,
       "kategoria": "biegly_i_regulator",
@@ -48,6 +48,45 @@
       "opis": "Brak zawiadomień NT 10-K/NT 10-Q",
       "dowody": [],
       "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.sankcja_regulatora",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Jedyne trafienia to ogólne kary za naruszenie ochrony danych w czynnikach ryzyka; brak sankcji SEC wobec spółki.",
+      "dowody": [
+        "doc-017: „Failure to meet Privacy and Data Protection Law requirements could result in significant civil penalties”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.slabosc_kontroli",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Baker Tilly wydał opinię, że spółka utrzymała skuteczną kontrolę wewnętrzną; w 10-K nie ma stwierdzenia o nieusuniętej słabości.",
+      "dowody": [
+        "doc-017: „Also in our opinion, the Company maintained, in all material respects, effective internal control over financial”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.slabosc_kontroli_wzmianka",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Wzorzec „material weakness” trafia w 10-K tylko w opisie zakresu badania biegłego (ryzyko, że słabość istnieje); zarząd stwierdza skuteczną kontrolę wewnętrzną na 30.06.2026.",
+      "dowody": [
+        "doc-017: „management concluded that our internal control over financial reporting was effective as of June 30, 2026.”"
+      ],
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     },
@@ -67,14 +106,24 @@
       "etap": 2,
       "kategoria": "kapital",
       "poziom": "flaga_powazna",
-      "opis": "Liczba akcji rosła o ponad 10% r/r w 3 z 5 ostatnich lat; miara: na koniec okresu, średnia ważona; sprawdź, czy emisje szły bez prawa poboru (wtedy STOP wymaga dowodu)",
+      "opis": "Wskaźnik z rejestru faktów potwierdza wzrost liczby akcji powyżej 10% r/r w FY2022, FY2023 i FY2026; emisja z 1.06.2026 dodała 4,17 mln akcji (oferta publiczna pod gwarancją emisji, bez prawa poboru, jak to zwykle bywa w USA), a ATM z 8.05.2026 kolejne 1,84 mln. Przyczyn FY2022-FY2023 nie sprawdzono w dokumentach. Dowód emisji nie pokazuje szkody dla mniejszości, więc to nie STOP.",
       "dowody": [
-        "zmiana_liczby_akcji.FY2022",
-        "zmiana_liczby_akcji_koniec.FY2022",
-        "zmiana_liczby_akcji.FY2023",
-        "zmiana_liczby_akcji_koniec.FY2026"
+        "doc-027: „4,166,667 shares of our Common Stock (or 4,791,667 shares if the underwriters”"
       ],
-      "zrodlo": "kod",
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B2.rozwodnienie_szkodliwe",
+      "etap": 2,
+      "kategoria": "kapital",
+      "poziom": "flaga",
+      "opis": "Emisja po 7,20 USD przy ostatnim kursie 8,45 USD (dyskonto ok. 15%), na kapitał obrotowy i cele ogólne; oferta rynkowa pod gwarancją, nie emisja do wybranych podmiotów, więc brak dowodu szkody dla mniejszości, ale skala rozwodnienia wymaga obserwacji.",
+      "dowody": [
+        "doc-027: „The last reported sale price of our Common Stock on May 28, 2026 was $8.45 per share.”"
+      ],
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     },
@@ -101,6 +150,19 @@
         "beneish_m.FY2026"
       ],
       "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B3.kontynuacja",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "ok",
+      "opis": "Brak wzmianki o istotnej niepewności kontynuacji działalności w 10-K i w wyszukiwaniu EDGAR (0 trafień); spółka opisuje źródła płynności.",
+      "dowody": [
+        "doc-017: „Our principal sources of cash and liquidity include our existing cash and”"
+      ],
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     },
@@ -132,6 +194,71 @@
         "zysk_netto.FY2026"
       ],
       "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.insiderzy",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "flaga",
+      "opis": "Wśród 35 przejrzanych Form 4 (doc-030..064) jedyna sprzedaż na rynku (kod S): Mathi Gurusamy sprzedał 14 467 akcji 13.03.2026 po 6,21 USD (zostało 55 569); formularz nie wskazuje planu 10b5-1. Pozostałe formularze to przyznania, potrącenia i wykonania (kody A, F, M), przekazania do trustu (G) oraz jeden zakup (P, doc-036).",
+      "dowody": [
+        "doc-060: „This transaction was executed in multiple trades at prices ranging from $6.21 to $6.28.”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.akcjonariusz_90",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "ok",
+      "opis": "Największy akcjonariusz, Needham Investment Management, ma 6,7%; zarząd i rada łącznie 2,8%.",
+      "dowody": [
+        "doc-024: „Needham Investment Management L.L.C.(3)”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.oszustwo",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "ok",
+      "opis": "Żaden z przeczytanych dokumentów (10-K, DEF 14A, 8-K, Form 4) nie wskazuje oszustwa ani tunelowania; brak transakcji z podmiotami powiązanymi.",
+      "dowody": [
+        "doc-024: „There were no transactions with related persons that required disclosure under applicable SEC rules during fiscal 2026 and 2025, nor are any such transactions currently proposed.”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B4.podmioty_powiazane",
+      "etap": 4,
+      "kategoria": "lad_korporacyjny",
+      "poziom": "ok",
+      "opis": "Spółka stwierdza brak transakcji z podmiotami powiązanymi wymagających ujawnienia w FY2026 i FY2025.",
+      "dowody": [
+        "doc-024: „There were no transactions with related persons that required disclosure under applicable SEC rules during fiscal 2026 and 2025, nor are any such transactions currently proposed.”"
+      ],
+      "zrodlo": "model",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B5.decyzja_organu",
+      "etap": 5,
+      "kategoria": "biznes",
+      "poziom": "ok",
+      "opis": "Brak trafień i brak wzmianki o decyzji organu odbierającej rdzeń biznesu; w sprawach sądowych spółka nie zna postępowań o istotnym wpływie.",
+      "dowody": [
+        "doc-017: „ordinary course of business. We are currently not aware of any such legal proceedings or claims that we believe will have, individually”"
+      ],
+      "zrodlo": "model",
       "testy": null,
       "warunek_powrotu": null
     }
