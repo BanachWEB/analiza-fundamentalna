@@ -4,11 +4,11 @@ Data analizy: 12.11.2026. Rynek: USA (NASDAQ). Typ spółki: ogólny. Decyzja br
 
 ## TL;DR
 
-> Lantronix sprzedaje moduły obliczeniowe, bramy i konsole IoT oraz oprogramowanie do zarządzania urządzeniami, a nowym motorem wzrostu mają być moduły dla dronów zgodnych z NDAA. Spółka nie miała zysku netto w żadnym z pięciu ostatnich lat obrotowych, a gotówkę na rozwój zebrała emisją akcji w maju i czerwcu 2026. Wycena odwrotna mówi, że przy historycznym tempie wzrostu przychodów kurs zakłada marżę FCF 19,5%[^1], czyli wyższą niż w jakimkolwiek roku z historii spółki (najlepszy rok: 5,4%[^2] w FY2024). Teza „drony i oprogramowanie podniosą marżę FCF trwale” ma pięć warunków koniecznych: dokumenty potwierdzają dwa, jeden jest sprzeczny z dokumentami, a dwa zostają do sprawdzenia. Największe ryzyko to dalsza strata operacyjna i kolejna emisja akcji z półki rejestracyjnej SEC. Wg twoich zasad: pokrycie analityczne wystarcza, pauza po rajdzie nie obowiązuje, ale przed zakupem brakuje karty spółki.
+> Lantronix sprzedaje moduły obliczeniowe, bramy i konsole IoT oraz oprogramowanie do zarządzania urządzeniami, a nowym motorem wzrostu mają być według zarządu systemy bezzałogowe zgodne z NDAA. Spółka nie miała zysku netto w żadnym z pięciu ostatnich lat obrotowych, a gotówkę na rozwój zebrała emisją akcji w maju i czerwcu 2026. Wycena odwrotna mówi, że przy historycznym tempie wzrostu przychodów kurs zakłada marżę FCF 19,5%[^1], czyli wyższą niż w jakimkolwiek roku z historii spółki (najlepszy rok: 5,4%[^2] w FY2024). Teza „systemy bezzałogowe i oprogramowanie podniosą marżę FCF trwale” ma pięć warunków koniecznych: dokumenty potwierdzają dziś jeden, żaden dokument im nie przeczy, a cztery muszą jeszcze rozstrzygnąć przyszłe raporty. Moim zdaniem największe ryzyko to dalsza strata operacyjna i kolejna emisja akcji z półki rejestracyjnej SEC. Wg twoich zasad: pokrycie analityczne wystarcza, pauza po rajdzie nie obowiązuje, ale przed zakupem brakuje karty spółki.
 
 - Przewaga konkurencyjna: moim zdaniem brak udowodnionej przewagi; jest wąski kandydat (zgodność z NDAA i lista Blue UAS), trend niepewny.
 - Wycena: kapitalizacja 210,3 mln USD[^3], C/Z nie ma sensu przy stracie netto, C/WK 1,8×[^4], FCF yield -1,4%[^5].
-- Wartość oczekiwana ze scenariuszy: 3,65 USD[^6] przy kursie 4,48 USD[^7]; prawdopodobieństwo straty 80,0%[^8].
+- Wartość oczekiwana ze scenariuszy: 3,65 USD[^6] przy kursie 4,48 USD[^7]; prawdopodobieństwo straty 80,0%[^8] (z moich wag scenariuszy, a nie prawdopodobieństwo tezy).
 - Wg twojego arkusza: cena docelowa wynosi 3,11 USD[^9] w wariancie konserwatywnym i 8,43 USD[^10] w wariancie optymistycznym.
 - Karta w stylu Treli: wynik poniżej połowy skali, szczegóły w części o karcie.
 - Pokrycie analityczne: średnie, 6[^11] analityków (Stock Analysis).
@@ -42,14 +42,14 @@ Geograficznie Ameryki dały 69,7%[^33] przychodów FY2026, EMEA 17,8%[^34], a AP
 ## 3. Najważniejsze fakty (akcjonariat, zarząd, płynność, kalendarz)
 
 - Akcjonariat: największy akcjonariusz, Needham Investment Management, ma 6,7%[^36] akcji; zarząd i rada razem mają 2,8%[^37] (`doc-024`, zaproszenie na walne zgromadzenie). Needham & Company współprowadził emisję akcji z maja 2026 (`doc-026`); dokumenty nie opisują związku obu podmiotów.
-- Płynność bilansu: gotówka i krótkoterminowe papiery wartościowe wyniosły 51,5 mln USD[^38] na 30.09.2026 (`doc-020`). Spółka zaciągnęła po końcu FY2026 nowy kredyt i miała dług 4,9 mln USD[^39] (w tys. USD) na 30.09.2026 (`doc-018`, nota o kredycie). Dług netto na 30.09.2026 wynosi -46,7 mln USD[^40], czyli spółka ma gotówkę netto.
+- Płynność bilansu: gotówka i krótkoterminowe papiery wartościowe wyniosły 51,5 mln USD[^38] na 30.09.2026 (`doc-020`). Spółka zmieniła umowę kredytową 31.07.2026, uruchomiła kredyt terminowy i miała dług brutto 4,9 mln USD[^39] na 30.09.2026 (`doc-018`, nota o kredycie). Dług netto na 30.09.2026 wynosi -46,7 mln USD[^40], czyli spółka ma gotówkę netto.
 - Płynność akcji: średnie obroty dzienne z ostatnich sesji wynoszą 5,9 mln USD[^41].
 - Kalendarz: drugi kwartał FY2027 kończy się 31.12.2026, a zarząd prognozuje na niego przychody od 32,5 mln USD[^42] do 34,5 mln USD[^43] (`doc-019`). Kredyt z 31.07.2026 zapada 1.08.2028 (`doc-018`). Dokumenty nie podają daty publikacji wyników Q2 FY2027.
 - Dywidenda: spółka nigdy jej nie wypłaciła (`doc-017`).
 
 ## 4. Branża, konkurencja i przewaga konkurencyjna
 
-Raport roczny 10-K nie wymienia konkurentów z nazwy. Spółka pisze tylko, że wielu konkurentów ma większe zasoby, i spodziewa się dalszej presji na ceny (`doc-017`). Część produktów spółka sprzedaje na rynkach dojrzałych o spadającym popycie (`doc-017`). Poniższa tabela pokazuje pięć spółek z grupy porównawczej rady wynagrodzeń (`doc-024`). To spółki podobne tematycznie, a nie konkurenci wskazani przez Lantronix.
+Raport roczny 10-K nie wymienia konkurentów z nazwy. Spółka pisze tylko, że wielu konkurentów ma większe zasoby, i spodziewa się dalszej presji na ceny (`doc-017`). Część produktów spółka sprzedaje na rynkach dojrzałych o spadającym popycie (`doc-017`). Poniższa tabela pokazuje pięć spółek z grupy porównawczej rady wynagrodzeń (`doc-024`); wybrałem te, których profil (IoT, łączność, telematyka, komputery brzegowe) najbardziej przypomina Lantronix. To spółki porównawcze, a nie konkurenci wskazani przez Lantronix, choć silnik nazywa tabelę „konkurenci”.
 
 
 | Spółka | Rynek | Marża brutto | Marża operacyjna | Wzrost przychodów r/r | ROIC | C/Z | EV/EBIT |
@@ -70,16 +70,16 @@ Marża brutto Lantronix jest niższa od mediany spółek porównawczych, a marż
 **Przewaga konkurencyjna, mój werdykt: brak udowodnionej przewagi, z wąskim kandydatem.** Kandydaci, które zebrałem z dokumentów:
 
 - Zgodność z NDAA i TAA oraz wpis modułu Open-Q na listę Blue UAS Framework (`doc-019`). Spółka nazywa to kluczowym wyróżnikiem (`doc-020`). Moim zdaniem to bariera regulacyjna, ale nie wyłączna: dokumenty nie podają, ilu konkurentów ma ten sam status, a moduły spółki opierają się na układach Qualcomm i MediaTek (`doc-017`, `doc-019`).
-- Koszty zmiany dostawcy: klient, który zaprojektował moduł i firmware Lantronix w swój produkt, jest z nim związany na cały cykl życia produktu (`doc-020`, `doc-017`). Moim zdaniem to realna, ale typowa w tej branży bariera.
-- Dowody przeciwne: ROIC jest ujemny w każdym z pięciu ostatnich lat (część o sprawozdaniach), spółka nie ma gwarantowanych umów dostaw, a ceny i marże w przeszłości spadały (`doc-017`).
+- Koszty zmiany dostawcy: klient, który zaprojektował moduł Lantronix w swój produkt, kupuje go przez cały cykl życia swojego produktu (`doc-017`), a zarząd mówi, że spółka staje się wtedy głęboko wbudowana w architekturę produktu klienta (`doc-020`). Moim zdaniem to realna, ale typowa w tej branży bariera.
+- Dowody przeciwne: ROIC jest ujemny w każdym z pięciu ostatnich lat (część o sprawozdaniach), spółka zwykle nie ma gwarantowanych umów dostaw, a ceny i marże w przeszłości spadały (`doc-017`).
 
-Test AI (pięć pytań): moim zdaniem AI bardziej spółce pomaga niż szkodzi. Przychody pochodzą głównie ze sprzętu, a nie z godzin pracy (`doc-017`). Koszt zmiany dostawcy wynika z certyfikacji i projektowania sprzętu, którego AI nie skraca. Spółka nie opisuje własnych danych, które poprawiałyby produkt. Zarząd widzi popyt na konsole OOB u klientów budujących infrastrukturę AI, ale ten sam popyt podnosi ceny pamięci, które spółka kupuje (`doc-020`).
+Test AI (pięć pytań): moim zdaniem AI bardziej spółce pomaga niż szkodzi. Przychody pochodzą głównie ze sprzętu, a nie z godzin pracy (`doc-017`). Moim zdaniem koszt zmiany dostawcy wynika z cyklu projektowego i certyfikacji sprzętu, których AI nie skraca. Dokumenty nie opisują własnych danych spółki, które poprawiałyby produkt. Zarząd widzi popyt na konsole OOB u klientów budujących infrastrukturę AI, ale ten sam popyt podnosi ceny pamięci, które spółka kupuje (`doc-020`).
 
 ## 5. Zarząd i alokacja kapitału
 
 Prezesem jest Saleel Awsare od listopada 2023, a CFO Brent Stringham od stycznia 2025; Stringham pracuje w spółce od 2012 (`doc-017`). Walne zgromadzenie 3.11.2026 wybrało nową radę, a dotychczasowy przewodniczący Hoshi Printer i dyrektor James Auker nie kandydowali ponownie (`doc-024`, `doc-022`). Dokumenty nie podają przyczyny ich odejścia.
 
-Premia roczna zarządu zależy od przychodów i od zysku na akcję skorygowanego (`doc-024`). Spółka nie osiągnęła w FY2026 celu premii dla przychodów (124,5 mln USD[^44]), ale przekroczyła próg wypłaty (119,5 mln USD[^45]) (`doc-024`). Moim zdaniem miara premii pomija FCF i zwrot z kapitału, więc nie karze zarządu za emisje akcji.
+Premia roczna zarządu zależy w równych częściach od przychodów i od zysku na akcję skorygowanego, a w mniejszej części od celów operacyjnych (`doc-024`). Spółka nie osiągnęła w FY2026 celu premii dla przychodów (124,5 mln USD[^44]), ale przekroczyła próg wypłaty (119,5 mln USD[^45]) (`doc-024`). Moim zdaniem miara premii pomija FCF i zwrot z kapitału, więc nie karze zarządu za emisje akcji.
 
 Alokacja kapitału w FY2026: spółka zebrała 44,1 mln USD[^46] netto z emisji akcji (oferta publiczna i program ATM; `doc-017`) i kupiła Nero Global Tracking od Vecima Networks za około 11,7 mln USD[^47] (`doc-017`). Spółka nie wypłaca dywidendy i nie skupowała akcji w FY2026 (`doc-017`). Walne zgromadzenie zwiększyło pulę planu motywacyjnego (`doc-022`).
 
@@ -122,7 +122,7 @@ Kwoty w mln USD. ¹ = co najmniej jedno wejście z jednego źródła; ‼ = konf
 
 ![fcf_zysk](wykres_fcf_zysk.png)
 
-Przychody zmieniły się r/r o -23,3%[^48] w FY2025 i o -1,6%[^49] w FY2026, a CAGR przychodów z trzech lat wynosi -2,7%[^50]. Spadek wynika głównie z wygaśnięcia dużego wdrożenia u jednego klienta, które według rady wynagrodzeń dało około jednej czwartej przychodów FY2024 (`doc-024`).
+Przychody zmieniły się r/r o -23,3%[^48] w FY2025 i o -1,6%[^49] w FY2026, a CAGR przychodów z trzech lat wynosi -2,7%[^50]. Przychody spadły w FY2025, bo wygasło duże wdrożenie u jednego klienta, które według rady wynagrodzeń dało około jednej czwartej przychodów FY2024 (`doc-024`). W FY2026 spadły, bo spółka straciła przychody od Gridspertise (`doc-017`); dokumenty nie mówią, czy to ten sam klient.
 
 Marża brutto wzrosła do 43,8%[^51] w FY2026, bo spółka straciła niżej marżowe przychody od Gridspertise (`doc-017`). Marża operacyjna pozostaje ujemna: -3,4%‼[^52] w FY2026 i -2,6%‼[^53] za TTM do 30.09.2026. Zysk netto wyniósł -4,2 mln USD[^54] w FY2026 i -3,2 mln USD[^55] za TTM.
 
@@ -142,9 +142,9 @@ Liczba akcji na koniec okresu wzrosła o 19,2%[^61] w FY2026. Średnia ważona l
 | 4 | B4.insiderzy | flaga | Wśród 35 przejrzanych Form 4 (doc-030..064) jedyna sprzedaż na rynku (kod S): Mathi Gurusamy sprzedał 14 467 akcji 13.03.2026 po 6,21 USD (zostało 55 569); formularz nie wskazuje planu 10b5-1. Pozostałe formularze to przyznania, potrącenia i wykonania (kody A, F, M), przekazania do trustu (G) oraz jeden zakup (P, doc-036). |
 
 
-Bramka seryjnego rozwodnienia dała flagę poważną: liczba akcji rosła o więcej niż próg bramki r/r w trzech z pięciu ostatnich lat. Sprawdziłem dowód: emisja z czerwca 2026 była publiczną ofertą pod gwarancją, z dyskontem do ostatniego kursu, na kapitał obrotowy (`doc-027`). Dokumenty nie pokazują szkody dla akcjonariuszy mniejszościowych, więc to nie jest STOP. Przyczyn rozwodnienia w FY2022 i FY2023 nie sprawdziłem w dokumentach.
+Bramka seryjnego rozwodnienia dała flagę poważną: liczba akcji rosła o więcej niż próg bramki r/r w trzech z pięciu ostatnich lat. Sprawdziłem dowód: oferta z 29.05.2026 (rozliczona 1.06.2026) była publiczną ofertą pod gwarancją, z ceną niższą od kursu zamknięcia z 28.05.2026, na kapitał obrotowy (`doc-027`). Dokumenty nie pokazują szkody dla akcjonariuszy mniejszościowych, więc to nie jest STOP. Przyczyn rozwodnienia w FY2022 i FY2023 nie sprawdziłem w dokumentach.
 
-Beneish M-score wynosi -2,91[^63], poniżej progu manipulacji. Altman Z'' wynosi 1,52‼[^64], czyli w strefie szarej, a model Ohlsona daje prawdopodobieństwo upadłości w ciągu roku 0,5%[^65]. Piotroski F-score za FY2026 wynosi 7,00[^66]. Biegły Baker Tilly wydał opinię bez zastrzeżeń i opinię o skutecznej kontroli wewnętrznej (`doc-017`). Jedyna sprzedaż akcji przez członka zarządu na rynku w 2026 r. to transakcja z marca, a prezes kupił akcje we wrześniu 2026 (`doc-060`, `doc-036`).
+Beneish M-score wynosi -2,91[^63], poniżej progu manipulacji. Altman Z'' wynosi 1,52‼[^64], czyli w strefie szarej, a model Ohlsona daje prawdopodobieństwo upadłości w ciągu roku 0,5%[^65]. Piotroski F-score za FY2026 wynosi 7,00[^66]. Biegły Baker Tilly wydał opinię bez zastrzeżeń i opinię o skutecznej kontroli wewnętrznej (`doc-017`). W formularzach o transakcjach insiderów z archiwum (od marca 2026) jest jedna sprzedaż na rynku, z 13.03.2026, a prezes kupił akcje we wrześniu 2026 (`doc-060`, `doc-036`). Formularzy ze stycznia i lutego 2026 nie sprawdziłem.
 
 ## 8. Co jest w cenie
 
@@ -172,7 +172,7 @@ Beneish M-score wynosi -2,91[^63], poniżej progu manipulacji. Altman Z'' wynosi
 | RSI 14-dniowy | 34,07¹ | informacja, nie bramka; umowne progi 70 i 30 |
 
 
-Spółka ma ujemny FCF dla właścicieli za TTM, więc wycena odwrotna przez wzrost FCF i przez okres przewagi (CAP) nie działa. Działa wariant marży: przy historycznym CAGR przychodów (-2,7%[^50]) kurs zakłada marżę FCF 19,5%[^1]. Najlepsza marża FCF w ostatnich pięciu latach wyniosła 5,4%[^2] (FY2024). Udział PVGO wynosi 114,4%[^67], czyli cała cena to zapłata za przyszły wzrost. Konsensus zakłada wzrost EPS o 43,3%[^68] (Stock Analysis). Mój scenariusz bazowy zakłada wzrost przychodów 6,0%[^69] rocznie i marżę FCF 6,0%[^70].
+Spółka ma ujemny FCF dla właścicieli za TTM, więc wycena odwrotna przez wzrost FCF i przez okres przewagi (CAP) nie działa. Działa wariant marży: przy historycznym CAGR przychodów (-2,7%[^50]) kurs zakłada marżę FCF 19,5%[^1]. Najlepsza marża FCF w ostatnich pięciu latach wyniosła 5,4%[^2] (FY2024). Udział PVGO wynosi 114,4%[^67], czyli moim zdaniem cała cena to zapłata za przyszły wzrost. Konsensus zakłada wzrost EPS r/r w FY2027 o 43,3%[^68] (Stock Analysis). Mój scenariusz bazowy zakłada wzrost przychodów 6,0%[^69] rocznie i marżę FCF 6,0%[^70].
 
 
 Tygodnie od 2021-11-19 do 2026-11-12; dane roczne z raportów już opublikowanych. Percentyl dzisiejszy: jaka część tygodni miała mnożnik nie wyższy niż dziś. Dzisiejszy mnożnik liczy się z danych TTM, a historyczny z ostatniego opublikowanego roku obrotowego.
@@ -234,15 +234,15 @@ Wg twojego arkusza cena docelowa wynosi 3,11 USD[^9], gdy mnożniki P/E i P/S n
 
 **Co wycenia rynek.** Moim zdaniem kurs zakłada, że spółka trwale osiągnie marżę FCF wyższą niż w najlepszym roku swojej historii, mimo straty operacyjnej za TTM.
 
-**Teza do rozstrzygnięcia do 30.06.2028.** Zakładam, że systemy bezzałogowe i oprogramowanie podniosą przychody o kilkanaście procent rocznie w FY2027 i FY2028, a marża FCF dojdzie do poziomu, który rynek zakłada, bez kolejnej emisji akcji.
+**Teza do rozstrzygnięcia do 30.06.2028.** Zakładam, że systemy bezzałogowe i oprogramowanie podniosą przychody dwucyfrowo r/r w FY2027 (zgodnie z zapowiedzią zarządu) i utrzymają wzrost w FY2028, a marża FCF dojdzie do poziomu, który rynek zakłada, bez kolejnej emisji akcji.
 
 Warunki konieczne:
 
 1. Systemy bezzałogowe osiągną w FY2027 udział w przychodach zapowiadany przez zarząd. Status: **do sprawdzenia**. Zarząd powtórzył cel 9.11.2026 (`doc-020`), a liczba aktywnych zaangażowań wzrosła do 30[^80] (`doc-021`), ale wynik da się sprawdzić dopiero w raportach Q2–Q4 FY2027.
-2. Przychody całej spółki wzrosną dwucyfrowo w FY2027. Status: **potwierdzony jako na dobrej drodze**. Zarząd podtrzymał zapowiedź (`doc-019`), Q1 FY2027 mieścił się w prognozie (`doc-019`, `doc-021`), a prognoza na Q2 FY2027 jest wyższa od przychodów Q1.
-3. Marża brutto nie spadnie mimo rosnącego udziału niżej marżowych modułów obliczeniowych i cen pamięci. Status: **sprzeczny**. Spółka pisze, że mix Q1 FY2027 był przesunięty w stronę niżej marżowych modułów, a marżę utrzymał tylko SaaS z Nero (`doc-018`); 10-K opisuje niedobory i wyższe koszty pamięci (`doc-017`).
+2. Przychody całej spółki wzrosną dwucyfrowo r/r w FY2027. Status: **do sprawdzenia**. Zarząd podtrzymał zapowiedź (`doc-019`), a przychody Q1 FY2027 mieściły się w prognozie zarządu (`doc-019`, `doc-021`); wynik roku pokażą raporty Q2–Q4 FY2027.
+3. Marża brutto nie spadnie mimo rosnącego udziału niżej marżowych modułów obliczeniowych i cen pamięci. Status: **do sprawdzenia**. W Q1 FY2027 marża brutto utrzymała się r/r, mimo że mix przesunął się w stronę niżej marżowych modułów; spółka przypisuje to SaaS z Nero, niższym odpisom na zapasy i niższym kosztom ogólnym produkcji (`doc-018`). Raport 10-K opisuje niedobory i wyższe koszty pamięci (`doc-017`).
 4. Spółka sfinansuje wzrost bez kolejnej emisji akcji. Status: **potwierdzony na dziś**. Spółka ma gotówkę netto (`doc-018`, `doc-020`), ale ma też aktywną półkę rejestracyjną SEC (`doc-017`) i ujemny FCF za TTM.
-5. Zgodność z NDAA i Blue UAS da spółce przewagę cenową albo udział w zamówieniach obronnych. Status: **do sprawdzenia**. Spółka nazywa to wyróżnikiem (`doc-020`), ale dokumenty nie podają liczby konkurentów z tym samym statusem ani marży dronów.
+5. Zgodność z NDAA i Blue UAS da spółce przewagę cenową albo udział w zamówieniach obronnych. Status: **do sprawdzenia**. Spółka nazywa to wyróżnikiem (`doc-020`), ale dokumenty nie podają liczby konkurentów z tym samym statusem ani marży systemów bezzałogowych.
 
 Antytezy z progami (dokładne wartości wpiszesz w karcie):
 
@@ -251,13 +251,13 @@ Antytezy z progami (dokładne wartości wpiszesz w karcie):
 - Rynkowe: budżety obronne USA zmienią priorytety po wyborach z 3.11.2026 (spółka sama wymienia to ryzyko, `doc-019`).
 - Nieprzewidywalne: zakaz albo ograniczenie dostaw układów Qualcomm lub MediaTek. To ryzyko wpływa tylko na wielkość pozycji.
 
-Pre-mortem („za dwa lata pozycja traci połowę”): moim zdaniem najbardziej prawdopodobna ścieżka to opóźnienie zamówień dronowych, spadek marży brutto przez ceny pamięci i mix, dalsza strata operacyjna, a potem emisja akcji po niższym kursie.
+Pre-mortem („za dwa lata pozycja traci połowę”): moim zdaniem najbardziej prawdopodobna ścieżka to opóźnienie zamówień na systemy bezzałogowe, spadek marży brutto przez ceny pamięci i mix, dalsza strata operacyjna, a potem emisja akcji po niższym kursie.
 
 Horyzont rozpoznania tezy: do wyników FY2028 (pierwsza połowa roku kalendarzowego 2028 wg kalendarza spółki), osobno od horyzontu trzymania.
 
 ## 10. Wiadomości i scenariusze
 
-Wiadomości (subagent, linki w `wiadomosci.md`): spółka opublikowała w listopadzie 2026 wyniki Q1 FY2027 i podtrzymała prognozę. Źródła opisują reakcję kursu sprzecznie, a żadne nie wyjaśnia spadku z kolejnych sesji. Nie znalazłem zmian cen docelowych analityków po wynikach. Wiadomości przekładają się na czynniki wartości tak: wpis na Blue UAS i nowe zaangażowania dronowe wspierają wzrost przychodów; mix niżej marżowych modułów i ceny pamięci obniżają marżę; emisje z maja i czerwca 2026 rozwodniły akcjonariuszy.
+Wiadomości (subagent, linki w `wiadomosci.md`): spółka opublikowała w listopadzie 2026 wyniki Q1 FY2027 i podtrzymała prognozę. Streszczone źródła z sieci opisują reakcję kursu sprzecznie i żadne nie wyjaśnia spadku z kolejnych sesji. Nie znalazłem zmian cen docelowych analityków po wynikach. Moim zdaniem wiadomości przekładają się na czynniki wartości tak: wpis na Blue UAS i nowe zaangażowania w systemy bezzałogowe wspierają wzrost przychodów; mix niżej marżowych modułów i ceny pamięci zagrażają marży brutto; emisje z maja i czerwca 2026 rozwodniły akcjonariuszy.
 
 
 | Scenariusz | Prawdopodobieństwo | Wartość na akcję | Stopa zwrotu przy obecnym kursie |
@@ -271,7 +271,7 @@ Wiadomości (subagent, linki w `wiadomosci.md`): spółka opublikowała w listop
 | Asymetria (zysk ÷ strata) | 0,42¹ |  | |
 
 
-Scenariusz bazowy (prawdopodobieństwo 45,0%[^82]) zakłada, że drony rosną, a starsze produkty dalej tracą. Scenariusz byka (20,0%[^83]) zakłada marżę FCF 10,0%[^84], wyższą niż najlepszy rok spółki. Scenariusz niedźwiedzia (35,0%[^85]) zakłada nieregularne zamówienia obronne i kolejną emisję. Dałem niedźwiedziowi wagę wyższą niż zwykle, bo spółka nie miała zysku netto w żadnym z pięciu ostatnich lat.
+Wagi scenariuszy to moje założenia, a nie prawdopodobieństwo tezy. Scenariusz bazowy (waga 45,0%[^82]) zakłada, że systemy bezzałogowe rosną, a starsze produkty dalej tracą. Scenariusz byka (20,0%[^83]) zakłada marżę FCF 10,0%[^84], wyższą niż najlepszy rok spółki. Scenariusz niedźwiedzia (35,0%[^85]) zakłada nieregularne zamówienia obronne i kolejną emisję. Zakładam, że niedźwiedź zasługuje na wagę wyższą niż zwykle, bo spółka nie miała zysku netto w żadnym z pięciu ostatnich lat.
 
 
 Wartość na akcję wokół scenariusza „bazowy”. Wiersze: wzrost przychodów, kolumny: marża FCF.
@@ -301,11 +301,11 @@ Zmiana wartości przy jednym kroku założenia w górę:
 **Najważniejsze założenie wyceny: marża FCF.**
 
 
-Najważniejszym założeniem wyceny jest marża FCF: jej zmiana zmienia wartość mocniej niż zmiana wzrostu przychodów.
+Według tabeli wrażliwości silnika najważniejszym założeniem wyceny jest marża FCF: krok marży zmienia wartość mocniej niż krok wzrostu przychodów.
 
-Byki mówią: drony zgodne z NDAA to rynek, który rośnie z regulacji; spółka ma gotówkę netto, moduły na liście Blue UAS i rosnącą liczbę zaangażowań; oprogramowanie z Nero podnosi udział przychodów powtarzalnych.
+Byki mówią: spółka pisze, że zgodność z NDAA staje się wyróżnikiem, bo zachodnie rządy zaostrzają ograniczenia wobec niezgodnych dronów (`doc-017`); spółka ma gotówkę netto, moduły na liście Blue UAS i rosnącą liczbę zaangażowań; oprogramowanie z Nero podnosi udział przychodów powtarzalnych.
 
-Niedźwiedzie mówią: spółka od pięciu lat nie zarabia; marża dronów jest niższa od średniej; spółka zależy od nielicznych dostawców układów i od budżetów rządu USA; kolejna emisja jest możliwa, bo półka rejestracyjna SEC jest aktywna.
+Niedźwiedzie mówią: spółka od pięciu lat nie zarabia; część modułów obliczeniowych ma niższą marżę brutto (`doc-018`), a marży systemów bezzałogowych spółka nie podaje; spółka zależy od nielicznych dostawców układów i od budżetów rządu USA; kolejna emisja jest możliwa, bo półka rejestracyjna SEC jest aktywna.
 
 ## 11. Karta w stylu Treli
 
@@ -325,7 +325,7 @@ Wynik: **4,7 / 10** z 5 filarów z 5.
 
 Otwarte pytania (z notatek badacza biznesu):
 
-- Kto konkuruje z Lantronix w modułach dla dronów, w bramach IoT i w konsolach OOB? Sprawdź raporty roczne Digi International i Inseego (część „Competition”).
+- Kto konkuruje z Lantronix w modułach dla systemów bezzałogowych, w bramach IoT i w konsolach OOB? Sprawdź raporty roczne Digi International i Inseego (część „Competition”).
 - Ilu dostawców modułów ma status NDAA/TAA i wpis na listę Blue UAS? Sprawdź listę Blue UAS Framework.
 - Jaka jest marża brutto systemów bezzałogowych? Spółka jej nie raportuje; zapytaj na konferencji wynikowej.
 - Kim jest Klient A (13,0%[^86] przychodów FY2026)? Dokumenty go nie nazywają.
@@ -340,12 +340,12 @@ Progi zmiany tezy: antytezy z części o tezie.
 
 ## 13. Projekt karty
 
-- Teza w trzech zdaniach: Lantronix przestawia się ze starszych produktów sieciowych na moduły dla dronów zgodnych z NDAA i na oprogramowanie. Zakładam, że ten zwrot podniesie przychody dwucyfrowo i marżę FCF do poziomu z najlepszych lat spółki. Teza wymaga, żeby spółka zrobiła to bez kolejnej emisji akcji.
+- Teza w trzech zdaniach: spółka opisuje swoją strategię jako wzrost w systemach bezzałogowych zgodnych z NDAA i w oprogramowaniu, przy spadającym popycie na część starszych produktów. Zakładam, że ten zwrot podniesie przychody dwucyfrowo i marżę FCF do poziomu z najlepszych lat spółki. Teza wymaga, żeby spółka zrobiła to bez kolejnej emisji akcji.
 - Co jest w cenie: przy historycznym tempie wzrostu kurs zakłada marżę FCF 19,5%[^1].
-- Antytezy z progami: z części o tezie (marża operacyjna, marża brutto skorygowana, nowa emisja, cel dla dronów).
+- Antytezy z progami: z części o tezie (marża operacyjna, marża brutto skorygowana, nowa emisja, cel dla systemów bezzałogowych).
 - Pre-mortem: opóźnione zamówienia obronne, ceny pamięci, strata i emisja po niższym kursie.
 - Wielkość pozycji: zasada „przy takim udziale w IKE scenariusz niedźwiedzia zabiera taką część IKE”; oba udziały ustalasz ty.
-- Kiedy sprzedam: gdy złamie się warunek konieczny o dwucyfrowym wzroście przychodów albo o finansowaniu bez emisji.
+- Kiedy sprzedam: wg twoich zasad sprzedajesz, gdy teza jest złamana. Proponuję uznać tezę za złamaną, gdy zawiedzie warunek o dwucyfrowym wzroście przychodów albo o finansowaniu bez emisji.
 - Data przeglądu: po wynikach Q2 FY2027.
 - Co śledzić: udział systemów bezzałogowych, marża brutto skorygowana, liczba akcji, FCF.
 - Pokrycie analityczne: 6[^11] analityków · 2026-11-12 · Stock Analysis.
@@ -377,10 +377,10 @@ Tropy z materiału od właściciela (InvestingPro, `doc-016`; arkusz, `doc-013`)
 
 - Emisja akcji za 44,1 mln USD[^46] netto: potwierdzona (`doc-017`).
 - Gotówka bez długu na koniec FY2026: potwierdzona (`doc-021`), ale po roku spółka zaciągnęła kredyt (`doc-018`).
-- Przejęcie Nero: cena potwierdzona, ARR podany przez InvestingPro różni się od danych spółki (`doc-021`).
+- Przejęcie Nero: cena potwierdzona (`doc-017`), ARR podany przez InvestingPro różni się od danych spółki (`doc-021`).
 - Systemy bezzałogowe jako segment: potwierdzone co do liczb, ale to miara zarządu, a nie segment (`doc-017`).
 - Moduł Open-Q na liście Blue UAS: potwierdzony (`doc-019`).
-- Niższa marża dronów: potwierdzona jakościowo (`doc-018`), liczba niepotwierdzona.
+- Niższa marża dronów: niepotwierdzona; raport kwartalny mówi tylko o niżej marżowych modułach obliczeniowych ogółem (`doc-018`).
 - Gridspertise jako dezinwestycja: sprzeczny z dokumentami; to utracony klient (`doc-017`).
 - Skutek shutdownu i luka XPort: niepotwierdzone.
 - Formularz prezesa o transakcjach z listopada 2026: potwierdzony, bez sprzedaży (`doc-035`).
