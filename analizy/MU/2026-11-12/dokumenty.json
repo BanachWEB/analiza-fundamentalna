@@ -251,6 +251,26 @@
       "pobrano": "2026-11-12T08:16:01.448920Z",
       "sha256": "f11a68bdc9f5dba1b105f79b77105bd0be1bff9fb90515dcbb68c74a4f13aa21",
       "plik": "f11a68bdc9f5dba1.json"
+    },
+    {
+      "id": "doc-026",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/MU?range=2y&interval=1d",
+      "opis": "notowania dzienne MU",
+      "pobrano": "2026-11-12T08:18:56.437044Z",
+      "sha256": "dbbfe41fa0bef9a362509686230eceef1da055515a89503692990c499bb60539",
+      "plik": "dbbfe41fa0bef9a3.json"
+    },
+    {
+      "id": "doc-027",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=2y&interval=1d",
+      "opis": "notowania dzienne %5EGSPC",
+      "pobrano": "2026-11-12T08:18:58.122053Z",
+      "sha256": "1ed73d28b8d6e10c8923c12db6b7fb8d4b48214df670a628f73edbc1ab790dd0",
+      "plik": "1ed73d28b8d6e10c.json"
     }
   ]
 }

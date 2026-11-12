@@ -3,6 +3,64 @@
   "data_analizy": "2026-11-12",
   "fakty": [
     {
+      "id": "adjusted_fcf_firma.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "adjusted_fcf_firma",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 62.31,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "cytat": "Adjusted free cash flow(2) was $33.20 billion for the fourth quarter of 2026 and $62.31 billion for the full year of 2026.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "adjusted_fcf_firma.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "adjusted_fcf_firma",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 62310000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "adjusted_fcf_firma.FY2026",
+      "wejscia": [
+        "adjusted_fcf_firma.FY2026"
+      ]
+    },
+    {
+      "id": "akcje_ceo.2025-10-31",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_ceo",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-10-31"
+      },
+      "wartosc": 1084078.0,
+      "jednostka": "akcje",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "cytat": "Sanjay Mehrotra(7) 1,084,078 — 1,084,078",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "akcje_koniec_okresu.2016-09-01",
       "rodzaj": "raportowany",
       "pozycja": "akcje_koniec_okresu",
@@ -804,6 +862,44 @@
         "forma": "10-K",
         "zlozono": "2026-10-09"
       }
+    },
+    {
+      "id": "akcje_zarzad_i_dyrektorzy.2025-10-31",
+      "rodzaj": "raportowany",
+      "pozycja": "akcje_zarzad_i_dyrektorzy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-10-31"
+      },
+      "wartosc": 2686052.0,
+      "jednostka": "akcje",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "cytat": "All directors and executive officers as a group (18 persons) 2,675,270 10,782 2,686,052",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "akredytywy_klientow.2026-09-03",
+      "rodzaj": "raportowany",
+      "pozycja": "akredytywy_klientow",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-03"
+      },
+      "wartosc": 7.0,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "was $7 billion as of September 3, 2026",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "aktywa.2016-09-01",
@@ -1711,6 +1807,66 @@
       }
     },
     {
+      "id": "aktywa_trwale_geo_razem.2026-09-03",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa_trwale_geo_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-03"
+      },
+      "wartosc": 64031.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "$ 64,031 $ 47,326",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "aktywa_trwale_geo_tajwan.2026-09-03",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa_trwale_geo_tajwan",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-03"
+      },
+      "wartosc": 27613.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Taiwan $ 27,613 $ 18,965",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "aktywa_trwale_geo_usa.2026-09-03",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa_trwale_geo_usa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-03"
+      },
+      "wartosc": 14463.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "U.S. 14,463 8,445",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "altman_z2.FY2017",
       "rodzaj": "wyliczony",
       "pozycja": "altman_z2",
@@ -1948,6 +2104,24 @@
         "kapital_wlasny.2026-09-03",
         "zobowiazania.2026-09-03",
         "aktywa.2026-09-03"
+      ]
+    },
+    {
+      "id": "altman_z2.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "altman_z2",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 10.258107530738078,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "altman_z2.FY2026",
+      "wejscia": [
+        "altman_z2.FY2026"
       ]
     },
     {
@@ -5665,6 +5839,24 @@
       ]
     },
     {
+      "id": "beneish_m.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "beneish_m",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 0.4758131406489262,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "beneish_m.FY2026",
+      "wejscia": [
+        "beneish_m.FY2026"
+      ]
+    },
+    {
       "id": "beta.zalozenie",
       "rodzaj": "zalozenie",
       "pozycja": "beta",
@@ -7729,6 +7921,84 @@
       ]
     },
     {
+      "id": "capex_netto_firma.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "capex_netto_firma",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 27.37,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "cytat": "Investments in capital expenditures, net(2) were $10.77 billion for the fourth quarter of 2026 and $27.37 billion for the full year of 2026.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "capex_netto_firma.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "capex_netto_firma",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 27370000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "capex_netto_firma.FY2026",
+      "wejscia": [
+        "capex_netto_firma.FY2026"
+      ]
+    },
+    {
+      "id": "capex_plan_1h_fy2027.brak",
+      "rodzaj": "raportowany",
+      "pozycja": "capex_plan_1h_fy2027",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 25.0,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "to be approximately $11.5 billion in the first quarter of 2027, approximately $25 billion in the first six months of 2027, and higher in the second half of 2027",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "capex_plan_1q_fy2027.brak",
+      "rodzaj": "raportowany",
+      "pozycja": "capex_plan_1q_fy2027",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 11.5,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "to be approximately $11.5 billion in the first quarter of 2027, approximately $25 billion in the first six months of 2027, and higher in the second half of 2027",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "cena_docelowa_srednia.2026-11-12",
       "rodzaj": "prognoza",
       "pozycja": "cena_docelowa_srednia",
@@ -7868,6 +8138,80 @@
         "komorka": "C19",
         "etykieta": "cena docelowa z p/s"
       }
+    },
+    {
+      "id": "chips_dotacja_bezposrednia.brak",
+      "rodzaj": "raportowany",
+      "pozycja": "chips_dotacja_bezposrednia",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 6.1,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "we entered into direct funding agreements with the U.S. Department of Commerce for up to $6.1 billion in direct funding pursuant to the CHIPS Act",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "chips_dotacja_manassas.brak",
+      "rodzaj": "raportowany",
+      "pozycja": "chips_dotacja_manassas",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 275.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "a direct funding agreement with the U.S. Department of Commerce for up to $275 million in direct funding to expand and modernize our fab in Manassas, Virginia",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "chips_dotacje_razem.brak",
+      "rodzaj": "raportowany",
+      "pozycja": "chips_dotacje_razem",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 6.4,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "represent total CHIPS Act grants of up to $6.4 billion in connection with our U.S. manufacturing expansion and modernization projects",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "chips_ulga_inwestycyjna.brak",
+      "rodzaj": "raportowany",
+      "pozycja": "chips_ulga_inwestycyjna",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.35,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "we receive a 35% investment tax credit on qualified investments in U.S. semiconductor manufacturing under the CHIPS Act",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "deflator_pkb_usa.1968-03-31",
@@ -8704,6 +9048,46 @@
         "kwartał od": "2025-10-01",
         "znaczenie": "średnia kwartalna, 2017 = 100"
       }
+    },
+    {
+      "id": "depozyty_klientow_sca.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "depozyty_klientow_sca",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 12.75,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "we received cash deposits of $12.75 billion in 2026",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "depozyty_klientow_sca.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "depozyty_klientow_sca",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 12750000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "depozyty_klientow_sca.FY2026",
+      "wejscia": [
+        "depozyty_klientow_sca.FY2026"
+      ]
     },
     {
       "id": "dlug.2017-08-31",
@@ -10321,6 +10705,25 @@
       "wejscia": [
         "dlug_netto.2026-09-03",
         "ebitda.TTM2026-09-03"
+      ]
+    },
+    {
+      "id": "dywidenda_kwartalna.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "dywidenda_kwartalna",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 0.15,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "declared a quarterly dividend of $0.15 per share",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -13103,7 +13506,7 @@
       "jednostka": "punkty",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-025",
+      "dokument": "doc-027",
       "miejsce": {
         "sesja": "2026-11-11",
         "pole": "zamknięcie"
@@ -13121,13 +13524,13 @@
       "jednostka": "ulamek",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-025",
+      "dokument": "doc-027",
       "miejsce": {
         "od": "2025-11-11",
         "do": "2026-10-12",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-025"
+          "doc-027"
         ]
       }
     },
@@ -17023,7 +17426,7 @@
       "waluta": "USD",
       "metoda": "api",
       "status": "zweryfikowany",
-      "dokument": "doc-024",
+      "dokument": "doc-026",
       "miejsce": {
         "sesja": "2026-11-11",
         "pole": "zamknięcie"
@@ -17731,6 +18134,24 @@
       "miejsce": {
         "tekst": "According to 49 analysts polled by S&P Global, Micron Technology stock has a consensus rating of \"Strong Buy\" and an average price target of $1,562"
       }
+    },
+    {
+      "id": "liczba_pracownikow.2026-09-03",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_pracownikow",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-03"
+      },
+      "wartosc": 61000.0,
+      "jednostka": "liczba",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "As of September 3, 2026, we had approximately 61,000 employees",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "marza_brutto.FY2017",
@@ -18778,6 +19199,158 @@
       ]
     },
     {
+      "id": "marza_operacyjna_segmentu_aebu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "marza_operacyjna_segmentu_aebu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 0.12,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "AEBU 11,217 71 % 557 12 % 432 9 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "marza_operacyjna_segmentu_aebu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "marza_operacyjna_segmentu_aebu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 0.71,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "AEBU 11,217 71 % 557 12 % 432 9 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "marza_operacyjna_segmentu_cdbu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "marza_operacyjna_segmentu_cdbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 0.3,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CDBU 29,539 79 % 2,180 30 % 255 5 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "marza_operacyjna_segmentu_cdbu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "marza_operacyjna_segmentu_cdbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 0.79,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CDBU 29,539 79 % 2,180 30 % 255 5 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "marza_operacyjna_segmentu_cmbu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "marza_operacyjna_segmentu_cmbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 0.45,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CMBU $ 31,225 72 % $ 6,129 45 % $ 244 6 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "marza_operacyjna_segmentu_cmbu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "marza_operacyjna_segmentu_cmbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 0.72,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CMBU $ 31,225 72 % $ 6,129 45 % $ 244 6 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "marza_operacyjna_segmentu_mcbu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "marza_operacyjna_segmentu_mcbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 0.17,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "MCBU 29,208 80 % 1,981 17 % (1) — %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "marza_operacyjna_segmentu_mcbu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "marza_operacyjna_segmentu_mcbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 0.8,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "MCBU 29,208 80 % 1,981 17 % (1) — %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "momentum_12_1.2026-11-11",
       "rodzaj": "raportowany",
       "pozycja": "momentum_12_1",
@@ -18789,13 +19362,13 @@
       "jednostka": "ulamek",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-024",
+      "dokument": "doc-026",
       "miejsce": {
         "od": "2025-11-11",
         "do": "2026-10-12",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-024"
+          "doc-026"
         ]
       }
     },
@@ -19256,6 +19829,25 @@
       }
     },
     {
+      "id": "nowy_jork_term_sheet.brak",
+      "rodzaj": "raportowany",
+      "pozycja": "nowy_jork_term_sheet",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 5.5,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "provides for up to $5.5 billion in funding for the planned four-fab facility over the next 20-plus years",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "obroty_dzienne_60s.2026-11-11",
       "rodzaj": "raportowany",
       "pozycja": "obroty_dzienne_60s",
@@ -19268,12 +19860,12 @@
       "waluta": "USD",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-024",
+      "dokument": "doc-026",
       "miejsce": {
         "obliczenie": "średnia z 60 sesji: zamknięcie × wolumen",
         "od": "2026-08-19",
         "dokumenty": [
-          "doc-024"
+          "doc-026"
         ]
       }
     },
@@ -19566,6 +20158,24 @@
       ]
     },
     {
+      "id": "ohlson_o.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "ohlson_o",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": -12.364092105159424,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "ohlson_o.FY2026",
+      "wejscia": [
+        "ohlson_o.FY2026"
+      ]
+    },
+    {
       "id": "ohlson_p.FY2018",
       "rodzaj": "wyliczony",
       "pozycja": "ohlson_p",
@@ -19725,6 +20335,24 @@
       "wzor": "1 / (1 + e^(−O)); próg Ohlsona 0,038",
       "wejscia": [
         "ohlson_o.FY2026"
+      ]
+    },
+    {
+      "id": "ohlson_p.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "ohlson_p",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 4.269147606950677e-06,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "ohlson_p.FY2026",
+      "wejscia": [
+        "ohlson_p.FY2026"
       ]
     },
     {
@@ -20543,6 +21171,24 @@
         "marza_brutto.FY2025",
         "przychody.FY2026",
         "przychody.FY2025"
+      ]
+    },
+    {
+      "id": "piotroski_f.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "piotroski_f",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 8.0,
+      "jednostka": "punkty",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "piotroski_f.FY2026",
+      "wejscia": [
+        "piotroski_f.FY2026"
       ]
     },
     {
@@ -21709,6 +22355,25 @@
         "kolumna": "Total Equity Risk Premium",
         "rating": "Aa1"
       }
+    },
+    {
+      "id": "prognoza_firmy_przychody_1q_fy2027.brak",
+      "rodzaj": "raportowany",
+      "pozycja": "prognoza_firmy_przychody_1q_fy2027",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 61.5,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-020",
+      "cytat": "Revenue $61.5 billion ± $1.5 billion",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "przeplywy_finansowe.FY2012Q1",
@@ -25579,6 +26244,269 @@
       ]
     },
     {
+      "id": "przychody_dram.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_dram",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 100.68,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Total reported DRAM revenue was $100.68 billion in 2026",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_dram.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_dram",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 100680000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_dram.FY2026",
+      "wejscia": [
+        "przychody_dram.FY2026"
+      ]
+    },
+    {
+      "id": "przychody_geo_chiny.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_geo_chiny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-08-29",
+        "poczatek": "2023-09-01"
+      },
+      "wartosc": 3045.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Mainland China (excluding Hong Kong) 8,338 2,639 3,045",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_geo_chiny.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_geo_chiny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 2639.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Mainland China (excluding Hong Kong) 8,338 2,639 3,045",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_geo_chiny.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_geo_chiny",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 8338.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Mainland China (excluding Hong Kong) 8,338 2,639 3,045",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_geo_chiny.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_geo_chiny",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 8338000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_geo_chiny.FY2026",
+      "wejscia": [
+        "przychody_geo_chiny.FY2026"
+      ]
+    },
+    {
+      "id": "przychody_geo_hongkong.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_geo_hongkong",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 1138.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Hong Kong 6,289 1,138 1,071",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_geo_hongkong.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_geo_hongkong",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 6289.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Hong Kong 6,289 1,138 1,071",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_geo_hongkong.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_geo_hongkong",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 6289000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_geo_hongkong.FY2026",
+      "wejscia": [
+        "przychody_geo_hongkong.FY2026"
+      ]
+    },
+    {
+      "id": "przychody_geo_tajwan.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_geo_tajwan",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 16950.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Taiwan 16,950 5,672 4,708",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_geo_tajwan.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_geo_tajwan",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 16950000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_geo_tajwan.FY2026",
+      "wejscia": [
+        "przychody_geo_tajwan.FY2026"
+      ]
+    },
+    {
+      "id": "przychody_geo_usa.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_geo_usa",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 91323.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "U.S. $ 91,323 $ 24,113 $ 13,168",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_geo_usa.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_geo_usa",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 91323000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_geo_usa.FY2026",
+      "wejscia": [
+        "przychody_geo_usa.FY2026"
+      ]
+    },
+    {
       "id": "przychody_konsensus.2027-08-31",
       "rodzaj": "prognoza",
       "pozycja": "przychody_konsensus",
@@ -25598,6 +26526,290 @@
       "dostawca": "S&P Global (przez Stock Analysis)",
       "data_prognozy": "2026-11-12",
       "liczba_analitykow": 43
+    },
+    {
+      "id": "przychody_nand.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_nand",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 31.79,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Total reported NAND revenue was $31.79 billion in 2026",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_nand.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_nand",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 31790000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_nand.FY2026",
+      "wejscia": [
+        "przychody_nand.FY2026"
+      ]
+    },
+    {
+      "id": "przychody_segmentu_aebu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_segmentu_aebu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 4753.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "AEBU 15,886 12 % 4,753 13 % 4,631 18 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_segmentu_aebu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_segmentu_aebu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 15886.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "AEBU 15,886 12 % 4,753 13 % 4,631 18 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_segmentu_aebu.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_segmentu_aebu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 15886000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_segmentu_aebu.FY2026",
+      "wejscia": [
+        "przychody_segmentu_aebu.FY2026"
+      ]
+    },
+    {
+      "id": "przychody_segmentu_cdbu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_segmentu_cdbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 7229.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CDBU 37,592 28 % 7,229 19 % 4,984 20 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_segmentu_cdbu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_segmentu_cdbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 37592.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CDBU 37,592 28 % 7,229 19 % 4,984 20 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_segmentu_cdbu.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_segmentu_cdbu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 37592000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_segmentu_cdbu.FY2026",
+      "wejscia": [
+        "przychody_segmentu_cdbu.FY2026"
+      ]
+    },
+    {
+      "id": "przychody_segmentu_cmbu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_segmentu_cmbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 13524.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CMBU $ 43,085 32 % $ 13,524 36 % $ 3,792 15 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_segmentu_cmbu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_segmentu_cmbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 43085.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CMBU $ 43,085 32 % $ 13,524 36 % $ 3,792 15 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_segmentu_cmbu.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_segmentu_cmbu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 43085000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_segmentu_cmbu.FY2026",
+      "wejscia": [
+        "przychody_segmentu_cmbu.FY2026"
+      ]
+    },
+    {
+      "id": "przychody_segmentu_mcbu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_segmentu_mcbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 11859.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "MCBU 36,601 27 % 11,859 32 % 11,667 46 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_segmentu_mcbu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody_segmentu_mcbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 36601.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "MCBU 36,601 27 % 11,859 32 % 11,667 46 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "przychody_segmentu_mcbu.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "przychody_segmentu_mcbu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 36601000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "przychody_segmentu_mcbu.FY2026",
+      "wejscia": [
+        "przychody_segmentu_mcbu.FY2026"
+      ]
     },
     {
       "id": "ps_forward_maksimum_arkusz.2026-11-12",
@@ -26127,6 +27339,46 @@
       ]
     },
     {
+      "id": "rpo.2026-09-03",
+      "rodzaj": "raportowany",
+      "pozycja": "rpo",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-03"
+      },
+      "wartosc": 134.0,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "the transaction price allocated to our remaining performance obligations was approximately $134 billion, of which $13 billion has been recognized as contract liabilities",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "rpo_zobowiazania_umowne.2026-09-03",
+      "rodzaj": "raportowany",
+      "pozycja": "rpo_zobowiazania_umowne",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-03"
+      },
+      "wartosc": 13.0,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "the transaction price allocated to our remaining performance obligations was approximately $134 billion, of which $13 billion has been recognized as contract liabilities",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "rsi_14.2026-11-11",
       "rodzaj": "raportowany",
       "pozycja": "rsi_14",
@@ -26138,12 +27390,12 @@
       "jednostka": "liczba",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-024",
+      "dokument": "doc-026",
       "miejsce": {
         "obliczenie": "RSI Wildera z 14 sesji, zamknięcia",
         "od": "2024-11-12",
         "dokumenty": [
-          "doc-024"
+          "doc-026"
         ]
       }
     },
@@ -28387,6 +29639,46 @@
       ]
     },
     {
+      "id": "skup_akcji_program.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "skup_akcji_program",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 650.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "We repurchased 2.5 million shares of our common stock for $650 million in 2026.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "skup_akcji_program.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "skup_akcji_program",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 650000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "skup_akcji_program.FY2026",
+      "wejscia": [
+        "skup_akcji_program.FY2026"
+      ]
+    },
+    {
       "id": "splata_leasingu.FY2020",
       "rodzaj": "raportowany",
       "pozycja": "splata_leasingu",
@@ -29210,6 +30502,99 @@
       ]
     },
     {
+      "id": "udzial_blackrock.2025-10-31",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_blackrock",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-10-31"
+      },
+      "wartosc": 0.076,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "cytat": "BlackRock, Inc.(5) 85,904,256 — 85,904,256 7.6 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_centrum_danych.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_centrum_danych",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 0.6,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Among our end markets, approximately 60% of our total revenue was concentrated in the data center end market.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_centrum_danych.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "udzial_centrum_danych",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 0.6,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "udzial_centrum_danych.FY2026",
+      "wejscia": [
+        "udzial_centrum_danych.FY2026"
+      ]
+    },
+    {
+      "id": "udzial_najwiekszego_klienta.FY2024",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_najwiekszego_klienta",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2024-08-29",
+        "poczatek": "2023-09-01"
+      },
+      "wartosc": 0.1,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Revenue from one customer was 10% (primarily included in the MCBU, AEBU, and CMBU segments) of total revenue for 2024.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_najwiekszego_klienta.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_najwiekszego_klienta",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 0.17,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "Revenue from one customer was 17% (primarily included in the CMBU segment) of total revenue for 2025.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "udzial_pvgo.2026-11-11",
       "rodzaj": "wyliczony",
       "pozycja": "udzial_pvgo",
@@ -29226,6 +30611,288 @@
         "zysk_netto.TTM2026-09-03",
         "koszt_kapitalu_wlasnego.2026-11-11",
         "kapitalizacja.2026-11-11"
+      ]
+    },
+    {
+      "id": "udzial_segmentu_aebu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_segmentu_aebu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 0.13,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "AEBU 15,886 12 % 4,753 13 % 4,631 18 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_segmentu_aebu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_segmentu_aebu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 0.12,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "AEBU 15,886 12 % 4,753 13 % 4,631 18 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_segmentu_aebu.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "udzial_segmentu_aebu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 0.12,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "udzial_segmentu_aebu.FY2026",
+      "wejscia": [
+        "udzial_segmentu_aebu.FY2026"
+      ]
+    },
+    {
+      "id": "udzial_segmentu_cdbu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_segmentu_cdbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 0.19,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CDBU 37,592 28 % 7,229 19 % 4,984 20 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_segmentu_cdbu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_segmentu_cdbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 0.28,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CDBU 37,592 28 % 7,229 19 % 4,984 20 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_segmentu_cdbu.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "udzial_segmentu_cdbu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 0.28,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "udzial_segmentu_cdbu.FY2026",
+      "wejscia": [
+        "udzial_segmentu_cdbu.FY2026"
+      ]
+    },
+    {
+      "id": "udzial_segmentu_cmbu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_segmentu_cmbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 0.36,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CMBU $ 43,085 32 % $ 13,524 36 % $ 3,792 15 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_segmentu_cmbu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_segmentu_cmbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 0.32,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CMBU $ 43,085 32 % $ 13,524 36 % $ 3,792 15 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_segmentu_cmbu.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "udzial_segmentu_cmbu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 0.32,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "udzial_segmentu_cmbu.FY2026",
+      "wejscia": [
+        "udzial_segmentu_cmbu.FY2026"
+      ]
+    },
+    {
+      "id": "udzial_segmentu_mcbu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_segmentu_mcbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 0.32,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "MCBU 36,601 27 % 11,859 32 % 11,667 46 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_segmentu_mcbu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_segmentu_mcbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 0.27,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "MCBU 36,601 27 % 11,859 32 % 11,667 46 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "udzial_segmentu_mcbu.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "udzial_segmentu_mcbu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 0.27,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "udzial_segmentu_mcbu.FY2026",
+      "wejscia": [
+        "udzial_segmentu_mcbu.FY2026"
+      ]
+    },
+    {
+      "id": "udzial_vanguard.2025-10-31",
+      "rodzaj": "raportowany",
+      "pozycja": "udzial_vanguard",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-10-31"
+      },
+      "wartosc": 0.084,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "cytat": "The Vanguard Group, Inc.(4) 94,984,500 — 94,984,500 8.4 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "upowaznienie_skupu_calosc.2026-10-08",
+      "rodzaj": "raportowany",
+      "pozycja": "upowaznienie_skupu_calosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-10-08"
+      },
+      "wartosc": 35.16,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "authorized an increase in the amount authorized under this stock repurchase program for a total authorization of $35.16 billion",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "upowaznienie_skupu_pozostalo.2026-09-03",
+      "rodzaj": "raportowany",
+      "pozycja": "upowaznienie_skupu_pozostalo",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-03"
+      },
+      "wartosc": 2.16,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "as of September 3, 2026, $2.16 billion of the 2018 authorization remained available for the repurchase of our common stock",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -30330,6 +31997,26 @@
       ]
     },
     {
+      "id": "wynagrodzenie_ceo_razem.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "wynagrodzenie_ceo_razem",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 30940146.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-018",
+      "cytat": "Sanjay Mehrotra 2025 $ 1,446,185 $ — $ 25,360,029 $ 3,894,990 $ 238,942 $ 30,940,146",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
       "id": "wzrost_eps_konsensus.2026-11-12",
       "rodzaj": "prognoza",
       "pozycja": "wzrost_eps_konsensus",
@@ -31402,6 +33089,26 @@
       "wejscia": [
         "zysk_operacyjny.FY2026Q1",
         "zysk_operacyjny.FY2025Q1"
+      ]
+    },
+    {
+      "id": "zakup_fabryki_tongluo.2026-03",
+      "rodzaj": "raportowany",
+      "pozycja": "zakup_fabryki_tongluo",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 1.8,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "In March 2026, we completed the acquisition of a wafer fabrication facility in Tongluo, Miaoli County, Taiwan, from Powerchip Semiconductor Manufacturing Corporation for cash consideration of $1.8 billion.",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -32842,13 +34549,13 @@
       "jednostka": "ulamek",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-024",
+      "dokument": "doc-026",
       "miejsce": {
         "od": "2026-08-12",
         "do": "2026-11-11",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-024"
+          "doc-026"
         ]
       }
     },
@@ -33024,6 +34731,24 @@
       ]
     },
     {
+      "id": "zmiana_liczby_akcji.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "zmiana_liczby_akcji",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 0.016000000000000014,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "zweryfikowany",
+      "wzor": "zmiana_liczby_akcji.FY2026",
+      "wejscia": [
+        "zmiana_liczby_akcji.FY2026"
+      ]
+    },
+    {
       "id": "zmiana_liczby_akcji_koniec.FY2018",
       "rodzaj": "wyliczony",
       "pozycja": "zmiana_liczby_akcji_koniec",
@@ -33192,6 +34917,24 @@
       "wejscia": [
         "akcje_koniec_okresu.2026-09-03",
         "akcje_koniec_okresu.2025-08-28"
+      ]
+    },
+    {
+      "id": "zmiana_liczby_akcji_koniec.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "zmiana_liczby_akcji_koniec",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 0.008021390374331583,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "zmiana_liczby_akcji_koniec.FY2026",
+      "wejscia": [
+        "zmiana_liczby_akcji_koniec.FY2026"
       ]
     },
     {
@@ -34098,6 +35841,26 @@
         "forma": "10-K",
         "zlozono": "2026-10-09"
       }
+    },
+    {
+      "id": "zobowiazania_zakupowe_ppe.2026-09-03",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania_zakupowe_ppe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-03"
+      },
+      "wartosc": 4.18,
+      "skala": "mld",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "we had purchase obligations of approximately $4.18 billion for the acquisition of property, plant, and equipment",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
     },
     {
       "id": "zysk_brutto.FY2017",
@@ -36499,6 +38262,250 @@
       "wzor": "zysk_operacyjny.FY2026",
       "wejscia": [
         "zysk_operacyjny.FY2026"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_segmentu_aebu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny_segmentu_aebu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 557.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "AEBU 11,217 71 % 557 12 % 432 9 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_segmentu_aebu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny_segmentu_aebu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 11217.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "AEBU 11,217 71 % 557 12 % 432 9 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_segmentu_aebu.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "zysk_operacyjny_segmentu_aebu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 11217000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "zysk_operacyjny_segmentu_aebu.FY2026",
+      "wejscia": [
+        "zysk_operacyjny_segmentu_aebu.FY2026"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_segmentu_cdbu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny_segmentu_cdbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 2180.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CDBU 29,539 79 % 2,180 30 % 255 5 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_segmentu_cdbu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny_segmentu_cdbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 29539.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CDBU 29,539 79 % 2,180 30 % 255 5 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_segmentu_cdbu.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "zysk_operacyjny_segmentu_cdbu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 29539000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "zysk_operacyjny_segmentu_cdbu.FY2026",
+      "wejscia": [
+        "zysk_operacyjny_segmentu_cdbu.FY2026"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_segmentu_cmbu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny_segmentu_cmbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 6129.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CMBU $ 31,225 72 % $ 6,129 45 % $ 244 6 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_segmentu_cmbu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny_segmentu_cmbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 31225.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "CMBU $ 31,225 72 % $ 6,129 45 % $ 244 6 %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_segmentu_cmbu.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "zysk_operacyjny_segmentu_cmbu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 31225000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "zysk_operacyjny_segmentu_cmbu.FY2026",
+      "wejscia": [
+        "zysk_operacyjny_segmentu_cmbu.FY2026"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_segmentu_mcbu.FY2025",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny_segmentu_mcbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2025-08-28",
+        "poczatek": "2024-08-30"
+      },
+      "wartosc": 1981.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "MCBU 29,208 80 % 1,981 17 % (1) — %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_segmentu_mcbu.FY2026",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny_segmentu_mcbu",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-08-29"
+      },
+      "wartosc": 29208.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-017",
+      "cytat": "MCBU 29,208 80 % 1,981 17 % (1) — %",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "zysk_operacyjny_segmentu_mcbu.TTM2026-09-03",
+      "rodzaj": "wyliczony",
+      "pozycja": "zysk_operacyjny_segmentu_mcbu",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-03",
+        "poczatek": "2025-09-04"
+      },
+      "wartosc": 29208000000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "zysk_operacyjny_segmentu_mcbu.FY2026",
+      "wejscia": [
+        "zysk_operacyjny_segmentu_mcbu.FY2026"
       ]
     },
     {
