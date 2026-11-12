@@ -24,5 +24,5 @@ Właściciel liczy ją w swoim arkuszu (metoda Treli, dane ze Scrab) i czasem do
 1. Właściciel: sito w Scrab (osobne progi dla USA i GPW), szybki przegląd, krótka lista.
 2. Właściciel: wklejka z Scrab, TipRanks albo InvestingPro (wynik punktowy, konsensus, liczby) — opcjonalnie. To tropy i dane wyjściowe, nie źródło prawdy (`specyfikacja.md`, punkt 3.3, „Materiały od właściciela”).
 3. Skill: pogłębiona analiza jednej spółki, bramki, PDF.
-4. Skill: gdy właściciel wkleił wynik Scrab, porównaj go z kartą skilla; duża rozbieżność często ujawnia błąd danych — napisz o tym.
+4. Skill: gdy właściciel wkleił wynik Scrab, dodaj go jako propozycje `wynik_scrab` i `wynik_scrab_max` (`references/dane-i-dowody.md`). Silnik porówna go z kartą na skali 0–100. Kartę komentujesz tylko wtedy, gdy `obliczenia.md` oznacza ROZBIEŻNOŚĆ (próg w `konfiguracja/karta-treli.yaml`); duża rozbieżność często ujawnia błąd danych po jednej ze stron.
 5. Właściciel: decyzja i karta w `inwestowanie/spolki/<TICKER>.md`.

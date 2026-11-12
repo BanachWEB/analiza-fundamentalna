@@ -1,11 +1,11 @@
-# Co jest w cenie, teza, prawdopodobieństwa, scenariusze
+# Co jest w cenie, teza, warunki konieczne, scenariusze
 
 Źródło metody: raport z badania, część 4 (Mauboussin i Rappaport, Damodaran, Tetlock, Klein).
 
 ## Spis treści
 1. Co jest w cenie
 2. Teza
-3. Prawdopodobieństwo tezy: 7 kroków
+3. Warunki konieczne tezy
 4. Scenariusze (`scenariusze.json`)
 5. Wiadomości i konsensus
 6. Margines bezpieczeństwa i wielkość pozycji
@@ -34,17 +34,20 @@ Szablon (odpowiada karcie właściciela):
 
 Progi antytez opisujesz słownie względem faktów z rejestru, np. „marża operacyjna spada poniżej obecnego poziomu ({{marza_operacyjna.TTM2026-09-30}}) przez dwa kwartały z rzędu”. Dokładne wartości progów właściciel wpisuje w karcie po swoim „tak”.
 
-## 3. Prawdopodobieństwo tezy: 7 kroków
+## 3. Warunki konieczne tezy
 
-1. Zapisz tezę jako zdanie rozstrzygalne z datą i progiem.
-2. Stopa bazowa z klasy porównawczej (wielkość przychodów, sektor). Przykład: żadna spółka z co najmniej 100 mld USD przychodów nie rosła przez 10 lat w tempie kilkunastu procent rocznie (Base Rate Book).
-3. Aktualizuj dowodami jako ilorazy szans: limit ok. 2–3 na dowód i 4–5 łącznie, chyba że dowodem jest umowa.
-4. Rozłóż tezę na warunki konieczne i pomnóż ich prawdopodobieństwa (cztery ogniwa po 80% dają ok. 41%).
-5. Zrób pre-mortem.
-6. Podaj wynik w krokach 5 pp, zwykle 15–85%, jako średnią z trzech niezależnych szacunków.
-7. Zapisz prognozę z datą rozstrzygnięcia (do „Historii” karty), żeby po latach policzyć Brier score.
+Decyzja właściciela z 12.11.2026: nie podajesz prawdopodobieństwa tezy, bo ocena tezy należy do analizy miękkiej właściciela, a liczba od modelu działa jak kotwica.
 
-Rozróżniaj trzy prawdopodobieństwa: że teza się spełni, że spółka pobije oczekiwania zawarte w cenie, i prawdopodobieństwa scenariuszy. Prawdopodobieństwa to oceny: piszesz je słownie („około dwóch na trzy”) albo jako założenia scenariuszy w `scenariusze.json` — wtedy wstawiasz je miejscem `{{scenariusz_prawdopodobienstwo.<nazwa>}}`. Prawdopodobieństwo tezy zapisz jako scenariusz albo słownie; nie wpisuj go cyframi.
+1. Zapisz tezę jako zdanie rozstrzygalne z horyzontem.
+2. Rozłóż ją na 3–5 warunków koniecznych: rzeczy, które muszą się spełnić, żeby teza była prawdziwa.
+3. Przy każdym warunku podaj status:
+   - **potwierdzony** — dokument z archiwum (numer `doc-…`) pokazuje, że warunek jest dziś spełniony albo na dobrej drodze;
+   - **sprzeczny** — dokument z archiwum mu przeczy (numer `doc-…`);
+   - **do sprawdzenia** — dokumenty nie rozstrzygają; podaj, gdzie to sprawdzić (konferencja wynikowa, raport konkurenta, relacje inwestorskie, dane branżowe).
+4. Warunki „do sprawdzenia” przenieś do części 12 „Do dalszej analizy”.
+5. Zrób pre-mortem: „za 2 lata pozycja jest −50% — co się stało?”.
+
+Prawdopodobieństwa scenariuszy zostają, bo silnik liczy z nich wartość oczekiwaną. Zapisujesz je w `scenariusze.json` i wstawiasz miejscem `{{scenariusz_prawdopodobienstwo.<nazwa>}}`.
 
 ## 4. Scenariusze
 

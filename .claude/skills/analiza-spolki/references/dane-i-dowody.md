@@ -66,6 +66,9 @@ Plik `D/propozycje.json`. Silnik dołącza propozycje przy każdym przebiegu (`s
 
   oraz `liczba_analitykow.<data>` (rodzaj `raportowany`, metoda `wklejka`, jednostka `liczba`). Pozycje filaru „analitycy”: `cena_docelowa_srednia`, `wzrost_eps_konsensus`, `rewizje_eps_90d`.
 
+- **Wynik Scrab** (gdy jest we wklejce): dwie propozycje z tym samym cytatem, `wynik_scrab.<data>` (np. 72) i `wynik_scrab_max.<data>` (np. 100), rodzaj `raportowany`, metoda `wklejka`, jednostka `liczba`. Silnik porówna je z kartą Treli na skali 0–100.
+- **Data danych we wklejce:** w propozycjach z wklejki ustaw `data_prognozy` (prognozy) albo `okres.koniec` na datę danych z materiału, a nie na datę analizy. Silnik ostrzega o materiale starszym niż próg.
+
 Propozycja odrzucona zostaje w rejestrze ze statusem „odrzucony”; `python -m silnik.gpw` wypisuje powód. Popraw cytat albo wartość.
 
 ## 4. Dowody do bramek

@@ -61,7 +61,9 @@ def uruchom(rejestr: RejestrFaktow, katalog: Optional[Path] = None, rynek: Optio
     analitycy = [f for f in rejestr.fakty() if f.pozycja == "liczba_analitykow"]
     liczba = int(max(analitycy, key=lambda f: f.okres.koniec or f.id).wartosc) if analitycy else None
     karta = karta_treli.oblicz(k, rynek, w, w.get("okres_bazowy"), liczba, finansowa) if w.get("kapitalizacja") else []
+    scrab = karta_treli.porownanie_scrab(k, karta) if karta else None
     return k, {"ttm": koniec, "rynek": rynek, "wycena": w, "scenariusze": sc, "trela": tr, "karta": karta, "analitycy": liczba,
+               "scrab": scrab,
                "sektor": "finanse" if finansowa else "ogolny"}
 
 

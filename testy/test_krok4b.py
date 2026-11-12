@@ -300,3 +300,40 @@ def test_wycena_bez_regresji_bierze_bete_domyslna():
     assert w["beta"] == "beta.zalozenie" and r["beta.zalozenie"].wartosc == 1.0
     assert r[w["ke"]].wartosc == pytest.approx(0.09)
     assert any("brak bety z regresji" in b for b in k.braki)
+
+
+# --- wersja 1.1: Ohlson jako procent, porównanie karty ze Scrab -------------------------------
+
+
+def _filar(nazwa, waga, punkty):
+    f = karta_treli.Filar(nazwa, waga, None)
+    f.punkty = punkty
+    return f
+
+
+def _rejestr_scrab(wynik, maks):
+    from silnik.fakty.rejestr import RejestrFaktow
+    from silnik.fakty.schemat import Fakt
+    from silnik.obliczenia.kalkulator import Kalkulator
+    D = date(2026, 11, 9)
+    r = RejestrFaktow("X", D)
+    for poz, v in (("wynik_scrab", wynik), ("wynik_scrab_max", maks)):
+        r.dodaj(Fakt(id=f"{poz}.2026-11-09", pozycja=poz, okres={"typ": "dzien", "koniec": D}, wartosc=v,
+                     jednostka="liczba", status="jedno_zrodlo", rodzaj="raportowany", metoda="api",
+                     dokument="doc-001", miejsce={}))
+    return Kalkulator(r)
+
+
+def test_porownanie_scrab_rozbiezne_i_zgodne():
+    filary = [_filar("wzrost", 0.5, 8.0), _filar("jakosc", 0.3, 6.0), _filar("wycena", 0.2, 4.0)]  # karta 6,6 / 10
+    sc = karta_treli.porownanie_scrab(_rejestr_scrab(30, 100), filary)
+    assert sc["karta"] == pytest.approx(66.0) and sc["scrab"] == pytest.approx(30.0) and sc["rozbiezny"]
+    sc = karta_treli.porownanie_scrab(_rejestr_scrab(7, 10), filary)
+    assert sc["scrab"] == pytest.approx(70.0) and not sc["rozbiezny"]
+
+
+def test_porownanie_scrab_bez_wyniku():
+    from silnik.fakty.rejestr import RejestrFaktow
+    from silnik.obliczenia.kalkulator import Kalkulator
+    filary = [_filar("wzrost", 0.5, 8.0), _filar("jakosc", 0.3, 6.0), _filar("wycena", 0.2, 4.0)]
+    assert karta_treli.porownanie_scrab(Kalkulator(RejestrFaktow("X", date(2026, 11, 9))), filary) is None

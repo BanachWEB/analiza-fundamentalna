@@ -94,3 +94,15 @@ def test_ohlson_inna_waluta_to_brak():
     jakosc.ohlson(k, k.okresy_fy())
     assert "ohlson_o.FY2025" not in r
     assert any("EUR/USD" in b for b in k.braki)
+
+
+def test_raport_podaje_tylko_procent_upadlosci():
+    """Decyzja właściciela z 12.11.2026: jedna liczba w procentach, bez wartości O-score."""
+    from silnik.obliczenia.raport import obliczenia_md
+    r = rejestr()
+    k = Kalkulator(r)
+    jakosc.ohlson(k, k.okresy_fy())
+    tekst = obliczenia_md(k, {"ttm": None, "wycena": {}, "karta": []})
+    linia = next(l for l in tekst.splitlines() if "upadłości" in l and l.startswith("- "))
+    assert linia.startswith("- Prawdopodobieństwo upadłości w ciągu roku (model Ohlsona): ")
+    assert "%" in linia and "O-score" not in tekst

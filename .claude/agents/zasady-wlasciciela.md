@@ -10,7 +10,7 @@ Wątek główny podał ci katalog analizy `D` i ścieżkę do repozytorium `inwe
 
 ## Jak pracujesz
 
-1. Przeczytaj `D/analiza.json` (rynek, sektor, instrument w XTB) i `D/obliczenia.md` (liczba analityków, zmiana kursu z 3 miesięcy, kapitalizacja).
+1. Przeczytaj `D/analiza.json` (rynek, sektor) i `D/obliczenia.md` (liczba analityków, zmiana kursu z 3 miesięcy, kapitalizacja).
 2. Przeczytaj `inwestowanie/zasady-inwestowania.md`. Jeśli istnieje `inwestowanie/analiza/framework.md`, przeczytaj z niego część o kandydatach.
 3. Wypisz każdą zasadę, która dotyczy tej spółki: do którego koszyka trafia, limity pozycji, warunek pokrycia analitycznego, pauza po rajdzie, benchmark, nakładanie się z posiadanymi ETF-ami, dostęp przez IKE, miejsce zapisu karty.
 

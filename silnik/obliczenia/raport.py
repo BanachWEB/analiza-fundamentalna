@@ -35,7 +35,7 @@ WIERSZE = [
     ("piotroski_f", "Piotroski F-score (0–9)"),
     ("beneish_m", "Beneish M-score (próg −1,78)"),
     ("altman_z2", "Altman Z'' (strefy 1,10 / 2,60)"),
-    ("ohlson_p", "Ohlson: prawdopodobieństwo upadłości w roku (próg 3,8%)"),
+    ("ohlson_p", "Prawdopodobieństwo upadłości w ciągu roku (model Ohlsona)"),
 ]
 
 
@@ -132,11 +132,11 @@ def obliczenia_md(k: Kalkulator, wynik: dict) -> str:
         if z:
             strefa = "zagrożenia" if z.wartosc < STREFY_Z[0] else ("szara" if z.wartosc < STREFY_Z[1] else "bezpieczna")
             linie.append(f"- Altman Z'' {format_(z)}: strefa {strefa}.")
-        o, op = k.fakt(f"ohlson_o.{ost}"), k.fakt(f"ohlson_p.{ost}")
-        if o and op:
-            linie.append(f"- Ohlson O-score {format_(o)}, prawdopodobieństwo upadłości w ciągu roku {format_(op)}: "
-                         + ("powyżej progu Ohlsona 3,8% — sprawdź wypłacalność (dźwignia, płynność, przepływy)."
-                            if op.wartosc > PROG_OHLSON else "poniżej progu Ohlsona 3,8%."))
+        op = k.fakt(f"ohlson_p.{ost}")
+        if op:
+            # decyzja właściciela z 12.11.2026: jedna liczba w procentach, bez wartości O-score i składników
+            linie.append(f"- Prawdopodobieństwo upadłości w ciągu roku (model Ohlsona): {format_(op)}"
+                         + (" — sprawdź wypłacalność (dźwignia, płynność, przepływy)." if op.wartosc > PROG_OHLSON else "."))
     linie += _wycena_md(k, wynik)
     linie += ["", "## Braki danych", ""]
     linie += [f"- {b}" for b in sorted(set(k.braki))] or ["Brak."]
@@ -240,6 +240,12 @@ def karta_tabela(k: Kalkulator, wynik: dict) -> list[str]:
             linie.append(f"| {f.nazwa} | {f.waga:.0%} | {pkt} | {miary} |")
         if wynik.get("analitycy") is None or wynik["analitycy"] <= 3:
             linie += ["", "Filar „analitycy”: brak danych albo 3 analityków lub mniej — nie można na nim polegać."]
+        sc = wynik.get("scrab")
+        if sc:
+            liczba = lambda x: f"{x:.0f}"
+            linie += ["", f"Porównanie z wynikiem Scrab (skala 0–100): karta {liczba(sc['karta'])}, Scrab {liczba(sc['scrab'])}, "
+                      + (f"różnica powyżej progu {liczba(sc['prog'])} pkt — ROZBIEŻNOŚĆ: sprawdź dane po obu stronach."
+                         if sc["rozbiezny"] else f"różnica w granicach progu {liczba(sc['prog'])} pkt.")]
     return linie or ["Brak karty (brak wyceny)."]
 
 

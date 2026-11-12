@@ -44,3 +44,7 @@ wycena_finansowe:
   c_z: {USA: {zero: 25.0, dziesiec: 8.0}, GPW: {zero: 15.0, dziesiec: 5.0}}
   c_wk: {USA: {zero: 3.0, dziesiec: 0.8}, GPW: {zero: 2.0, dziesiec: 0.7}}
   potencjal_trela_kons: {USA: {zero: -0.40, dziesiec: 0.40}, GPW: {zero: -0.40, dziesiec: 0.40}}
+
+# Porównanie z wynikiem Scrab (decyzja właściciela z 12.11.2026): oba wyniki na skali 0–100.
+# Raport komentuje kartę tylko wtedy, gdy różnica przekracza próg. Próg do kalibracji na pierwszych wklejkach.
+rozbieznosc_scrab_pkt: 20

@@ -13,7 +13,8 @@ Pracujesz w repozytorium `analiza-fundamentalna` jako recenzent raportu skilla �
 1. Przeczytaj `D/raport.md` i `D/notatki-biznes.md`, jeśli istnieje. Liczby są w miejscach `{{…}}` i sprawdza je silnik, więc ich nie sprawdzasz.
 2. Każde zdanie z faktem jakościowym (np. „spółka posiada nieruchomości”, „największym klientem jest…”, „prezes kieruje spółką od…”) sprawdź w archiwum: `python -m silnik.dokumenty tekst D doc-… --szukaj "…"`. Sprawdzaj kilka zdań jednym poleceniem powłoki.
 3. Sprawdź, czy każda ocena zaczyna się od „Moim zdaniem” albo „Zakładam, że” i czy raport nie zawiera rekomendacji kup/sprzedaj. Wnioski z zasad właściciela mają postać „wg twoich zasad: …”.
-4. Sprawdź zasady z sekcji „Język i styl” w `CLAUDE.md`: strona czynna, dookreślone miary, jedna rzecz ma jedną nazwę.
+4. Sprawdź, czy raport nie podaje prawdopodobieństwa tezy (decyzja właściciela z 12.11.2026). Teza ma warunki konieczne, a każdy warunek oznaczony jako „potwierdzony” albo „sprzeczny” ma numer dokumentu, który sprawdzasz jak w kroku 2.
+5. Sprawdź zasady z sekcji „Język i styl” w `CLAUDE.md`: strona czynna, dookreślone miary, jedna rzecz ma jedną nazwę.
 
 ## Zasady
 
@@ -22,4 +23,4 @@ Pracujesz w repozytorium `analiza-fundamentalna` jako recenzent raportu skilla �
 
 ## Odpowiedź dla wątku głównego
 
-Lista poprawek, najwyżej 25 pozycji, od najpoważniejszej. Każda ma postać: numer wiersza w `raport.md`, cytat zdania (do 20 słów), problem („brak w archiwum”, „ocena bez «Moim zdaniem»”, „rekomendacja”, „styl”) i proponowaną poprawkę albo dokument, który zdanie potwierdza. Na końcu jedno zdanie: ile zdań z faktem sprawdziłeś i ile potwierdziłeś.
+Lista poprawek, najwyżej 25 pozycji, od najpoważniejszej. Każda ma postać: numer wiersza w `raport.md`, cytat zdania (do 20 słów), problem („brak w archiwum”, „ocena bez «Moim zdaniem»”, „rekomendacja”, „prawdopodobieństwo tezy”, „styl”) i proponowaną poprawkę albo dokument, który zdanie potwierdza. Na końcu jedno zdanie: ile zdań z faktem sprawdziłeś i ile potwierdziłeś.

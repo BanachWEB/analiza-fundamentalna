@@ -7,6 +7,8 @@ Przy pokryciu analitycznym 3 analityków lub mniej (zasady właściciela v1.6) f
 
 from __future__ import annotations
 
+from datetime import date
+
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
@@ -113,3 +115,22 @@ def wynik_ogolny(filary: list[Filar]) -> tuple[Optional[float], int]:
         return None, len(dostepne)
     suma_wag = sum(f.waga for f in dostepne)
     return sum(f.punkty * f.waga / suma_wag for f in dostepne), len(dostepne)
+
+
+def porownanie_scrab(k: Kalkulator, filary: list[Filar]) -> Optional[dict]:
+    """Wynik karty i wynik Scrab na skali 0–100 (decyzja właściciela z 12.11.2026).
+
+    Wynik Scrab pochodzi z wklejki jako dwa fakty z cytatem: `wynik_scrab` i `wynik_scrab_max` (np. 72 z 100).
+    Zwraca None, gdy brak wyniku Scrab albo karty. `rozbiezny` = różnica powyżej progu z konfiguracji.
+    """
+    def ost(pozycja):
+        fs = [f for f in k.r.fakty() if f.pozycja == pozycja and f.status.value != "odrzucony"]
+        return max(fs, key=lambda f: (f.okres.koniec or date.min, f.id)) if fs else None
+    w, m = ost("wynik_scrab"), ost("wynik_scrab_max")
+    ogolny, _ = wynik_ogolny(filary)
+    if w is None or m is None or not m.wartosc or ogolny is None:
+        return None
+    prog = float(yaml.safe_load(KONFIGURACJA.read_text(encoding="utf-8"))["rozbieznosc_scrab_pkt"])
+    karta, scrab = ogolny * 10, w.wartosc / m.wartosc * 100
+    return {"karta": karta, "scrab": scrab, "roznica": karta - scrab, "prog": prog,
+            "rozbiezny": abs(karta - scrab) > prog, "fakty": [w.id, m.id]}
