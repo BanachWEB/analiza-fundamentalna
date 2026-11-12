@@ -280,7 +280,7 @@ analiza-fundamentalna/
 
 - Progi bramek i karty Treli są parametrami metody, więc żyją w tym repozytorium (`konfiguracja/`).
 - Twoje zasady (limit Agresywnego, pauza po rajdzie, benchmarki) zostają w `inwestowanie/zasady-inwestowania.md`. Skill czyta je przy każdym uruchomieniu; sesja potrzebuje wtedy obu repozytoriów. Bez dostępu do `inwestowanie` sekcja „wg twoich zasad” dostaje adnotację „zasady niedostępne”.
-- Projekt karty trafia do `inwestowanie/spolki/<TICKER>.md` dopiero po twoim „tak”.
+- Po każdej pełnej analizie skill zapisuje projekt karty w `inwestowanie`: spółka z portfela w `spolki/<TICKER>.md`, kandydat w `analiza/kandydaci/<TICKER>.md`. Po każdej analizie wysyła ci mail z PDF w załączniku. Szczegóły: `SKILL.md`, etap 6.
 - Skill działa w sesjach Claude Code (w chmurze albo lokalnie) otwartych na tym repozytorium, bo potrzebuje Pythona i plików.
 
 ## 11. Plan budowy
@@ -322,3 +322,4 @@ Zasada: wynik skilla to punkt wyjścia do twojej analizy miękkiej. Skład portf
 | 10 | Dywidendy: stopa dywidendy, wypłata z zysku netto i z FCF, stopa zwrotu dla akcjonariuszy | część 5 raportu |
 | 11 | Tabela konkurentów w części 4 | punkt 8 |
 | 12 | Beta skorygowana Blume'a w koszcie kapitału (zbudowana wcześniej tego dnia) | punkt 5 |
+| 13 | Projekt karty zapisywany w `inwestowanie` po każdej pełnej analizie (bez czekania na „tak”) i mail z PDF po każdej analizie | punkt 10, `SKILL.md` etap 6 |

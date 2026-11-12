@@ -83,7 +83,8 @@ Według `references/teza-i-scenariusze.md`:
 - `git add D konfiguracja/sec-cik.yaml && git commit` (opis po polsku), `git pull --rebase`, `git push` na `main`.
 - Jeśli powstał `D/braki-silnika.md`, wymień braki w streszczeniu dla właściciela.
 - Wyślij właścicielowi PDF i streszczenie w 3–5 zdaniach: decyzja bramek, teza i stan jej warunków koniecznych, co jest w cenie, największe ryzyka, czego nie sprawdziłeś. Jeśli był materiał od właściciela, dodaj jedno zdanie o tropach, które coś zmieniły w analizie.
-- Projekt karty (część 13 raportu) trafia do `inwestowanie/spolki/<TICKER>.md` dopiero po „tak” właściciela.
+- Po każdej pełnej analizie zapisz projekt karty (część 13 raportu) w repozytorium `inwestowanie`, bez pytania właściciela (decyzja z 12.11.2026). Spółka z portfela trafia do `spolki/<TICKER>.md` (dopisz linijkę w „Historii”, nie nadpisuj karty właściciela). Kandydat spoza portfela trafia do `analiza/kandydaci/<TICKER>.md` (układ jak w istniejących plikach w tym katalogu). Liczby w karcie mają walutę, okres i źródło z rejestru faktów. Commit po polsku, `git pull --rebase`, push na `main`. Brak repozytorium `inwestowanie` w sesji → dodaj je (`add_repo`); gdy się nie da, napisz to w streszczeniu.
+- Po każdej analizie (także po stopie) wyślij właścicielowi mail przez konektor Gmail na adres jego konta: temat „<TICKER> — wstępna analiza fundamentalna (<dd.mm.rrrr>)”, w treści streszczenie z punktu wyżej i ścieżka karty, w załączniku `raport.pdf`. Nie wpisuj adresu do plików repozytorium. Brak konektora Gmail → napisz to w streszczeniu.
 
 ## Pliki referencyjne
 
