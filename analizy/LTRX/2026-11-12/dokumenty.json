@@ -1,0 +1,646 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "LTRX",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001114925.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-12T22:07:38.425504Z",
+      "sha256": "904e2632a4aa15fab09b8f059c903b86278cb4429c0e9e32f78df073c07168e6",
+      "plik": "904e2632a4aa15fa.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0001114925.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-12T22:07:38.971881Z",
+      "sha256": "8bbea42a43595529c912077a4debc97f64a039f80bad9dd3e1c27bce88e5c24d",
+      "plik": "8bbea42a43595529.json"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/ltrx/financials/income-statement/",
+      "opis": "income-statement",
+      "pobrano": "2026-11-12T22:07:39.188088Z",
+      "sha256": "7df52e91222d94d2aa6bdd37b586b4c8a0656e586de9adf74570d867c96f02a5",
+      "plik": "7df52e91222d94d2.html"
+    },
+    {
+      "id": "doc-004",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/ltrx/financials/balance-sheet/",
+      "opis": "balance-sheet",
+      "pobrano": "2026-11-12T22:07:39.922611Z",
+      "sha256": "39d64269307b185cea68ce7b093690fefe6e58a7c3d299c8af0a647acb600f76",
+      "plik": "39d64269307b185c.html"
+    },
+    {
+      "id": "doc-005",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/ltrx/financials/cash-flow-statement/",
+      "opis": "cash-flow-statement",
+      "pobrano": "2026-11-12T22:07:40.703277Z",
+      "sha256": "0d0f6bceae02ce54ae80d30522a67a32fde61d0ffb43f152d5c88d0b31f16cbd",
+      "plik": "0d0f6bceae02ce54.html"
+    },
+    {
+      "id": "doc-006",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/ltrx/history/",
+      "opis": "historia kursu",
+      "pobrano": "2026-11-12T22:07:41.583118Z",
+      "sha256": "16ecb3960da4e9d3e4b73f03dc9651f52377ee31f26182622f18e6f8e595c372",
+      "plik": "16ecb3960da4e9d3.html"
+    },
+    {
+      "id": "doc-007",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/LTRX?range=5y&interval=1d",
+      "opis": "notowania dzienne LTRX",
+      "pobrano": "2026-11-12T22:08:13.667182Z",
+      "sha256": "9f4b72ac9153e12aaab199e34fbf47fa76290d68d734d9e3648e519e17212a2a",
+      "plik": "9f4b72ac9153e12a.json"
+    },
+    {
+      "id": "doc-008",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=5y&interval=1d",
+      "opis": "notowania dzienne %5EGSPC",
+      "pobrano": "2026-11-12T22:08:15.459131Z",
+      "sha256": "ca84a964600feb5151b3ad4d7137142ecdf272e06cd404a0f37c7eef35f0326e",
+      "plik": "ca84a964600feb51.json"
+    },
+    {
+      "id": "doc-009",
+      "typ": "strona",
+      "zrodlo": "Damodaran (NYU Stern)",
+      "adres": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+      "opis": "premie za ryzyko krajów",
+      "pobrano": "2026-11-12T22:08:15.752709Z",
+      "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+      "plik": "ea30d57fc0858072.html"
+    },
+    {
+      "id": "doc-010",
+      "typ": "strona",
+      "zrodlo": "U.S. Treasury",
+      "adres": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "opis": "rentowności obligacji",
+      "pobrano": "2026-11-12T22:08:32.192189Z",
+      "sha256": "83e7b79d584f8f966eaf2239f53b909319437b8aec0c590c429ef161ce7d136f",
+      "plik": "83e7b79d584f8f96.csv"
+    },
+    {
+      "id": "doc-011",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/ltrx/forecast/",
+      "opis": "prognozy analityków",
+      "pobrano": "2026-11-12T22:08:32.434571Z",
+      "sha256": "7e04e0c63f31afb153a429abc623717554297640b383c36ccc4953635a0f0b98",
+      "plik": "7e04e0c63f31afb1.html"
+    },
+    {
+      "id": "doc-012",
+      "typ": "strona",
+      "zrodlo": "FRED (St. Louis Fed)",
+      "adres": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPDEF",
+      "opis": "deflator PKB USA (GDPDEF)",
+      "pobrano": "2026-11-12T22:08:32.622308Z",
+      "sha256": "30bb0472781765e94efbbeaf63f0056106c5ff3786f6713485d3daff182b6010",
+      "plik": "30bb0472781765e9.csv"
+    },
+    {
+      "id": "doc-013",
+      "typ": "wklejka",
+      "zrodlo": "arkusz właściciela (metoda Treli)",
+      "adres": null,
+      "opis": "cena-docelowa.xlsx: cena docelowa wg arkusza właściciela",
+      "pobrano": "2026-11-12T22:08:32.976020Z",
+      "sha256": "738e18b58fe0127e03f62b2bfd33e355a9f479c1108acbe700f7b57344c13f43",
+      "plik": "738e18b58fe0127e.xlsx"
+    },
+    {
+      "id": "doc-014",
+      "typ": "strona",
+      "zrodlo": "SEC EDGAR (wyszukiwanie)",
+      "adres": "https://efts.sec.gov/LATEST/search-index?q=%22substantial%20doubt%22&forms=10-K,10-Q&dateRange=custom&startdt=2026-08-26&enddt=2026-11-12&ciks=0001114925",
+      "opis": "wyszukiwanie: substantial doubt",
+      "pobrano": "2026-11-12T22:08:34.286641Z",
+      "sha256": "7e8621f8371158cc1f698b80eea4323cc0985a5038c98f73dbcb0dca3953e44c",
+      "plik": "7e8621f8371158cc.json"
+    },
+    {
+      "id": "doc-015",
+      "typ": "strona",
+      "zrodlo": "SEC EDGAR (wyszukiwanie)",
+      "adres": "https://efts.sec.gov/LATEST/search-index?q=%22material%20weakness%22&forms=10-K&dateRange=custom&startdt=2026-08-26&enddt=2026-11-12&ciks=0001114925",
+      "opis": "wyszukiwanie: material weakness",
+      "pobrano": "2026-11-12T22:08:35.352797Z",
+      "sha256": "1c6e14d94885b4f2d719c5a431fb8f480b804278b27a43e3a281b2d3ba91e2f5",
+      "plik": "1c6e14d94885b4f2.json"
+    },
+    {
+      "id": "doc-016",
+      "typ": "wklejka",
+      "zrodlo": "InvestingPro",
+      "adres": null,
+      "opis": "Pro Research LTRX z 9.11.2026 (PDF od właściciela, pdftotext)",
+      "pobrano": "2026-11-12T22:08:48.958728Z",
+      "sha256": "1f4865a969fdeb08700cf6a7e258df007a1a18128bf368b035304ff23f7e6a71",
+      "plik": "1f4865a969fdeb08.txt"
+    },
+    {
+      "id": "doc-017",
+      "typ": "10-K",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006754/lantronix_i10k-063026.htm",
+      "opis": "10-K za rok obrotowy do 30.06.2026",
+      "pobrano": "2026-11-12T22:09:13.779068Z",
+      "sha256": "c0cd3057b1b644e60b878702609dfaaff5c123d0f070e7167675672dd9141137",
+      "plik": "c0cd3057b1b644e6.htm"
+    },
+    {
+      "id": "doc-018",
+      "typ": "10-Q",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826008447/lantronix_i10q-093026.htm",
+      "opis": "10-Q za kwartał do 30.09.2026",
+      "pobrano": "2026-11-12T22:09:14.625437Z",
+      "sha256": "c71f1a45c98be246b80cba7927094a31d5c1e931f4de98ef17f42ad3e3a6a3a6",
+      "plik": "c71f1a45c98be246.htm"
+    },
+    {
+      "id": "doc-019",
+      "typ": "8-K",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826008441/lantronix_ex9901.htm",
+      "opis": "8-K 9.11.2026, załącznik 99.1: wyniki Q1 FY2027",
+      "pobrano": "2026-11-12T22:09:15.309069Z",
+      "sha256": "17159733fc21ee2aced7eb0e8ae5dd5760cc3f948df6e9369a93e35f655c63df",
+      "plik": "17159733fc21ee2a.htm"
+    },
+    {
+      "id": "doc-020",
+      "typ": "8-K",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826008441/lantronix_ex9902.htm",
+      "opis": "8-K 9.11.2026, załącznik 99.2",
+      "pobrano": "2026-11-12T22:09:16.504572Z",
+      "sha256": "a9b4e579188146557a1f9097202dad989a04242190b9af83f2d8fe8c04c721fa",
+      "plik": "a9b4e57918814655.htm"
+    },
+    {
+      "id": "doc-021",
+      "typ": "8-K",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006732/lantronix_ex9901.htm",
+      "opis": "8-K 26.08.2026, załącznik 99.1: wyniki Q4 FY2026",
+      "pobrano": "2026-11-12T22:09:17.228157Z",
+      "sha256": "d7c50cd1d93b774a1d24681bc6289ec277059c96b88fbc12735a32c448f4099c",
+      "plik": "d7c50cd1d93b774a.htm"
+    },
+    {
+      "id": "doc-022",
+      "typ": "8-K",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826008354/lantronix_8k.htm",
+      "opis": "8-K 5.11.2026: zmiany w zarządzie/radzie, wyniki głosowania",
+      "pobrano": "2026-11-12T22:09:17.965709Z",
+      "sha256": "49654bd5191449d5bd5b4a0aab12df0078369113a00129dd318c6c35108b9918",
+      "plik": "49654bd5191449d5.htm"
+    },
+    {
+      "id": "doc-023",
+      "typ": "8-K",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006750/lantronix_8k.htm",
+      "opis": "8-K 27.08.2026: pozycja 5.02",
+      "pobrano": "2026-11-12T22:09:18.864333Z",
+      "sha256": "048d9b1a63203260f250f38f91993048f993e6627b4fbd33406b92f959979f52",
+      "plik": "048d9b1a63203260.htm"
+    },
+    {
+      "id": "doc-024",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000114036126037329/ny20079716x1_def14a.htm",
+      "opis": "DEF 14A 22.09.2026: zaproszenie na walne zgromadzenie",
+      "pobrano": "2026-11-12T22:09:19.644905Z",
+      "sha256": "94992d5af93d9088ea8236514ed324b7fd2ad2cbe90bb644a07f1a91943bf01d",
+      "plik": "94992d5af93d9088.htm"
+    },
+    {
+      "id": "doc-025",
+      "typ": "8-K",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826004424/lantronix_8k.htm",
+      "opis": "8-K 1.06.2026: umowa (1.01)",
+      "pobrano": "2026-11-12T22:09:20.409767Z",
+      "sha256": "71b9378fd465c817f2a70df7592df530f38ecaeff6c98405ec3c600e58e38e86",
+      "plik": "71b9378fd465c817.htm"
+    },
+    {
+      "id": "doc-026",
+      "typ": "8-K",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826004424/lantronix_ex9901.htm",
+      "opis": "8-K 1.06.2026, załącznik 99.1",
+      "pobrano": "2026-11-12T22:09:21.122208Z",
+      "sha256": "d9b7ef882c24bc156e859cf245e955bd10df835cdcca2c9f420661c96f6923af",
+      "plik": "d9b7ef882c24bc15.htm"
+    },
+    {
+      "id": "doc-027",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826004401/lantronix_424b5.htm",
+      "opis": "424B5 1.06.2026: prospekt emisji akcji",
+      "pobrano": "2026-11-12T22:09:21.942696Z",
+      "sha256": "78d43952039836f2370bb498cbf0d7abdf846681884aca46bbb93aa66eaa1234",
+      "plik": "78d43952039836f2.htm"
+    },
+    {
+      "id": "doc-028",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826003614/lantronix_424b5.htm",
+      "opis": "424B5 8.05.2026: prospekt emisji akcji",
+      "pobrano": "2026-11-12T22:09:22.631215Z",
+      "sha256": "33887e88b275776e443a36f0be3ad0bef9f058951be66955614e274167371435",
+      "plik": "33887e88b275776e.htm"
+    },
+    {
+      "id": "doc-029",
+      "typ": "8-K",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826003615/lantronix_8k.htm",
+      "opis": "8-K 8.05.2026: umowa (1.01)",
+      "pobrano": "2026-11-12T22:09:23.460479Z",
+      "sha256": "a594a8a676b22c2d2e167926f54f24f8bece9a564ea2df8d5eecbc7ee319afef",
+      "plik": "a594a8a676b22c2d.htm"
+    },
+    {
+      "id": "doc-030",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826008304/ownership.xml",
+      "opis": "Form 4 z 2026-11-04",
+      "pobrano": "2026-11-12T22:09:24.108454Z",
+      "sha256": "0a1b0f0c9a76e909e019057f503d08e5944afd6df33b52dc3cc82ed3192bb892",
+      "plik": "0a1b0f0c9a76e909.html"
+    },
+    {
+      "id": "doc-031",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826008303/ownership.xml",
+      "opis": "Form 4 z 2026-11-04",
+      "pobrano": "2026-11-12T22:09:24.801543Z",
+      "sha256": "59d685de3e790cfdf84747f9fa2a2618392d5629e4d30f7848b307147c35243e",
+      "plik": "59d685de3e790cfd.html"
+    },
+    {
+      "id": "doc-032",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826008302/ownership.xml",
+      "opis": "Form 4 z 2026-11-04",
+      "pobrano": "2026-11-12T22:09:25.432385Z",
+      "sha256": "a1cd08d240aa95312cc1e0125974af7585ce44f326caad603c4f793a9cc39832",
+      "plik": "a1cd08d240aa9531.html"
+    },
+    {
+      "id": "doc-033",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826008306/ownership.xml",
+      "opis": "Form 4 z 2026-11-04",
+      "pobrano": "2026-11-12T22:09:27.688462Z",
+      "sha256": "f52f7880deb9c4a20743d3ec4d93ee14bcf74750adfa6902e258470f1eb86e92",
+      "plik": "f52f7880deb9c4a2.html"
+    },
+    {
+      "id": "doc-034",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826008305/ownership.xml",
+      "opis": "Form 4 z 2026-11-04",
+      "pobrano": "2026-11-12T22:09:28.358003Z",
+      "sha256": "a1b4e2e20a182e8bac96b7e33e93f25b57f0799e6352dc186db52b415dc2d43c",
+      "plik": "a1b4e2e20a182e8b.html"
+    },
+    {
+      "id": "doc-035",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826008247/ownership.xml",
+      "opis": "Form 4 z 2026-11-02",
+      "pobrano": "2026-11-12T22:09:29.069498Z",
+      "sha256": "aeb0e3a97b423e5817773e99870fa11ba27f64d90ded8a50f7aca0718a902de2",
+      "plik": "aeb0e3a97b423e58.html"
+    },
+    {
+      "id": "doc-036",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826007037/ownership.xml",
+      "opis": "Form 4 z 2026-09-09",
+      "pobrano": "2026-11-12T22:09:29.673044Z",
+      "sha256": "0d0a36a900772b7ed4a352ca1ce27905cb47d7fcf0cebdeccbc1aa59ab6aa1e6",
+      "plik": "0d0a36a900772b7e.html"
+    },
+    {
+      "id": "doc-037",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006933/ownership.xml",
+      "opis": "Form 4 z 2026-09-03",
+      "pobrano": "2026-11-12T22:09:30.491943Z",
+      "sha256": "bcadf7af8451679a203c672edd64aa34d0144cf996be55d48877beb6ec001c7b",
+      "plik": "bcadf7af8451679a.html"
+    },
+    {
+      "id": "doc-038",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006932/ownership.xml",
+      "opis": "Form 4 z 2026-09-03",
+      "pobrano": "2026-11-12T22:09:31.397985Z",
+      "sha256": "09792db7001f79d0f36670f1c7c168539afe2a74f1980bdbce985b8b59df4119",
+      "plik": "09792db7001f79d0.html"
+    },
+    {
+      "id": "doc-039",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006931/ownership.xml",
+      "opis": "Form 4 z 2026-09-03",
+      "pobrano": "2026-11-12T22:09:32.093272Z",
+      "sha256": "821705cf0108e524b426607d98caa385c5cc4801be81eb437146298351189f91",
+      "plik": "821705cf0108e524.html"
+    },
+    {
+      "id": "doc-040",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006930/ownership.xml",
+      "opis": "Form 4 z 2026-09-03",
+      "pobrano": "2026-11-12T22:09:32.724477Z",
+      "sha256": "400d5ee9260e56297303e994fa4728556f2507635ac56e398d582dc16eec3d9f",
+      "plik": "400d5ee9260e5629.html"
+    },
+    {
+      "id": "doc-041",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006802/ownership.xml",
+      "opis": "Form 4 z 2026-08-28",
+      "pobrano": "2026-11-12T22:09:33.393154Z",
+      "sha256": "95f2d3557aa31ed2c11ae6510c389f76b95c1ae42463b808d9bc9f21d7b09d71",
+      "plik": "95f2d3557aa31ed2.html"
+    },
+    {
+      "id": "doc-042",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006801/ownership.xml",
+      "opis": "Form 4 z 2026-08-28",
+      "pobrano": "2026-11-12T22:09:34.340558Z",
+      "sha256": "a6829213c418eb85e024c6d43ee08c3154390713dbca20bbc2aab9bf8693775b",
+      "plik": "a6829213c418eb85.html"
+    },
+    {
+      "id": "doc-043",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006800/ownership.xml",
+      "opis": "Form 4 z 2026-08-28",
+      "pobrano": "2026-11-12T22:09:35.172203Z",
+      "sha256": "63f757901fe6eb4d51bdcd836216887fa14039996b4eed35056b10cee4222609",
+      "plik": "63f757901fe6eb4d.html"
+    },
+    {
+      "id": "doc-044",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006799/ownership.xml",
+      "opis": "Form 4 z 2026-08-28",
+      "pobrano": "2026-11-12T22:09:36.105949Z",
+      "sha256": "97ad3893e8717b5b82c638c83e627db0780c87a5f5f1bd270462138ddf127e80",
+      "plik": "97ad3893e8717b5b.html"
+    },
+    {
+      "id": "doc-045",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006737/ownership.xml",
+      "opis": "Form 4 z 2026-08-26",
+      "pobrano": "2026-11-12T22:09:36.856540Z",
+      "sha256": "71177f1091b1e995e32635f8129a283520073bac1e40ebff68a309e3bff6b510",
+      "plik": "71177f1091b1e995.html"
+    },
+    {
+      "id": "doc-046",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826006167/ownership.xml",
+      "opis": "Form 4 z 2026-08-10",
+      "pobrano": "2026-11-12T22:09:37.805951Z",
+      "sha256": "f4b16506be0a8493a771c29fafc9d4790b39493f036c897409dc7d500dc958ca",
+      "plik": "f4b16506be0a8493.html"
+    },
+    {
+      "id": "doc-047",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826005530/ownership.xml",
+      "opis": "Form 4 z 2026-07-14",
+      "pobrano": "2026-11-12T22:09:38.451536Z",
+      "sha256": "718b34e8e05b97dfa8da03c58901b0d375b497c290e3f70b7c11fd283e3e2322",
+      "plik": "718b34e8e05b97df.html"
+    },
+    {
+      "id": "doc-048",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826005529/ownership.xml",
+      "opis": "Form 4 z 2026-07-14",
+      "pobrano": "2026-11-12T22:09:39.219730Z",
+      "sha256": "1e9f7458017ad24ba9b4785a2743d5a94810fdebacd4c4c88ae64d068f827b14",
+      "plik": "1e9f7458017ad24b.html"
+    },
+    {
+      "id": "doc-049",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826005528/ownership.xml",
+      "opis": "Form 4 z 2026-07-14",
+      "pobrano": "2026-11-12T22:09:39.902296Z",
+      "sha256": "9a6d10e304af46d8b1bd944f9acc55d8e7d9ac37fa56f0b3bc5e9446bb2ae2d4",
+      "plik": "9a6d10e304af46d8.html"
+    },
+    {
+      "id": "doc-050",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826005527/ownership.xml",
+      "opis": "Form 4 z 2026-07-14",
+      "pobrano": "2026-11-12T22:09:40.612055Z",
+      "sha256": "6eaf8dd30b32cf343e2a91a77be0ad59677f9470e169d386ed9ca996cb436ffb",
+      "plik": "6eaf8dd30b32cf34.html"
+    },
+    {
+      "id": "doc-051",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826004466/ownership.xml",
+      "opis": "Form 4 z 2026-06-02",
+      "pobrano": "2026-11-12T22:09:41.275248Z",
+      "sha256": "d2dee13e77aac84e2d0f11472dee1fa8163c7fb145e2001f816288a0efb9a2e8",
+      "plik": "d2dee13e77aac84e.html"
+    },
+    {
+      "id": "doc-052",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826004465/ownership.xml",
+      "opis": "Form 4 z 2026-06-02",
+      "pobrano": "2026-11-12T22:09:41.940769Z",
+      "sha256": "1f9de3bc68d8a1295bfdb1714f8cb5c6dd78a64c72c9bcd9915c17ed256d2115",
+      "plik": "1f9de3bc68d8a129.html"
+    },
+    {
+      "id": "doc-053",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826004464/ownership.xml",
+      "opis": "Form 4 z 2026-06-02",
+      "pobrano": "2026-11-12T22:09:42.730651Z",
+      "sha256": "f17d94e521bb1811a0f7cefa091afd5820fa0854bc842cbaffc76ac844f9343c",
+      "plik": "f17d94e521bb1811.html"
+    },
+    {
+      "id": "doc-054",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826004463/ownership.xml",
+      "opis": "Form 4 z 2026-06-02",
+      "pobrano": "2026-11-12T22:09:43.400954Z",
+      "sha256": "245e75a340229045b824ed65d24f795b30d4a65802439c2264c443c64dbc55f0",
+      "plik": "245e75a340229045.html"
+    },
+    {
+      "id": "doc-055",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826003500/ownership.xml",
+      "opis": "Form 4 z 2026-05-05",
+      "pobrano": "2026-11-12T22:09:44.190830Z",
+      "sha256": "9bf41a3bb8a50d1b6f0c2495dcf4abeb427492b3eb272b0a709db03d00f769ca",
+      "plik": "9bf41a3bb8a50d1b.html"
+    },
+    {
+      "id": "doc-056",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826003499/ownership.xml",
+      "opis": "Form 4 z 2026-05-05",
+      "pobrano": "2026-11-12T22:09:44.824970Z",
+      "sha256": "1343a6024a35e5b956c8b1220f238815ab78d1c24ba237472b2c7192598f1616",
+      "plik": "1343a6024a35e5b9.html"
+    },
+    {
+      "id": "doc-057",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826003498/ownership.xml",
+      "opis": "Form 4 z 2026-05-05",
+      "pobrano": "2026-11-12T22:09:45.503491Z",
+      "sha256": "da2b42e094928a3736be65920ed7e7248eea7a8339ae640cb9d6209310ad9e32",
+      "plik": "da2b42e094928a37.html"
+    },
+    {
+      "id": "doc-058",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826003497/ownership.xml",
+      "opis": "Form 4 z 2026-05-05",
+      "pobrano": "2026-11-12T22:09:46.359375Z",
+      "sha256": "5a66767149ccd1197830a00340bb31768ed4c3fdb33b0452393f36d64dd3b957",
+      "plik": "5a66767149ccd119.html"
+    },
+    {
+      "id": "doc-059",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826003496/ownership.xml",
+      "opis": "Form 4 z 2026-05-05",
+      "pobrano": "2026-11-12T22:09:47.061219Z",
+      "sha256": "ce89f5a617bd5813334c92cc0b625ae73e04126d95d2c2a5b48521afa44f7fba",
+      "plik": "ce89f5a617bd5813.html"
+    },
+    {
+      "id": "doc-060",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826001792/ownership.xml",
+      "opis": "Form 4 z 2026-03-13",
+      "pobrano": "2026-11-12T22:09:47.779497Z",
+      "sha256": "c928c6ddd26c4a3e03bff29b77cc7974216a22623159790efadd87ffb82b265d",
+      "plik": "c928c6ddd26c4a3e.html"
+    },
+    {
+      "id": "doc-061",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826001447/ownership.xml",
+      "opis": "Form 4 z 2026-03-03",
+      "pobrano": "2026-11-12T22:09:48.467370Z",
+      "sha256": "07737a06a783bfbbd42b73a3b22a000fc2f4c613587c04d54744fc014171251a",
+      "plik": "07737a06a783bfbb.html"
+    },
+    {
+      "id": "doc-062",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826001446/ownership.xml",
+      "opis": "Form 4 z 2026-03-03",
+      "pobrano": "2026-11-12T22:09:49.089373Z",
+      "sha256": "16734d94955f04e70190c6d949ecd59ddf33a5f6d295c688e1f95c4869496f40",
+      "plik": "16734d94955f04e7.html"
+    },
+    {
+      "id": "doc-063",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826001445/ownership.xml",
+      "opis": "Form 4 z 2026-03-03",
+      "pobrano": "2026-11-12T22:09:49.809692Z",
+      "sha256": "98d0a392ca7d924af1d23a2ceb0fbc0fc178389ef1671c08a9bff3590ab00514",
+      "plik": "98d0a392ca7d924a.html"
+    },
+    {
+      "id": "doc-064",
+      "typ": "inny",
+      "zrodlo": "SEC EDGAR",
+      "adres": "https://www.sec.gov/Archives/edgar/data/1114925/000168316826001444/ownership.xml",
+      "opis": "Form 4 z 2026-03-03",
+      "pobrano": "2026-11-12T22:09:50.474564Z",
+      "sha256": "c72eaf4b82e3d78d2439a61e3bc1d47ec5a5a199889c6359a2a666d657cef2dd",
+      "plik": "c72eaf4b82e3d78d.html"
+    }
+  ]
+}
