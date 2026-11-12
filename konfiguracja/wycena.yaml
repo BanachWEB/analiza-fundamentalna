@@ -44,8 +44,9 @@ pasma:
   percentyle: [10, 25, 50, 75, 90]
 
 # Beta sektorowa Damodarana: kontrola bety skorygowanej (nie wchodzi do kosztu kapitału).
-# Adresy tabel do sprawdzenia przy pierwszym przebiegu z siecią (dla GPW: tabela rynków wschodzących albo Europy).
+# Sprawdzone 12.11.2026: dla USA tabela HTML; dla GPW plik XLS rynków wschodzących, bo plik „Europe”
+# obejmuje według swojego nagłówka tylko Europę Zachodnią.
 beta_sektorowa_url:
   USA: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html
-  GPW: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/betaemerg.html
+  GPW: https://pages.stern.nyu.edu/~adamodar/pc/datasets/betaemerg.xls
 beta_rozbieznosc: 0.5   # ostrzeżenie, gdy beta skorygowana różni się od sektorowej o więcej

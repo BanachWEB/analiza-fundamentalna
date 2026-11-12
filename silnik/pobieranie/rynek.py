@@ -370,16 +370,29 @@ def _norm(t: str) -> str:
     return " ".join(t.replace("\xa0", " ").split()).lower()
 
 
-def beta_damodaran(tresc: str, branza: str) -> Optional[dict]:
-    """Beta bez długu dla branży z tabeli Damodarana (Betas.html i odpowiedniki regionalne).
+def wiersze_html(tresc: str) -> list[list[str]]:
+    drzewo = lhtml.fromstring(tresc)
+    return [[td.text_content() for td in tr.xpath("./td|./th")] for tr in drzewo.xpath("//tr")]
+
+
+def wiersze_xls(sciezka: Path) -> list[list[str]]:
+    """Wiersze arkusza „Industry Averages” z pliku XLS Damodarana (tabele regionalne)."""
+    import xlrd
+    ks = xlrd.open_workbook(str(sciezka))
+    arkusz = ks.sheet_by_name("Industry Averages") if "Industry Averages" in ks.sheet_names() else ks.sheet_by_index(0)
+    return [[str(c.value) for c in arkusz.row(r)] for r in range(arkusz.nrows)]
+
+
+def beta_damodaran(tresc_albo_wiersze, branza: str) -> Optional[dict]:
+    """Beta bez długu dla branży z tabeli Damodarana: Betas.html (USA) albo plik XLS regionu.
 
     Kolumny rozpoznaje po nagłówku: „Industry Name” i „Unlevered beta corrected for cash” (albo „Unlevered beta”).
-    Zwraca None, gdy branży nie ma w tabeli. Format strony sprawdzi pierwszy przebieg z dostępem do sieci.
+    Zwraca None, gdy branży nie ma w tabeli. Format sprawdzony 12.11.2026 na Betas.html i betaemerg.xls.
     """
-    drzewo = lhtml.fromstring(tresc)
+    wiersze = wiersze_html(tresc_albo_wiersze) if isinstance(tresc_albo_wiersze, str) else tresc_albo_wiersze
     naglowek, kol_b, kol_n = None, None, None
-    for tr in drzewo.xpath("//tr"):
-        komorki = [_norm(td.text_content()) for td in tr.xpath("./td|./th")]
+    for surowe in wiersze:
+        komorki = [_norm(k) for k in surowe]
         if naglowek is None:
             if komorki and "industry name" in komorki[0]:
                 naglowek = komorki
@@ -418,9 +431,11 @@ def dodaj_bete_sektorowa(rejestr, archiwum: Archiwum, katalog: Path, rynek: str,
     import yaml
     url = yaml.safe_load((Path(__file__).resolve().parents[2] / "konfiguracja" / "wycena.yaml").read_text(encoding="utf-8")
                          )["beta_sektorowa_url"][rynek]
-    dok = archiwum.po_adresie(url) or _do_archiwum(archiwum, url, "Damodaran Online", "bety branżowe", ".html")
+    xls = url.lower().endswith(".xls")
+    dok = archiwum.po_adresie(url) or _do_archiwum(archiwum, url, "Damodaran Online", "bety branżowe",
+                                                   ".xls" if xls else ".html")
     rejestr.znane_dokumenty(archiwum.ids())
-    w = beta_damodaran(archiwum.tekst(dok.id), branza)
+    w = beta_damodaran(wiersze_xls(archiwum.sciezka(dok.id)) if xls else archiwum.tekst(dok.id), branza)
     if w is None:
         print(f"Beta sektorowa: branży {branza!r} nie ma w tabeli Damodarana ({url})")
         return None

@@ -91,3 +91,12 @@ def test_beta_sektorowa_przeliczona_na_zadluzenie():
     assert any(o.startswith("Beta:") for o in k.ostrzezenia)  # 0,67 × 3 + 0,33 = 2,34 wobec ok. 1,68
     tekst = "\n".join(ryzyko_tabela(k, {"wycena": w}))
     assert "Brak profilu ryzyka" in tekst  # brak faktów zmienności w tym rejestrze
+
+
+def test_parser_damodaran_z_wierszy_xls():
+    """Pliki regionalne (XLS) dają wiersze komórek; liczby jako tekst z xlrd."""
+    wiersze = [["Date updated:", "46027.0"], ["Industry Name", "Number of firms", "Beta ", "D/E Ratio", "Effective Tax rate",
+                                              "Unlevered beta", "Cash/Firm value", "Unlevered beta corrected for cash"],
+               ["Semiconductor", "212.0", "1.31", "0.1", "0.15", "1.2", "0.1", "1.3333"]]
+    assert rynek.beta_damodaran(wiersze, "Semiconductor") == {"beta": 1.3333, "kolumna": "unlevered beta corrected for cash",
+                                                              "firm": 212}
