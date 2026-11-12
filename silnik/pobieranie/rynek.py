@@ -250,6 +250,187 @@ def dodaj_bete(rejestr, sesje: list[Sesja], dok_ids: list[str], indeks: list[Ses
     return f
 
 
+# --- profil ryzyka kursu (specyfikacja 1.1, punkt 7) -----------------------------------
+
+
+def _okno(sesje: list[Sesja], koniec: date, lat: int) -> list[Sesja]:
+    poczatek = date.fromordinal(koniec.toordinal() - round(365.25 * lat))
+    return [s for s in sesje if poczatek <= s.dzien <= koniec]
+
+
+def obsuniecie(tyg: list[tuple[date, float]]) -> Optional[dict]:
+    """Największy spadek od szczytu do dołka na zamknięciach tygodniowych i czas powrotu do szczytu."""
+    if len(tyg) < 2:
+        return None
+    szczyt_d, szczyt = tyg[0]
+    naj = {"wartosc": 0.0, "szczyt": tyg[0][0], "dolek": tyg[0][0], "powrot": None}
+    for d, c in tyg:
+        if c > szczyt:
+            szczyt_d, szczyt = d, c
+        spadek = c / szczyt - 1
+        if spadek < naj["wartosc"]:
+            naj = {"wartosc": spadek, "szczyt": szczyt_d, "dolek": d, "powrot": None, "poziom": szczyt}
+    if naj["wartosc"] < 0:
+        po = [d for d, c in tyg if d > naj["dolek"] and c >= naj["poziom"]]
+        naj["powrot"] = po[0] if po else None
+    return naj
+
+
+def _zwroty(tyg: list[tuple[date, float]]) -> dict:
+    klucze = [tuple(d.isocalendar()[:2]) for d, _ in tyg]
+    return {klucze[i]: tyg[i][1] / tyg[i - 1][1] - 1 for i in range(1, len(tyg)) if tyg[i - 1][1] > 0}
+
+
+def zmiennosc_roczna(tyg: list[tuple[date, float]]) -> Optional[float]:
+    z = list(_zwroty(tyg).values())
+    if len(z) < 3:
+        return None
+    sr = sum(z) / len(z)
+    return (sum((x - sr) ** 2 for x in z) / (len(z) - 1)) ** 0.5 * 52 ** 0.5
+
+
+def korelacja(tyg_a: list[tuple[date, float]], tyg_b: list[tuple[date, float]]) -> Optional[float]:
+    za, zb = _zwroty(tyg_a), _zwroty(tyg_b)
+    wsp = sorted(set(za) & set(zb))
+    if len(wsp) < 3:
+        return None
+    xs, ys = [za[w] for w in wsp], [zb[w] for w in wsp]
+    mx, my = sum(xs) / len(xs), sum(ys) / len(ys)
+    sxy = sum((x - mx) * (y - my) for x, y in zip(xs, ys))
+    sxx, syy = sum((x - mx) ** 2 for x in xs), sum((y - my) ** 2 for y in ys)
+    return sxy / (sxx * syy) ** 0.5 if sxx > 0 and syy > 0 else None
+
+
+def fakty_profilu(sesje: list[Sesja], dok_ids: list[str], indeks: list[Sesja], dok_ids_indeksu: list[str],
+                  nazwa_indeksu: str, lat: int = 5, min_tygodni: int = 104) -> list[Fakt]:
+    """Zmienność roczna, maksymalne obsunięcie z czasem powrotu i korelacja z indeksem (tygodniowo, `lat` lat)."""
+    if not sesje or not dok_ids:
+        return []
+    koniec = sesje[-1].dzien
+    tyg = tygodniowe(_okno(sesje, koniec, lat))
+    if len(tyg) < min_tygodni:
+        return []
+    tyg_i = tygodniowe(_okno(indeks, koniec, lat)) if indeks else []
+    metoda = Metoda.api if len(dok_ids) == 1 else Metoda.parser_strony
+    okres = Okres(typ="dzien", koniec=koniec)
+    d = koniec.isoformat()
+    wspolne = {"od": tyg[0][0].isoformat(), "do": tyg[-1][0].isoformat(), "tygodni": len(tyg), "dokumenty": list(dok_ids)}
+    wynik = []
+    zm = zmiennosc_roczna(tyg)
+    if zm is not None:
+        wynik.append(_fakt(f"zmiennosc_roczna.{d}", "zmiennosc_roczna", okres, zm, Jednostka.ulamek, dok_ids[0],
+                           {"obliczenie": "odchylenie standardowe tygodniowych stóp zwrotu × √52", **wspolne}, metoda=metoda))
+    ob = obsuniecie(tyg)
+    if ob:
+        wynik.append(_fakt(f"max_obsuniecie.{d}", "max_obsuniecie", okres, ob["wartosc"], Jednostka.ulamek, dok_ids[0],
+                           {"obliczenie": "największy spadek zamknięcia tygodniowego od wcześniejszego szczytu",
+                            "szczyt": ob["szczyt"].isoformat(), "dolek": ob["dolek"].isoformat(),
+                            "powrot": ob["powrot"].isoformat() if ob["powrot"] else None, **wspolne}, metoda=metoda))
+        if ob["powrot"]:
+            wynik.append(_fakt(f"czas_powrotu_tyg.{d}", "czas_powrotu_tyg", okres, (ob["powrot"] - ob["dolek"]).days / 7,
+                               Jednostka.liczba, dok_ids[0],
+                               {"obliczenie": "tygodnie od dołka do pierwszego zamknięcia na poziomie szczytu", **wspolne},
+                               metoda=metoda))
+    if tyg_i and dok_ids_indeksu:
+        wsp_i = {**wspolne, "dokumenty": list(dok_ids) + list(dok_ids_indeksu)}
+        kor = korelacja(tyg, tyg_i)
+        if kor is not None:
+            wynik.append(_fakt(f"korelacja_z_indeksem.{d}", "korelacja_z_indeksem", okres, kor, Jednostka.liczba, dok_ids[0],
+                               {"obliczenie": f"korelacja tygodniowych stóp zwrotu z indeksem {nazwa_indeksu}", **wsp_i},
+                               metoda=metoda))
+        zi = zmiennosc_roczna(tyg_i)
+        if zi is not None:
+            wynik.append(_fakt(f"indeks_zmiennosc_roczna.{d}", "indeks_zmiennosc_roczna", okres, zi, Jednostka.ulamek,
+                               dok_ids_indeksu[0], {"obliczenie": f"jak zmiennosc_roczna, indeks {nazwa_indeksu}", **wspolne,
+                                                    "dokumenty": list(dok_ids_indeksu)}, metoda=metoda))
+        oi = obsuniecie(tyg_i)
+        if oi:
+            wynik.append(_fakt(f"indeks_max_obsuniecie.{d}", "indeks_max_obsuniecie", okres, oi["wartosc"], Jednostka.ulamek,
+                               dok_ids_indeksu[0], {"obliczenie": f"jak max_obsuniecie, indeks {nazwa_indeksu}",
+                                                    "szczyt": oi["szczyt"].isoformat(), "dolek": oi["dolek"].isoformat(),
+                                                    **wspolne, "dokumenty": list(dok_ids_indeksu)}, metoda=metoda))
+    return wynik
+
+
+def dodaj_profil_ryzyka(rejestr, sesje: list[Sesja], dok_ids: list[str], indeks: list[Sesja], dok_ids_indeksu: list[str],
+                        nazwa_indeksu: str) -> list[Fakt]:
+    par = parametry_bety()
+    fakty = fakty_profilu(sesje, dok_ids, indeks, dok_ids_indeksu, nazwa_indeksu, par["lat"], par["min_tygodni"])
+    for f in fakty:
+        rejestr.dodaj(f, zastap=True)
+    if not fakty:
+        print(f"Profil ryzyka: za krótka historia notowań (minimum {par['min_tygodni']} tygodni)")
+    return fakty
+
+
+# --- beta sektorowa Damodarana (kontrola bety; specyfikacja 1.1, punkt 7) --------------------
+
+
+def _norm(t: str) -> str:
+    return " ".join(t.replace("\xa0", " ").split()).lower()
+
+
+def beta_damodaran(tresc: str, branza: str) -> Optional[dict]:
+    """Beta bez długu dla branży z tabeli Damodarana (Betas.html i odpowiedniki regionalne).
+
+    Kolumny rozpoznaje po nagłówku: „Industry Name” i „Unlevered beta corrected for cash” (albo „Unlevered beta”).
+    Zwraca None, gdy branży nie ma w tabeli. Format strony sprawdzi pierwszy przebieg z dostępem do sieci.
+    """
+    drzewo = lhtml.fromstring(tresc)
+    naglowek, kol_b, kol_n = None, None, None
+    for tr in drzewo.xpath("//tr"):
+        komorki = [_norm(td.text_content()) for td in tr.xpath("./td|./th")]
+        if naglowek is None:
+            if komorki and "industry name" in komorki[0]:
+                naglowek = komorki
+                dopasowane = [i for i, k in enumerate(komorki) if "unlevered beta corrected for cash" in k]
+                dopasowane = dopasowane or [i for i, k in enumerate(komorki) if k.startswith("unlevered beta")]
+                if not dopasowane:
+                    raise BladRynku("Damodaran: brak kolumny z betą bez długu")
+                kol_b = dopasowane[0]
+                kol_n = next((i for i, k in enumerate(komorki) if "number of firms" in k), None)
+            continue
+        if komorki and komorki[0] == _norm(branza) and len(komorki) > kol_b:
+            try:
+                beta = float(komorki[kol_b].replace(",", ""))
+            except ValueError:
+                raise BladRynku(f"Damodaran: nie odczytam bety dla {branza!r}: {komorki[kol_b]!r}")
+            firm = None
+            if kol_n is not None and len(komorki) > kol_n:
+                try:
+                    firm = int(float(komorki[kol_n].replace(",", "")))
+                except ValueError:
+                    firm = None
+            return {"beta": beta, "kolumna": naglowek[kol_b], "firm": firm}
+    if naglowek is None:
+        raise BladRynku("Damodaran: brak tabeli z nagłówkiem „Industry Name”")
+    return None
+
+
+def dodaj_bete_sektorowa(rejestr, archiwum: Archiwum, katalog: Path, rynek: str, dzien: date) -> Optional[Fakt]:
+    """Pobiera tabelę bet Damodarana dla rynku, gdy analiza.json ma pole `branza_damodaran`."""
+    plik = Path(katalog) / "analiza.json"
+    if not plik.exists():
+        return None
+    branza = json.loads(plik.read_text(encoding="utf-8")).get("branza_damodaran")
+    if not branza:
+        return None
+    import yaml
+    url = yaml.safe_load((Path(__file__).resolve().parents[2] / "konfiguracja" / "wycena.yaml").read_text(encoding="utf-8")
+                         )["beta_sektorowa_url"][rynek]
+    dok = archiwum.po_adresie(url) or _do_archiwum(archiwum, url, "Damodaran Online", "bety branżowe", ".html")
+    rejestr.znane_dokumenty(archiwum.ids())
+    w = beta_damodaran(archiwum.tekst(dok.id), branza)
+    if w is None:
+        print(f"Beta sektorowa: branży {branza!r} nie ma w tabeli Damodarana ({url})")
+        return None
+    f = _fakt(f"beta_sektorowa_bez_dlugu.{dzien.isoformat()}", "beta_sektorowa_bez_dlugu", Okres(typ="dzien", koniec=dzien),
+              w["beta"], Jednostka.liczba, dok.id, {"branza": branza, "kolumna": w["kolumna"], "firm": w["firm"]},
+              metoda=Metoda.parser_strony)
+    rejestr.dodaj(f, zastap=True)
+    return f
+
+
 # --- fakty rynkowe -------------------------------------------------------------------
 
 

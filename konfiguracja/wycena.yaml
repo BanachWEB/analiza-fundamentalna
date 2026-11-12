@@ -42,3 +42,10 @@ pasma:
   opoznienie_raportu_dni: 90   # dane roczne wchodzą do mnożnika dopiero po publikacji raportu
   min_tygodni: 104
   percentyle: [10, 25, 50, 75, 90]
+
+# Beta sektorowa Damodarana: kontrola bety skorygowanej (nie wchodzi do kosztu kapitału).
+# Adresy tabel do sprawdzenia przy pierwszym przebiegu z siecią (dla GPW: tabela rynków wschodzących albo Europy).
+beta_sektorowa_url:
+  USA: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html
+  GPW: https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/betaemerg.html
+beta_rozbieznosc: 0.5   # ostrzeżenie, gdy beta skorygowana różni się od sektorowej o więcej

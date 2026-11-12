@@ -288,6 +288,7 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str, finansowa: bool = Fal
     else:
         k.braki.append("wycena odwrotna: brak historycznego CAGR przychodów (CAP i marża)")
     wynik["okres_bazowy"] = S
+    beta_sektorowa(k, wynik, par, cap, dn, okres_d)
     if not kapitalowa:
         sygnaly_cyklicznosci(k, par, sektor, okres_d)
     if sektor == "cykliczny":
@@ -412,3 +413,27 @@ def kapitalowa_wycena(k: Kalkulator, wynik: dict, par: dict, cap: Fakt, kw: Opti
         f = k.wylicz(f"dlug_netto_do_kapitalu.{d}", "dlug_netto_do_kapitalu", "dlug_netto / kapital_wlasny", [dn.id, kw.id],
                      lambda a, b: a / b if b > 0 else (_ for _ in ()).throw(BrakSensu("kapitał własny ≤ 0")), X, okres_d)
         wynik["dlug_netto_do_kapitalu"] = f.id if f else None
+
+
+def beta_sektorowa(k: Kalkulator, wynik: dict, par: dict, cap: Fakt, dn: Optional[Fakt], okres_d: Okres) -> None:
+    """Beta sektorowa Damodarana przeliczona na zadłużenie spółki: β = β bez długu × (1 + (1 − t) × dług ÷ kapitalizacja).
+    Kontrola bety skorygowanej; nie wchodzi do kosztu kapitału (decyzja właściciela z 12.11.2026)."""
+    bu = ostatni(k, "beta_sektorowa_bez_dlugu")
+    if not bu:
+        return
+    from .wskazniki import _stawka
+    d = okres_d.koniec.isoformat()
+    dlug = next((x for x in (dn.wejscia if dn and dn.wejscia else []) if x.startswith("dlug.")), None)
+    t = _stawka(k)
+    if dlug and t:
+        f = k.wylicz(f"beta_sektorowa.{d}", "beta_sektorowa", "beta_sektorowa_bez_dlugu × (1 + (1 − stawka_podatku) × dlug / kapitalizacja)",
+                     [bu.id, t, dlug, cap.id], lambda b, tt, dl, c: b * (1 + (1 - tt) * dl / c), Jednostka.liczba, okres_d)
+    else:
+        f = k.wylicz(f"beta_sektorowa.{d}", "beta_sektorowa", "beta_sektorowa_bez_dlugu (brak długu w danych: bez przeliczenia)",
+                     [bu.id], lambda b: b, Jednostka.liczba, okres_d)
+    wynik["beta_sektorowa"] = f.id if f else None
+    b = k.fakt(wynik.get("beta")) if wynik.get("beta") else None
+    if f and b and abs(b.wartosc - f.wartosc) > par["beta_rozbieznosc"]:
+        branza = (bu.miejsce or {}).get("branza", "")
+        k.ostrzezenia.append(f"Beta: beta użyta w koszcie kapitału ({b.id}) różni się od bety sektorowej Damodarana "
+                             f"(branża „{branza}”) o więcej niż {par['beta_rozbieznosc']:g} — sprawdź okno regresji i branżę.")

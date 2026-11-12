@@ -188,6 +188,12 @@ def wycena_tabela(k: Kalkulator, wynik: dict) -> list[str]:
     linie.append(_wiersz(k, "Kapitalizacja", w["kapitalizacja"]))
     linie.append(_wiersz(k, "EV", w.get("ev")))
     linie.append(_wiersz(k, "Beta", w.get("beta"), _uwaga_beta(k, w.get("beta"))))
+    if w.get("beta_sektorowa"):
+        bs = k.fakt(w["beta_sektorowa"])
+        bu = k.fakt(bs.wejscia[0]) if bs else None
+        linie.append(_wiersz(k, "Beta sektorowa (kontrola)", w["beta_sektorowa"],
+                             f"Damodaran, branża „{(bu.miejsce or {}).get('branza', '')}”, przeliczona na zadłużenie spółki; "
+                             "nie wchodzi do kosztu kapitału" if bu else ""))
     linie.append(_wiersz(k, "Koszt kapitału własnego", w.get("ke"), "stopa wolna od ryzyka + beta × premia (Damodaran)"))
     linie.append(_wiersz(k, "C/Z", w.get("c_z")))
     linie.append(_wiersz(k, "EV/EBIT", w.get("ev_ebit")))
@@ -389,6 +395,35 @@ def wrazliwosc_tabela(k: Kalkulator, wynik: dict) -> list[str]:
     return linie
 
 
+def ryzyko_tabela(k: Kalkulator, wynik: dict) -> list[str]:
+    def ost(poz):
+        fs = [f for f in k.r.fakty() if f.pozycja == poz and f.status != Status.odrzucony]
+        return max(fs, key=lambda f: f.okres.koniec) if fs else None
+    zm, ob = ost("zmiennosc_roczna"), ost("max_obsuniecie")
+    if not zm and not ob:
+        return ["Brak profilu ryzyka: za krótka historia notowań."]
+    w = wynik.get("wycena") or {}
+    m = (ob.miejsce if ob else None) or (zm.miejsce if zm else {}) or {}
+    linie = [f"Tygodniowe notowania od {m.get('od')} do {m.get('do')}, wobec benchmarku rynku spółki.", "",
+             "| Miara | Spółka | Benchmark | Uwagi |", "|---|---:|---:|---|"]
+    def wiersz(nazwa, a, b, uwaga=""):
+        linie.append(f"| {nazwa} | {format_(a)} | {format_(b) if b else '—'} | {uwaga} |")
+    beta = k.fakt(w["beta"]) if w.get("beta") else None
+    wiersz("Beta (w koszcie kapitału)", beta, None, "benchmark ma betę 1 z definicji")
+    if w.get("beta_sektorowa"):
+        wiersz("Beta sektorowa (kontrola)", k.fakt(w["beta_sektorowa"]), None, "Damodaran")
+    wiersz("Zmienność roczna", zm, ost("indeks_zmiennosc_roczna"))
+    uw = ""
+    if ob:
+        mo = ob.miejsce or {}
+        powrot = ost("czas_powrotu_tyg")
+        uw = f"szczyt {mo.get('szczyt')}, dołek {mo.get('dolek')}; " + (
+            f"powrót do szczytu po {format_(powrot)} tyg." if powrot and mo.get("powrot") else "kurs nie wrócił do szczytu")
+    wiersz("Maksymalne obsunięcie", ob, ost("indeks_max_obsuniecie"), uw)
+    wiersz("Korelacja z benchmarkiem", ost("korelacja_z_indeksem"), None)
+    return linie
+
+
 def _wycena_md(k: Kalkulator, wynik: dict) -> list[str]:
     w = wynik.get("wycena") or {}
     naglowek = "## Co jest w cenie"
@@ -396,6 +431,7 @@ def _wycena_md(k: Kalkulator, wynik: dict) -> list[str]:
         cap = k.fakt(w["kapitalizacja"])
         naglowek += f" (kurs z {cap.okres.koniec.isoformat()}, przepływy: {w.get('okres_bazowy')})"
     return (["", naglowek, ""] + wycena_tabela(k, wynik) + ["", "## Historyczne pasma wyceny", ""] + pasma_tabela(k, wynik)
+            + ["", "## Profil ryzyka kursu", ""] + ryzyko_tabela(k, wynik)
             + ["", "## Scenariusze", ""] + scenariusze_tabela(k, wynik)
             + ["", "## Wrażliwość wyceny", ""] + wrazliwosc_tabela(k, wynik)
             + (["", "## Cena docelowa wg arkusza właściciela", ""] + trela_tabela(k, wynik) if wynik.get("trela") else [])

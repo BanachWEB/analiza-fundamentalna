@@ -104,6 +104,11 @@ def uruchom(ticker: str, dzien: date, esef_urls: list[str], pdf_urls: list[str],
         for f in rynek.fakty_z_historii(sesje, ids, "PLN") + rynek.fakty_z_historii(indeks, ids_i, "PLN", "indeks_"):
             rejestr.dodaj(f, zastap=True)
         rynek.dodaj_bete(rejestr, sesje, ids, indeks, ids_i, "WIG")
+        rynek.dodaj_profil_ryzyka(rejestr, sesje, ids, indeks, ids_i, "WIG")
+        try:
+            rynek.dodaj_bete_sektorowa(rejestr, archiwum, katalog, "GPW", dzien)
+        except (BladPobierania, rynek.BladRynku) as e:
+            print(f"Beta sektorowa Damodarana niedostępna: {e}")
         adres = f"https://www.biznesradar.pl/notowania/{ticker}"
         dok_n = archiwum.po_adresie(adres) or _do_archiwum_strona(archiwum, adres, "Biznesradar", "notowania (liczba akcji)")
         rejestr.znane_dokumenty(archiwum.ids())
