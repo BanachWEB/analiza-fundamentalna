@@ -105,6 +105,13 @@ def dla_okresu(k: Kalkulator, S: str, okres: Okres, B: date, B_prev: Optional[da
                      lambda f, z: f / z, U, okres)
             k.wylicz(i("marza_fcf"), "marza_fcf", "fcf_wlascicieli / przychody", [fcfw.id, i("przychody")],
                      lambda f, p: f / p, U, okres)
+    # dywidendy (decyzja właściciela z 12.11.2026: kilka wskaźników, bez podatków i IKE)
+    if k.jest(i("dywidendy_wyplacone")):
+        k.wylicz(i("wyplata_dywidendy"), "wyplata_dywidendy", "|dywidendy_wyplacone| / zysk_netto",
+                 [i("dywidendy_wyplacone"), i("zysk_netto")], _udzial, U, okres)
+        if k.jest(i("fcf_wlascicieli")):
+            k.wylicz(i("wyplata_dywidendy_z_fcf"), "wyplata_dywidendy_z_fcf", "|dywidendy_wyplacone| / fcf_wlascicieli",
+                     [i("dywidendy_wyplacone"), i("fcf_wlascicieli")], _udzial, U, okres)
     k.wylicz(i("capex_do_amortyzacji"), "capex_do_amortyzacji", " + ".join(c.split(".")[0] for c in capex) + " / amortyzacja",
              capex + [i("amortyzacja")], lambda *a: sum(a[:-1]) / a[-1], X, okres)
 
@@ -143,6 +150,13 @@ def dla_okresu(k: Kalkulator, S: str, okres: Okres, B: date, B_prev: Optional[da
         wej = [i("zysk_operacyjny"), stawka, kapital_razem.id, dlug_id] + gotowka
         k.wylicz(i("roic"), "roic", "zysk_operacyjny × (1 - stawka_podatku) / (kapital_wlasny + dlug - gotowka)", wej,
                  lambda z, t, kap, dl, *g: z * (1 - t) / (kap + dl - sum(g)), U, okres)
+
+
+def _udzial(wyplata: float, baza: float) -> float:
+    """Udział wypłaty w zysku albo FCF; znak wypłaty bywa różny w różnych taksonomiach, więc bierzemy wartość bezwzględną."""
+    if baza <= 0:
+        raise BrakSensu("zysk netto albo FCF ≤ 0: wskaźnik wypłaty nie ma sensu")
+    return abs(wyplata) / baza
 
 
 def _do_ebitda(dlug_netto: float, ebitda: float) -> float:

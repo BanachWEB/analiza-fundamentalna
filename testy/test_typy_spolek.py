@@ -128,3 +128,28 @@ def test_scenariusze_roe_wymagaja_pola_roe(tmp_path):
         {"nazwa": "b", "prawdopodobienstwo": 0.5, "wzrost_przychodow": 0.01, "marza_fcf": 0.1, "uzasadnienie": "t"}]}))
     with pytest.raises(scenariusze.BladScenariuszy):
         scenariusze.oblicz(k, plik, w)
+
+
+# --- dywidendy i stopa zwrotu dla akcjonariuszy (etap F) ---------------------------------------
+
+
+def test_stopa_dywidendy_i_zwrotu_akcjonariuszy():
+    r, k = rejestr([1000.0] * 3, fcf=[100.0] * 3)
+    r.dodaj(fakt("zysk_netto.FY2025", 80.0, okres=fy(2025)))
+    r.dodaj(fakt("dywidendy_wyplacone.FY2025", -40.0, okres=fy(2025)))  # znak z przepływów finansowych
+    r.dodaj(fakt("skup_akcji.FY2025", 30.0, okres=fy(2025)))
+    r.dodaj(fakt("emisje_akcji.FY2025", 10.0, okres=fy(2025)))
+    w = wycena.oblicz(k, None, "USA")
+    assert r[w["stopa_dywidendy"]].wartosc == pytest.approx(40 / 1000)
+    assert r[w["stopa_zwrotu_akcjonariuszy"]].wartosc == pytest.approx((40 + 30 - 10) / 1000)
+
+
+def test_wyplata_dywidendy_z_zysku_i_fcf():
+    from silnik.obliczenia import wskazniki
+    from silnik.fakty.schemat import Okres
+    r, k = rejestr([1000.0] * 3, fcf=[100.0] * 3)
+    r.dodaj(fakt("zysk_netto.FY2025", 80.0, okres=fy(2025)))
+    r.dodaj(fakt("dywidendy_wyplacone.FY2025", 40.0, okres=fy(2025)))
+    wskazniki.dla_okresu(k, "FY2025", Okres(**fy(2025)), date(2025, 12, 31), None)
+    assert r["wyplata_dywidendy.FY2025"].wartosc == pytest.approx(0.5)
+    assert r["wyplata_dywidendy_z_fcf.FY2025"].wartosc == pytest.approx(0.4)

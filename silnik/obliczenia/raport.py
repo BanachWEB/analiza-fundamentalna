@@ -32,6 +32,8 @@ WIERSZE = [
     ("pokrycie_odsetek", "Pokrycie odsetek (EBIT ÷ odsetki)"),
     ("zmiana_liczby_akcji", "Zmiana liczby akcji r/r (średnia ważona)"),
     ("zmiana_liczby_akcji_koniec", "Zmiana liczby akcji r/r (koniec okresu)"),
+    ("wyplata_dywidendy", "Wypłata dywidendy ÷ zysk netto"),
+    ("wyplata_dywidendy_z_fcf", "Wypłata dywidendy ÷ FCF dla właścicieli"),
     ("piotroski_f", "Piotroski F-score (0–9)"),
     ("beneish_m", "Beneish M-score (próg −1,78)"),
     ("altman_z2", "Altman Z'' (strefy 1,10 / 2,60)"),
@@ -197,6 +199,9 @@ def wycena_tabela(k: Kalkulator, wynik: dict) -> list[str]:
                          (f" na rok obrotowy do {cs.wejscia[1].split('.', 1)[1]}" if cs else "")))
     linie.append(_wiersz(k, "FCF yield", w.get("fcf_yield"), "FCF dla właścicieli ÷ kapitalizacja"))
     linie.append(_wiersz(k, "Udział PVGO w cenie", w.get("udzial_pvgo"), "część ceny za przyszły wzrost"))
+    linie.append(_wiersz(k, "Stopa dywidendy", w.get("stopa_dywidendy"), "dywidendy wypłacone ÷ kapitalizacja"))
+    linie.append(_wiersz(k, "Stopa zwrotu dla akcjonariuszy", w.get("stopa_zwrotu_akcjonariuszy"),
+                         "(dywidendy + skup akcji − emisje akcji) ÷ kapitalizacja"))
     baza = {"finanse": "zysku netto (bank)", "deweloper": "zysku netto (deweloper)"}.get(wynik.get("sektor"), "FCF")
     linie.append(_wiersz(k, f"Implikowany wzrost {baza} (10 lat)", w.get("implikowany_wzrost_fcf"), "wariant 1"))
     linie.append(_wiersz(k, "Implikowany okres przewagi (CAP)", w.get("implikowany_cap"), "wariant 2, wzrost w tempie historycznym"))

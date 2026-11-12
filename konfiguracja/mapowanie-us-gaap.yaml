@@ -110,6 +110,10 @@ skup_akcji:
   rodzaj: okres
   jednostka: pieniadz
   znaczniki: [PaymentsForRepurchaseOfCommonStock]
+emisje_akcji:  # wpływy z emisji akcji zwykłych (stopa zwrotu dla akcjonariuszy)
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: [ProceedsFromIssuanceOfCommonStock]
 
 aktywa:
   rodzaj: stan

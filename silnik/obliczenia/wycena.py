@@ -255,6 +255,17 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str, finansowa: bool = Fal
     else:
         k.braki.append("wycena: brak długu netto — EV nie policzone")
 
+    # dywidendy i skup akcji (stopa zwrotu dla akcjonariuszy)
+    dyw = f"dywidendy_wyplacone.{S}" if k.jest(f"dywidendy_wyplacone.{S}") else None
+    if dyw:
+        m("stopa_dywidendy", f"|dywidendy_wyplacone.{S}| / kapitalizacja", [dyw, cap.id], lambda a, c: abs(a) / c, U)
+    skladniki = [x for x in (dyw, f"skup_akcji.{S}", f"emisje_akcji.{S}") if x and k.jest(x)]
+    if skladniki:
+        znaki = [-1 if x.startswith("emisje_akcji") else 1 for x in skladniki]
+        m("stopa_zwrotu_akcjonariuszy", "(|dywidendy| + |skup_akcji| − |emisje_akcji|) / kapitalizacja, z dostępnych pozycji: "
+          + ", ".join(skladniki), skladniki + [cap.id],
+          lambda *a: sum(z * abs(v) for z, v in zip(znaki, a[:-1])) / a[-1], U)
+
     # PVGO
     m("udzial_pvgo", f"1 − (zysk_netto.{S} / koszt_kapitalu_wlasnego) / kapitalizacja",
       [f"zysk_netto.{S}", ke.id, cap.id], lambda z, kk, c: 1 - (z / kk) / c, U)

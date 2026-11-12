@@ -81,6 +81,14 @@ dywidendy_wyplacone:
   rodzaj: okres
   jednostka: pieniadz
   znaczniki: ["ifrs-full:DividendsPaidClassifiedAsFinancingActivities"]
+skup_akcji:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:PaymentsToAcquireOrRedeemEntitysShares"]
+emisje_akcji:
+  rodzaj: okres
+  jednostka: pieniadz
+  znaczniki: ["ifrs-full:ProceedsFromIssuingShares"]
 splata_leasingu:  # MSSF 16: część kapitałowa rat leasingu w przepływach finansowych
   rodzaj: okres
   jednostka: pieniadz
