@@ -1,0 +1,36 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "INSG",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001022652.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-12T22:13:20.747016Z",
+      "sha256": "564310a4f62967a975b00ce0366d6e1cac3735c8234081720091c607af3ef0c2",
+      "plik": "564310a4f62967a9.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0001022652.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-12T22:13:21.212059Z",
+      "sha256": "8626bee7066c94101414a82985419d14c0c64e293cac764c425ad07d8f20406f",
+      "plik": "8626bee7066c9410.json"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/INSG?range=5y&interval=1d",
+      "opis": "notowania dzienne INSG",
+      "pobrano": "2026-11-12T22:13:36.926904Z",
+      "sha256": "695207707f843a4fbd01b06bde99ab66bbdb3ce0dcbcb1c65f8c2467c3cde888",
+      "plik": "695207707f843a4f.json"
+    }
+  ]
+}

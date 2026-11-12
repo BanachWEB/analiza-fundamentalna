@@ -1,0 +1,36 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "OSS",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001394056.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-12T22:13:42.184196Z",
+      "sha256": "9ce1ed46cdbc5e6851144eb827ffce8756d2dfd54ca176fd78929751d435769d",
+      "plik": "9ce1ed46cdbc5e68.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0001394056.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-12T22:13:42.794264Z",
+      "sha256": "b927445ed7dfd91a06d4f4ecaec222895246ce41ebf95c00faca85e76f9628e2",
+      "plik": "b927445ed7dfd91a.json"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/OSS?range=5y&interval=1d",
+      "opis": "notowania dzienne OSS",
+      "pobrano": "2026-11-12T22:13:58.635374Z",
+      "sha256": "8b79b6e97e256a141d8c7aa4e60ded7c199bc1de52954b59643edce09d19a139",
+      "plik": "8b79b6e97e256a14.json"
+    }
+  ]
+}

@@ -89,14 +89,24 @@ Tygodniowe notowania od 2021-11-19 do 2026-11-12, wobec benchmarku rynku spółk
 
 ## Konkurenci
 
-Brak tabeli konkurentów (brak pliku konkurenci.json albo rejestrów konkurentów).
+| Spółka | Rynek | Marża brutto | Marża operacyjna | Wzrost przychodów r/r | ROIC | C/Z | EV/EBIT |
+|---|---|---:|---:|---:|---:|---:|---:|
+| **LTRX** | USA | 43,8% | -2,6%‼ | -1,6% | -3,4%‼ | — | — |
+| DGII (Digi International) | USA | 63,8%¹ | 13,9%¹ | 1,5%¹ | 7,3%¹ | — | — |
+| INSG (Inseego Corp.) | USA | 39,3%¹ | -10,4%¹ | -13,1%¹ | — | — | — |
+| AIOT (PowerFleet, Inc.) | USA | 55,1%¹ | 4,2%¹ | 22,4%¹ | 2,2%¹ | — | 28,44¹ |
+| AIRG (Airgain, Inc.) | USA | 42,9%¹ | -12,7%¹ | -14,6%¹ | — | — | — |
+| OSS (One Stop Systems, Inc.) | USA | 48,1%¹ | -17,3%¹ | 31,2%¹ | 3,6%¹ | — | — |
+| Mediana konkurentów | | 48,1% | -10,4% | 1,5% | 3,6% | — | 28,44 |
+
+Marże, wzrost i ROIC z ostatniego okresu TTM albo roku obrotowego każdej spółki (FY2022, FY2025, FY2026, TTM2026-06-30, TTM2026-09-30); mnożniki z ostatniego kursu. Mediana liczona przez silnik z wierszy konkurentów. Dane konkurentów: osobne rejestry w katalogu konkurenci/, z jednego źródła na spółkę.
 
 ## Scenariusze
 
 | Scenariusz | Prawdopodobieństwo | Wartość na akcję | Stopa zwrotu przy obecnym kursie |
 |---|---:|---:|---:|
-| byk | 20,0%¹ | 7,52 USD | 16,3%¹ |
 | bazowy | 45,0%¹ | 3,53 USD | 8,6%¹ |
+| byk | 20,0%¹ | 7,52 USD | 16,3%¹ |
 | niedzwiedz | 35,0%¹ | 1,59 USD | 3,8%¹ |
 | Wartość oczekiwana na akcję | 3,65 USD¹ |  | |
 | Potencjał oczekiwany | -18,6%¹ |  | |

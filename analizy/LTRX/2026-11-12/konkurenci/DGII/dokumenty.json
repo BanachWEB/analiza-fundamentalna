@@ -1,0 +1,36 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "DGII",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000854775.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-12T22:13:02.955002Z",
+      "sha256": "7db50f368db9cbc09f7560352908e9bdae2f9ff7e901e23ca7e1b60d04a6863d",
+      "plik": "7db50f368db9cbc0.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0000854775.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-12T22:13:03.371473Z",
+      "sha256": "ebd3d1d6e763089d0520ad4166efef541663536e0cccde202506f7dc93cfea9a",
+      "plik": "ebd3d1d6e763089d.json"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/DGII?range=5y&interval=1d",
+      "opis": "notowania dzienne DGII",
+      "pobrano": "2026-11-12T22:13:19.144148Z",
+      "sha256": "26dd3d9cee7b8bb99b330eab4c9ad458d843d1743c8f17ba8f541c00f221f5ad",
+      "plik": "26dd3d9cee7b8bb9.json"
+    }
+  ]
+}

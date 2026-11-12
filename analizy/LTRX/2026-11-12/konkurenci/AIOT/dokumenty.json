@@ -1,0 +1,36 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "AIOT",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001774170.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-12T22:13:37.634443Z",
+      "sha256": "00226681e87688407a861ea3c7bfb54edfda9fa102fe7a167b2e81d0d4e9357c",
+      "plik": "00226681e8768840.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0001774170.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-12T22:13:38.051406Z",
+      "sha256": "bfbc3f4def68532f5414a976dad4bd6a53bdc5a9a09dd8b5763575e7fe205459",
+      "plik": "bfbc3f4def68532f.json"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/AIOT?range=5y&interval=1d",
+      "opis": "notowania dzienne AIOT",
+      "pobrano": "2026-11-12T22:13:38.616057Z",
+      "sha256": "dd979acbe0a920c943a17e44700dcb175dbb948c1f0ba8d9688aaabb30c1ddb8",
+      "plik": "dd979acbe0a920c9.json"
+    }
+  ]
+}

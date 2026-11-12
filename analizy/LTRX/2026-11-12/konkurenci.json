@@ -1,0 +1,7 @@
+{"konkurenci": [
+ {"ticker": "DGII", "rynek": "USA", "nazwa": "Digi International", "uzasadnienie": "10-K i komunikaty nie nazywają konkurentów. Digi International jest na liście spółek porównawczych rady wynagrodzeń na FY2027, wybranych ze względu na „thematic fit” z biznesem Lantronix (to nie jest lista konkurentów z 10-K).", "dokument": "doc-024"},
+ {"ticker": "INSG", "rynek": "USA", "nazwa": "Inseego Corp.", "uzasadnienie": "Spółka porównawcza rady wynagrodzeń na FY2027 (dopasowanie tematyczne do biznesu Lantronix); dokumenty nie nazywają jej konkurentem.", "dokument": "doc-024"},
+ {"ticker": "AIOT", "rynek": "USA", "nazwa": "PowerFleet, Inc.", "uzasadnienie": "Spółka porównawcza rady wynagrodzeń na FY2027; działa w telematyce i śledzeniu zasobów, czyli w obszarze przejętego Nero (śledzenie GPS). Dokumenty nie nazywają jej konkurentem.", "dokument": "doc-024"},
+ {"ticker": "AIRG", "rynek": "USA", "nazwa": "Airgain, Inc.", "uzasadnienie": "Spółka porównawcza rady wynagrodzeń na FY2027 (dopasowanie tematyczne); dokumenty nie nazywają jej konkurentem.", "dokument": "doc-024"},
+ {"ticker": "OSS", "rynek": "USA", "nazwa": "One Stop Systems, Inc.", "uzasadnienie": "Spółka porównawcza rady wynagrodzeń na FY2027 (dopasowanie tematyczne); dokumenty nie nazywają jej konkurentem.", "dokument": "doc-024"}
+]}

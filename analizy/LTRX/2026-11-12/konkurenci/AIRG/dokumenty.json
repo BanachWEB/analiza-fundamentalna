@@ -1,0 +1,36 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "AIRG",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001272842.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-12T22:13:39.329401Z",
+      "sha256": "2d326f50254925011982e5df15e8613970f85e240510ab107a99e32ea817dc7f",
+      "plik": "2d326f5025492501.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0001272842.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-12T22:13:39.664566Z",
+      "sha256": "57393fffd6b271060661c61e39351c75852eb5f8f69e4349ee529bc32712c531",
+      "plik": "57393fffd6b27106.json"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/AIRG?range=5y&interval=1d",
+      "opis": "notowania dzienne AIRG",
+      "pobrano": "2026-11-12T22:13:41.533154Z",
+      "sha256": "d4e7088547b7c27b33cef5501feab9be06138e114ea4b58f89b97366bd2446b2",
+      "plik": "d4e7088547b7c27b.json"
+    }
+  ]
+}
