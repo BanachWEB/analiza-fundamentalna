@@ -157,6 +157,22 @@ def _wiersz(k: Kalkulator, nazwa: str, fid: Optional[str], uwaga: str = "") -> s
     return f"| {nazwa} | {tekst} | {uwaga} |"
 
 
+def _uwaga_beta(k: Kalkulator, fid: Optional[str]) -> str:
+    f = k.fakt(fid) if fid else None
+    if not f:
+        return ""
+    if f.pozycja != "beta_skorygowana":
+        return "beta domyślna: brak bety z regresji"
+    reg = k.fakt(f.wejscia[0])
+    m = reg.miejsce or {}
+    tekst = f"Blume; z regresji {format_(reg)}"
+    if m.get("tygodni"):
+        liczba = lambda x: f"{x:.2f}".replace(".", ",") if isinstance(x, (int, float)) else "—"
+        tekst += (f", {m['tygodni']} tyg. od {m.get('od')}, błąd std. {liczba(m.get('blad_standardowy'))}, "
+                  f"R² {liczba(m.get('r2'))}")
+    return tekst
+
+
 def wycena_tabela(k: Kalkulator, wynik: dict) -> list[str]:
     w = wynik.get("wycena") or {}
     if not w.get("kapitalizacja"):
@@ -167,6 +183,7 @@ def wycena_tabela(k: Kalkulator, wynik: dict) -> list[str]:
     linie.append(_wiersz(k, "Kurs", kurs))
     linie.append(_wiersz(k, "Kapitalizacja", w["kapitalizacja"]))
     linie.append(_wiersz(k, "EV", w.get("ev")))
+    linie.append(_wiersz(k, "Beta", w.get("beta"), _uwaga_beta(k, w.get("beta"))))
     linie.append(_wiersz(k, "Koszt kapitału własnego", w.get("ke"), "stopa wolna od ryzyka + beta × premia (Damodaran)"))
     linie.append(_wiersz(k, "C/Z", w.get("c_z")))
     linie.append(_wiersz(k, "EV/EBIT", w.get("ev_ebit")))

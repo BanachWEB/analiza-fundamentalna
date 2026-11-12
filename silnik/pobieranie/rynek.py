@@ -50,7 +50,8 @@ def _do_archiwum(archiwum: Archiwum, url: str, zrodlo: str, opis: str, rozszerze
 
 
 def url_yahoo(symbol: str) -> str:
-    return f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?range=2y&interval=1d"
+    # 5 lat sesji dziennych: momentum, RSI i obroty biorą końcówkę, beta z regresji całe okno
+    return f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?range=5y&interval=1d"
 
 
 def sesje_yahoo(tresc: str) -> list[Sesja]:
@@ -155,6 +156,98 @@ def rsi(sesje: list[Sesja], okno: int = 14) -> Optional[float]:
     if spadek == 0:
         return 100.0
     return 100 - 100 / (1 + wzrost / spadek)
+
+
+# --- beta z regresji -----------------------------------------------------------------
+
+
+def tygodniowe(sesje: list[Sesja]) -> list[tuple[date, float]]:
+    """Ostatnie zamknięcie w każdym tygodniu ISO (sesje od najstarszej)."""
+    tyg: dict[tuple[int, int], Sesja] = {}
+    for s in sesje:
+        klucz = tuple(s.dzien.isocalendar()[:2])
+        if klucz not in tyg or s.dzien > tyg[klucz].dzien:
+            tyg[klucz] = s
+    return [(s.dzien, s.zamkniecie) for _, s in sorted(tyg.items())]
+
+
+def beta_regresja(sesje: list[Sesja], indeks: list[Sesja], lat: int = 5, min_tygodni: int = 104) -> Optional[dict]:
+    """Beta z regresji tygodniowych stóp zwrotu spółki na stopach zwrotu indeksu (MNK) z ostatnich `lat` lat.
+
+    Stopy zwrotu liczy tylko dla par kolejnych tygodni, w których jest zamknięcie i spółki, i indeksu.
+    Zwraca None, gdy wspólna historia ma mniej niż `min_tygodni` stóp zwrotu albo indeks się nie zmienia.
+    """
+    if not sesje or not indeks:
+        return None
+    koniec = min(sesje[-1].dzien, indeks[-1].dzien)
+    poczatek = date.fromordinal(koniec.toordinal() - round(365.25 * lat))
+    s_t = {tuple(d.isocalendar()[:2]): (d, c) for d, c in tygodniowe([x for x in sesje if poczatek <= x.dzien <= koniec])}
+    i_t = {tuple(d.isocalendar()[:2]): (d, c) for d, c in tygodniowe([x for x in indeks if poczatek <= x.dzien <= koniec])}
+    wspolne = sorted(set(s_t) & set(i_t))
+    xs, ys = [], []
+    for a, b in zip(wspolne, wspolne[1:]):
+        (_, sa), (_, sb) = s_t[a], s_t[b]
+        (_, ia), (_, ib) = i_t[a], i_t[b]
+        if sa > 0 and ia > 0:
+            ys.append(sb / sa - 1)
+            xs.append(ib / ia - 1)
+    n = len(xs)
+    if n < max(min_tygodni, 3):
+        return None
+    mx, my = sum(xs) / n, sum(ys) / n
+    sxx = sum((x - mx) ** 2 for x in xs)
+    if sxx == 0:
+        return None
+    sxy = sum((x - mx) * (y - my) for x, y in zip(xs, ys))
+    syy = sum((y - my) ** 2 for y in ys)
+    b = sxy / sxx
+    reszty = syy - b * sxy
+    blad = (max(reszty, 0.0) / (n - 2) / sxx) ** 0.5
+    r2 = (sxy * sxy) / (sxx * syy) if syy > 0 else 0.0
+    return {"beta": b, "blad_standardowy": blad, "r2": r2, "tygodni": n,
+            "od": s_t[wspolne[0]][0], "do": s_t[wspolne[-1]][0]}
+
+
+def fakt_beta(sesje: list[Sesja], dok_ids: list[str], indeks: list[Sesja], dok_ids_indeksu: list[str],
+              nazwa_indeksu: str, lat: int = 5, min_tygodni: int = 104) -> Optional[Fakt]:
+    """Fakt `beta_regresja.<dzień>`; None, gdy historia notowań jest za krótka."""
+    w = beta_regresja(sesje, indeks, lat, min_tygodni)
+    if w is None or not dok_ids:
+        return None
+    metoda = Metoda.api if len(dok_ids) == 1 else Metoda.parser_strony
+    return _fakt(f"beta_regresja.{w['do'].isoformat()}", "beta_regresja", Okres(typ="dzien", koniec=w["do"]), w["beta"],
+                 Jednostka.liczba, dok_ids[0],
+                 {"obliczenie": f"MNK: tygodniowe stopy zwrotu spółki na stopach zwrotu indeksu {nazwa_indeksu}, "
+                                f"okno {lat} lat (ostatnie zamknięcie tygodnia)",
+                  "od": w["od"].isoformat(), "do": w["do"].isoformat(), "tygodni": w["tygodni"],
+                  "blad_standardowy": round(w["blad_standardowy"], 4), "r2": round(w["r2"], 4),
+                  "dokumenty": list(dok_ids) + list(dok_ids_indeksu)}, metoda=metoda)
+
+
+def parametry_bety() -> dict:
+    """Okno i minimalna liczba tygodni z `konfiguracja/wycena.yaml` (jedno źródło parametrów wyceny)."""
+    import yaml
+    plik = Path(__file__).resolve().parents[2] / "konfiguracja" / "wycena.yaml"
+    par = yaml.safe_load(plik.read_text(encoding="utf-8"))
+    return {"lat": int(par["beta_okno_lat"]), "min_tygodni": int(par["beta_min_tygodni"])}
+
+
+def sesji_do_bety() -> int:
+    """Liczba sesji do pobrania (GPW, Biznesradar), żeby objąć okno bety: ok. 252 sesje na rok i zapas."""
+    return 252 * parametry_bety()["lat"] + 30
+
+
+def dodaj_bete(rejestr, sesje: list[Sesja], dok_ids: list[str], indeks: list[Sesja], dok_ids_indeksu: list[str],
+               nazwa_indeksu: str) -> Optional[Fakt]:
+    """Dopisuje do rejestru betę z regresji; przy za krótkiej historii zostawia ślad i nic nie dodaje."""
+    par = parametry_bety()
+    f = fakt_beta(sesje, dok_ids, indeks, dok_ids_indeksu, nazwa_indeksu, par["lat"], par["min_tygodni"])
+    if f is None:
+        print(f"Beta z regresji: za krótka wspólna historia notowań spółki i indeksu {nazwa_indeksu} "
+              f"(minimum {par['min_tygodni']} tygodni); wycena użyje bety domyślnej")
+        return None
+    rejestr.dodaj(f, zastap=True)
+    return f
 
 
 # --- fakty rynkowe -------------------------------------------------------------------

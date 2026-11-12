@@ -97,11 +97,13 @@ def uruchom(ticker: str, dzien: date, esef_urls: list[str], pdf_urls: list[str],
 
     # dane rynkowe: kurs i WIG z Biznesradaru, kontrola kursu z Yahoo, liczba akcji, premia za ryzyko
     try:
-        sesje, ids = rynek.historia(archiwum, "GPW", ticker)
-        indeks, ids_i = rynek.historia(archiwum, "GPW", "WIG")
+        sesji = rynek.sesji_do_bety()  # 5 lat sesji: momentum, RSI i beta z regresji
+        sesje, ids = rynek.historia(archiwum, "GPW", ticker, sesji)
+        indeks, ids_i = rynek.historia(archiwum, "GPW", "WIG", sesji)
         rejestr.znane_dokumenty(archiwum.ids())
         for f in rynek.fakty_z_historii(sesje, ids, "PLN") + rynek.fakty_z_historii(indeks, ids_i, "PLN", "indeks_"):
             rejestr.dodaj(f, zastap=True)
+        rynek.dodaj_bete(rejestr, sesje, ids, indeks, ids_i, "WIG")
         adres = f"https://www.biznesradar.pl/notowania/{ticker}"
         dok_n = archiwum.po_adresie(adres) or _do_archiwum_strona(archiwum, adres, "Biznesradar", "notowania (liczba akcji)")
         rejestr.znane_dokumenty(archiwum.ids())

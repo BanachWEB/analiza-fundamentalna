@@ -113,6 +113,22 @@ def _zalozenie(k: Kalkulator, fid: str, pozycja: str, wartosc: float, uzasadnien
     return fid
 
 
+def wybierz_bete(k: Kalkulator, par: dict, okres_d: Okres) -> str:
+    """Beta skorygowana Blume'a z bety z regresji (`beta_regresja`); bez niej beta domyślna jako założenie."""
+    reg = ostatni(k, "beta_regresja", przed=okres_d.koniec)
+    if reg:
+        w = float(par["blume_waga_regresji"])
+        f = k.wylicz(f"beta_skorygowana.{okres_d.koniec.isoformat()}", "beta_skorygowana",
+                     f"{w:g} × beta_regresja + {1 - w:g} × 1 (Blume)", [reg.id],
+                     lambda b: w * b + (1 - w), Jednostka.liczba, okres_d)
+        if f:
+            return f.id
+    k.braki.append("beta: brak bety z regresji (za krótka historia notowań albo brak indeksu); wycena przyjmuje betę domyślną")
+    return _zalozenie(k, "beta.zalozenie", "beta", par["beta_domyslna"],
+                      "Beta = 1 (rynek jako całość): brak bety z regresji, bo historia notowań spółki i indeksu "
+                      "jest za krótka albo niedostępna.", Jednostka.liczba)
+
+
 def _cena_do_sprzedazy(kapitalizacja: float, przychody: float) -> float:
     if przychody <= 0:
         raise BrakSensu("konsensus przychodów ≤ 0, cena ÷ sprzedaż nie ma sensu")
@@ -164,9 +180,8 @@ def oblicz(k: Kalkulator, ttm: Optional[date], rynek: str, finansowa: bool = Fal
         k.braki.append(f"c_s_konsensus: waluta konsensusu ({prz[0].waluta}) inna niż kapitalizacji ({cap.waluta})")
 
     # koszt kapitału własnego
-    beta = _zalozenie(k, "beta.zalozenie", "beta", par["beta_domyslna"],
-                      "Beta = 1 (rynek jako całość): brak wiarygodnej bety z własnych danych; do zmiany przez model z uzasadnieniem.",
-                      Jednostka.liczba)
+    beta = wybierz_bete(k, par, okres_d)
+    wynik["beta"] = beta
     erp = ostatni(k, "premia_ryzyka_akcji")
     rf = k.fakt("rentownosc_10l.zalozenie") or ostatni(k, "rentownosc_10l")  # założenie (--rf) nadpisuje źródło
     if not erp or not rf:

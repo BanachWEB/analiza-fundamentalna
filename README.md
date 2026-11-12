@@ -105,7 +105,7 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają obliczenia same. Osobno: `pyt
 
 | Dane | USA | GPW |
 |---|---|---|
-| Kurs, obroty, momentum 12–1 | Yahoo (gdy odmawia: Stock Analysis, 6 miesięcy, bez momentum) | Biznesradar, notowania historyczne |
+| Kurs, obroty, momentum 12–1, beta z regresji (5 lat) | Yahoo (gdy odmawia: Stock Analysis, 6 miesięcy, bez momentum i bez bety) | Biznesradar, notowania historyczne |
 | Indeks do momentum | S&P 500 (Yahoo) | WIG (Biznesradar) |
 | Kontrola kursu (drugie źródło, ten sam dzień) | Stock Analysis | Yahoo |
 | Liczba akcji | SEC (dei:EntityCommonStockSharesOutstanding) | Biznesradar, strona notowań |
@@ -113,7 +113,7 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają obliczenia same. Osobno: `pyt
 | Premia za ryzyko akcji, spread kraju | Damodaran (ctryprem) | Damodaran (ctryprem) |
 
 **Wycena** (`silnik/obliczenia/wycena.py`, parametry w `konfiguracja/wycena.yaml`):
-- koszt kapitału własnego = stopa wolna od ryzyka + beta × premia za ryzyko akcji; dla GPW stopa wolna od ryzyka = rentowność 10-letnich obligacji − spread niewypłacalności Polski (bez podwójnego liczenia ryzyka kraju); beta domyślnie 1 (założenie w rejestrze);
+- koszt kapitału własnego = stopa wolna od ryzyka + beta × premia za ryzyko akcji; dla GPW stopa wolna od ryzyka = rentowność 10-letnich obligacji − spread niewypłacalności Polski (bez podwójnego liczenia ryzyka kraju); beta skorygowana Blume'a = 0,67 × beta z regresji + 0,33 × 1, gdzie beta z regresji pochodzi z tygodniowych stóp zwrotu spółki wobec indeksu (USA: S&P 500, GPW: WIG) z 5 lat; przy wspólnej historii krótszej niż 104 tygodnie silnik przyjmuje betę 1 jako założenie (parametry w `konfiguracja/wycena.yaml`);
 - mnożniki: C/Z, EV/EBIT, EV/EBITDA, C/WK, FCF yield; udział PVGO w cenie;
 - informacje, nie bramki: C/S na rok naprzód (kapitalizacja ÷ konsensus przychodów na najbliższy rok obrotowy, USA: Stock Analysis) i RSI 14-dniowy z historii kursów;
 - wycena odwrotna w trzech wariantach: implikowany wzrost FCF przez 10 lat, implikowany okres przewagi (CAP) przy wzroście historycznym, implikowana marża FCF przy wzroście historycznym. Wzrost historyczny = niższy z CAGR przychodów 3- i 5-letniego.

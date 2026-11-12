@@ -207,3 +207,96 @@ def test_biznesradar_notowania_i_historia():
 def test_karta_wymaga_trzech_filarow():
     filary = [karta_treli.Filar("a", 0.5, 8.0), karta_treli.Filar("b", 0.3, 4.0), karta_treli.Filar("c", 0.2, None)]
     assert karta_treli.wynik_ogolny(filary) == (None, 2)
+
+
+# --- beta skorygowana Blume'a (decyzja właściciela z 12.11.2026) -------------------------------
+
+
+def _notowania(dni: int, zwroty_indeksu, mnoznik: float, start=date(2021, 11, 1)):
+    """Sesje dzienne (pon.–pt.): indeks z cyklicznymi zwrotami, spółka = mnożnik × zwrot indeksu."""
+    sesje, indeks, ci, cs, i = [], [], 100.0, 50.0, 0
+    for n in range(dni):
+        d = start + timedelta(days=n)
+        if d.weekday() >= 5:
+            continue
+        r = zwroty_indeksu[i % len(zwroty_indeksu)]
+        i += 1
+        ci *= 1 + r
+        cs *= 1 + mnoznik * r
+        indeks.append(rynek.Sesja(d, ci, 1.0))
+        sesje.append(rynek.Sesja(d, cs, 1.0))
+    return sesje, indeks
+
+
+def test_tygodniowe_ostatnie_zamkniecie_tygodnia():
+    sesje = [rynek.Sesja(date(2026, 11, 2) + timedelta(days=i), 10.0 + i, 1.0) for i in range(10)]
+    tyg = rynek.tygodniowe(sesje)
+    assert tyg == [(date(2026, 11, 8), 16.0), (date(2026, 11, 11), 19.0)]
+
+
+def test_beta_regresja_odtwarza_mnoznik():
+    # spółka porusza się dokładnie 2 × indeks w każdej sesji; tygodniowo zależność jest prawie liniowa
+    sesje, indeks = _notowania(5 * 366, [0.004, -0.003, 0.002, -0.001, 0.003, -0.004, 0.001], 2.0)
+    w = rynek.beta_regresja(sesje, indeks, lat=5, min_tygodni=104)
+    assert w is not None
+    assert w["beta"] == pytest.approx(2.0, abs=0.02)
+    assert w["r2"] > 0.99
+    assert 250 <= w["tygodni"] <= 262
+
+
+def test_beta_regresja_okno_lat():
+    sesje, indeks = _notowania(8 * 366, [0.004, -0.003, 0.002, -0.001], 1.5)
+    w = rynek.beta_regresja(sesje, indeks, lat=5)
+    assert (w["do"] - w["od"]).days <= round(365.25 * 5)
+
+
+def test_beta_regresja_za_krotka_historia():
+    sesje, indeks = _notowania(300, [0.004, -0.003, 0.002], 1.5)
+    assert rynek.beta_regresja(sesje, indeks, lat=5, min_tygodni=104) is None
+    assert rynek.fakt_beta(sesje, ["doc-001"], indeks, ["doc-002"], "S&P 500") is None
+
+
+def test_fakt_beta_zapisuje_metode():
+    sesje, indeks = _notowania(5 * 366, [0.004, -0.003, 0.002, -0.001, 0.003], 1.8)
+    f = rynek.fakt_beta(sesje, ["doc-001"], indeks, ["doc-002"], "S&P 500")
+    assert f.pozycja == "beta_regresja" and f.wartosc == pytest.approx(1.8, abs=0.02)
+    assert f.miejsce["dokumenty"] == ["doc-001", "doc-002"]
+    assert {"tygodni", "blad_standardowy", "r2", "od", "do"} <= set(f.miejsce)
+
+
+def _rejestr_do_bety(z_regresja: bool):
+    from silnik.fakty.rejestr import RejestrFaktow
+    from silnik.fakty.schemat import Fakt
+    from silnik.obliczenia.kalkulator import Kalkulator
+
+    D = date(2026, 11, 9)
+    r = RejestrFaktow("X", D)
+    def f(id, v, jedn):
+        return Fakt(id=id, pozycja=id.split(".")[0], okres={"typ": "dzien", "koniec": D}, wartosc=v, jednostka=jedn,
+                    waluta="USD" if jedn == "pieniadz_na_akcje" else None, status="jedno_zrodlo",
+                    rodzaj="raportowany", metoda="api", dokument="doc-001", miejsce={})
+    r.dodaj(f("kurs.2026-11-09", 10.0, "pieniadz_na_akcje"))
+    r.dodaj(f("akcje_w_obrocie.2026-11-09", 100.0, "akcje"))
+    r.dodaj(f("premia_ryzyka_akcji.2026-11-09", 0.05, "ulamek"))
+    r.dodaj(f("rentownosc_10l.2026-11-09", 0.04, "ulamek"))
+    if z_regresja:
+        r.dodaj(f("beta_regresja.2026-11-06", 2.25, "liczba"))
+    return r, Kalkulator(r)
+
+
+def test_wycena_uzywa_bety_blume():
+    r, k = _rejestr_do_bety(True)
+    w = wycena.oblicz(k, None, "USA")
+    beta = r[w["beta"]]
+    assert beta.pozycja == "beta_skorygowana" and beta.rodzaj.value == "wyliczony"
+    assert beta.wartosc == pytest.approx(0.67 * 2.25 + 0.33)
+    assert beta.wejscia == ["beta_regresja.2026-11-06"]
+    assert r[w["ke"]].wartosc == pytest.approx(0.04 + (0.67 * 2.25 + 0.33) * 0.05)
+
+
+def test_wycena_bez_regresji_bierze_bete_domyslna():
+    r, k = _rejestr_do_bety(False)
+    w = wycena.oblicz(k, None, "USA")
+    assert w["beta"] == "beta.zalozenie" and r["beta.zalozenie"].wartosc == 1.0
+    assert r[w["ke"]].wartosc == pytest.approx(0.09)
+    assert any("brak bety z regresji" in b for b in k.braki)

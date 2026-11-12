@@ -186,7 +186,8 @@ Komunikat stopu (krótki PDF albo wiadomość):
 | Źródło pierwotne | API SEC, 10-K, 10-Q, 8-K | ESEF, PDF raportów okresowych, ESPI ze strony spółki |
 | Drugie źródło | Stock Analysis, Yahoo, Finviz | Biznesradar |
 | Konsensus | Stock Analysis, Yahoo, TipRanks, MarketScreener; wklejka z InvestingPro | wklejka z InvestingPro; rekomendacje domów maklerskich z oznaczeniem, czy sponsorowane |
-| Koszt kapitału | rentowność 10-letnich obligacji USA z dnia analizy + premia Damodarana | rentowność 10-letnich obligacji PL − spread niewypłacalności + β × premia dla Polski |
+| Koszt kapitału | rentowność 10-letnich obligacji USA z dnia analizy + β × premia Damodarana | rentowność 10-letnich obligacji PL − spread niewypłacalności + β × premia dla Polski |
+| Beta (decyzja z 12.11.2026) | beta skorygowana Blume'a z regresji tygodniowej z 5 lat wobec S&P 500 | beta skorygowana Blume'a z regresji tygodniowej z 5 lat wobec WIG |
 | Flagi specyficzne | NT, Item 4.01/4.02, material weakness, listy komentarzy SEC, SPAC, VIE, raporty krótkich sprzedawców | Lista Alertów, oznaczenie szczególne, KNF, emisje bez prawa poboru, przymusowy wykup, Skarb Państwa |
 | IKE w XTB | akcja .US, W-8BEN, 15% podatku u źródła, przewalutowanie 0,5% | akcja .PL, bez przewalutowania |
 | Benchmark | S&P 500 | WIG |

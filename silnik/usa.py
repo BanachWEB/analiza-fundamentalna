@@ -72,6 +72,7 @@ def uruchom(ticker: str, dzien: date, katalog_plikow: Path | None = None) -> Pat
         rejestr.znane_dokumenty(archiwum.ids())
         for f in rynek.fakty_z_historii(indeks, ids_i, "USD", "indeks_"):
             rejestr.dodaj(f, zastap=True)
+        rynek.dodaj_bete(rejestr, sesje, ids, indeks, ids_i, "S&P 500")
     except (BladPobierania, rynek.BladRynku) as e:
         print(f"S&P 500 niedostępny: {e}")
     try:

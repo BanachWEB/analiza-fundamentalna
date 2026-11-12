@@ -3,5 +3,11 @@
 
 lata_prognozy: 10          # długość okresu wzrostu w wycenie odwrotnej
 wzrost_rezydualny_max: 0.025  # wzrost po okresie prognozy; nie wyżej niż stopa wolna od ryzyka (Damodaran)
-beta_domyslna: 1.0         # gdy brak wiarygodnej bety: rynek jako całość
+# Beta (decyzja właściciela z 12.11.2026): beta skorygowana Blume'a z regresji tygodniowych stóp zwrotu
+# spółki na indeksie (USA: S&P 500, GPW: WIG) z ostatnich beta_okno_lat lat.
+# beta skorygowana = waga × beta z regresji + (1 − waga) × 1
+beta_okno_lat: 5
+beta_min_tygodni: 104      # krótsza wspólna historia notowań (np. świeży debiut): beta domyślna
+blume_waga_regresji: 0.67  # Blume (1971): bety z regresji wracają z czasem w stronę 1
+beta_domyslna: 1.0         # tylko gdy brak bety z regresji: rynek jako całość
 cap_max_lat: 40            # górna granica szukania okresu przewagi (CAP)
