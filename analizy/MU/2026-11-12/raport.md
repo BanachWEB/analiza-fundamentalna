@@ -167,7 +167,7 @@ Moim zdaniem moja teza jest bardziej pesymistyczna niż konsensus analityków i 
 - Druga połowa 2028 roku: uruchomienie nowych mocy u Micronu i konkurentów.
 
 **Antytezy z progami:**
-- Rynkowe: spowolnienie inwestycji w centra danych AI; wzrost stóp procentowych, który uderza w spółki o wysokiej becie (beta {{beta.zalozenie}}). Te antytezy wpływają na horyzont i alokację.
+- Rynkowe: spowolnienie inwestycji w centra danych AI; wzrost stóp procentowych, który uderza w spółki o dużej zmienności kursu (silnik liczy koszt kapitału przy becie przyjętej {{beta.zalozenie}}). Te antytezy wpływają na horyzont i alokację.
 - Specyficzne i sprawdzalne: marża brutto spada przez dwa kwartały z rzędu poniżej poziomu FY2026 ({{marza_brutto.FY2026}}); RPO w 10-K za FY2027 maleje wobec {{rpo.2026-09-03}}; spółka raportuje spadek średnich cen DRAM r/r; capex netto rośnie szybciej niż przychody.
 - Nieprzewidywalne: strajk albo przerwa w fabrykach na Tajwanie, nowe działania Chin wobec Micronu, konflikt wokół Tajwanu. Te ryzyka da się ograniczyć tylko wielkością pozycji.
 
