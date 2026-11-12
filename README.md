@@ -16,6 +16,7 @@ Plan ma 7 kroków (`specyfikacja.md`, część 11).
 | 6 | Raport: szablon z miejscami na liczby, lint, PDF | gotowy |
 | 7 | SKILL.md i pełne przebiegi na spółkach testowych | gotowy: skill i pełne przebiegi testowe (MSFT, DNP, PKO, stopy PBG i DPLS; wyniki usunięte z `analizy/`) |
 | 8 | Podział pracy między modele: subagenci, fragmenty do bramek, lista miejsc na liczby (`specyfikacja.md`, punkt 3.7) | gotowy w kodzie; pierwszy przebieg na nowej spółce sprawdzi koszt i jakość |
+| 9 | Wersja 1.1 (`specyfikacja.md`, punkt 13): beta Blume'a, wycena według typu spółki, profil ryzyka, beta sektorowa, pasma wyceny, wrażliwość, konkurenci, dywidendy, aktualność materiałów, nowy układ raportu | gotowy w kodzie i w testach (12.11.2026); parser tabeli Damodarana, pobieranie konkurentów i 5 lat notowań z Biznesradaru sprawdzi pierwszy przebieg z dostępem do sieci |
 
 ## Skill
 
@@ -130,6 +131,19 @@ Przebiegi `silnik.usa` i `silnik.gpw` uruchamiają obliczenia same. Osobno: `pyt
 **Karta w stylu Treli** (`konfiguracja/karta-treli.yaml`): pięć filarów (wzrost 30%, jakość 25%, wycena 20%, analitycy 15%, momentum 10%), każda miara 0–10 pkt liniowo między progami, osobnymi dla USA i GPW. Filar bez danych (np. „analitycy” przy pokryciu poniżej 3 analityków) przekazuje wagę pozostałym. Karta jest informacją, nie bramką.
 
 **Cena docelowa z arkusza właściciela** (`silnik/obliczenia/trela.py`, `specyfikacja.md` punkt 7.1): gdy właściciel dołączy swój arkusz `Cena-docelowa.xlsx` (metoda Treli), skill zapisuje go jako `analizy/<TICKER>/<data>/cena-docelowa.xlsx`, a silnik odczytuje wyniki arkusza bez przeliczania. Bez pliku raport pomija tę część. Potencjał konserwatywny z arkusza jest miarą filaru „wycena” w karcie Treli.
+
+## Wersja 1.1 (krok 9)
+
+Decyzje właściciela z 12.11.2026 (`specyfikacja.md`, punkt 13). Skill robi tylko analizę fundamentalną jako punkt wyjścia do analizy miękkiej; skład portfela, wielkość pozycji i punkty wejścia robi inny segment.
+
+- **Typ spółki** (`sektor` w `analiza.json`): `ogolny`, `cykliczny` (wariant z FCF znormalizowanym: marża FCF z pełnego cyklu × przychody), `finanse` i `deweloper` (uzasadnione C/WK z ROE, ROE implikowane przez kurs, scenariusze z polem `roe`). Silnik ostrzega, gdy spółka „ogólna” wygląda na cykliczną.
+- **Profil ryzyka kursu** z 5 lat notowań, wobec S&P 500 albo WIG: zmienność roczna, maksymalne obsunięcie z czasem powrotu do szczytu, korelacja. Beta sektorowa Damodarana (pole `branza_damodaran` w `analiza.json`) jako kontrola bety.
+- **Historyczne pasma wyceny:** percentyle C/Z, EV/EBIT, EV/EBITDA, C/WK i FCF yield z tygodniowych notowań w archiwum i danych z już opublikowanych raportów rocznych; bez przeliczania na kursy.
+- **Tabela wrażliwości:** wartość na akcję przy krokach założeń wokół scenariusza bazowego i założenie, które najmocniej zmienia wycenę.
+- **Konkurenci:** `python -m silnik.konkurenci analizy/<TICKER>/<data>` buduje z `konkurenci.json` osobne rejestry konkurentów z USA (SEC) albo z GPW (Biznesradar) i tabelę w części 4.
+- **Dywidendy:** wypłata z zysku netto i z FCF, stopa dywidendy, stopa zwrotu dla akcjonariuszy.
+- **Aktualność materiałów:** ostrzeżenia, gdy kurs albo EPS w arkuszu ceny docelowej, wiek wklejki albo konsensus z wklejki odbiegają od danych silnika.
+- **Raport:** teza z warunkami koniecznymi zamiast prawdopodobieństwa, Ohlson jako jedno prawdopodobieństwo upadłości w procentach, bez części o IKE i XTB, nowa część 12 „Do dalszej analizy”, komentarz do karty Treli tylko przy rozbieżności z wynikiem Scrab. Nowe tabele: `{{tabela:pasma}}`, `{{tabela:ryzyko}}`, `{{tabela:wrazliwosc}}`, `{{tabela:konkurenci}}`.
 
 ## Bramki stopu (krok 5)
 

@@ -38,10 +38,11 @@ Repozytorium buduje skill, który robi wstępną analizę fundamentalną spółk
 | Drugie źródło dla GPW | `silnik/pobieranie/biznesradar.py` |
 | Test cytatu dla liczb z PDF i tekstu | `silnik/fakty/cytat.py` |
 | Przebieg danych dla spółki z GPW | `silnik/gpw.py` |
-| Obliczenia: okresy pochodne, wskaźniki, F/M/Z''/O, wycena, scenariusze, karta Treli | `silnik/obliczenia/` |
-| Dane rynkowe: kursy, stopy, premie za ryzyko | `silnik/pobieranie/rynek.py` |
+| Obliczenia: okresy pochodne, wskaźniki, F/M/Z''/O, wycena według typu spółki, scenariusze, wrażliwość, pasma wyceny, aktualność materiałów, karta Treli | `silnik/obliczenia/` |
+| Dane rynkowe: kursy, stopy, premie za ryzyko, beta, profil ryzyka kursu, beta sektorowa Damodarana | `silnik/pobieranie/rynek.py` |
+| Tabela konkurentów (rejestry konkurentów w `D/konkurenci/`) | `silnik/konkurenci.py` |
 | Dane makro do Ohlson O-score: deflator PKB USA, kurs USD/PLN | `silnik/pobieranie/makro.py` |
-| Parametry wyceny odwrotnej | `konfiguracja/wycena.yaml` |
+| Parametry wyceny: wycena odwrotna, beta, typy spółek, wrażliwość, pasma, progi aktualności | `konfiguracja/wycena.yaml` |
 | Cena docelowa z arkusza właściciela (odczyt `Cena-docelowa.xlsx`) | `silnik/obliczenia/trela.py` |
 | Wagi i progi karty Treli | `konfiguracja/karta-treli.yaml` |
 | Bramki stopu: lista, progi, decyzja | `konfiguracja/bramki.yaml`, `silnik/bramki/` |

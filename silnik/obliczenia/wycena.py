@@ -339,7 +339,7 @@ def sygnaly_cyklicznosci(k: Kalkulator, par: dict, sektor: str, okres_d: Okres) 
         if spadek and spadek.wartosc <= par["prog_spadek_przychodow"]:
             powody.append("głęboki spadek przychodów r/r")
         if zm and zm.wartosc >= par["prog_zmiennosc_marzy_fcf"]:
-            powody.append("duża zmienność marży FCF")
+            powody.append("dużą zmienność marży FCF")
         if powody:
             k.ostrzezenia.append("Typ spółki: oznaczona jako „ogólna”, ale ma " + " i ".join(powody)
                                  + " — sprawdź, czy nie jest spółką cykliczną (wariant z FCF znormalizowanym).")
