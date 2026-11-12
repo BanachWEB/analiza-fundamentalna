@@ -1,0 +1,73 @@
+{
+ "dowody": [
+  {
+   "bramka": "B1.slabosc_kontroli_wzmianka",
+   "poziom": "ok",
+   "dokument": "doc-017",
+   "opis": "Zarząd i biegły stwierdzają skuteczną kontrolę wewnętrzną na 3.09.2026; „material weakness” pada tylko w opisie procedur biegłego (ocena ryzyka), nie jako stwierdzona słabość.",
+   "cytat": "Also in our opinion, the Company maintained, in all material respects, effective internal control over financial reporting as of September 3, 2026"
+  },
+  {
+   "bramka": "B1.slabosc_kontroli",
+   "poziom": "ok",
+   "dokument": "doc-017",
+   "opis": "Item 9A: zarząd uznał kontrolę za skuteczną, a PwC zbadał ją i wydał opinię bez zastrzeżeń; brak wskazanych istotnych słabości.",
+   "cytat": "our internal control over financial reporting was effective as of September 3, 2026"
+  },
+  {
+   "bramka": "B1.opinia_bieglego",
+   "poziom": "ok",
+   "dokument": "doc-017",
+   "opis": "PricewaterhouseCoopers LLP (San Jose), opinia bez zastrzeżeń (unqualified) o sprawozdaniach i kontroli wewnętrznej, z datą 9.10.2026; biegły od 1984 r.; jedna kluczowa sprawa badania (ujmowanie przychodów).",
+   "cytat": "the consolidated financial statements referred to above present fairly, in all material respects, the financial position of the Company as of September 3, 2026"
+  },
+  {
+   "bramka": "B4.akcjonariusz_90",
+   "poziom": "ok",
+   "dokument": "doc-018",
+   "opis": "Największy akcjonariusz to Vanguard z 8,4% akcji, potem BlackRock 7,6% i Capital World Investors 6,3%. Dane z DEF 14A 2025 (stan na 31.10.2025), udziały z zawiadomień 13G z lutego 2024 - niezbyt świeże, ale rząd wielkości wyklucza próg 90%.",
+   "cytat": "The Vanguard Group, Inc.(4) 94,984,500 — 94,984,500 8.4 %"
+  },
+  {
+   "bramka": "B4.podmioty_powiazane",
+   "poziom": "ok",
+   "dokument": "doc-018",
+   "opis": "DEF 14A: brak transakcji z podmiotami powiązanymi od początku roku obrotowego 2025; polityka wymaga zatwierdzenia przez komitet audytu. Nie sprawdzono transakcji za FY2026 (nowszy proxy jeszcze nie opublikowany).",
+   "cytat": "There were no actual or proposed related person transactions in which a related person had a direct or indirect material interest since the beginning of Fiscal 2025."
+  },
+  {
+   "bramka": "B4.insiderzy",
+   "poziom": "ok",
+   "dokument": "doc-017",
+   "opis": "10-K Item 9B: w IV kwartale FY2026 jedyny nowy plan 10b5-1 przyjął Scott DeBoer (do 85 632 akcji, od 16.10.2026); inni członkowie zarządu nie przyjęli ani nie zakończyli planów. Nie sprawdzono formularzy 4, więc brak dowodu o sprzedaży poza planem, ale też brak pełnej weryfikacji. Powiązane: 8-K z 5.11.2026 (doc-019, pozycja 5.02) dotyczy tylko rezygnacji dyrektorki Linnie Haynesworth, która nie będzie kandydować w ponownym wyborze na walnym zgromadzeniu FY2026; nie jest to odejście z powodu sporu.",
+   "cytat": "On July 17, 2026, Scott DeBoer, our President and Chief Technology and Products Officer, adopted a Rule 10b5-1 trading arrangement providing for the sale of an aggregate of up to 85,632 shares of our common stock."
+  },
+  {
+   "bramka": "B1.sankcja_regulatora",
+   "poziom": "ok",
+   "dokument": "doc-017",
+   "opis": "Item 3 odsyła do noty 11; w opisie postępowań brak sankcji SEC ani zawiadomień o dochodzeniu w sprawie raportowania (brak trafień na subpoena, Wells, SEC investigation). Pozostałe sprawy to spory patentowe i antymonopolowe.",
+   "cytat": "For a discussion of legal proceedings, see Part II, Item 8. Financial Statements and Supplementary Data, Notes to Consolidated Financial Statements, Note 11. Contingencies"
+  },
+  {
+   "bramka": "B3.kontynuacja",
+   "poziom": "ok",
+   "dokument": "doc-017",
+   "opis": "W 10-K FY2026 brak wzmianki „substantial doubt” i „going concern” (0 trafień w całym tekście); automatyczna bramka kontynuacji też bez trafień w doc-014."
+  },
+  {
+   "bramka": "B4.oszustwo",
+   "poziom": "ok",
+   "dokument": "doc-017",
+   "opis": "Nota 11: jest tylko domniemany pozew zbiorowy o zmowę cenową na DRAM (z 25.06.2026, także Samsung i SK hynix); to zarzuty powodów, nie wiarygodny dowód oszustwa przez zarząd. Warto obserwować rozstrzygnięcie.",
+   "cytat": "alleging that the defendants conspired to restrict the supply of, and fix prices for, DRAM products in violation of the Sherman Act"
+  },
+  {
+   "bramka": "B5.decyzja_organu",
+   "poziom": "flaga",
+   "dokument": "doc-017",
+   "opis": "Decyzja CAC z maja 2023 r.: operatorzy krytycznej infrastruktury w Chinach nie mogą kupować produktów Micron; to ograniczenie dostępu do części rynku, nie utrata rdzenia biznesu (spółka działa i rośnie poza tym rynkiem). Dalsze działania chińskiego rządu mogą pogorszyć sytuację.",
+   "cytat": "the CAC determined that critical information infrastructure operators in China may not purchase Micron products, impacting our revenue with companies headquartered in mainland China and Hong Kong"
+  }
+ ]
+}

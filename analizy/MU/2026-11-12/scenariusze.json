@@ -1,0 +1,10 @@
+{"scenariusze": [
+  {"nazwa": "byk", "prawdopodobienstwo": 0.2, "wzrost_przychodow": 0.03, "marza_fcf": 0.30,
+   "sciezka_przychodow": ["przychody_konsensus.2027-08-31"],
+   "uzasadnienie": "Rynek pamięci zmienia się strukturalnie: popyt na DRAM i HBM do centrów danych AI utrzymuje ceny dłużej niż w poprzednich cyklach, a długoterminowe umowy z klientami ograniczają spadki. Przychody FY2027 zgodne z konsensusem, potem łagodny wzrost; marża FCF przez cykl wyraźnie wyższa niż w latach 2022–2025, ale niższa niż w szczycie FY2026, bo capex rośnie. To 80.–90. percentyl: w historii Micronu żaden szczyt nie utrzymał się bez głębokiej korekty."},
+  {"nazwa": "bazowy", "prawdopodobienstwo": 0.45, "wzrost_przychodow": -0.06, "marza_fcf": 0.20,
+   "sciezka_przychodow": ["przychody_konsensus.2027-08-31"],
+   "uzasadnienie": "Cykl pamięci wraca, ale w łagodniejszej formie: przychody FY2027 zgodne z konsensusem, potem nowe moce Samsunga, SK hynix, CXMT i samego Micronu (Idaho, Nowy Jork, Singapur) obniżają ceny i przychody średnio spadają przez kolejne lata. Marża FCF przez cykl na poziomie między szczytem FY2026 a średnią z lat 2022–2025. Stopa bazowa: po każdym poprzednim szczycie (FY2018, FY2022) przychody Micronu spadały w ciągu dwóch lat o ponad jedną trzecią (rok FY2023 w rejestrze)."},
+  {"nazwa": "niedzwiedz", "prawdopodobienstwo": 0.35, "wzrost_przychodow": -0.08, "marza_fcf": 0.10,
+   "uzasadnienie": "Szczyt cyklu przypada na rok FY2026 albo na początek FY2027, a konsensus FY2027 się nie sprawdza: nadpodaż pojawia się w latach 2028–2029, gdy ruszą nowe hale wszystkich producentów, a nakłady na AI zwalniają. Przychody spadają od poziomu TTM, marża FCF wraca w stronę średniej z cyklu, obciążona wysokim capexem. To 10.–20. percentyl, ale w branży pamięci taki przebieg zdarzał się regularnie, więc prawdopodobieństwo jest wysokie."}
+]}
