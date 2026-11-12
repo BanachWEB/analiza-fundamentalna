@@ -140,9 +140,10 @@ inwestycje_krotkoterminowe:
   jednostka: pieniadz
   znaczniki: [ShortTermInvestments, MarketableSecuritiesCurrent, AvailableForSaleSecuritiesDebtSecuritiesCurrent]
 dlug_dlugoterminowy:
+  # MU od lat raportuje dług długoterminowy razem z leasingiem finansowym (bez części bieżącej)
   rodzaj: stan
   jednostka: pieniadz
-  znaczniki: [LongTermDebtNoncurrent]
+  znaczniki: [LongTermDebtNoncurrent, LongTermDebtAndCapitalLeaseObligations]
 dlug_krotkoterminowy:
   rodzaj: stan
   jednostka: pieniadz
@@ -181,9 +182,10 @@ zapasy:
   jednostka: pieniadz
   znaczniki: [InventoryNet]
 rzeczowe_aktywa_trwale:
+  # MU od 2020 r. raportuje rzeczowe aktywa trwałe razem z prawem do użytkowania z leasingu finansowego
   rodzaj: stan
   jednostka: pieniadz
-  znaczniki: [PropertyPlantAndEquipmentNet]
+  znaczniki: [PropertyPlantAndEquipmentNet, PropertyPlantAndEquipmentAndFinanceLeaseRightOfUseAssetAfterAccumulatedDepreciationAndAmortization]
 koszty_sprzedazy_i_zarzadu:
   rodzaj: okres
   jednostka: pieniadz
