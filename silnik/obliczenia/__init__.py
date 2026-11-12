@@ -9,7 +9,7 @@ from typing import Optional
 
 from silnik.fakty.rejestr import RejestrFaktow
 
-from . import aktualnosc, jakosc, karta_treli, okresy, scenariusze, trela, wskazniki, wycena
+from . import aktualnosc, jakosc, karta_treli, okresy, pasma, scenariusze, trela, wskazniki, wycena
 from .kalkulator import Kalkulator
 from .raport import obliczenia_md
 
@@ -60,6 +60,8 @@ def uruchom(rejestr: RejestrFaktow, katalog: Optional[Path] = None, rynek: Optio
         jakosc.oblicz(k)
     w = wycena.oblicz(k, koniec, rynek, sektor=typ)
     sc = scenariusze.oblicz(k, katalog / "scenariusze.json", w) if katalog else None
+    wr = scenariusze.wrazliwosc(k, katalog / "scenariusze.json", w) if katalog and sc else None
+    ps = pasma.oblicz(k, katalog, w)
     tr = trela.oblicz(k, katalog, rynek)  # przed kartą: potencjał konserwatywny to miara filaru „wycena”
     aktualnosc.sprawdz(k, tr, w)
     analitycy = [f for f in rejestr.fakty() if f.pozycja == "liczba_analitykow"]
@@ -67,7 +69,7 @@ def uruchom(rejestr: RejestrFaktow, katalog: Optional[Path] = None, rynek: Optio
     karta = karta_treli.oblicz(k, rynek, w, w.get("okres_bazowy"), liczba, kapitalowa) if w.get("kapitalizacja") else []
     scrab = karta_treli.porownanie_scrab(k, karta) if karta else None
     return k, {"ttm": koniec, "rynek": rynek, "wycena": w, "scenariusze": sc, "trela": tr, "karta": karta, "analitycy": liczba,
-               "scrab": scrab,
+               "scrab": scrab, "wrazliwosc": wr, "pasma": ps,
                "sektor": typ}
 
 

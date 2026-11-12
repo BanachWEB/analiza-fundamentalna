@@ -14,13 +14,14 @@ from pathlib import Path
 
 from silnik.fakty.schemat import Fakt, Status
 from silnik.obliczenia import uruchom as obliczenia_uruchom
-from silnik.obliczenia.raport import karta_tabela, panel_md, scenariusze_tabela, trela_tabela, wycena_tabela
+from silnik.obliczenia.raport import (karta_tabela, panel_md, pasma_tabela, scenariusze_tabela, trela_tabela, wrazliwosc_tabela,
+                                     wycena_tabela)
 from silnik.pobieranie.archiwum import Archiwum
 
 from . import formaty, lint, wykresy
 from .lint import MIEJSCE
 
-TABELE = ("panel", "wycena", "cena_docelowa_trela", "scenariusze", "karta", "bramki", "jakosc_danych")
+TABELE = ("panel", "wycena", "pasma", "cena_docelowa_trela", "scenariusze", "wrazliwosc", "karta", "bramki", "jakosc_danych")
 WYKRESY = ("przychody", "marze", "fcf_zysk", "roic")
 
 
@@ -117,7 +118,7 @@ def renderuj(katalog: Path, tekst: str) -> str:
         raise BladRaportu(bledy)
     tabele = {
         "panel": panel_md(k, wynik), "wycena": wycena_tabela(k, wynik), "cena_docelowa_trela": trela_tabela(k, wynik),
-        "scenariusze": scenariusze_tabela(k, wynik),
+        "scenariusze": scenariusze_tabela(k, wynik), "pasma": pasma_tabela(k, wynik), "wrazliwosc": wrazliwosc_tabela(k, wynik),
         "karta": karta_tabela(k, wynik), "bramki": bramki_tabela(katalog), "jakosc_danych": jakosc_danych(rejestr, archiwum, katalog, k.ostrzezenia),
     }
     przypisy: dict[str, int] = {}

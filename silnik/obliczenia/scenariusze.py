@@ -204,3 +204,81 @@ def oblicz(k: Kalkulator, plik: Path, wycena: dict) -> Optional[dict]:
                      kurs.waluta if jedn == Jednostka.pieniadz_na_akcje else None)
         wynik[nazwa] = f.id if f else None
     return wynik
+
+
+# --- tabela wrażliwości (specyfikacja 1.1, punkt 7) -------------------------------------------
+
+NAZWY_ZALOZEN = {"wzrost": "wzrost przychodów", "marza": "marża FCF", "roe": "ROE", "ke": "koszt kapitału",
+                 "gt": "wzrost rezydualny"}
+
+
+def _etykieta(*pary) -> str:
+    return "_".join(f"{n}_{'p' if x >= 0 else 'm'}{abs(x)}" for n, x in pary)
+
+
+def wrazliwosc(k: Kalkulator, plik: Path, wycena: dict) -> Optional[dict]:
+    """Wartość na akcję przy krokach założeń wokół scenariusza bazowego (fakty wyliczone) i założenie,
+    które przy jednym kroku najmocniej zmienia wartość. Bazowy = scenariusz „bazowy” albo najbardziej prawdopodobny."""
+    if not plik.exists() or not wycena.get("kapitalizacja") or not wycena.get("ke"):
+        return None
+    scen = wczytaj(plik)
+    baza = next((s for s in scen if s["nazwa"] == "bazowy"), max(scen, key=lambda s: s["prawdopodobienstwo"]))
+    b = baza["nazwa"]
+    if not k.jest(f"wartosc_na_akcje.{b}"):
+        return None
+    cfg = parametry()["wrazliwosc"]
+    cap = k.fakt(wycena["kapitalizacja"])
+    akcje = next(f for f in k.r.fakty() if f.pozycja == "akcje_w_obrocie" and f.id in cap.wejscia)
+    okres = Okres(typ="dzien", koniec=cap.okres.koniec)
+    ke_id, gt_id = wycena["ke"], "wzrost_rezydualny.zalozenie"
+    n = parametry()["lata_prognozy"]
+    kapitalowa = wycena.get("metoda") == "kapitalowa"
+    if kapitalowa:
+        wej = [wycena["kapital_wlasny"], f"scenariusz_roe.{b}", gt_id, ke_id, akcje.id]
+        def wartosc(d: dict):
+            def fn(kw, roe, gt, kk, a):
+                return wartosc_roe(kw, roe + d.get("roe", 0), gt + d.get("gt", 0), kk + d.get("ke", 0), a)
+            return fn
+        osie = ("roe", "ke")
+        opis = "kapital_wlasny × (roe − g) / (koszt_kapitalu − g) / akcje"
+    else:
+        S = wycena["okres_bazowy"]
+        dn = _dlug_netto(k, wycena, cap)
+        sc = list(baza.get("sciezka_przychodow", []))
+        wej = [f"przychody.{S}", f"scenariusz_wzrost_przychodow.{b}", f"scenariusz_marza_fcf.{b}", gt_id, ke_id, akcje.id] \
+            + ([dn.id] if dn else []) + sc
+        def wartosc(d: dict):
+            def fn(r, g, mz, gt, kk, a, *p):
+                return _na_akcje(r, g + d.get("wzrost", 0), n, gt + d.get("gt", 0), kk + d.get("ke", 0),
+                                 mz + d.get("marza", 0), a, p, bool(dn))
+            return fn
+        osie = ("wzrost", "marza")
+        opis = "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto)"
+    wynik: dict = {"bazowy": b, "osie": osie, "siatka1": {}, "siatka2": {}, "zalozenia": {}}
+    kroki = cfg["kroki"]
+    for i in kroki:
+        for j in kroki:
+            d = {osie[0]: i * cfg[osie[0]], osie[1]: j * cfg[osie[1]]}
+            et = _etykieta((osie[0], i), (osie[1], j))
+            f = k.wylicz(f"wrazliwosc_wartosc.{et}", "wrazliwosc_wartosc",
+                         f"{opis}; {osie[0]} {i:+d} krok(i), {osie[1]} {j:+d} krok(i)", wej, wartosc(d),
+                         Jednostka.pieniadz_na_akcje, okres, cap.waluta)
+            wynik["siatka1"][(i, j)] = f.id if f else None
+    for i in kroki:
+        for j in (-1, 0, 1):
+            d = {"ke": i * cfg["ke"], "gt": j * cfg["gt"]}
+            et = _etykieta(("ke", i), ("gt", j))
+            f = k.wylicz(f"wrazliwosc_wartosc.{et}", "wrazliwosc_wartosc",
+                         f"{opis}; koszt kapitału {i:+d} krok(i), wzrost rezydualny {j:+d} krok", wej, wartosc(d),
+                         Jednostka.pieniadz_na_akcje, okres, cap.waluta)
+            wynik["siatka2"][(i, j)] = f.id if f else None
+    baza_wart = k.fakt(f"wartosc_na_akcje.{b}").wartosc
+    for z in dict.fromkeys(osie + ("ke", "gt")):
+        krok = cfg[z]
+        f = k.wylicz(f"wrazliwosc_zalozenia.{z}", "wrazliwosc_zalozenia",
+                     f"wartość przy {NAZWY_ZALOZEN[z]} +{krok * 100:g} pp ÷ wartość scenariusza {b} − 1", wej,
+                     (lambda fz: lambda *a: fz(*a) / baza_wart - 1)(wartosc({z: krok})), U, okres)
+        wynik["zalozenia"][z] = f.id if f else None
+    znane = {z: abs(k.fakt(fid).wartosc) for z, fid in wynik["zalozenia"].items() if fid}
+    wynik["najwazniejsze"] = max(znane, key=znane.get) if znane else None
+    return wynik

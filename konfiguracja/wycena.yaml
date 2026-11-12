@@ -27,3 +27,18 @@ aktualnosc:
   eps: 0.25         # prognoza EPS w arkuszu a EPS rozwodniony TTM albo konsensus EPS
   dni: 30           # wiek danych z wklejki
   konsensus: 0.10   # konsensus z wklejki a konsensus silnika
+
+# Tabela wrażliwości (decyzja właściciela z 12.11.2026): kroki wokół scenariusza bazowego.
+wrazliwosc:
+  kroki: [-2, -1, 0, 1, 2]   # wielokrotności kroku w siatce
+  wzrost: 0.02               # wzrost przychodów: krok 2 pp
+  marza: 0.02                # marża FCF: krok 2 pp
+  roe: 0.02                  # ROE (finanse, deweloper): krok 2 pp
+  ke: 0.01                   # koszt kapitału: krok 1 pp
+  gt: 0.005                  # wzrost rezydualny: krok 0,5 pp (siatka −1, 0, +1)
+
+# Historyczne pasma wyceny (decyzja właściciela z 12.11.2026): bez przeliczania na kursy.
+pasma:
+  opoznienie_raportu_dni: 90   # dane roczne wchodzą do mnożnika dopiero po publikacji raportu
+  min_tygodni: 104
+  percentyle: [10, 25, 50, 75, 90]

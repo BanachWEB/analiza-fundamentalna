@@ -326,12 +326,77 @@ def trela_tabela(k: Kalkulator, wynik: dict) -> list[str]:
     ]
 
 
+def _liczba_tab(f: Optional[Fakt]) -> str:
+    """Wartość do komórki tabeli: kwota na akcję z walutą, reszta jak w format_."""
+    if f is None:
+        return "—"
+    if f.jednostka == Jednostka.pieniadz_na_akcje:
+        return f"{f.wartosc_bazowa():,.2f}".replace(",", " ").replace(".", ",") + ZNAK[f.status]
+    return format_(f)
+
+
+NAZWY_MNOZNIKOW = {"c_z": "C/Z", "ev_ebit": "EV/EBIT", "ev_ebitda": "EV/EBITDA", "c_wk": "C/WK", "fcf_yield": "FCF yield"}
+
+
+def pasma_tabela(k: Kalkulator, wynik: dict) -> list[str]:
+    ps = wynik.get("pasma")
+    if not ps or not ps.get("mnozniki"):
+        return ["Brak pasm wyceny: za krótka historia notowań albo brak danych rocznych."]
+    pc = sorted(p for p in next(iter(ps["mnozniki"].values())) if isinstance(p, int))
+    linie = [f"Tygodnie od {ps['od']} do {ps['do']}; dane roczne z raportów już opublikowanych. "
+             "Percentyl dzisiejszy: jaka część tygodni miała mnożnik nie wyższy niż dziś.", "",
+             "| Mnożnik | Dziś | Percentyl dzisiejszy | " + " | ".join(f"P{p}" for p in pc) + " | Tygodni |",
+             "|---|---:|---:|" + "---:|" * len(pc) + "---:|"]
+    for m, ids in ps["mnozniki"].items():
+        dzis = k.fakt(ids["dzis"]) if ids.get("dzis") else None
+        prc = k.fakt(ids["percentyl"]) if ids.get("percentyl") else None
+        linie.append(f"| {NAZWY_MNOZNIKOW[m]} | {format_(dzis)} | {format_(prc)} | "
+                     + " | ".join(format_(k.fakt(ids[p]) if ids.get(p) else None) for p in pc) + f" | {ids['tygodni']} |")
+    return linie
+
+
+def _pp(krok: float, i: int) -> str:
+    if i == 0:
+        return "bazowy"
+    return f"{i * krok * 100:+g} pp".replace("-", "−").replace(".", ",")
+
+
+def wrazliwosc_tabela(k: Kalkulator, wynik: dict) -> list[str]:
+    wr = wynik.get("wrazliwosc")
+    if not wr:
+        return ["Brak tabeli wrażliwości (brak scenariuszy)."]
+    from .scenariusze import NAZWY_ZALOZEN
+    from .wycena import parametry
+    cfg = parametry()["wrazliwosc"]
+    a, b = wr["osie"]
+    kroki = cfg["kroki"]
+    linie = [f"Wartość na akcję wokół scenariusza „{wr['bazowy']}”. Wiersze: {NAZWY_ZALOZEN[a]}, kolumny: {NAZWY_ZALOZEN[b]}.", "",
+             f"| {NAZWY_ZALOZEN[a]} \\ {NAZWY_ZALOZEN[b]} | " + " | ".join(_pp(cfg[b], j) for j in kroki) + " |",
+             "|---|" + "---:|" * len(kroki)]
+    for i in kroki:
+        linie.append(f"| {_pp(cfg[a], i)} | " + " | ".join(_liczba_tab(k.fakt(wr["siatka1"][(i, j)]) if wr["siatka1"].get((i, j)) else None)
+                                                         for j in kroki) + " |")
+    linie += ["", "| koszt kapitału \\ wzrost rezydualny | " + " | ".join(_pp(cfg["gt"], j) for j in (-1, 0, 1)) + " |",
+              "|---|---:|---:|---:|"]
+    for i in kroki:
+        linie.append(f"| {_pp(cfg['ke'], i)} | " + " | ".join(_liczba_tab(k.fakt(wr["siatka2"][(i, j)]) if wr["siatka2"].get((i, j)) else None)
+                                                           for j in (-1, 0, 1)) + " |")
+    linie += ["", "Zmiana wartości przy jednym kroku założenia w górę:"]
+    for z, fid in wr["zalozenia"].items():
+        linie.append(f"- {NAZWY_ZALOZEN[z]} ({_pp(cfg[z], 1)}): {format_(k.fakt(fid)) if fid else '—'}")
+    if wr.get("najwazniejsze"):
+        linie += ["", f"**Najważniejsze założenie wyceny: {NAZWY_ZALOZEN[wr['najwazniejsze']]}.**"]
+    return linie
+
+
 def _wycena_md(k: Kalkulator, wynik: dict) -> list[str]:
     w = wynik.get("wycena") or {}
     naglowek = "## Co jest w cenie"
     if w.get("kapitalizacja"):
         cap = k.fakt(w["kapitalizacja"])
         naglowek += f" (kurs z {cap.okres.koniec.isoformat()}, przepływy: {w.get('okres_bazowy')})"
-    return (["", naglowek, ""] + wycena_tabela(k, wynik) + ["", "## Scenariusze", ""] + scenariusze_tabela(k, wynik)
+    return (["", naglowek, ""] + wycena_tabela(k, wynik) + ["", "## Historyczne pasma wyceny", ""] + pasma_tabela(k, wynik)
+            + ["", "## Scenariusze", ""] + scenariusze_tabela(k, wynik)
+            + ["", "## Wrażliwość wyceny", ""] + wrazliwosc_tabela(k, wynik)
             + (["", "## Cena docelowa wg arkusza właściciela", ""] + trela_tabela(k, wynik) if wynik.get("trela") else [])
             + ["", "## Karta w stylu Treli (informacja, nie bramka)", ""] + karta_tabela(k, wynik))
