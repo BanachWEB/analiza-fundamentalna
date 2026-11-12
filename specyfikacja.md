@@ -1,6 +1,6 @@
 # Specyfikacja: skill „analiza-spolki” (repo `analiza-fundamentalna`)
 
-Wersja 1 · zaakceptowana 10.11.2026. Podstawa: raport „Analiza fundamentalna i wycena spółek” (9.11.2026) i twoje decyzje z 10.11.2026.
+Wersja 1.1 · 12.11.2026 (wersja 1 zaakceptowana 10.11.2026). Podstawa: raport „Analiza fundamentalna i wycena spółek” (9.11.2026) i twoje decyzje z 10–12.11.2026. Zmiany wersji 1.1: punkt 13.
 
 ## 1. Cel
 
@@ -16,7 +16,6 @@ Najważniejsza zasada architektury: **model nie wpisuje liczb.** Model szuka dan
 | Poza zakresem | inne rynki rozwinięte, Korea jako rynek, NewConnect |
 | Benchmark | USA: S&P 500; GPW: WIG |
 | Pokrycie analityczne poniżej 3 analityków | Flaga informacyjna na każdym rynku, nie stop: „Pokrycie analityczne małe, nie można na nim polegać” |
-| Instrument niedostępny w IKE w XTB | Adnotacja, nie stop |
 | Akcjonariusz z ponad 90% głosów albo ryzyko przymusowego wykupu | STOP |
 | Progi bramek z raportu (np. rozwodnienie 10% rocznie, przepływy operacyjne poniżej 70% zysku netto) | Przyjęte jako wersja 1; kalibrujemy na testach |
 | Karta punktowa w stylu Treli | Tak; wagi i progi w punkcie 9 |
@@ -24,6 +23,8 @@ Najważniejsza zasada architektury: **model nie wpisuje liczb.** Model szuka dan
 | Twoje wstępne zdanie przed raportem | Domyślnie skill o nie nie pyta |
 | Długość PDF | Bez limitu; na początku sekcja TL;DR |
 | Zasada „Tylko spółki z GPW” w `inwestowanie` | Zmienisz ją osobno; skill czyta aktualne zasady przy każdym uruchomieniu |
+| Dostępność w XTB i IKE (12.11.2026) | Skill tego nie sprawdza; XTB ma w ofercie spółki z USA i GPW, a koszty IKE sprawdzasz sam |
+| Zakres skilla (12.11.2026) | Tylko analiza fundamentalna; skład portfela, wielkość pozycji i punkty wejścia robi inny segment |
 
 ## 3. Architektura: cztery warstwy
 
@@ -108,6 +109,7 @@ Model wchodzi do gry dopiero w kroku 2: przypisuje wiersz tabeli do pozycji z ta
 3. Przy każdym tropie skill zapisuje wynik: potwierdzony dokumentem (numer dokumentu), sprzeczny z dokumentem, niepotwierdzony albo niesprawdzony. Wynik trafia do części 14 raportu.
 4. Liczby ze Scrab skill traktuje jako dobre dane wyjściowe, a liczby z InvestingPro i TipRanks jako dane pomocnicze. Żadne z nich nie zastępują danych z SEC, ESEF ani raportów spółki (krok 4 w tabeli wyżej). Liczba z materiału trafia do rejestru tylko z testem cytatu i statusem `jedno_zrodlo`, a do raportu tylko wtedy, gdy lepszego źródła brak. Rozbieżność między materiałem a silnikiem to trop do sprawdzenia, bo często ujawnia błąd danych po jednej ze stron.
 5. Oceny bez jawnej metody (fair value, oceny kondycji finansowej, teksty pisane przez AI dostawcy) nie wchodzą do raportu jako fakty. Mogą być tylko tropem.
+6. Aktualność (decyzja z 12.11.2026): silnik ostrzega, gdy materiał odbiega od danych silnika: kurs w arkuszu ceny docelowej albo we wklejce różni się od dzisiejszego kursu o więcej niż próg, EPS w arkuszu od EPS TTM albo konsensusu o więcej niż próg, a data danych we wklejce jest starsza niż próg. Progi są w `konfiguracja/wycena.yaml`. Ostrzeżenia trafiają do `obliczenia.md` i do części „Jakość danych”.
 
 ### 3.4. Weryfikacja
 
@@ -160,7 +162,7 @@ Skill pracuje w kolejności „najtańsze rozstrzygające sprawdzenia najpierw�
 
 | Etap | Co robi | STOP, gdy | Flaga poważna (praca trwa, flaga na TL;DR) |
 |---|---|---|---|
-| 0. Identyfikacja | rynek, waluta, typ instrumentu, sektor, pokrycie analityczne, dostępność w XTB | upadłość, restrukturyzacja, likwidacja; Lista Alertów; zawieszenie obrotu; brak wiarygodnych sprawozdań | pokrycie poniżej 3 analityków; instrument niedostępny w XTB (adnotacja) |
+| 0. Identyfikacja | rynek, waluta, typ instrumentu, sektor, pokrycie analityczne | upadłość, restrukturyzacja, likwidacja; Lista Alertów; zawieszenie obrotu; brak wiarygodnych sprawozdań | pokrycie poniżej 3 analityków |
 | 1. Biegły i regulator | opinia biegłego, zmiany biegłego, terminowość, korekty, sankcje KNF/SEC, NT 10-K/10-Q | opinia negatywna albo odmowa; korekta przyznająca błąd; sankcja za raporty przy tym samym zarządzie; NT z przyczyn księgowych; nieusunięta material weakness | zmiana biegłego bez wyjaśnienia; kluczowe sprawy badania dotyczące przychodów |
 | 2. Kapitał | liczba akcji z 5–10 lat, emisje, prawo poboru, zamienne, warranty, skup | seryjne rozwodnienie na szkodę mniejszości | liczba akcji rośnie o ponad 10% rocznie |
 | 3. Wypłacalność i jakość zysków | przepływy ÷ zysk netto, memoriały, DSO/DIO, F-score, M-score, Z'', zapadalność długu, kowenanty | istotna niepewność co do kontynuacji + ujemne przepływy + dług do spłaty w 12 mies. bez finansowania; ujemny kapitał własny niewyjaśniony skupem; bank z CET1 poniżej wymogu | przepływy operacyjne poniżej 70% zysku netto przez 3–5 lat; M-score powyżej −1,78; Z'' poniżej 1,10 |
@@ -189,20 +191,34 @@ Komunikat stopu (krótki PDF albo wiadomość):
 | Koszt kapitału | rentowność 10-letnich obligacji USA z dnia analizy + β × premia Damodarana | rentowność 10-letnich obligacji PL − spread niewypłacalności + β × premia dla Polski |
 | Beta (decyzja z 12.11.2026) | beta skorygowana Blume'a z regresji tygodniowej z 5 lat wobec S&P 500 | beta skorygowana Blume'a z regresji tygodniowej z 5 lat wobec WIG |
 | Flagi specyficzne | NT, Item 4.01/4.02, material weakness, listy komentarzy SEC, SPAC, VIE, raporty krótkich sprzedawców | Lista Alertów, oznaczenie szczególne, KNF, emisje bez prawa poboru, przymusowy wykup, Skarb Państwa |
-| IKE w XTB | akcja .US, W-8BEN, 15% podatku u źródła, przewalutowanie 0,5% | akcja .PL, bez przewalutowania |
 | Benchmark | S&P 500 | WIG |
 
 ## 6. Sektory z osobnymi miarami
 
 Banki, ubezpieczyciele, brokerzy, windykacja, deweloperzy, studia gier, handel detaliczny, SaaS/IT, energetyka, surowce. Dla każdego sektora plik konfiguracji określa miary zamiast marży i długu netto (np. bank: NIM, koszt ryzyka, C/I, CET1, P/BV wobec ROE).
 
+Typ spółki w `analiza.json` (pole `sektor`) wybiera metodę wyceny w silniku (decyzja z 12.11.2026):
+
+| Typ | Kiedy | Wycena w silniku |
+|---|---|---|
+| `ogolny` | pozostałe spółki | wycena odwrotna i scenariusze z FCF TTM |
+| `cykliczny` | surowce, chemia, stal, półprzewodniki, przewoźnicy i inne spółki z wynikiem zależnym od cyklu | jak `ogolny`, a obok wariant z FCF znormalizowanym (średnia marża FCF z pełnego cyklu × przychody TTM); karta Treli bierze wariant znormalizowany |
+| `finanse` | bank, ubezpieczyciel, broker, windykacja | uzasadnione C/WK = (ROE − g) ÷ (koszt kapitału − g), ROE implikowane przez kurs, scenariusze opisane przez ROE |
+| `deweloper` | deweloper mieszkaniowy i komercyjny | jak `finanse`, a zadłużenie jako dług netto ÷ kapitał własny |
+
+Silnik ostrzega, gdy spółka oznaczona jako `ogolny` ma zmienność marży FCF i spadki przychodów typowe dla spółki cyklicznej.
+
 ## 7. „Co jest w cenie” i prawdopodobieństwa
 
 - Wycena odwrotna w trzech wariantach: jaki wzrost przychodów, jaka marża operacyjna i jaki okres przewagi uzasadniają dzisiejszą cenę.
 - Trzy liczby obok siebie: co zakłada cena, co zakłada konsensus (gdy pokrycie wynosi co najmniej 3 analityków) i scenariusz bazowy skilla.
 - Scenariusze byka, bazowy i niedźwiedzia z prawdopodobieństwami, które sumują się do 100%; wartość oczekiwana i stosunek zysku do straty.
-- Prawdopodobieństwo tezy: stopa bazowa jako punkt wyjścia, korekta o dowody, rozbicie na warunki konieczne, pre-mortem, krok 5 pp, przedział 15–85%.
-- Skill zapisuje prawdopodobieństwo z datą rozstrzygnięcia, żeby można było później liczyć Brier score.
+- Teza bez prawdopodobieństwa (decyzja z 12.11.2026): skill wypisuje 3–5 warunków koniecznych tezy, a przy każdym status: potwierdzony dokumentem (numer dokumentu), sprzeczny z dokumentem albo do sprawdzenia (z miejscem do sprawdzenia). Ocena prawdopodobieństwa tezy należy do twojej analizy miękkiej.
+- Skill zapisuje prawdopodobieństwa scenariuszy z datą rozstrzygnięcia, żeby można było później liczyć Brier score.
+- Historyczne pasma wyceny: percentyle C/Z, EV/EBIT, EV/EBITDA, C/WK i FCF yield z 5–10 lat obok dzisiejszych mnożników. Skill nie przelicza pasm na kursy, bo punkty wejścia ustala inny segment.
+- Tabela wrażliwości: wartość na akcję przy krokach wzrostu i marży FCF (dla `finanse` i `deweloper`: ROE) wokół scenariusza bazowego oraz przy krokach kosztu kapitału i wzrostu rezydualnego. Silnik wskazuje założenie, które najmocniej zmienia wartość.
+- Profil ryzyka kursu wobec benchmarku (S&P 500 albo WIG), z 5 lat notowań: beta skorygowana Blume'a, beta sektorowa Damodarana przeliczona na zadłużenie spółki (kontrola), zmienność roczna, maksymalne obsunięcie kursu, czas powrotu do szczytu i korelacja. Skill nie porównuje spółki z portfelem.
+- Prawdopodobieństwo upadłości w ciągu roku z modelu Ohlsona raport podaje jedną liczbą w procentach, bez wartości O-score i bez składników.
 
 ### 7.1. Cena docelowa wg arkusza właściciela
 
@@ -217,9 +233,9 @@ Właściciel liczy cenę docelową w swoim arkuszu „Cena-docelowa.xlsx” (met
 
 ## 8. Strona TL;DR i układ PDF
 
-**TL;DR (strona 1):** jedno zdanie o spółce; werdykt etapu bramek (przeszła / flagi poważne); trzy najważniejsze flagi; przewaga konkurencyjna (brak / wąska / szeroka, trend); co jest w cenie w jednym zdaniu; teza w 3 zdaniach z prawdopodobieństwem; tabela scenariuszy; karta Treli; „wg twoich zasad”; pokrycie analityczne; data danych.
+**TL;DR (strona 1):** jedno zdanie o spółce; werdykt etapu bramek (przeszła / flagi poważne); trzy najważniejsze flagi; przewaga konkurencyjna (brak / wąska / szeroka, trend); co jest w cenie w jednym zdaniu; teza w 3 zdaniach z warunkami koniecznymi; tabela scenariuszy; karta Treli; „wg twoich zasad”; pokrycie analityczne; data danych.
 
-**Dalsze części:** 1. Jak działa firma · 2. Jak zarabia · 3. Najważniejsze fakty (akcjonariat, zarząd, płynność, kalendarz) · 4. Branża, konkurencja, przewaga · 5. Zarząd i alokacja kapitału · 6. Sprawozdania i wykresy · 7. Jakość zysków i flagi · 8. Co jest w cenie · 9. Teza, antytezy z progami, pre-mortem · 10. Wiadomości i scenariusze, byki mówią / niedźwiedzie mówią · 11. Karta Treli · 12. Dostęp przez IKE i nakładanie się z posiadanymi ETF-ami · 13. Projekt karty w formacie `spolki/<TICKER>.md` · 14. Jakość danych · Aneksy i słowniczek.
+**Dalsze części:** 1. Jak działa firma · 2. Jak zarabia · 3. Najważniejsze fakty (akcjonariat, zarząd, płynność, kalendarz) · 4. Branża, konkurencja (tabela 4–6 konkurentów z danymi z SEC albo Biznesradaru), przewaga · 5. Zarząd i alokacja kapitału · 6. Sprawozdania i wykresy · 7. Jakość zysków i flagi · 8. Co jest w cenie · 9. Teza, antytezy z progami, pre-mortem · 10. Wiadomości i scenariusze, byki mówią / niedźwiedzie mówią · 11. Karta Treli · 12. Do dalszej analizy: otwarte pytania ze źródłem do sprawdzenia, najważniejsze założenie wyceny, kalendarz zdarzeń, progi zmiany tezy · 13. Projekt karty w formacie `spolki/<TICKER>.md` · 14. Jakość danych · Aneksy i słowniczek.
 
 ## 9. Karta punktowa w stylu Treli
 
@@ -236,6 +252,7 @@ Każda miara dostaje 0–10 punktów na liniowej skali między dwoma progami. Wy
 - Przy pokryciu poniżej 3 analityków filar „Analitycy” dostaje „brak danych”, a jego waga przechodzi proporcjonalnie na pozostałe filary. Karta pokazuje adnotację „karta z czterech filarów”.
 - Progi skal są osobne dla USA i GPW (plik `konfiguracja/karta-treli.yaml`).
 - Wagi i progi to moja propozycja, a nie publikowana metoda Treli. Karta jest informacją, a nie bramką.
+- Gdy we wklejce jest wynik Scrab, silnik porównuje go z wynikiem karty po sprowadzeniu obu do skali 0–100 i oznacza rozbieżność powyżej progu z `konfiguracja/karta-treli.yaml`. Raport komentuje kartę tylko przy takim oznaczeniu (decyzja z 12.11.2026).
 
 ## 10. Struktura repozytorium
 
@@ -277,6 +294,8 @@ analiza-fundamentalna/
 | 5 | Bramki stopu | spółka z Listy Alertów i spółka z „going concern” zatrzymują się na właściwym etapie |
 | 6 | Raport: szablon z miejscami na liczby, lint, PDF z polskimi znakami | lint bez błędów, PDF czytelny |
 | 7 | SKILL.md i pliki referencyjne | pełne przebiegi na 6 spółkach testowych |
+| 8 | Podział pracy między modele (punkt 3.7) | pierwszy przebieg na nowej spółce |
+| 9 | Wersja 1.1 (punkt 13): wycena według typu spółki, profil ryzyka, beta sektorowa, pasma wyceny, wrażliwość, konkurenci, dywidendy, aktualność materiałów, nowy układ raportu | testy jednostkowe; parsery stron Damodarana i moduł konkurentów sprawdzi pierwszy przebieg z dostępem do sieci |
 
 Spółki testowe (propozycja): duża spółka z USA z głębokim pokryciem (np. MSFT), ADR (np. SK Hynix, SKHY), bank z WIG20, średnia spółka przemysłowa z GPW, spółka z Listy Alertów, spółka z USA z zastrzeżeniem o kontynuacji działalności. Przy każdej oceniasz, czy stop był uzasadniony i czy raport odpowiada na twoje punkty.
 
@@ -284,3 +303,22 @@ Spółki testowe (propozycja): duża spółka z USA z głębokim pokryciem (np. 
 
 - Zapis na gałęzi `main` (commit i push, przed zapisem `git pull`).
 - Całe analizy trafiają do repozytorium: `analizy/<TICKER>/<RRRR-MM-DD>/` z plikami `dokumenty.json`, `fakty.json`, `raport.md` i `raport.pdf` (albo `stop.md`). Pliki źródłowe z archiwum zostają poza repozytorium.
+
+## 13. Zmiany w wersji 1.1 (decyzje z 12.11.2026)
+
+Zasada: wynik skilla to punkt wyjścia do twojej analizy miękkiej. Skład portfela, wielkość pozycji i punkty wejścia robi inny segment, więc skill ich nie liczy.
+
+| Nr | Zmiana | Gdzie |
+|---|---|---|
+| 1 | Warunki konieczne tezy zamiast prawdopodobieństwa tezy; prawdopodobieństwa scenariuszy zostają | punkt 7, 8 |
+| 2 | Wycena według typu spółki: `cykliczny` (FCF znormalizowany), `finanse` i `deweloper` (C/WK wobec ROE) | punkt 6 |
+| 3 | Ostrzeżenia o nieaktualnym materiale od właściciela: kurs i EPS w arkuszu ceny docelowej, wiek wklejki, konsensus z wklejki wobec konsensusu silnika | punkt 3.3, 7.1 |
+| 4 | Ohlson: w raporcie tylko prawdopodobieństwo upadłości w ciągu roku w procentach | punkt 7 |
+| 5 | Bez sprawdzania dostępności w XTB i bez części o IKE | punkt 2, 4, 5, 8 |
+| 6 | Komentarz do karty Treli tylko przy dużej rozbieżności z wynikiem Scrab | punkt 9 |
+| 7 | Nowa część 12 „Do dalszej analizy” i tabela wrażliwości | punkt 7, 8 |
+| 8 | Historyczne pasma wyceny bez przeliczania na kursy | punkt 7 |
+| 9 | Profil ryzyka kursu wobec benchmarku i beta sektorowa Damodarana jako kontrola | punkt 7 |
+| 10 | Dywidendy: stopa dywidendy, wypłata z zysku netto i z FCF, stopa zwrotu dla akcjonariuszy | część 5 raportu |
+| 11 | Tabela konkurentów w części 4 | punkt 8 |
+| 12 | Beta skorygowana Blume'a w koszcie kapitału (zbudowana wcześniej tego dnia) | punkt 5 |
