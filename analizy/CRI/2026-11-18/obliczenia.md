@@ -84,7 +84,17 @@ Tygodniowe notowania od 2021-11-19 do 2026-11-17, wobec benchmarku rynku spółk
 
 ## Konkurenci
 
-Brak tabeli konkurentów (brak pliku konkurenci.json albo rejestrów konkurentów).
+| Spółka | Rynek | Marża brutto | Marża operacyjna | Wzrost przychodów r/r | ROIC | C/Z | EV/EBIT |
+|---|---|---:|---:|---:|---:|---:|---:|
+| **CRI** | GPW | — | 9,6%‼ | 659,4%‼ | 45,7%¹ | 3,53¹ | 142,41‼ |
+| RKLB (Rocket Lab USA) | USA | — | — | — | — | — | — |
+| PL (Planet Labs) | USA | — | — | — | — | — | — |
+| RDW (Redwire) | USA | — | — | — | — | — | — |
+| SATL (Satellogic) | USA | — | — | — | — | — | — |
+| Mediana konkurentów | | — | — | — | — | — | — |
+
+Marże, wzrost i ROIC z ostatniego okresu TTM albo roku obrotowego każdej spółki (FY2025, TTM2026-06-30); mnożniki z ostatniego kursu. Mediana liczona przez silnik z wierszy konkurentów. Dane konkurentów: osobne rejestry w katalogu konkurenci/, z jednego źródła na spółkę.
+Konkurenci z innego rynku: mnożniki z USA i z GPW nie są wprost porównywalne, bo koszt kapitału w Polsce jest wyższy niż w USA.
 
 ## Scenariusze
 

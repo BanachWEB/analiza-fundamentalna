@@ -1188,6 +1188,609 @@
     "strona": 40
    },
    "cytat": "W lipcu 2026 roku pozyskano środki z emisji akcji serii M w wysokości 481 mln PLN"
+  },
+  {
+   "id": "udzial_klienta_1.FY2025",
+   "pozycja": "udzial_klienta_1",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 0.7157,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Kontrahent 1 110 258 71,57%"
+  },
+  {
+   "id": "przychody_klienta_1.FY2025",
+   "pozycja": "przychody_klienta_1",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 110258,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Kontrahent 1 110 258 71,57%",
+   "waluta": "PLN"
+  },
+  {
+   "id": "udzial_klienta_2.FY2025",
+   "pozycja": "udzial_klienta_2",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 0.2106,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Kontrahent 2 32 448 21,06%"
+  },
+  {
+   "id": "przychody_klienta_2.FY2025",
+   "pozycja": "przychody_klienta_2",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 32448,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Kontrahent 2 32 448 21,06%",
+   "waluta": "PLN"
+  },
+  {
+   "id": "udzial_segmentu_kosmicznego.FY2025",
+   "pozycja": "udzial_segmentu_kosmicznego",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 0.9117,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Segment projektów kosmicznych 140 450 10 571 91,17% 41,13%"
+  },
+  {
+   "id": "przychody_segmentu_kosmicznego.FY2025",
+   "pozycja": "przychody_segmentu_kosmicznego",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 140450,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Segment projektów kosmicznych 140 450 10 571 91,17% 41,13%",
+   "waluta": "PLN"
+  },
+  {
+   "id": "przychody_projekty_esa.FY2025",
+   "pozycja": "przychody_projekty_esa",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 30085,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Projekty realizowane we współpracy i/lub na zlecenie ESA 30 085 6 420 19,53% 24,98%",
+   "waluta": "PLN"
+  },
+  {
+   "id": "udzial_segmentu_dane_uav.FY2025",
+   "pozycja": "udzial_segmentu_dane_uav",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 0.0071,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Segment danych satelitarnych i technologii UAV 1 089 71 0,71% 0,28%"
+  },
+  {
+   "id": "udzial_segmentu_elektroniki.FY2025",
+   "pozycja": "udzial_segmentu_elektroniki",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 0.0154,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Produkcja zaawansowanej elektroniki 2 371 5 187 1,54% 20,18%"
+  },
+  {
+   "id": "udzial_segmentu_kwantowego_zaniechany.FY2025",
+   "pozycja": "udzial_segmentu_kwantowego_zaniechany",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 0.0658,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Segment systemów kwantowych* 10 141 9 872 6,58% 38,41%"
+  },
+  {
+   "id": "udzial_przychodow_zagranicznych.FY2025",
+   "pozycja": "udzial_przychodow_zagranicznych",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 0.2716,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Przychody zagraniczne 41 833 17 491 27,16% 68,05%"
+  },
+  {
+   "id": "zatrudnienie.2025-12-31",
+   "pozycja": "zatrudnienie",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 297,
+   "skala": "jedn",
+   "jednostka": "liczba",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Powyższa tabela obejmuje 297 osób zatrudnionych na umowę o pracę na koniec roku obrotowego 2025."
+  },
+  {
+   "id": "zatrudnienie_br_satelity.2025-12-31",
+   "pozycja": "zatrudnienie_br_satelity",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 144,
+   "skala": "jedn",
+   "jednostka": "liczba",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "B+R SAT 144 73"
+  },
+  {
+   "id": "uprawnienia_programu_motywacyjnego_przyznane.FY2025",
+   "pozycja": "uprawnienia_programu_motywacyjnego_przyznane",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 80661,
+   "skala": "jedn",
+   "jednostka": "liczba",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Łączna liczba uprawnień na 31.12.2025 w ramach programu motywacyjnego przyznanych pracownikom (wraz z osobami zarządzającymi) w 2025 roku wyniosła 80 661"
+  },
+  {
+   "id": "uprawnienia_programu_motywacyjnego_prezes.FY2025",
+   "pozycja": "uprawnienia_programu_motywacyjnego_prezes",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 4805,
+   "skala": "jedn",
+   "jednostka": "liczba",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Panu Grzegorzowi Bronie, Prezesowi Zarządu Spółki, liczba przyznanych uprawnień 4 805"
+  },
+  {
+   "id": "wynagrodzenie_prezesa_umowa_o_prace.FY2025",
+   "pozycja": "wynagrodzenie_prezesa_umowa_o_prace",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 619970.98,
+   "skala": "jedn",
+   "jednostka": "pieniadz",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Grzegorz Brona, Prezes Zarządu 619 970,98 223 997,50",
+   "waluta": "PLN"
+  },
+  {
+   "id": "wynagrodzenie_prezesa_zmienne.FY2025",
+   "pozycja": "wynagrodzenie_prezesa_zmienne",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 223997.5,
+   "skala": "jedn",
+   "jednostka": "pieniadz",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Grzegorz Brona, Prezes Zarządu 619 970,98 223 997,50",
+   "waluta": "PLN"
+  },
+  {
+   "id": "wartosc_kontraktu_mikroglob_netto.2025-12-31",
+   "pozycja": "wartosc_kontraktu_mikroglob_netto",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 451.0,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "Mikroglob o wartości 451,0 mln zł netto",
+   "waluta": "PLN"
+  },
+  {
+   "id": "wartosc_kontraktu_camila.2025-12-31",
+   "pozycja": "wartosc_kontraktu_camila",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 59,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "CAMILA o wartości 59 mln EUR",
+   "waluta": "EUR"
+  },
+  {
+   "id": "skladka_polski_esa_programy_opcjonalne_2026_2028.2025-12-31",
+   "pozycja": "skladka_polski_esa_programy_opcjonalne_2026_2028",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 550,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "dokument": "doc-133",
+   "miejsce": {},
+   "cytat": "osiągając poziom 550 mln EUR, zaplanowanych na programy opcjonalne w latach 2026–2028",
+   "waluta": "EUR"
+  },
+  {
+   "id": "backlog_zamowien.2025-12-31",
+   "pozycja": "backlog_zamowien",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 596168,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "zobowiązań do wykonania świadczeń wynikających z długoterminowego charakteru umów 596 168 474 268",
+   "waluta": "PLN"
+  },
+  {
+   "id": "backlog_do_rozpoznania_2026.2025-12-31",
+   "pozycja": "backlog_do_rozpoznania_2026",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 254698,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "przychodach 2026 roku 254 698",
+   "waluta": "PLN"
+  },
+  {
+   "id": "backlog_do_rozpoznania_2027.2025-12-31",
+   "pozycja": "backlog_do_rozpoznania_2027",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 226044,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "przychodach w 2027 roku 226 044",
+   "waluta": "PLN"
+  },
+  {
+   "id": "backlog_do_rozpoznania_2028_i_pozniej.2025-12-31",
+   "pozycja": "backlog_do_rozpoznania_2028_i_pozniej",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 115425,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "przychodach w 2028 roku i kolejnych latach 115 425",
+   "waluta": "PLN"
+  },
+  {
+   "id": "backlog_zamowien_bez_kwantowego.2025-12-31",
+   "pozycja": "backlog_zamowien_bez_kwantowego",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 587,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "dokument": "doc-137",
+   "miejsce": {},
+   "cytat": "Portfel zamówień (backlog) wynosi 587 mln zł",
+   "waluta": "PLN"
+  },
+  {
+   "id": "pipeline_sprzedazowy.2026-05-07",
+   "pozycja": "pipeline_sprzedazowy",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-05-07"
+   },
+   "wartosc": 8.3,
+   "skala": "mld",
+   "jednostka": "pieniadz",
+   "dokument": "doc-137",
+   "miejsce": {},
+   "cytat": "osiąga niemal 8,3 mld zł",
+   "waluta": "PLN"
+  },
+  {
+   "id": "moce_produkcyjne_satelitow_rocznie.2026-05-07",
+   "pozycja": "moce_produkcyjne_satelitow_rocznie",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-05-07"
+   },
+   "wartosc": 10,
+   "skala": "jedn",
+   "jednostka": "liczba",
+   "dokument": "doc-137",
+   "miejsce": {},
+   "cytat": "z obecnych 10 satelitów rocznie"
+  },
+  {
+   "id": "cel_moce_produkcyjne_satelitow_rocznie.2029-12-31",
+   "pozycja": "cel_moce_produkcyjne_satelitow_rocznie",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2029-12-31"
+   },
+   "wartosc": 40,
+   "skala": "jedn",
+   "jednostka": "liczba",
+   "dokument": "doc-137",
+   "miejsce": {},
+   "cytat": "do co najmniej 40 szt. rocznie"
+  },
+  {
+   "id": "integracja_pionowa_podsystemow_dolna_granica.2026-05-07",
+   "pozycja": "integracja_pionowa_podsystemow_dolna_granica",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-05-07"
+   },
+   "wartosc": 0.7,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-137",
+   "miejsce": {},
+   "cytat": "ok. 70-80% podsystemów powstaje wewnętrznie"
+  },
+  {
+   "id": "marza_ebitda_segmentu_kosmicznego.FY2025",
+   "pozycja": "marza_ebitda_segmentu_kosmicznego",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 0.376,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-320",
+   "miejsce": {
+    "strona": 7
+   },
+   "cytat": "Marża EBITDA 37,6%"
+  },
+  {
+   "id": "udzial_segmentu_kosmicznego.FY2026H1",
+   "pozycja": "udzial_segmentu_kosmicznego",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-01",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 0.9177,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 23
+   },
+   "cytat": "Segment projektów kosmicznych 82 274 61 265 91,77% 90,17%"
+  },
+  {
+   "id": "przychody_klienta_1.FY2026H1",
+   "pozycja": "przychody_klienta_1",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-01",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 55584,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 23
+   },
+   "cytat": "Przychody od Klienta 1 55 584 57 546",
+   "waluta": "PLN"
+  },
+  {
+   "id": "przychody_klienta_2.FY2026H1",
+   "pozycja": "przychody_klienta_2",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-01",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 27063,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 23
+   },
+   "cytat": "Przychody od Klienta 2 27 063 4 878",
+   "waluta": "PLN"
+  },
+  {
+   "id": "udzial_przychodow_zagranicznych.FY2026H1",
+   "pozycja": "udzial_przychodow_zagranicznych",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-01",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 0.3718,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 24
+   },
+   "cytat": "Sprzedaż eksportowa 33 331 9 377 37,18% 13,80%"
+  },
+  {
+   "id": "udzial_akcjonariusza_allianz.2026-09-28",
+   "pozycja": "udzial_akcjonariusza_allianz",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-09-28"
+   },
+   "wartosc": 0.081161,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 44
+   },
+   "cytat": "PTE Allianz Polska S.A. 284 416 8,1161% 284 416 8,1161%"
+  },
+  {
+   "id": "udzial_akcjonariusza_arp.2026-09-28",
+   "pozycja": "udzial_akcjonariusza_arp",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-09-28"
+   },
+   "wartosc": 0.077384,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 44
+   },
+   "cytat": "Agencja Rozwoju Przemysłu S.A. 271 180 7,7384% 271 180 7,7384%"
+  },
+  {
+   "id": "udzial_akcjonariusza_tfi_pzu.2026-09-28",
+   "pozycja": "udzial_akcjonariusza_tfi_pzu",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-09-28"
+   },
+   "wartosc": 0.075064,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 44
+   },
+   "cytat": "TFI PZU S.A. 263 049 7,5064% 263 049 7,5064%"
+  },
+  {
+   "id": "udzial_akcjonariusza_p_kasprowicz.2026-09-28",
+   "pozycja": "udzial_akcjonariusza_p_kasprowicz",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-09-28"
+   },
+   "wartosc": 0.060362,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 44
+   },
+   "cytat": "Paweł Kasprowicz 211 528 6,0362% 211 528 6,0362%"
+  },
+  {
+   "id": "udzial_akcjonariusza_norges.2026-09-28",
+   "pozycja": "udzial_akcjonariusza_norges",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-09-28"
+   },
+   "wartosc": 0.059135,
+   "skala": "jedn",
+   "jednostka": "ulamek",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 44
+   },
+   "cytat": "Norges Bank 207 232 5,9135% 207 232 5,9135%"
   }
  ]
 }

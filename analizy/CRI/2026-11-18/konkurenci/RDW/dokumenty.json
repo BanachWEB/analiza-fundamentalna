@@ -1,0 +1,26 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "RDW",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001819810.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-18T15:13:23.979075Z",
+      "sha256": "db3ba26ac3ccd0c51b800211f9e5ea8a16a7adadea02e7b9aeb7e9cc393ec9f5",
+      "plik": "db3ba26ac3ccd0c5.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0001819810.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-18T15:13:24.456125Z",
+      "sha256": "89cbeb7cab126e48911fb8a81d944850f92e654a9f77f0ac6a887b6840ed0607",
+      "plik": "89cbeb7cab126e48.json"
+    }
+  ]
+}

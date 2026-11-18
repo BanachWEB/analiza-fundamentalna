@@ -1,0 +1,26 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "RKLB",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001819994.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-18T15:12:19.207093Z",
+      "sha256": "9f4f049ff10cc9a3f6cc00c91f908698a130e39bb6b8cb829418cf6fe34e69eb",
+      "plik": "9f4f049ff10cc9a3.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0001819994.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-18T15:12:19.629811Z",
+      "sha256": "486546aa9f5fba3f4dd655c991e4287fc4aa13b4c043df0078fd52098c29effb",
+      "plik": "486546aa9f5fba3f.json"
+    }
+  ]
+}

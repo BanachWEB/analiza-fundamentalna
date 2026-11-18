@@ -1,0 +1,26 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "SATL",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001874315.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-18T15:13:56.899994Z",
+      "sha256": "e2eb87aa36db718169fb6b562ac81d2e190b17554a568ff35510b4ffdbaa26a3",
+      "plik": "e2eb87aa36db7181.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0001874315.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-18T15:13:57.313019Z",
+      "sha256": "6af50e5cb2826244a1a7cbd11fa85083d95aaea9e57931bdb7917334d7359ec9",
+      "plik": "6af50e5cb2826244.json"
+    }
+  ]
+}
