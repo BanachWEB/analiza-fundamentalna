@@ -1,0 +1,78 @@
+{
+ "dowody": [
+  {
+   "bramka": "B1.opinia_bieglego",
+   "poziom": "ok",
+   "dokument": "doc-134",
+   "opis": "UHY ECA Audyt wydała opinię bez zastrzeżeń o SF za 2025; brak paragrafu o istotnej niepewności kontynuacji i brak objaśnień uzupełniających poza kluczową sprawą (utrata wartości prac rozwojowych). Przegląd H1 2026 (doc-135) bez zastrzeżeń.",
+   "cytat": "Naszym zdaniem, załączone sprawozdanie"
+  },
+  {
+   "bramka": "B1.nt_ksiegowe",
+   "poziom": "ok",
+   "dokument": "doc-134",
+   "opis": "Brak w dokumentach informacji o opóźnieniu raportu z przyczyn księgowych; sprawozdanie dodatkowe dla komitetu audytu wydano 15.04.2026.",
+   "cytat": "Niniejsza opinia jest spójna ze sprawozdaniem dodatkowym dla Komitetu Audytu"
+  },
+  {
+   "bramka": "B1.slabosc_kontroli",
+   "poziom": "ok",
+   "dokument": "doc-135",
+   "opis": "Biegły nie stwierdza w przeglądzie H1 2026 nieprawidłowości; w badaniu 2025 brak wzmianki o istotnej słabości kontroli.",
+   "cytat": "nie zwróciło naszej uwagi nic, co"
+  },
+  {
+   "bramka": "B1.sankcja_regulatora",
+   "poziom": "ok",
+   "dokument": "doc-003",
+   "strona": 40,
+   "opis": "Raport H1 2026 i sprawozdanie zarządu za 2025 nie opisują postępowań ani sankcji KNF ani innych organów.",
+   "cytat": "Do dnia sporządzenia niniejszego sprawozdania nie toczyły"
+  },
+  {
+   "bramka": "B5.decyzja_organu",
+   "poziom": "ok",
+   "dokument": "doc-133",
+   "opis": "W 2025 r. nie toczyły się postępowania przed sądem, arbitrażem ani organem administracji; kar umownych z kontraktów (ESA, Agencja Uzbrojenia) dokumenty nie opisują.",
+   "cytat": "W  2025  roku  nie  toczyły  się  żadne  postępowania  przed  sądem"
+  },
+  {
+   "bramka": "B3.kontynuacja",
+   "poziom": "ok",
+   "dokument": "doc-003",
+   "strona": 39,
+   "opis": "Brak istotnej niepewności kontynuacji w opinii biegłego; spółka pozyskała w lipcu 2026 481 mln PLN z emisji serii M.",
+   "cytat": "Spółka w lipcu 2026 roku pozyskała środki"
+  },
+  {
+   "bramka": "B4.akcjonariusz_90",
+   "poziom": "ok",
+   "dokument": "doc-003",
+   "strona": 44,
+   "opis": "Największy akcjonariusz (PTE Allianz Polska) ma 8,1161% głosów po emisji serii M (9,96% przed); jedna akcja, jeden głos (3 504 347 głosów), brak akcji uprzywilejowanych i porozumień w dokumentach.",
+   "cytat": "PTE Allianz Polska S.A. 284 416 8,1161%"
+  },
+  {
+   "bramka": "B4.podmioty_powiazane",
+   "poziom": "ok",
+   "dokument": "doc-003",
+   "strona": 38,
+   "opis": "Transakcje drobne: umowa o pracę głównej księgowej (żona członka zarządu), podwykonawstwo Creotech Geo (448 399 EUR), wynajem biura; po podziale brak istotnych transakcji z Creotech Quantum; 'na warunkach innych niż rynkowe: nie wystąpiły'.",
+   "cytat": "Natalia Grzesiak-Misiura jest bliskim"
+  },
+  {
+   "bramka": "B4.insiderzy",
+   "poziom": "flaga",
+   "dokument": "doc-133",
+   "opis": "Prezes Grzegorz Brona zbył 2.02.2026 pakiet 20 000 akcji (ok. 11% jego udziału) na rynku regulowanym; dokumenty nie mówią, czy w ramach planu. Brak innych sprzedaży w 12 mies.; wcześniejsza sprzedaż 30 000 akcji w VI 2024 jest poza oknem. Skala nie wskazuje na STOP.",
+   "cytat": "Brona w dniu 2 lutego 2026 r. dokonał transakcji pakietowej na rynku regulowanym skutkującej zbyciem"
+  },
+  {
+   "bramka": "B2.rozwodnienie_szkodliwe",
+   "poziom": "flaga",
+   "dokument": "doc-137",
+   "opis": "Dwie emisje w 17 mies.: seria K (475 000 akcji, I kw. 2025, 76 mln PLN) i seria M (650 000 akcji, VII 2026, 481 mln PLN, bez prawa poboru), razem ok. +47% liczby akcji (2 379 347 do 3 504 347). Emisja M skierowana do wybranych inwestorów z prawem pierwszeństwa dla akcjonariuszy >0,5% i przy dużych środkach, więc to nie jest szkodliwe seryjne rozwodnienie. Program motywacyjny: po 4 805 uprawnień dla każdego z 4 członków zarządu, warunek (Mikroglob) niespełniony. Flaga: obserwuj kolejne emisje.",
+   "cytat": "Planowana emisja akcji serii M jest przeprowadzona z wyłączeniem prawa poboru dotychczasowych akcjonariuszy Spółki w całości."
+  }
+ ]
+}
