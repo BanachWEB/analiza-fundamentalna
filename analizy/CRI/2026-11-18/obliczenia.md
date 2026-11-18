@@ -45,7 +45,7 @@ Plik wygenerował silnik (2026-11-18). Kwoty w mln PLN. ¹ = co najmniej jedno w
 
 | Miara | Wartość | Uwagi |
 |---|---:|---|
-| Kurs | 700,00 PLN |  |
+| Kurs | 700,00 PLN¹ |  |
 | Kapitalizacja | 2 453 mln PLN¹ |  |
 | EV | 2 338 mln PLN¹ |  |
 | Beta | 0,79¹ | Blume; z regresji 0,69¹, 261 tyg. od 2021-11-19, błąd std. 0,18, R² 0,06 |

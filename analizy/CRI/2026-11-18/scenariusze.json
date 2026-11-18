@@ -1,0 +1,8 @@
+{"scenariusze": [
+  {"nazwa": "byk", "prawdopodobienstwo": 0.2, "wzrost_przychodow": 0.33, "marza_fcf": 0.15,
+   "uzasadnienie": "Okolice 90. percentyla stopy bazowej: dziesięcioletni wzrost przychodów powyżej 30% rocznie utrzymuje bardzo mała część spółek, nawet przy małej bazie. Warunki: spółka zwiększa moce produkcyjne z ok. 10 do ponad 40 satelitów rocznie (doc-137), wchodzi w minisatelity i zdobywa kontrakty w programach EOGS i IRIS² jako główny wykonawca; marża FCF wraca do poziomu z FY2025 dzięki dźwigni operacyjnej."},
+  {"nazwa": "bazowy", "prawdopodobienstwo": 0.45, "wzrost_przychodow": 0.2, "marza_fcf": 0.1,
+   "uzasadnienie": "Okolice 70.–75. percentyla stopy bazowej, bo spółka ma mały punkt startu, portfel zamówień kilka razy większy od rocznych przychodów (doc-137) i finansowanie z emisji serii M. Zakładam, że spółka realizuje część strategii, a marża FCF jest niższa niż w FY2025, bo spółka zwiększa nakłady na moce produkcyjne i nowe platformy."},
+  {"nazwa": "niedzwiedz", "prawdopodobienstwo": 0.35, "wzrost_przychodow": 0.07, "marza_fcf": 0.05,
+   "uzasadnienie": "Okolice mediany stopy bazowej dla wzrostu przychodów małych spółek przemysłowych, ze spadkiem marży FCF. Przychody spółki zależą od kilku dużych kontraktów publicznych (ESA, Komisja Europejska, zamówienia obronne); opóźnienie programów konstelacyjnych albo przegrana w przetargach zatrzymuje wzrost, a koszty stałe po rozbudowie mocy obniżają marżę. Wysokie prawdopodobieństwo odzwierciedla zmienność przychodów spółki w latach 2021–2024."}
+]}

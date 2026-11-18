@@ -1153,6 +1153,41 @@
    "dokument": "doc-002",
    "miejsce": {},
    "cytat": "Liczba akcji (w szt.) 2 379 347 2 379 347"
+  },
+  {
+   "id": "wynik_na_dystrybucji_aktywow.FY2026H1",
+   "pozycja": "wynik_na_dystrybucji_aktywow",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-01",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 683127,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "waluta": "PLN",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 29
+   },
+   "cytat": "Wynik na rozliczeniu dystrybucji aktywów niepieniężnych 683 127"
+  },
+  {
+   "id": "wplywy_z_emisji_serii_m.2026-07-31",
+   "pozycja": "wplywy_z_emisji_serii_m",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-07-31"
+   },
+   "wartosc": 481,
+   "skala": "mln",
+   "jednostka": "pieniadz",
+   "waluta": "PLN",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 40
+   },
+   "cytat": "W lipcu 2026 roku pozyskano środki z emisji akcji serii M w wysokości 481 mln PLN"
   }
  ]
 }
