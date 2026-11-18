@@ -1,0 +1,1158 @@
+{
+ "fakty": [
+  {
+   "id": "przychody.FY2026H1",
+   "pozycja": "przychody",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-01",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 86608,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 7
+   },
+   "cytat": "Przychody ze sprzedaży 86 608 66 265 68 644 44 589",
+   "waluta": "PLN"
+  },
+  {
+   "id": "przychody.FY2025H1",
+   "pozycja": "przychody",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-06-30"
+   },
+   "wartosc": 66265,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 7
+   },
+   "cytat": "Przychody ze sprzedaży 86 608 66 265 68 644 44 589",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_operacyjny.FY2026H1",
+   "pozycja": "zysk_operacyjny",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-01",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": -945,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 7
+   },
+   "cytat": "Zysk (strata) z działalności operacyjnej -945 7 511",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_operacyjny.FY2025H1",
+   "pozycja": "zysk_operacyjny",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-06-30"
+   },
+   "wartosc": 7511,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 7
+   },
+   "cytat": "Zysk (strata) z działalności operacyjnej -945 7 511",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_netto.FY2026H1",
+   "pozycja": "zysk_netto",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-01",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 685270,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 7
+   },
+   "cytat": "Zysk (strata) netto za okres 685 270 3 541 692 138 2 137",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_netto.FY2025H1",
+   "pozycja": "zysk_netto",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-06-30"
+   },
+   "wartosc": 3541,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 7
+   },
+   "cytat": "Zysk (strata) netto za okres 685 270 3 541 692 138 2 137",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_netto_kontynuowana.FY2026H1",
+   "pozycja": "zysk_netto_kontynuowana",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-01",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 286,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 7
+   },
+   "cytat": "Zysk (strata) netto z działalności 286 6 226 8 699 3 527",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_netto_kontynuowana.FY2025H1",
+   "pozycja": "zysk_netto_kontynuowana",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-06-30"
+   },
+   "wartosc": 6226,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 7
+   },
+   "cytat": "Zysk (strata) netto z działalności 286 6 226 8 699 3 527",
+   "waluta": "PLN"
+  },
+  {
+   "id": "amortyzacja.FY2026H1",
+   "pozycja": "amortyzacja",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-01",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 7442,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 7
+   },
+   "cytat": "Amortyzacja 7 442 6 122 4 000 3 357",
+   "waluta": "PLN"
+  },
+  {
+   "id": "amortyzacja.FY2025H1",
+   "pozycja": "amortyzacja",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-06-30"
+   },
+   "wartosc": 6122,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 7
+   },
+   "cytat": "Amortyzacja 7 442 6 122 4 000 3 357",
+   "waluta": "PLN"
+  },
+  {
+   "id": "przeplywy_operacyjne.FY2026H1",
+   "pozycja": "przeplywy_operacyjne",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-01",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": -78377,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 11
+   },
+   "cytat": "Przepływy pieniężne netto z działalności operacyjnej -78 377 54 825",
+   "waluta": "PLN"
+  },
+  {
+   "id": "przeplywy_operacyjne.FY2025H1",
+   "pozycja": "przeplywy_operacyjne",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-06-30"
+   },
+   "wartosc": 54825,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 11
+   },
+   "cytat": "Przepływy pieniężne netto z działalności operacyjnej -78 377 54 825",
+   "waluta": "PLN"
+  },
+  {
+   "id": "capex.FY2026H1",
+   "pozycja": "capex",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2026-01-01",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 9913,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 11
+   },
+   "cytat": "Wydatki na rzeczowy majątek trwały i wartości niematerialne 9 913 16 431",
+   "waluta": "PLN"
+  },
+  {
+   "id": "capex.FY2025H1",
+   "pozycja": "capex",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-06-30"
+   },
+   "wartosc": 16431,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 11
+   },
+   "cytat": "Wydatki na rzeczowy majątek trwały i wartości niematerialne 9 913 16 431",
+   "waluta": "PLN"
+  },
+  {
+   "id": "emisje_akcji.FY2025H1",
+   "pozycja": "emisje_akcji",
+   "okres": {
+    "typ": "H1",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-06-30"
+   },
+   "wartosc": 76000,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 11
+   },
+   "cytat": "Wpływ z wydania udziałów (emisji akcji), dopłaty do kapitału - 76 000",
+   "waluta": "PLN"
+  },
+  {
+   "id": "aktywa.2026-06-30",
+   "pozycja": "aktywa",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 315411,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 9
+   },
+   "cytat": "AKTYWA RAZEM 315 411 332 687",
+   "waluta": "PLN"
+  },
+  {
+   "id": "kapital_wlasny.2026-06-30",
+   "pozycja": "kapital_wlasny",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 151165,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 9
+   },
+   "cytat": "KAPITAŁ WŁASNY 151 165 159 016",
+   "waluta": "PLN"
+  },
+  {
+   "id": "gotowka.2026-06-30",
+   "pozycja": "gotowka",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 29379,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 9
+   },
+   "cytat": "Środki pieniężne i ich ekwiwalenty 29 379 114 957",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zobowiazania_krotkoterminowe.2026-06-30",
+   "pozycja": "zobowiazania_krotkoterminowe",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 115623,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 9
+   },
+   "cytat": "ZOBOWIĄZANIA KRÓTKOTERMINOWE 115 623 114 315",
+   "waluta": "PLN"
+  },
+  {
+   "id": "aktywa_obrotowe.2026-06-30",
+   "pozycja": "aktywa_obrotowe",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 163501,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 9
+   },
+   "cytat": "AKTYWA OBROTOWE 163 501 191 718",
+   "waluta": "PLN"
+  },
+  {
+   "id": "naleznosci_handlowe.2026-06-30",
+   "pozycja": "naleznosci_handlowe",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 88633,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 9
+   },
+   "cytat": "Należności z tytułu dostaw i usług oraz pozostałe 88 633 50 315",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zapasy.2026-06-30",
+   "pozycja": "zapasy",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 20232,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 9
+   },
+   "cytat": "Zapasy 20 232 15 948",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zyski_zatrzymane.2026-06-30",
+   "pozycja": "zyski_zatrzymane",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": -14171,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 9
+   },
+   "cytat": "Zyski zatrzymane -14 171 12 551",
+   "waluta": "PLN"
+  },
+  {
+   "id": "rzeczowe_aktywa_trwale.2026-06-30",
+   "pozycja": "rzeczowe_aktywa_trwale",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 46318,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 9
+   },
+   "cytat": "Rzeczowe aktywa trwałe 46 318 38 659",
+   "waluta": "PLN"
+  },
+  {
+   "id": "leasing_dlugoterminowy.2026-06-30",
+   "pozycja": "leasing_dlugoterminowy",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 19938,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 9
+   },
+   "cytat": "Zobowiązania z tytułu leasingu 19 938 17 773",
+   "waluta": "PLN"
+  },
+  {
+   "id": "leasing_krotkoterminowy.2026-06-30",
+   "pozycja": "leasing_krotkoterminowy",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 4069,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 9
+   },
+   "cytat": "Zobowiązania z tytułu leasingu 4 069 3 116",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zobowiazania_leasingowe.2026-06-30",
+   "pozycja": "zobowiazania_leasingowe",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 24007,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 34
+   },
+   "cytat": "Zobowiązania z tytułu leasingu według MSSF 16 24 007 20 888",
+   "waluta": "PLN"
+  },
+  {
+   "id": "akcje_w_obrocie.2026-06-30",
+   "pozycja": "akcje_w_obrocie",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-06-30"
+   },
+   "wartosc": 2854347,
+   "skala": "jedn",
+   "jednostka": "akcje",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 6
+   },
+   "cytat": "Liczba akcji (w szt.) 2 854 347 2 854 347 2 854 347 2 854 347"
+  },
+  {
+   "id": "akcje_w_obrocie.2026-09-28",
+   "pozycja": "akcje_w_obrocie",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2026-09-28"
+   },
+   "wartosc": 3504347,
+   "skala": "jedn",
+   "jednostka": "akcje",
+   "dokument": "doc-003",
+   "miejsce": {
+    "strona": 44
+   },
+   "cytat": "wszystkich wyemitowanych akcji wynosi 3 504 347 głosów"
+  },
+  {
+   "id": "przychody.FY2025",
+   "pozycja": "przychody",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 150017,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Przychody operacyjne 150 017 19 754",
+   "waluta": "PLN"
+  },
+  {
+   "id": "przychody.FY2024",
+   "pozycja": "przychody",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2024-01-01",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": 19754,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Przychody operacyjne 150 017 19 754",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_operacyjny.FY2025",
+   "pozycja": "zysk_operacyjny",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 24874,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Zysk (strata) z działalności operacyjnej 24 874 -22 446",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_operacyjny.FY2024",
+   "pozycja": "zysk_operacyjny",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2024-01-01",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": -22446,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Zysk (strata) z działalności operacyjnej 24 874 -22 446",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_netto.FY2025",
+   "pozycja": "zysk_netto",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 13571,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Zysk (strata) netto za okres 13 571 -20 455",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_netto.FY2024",
+   "pozycja": "zysk_netto",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2024-01-01",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": -20455,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Zysk (strata) netto za okres 13 571 -20 455",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_netto_kontynuowana.FY2025",
+   "pozycja": "zysk_netto_kontynuowana",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 19920,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Zysk (strata) netto z działalności kontynuowanej 19 920 -17 955",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_netto_kontynuowana.FY2024",
+   "pozycja": "zysk_netto_kontynuowana",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2024-01-01",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": -17955,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Zysk (strata) netto z działalności kontynuowanej 19 920 -17 955",
+   "waluta": "PLN"
+  },
+  {
+   "id": "amortyzacja.FY2025",
+   "pozycja": "amortyzacja",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 13237,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Amortyzacja 13 237 6 602",
+   "waluta": "PLN"
+  },
+  {
+   "id": "amortyzacja.FY2024",
+   "pozycja": "amortyzacja",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2024-01-01",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": 6602,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Amortyzacja 13 237 6 602",
+   "waluta": "PLN"
+  },
+  {
+   "id": "przeplywy_operacyjne.FY2025",
+   "pozycja": "przeplywy_operacyjne",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 49679,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Przepływy pieniężne netto z działalności operacyjnej 49 679 -18 566",
+   "waluta": "PLN"
+  },
+  {
+   "id": "przeplywy_operacyjne.FY2024",
+   "pozycja": "przeplywy_operacyjne",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2024-01-01",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": -18566,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Przepływy pieniężne netto z działalności operacyjnej 49 679 -18 566",
+   "waluta": "PLN"
+  },
+  {
+   "id": "capex.FY2025",
+   "pozycja": "capex",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 27255,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Wydatki na rzeczowy majątek trwały i wartości niematerialne 27 255 19 907",
+   "waluta": "PLN"
+  },
+  {
+   "id": "capex.FY2024",
+   "pozycja": "capex",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2024-01-01",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": 19907,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Wydatki na rzeczowy majątek trwały i wartości niematerialne 27 255 19 907",
+   "waluta": "PLN"
+  },
+  {
+   "id": "emisje_akcji.FY2025",
+   "pozycja": "emisje_akcji",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2025-01-01",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 76000,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Wpływ z wydania udziałów (emisji akcji), dopłaty do kapitału 76 000 -",
+   "waluta": "PLN"
+  },
+  {
+   "id": "aktywa.2025-12-31",
+   "pozycja": "aktywa",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 332687,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "AKTYWA RAZEM 332 687 162 328",
+   "waluta": "PLN"
+  },
+  {
+   "id": "aktywa.2024-12-31",
+   "pozycja": "aktywa",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": 162328,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "AKTYWA RAZEM 332 687 162 328",
+   "waluta": "PLN"
+  },
+  {
+   "id": "kapital_wlasny.2025-12-31",
+   "pozycja": "kapital_wlasny",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 159016,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "KAPITAŁ WŁASNY 159 016 70 954",
+   "waluta": "PLN"
+  },
+  {
+   "id": "kapital_wlasny.2024-12-31",
+   "pozycja": "kapital_wlasny",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": 70954,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "KAPITAŁ WŁASNY 159 016 70 954",
+   "waluta": "PLN"
+  },
+  {
+   "id": "gotowka.2025-12-31",
+   "pozycja": "gotowka",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 114957,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Środki pieniężne i ich ekwiwalenty 11.8 114 957 32 397",
+   "waluta": "PLN"
+  },
+  {
+   "id": "gotowka.2024-12-31",
+   "pozycja": "gotowka",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": 32397,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Środki pieniężne i ich ekwiwalenty 11.8 114 957 32 397",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zyski_zatrzymane.2025-12-31",
+   "pozycja": "zyski_zatrzymane",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 12551,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Zyski zatrzymane 11.16.6 12 551 -21 475",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zyski_zatrzymane.2024-12-31",
+   "pozycja": "zyski_zatrzymane",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": -21475,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Zyski zatrzymane 11.16.6 12 551 -21 475",
+   "waluta": "PLN"
+  },
+  {
+   "id": "naleznosci_handlowe.2025-12-31",
+   "pozycja": "naleznosci_handlowe",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 50315,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "pozostałe należności 11.6 50 315 11 952",
+   "waluta": "PLN"
+  },
+  {
+   "id": "naleznosci_handlowe.2024-12-31",
+   "pozycja": "naleznosci_handlowe",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": 11952,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "pozostałe należności 11.6 50 315 11 952",
+   "waluta": "PLN"
+  },
+  {
+   "id": "rzeczowe_aktywa_trwale.2025-12-31",
+   "pozycja": "rzeczowe_aktywa_trwale",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 38659,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Rzeczowe aktywa trwałe 11.1 38 659 33 487",
+   "waluta": "PLN"
+  },
+  {
+   "id": "rzeczowe_aktywa_trwale.2024-12-31",
+   "pozycja": "rzeczowe_aktywa_trwale",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": 33487,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Rzeczowe aktywa trwałe 11.1 38 659 33 487",
+   "waluta": "PLN"
+  },
+  {
+   "id": "akcje_w_obrocie.2025-12-31",
+   "pozycja": "akcje_w_obrocie",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2025-12-31"
+   },
+   "wartosc": 2854347,
+   "skala": "jedn",
+   "jednostka": "akcje",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Liczba akcji (w szt.) 2 854 347 2 379 347"
+  },
+  {
+   "id": "akcje_w_obrocie.2024-12-31",
+   "pozycja": "akcje_w_obrocie",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2024-12-31"
+   },
+   "wartosc": 2379347,
+   "skala": "jedn",
+   "jednostka": "akcje",
+   "dokument": "doc-001",
+   "miejsce": {},
+   "cytat": "Liczba akcji (w szt.) 2 854 347 2 379 347"
+  },
+  {
+   "id": "przychody.FY2023",
+   "pozycja": "przychody",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2023-01-01",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": 44048,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "Przychody operacyjne 35 561 44 048",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_operacyjny.FY2023",
+   "pozycja": "zysk_operacyjny",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2023-01-01",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": -16863,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "Zysk (strata) z działalności operacyjnej - 24 847 - 16 863",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zysk_netto.FY2023",
+   "pozycja": "zysk_netto",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2023-01-01",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": -14342,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "Zysk (strata) netto za okres - 20 455 - 14 342",
+   "waluta": "PLN"
+  },
+  {
+   "id": "amortyzacja.FY2023",
+   "pozycja": "amortyzacja",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2023-01-01",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": 8246,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "Amortyzacja 7 985 8 246",
+   "waluta": "PLN"
+  },
+  {
+   "id": "przeplywy_operacyjne.FY2023",
+   "pozycja": "przeplywy_operacyjne",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2023-01-01",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": 15473,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "Przepływy pieniężne netto z działalności operacyjnej - 18 566 15 473",
+   "waluta": "PLN"
+  },
+  {
+   "id": "capex.FY2023",
+   "pozycja": "capex",
+   "okres": {
+    "typ": "FY",
+    "poczatek": "2023-01-01",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": 22613,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "Wydatki na rzeczowy majątek trwały i wartości niematerialne 19 907 22 613",
+   "waluta": "PLN"
+  },
+  {
+   "id": "aktywa.2023-12-31",
+   "pozycja": "aktywa",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": 172536,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "AKTYWA RAZEM 162 328 172 536",
+   "waluta": "PLN"
+  },
+  {
+   "id": "kapital_wlasny.2023-12-31",
+   "pozycja": "kapital_wlasny",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": 91371,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "KAPITAŁ WŁASNY 70 954 91 371",
+   "waluta": "PLN"
+  },
+  {
+   "id": "gotowka.2023-12-31",
+   "pozycja": "gotowka",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": 73224,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "Środki pieniężne i ich ekwiwalenty 12.8. 32 397 73 224",
+   "waluta": "PLN"
+  },
+  {
+   "id": "zyski_zatrzymane.2023-12-31",
+   "pozycja": "zyski_zatrzymane",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": -15362,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "Zyski zatrzymane 12.15.5 - 21 475 - 15 362",
+   "waluta": "PLN"
+  },
+  {
+   "id": "naleznosci_handlowe.2023-12-31",
+   "pozycja": "naleznosci_handlowe",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": 11334,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "pozostałe należności 12.6. 11 952 11 334",
+   "waluta": "PLN"
+  },
+  {
+   "id": "rzeczowe_aktywa_trwale.2023-12-31",
+   "pozycja": "rzeczowe_aktywa_trwale",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": 33063,
+   "skala": "tys",
+   "jednostka": "pieniadz",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "Rzeczowe aktywa trwałe 12.1. 33 487 33 063",
+   "waluta": "PLN"
+  },
+  {
+   "id": "akcje_w_obrocie.2023-12-31",
+   "pozycja": "akcje_w_obrocie",
+   "okres": {
+    "typ": "dzien",
+    "koniec": "2023-12-31"
+   },
+   "wartosc": 2379347,
+   "skala": "jedn",
+   "jednostka": "akcje",
+   "dokument": "doc-002",
+   "miejsce": {},
+   "cytat": "Liczba akcji (w szt.) 2 379 347 2 379 347"
+  }
+ ]
+}

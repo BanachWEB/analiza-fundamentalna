@@ -111,6 +111,19 @@
       "warunek_powrotu": null
     },
     {
+      "id": "B2.rozwodnienie",
+      "etap": 2,
+      "kategoria": "kapital",
+      "poziom": "flaga",
+      "opis": "Liczba akcji wzrosła o ponad 10% r/r; miara: na koniec okresu",
+      "dowody": [
+        "zmiana_liczby_akcji_koniec.FY2025"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
       "id": "B2.rozwodnienie_szkodliwe",
       "etap": 2,
       "kategoria": "kapital",
@@ -124,12 +137,14 @@
       "warunek_powrotu": null
     },
     {
-      "id": "B2.rozwodnienie",
-      "etap": 2,
-      "kategoria": "kapital",
-      "poziom": "brak_danych",
-      "opis": "Brak danych o liczbie akcji",
-      "dowody": [],
+      "id": "B3.altman",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "ok",
+      "opis": "Altman Z'' 3,53 (strefa zagrożenia poniżej 1,10)",
+      "dowody": [
+        "altman_z2.FY2025"
+      ],
       "zrodlo": "kod",
       "testy": null,
       "warunek_powrotu": null
