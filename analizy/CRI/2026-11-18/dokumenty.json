@@ -1,0 +1,1386 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "CRI",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "esef",
+      "zrodlo": "spółka",
+      "adres": "https://cdn.sanity.io/files/lbgrp8oj/production/112780a4810f9cb7ba14ab6e34d5305f31bb331a.zip",
+      "opis": "raport roczny ESEF",
+      "pobrano": "2026-11-18T14:42:09.135434Z",
+      "sha256": "d7f915c9b7dd43cce420233fb473bff7ddf7abfad4b1023808393d4cdf979e99",
+      "plik": "d7f915c9b7dd43cc.zip"
+    },
+    {
+      "id": "doc-002",
+      "typ": "esef",
+      "zrodlo": "spółka",
+      "adres": "https://cdn.sanity.io/files/lbgrp8oj/production/921ca6737ab067361aeb3de8c0b701ea23636198.zip",
+      "opis": "raport roczny ESEF",
+      "pobrano": "2026-11-18T14:42:10.475373Z",
+      "sha256": "7d10c1024bc279a343679578656dddf46e5d384d8d4d80114869f8504bc177ce",
+      "plik": "7d10c1024bc279a3.zip"
+    },
+    {
+      "id": "doc-003",
+      "typ": "raport_pdf",
+      "zrodlo": "spółka",
+      "adres": "https://cdn.sanity.io/files/lbgrp8oj/production/366d06464397c6f4ceb870b4e7d09806225dacb2.pdf",
+      "opis": "raport okresowy PDF",
+      "pobrano": "2026-11-18T14:42:11.419583Z",
+      "sha256": "77bf5624ef7b499f7054c7a508df87406015eae9a866b4292e23b2ab1ec83480",
+      "plik": "77bf5624ef7b499f.pdf"
+    },
+    {
+      "id": "doc-004",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/CRI",
+      "opis": "rachunek roczne",
+      "pobrano": "2026-11-18T14:42:39.214151Z",
+      "sha256": "54955dd925349657d5f196f7f79776ac76b6f16ecde1d6ee3816bcf6e018638a",
+      "plik": "54955dd925349657.html"
+    },
+    {
+      "id": "doc-005",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/CRI,Q",
+      "opis": "rachunek kwartalne",
+      "pobrano": "2026-11-18T14:42:40.810699Z",
+      "sha256": "86a7043dc52f3d2d341214e8ad604e2869a6cf9bd1e2bfe00f7dad2d27030a30",
+      "plik": "86a7043dc52f3d2d.html"
+    },
+    {
+      "id": "doc-006",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/CRI",
+      "opis": "bilans roczne",
+      "pobrano": "2026-11-18T14:42:42.224123Z",
+      "sha256": "6151c6fe104fb2bea164982ec1d4bd8f9e771b3a8070b2c353d2b95359b51550",
+      "plik": "6151c6fe104fb2be.html"
+    },
+    {
+      "id": "doc-007",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/CRI,Q",
+      "opis": "bilans kwartalne",
+      "pobrano": "2026-11-18T14:42:43.789918Z",
+      "sha256": "d6cf5a4b7ceb57c7e9d784a2346e3e047b189c712766d87b0e11adc36eddc432",
+      "plik": "d6cf5a4b7ceb57c7.html"
+    },
+    {
+      "id": "doc-008",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/CRI",
+      "opis": "przeplywy roczne",
+      "pobrano": "2026-11-18T14:42:45.055555Z",
+      "sha256": "7f27c0a15a9573c1d61228f1c92b5edc730b37b48fe0ebe01c386906c938fa00",
+      "plik": "7f27c0a15a9573c1.html"
+    },
+    {
+      "id": "doc-009",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/CRI,Q",
+      "opis": "przeplywy kwartalne",
+      "pobrano": "2026-11-18T14:42:46.433805Z",
+      "sha256": "705f8219999d98c865237f627a800f4d964b56d930515e9e0b5958948ffc5515",
+      "plik": "705f8219999d98c8.html"
+    },
+    {
+      "id": "doc-010",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI",
+      "opis": "notowania historyczne CRI, strona 1",
+      "pobrano": "2026-11-18T14:42:47.835151Z",
+      "sha256": "9b2c0dc9637f12b15264e67db8e3586752771fc38a912dbf6fbe1965fb060e32",
+      "plik": "9b2c0dc9637f12b1.html"
+    },
+    {
+      "id": "doc-011",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,2",
+      "opis": "notowania historyczne CRI, strona 2",
+      "pobrano": "2026-11-18T14:42:49.139610Z",
+      "sha256": "c4af09f726e050ced1104841d26660417cc6e1e3ad63f73ba72eb9665849969a",
+      "plik": "c4af09f726e050ce.html"
+    },
+    {
+      "id": "doc-012",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,3",
+      "opis": "notowania historyczne CRI, strona 3",
+      "pobrano": "2026-11-18T14:42:50.427935Z",
+      "sha256": "d15453ff43dac05448a849f7d48e48fd0607e2f7d50dfde28042b15927a2fcd7",
+      "plik": "d15453ff43dac054.html"
+    },
+    {
+      "id": "doc-013",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,4",
+      "opis": "notowania historyczne CRI, strona 4",
+      "pobrano": "2026-11-18T14:42:51.741652Z",
+      "sha256": "244177ff808715e18eaf9c1188ef5b95d6f9fb594546233935037399ce860eda",
+      "plik": "244177ff808715e1.html"
+    },
+    {
+      "id": "doc-014",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,5",
+      "opis": "notowania historyczne CRI, strona 5",
+      "pobrano": "2026-11-18T14:42:53.131643Z",
+      "sha256": "55562ae605cf51f54f6cb92bb215c121794f79b2fc0c30b22419cdb937eb113c",
+      "plik": "55562ae605cf51f5.html"
+    },
+    {
+      "id": "doc-015",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,6",
+      "opis": "notowania historyczne CRI, strona 6",
+      "pobrano": "2026-11-18T14:42:54.425657Z",
+      "sha256": "af46c738a001d8f17612c673d1845480df1ca0859cf45e19e577c13e254a8af7",
+      "plik": "af46c738a001d8f1.html"
+    },
+    {
+      "id": "doc-016",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,7",
+      "opis": "notowania historyczne CRI, strona 7",
+      "pobrano": "2026-11-18T14:42:55.716884Z",
+      "sha256": "5c290f0bf4bae09de7c0714f50e93a550bb9ef1a51b05bc09bd580c9cbf420b8",
+      "plik": "5c290f0bf4bae09d.html"
+    },
+    {
+      "id": "doc-017",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,8",
+      "opis": "notowania historyczne CRI, strona 8",
+      "pobrano": "2026-11-18T14:42:57.033025Z",
+      "sha256": "b2b56df5babbcac9a158ac352671641e9ce116b3fe1e37336aedebfd5c1148a3",
+      "plik": "b2b56df5babbcac9.html"
+    },
+    {
+      "id": "doc-018",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,9",
+      "opis": "notowania historyczne CRI, strona 9",
+      "pobrano": "2026-11-18T14:42:58.304778Z",
+      "sha256": "30121fc6f1d26f41eadf3def11be72e7d6af08a05223a10a00bcfa1f3396305e",
+      "plik": "30121fc6f1d26f41.html"
+    },
+    {
+      "id": "doc-019",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,10",
+      "opis": "notowania historyczne CRI, strona 10",
+      "pobrano": "2026-11-18T14:42:59.593049Z",
+      "sha256": "5c5139f537df7049c4c43033508bc920eef5bb019b9940d488bda4b2b5f905dc",
+      "plik": "5c5139f537df7049.html"
+    },
+    {
+      "id": "doc-020",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,11",
+      "opis": "notowania historyczne CRI, strona 11",
+      "pobrano": "2026-11-18T14:43:00.905292Z",
+      "sha256": "b03a2b06f507257a0a8a9801c11576169347449f169a67552a5f1a7126cf9239",
+      "plik": "b03a2b06f507257a.html"
+    },
+    {
+      "id": "doc-021",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,12",
+      "opis": "notowania historyczne CRI, strona 12",
+      "pobrano": "2026-11-18T14:43:02.414424Z",
+      "sha256": "785e16c17a340cb8aedec72221d5c53a503742ab9a884f5aee4bff541db07a65",
+      "plik": "785e16c17a340cb8.html"
+    },
+    {
+      "id": "doc-022",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,13",
+      "opis": "notowania historyczne CRI, strona 13",
+      "pobrano": "2026-11-18T14:43:03.866031Z",
+      "sha256": "00f72b4e557bd37f5e897c1b9e49ba5b59983692f3fe21fc7c409857072d8775",
+      "plik": "00f72b4e557bd37f.html"
+    },
+    {
+      "id": "doc-023",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,14",
+      "opis": "notowania historyczne CRI, strona 14",
+      "pobrano": "2026-11-18T14:43:05.166787Z",
+      "sha256": "0b6a5d295c6b6d9ae810944c98239e23dd82ccfdf8b6ede1d73267463ba29dad",
+      "plik": "0b6a5d295c6b6d9a.html"
+    },
+    {
+      "id": "doc-024",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,15",
+      "opis": "notowania historyczne CRI, strona 15",
+      "pobrano": "2026-11-18T14:43:06.449709Z",
+      "sha256": "065fa25b1552c2beea9585e794f406ead3a19a04629d33e2ef7b01661b6c1692",
+      "plik": "065fa25b1552c2be.html"
+    },
+    {
+      "id": "doc-025",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,16",
+      "opis": "notowania historyczne CRI, strona 16",
+      "pobrano": "2026-11-18T14:43:07.727497Z",
+      "sha256": "8af4c65e60853c825d9d09f38254d551a2690f92e9c15b30ad7067fdbae0f604",
+      "plik": "8af4c65e60853c82.html"
+    },
+    {
+      "id": "doc-026",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,17",
+      "opis": "notowania historyczne CRI, strona 17",
+      "pobrano": "2026-11-18T14:43:09.036419Z",
+      "sha256": "2f1442869f9273aef10f430c2beb2d426578c3188035fda664bbb5c312b2da80",
+      "plik": "2f1442869f9273ae.html"
+    },
+    {
+      "id": "doc-027",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,18",
+      "opis": "notowania historyczne CRI, strona 18",
+      "pobrano": "2026-11-18T14:43:10.393906Z",
+      "sha256": "849c5985a437306a5bf9846988775357d40a1d618f3664bdceaca344b53a6077",
+      "plik": "849c5985a437306a.html"
+    },
+    {
+      "id": "doc-028",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,19",
+      "opis": "notowania historyczne CRI, strona 19",
+      "pobrano": "2026-11-18T14:43:11.680349Z",
+      "sha256": "df96db634bbd9a85539e7f49baab3d10db33b6f3c647201bda0cfe005bea2a9c",
+      "plik": "df96db634bbd9a85.html"
+    },
+    {
+      "id": "doc-029",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,20",
+      "opis": "notowania historyczne CRI, strona 20",
+      "pobrano": "2026-11-18T14:43:12.978641Z",
+      "sha256": "9a3e09c404e2b960628e64ae0ed5666b12246b99feb90d6b8be5e3514bb58e24",
+      "plik": "9a3e09c404e2b960.html"
+    },
+    {
+      "id": "doc-030",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,21",
+      "opis": "notowania historyczne CRI, strona 21",
+      "pobrano": "2026-11-18T14:43:14.251345Z",
+      "sha256": "721daa46ff0ad41e5505700e1d6550dd7c824b3744359582c9007e6b3a6f318a",
+      "plik": "721daa46ff0ad41e.html"
+    },
+    {
+      "id": "doc-031",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,22",
+      "opis": "notowania historyczne CRI, strona 22",
+      "pobrano": "2026-11-18T14:43:15.578002Z",
+      "sha256": "84b427e854054b2c07948755a3fed83e1470bd4c3ebb59e74e7b942e80510904",
+      "plik": "84b427e854054b2c.html"
+    },
+    {
+      "id": "doc-032",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,23",
+      "opis": "notowania historyczne CRI, strona 23",
+      "pobrano": "2026-11-18T14:43:16.877370Z",
+      "sha256": "c9e132410da6324e0488fdd1b0dba36ca119c3b9203455767d2171bf49eb41c9",
+      "plik": "c9e132410da6324e.html"
+    },
+    {
+      "id": "doc-033",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,24",
+      "opis": "notowania historyczne CRI, strona 24",
+      "pobrano": "2026-11-18T14:43:18.163831Z",
+      "sha256": "2cd040e39920c26c0bb858666be928dc008739b495c507407e062022f1cc40b3",
+      "plik": "2cd040e39920c26c.html"
+    },
+    {
+      "id": "doc-034",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,25",
+      "opis": "notowania historyczne CRI, strona 25",
+      "pobrano": "2026-11-18T14:43:19.449728Z",
+      "sha256": "92cd560c7f5d1435720e0add18d732715707804a8c6fd02f98d22e87227f53a2",
+      "plik": "92cd560c7f5d1435.html"
+    },
+    {
+      "id": "doc-035",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,26",
+      "opis": "notowania historyczne CRI, strona 26",
+      "pobrano": "2026-11-18T14:43:20.632429Z",
+      "sha256": "dbae125b930f538bfb9e6b35baa9fcae0a9e136011ebf62eb8d348c7706ff508",
+      "plik": "dbae125b930f538b.html"
+    },
+    {
+      "id": "doc-036",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG",
+      "opis": "notowania historyczne WIG, strona 1",
+      "pobrano": "2026-11-18T14:43:22.037525Z",
+      "sha256": "c0faa74c5355d2b552c7b0b869e2bc053e85d575f64dfa92cc1c18a2c1aff785",
+      "plik": "c0faa74c5355d2b5.html"
+    },
+    {
+      "id": "doc-037",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,2",
+      "opis": "notowania historyczne WIG, strona 2",
+      "pobrano": "2026-11-18T14:43:23.473682Z",
+      "sha256": "3db7dde6c254cf840605685d403b5e8f22a745a8348b4a445f35e6eb806b60a8",
+      "plik": "3db7dde6c254cf84.html"
+    },
+    {
+      "id": "doc-038",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,3",
+      "opis": "notowania historyczne WIG, strona 3",
+      "pobrano": "2026-11-18T14:43:24.953952Z",
+      "sha256": "6136057b81132a546654a8f695c873c4d5d7817ac07b3b12c19e6f19c7cc65a6",
+      "plik": "6136057b81132a54.html"
+    },
+    {
+      "id": "doc-039",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,4",
+      "opis": "notowania historyczne WIG, strona 4",
+      "pobrano": "2026-11-18T14:43:26.546553Z",
+      "sha256": "f0a5319c09c564f5e93c9f3c050dd5b6b3301888505d348981bc6d40d327d2b2",
+      "plik": "f0a5319c09c564f5.html"
+    },
+    {
+      "id": "doc-040",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,5",
+      "opis": "notowania historyczne WIG, strona 5",
+      "pobrano": "2026-11-18T14:43:27.974049Z",
+      "sha256": "3092428ee97cf68faa0229bc30117b04c5d7ae2b3696358f4f7b7e34c20d5dd4",
+      "plik": "3092428ee97cf68f.html"
+    },
+    {
+      "id": "doc-041",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,6",
+      "opis": "notowania historyczne WIG, strona 6",
+      "pobrano": "2026-11-18T14:43:29.374187Z",
+      "sha256": "77a8f299c78d6596756ff53f774b19d83beae230ac4a55f66c8a75f4a2c66171",
+      "plik": "77a8f299c78d6596.html"
+    },
+    {
+      "id": "doc-042",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,7",
+      "opis": "notowania historyczne WIG, strona 7",
+      "pobrano": "2026-11-18T14:43:30.765020Z",
+      "sha256": "cbb006b772efee5219344e14033faee30cdae2f14ba1d7acc1b5b9d3d657b224",
+      "plik": "cbb006b772efee52.html"
+    },
+    {
+      "id": "doc-043",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,8",
+      "opis": "notowania historyczne WIG, strona 8",
+      "pobrano": "2026-11-18T14:43:32.158448Z",
+      "sha256": "c9bc21acaffe0a42ce098cbb4fc5c1331433ebd0a3ce03bfeabd0131d5569194",
+      "plik": "c9bc21acaffe0a42.html"
+    },
+    {
+      "id": "doc-044",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,9",
+      "opis": "notowania historyczne WIG, strona 9",
+      "pobrano": "2026-11-18T14:43:33.546521Z",
+      "sha256": "90b30139328990248fa973dee059d072cbe26c2736ba08f07b61eb2a19391472",
+      "plik": "90b3013932899024.html"
+    },
+    {
+      "id": "doc-045",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,10",
+      "opis": "notowania historyczne WIG, strona 10",
+      "pobrano": "2026-11-18T14:43:34.966645Z",
+      "sha256": "9eadbf91009e11821091b5a906b0f698ec7d101f7181d6da776c95029a42aaaa",
+      "plik": "9eadbf91009e1182.html"
+    },
+    {
+      "id": "doc-046",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,11",
+      "opis": "notowania historyczne WIG, strona 11",
+      "pobrano": "2026-11-18T14:43:36.341527Z",
+      "sha256": "3c228d133e2bde61ff1caf0588ed07435bccff7144508e849b1c80a24813b5c6",
+      "plik": "3c228d133e2bde61.html"
+    },
+    {
+      "id": "doc-047",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,12",
+      "opis": "notowania historyczne WIG, strona 12",
+      "pobrano": "2026-11-18T14:43:37.772448Z",
+      "sha256": "e52c0bd1358fb3951e3991eea5c711b319609f6d37428c0cafcc8658c1cab408",
+      "plik": "e52c0bd1358fb395.html"
+    },
+    {
+      "id": "doc-048",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,13",
+      "opis": "notowania historyczne WIG, strona 13",
+      "pobrano": "2026-11-18T14:43:39.240261Z",
+      "sha256": "a3c7b07da214ac553812fcb1dbb49fee63b6b77459707af56abe10f3db48f47b",
+      "plik": "a3c7b07da214ac55.html"
+    },
+    {
+      "id": "doc-049",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,14",
+      "opis": "notowania historyczne WIG, strona 14",
+      "pobrano": "2026-11-18T14:43:40.714060Z",
+      "sha256": "6b13dddf99a7ac49fcdf879601f40a1240c973a94752f9090ccf3380cbf8c091",
+      "plik": "6b13dddf99a7ac49.html"
+    },
+    {
+      "id": "doc-050",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,15",
+      "opis": "notowania historyczne WIG, strona 15",
+      "pobrano": "2026-11-18T14:43:42.077156Z",
+      "sha256": "0a08b4d9fba250ee0db711c388c4a26a4d23e43048ddf482b1ad7577c61fbce2",
+      "plik": "0a08b4d9fba250ee.html"
+    },
+    {
+      "id": "doc-051",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,16",
+      "opis": "notowania historyczne WIG, strona 16",
+      "pobrano": "2026-11-18T14:43:43.443977Z",
+      "sha256": "490bb2ad7f4cc7748ed58d885d73bf40849d93b84a231573e0b4f51250c1820e",
+      "plik": "490bb2ad7f4cc774.html"
+    },
+    {
+      "id": "doc-052",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,17",
+      "opis": "notowania historyczne WIG, strona 17",
+      "pobrano": "2026-11-18T14:43:44.910583Z",
+      "sha256": "7c2d877896008c33cde2cc3dceec8d5b8579f5231bd265e517ccbe66dc55484a",
+      "plik": "7c2d877896008c33.html"
+    },
+    {
+      "id": "doc-053",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,18",
+      "opis": "notowania historyczne WIG, strona 18",
+      "pobrano": "2026-11-18T14:43:46.381635Z",
+      "sha256": "f40eb1015657bb30562904eb1209fa21c6c38d4c5ad6412981e34693fe65772e",
+      "plik": "f40eb1015657bb30.html"
+    },
+    {
+      "id": "doc-054",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,19",
+      "opis": "notowania historyczne WIG, strona 19",
+      "pobrano": "2026-11-18T14:43:47.784641Z",
+      "sha256": "6110ba5fb72a709a9afe3ae20351d835e8915181eaf301f1e568bf709ff3a7e0",
+      "plik": "6110ba5fb72a709a.html"
+    },
+    {
+      "id": "doc-055",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,20",
+      "opis": "notowania historyczne WIG, strona 20",
+      "pobrano": "2026-11-18T14:43:49.163437Z",
+      "sha256": "184e5d0259b0f895fcf6bbaae78061c318af4b6db5a7737cfbaabc97fd228a25",
+      "plik": "184e5d0259b0f895.html"
+    },
+    {
+      "id": "doc-056",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,21",
+      "opis": "notowania historyczne WIG, strona 21",
+      "pobrano": "2026-11-18T14:43:50.664987Z",
+      "sha256": "74149ece0e70ec752c289fa95f4c78369a243cb3b383bc4a1ba123fae3ecdb67",
+      "plik": "74149ece0e70ec75.html"
+    },
+    {
+      "id": "doc-057",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,22",
+      "opis": "notowania historyczne WIG, strona 22",
+      "pobrano": "2026-11-18T14:43:52.042912Z",
+      "sha256": "b622f354e473c10361695e7e66fc2219f27573480eadfbb5e924cc36740b6e6f",
+      "plik": "b622f354e473c103.html"
+    },
+    {
+      "id": "doc-058",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,23",
+      "opis": "notowania historyczne WIG, strona 23",
+      "pobrano": "2026-11-18T14:43:53.628116Z",
+      "sha256": "8fdaada368ab452c84885caec38155498baf3d9787515ba63c1b7760e9ff2060",
+      "plik": "8fdaada368ab452c.html"
+    },
+    {
+      "id": "doc-059",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,24",
+      "opis": "notowania historyczne WIG, strona 24",
+      "pobrano": "2026-11-18T14:43:55.021408Z",
+      "sha256": "e02ea9020b7be8fc1882bd95d5d641594b6f02231dbb92d7c864c90bb2bb402b",
+      "plik": "e02ea9020b7be8fc.html"
+    },
+    {
+      "id": "doc-060",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,25",
+      "opis": "notowania historyczne WIG, strona 25",
+      "pobrano": "2026-11-18T14:43:56.429039Z",
+      "sha256": "d67803835bf5775e05e3f1491fde337549e3330a037e323273ec06473a47e4ea",
+      "plik": "d67803835bf5775e.html"
+    },
+    {
+      "id": "doc-061",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,26",
+      "opis": "notowania historyczne WIG, strona 26",
+      "pobrano": "2026-11-18T14:43:57.835854Z",
+      "sha256": "ff79727b13d632b4ff15dd782349f980704da1411a05e9fb7ef700d9a1c47827",
+      "plik": "ff79727b13d632b4.html"
+    },
+    {
+      "id": "doc-062",
+      "typ": "strona",
+      "zrodlo": "Damodaran Online",
+      "adres": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/betaemerg.xls",
+      "opis": "bety branżowe",
+      "pobrano": "2026-11-18T14:43:58.119777Z",
+      "sha256": "9ae04d9565657126266bf0877cefeedb52df02c21c70ba1d70e27ce4249b719d",
+      "plik": "9ae04d9565657126.xls"
+    },
+    {
+      "id": "doc-063",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/CRI",
+      "opis": "rachunek roczne",
+      "pobrano": "2026-11-18T14:44:16.377649Z",
+      "sha256": "fb2e6ae967249b7ff8ad752b6b43ab398bbb366ee97984bbc38329d59ec3b57e",
+      "plik": "fb2e6ae967249b7f.html"
+    },
+    {
+      "id": "doc-064",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-rachunek-zyskow-i-strat/CRI,Q",
+      "opis": "rachunek kwartalne",
+      "pobrano": "2026-11-18T14:44:17.780178Z",
+      "sha256": "524c769959a49a529e35b065d22b1ee7ef62929a556359c903e9bdc97467fbcc",
+      "plik": "524c769959a49a52.html"
+    },
+    {
+      "id": "doc-065",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/CRI",
+      "opis": "bilans roczne",
+      "pobrano": "2026-11-18T14:44:19.182686Z",
+      "sha256": "caa66bac326f872eb440c455c142bb25a04cd7d2eb8d36a87f560b57a47395d3",
+      "plik": "caa66bac326f872e.html"
+    },
+    {
+      "id": "doc-066",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-bilans/CRI,Q",
+      "opis": "bilans kwartalne",
+      "pobrano": "2026-11-18T14:44:20.692349Z",
+      "sha256": "daf77f5f755b3f4c515fbb3585e4f5863308d207b42c5bd84204e171e5fb149a",
+      "plik": "daf77f5f755b3f4c.html"
+    },
+    {
+      "id": "doc-067",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/CRI",
+      "opis": "przeplywy roczne",
+      "pobrano": "2026-11-18T14:44:21.854604Z",
+      "sha256": "57131c3ca801fd4c0bf5cbb02eeddf474369e4ee6ce89fdf54f580f59ec3700c",
+      "plik": "57131c3ca801fd4c.html"
+    },
+    {
+      "id": "doc-068",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/raporty-finansowe-przeplywy-pieniezne/CRI,Q",
+      "opis": "przeplywy kwartalne",
+      "pobrano": "2026-11-18T14:44:23.305151Z",
+      "sha256": "aaa3fb2b64c755a90e2fc29f225edb158911300e2d853f024eb55173aa683fe7",
+      "plik": "aaa3fb2b64c755a9.html"
+    },
+    {
+      "id": "doc-069",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI",
+      "opis": "notowania historyczne CRI, strona 1",
+      "pobrano": "2026-11-18T14:44:24.639857Z",
+      "sha256": "7bae61d61a97475bc726ef2aff3387d6803715eca2031bd9fbdbec72aae9addf",
+      "plik": "7bae61d61a97475b.html"
+    },
+    {
+      "id": "doc-070",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,2",
+      "opis": "notowania historyczne CRI, strona 2",
+      "pobrano": "2026-11-18T14:44:25.965537Z",
+      "sha256": "9c3378820bbd1878343e2915a956ee23fe87771f60b883a476ef9ca1ae60ff9d",
+      "plik": "9c3378820bbd1878.html"
+    },
+    {
+      "id": "doc-071",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,3",
+      "opis": "notowania historyczne CRI, strona 3",
+      "pobrano": "2026-11-18T14:44:27.271734Z",
+      "sha256": "722e4600754db6999283c15945508ae918fdd5cd94097866a111dee4a077758f",
+      "plik": "722e4600754db699.html"
+    },
+    {
+      "id": "doc-072",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,4",
+      "opis": "notowania historyczne CRI, strona 4",
+      "pobrano": "2026-11-18T14:44:28.994042Z",
+      "sha256": "ced730a6bd72698c09058af9b1cba1583e996d75932e93438b199bbee90e4822",
+      "plik": "ced730a6bd72698c.html"
+    },
+    {
+      "id": "doc-073",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,5",
+      "opis": "notowania historyczne CRI, strona 5",
+      "pobrano": "2026-11-18T14:44:30.297376Z",
+      "sha256": "c6152b02723a09447672848fddb374718852c4b9aad58850bbddf99cba10029f",
+      "plik": "c6152b02723a0944.html"
+    },
+    {
+      "id": "doc-074",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,6",
+      "opis": "notowania historyczne CRI, strona 6",
+      "pobrano": "2026-11-18T14:44:31.609025Z",
+      "sha256": "16f58c34210404e03b28815fcdf1e9626beb5d6dc9bd007e6a59472f0e99bdf2",
+      "plik": "16f58c34210404e0.html"
+    },
+    {
+      "id": "doc-075",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,7",
+      "opis": "notowania historyczne CRI, strona 7",
+      "pobrano": "2026-11-18T14:44:33.027136Z",
+      "sha256": "4efdf57ce17354a9838a9bfd80c51e37792494366f579f4b74d52538fc24076e",
+      "plik": "4efdf57ce17354a9.html"
+    },
+    {
+      "id": "doc-076",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,8",
+      "opis": "notowania historyczne CRI, strona 8",
+      "pobrano": "2026-11-18T14:44:34.411001Z",
+      "sha256": "2a0b005fbce53a75adbcd7ed8eb59fe4592fa68bcf9511d2f61425d52d0577d2",
+      "plik": "2a0b005fbce53a75.html"
+    },
+    {
+      "id": "doc-077",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,9",
+      "opis": "notowania historyczne CRI, strona 9",
+      "pobrano": "2026-11-18T14:44:35.861984Z",
+      "sha256": "93717eea3bddb64da375fd99699cc261bfc72b0e0d3422b189589333d623996c",
+      "plik": "93717eea3bddb64d.html"
+    },
+    {
+      "id": "doc-078",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,10",
+      "opis": "notowania historyczne CRI, strona 10",
+      "pobrano": "2026-11-18T14:44:37.146818Z",
+      "sha256": "b25d64f924649d5e532773c830e0758fabf5849d870b97f5b07a72b7c0b336fb",
+      "plik": "b25d64f924649d5e.html"
+    },
+    {
+      "id": "doc-079",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,11",
+      "opis": "notowania historyczne CRI, strona 11",
+      "pobrano": "2026-11-18T14:44:38.447256Z",
+      "sha256": "5f9cbead7d8da2bc572c8a8dd046a02bdf28c6b01f49daa1c6ef61be1e4ec0b8",
+      "plik": "5f9cbead7d8da2bc.html"
+    },
+    {
+      "id": "doc-080",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,12",
+      "opis": "notowania historyczne CRI, strona 12",
+      "pobrano": "2026-11-18T14:44:39.814987Z",
+      "sha256": "e06633f03df512664a78937810d9e17eb8cc263384cbc992adcb0451045e1356",
+      "plik": "e06633f03df51266.html"
+    },
+    {
+      "id": "doc-081",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,13",
+      "opis": "notowania historyczne CRI, strona 13",
+      "pobrano": "2026-11-18T14:44:40.990050Z",
+      "sha256": "3f64bcf929b2f2bdc251892de5467188bc995cff124e0be7dbcbd8f6c6f56684",
+      "plik": "3f64bcf929b2f2bd.html"
+    },
+    {
+      "id": "doc-082",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,14",
+      "opis": "notowania historyczne CRI, strona 14",
+      "pobrano": "2026-11-18T14:44:42.139546Z",
+      "sha256": "8ebda767f624d47c1699f5901a59947d4d421bc34ab966f98db3b7f7ce03ed85",
+      "plik": "8ebda767f624d47c.html"
+    },
+    {
+      "id": "doc-083",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,15",
+      "opis": "notowania historyczne CRI, strona 15",
+      "pobrano": "2026-11-18T14:44:43.292577Z",
+      "sha256": "3c9d006302117c0bae39bf6b75390c8d98008e9a8bc49d74509b87dbaccb2aa0",
+      "plik": "3c9d006302117c0b.html"
+    },
+    {
+      "id": "doc-084",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,16",
+      "opis": "notowania historyczne CRI, strona 16",
+      "pobrano": "2026-11-18T14:44:44.570898Z",
+      "sha256": "fcc81d9f36a41def94aee0e0332029d9e47b947d9e21505678fded4722dc7809",
+      "plik": "fcc81d9f36a41def.html"
+    },
+    {
+      "id": "doc-085",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,17",
+      "opis": "notowania historyczne CRI, strona 17",
+      "pobrano": "2026-11-18T14:44:45.891502Z",
+      "sha256": "a18c98595bbe5af5f4c2729dd13f97535f65bb5baa8f716f9689e2fb43a094a0",
+      "plik": "a18c98595bbe5af5.html"
+    },
+    {
+      "id": "doc-086",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,18",
+      "opis": "notowania historyczne CRI, strona 18",
+      "pobrano": "2026-11-18T14:44:47.284061Z",
+      "sha256": "14edd1c5278e9cc734b8f580fbe9f9da6ade628e7ac8d97497e917dee4dfe96f",
+      "plik": "14edd1c5278e9cc7.html"
+    },
+    {
+      "id": "doc-087",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,19",
+      "opis": "notowania historyczne CRI, strona 19",
+      "pobrano": "2026-11-18T14:44:48.566231Z",
+      "sha256": "1b9cd47ddb3a59c67ce0540c6aaece611f6abbafedfc66fcc287d39ff8a37464",
+      "plik": "1b9cd47ddb3a59c6.html"
+    },
+    {
+      "id": "doc-088",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,20",
+      "opis": "notowania historyczne CRI, strona 20",
+      "pobrano": "2026-11-18T14:44:49.829095Z",
+      "sha256": "ca49276f038eb4f4e01c13816384946f33c328bd43cb89a3d4f064652eca8fd5",
+      "plik": "ca49276f038eb4f4.html"
+    },
+    {
+      "id": "doc-089",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,21",
+      "opis": "notowania historyczne CRI, strona 21",
+      "pobrano": "2026-11-18T14:44:51.165515Z",
+      "sha256": "1022953b40f266adee8ff2ad34b0fb5996f3c497207668dfa194c79d4da21cc9",
+      "plik": "1022953b40f266ad.html"
+    },
+    {
+      "id": "doc-090",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,22",
+      "opis": "notowania historyczne CRI, strona 22",
+      "pobrano": "2026-11-18T14:44:52.435071Z",
+      "sha256": "8a62e237196c5c7716d9e199419fc5d9b0618630081b44d46076316946e243db",
+      "plik": "8a62e237196c5c77.html"
+    },
+    {
+      "id": "doc-091",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,23",
+      "opis": "notowania historyczne CRI, strona 23",
+      "pobrano": "2026-11-18T14:44:53.734335Z",
+      "sha256": "3cc8041c4a909f830a4257caec989d7aa098a66bc86f37efa5c8bc4eaa15cc5e",
+      "plik": "3cc8041c4a909f83.html"
+    },
+    {
+      "id": "doc-092",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,24",
+      "opis": "notowania historyczne CRI, strona 24",
+      "pobrano": "2026-11-18T14:44:55.021348Z",
+      "sha256": "7fc8cd47027fccbe7dd09834eefabb6901b73a1bc6be354e95dc2517ae01056e",
+      "plik": "7fc8cd47027fccbe.html"
+    },
+    {
+      "id": "doc-093",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,25",
+      "opis": "notowania historyczne CRI, strona 25",
+      "pobrano": "2026-11-18T14:44:56.313553Z",
+      "sha256": "5956e5ec602e2fae92ef3e2212aecddb84285170253f4a1ab4747c46cf535075",
+      "plik": "5956e5ec602e2fae.html"
+    },
+    {
+      "id": "doc-094",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,26",
+      "opis": "notowania historyczne CRI, strona 26",
+      "pobrano": "2026-11-18T14:44:57.595428Z",
+      "sha256": "6445547ccd2c28d8ec984f50f83aeb1a9b6ad4b1acb61674e5875bf8711933ae",
+      "plik": "6445547ccd2c28d8.html"
+    },
+    {
+      "id": "doc-095",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG",
+      "opis": "notowania historyczne WIG, strona 1",
+      "pobrano": "2026-11-18T14:44:58.745794Z",
+      "sha256": "004bdc2c836fbbbcea78e28e3b0b72d9da0e1fcf98a5926922f8c805ea14d2fa",
+      "plik": "004bdc2c836fbbbc.html"
+    },
+    {
+      "id": "doc-096",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,2",
+      "opis": "notowania historyczne WIG, strona 2",
+      "pobrano": "2026-11-18T14:44:59.897896Z",
+      "sha256": "4c518ac7a5c9ac89bf0cb554cdc605f09ca673c185156e87aab5310f83f0ad49",
+      "plik": "4c518ac7a5c9ac89.html"
+    },
+    {
+      "id": "doc-097",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,3",
+      "opis": "notowania historyczne WIG, strona 3",
+      "pobrano": "2026-11-18T14:45:01.058262Z",
+      "sha256": "fb7b72f8d1c25d4a683ab9fac51850b5a0eddcf310882c78d06a89304cd0a1f8",
+      "plik": "fb7b72f8d1c25d4a.html"
+    },
+    {
+      "id": "doc-098",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,4",
+      "opis": "notowania historyczne WIG, strona 4",
+      "pobrano": "2026-11-18T14:45:02.235367Z",
+      "sha256": "e7725abb18898a2327bd86528329160d5cc3969a4b9834a13ea53e56bea4988f",
+      "plik": "e7725abb18898a23.html"
+    },
+    {
+      "id": "doc-099",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,5",
+      "opis": "notowania historyczne WIG, strona 5",
+      "pobrano": "2026-11-18T14:45:03.441639Z",
+      "sha256": "f0adf2e25ccd5de7118ce82471ade7157d7c5421168b5cfd90b7c834892600dc",
+      "plik": "f0adf2e25ccd5de7.html"
+    },
+    {
+      "id": "doc-100",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,6",
+      "opis": "notowania historyczne WIG, strona 6",
+      "pobrano": "2026-11-18T14:45:04.898892Z",
+      "sha256": "0fa9f52d8cf07f446e8086a0c2392e20d182b0e8ee4b95fafaf251ca109e82a3",
+      "plik": "0fa9f52d8cf07f44.html"
+    },
+    {
+      "id": "doc-101",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,7",
+      "opis": "notowania historyczne WIG, strona 7",
+      "pobrano": "2026-11-18T14:45:06.287109Z",
+      "sha256": "8f022fb00038ad904beaf29a2d361dee8dd4dabc15dd44c04a7a957e118fc333",
+      "plik": "8f022fb00038ad90.html"
+    },
+    {
+      "id": "doc-102",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,8",
+      "opis": "notowania historyczne WIG, strona 8",
+      "pobrano": "2026-11-18T14:45:07.779111Z",
+      "sha256": "f1ea8afc82a631d1fc2027d1be5f1a15cac2ee4bd58651d26b1dbebbdcc9838b",
+      "plik": "f1ea8afc82a631d1.html"
+    },
+    {
+      "id": "doc-103",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,9",
+      "opis": "notowania historyczne WIG, strona 9",
+      "pobrano": "2026-11-18T14:45:09.592270Z",
+      "sha256": "37f9f020ae83789fd15047ad8c8c03950dcfb40cd4aec8b9c20d232c4c3de9db",
+      "plik": "37f9f020ae83789f.html"
+    },
+    {
+      "id": "doc-104",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,10",
+      "opis": "notowania historyczne WIG, strona 10",
+      "pobrano": "2026-11-18T14:45:11.235165Z",
+      "sha256": "241c4776f3d6ba9b110517cfb14ead2e7244f637574b27d0b2f2dec8e179ee08",
+      "plik": "241c4776f3d6ba9b.html"
+    },
+    {
+      "id": "doc-105",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,11",
+      "opis": "notowania historyczne WIG, strona 11",
+      "pobrano": "2026-11-18T14:45:12.832668Z",
+      "sha256": "63ca102e7a6eabb5a18ceca1eedb5764fb5ec763f7c3c040254acf8a0e124fab",
+      "plik": "63ca102e7a6eabb5.html"
+    },
+    {
+      "id": "doc-106",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,12",
+      "opis": "notowania historyczne WIG, strona 12",
+      "pobrano": "2026-11-18T14:45:14.218184Z",
+      "sha256": "ed49eb5a2a548a23c3ed399782c331e35bdd795075e7b94195d63688c6e2b4cc",
+      "plik": "ed49eb5a2a548a23.html"
+    },
+    {
+      "id": "doc-107",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,13",
+      "opis": "notowania historyczne WIG, strona 13",
+      "pobrano": "2026-11-18T14:45:15.620104Z",
+      "sha256": "1f218ca189c4f180df760224ce29c92f5e00ac40c160bc3b196856d8cc60484f",
+      "plik": "1f218ca189c4f180.html"
+    },
+    {
+      "id": "doc-108",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,14",
+      "opis": "notowania historyczne WIG, strona 14",
+      "pobrano": "2026-11-18T14:45:17.054890Z",
+      "sha256": "991d6ab4da15d6355660ce1384978c70e378ca78a3d9a3eb7a070bf823ebd250",
+      "plik": "991d6ab4da15d635.html"
+    },
+    {
+      "id": "doc-109",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,15",
+      "opis": "notowania historyczne WIG, strona 15",
+      "pobrano": "2026-11-18T14:45:18.555197Z",
+      "sha256": "e9fb045d96c5a0189dd3f23a0b7fc61f59caa47735cceb1491f68741792575e0",
+      "plik": "e9fb045d96c5a018.html"
+    },
+    {
+      "id": "doc-110",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,16",
+      "opis": "notowania historyczne WIG, strona 16",
+      "pobrano": "2026-11-18T14:45:20.221977Z",
+      "sha256": "d93461ab35bd8310a61c085132dfb5c69675a9a7e888df1a17f63ea61768f8cd",
+      "plik": "d93461ab35bd8310.html"
+    },
+    {
+      "id": "doc-111",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,17",
+      "opis": "notowania historyczne WIG, strona 17",
+      "pobrano": "2026-11-18T14:45:21.730147Z",
+      "sha256": "d6950ab7f1a16d09e98e8a7394363aa417e9014cc7aafd8d6941900822cafaab",
+      "plik": "d6950ab7f1a16d09.html"
+    },
+    {
+      "id": "doc-112",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,18",
+      "opis": "notowania historyczne WIG, strona 18",
+      "pobrano": "2026-11-18T14:45:23.106821Z",
+      "sha256": "989f6ccb78214348b460d8604d039c1f4e810900ef6b49d29b37dfc5fe5b4d3d",
+      "plik": "989f6ccb78214348.html"
+    },
+    {
+      "id": "doc-113",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,19",
+      "opis": "notowania historyczne WIG, strona 19",
+      "pobrano": "2026-11-18T14:45:24.517164Z",
+      "sha256": "adeed33b1e7c04bbdf363fb6aa3226991438e197015c31229a94878be1be662a",
+      "plik": "adeed33b1e7c04bb.html"
+    },
+    {
+      "id": "doc-114",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,20",
+      "opis": "notowania historyczne WIG, strona 20",
+      "pobrano": "2026-11-18T14:45:25.909939Z",
+      "sha256": "1ce9eeae8d08282901ea95f1403db7eb3d2e8a44b3c2b354b43d3138c4724bcc",
+      "plik": "1ce9eeae8d082829.html"
+    },
+    {
+      "id": "doc-115",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,21",
+      "opis": "notowania historyczne WIG, strona 21",
+      "pobrano": "2026-11-18T14:45:27.296161Z",
+      "sha256": "9137b133f2d5986fdae033de0ab502857a6adc99cef56dcad4af1ce0d1a53cab",
+      "plik": "9137b133f2d5986f.html"
+    },
+    {
+      "id": "doc-116",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,22",
+      "opis": "notowania historyczne WIG, strona 22",
+      "pobrano": "2026-11-18T14:45:28.692901Z",
+      "sha256": "6e44c97d547f848664b50d43177e32d196b999a2aa550a4e2dea47b2bc907b00",
+      "plik": "6e44c97d547f8486.html"
+    },
+    {
+      "id": "doc-117",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,23",
+      "opis": "notowania historyczne WIG, strona 23",
+      "pobrano": "2026-11-18T14:45:30.153761Z",
+      "sha256": "fc9d1dc348e80480eb5f4baffd3432fbbd8957d48e98104dc9311d34c0173585",
+      "plik": "fc9d1dc348e80480.html"
+    },
+    {
+      "id": "doc-118",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,24",
+      "opis": "notowania historyczne WIG, strona 24",
+      "pobrano": "2026-11-18T14:45:31.539426Z",
+      "sha256": "1669cb9c8412e3612ef6ec6eadf0f76788e4a1f039af171d21238f3de5a43cff",
+      "plik": "1669cb9c8412e361.html"
+    },
+    {
+      "id": "doc-119",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,25",
+      "opis": "notowania historyczne WIG, strona 25",
+      "pobrano": "2026-11-18T14:45:32.985712Z",
+      "sha256": "8c864584f52f6049e6728f740a95c588c6e24dba278d53afe844d4317c289ffa",
+      "plik": "8c864584f52f6049.html"
+    },
+    {
+      "id": "doc-120",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/WIG,26",
+      "opis": "notowania historyczne WIG, strona 26",
+      "pobrano": "2026-11-18T14:45:34.347085Z",
+      "sha256": "2f8d1da2fa0ca7b0fe12d761045c04e80417996d962eddf695440348e4dcfbbc",
+      "plik": "2f8d1da2fa0ca7b0.html"
+    },
+    {
+      "id": "doc-121",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania/CRI",
+      "opis": "notowania (liczba akcji)",
+      "pobrano": "2026-11-18T14:45:35.490179Z",
+      "sha256": "6956d9c29101f254c762a8f3e7ccc48f24cc995c6b578da06de67d96402755e9",
+      "plik": "6956d9c29101f254.html"
+    },
+    {
+      "id": "doc-122",
+      "typ": "strona",
+      "zrodlo": "Damodaran (NYU Stern)",
+      "adres": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+      "opis": "premie za ryzyko krajów",
+      "pobrano": "2026-11-18T14:45:35.746166Z",
+      "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+      "plik": "ea30d57fc0858072.html"
+    },
+    {
+      "id": "doc-123",
+      "typ": "strona",
+      "zrodlo": "Strefa Inwestorów",
+      "adres": "https://strefainwestorow.pl/wiadomosci/20261118/rentownosci-obligacji-wybranych-panstw-tabela",
+      "opis": "rentowności obligacji",
+      "pobrano": "2026-11-18T14:45:37.247017Z",
+      "sha256": "f0f4d922035f37401cd7424b0bae8ec870209e29d833acba032b98170b06474a",
+      "plik": "f0f4d922035f3740.html"
+    },
+    {
+      "id": "doc-124",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/CRI.WA?range=5y&interval=1d",
+      "opis": "kurs (kontrola)",
+      "pobrano": "2026-11-18T14:45:53.033444Z",
+      "sha256": "541d20fd39cd486484095246ac01f597658a7ff4a148e57124f3e0951cd8d842",
+      "plik": "541d20fd39cd4864.json"
+    },
+    {
+      "id": "doc-125",
+      "typ": "strona",
+      "zrodlo": "FRED (St. Louis Fed)",
+      "adres": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPDEF",
+      "opis": "deflator PKB USA (GDPDEF)",
+      "pobrano": "2026-11-18T14:45:53.287264Z",
+      "sha256": "30bb0472781765e94efbbeaf63f0056106c5ff3786f6713485d3daff182b6010",
+      "plik": "30bb0472781765e9.csv"
+    },
+    {
+      "id": "doc-126",
+      "typ": "strona",
+      "zrodlo": "NBP",
+      "adres": "https://api.nbp.pl/api/exchangerates/rates/a/usd/2019-12-21/2019-12-31/?format=json",
+      "opis": "kurs średni USD (tabela A) do 2019-12-31",
+      "pobrano": "2026-11-18T14:45:53.953510Z",
+      "sha256": "72b0caf0ae1e30e38c2f65017e617703a38aa0b3c8822e748c09ea0ceb38f301",
+      "plik": "72b0caf0ae1e30e3.json"
+    },
+    {
+      "id": "doc-127",
+      "typ": "strona",
+      "zrodlo": "NBP",
+      "adres": "https://api.nbp.pl/api/exchangerates/rates/a/usd/2020-12-21/2020-12-31/?format=json",
+      "opis": "kurs średni USD (tabela A) do 2020-12-31",
+      "pobrano": "2026-11-18T14:45:55.016489Z",
+      "sha256": "cc9d17c3a567094b8f5b364150a51a67fd930dcda92b5bf79ed1c6502ab2158b",
+      "plik": "cc9d17c3a567094b.json"
+    },
+    {
+      "id": "doc-128",
+      "typ": "strona",
+      "zrodlo": "NBP",
+      "adres": "https://api.nbp.pl/api/exchangerates/rates/a/usd/2021-12-21/2021-12-31/?format=json",
+      "opis": "kurs średni USD (tabela A) do 2021-12-31",
+      "pobrano": "2026-11-18T14:45:56.107373Z",
+      "sha256": "ead27cc218a4eeca67df914b0f729c170079a1fcb5942fef16c4e8253f851d23",
+      "plik": "ead27cc218a4eeca.json"
+    },
+    {
+      "id": "doc-129",
+      "typ": "strona",
+      "zrodlo": "NBP",
+      "adres": "https://api.nbp.pl/api/exchangerates/rates/a/usd/2022-12-21/2022-12-31/?format=json",
+      "opis": "kurs średni USD (tabela A) do 2022-12-31",
+      "pobrano": "2026-11-18T14:45:57.216664Z",
+      "sha256": "0e798a08630af39b5602631c353dee9cee467af6dad69161121d70789167c25d",
+      "plik": "0e798a08630af39b.json"
+    },
+    {
+      "id": "doc-130",
+      "typ": "strona",
+      "zrodlo": "NBP",
+      "adres": "https://api.nbp.pl/api/exchangerates/rates/a/usd/2023-12-21/2023-12-31/?format=json",
+      "opis": "kurs średni USD (tabela A) do 2023-12-31",
+      "pobrano": "2026-11-18T14:45:58.359440Z",
+      "sha256": "2ff587d8b8b858949ed466d99abca52b5a2d07f462df61ea6a5a9d69fb89cff3",
+      "plik": "2ff587d8b8b85894.json"
+    },
+    {
+      "id": "doc-131",
+      "typ": "strona",
+      "zrodlo": "NBP",
+      "adres": "https://api.nbp.pl/api/exchangerates/rates/a/usd/2024-12-21/2024-12-31/?format=json",
+      "opis": "kurs średni USD (tabela A) do 2024-12-31",
+      "pobrano": "2026-11-18T14:45:59.295338Z",
+      "sha256": "b497316b4f16e604d45ed651dae903650aeb31a9760019da93a6916cc5af2462",
+      "plik": "b497316b4f16e604.json"
+    },
+    {
+      "id": "doc-132",
+      "typ": "strona",
+      "zrodlo": "NBP",
+      "adres": "https://api.nbp.pl/api/exchangerates/rates/a/usd/2025-12-21/2025-12-31/?format=json",
+      "opis": "kurs średni USD (tabela A) do 2025-12-31",
+      "pobrano": "2026-11-18T14:46:00.311055Z",
+      "sha256": "56343c3d714c57d215f413ed6927cdb71ecd1254fa471a903d58a614508d92a4",
+      "plik": "56343c3d714c57d2.json"
+    },
+    {
+      "id": "doc-133",
+      "typ": "inny",
+      "zrodlo": "spółka",
+      "adres": "https://cdn.sanity.io/files/lbgrp8oj/production/95e95ee032412e3f561449cf2ff58802ec3f1cbc.zip",
+      "opis": "sprawozdanie zarządu z działalności za 2025 (ESEF XHTML)",
+      "pobrano": "2026-11-18T14:47:16.367498Z",
+      "sha256": "94dacf6859d9dbca0780e16dd8d32bc66c4461277c4a22d9ad6ad034424b093d",
+      "plik": "94dacf6859d9dbca.zip"
+    },
+    {
+      "id": "doc-134",
+      "typ": "inny",
+      "zrodlo": "spółka",
+      "adres": "https://cdn.sanity.io/files/lbgrp8oj/production/bff33109f4b0889476acc5c502fe089d9cbf16d9.zip",
+      "opis": "sprawozdanie biegłego rewidenta z badania SF za 2025",
+      "pobrano": "2026-11-18T14:47:17.001737Z",
+      "sha256": "6f0636bed135a1261cc51fdb8974db1166b24aceb5718ec5f55d778495487fb3",
+      "plik": "6f0636bed135a126.zip"
+    },
+    {
+      "id": "doc-135",
+      "typ": "raport_pdf",
+      "zrodlo": "spółka",
+      "adres": "https://cdn.sanity.io/files/lbgrp8oj/production/6cf891676111b7d591f85a82ae9ef0b832899160.pdf",
+      "opis": "raport biegłego z przeglądu SF za I półrocze 2026",
+      "pobrano": "2026-11-18T14:47:17.734119Z",
+      "sha256": "95a42809e23c03e9ec4f23d001a40b64b6b67245392a67f0e3780ae64ef06a4c",
+      "plik": "95a42809e23c03e9.pdf"
+    },
+    {
+      "id": "doc-136",
+      "typ": "inny",
+      "zrodlo": "spółka",
+      "adres": "https://cdn.sanity.io/files/lbgrp8oj/production/4430aaa082faaca2c21b5026ddf53cda65774f77.zip",
+      "opis": "sprawozdanie zarządu z działalności za 2024 (ESEF XHTML)",
+      "pobrano": "2026-11-18T14:47:18.888674Z",
+      "sha256": "6c216e28961d385e1fef9121532d9587f1d5f105820b9915c3e3bfa2621967ac",
+      "plik": "6c216e28961d385e.zip"
+    },
+    {
+      "id": "doc-137",
+      "typ": "strona",
+      "zrodlo": "spółka",
+      "adres": "https://creotech.pl/pl/aktualnosci/creotech-instruments-oglasza-strategie-rozwoju-do-2029-roku-wspierana-planowana-emisja-w-wysokosci-okolo-100-mln-eur",
+      "opis": "komunikat: strategia do 2029 i planowana emisja",
+      "pobrano": "2026-11-18T14:47:20.063897Z",
+      "sha256": "0f4077df6270ba44abe41b106cd50e4ca3dfe7001cf2a928832a52a9904b0dd2",
+      "plik": "0f4077df6270ba44.html"
+    },
+    {
+      "id": "doc-138",
+      "typ": "strona",
+      "zrodlo": "spółka",
+      "adres": "https://creotech.pl/pl/aktualnosci/creotech-instruments-z-blisko-34-wzrostem-przychodow-z-dzialalnosci-kontynuowanej-w-i-polroczu-2026",
+      "opis": "komunikat: wyniki I półrocza 2026",
+      "pobrano": "2026-11-18T14:47:20.943941Z",
+      "sha256": "89779c76c8d8399c280ec2100fc0be9906ec38fafbf48881291402ac8ae6cfc3",
+      "plik": "89779c76c8d8399c.html"
+    }
+  ]
+}
