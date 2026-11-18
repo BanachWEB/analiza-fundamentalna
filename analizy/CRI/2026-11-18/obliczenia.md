@@ -45,7 +45,7 @@ Plik wygenerował silnik (2026-11-18). Kwoty w mln PLN. ¹ = co najmniej jedno w
 
 | Miara | Wartość | Uwagi |
 |---|---:|---|
-| Kurs | 700,00 PLN¹ |  |
+| Kurs | 700,00 PLN |  |
 | Kapitalizacja | 2 453 mln PLN¹ |  |
 | EV | 2 338 mln PLN¹ |  |
 | Beta | 0,79¹ | Blume; z regresji 0,69¹, 261 tyg. od 2021-11-19, błąd std. 0,18, R² 0,06 |
@@ -88,11 +88,43 @@ Brak tabeli konkurentów (brak pliku konkurenci.json albo rejestrów konkurentó
 
 ## Scenariusze
 
-Brak scenariuszy (plik scenariusze.json).
+| Scenariusz | Prawdopodobieństwo | Wartość na akcję | Stopa zwrotu przy obecnym kursie |
+|---|---:|---:|---:|
+| bazowy | 45,0%¹ | 280,69 PLN | 5,7%‼ |
+| byk | 20,0%¹ | 971,90 PLN | 11,8%‼ |
+| niedzwiedz | 35,0%¹ | 80,33 PLN | 3,1%‼ |
+| Wartość oczekiwana na akcję | 348,81 PLN‼ |  | |
+| Potencjał oczekiwany | -50,2%‼ |  | |
+| Prawdopodobieństwo straty | 80,0%‼ |  | |
+| Asymetria (zysk ÷ strata) | 0,13‼ |  | |
 
 ## Wrażliwość wyceny
 
-Brak tabeli wrażliwości (brak scenariuszy).
+Wartość na akcję wokół scenariusza „bazowy”. Wiersze: wzrost przychodów, kolumny: marża FCF.
+
+| wzrost przychodów \ marża FCF | −4 pp | −2 pp | bazowy | +2 pp | +4 pp |
+|---|---:|---:|---:|---:|---:|
+| −4 pp | 143,73‼ | 180,71‼ | 217,69‼ | 254,66‼ | 291,64‼ |
+| −2 pp | 161,30‼ | 204,13‼ | 246,96‼ | 289,79‼ | 332,62‼ |
+| bazowy | 181,54‼ | 231,11‼ | 280,69‼ | 330,27‼ | 379,85‼ |
+| +2 pp | 204,82‼ | 262,16‼ | 319,50‼ | 376,84‼ | 434,18‼ |
+| +4 pp | 231,57‼ | 297,82‼ | 364,07‼ | 430,33‼ | 496,58‼ |
+
+| koszt kapitału \ wzrost rezydualny | −0,5 pp | bazowy | +0,5 pp |
+|---|---:|---:|---:|
+| −2 pp | 374,64‼ | 399,58‼ | 429,70‼ |
+| −1 pp | 313,85‼ | 330,31‼ | 349,61‼ |
+| bazowy | 269,29‼ | 280,69‼ | 293,77‼ |
+| +1 pp | 235,37‼ | 243,56‼ | 252,80‼ |
+| +2 pp | 208,79‼ | 214,85‼ | 221,59‼ |
+
+Zmiana wartości przy jednym kroku założenia w górę:
+- wzrost przychodów (+2 pp): 13,8%‼
+- marża FCF (+2 pp): 17,7%‼
+- koszt kapitału (+1 pp): -13,2%‼
+- wzrost rezydualny (+0,5 pp): 4,7%‼
+
+**Najważniejsze założenie wyceny: marża FCF.**
 
 ## Karta w stylu Treli (informacja, nie bramka)
 

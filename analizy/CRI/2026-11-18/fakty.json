@@ -129,7 +129,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa"
@@ -153,7 +153,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa"
@@ -177,7 +177,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa"
@@ -201,7 +201,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa"
@@ -230,7 +230,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-259:1.72536e+08:0.00%:ok"
+        "drugie_zrodlo:doc-324:1.72536e+08:0.00%:ok"
       ]
     },
     {
@@ -252,7 +252,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-259:1.62328e+08:0.00%:ok"
+        "drugie_zrodlo:doc-324:1.62328e+08:0.00%:ok"
       ]
     },
     {
@@ -274,7 +274,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:aktywa=pasywa:ok:0.0000%",
-        "drugie_zrodlo:doc-259:3.32687e+08:0.00%:ok"
+        "drugie_zrodlo:doc-324:3.32687e+08:0.00%:ok"
       ]
     },
     {
@@ -298,7 +298,7 @@
       "cytat": "AKTYWA RAZEM 315 411 332 687",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:3.15412e+08:0.00%:ok"
+        "drugie_zrodlo:doc-324:3.15412e+08:0.00%:ok"
       ]
     },
     {
@@ -315,7 +315,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -338,7 +338,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -361,7 +361,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -384,7 +384,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -407,7 +407,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -430,7 +430,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -453,7 +453,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "aktywa_obrotowe"
@@ -483,7 +483,7 @@
       "cytat": "AKTYWA OBROTOWE 163 501 191 718",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:1.63501e+08:0.00%:ok"
+        "drugie_zrodlo:doc-324:1.63501e+08:0.00%:ok"
       ]
     },
     {
@@ -573,7 +573,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "amortyzacja"
@@ -597,7 +597,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "amortyzacja"
@@ -621,7 +621,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "amortyzacja"
@@ -645,7 +645,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "amortyzacja"
@@ -673,7 +673,7 @@
       "cytat": "Amortyzacja 7 985 8 246",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-261:8.246e+06:0.00%:ok"
+        "drugie_zrodlo:doc-326:8.246e+06:0.00%:ok"
       ]
     },
     {
@@ -695,7 +695,7 @@
       "cytat": "Amortyzacja 13 237 6 602",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-261:7.985e+06:17.32%:blad"
+        "drugie_zrodlo:doc-326:7.985e+06:17.32%:blad"
       ]
     },
     {
@@ -717,7 +717,7 @@
       "cytat": "Amortyzacja 13 237 6 602",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-261:1.4332e+07:7.64%:blad"
+        "drugie_zrodlo:doc-326:1.4332e+07:7.64%:blad"
       ]
     },
     {
@@ -742,7 +742,7 @@
       "cytat": "Amortyzacja 7 442 6 122 4 000 3 357",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-262:6.918e+06:11.51%:blad"
+        "drugie_zrodlo:doc-327:6.918e+06:11.51%:blad"
       ]
     },
     {
@@ -767,7 +767,7 @@
       "cytat": "Amortyzacja 7 442 6 122 4 000 3 357",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-262:7.71e+06:3.48%:blad"
+        "drugie_zrodlo:doc-327:7.71e+06:3.48%:blad"
       ]
     },
     {
@@ -792,6 +792,29 @@
       ]
     },
     {
+      "id": "asymetria.2026-11-17",
+      "rodzaj": "wyliczony",
+      "pozycja": "asymetria",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 0.1340802073115662,
+      "jednostka": "mnoznik",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "asymetria",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-17"
+      ]
+    },
+    {
       "id": "beta_regresja.2026-11-17",
       "rodzaj": "raportowany",
       "pozycja": "beta_regresja",
@@ -803,7 +826,7 @@
       "jednostka": "liczba",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-263",
+      "dokument": "doc-328",
       "miejsce": {
         "obliczenie": "MNK: tygodniowe stopy zwrotu spółki na stopach zwrotu indeksu WIG, okno 5 lat (ostatnie zamknięcie tygodnia)",
         "od": "2021-11-19",
@@ -812,58 +835,58 @@
         "blad_standardowy": 0.1767,
         "r2": 0.0554,
         "dokumenty": [
-          "doc-263",
-          "doc-264",
-          "doc-265",
-          "doc-266",
-          "doc-267",
-          "doc-268",
-          "doc-269",
-          "doc-270",
-          "doc-271",
-          "doc-272",
-          "doc-273",
-          "doc-274",
-          "doc-275",
-          "doc-276",
-          "doc-277",
-          "doc-278",
-          "doc-279",
-          "doc-280",
-          "doc-281",
-          "doc-282",
-          "doc-283",
-          "doc-284",
-          "doc-285",
-          "doc-286",
-          "doc-287",
-          "doc-288",
-          "doc-289",
-          "doc-290",
-          "doc-291",
-          "doc-292",
-          "doc-293",
-          "doc-294",
-          "doc-295",
-          "doc-296",
-          "doc-297",
-          "doc-298",
-          "doc-299",
-          "doc-300",
-          "doc-301",
-          "doc-302",
-          "doc-303",
-          "doc-304",
-          "doc-305",
-          "doc-306",
-          "doc-307",
-          "doc-308",
-          "doc-309",
-          "doc-310",
-          "doc-311",
-          "doc-312",
-          "doc-313",
-          "doc-314"
+          "doc-328",
+          "doc-329",
+          "doc-330",
+          "doc-331",
+          "doc-332",
+          "doc-333",
+          "doc-334",
+          "doc-335",
+          "doc-336",
+          "doc-337",
+          "doc-338",
+          "doc-339",
+          "doc-340",
+          "doc-341",
+          "doc-342",
+          "doc-343",
+          "doc-344",
+          "doc-345",
+          "doc-346",
+          "doc-347",
+          "doc-348",
+          "doc-349",
+          "doc-350",
+          "doc-351",
+          "doc-352",
+          "doc-353",
+          "doc-354",
+          "doc-355",
+          "doc-356",
+          "doc-357",
+          "doc-358",
+          "doc-359",
+          "doc-360",
+          "doc-361",
+          "doc-362",
+          "doc-363",
+          "doc-364",
+          "doc-365",
+          "doc-366",
+          "doc-367",
+          "doc-368",
+          "doc-369",
+          "doc-370",
+          "doc-371",
+          "doc-372",
+          "doc-373",
+          "doc-374",
+          "doc-375",
+          "doc-376",
+          "doc-377",
+          "doc-378",
+          "doc-379"
         ]
       }
     },
@@ -1126,7 +1149,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "capex"
@@ -1150,7 +1173,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "capex"
@@ -1174,7 +1197,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "capex"
@@ -1198,7 +1221,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "capex"
@@ -1226,7 +1249,7 @@
       "cytat": "Wydatki na rzeczowy majątek trwały i wartości niematerialne 19 907 22 613",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-261:2.2613e+07:0.00%:ok"
+        "drugie_zrodlo:doc-326:2.2613e+07:0.00%:ok"
       ]
     },
     {
@@ -1248,7 +1271,7 @@
       "cytat": "Wydatki na rzeczowy majątek trwały i wartości niematerialne 27 255 19 907",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-261:1.9907e+07:0.00%:ok"
+        "drugie_zrodlo:doc-326:1.9907e+07:0.00%:ok"
       ]
     },
     {
@@ -1270,7 +1293,7 @@
       "cytat": "Wydatki na rzeczowy majątek trwały i wartości niematerialne 27 255 19 907",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-261:2.7255e+07:0.00%:ok"
+        "drugie_zrodlo:doc-326:2.7255e+07:0.00%:ok"
       ]
     },
     {
@@ -1295,7 +1318,7 @@
       "cytat": "Wydatki na rzeczowy majątek trwały i wartości niematerialne 9 913 16 431",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-262:1.6431e+07:0.00%:ok"
+        "drugie_zrodlo:doc-327:1.6431e+07:0.00%:ok"
       ]
     },
     {
@@ -1320,7 +1343,7 @@
       "cytat": "Wydatki na rzeczowy majątek trwały i wartości niematerialne 9 913 16 431",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-262:9.913e+06:0.00%:ok"
+        "drugie_zrodlo:doc-327:9.913e+06:0.00%:ok"
       ]
     },
     {
@@ -1508,39 +1531,39 @@
       "jednostka": "liczba",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-263",
+      "dokument": "doc-328",
       "miejsce": {
         "obliczenie": "tygodnie od dołka do pierwszego zamknięcia na poziomie szczytu",
         "od": "2021-11-19",
         "do": "2026-11-17",
         "tygodni": 262,
         "dokumenty": [
-          "doc-263",
-          "doc-264",
-          "doc-265",
-          "doc-266",
-          "doc-267",
-          "doc-268",
-          "doc-269",
-          "doc-270",
-          "doc-271",
-          "doc-272",
-          "doc-273",
-          "doc-274",
-          "doc-275",
-          "doc-276",
-          "doc-277",
-          "doc-278",
-          "doc-279",
-          "doc-280",
-          "doc-281",
-          "doc-282",
-          "doc-283",
-          "doc-284",
-          "doc-285",
-          "doc-286",
-          "doc-287",
-          "doc-288"
+          "doc-328",
+          "doc-329",
+          "doc-330",
+          "doc-331",
+          "doc-332",
+          "doc-333",
+          "doc-334",
+          "doc-335",
+          "doc-336",
+          "doc-337",
+          "doc-338",
+          "doc-339",
+          "doc-340",
+          "doc-341",
+          "doc-342",
+          "doc-343",
+          "doc-344",
+          "doc-345",
+          "doc-346",
+          "doc-347",
+          "doc-348",
+          "doc-349",
+          "doc-350",
+          "doc-351",
+          "doc-352",
+          "doc-353"
         ]
       }
     },
@@ -3286,7 +3309,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "gotowka"
@@ -3309,7 +3332,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "gotowka"
@@ -3332,7 +3355,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "gotowka"
@@ -3355,7 +3378,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "gotowka"
@@ -3382,7 +3405,7 @@
       "cytat": "Środki pieniężne i ich ekwiwalenty 12.8. 32 397 73 224",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:7.3224e+07:0.00%:ok"
+        "drugie_zrodlo:doc-324:7.3224e+07:0.00%:ok"
       ]
     },
     {
@@ -3403,7 +3426,7 @@
       "cytat": "Środki pieniężne i ich ekwiwalenty 11.8 114 957 32 397",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:3.2397e+07:0.00%:ok"
+        "drugie_zrodlo:doc-324:3.2397e+07:0.00%:ok"
       ]
     },
     {
@@ -3424,7 +3447,7 @@
       "cytat": "Środki pieniężne i ich ekwiwalenty 11.8 114 957 32 397",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:1.14957e+08:0.00%:ok"
+        "drugie_zrodlo:doc-324:1.14957e+08:0.00%:ok"
       ]
     },
     {
@@ -3448,7 +3471,7 @@
       "cytat": "Środki pieniężne i ich ekwiwalenty 29 379 114 957",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:2.9379e+07:0.00%:ok"
+        "drugie_zrodlo:doc-324:2.9379e+07:0.00%:ok"
       ]
     },
     {
@@ -3484,7 +3507,7 @@
       "jednostka": "punkty",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-289",
+      "dokument": "doc-354",
       "miejsce": {
         "sesja": "2026-11-17",
         "pole": "zamknięcie"
@@ -3502,7 +3525,7 @@
       "jednostka": "ulamek",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-289",
+      "dokument": "doc-354",
       "miejsce": {
         "obliczenie": "jak max_obsuniecie, indeks WIG",
         "szczyt": "2022-01-14",
@@ -3511,32 +3534,32 @@
         "do": "2026-11-17",
         "tygodni": 262,
         "dokumenty": [
-          "doc-289",
-          "doc-290",
-          "doc-291",
-          "doc-292",
-          "doc-293",
-          "doc-294",
-          "doc-295",
-          "doc-296",
-          "doc-297",
-          "doc-298",
-          "doc-299",
-          "doc-300",
-          "doc-301",
-          "doc-302",
-          "doc-303",
-          "doc-304",
-          "doc-305",
-          "doc-306",
-          "doc-307",
-          "doc-308",
-          "doc-309",
-          "doc-310",
-          "doc-311",
-          "doc-312",
-          "doc-313",
-          "doc-314"
+          "doc-354",
+          "doc-355",
+          "doc-356",
+          "doc-357",
+          "doc-358",
+          "doc-359",
+          "doc-360",
+          "doc-361",
+          "doc-362",
+          "doc-363",
+          "doc-364",
+          "doc-365",
+          "doc-366",
+          "doc-367",
+          "doc-368",
+          "doc-369",
+          "doc-370",
+          "doc-371",
+          "doc-372",
+          "doc-373",
+          "doc-374",
+          "doc-375",
+          "doc-376",
+          "doc-377",
+          "doc-378",
+          "doc-379"
         ]
       }
     },
@@ -3552,38 +3575,38 @@
       "jednostka": "ulamek",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-289",
+      "dokument": "doc-354",
       "miejsce": {
         "od": "2025-11-17",
         "do": "2026-10-16",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-289",
-          "doc-290",
-          "doc-291",
-          "doc-292",
-          "doc-293",
-          "doc-294",
-          "doc-295",
-          "doc-296",
-          "doc-297",
-          "doc-298",
-          "doc-299",
-          "doc-300",
-          "doc-301",
-          "doc-302",
-          "doc-303",
-          "doc-304",
-          "doc-305",
-          "doc-306",
-          "doc-307",
-          "doc-308",
-          "doc-309",
-          "doc-310",
-          "doc-311",
-          "doc-312",
-          "doc-313",
-          "doc-314"
+          "doc-354",
+          "doc-355",
+          "doc-356",
+          "doc-357",
+          "doc-358",
+          "doc-359",
+          "doc-360",
+          "doc-361",
+          "doc-362",
+          "doc-363",
+          "doc-364",
+          "doc-365",
+          "doc-366",
+          "doc-367",
+          "doc-368",
+          "doc-369",
+          "doc-370",
+          "doc-371",
+          "doc-372",
+          "doc-373",
+          "doc-374",
+          "doc-375",
+          "doc-376",
+          "doc-377",
+          "doc-378",
+          "doc-379"
         ]
       }
     },
@@ -3599,39 +3622,39 @@
       "jednostka": "ulamek",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-289",
+      "dokument": "doc-354",
       "miejsce": {
         "obliczenie": "jak zmiennosc_roczna, indeks WIG",
         "od": "2021-11-19",
         "do": "2026-11-17",
         "tygodni": 262,
         "dokumenty": [
-          "doc-289",
-          "doc-290",
-          "doc-291",
-          "doc-292",
-          "doc-293",
-          "doc-294",
-          "doc-295",
-          "doc-296",
-          "doc-297",
-          "doc-298",
-          "doc-299",
-          "doc-300",
-          "doc-301",
-          "doc-302",
-          "doc-303",
-          "doc-304",
-          "doc-305",
-          "doc-306",
-          "doc-307",
-          "doc-308",
-          "doc-309",
-          "doc-310",
-          "doc-311",
-          "doc-312",
-          "doc-313",
-          "doc-314"
+          "doc-354",
+          "doc-355",
+          "doc-356",
+          "doc-357",
+          "doc-358",
+          "doc-359",
+          "doc-360",
+          "doc-361",
+          "doc-362",
+          "doc-363",
+          "doc-364",
+          "doc-365",
+          "doc-366",
+          "doc-367",
+          "doc-368",
+          "doc-369",
+          "doc-370",
+          "doc-371",
+          "doc-372",
+          "doc-373",
+          "doc-374",
+          "doc-375",
+          "doc-376",
+          "doc-377",
+          "doc-378",
+          "doc-379"
         ]
       }
     },
@@ -3649,7 +3672,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kapital_wlasny"
@@ -3672,7 +3695,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kapital_wlasny"
@@ -3695,7 +3718,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kapital_wlasny"
@@ -3718,7 +3741,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kapital_wlasny"
@@ -3745,7 +3768,7 @@
       "cytat": "KAPITAŁ WŁASNY 70 954 91 371",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:9.1371e+07:0.00%:ok"
+        "drugie_zrodlo:doc-324:9.1371e+07:0.00%:ok"
       ]
     },
     {
@@ -3766,7 +3789,7 @@
       "cytat": "KAPITAŁ WŁASNY 159 016 70 954",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:7.0954e+07:0.00%:ok"
+        "drugie_zrodlo:doc-324:7.0954e+07:0.00%:ok"
       ]
     },
     {
@@ -3787,7 +3810,7 @@
       "cytat": "KAPITAŁ WŁASNY 159 016 70 954",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:1.59016e+08:0.00%:ok"
+        "drugie_zrodlo:doc-324:1.59016e+08:0.00%:ok"
       ]
     },
     {
@@ -3811,7 +3834,7 @@
       "cytat": "KAPITAŁ WŁASNY 151 165 159 016",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:1.51165e+08:0.00%:ok"
+        "drugie_zrodlo:doc-324:1.51165e+08:0.00%:ok"
       ]
     },
     {
@@ -3997,65 +4020,65 @@
       "jednostka": "liczba",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-263",
+      "dokument": "doc-328",
       "miejsce": {
         "obliczenie": "korelacja tygodniowych stóp zwrotu z indeksem WIG",
         "od": "2021-11-19",
         "do": "2026-11-17",
         "tygodni": 262,
         "dokumenty": [
-          "doc-263",
-          "doc-264",
-          "doc-265",
-          "doc-266",
-          "doc-267",
-          "doc-268",
-          "doc-269",
-          "doc-270",
-          "doc-271",
-          "doc-272",
-          "doc-273",
-          "doc-274",
-          "doc-275",
-          "doc-276",
-          "doc-277",
-          "doc-278",
-          "doc-279",
-          "doc-280",
-          "doc-281",
-          "doc-282",
-          "doc-283",
-          "doc-284",
-          "doc-285",
-          "doc-286",
-          "doc-287",
-          "doc-288",
-          "doc-289",
-          "doc-290",
-          "doc-291",
-          "doc-292",
-          "doc-293",
-          "doc-294",
-          "doc-295",
-          "doc-296",
-          "doc-297",
-          "doc-298",
-          "doc-299",
-          "doc-300",
-          "doc-301",
-          "doc-302",
-          "doc-303",
-          "doc-304",
-          "doc-305",
-          "doc-306",
-          "doc-307",
-          "doc-308",
-          "doc-309",
-          "doc-310",
-          "doc-311",
-          "doc-312",
-          "doc-313",
-          "doc-314"
+          "doc-328",
+          "doc-329",
+          "doc-330",
+          "doc-331",
+          "doc-332",
+          "doc-333",
+          "doc-334",
+          "doc-335",
+          "doc-336",
+          "doc-337",
+          "doc-338",
+          "doc-339",
+          "doc-340",
+          "doc-341",
+          "doc-342",
+          "doc-343",
+          "doc-344",
+          "doc-345",
+          "doc-346",
+          "doc-347",
+          "doc-348",
+          "doc-349",
+          "doc-350",
+          "doc-351",
+          "doc-352",
+          "doc-353",
+          "doc-354",
+          "doc-355",
+          "doc-356",
+          "doc-357",
+          "doc-358",
+          "doc-359",
+          "doc-360",
+          "doc-361",
+          "doc-362",
+          "doc-363",
+          "doc-364",
+          "doc-365",
+          "doc-366",
+          "doc-367",
+          "doc-368",
+          "doc-369",
+          "doc-370",
+          "doc-371",
+          "doc-372",
+          "doc-373",
+          "doc-374",
+          "doc-375",
+          "doc-376",
+          "doc-377",
+          "doc-378",
+          "doc-379"
         ]
       }
     },
@@ -4093,7 +4116,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4117,7 +4140,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4141,7 +4164,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4165,7 +4188,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4189,7 +4212,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4213,7 +4236,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4237,7 +4260,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_dystrybucji"
@@ -4261,7 +4284,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -4285,7 +4308,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -4309,7 +4332,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -4333,7 +4356,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -4357,7 +4380,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -4381,7 +4404,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -4405,7 +4428,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_finansowe"
@@ -4569,7 +4592,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -4593,7 +4616,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -4617,7 +4640,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -4641,7 +4664,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -4665,7 +4688,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -4689,7 +4712,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -4713,7 +4736,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "koszty_zarzadu"
@@ -4736,7 +4759,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -4759,7 +4782,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -4782,7 +4805,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -4805,7 +4828,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -4828,7 +4851,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -4851,7 +4874,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -4874,7 +4897,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_dlugoterminowe"
@@ -4897,7 +4920,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -4920,7 +4943,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -4943,7 +4966,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -4966,7 +4989,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -4989,7 +5012,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -5012,7 +5035,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -5035,7 +5058,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "kredyty_krotkoterminowe"
@@ -5056,12 +5079,15 @@
       "jednostka": "pieniadz_na_akcje",
       "waluta": "PLN",
       "metoda": "parser_strony",
-      "status": "jedno_zrodlo",
-      "dokument": "doc-263",
+      "status": "zweryfikowany",
+      "dokument": "doc-328",
       "miejsce": {
         "sesja": "2026-11-17",
         "pole": "zamknięcie"
-      }
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-380:700:0.00%:ok"
+      ]
     },
     {
       "id": "kurs_usd_pln.2019-12-31",
@@ -5361,7 +5387,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -5384,7 +5410,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -5407,7 +5433,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -5430,7 +5456,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -5453,7 +5479,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -5476,7 +5502,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -5499,7 +5525,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_dlugoterminowy"
@@ -5529,7 +5555,7 @@
       "cytat": "Zobowiązania z tytułu leasingu 19 938 17 773",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:1.9938e+07:0.00%:ok"
+        "drugie_zrodlo:doc-324:1.9938e+07:0.00%:ok"
       ]
     },
     {
@@ -5546,7 +5572,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -5569,7 +5595,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -5592,7 +5618,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -5615,7 +5641,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -5638,7 +5664,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -5661,7 +5687,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -5684,7 +5710,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "leasing_krotkoterminowy"
@@ -5714,7 +5740,7 @@
       "cytat": "Zobowiązania z tytułu leasingu 4 069 3 116",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:4.069e+06:0.00%:ok"
+        "drugie_zrodlo:doc-324:4.069e+06:0.00%:ok"
       ]
     },
     {
@@ -6337,7 +6363,7 @@
       "jednostka": "ulamek",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-263",
+      "dokument": "doc-328",
       "miejsce": {
         "obliczenie": "największy spadek zamknięcia tygodniowego od wcześniejszego szczytu",
         "szczyt": "2023-08-11",
@@ -6347,32 +6373,32 @@
         "do": "2026-11-17",
         "tygodni": 262,
         "dokumenty": [
-          "doc-263",
-          "doc-264",
-          "doc-265",
-          "doc-266",
-          "doc-267",
-          "doc-268",
-          "doc-269",
-          "doc-270",
-          "doc-271",
-          "doc-272",
-          "doc-273",
-          "doc-274",
-          "doc-275",
-          "doc-276",
-          "doc-277",
-          "doc-278",
-          "doc-279",
-          "doc-280",
-          "doc-281",
-          "doc-282",
-          "doc-283",
-          "doc-284",
-          "doc-285",
-          "doc-286",
-          "doc-287",
-          "doc-288"
+          "doc-328",
+          "doc-329",
+          "doc-330",
+          "doc-331",
+          "doc-332",
+          "doc-333",
+          "doc-334",
+          "doc-335",
+          "doc-336",
+          "doc-337",
+          "doc-338",
+          "doc-339",
+          "doc-340",
+          "doc-341",
+          "doc-342",
+          "doc-343",
+          "doc-344",
+          "doc-345",
+          "doc-346",
+          "doc-347",
+          "doc-348",
+          "doc-349",
+          "doc-350",
+          "doc-351",
+          "doc-352",
+          "doc-353"
         ]
       }
     },
@@ -6411,38 +6437,38 @@
       "jednostka": "ulamek",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-263",
+      "dokument": "doc-328",
       "miejsce": {
         "od": "2025-11-17",
         "do": "2026-10-16",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-263",
-          "doc-264",
-          "doc-265",
-          "doc-266",
-          "doc-267",
-          "doc-268",
-          "doc-269",
-          "doc-270",
-          "doc-271",
-          "doc-272",
-          "doc-273",
-          "doc-274",
-          "doc-275",
-          "doc-276",
-          "doc-277",
-          "doc-278",
-          "doc-279",
-          "doc-280",
-          "doc-281",
-          "doc-282",
-          "doc-283",
-          "doc-284",
-          "doc-285",
-          "doc-286",
-          "doc-287",
-          "doc-288"
+          "doc-328",
+          "doc-329",
+          "doc-330",
+          "doc-331",
+          "doc-332",
+          "doc-333",
+          "doc-334",
+          "doc-335",
+          "doc-336",
+          "doc-337",
+          "doc-338",
+          "doc-339",
+          "doc-340",
+          "doc-341",
+          "doc-342",
+          "doc-343",
+          "doc-344",
+          "doc-345",
+          "doc-346",
+          "doc-347",
+          "doc-348",
+          "doc-349",
+          "doc-350",
+          "doc-351",
+          "doc-352",
+          "doc-353"
         ]
       }
     },
@@ -6561,7 +6587,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -6584,7 +6610,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -6607,7 +6633,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -6630,7 +6656,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -6653,7 +6679,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -6676,7 +6702,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -6699,7 +6725,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_dlugoterminowe"
@@ -6722,7 +6748,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -6745,7 +6771,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -6768,7 +6794,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -6791,7 +6817,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -6814,7 +6840,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -6837,7 +6863,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -6860,7 +6886,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "obligacje_krotkoterminowe"
@@ -6882,37 +6908,37 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-263",
+      "dokument": "doc-328",
       "miejsce": {
         "obliczenie": "średnia z 60 sesji: zamknięcie × wolumen",
         "od": "2026-08-25",
         "dokumenty": [
-          "doc-263",
-          "doc-264",
-          "doc-265",
-          "doc-266",
-          "doc-267",
-          "doc-268",
-          "doc-269",
-          "doc-270",
-          "doc-271",
-          "doc-272",
-          "doc-273",
-          "doc-274",
-          "doc-275",
-          "doc-276",
-          "doc-277",
-          "doc-278",
-          "doc-279",
-          "doc-280",
-          "doc-281",
-          "doc-282",
-          "doc-283",
-          "doc-284",
-          "doc-285",
-          "doc-286",
-          "doc-287",
-          "doc-288"
+          "doc-328",
+          "doc-329",
+          "doc-330",
+          "doc-331",
+          "doc-332",
+          "doc-333",
+          "doc-334",
+          "doc-335",
+          "doc-336",
+          "doc-337",
+          "doc-338",
+          "doc-339",
+          "doc-340",
+          "doc-341",
+          "doc-342",
+          "doc-343",
+          "doc-344",
+          "doc-345",
+          "doc-346",
+          "doc-347",
+          "doc-348",
+          "doc-349",
+          "doc-350",
+          "doc-351",
+          "doc-352",
+          "doc-353"
         ]
       }
     },
@@ -7236,7 +7262,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -7260,7 +7286,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -7284,7 +7310,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -7308,7 +7334,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -7332,7 +7358,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -7356,7 +7382,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -7380,7 +7406,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "pasywa_razem"
@@ -7524,6 +7550,52 @@
       ]
     },
     {
+      "id": "potencjal_oczekiwany.2026-11-17",
+      "rodzaj": "wyliczony",
+      "pozycja": "potencjal_oczekiwany",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": -0.5017070665203294,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "potencjal oczekiwany",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-17"
+      ]
+    },
+    {
+      "id": "prawdopodobienstwo_straty.2026-11-17",
+      "rodzaj": "wyliczony",
+      "pozycja": "prawdopodobienstwo_straty",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 0.8,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "prawdopodobienstwo straty",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-17"
+      ]
+    },
+    {
       "id": "premia_ryzyka_akcji.2026-11-18",
       "rodzaj": "raportowany",
       "pozycja": "premia_ryzyka_akcji",
@@ -7557,7 +7629,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -7582,7 +7654,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -7607,7 +7679,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -7632,7 +7704,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -7657,7 +7729,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -7682,7 +7754,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -7707,7 +7779,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_finansowe"
@@ -7732,7 +7804,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -7757,7 +7829,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -7782,7 +7854,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -7807,7 +7879,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -7832,7 +7904,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -7857,7 +7929,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -7882,7 +7954,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_inwestycyjne"
@@ -7907,7 +7979,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_operacyjne"
@@ -7932,7 +8004,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_operacyjne"
@@ -7957,7 +8029,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_operacyjne"
@@ -7982,7 +8054,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przeplywy_operacyjne"
@@ -8012,7 +8084,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-261:1.5473e+07:0.00%:ok"
+        "drugie_zrodlo:doc-326:1.5473e+07:0.00%:ok"
       ]
     },
     {
@@ -8035,7 +8107,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-261:-1.8566e+07:0.00%:ok"
+        "drugie_zrodlo:doc-326:-1.8566e+07:0.00%:ok"
       ]
     },
     {
@@ -8058,7 +8130,7 @@
       "kontrole": [
         "test_cytatu:ok:ok",
         "tozsamosc:przeplywy=zmiana_gotowki(bez_kursow):ok:0.0000%",
-        "drugie_zrodlo:doc-261:4.9679e+07:0.00%:ok"
+        "drugie_zrodlo:doc-326:4.9679e+07:0.00%:ok"
       ]
     },
     {
@@ -8083,7 +8155,7 @@
       "cytat": "Przepływy pieniężne netto z działalności operacyjnej -78 377 54 825",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-262:5.4825e+07:0.00%:ok"
+        "drugie_zrodlo:doc-327:5.4825e+07:0.00%:ok"
       ]
     },
     {
@@ -8108,7 +8180,7 @@
       "cytat": "Przepływy pieniężne netto z działalności operacyjnej -78 377 54 825",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-262:-7.8377e+07:0.00%:ok"
+        "drugie_zrodlo:doc-327:-7.8377e+07:0.00%:ok"
       ]
     },
     {
@@ -8147,7 +8219,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przychody"
@@ -8171,7 +8243,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przychody"
@@ -8195,7 +8267,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przychody"
@@ -8219,7 +8291,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "przychody"
@@ -8247,7 +8319,7 @@
       "cytat": "Przychody operacyjne 35 561 44 048",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-257:4.4048e+07:0.00%:ok"
+        "drugie_zrodlo:doc-322:4.4048e+07:0.00%:ok"
       ]
     },
     {
@@ -8269,7 +8341,7 @@
       "cytat": "Przychody operacyjne 150 017 19 754",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-257:3.5561e+07:44.45%:blad"
+        "drugie_zrodlo:doc-322:3.5561e+07:44.45%:blad"
       ]
     },
     {
@@ -8291,7 +8363,7 @@
       "cytat": "Przychody operacyjne 150 017 19 754",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-257:1.50017e+08:0.00%:ok"
+        "drugie_zrodlo:doc-322:1.50017e+08:0.00%:ok"
       ]
     },
     {
@@ -8316,7 +8388,7 @@
       "cytat": "Przychody ze sprzedaży 86 608 66 265 68 644 44 589",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-258:7.445e+07:10.99%:blad"
+        "drugie_zrodlo:doc-323:7.445e+07:10.99%:blad"
       ]
     },
     {
@@ -8341,7 +8413,7 @@
       "cytat": "Przychody ze sprzedaży 86 608 66 265 68 644 44 589",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-258:8.6608e+07:0.00%:ok"
+        "drugie_zrodlo:doc-323:8.6608e+07:0.00%:ok"
       ]
     },
     {
@@ -8707,37 +8779,37 @@
       "jednostka": "liczba",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-263",
+      "dokument": "doc-328",
       "miejsce": {
         "obliczenie": "RSI Wildera z 14 sesji, zamknięcia",
         "od": "2021-10-12",
         "dokumenty": [
-          "doc-263",
-          "doc-264",
-          "doc-265",
-          "doc-266",
-          "doc-267",
-          "doc-268",
-          "doc-269",
-          "doc-270",
-          "doc-271",
-          "doc-272",
-          "doc-273",
-          "doc-274",
-          "doc-275",
-          "doc-276",
-          "doc-277",
-          "doc-278",
-          "doc-279",
-          "doc-280",
-          "doc-281",
-          "doc-282",
-          "doc-283",
-          "doc-284",
-          "doc-285",
-          "doc-286",
-          "doc-287",
-          "doc-288"
+          "doc-328",
+          "doc-329",
+          "doc-330",
+          "doc-331",
+          "doc-332",
+          "doc-333",
+          "doc-334",
+          "doc-335",
+          "doc-336",
+          "doc-337",
+          "doc-338",
+          "doc-339",
+          "doc-340",
+          "doc-341",
+          "doc-342",
+          "doc-343",
+          "doc-344",
+          "doc-345",
+          "doc-346",
+          "doc-347",
+          "doc-348",
+          "doc-349",
+          "doc-350",
+          "doc-351",
+          "doc-352",
+          "doc-353"
         ]
       }
     },
@@ -8825,6 +8897,123 @@
       ]
     },
     {
+      "id": "scenariusz_marza_fcf.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.1,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice 70.–75. percentyla stopy bazowej, bo spółka ma mały punkt startu, portfel zamówień kilka razy większy od rocznych przychodów (doc-137) i finansowanie z emisji serii M. Zakładam, że spółka realizuje część strategii, a marża FCF jest niższa niż w FY2025, bo spółka zwiększa nakłady na moce produkcyjne i nowe platformy."
+    },
+    {
+      "id": "scenariusz_marza_fcf.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.15,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice 90. percentyla stopy bazowej: dziesięcioletni wzrost przychodów powyżej 30% rocznie utrzymuje bardzo mała część spółek, nawet przy małej bazie. Warunki: spółka zwiększa moce produkcyjne z ok. 10 do ponad 40 satelitów rocznie (doc-137), wchodzi w minisatelity i zdobywa kontrakty w programach EOGS i IRIS² jako główny wykonawca; marża FCF wraca do poziomu z FY2025 dzięki dźwigni operacyjnej."
+    },
+    {
+      "id": "scenariusz_marza_fcf.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_marza_fcf",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.05,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice mediany stopy bazowej dla wzrostu przychodów małych spółek przemysłowych, ze spadkiem marży FCF. Przychody spółki zależą od kilku dużych kontraktów publicznych (ESA, Komisja Europejska, zamówienia obronne); opóźnienie programów konstelacyjnych albo przegrana w przetargach zatrzymuje wzrost, a koszty stałe po rozbudowie mocy obniżają marżę. Wysokie prawdopodobieństwo odzwierciedla zmienność przychodów spółki w latach 2021–2024."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.45,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice 70.–75. percentyla stopy bazowej, bo spółka ma mały punkt startu, portfel zamówień kilka razy większy od rocznych przychodów (doc-137) i finansowanie z emisji serii M. Zakładam, że spółka realizuje część strategii, a marża FCF jest niższa niż w FY2025, bo spółka zwiększa nakłady na moce produkcyjne i nowe platformy."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.2,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice 90. percentyla stopy bazowej: dziesięcioletni wzrost przychodów powyżej 30% rocznie utrzymuje bardzo mała część spółek, nawet przy małej bazie. Warunki: spółka zwiększa moce produkcyjne z ok. 10 do ponad 40 satelitów rocznie (doc-137), wchodzi w minisatelity i zdobywa kontrakty w programach EOGS i IRIS² jako główny wykonawca; marża FCF wraca do poziomu z FY2025 dzięki dźwigni operacyjnej."
+    },
+    {
+      "id": "scenariusz_prawdopodobienstwo.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_prawdopodobienstwo",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.35,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice mediany stopy bazowej dla wzrostu przychodów małych spółek przemysłowych, ze spadkiem marży FCF. Przychody spółki zależą od kilku dużych kontraktów publicznych (ESA, Komisja Europejska, zamówienia obronne); opóźnienie programów konstelacyjnych albo przegrana w przetargach zatrzymuje wzrost, a koszty stałe po rozbudowie mocy obniżają marżę. Wysokie prawdopodobieństwo odzwierciedla zmienność przychodów spółki w latach 2021–2024."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.bazowy",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.2,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice 70.–75. percentyla stopy bazowej, bo spółka ma mały punkt startu, portfel zamówień kilka razy większy od rocznych przychodów (doc-137) i finansowanie z emisji serii M. Zakładam, że spółka realizuje część strategii, a marża FCF jest niższa niż w FY2025, bo spółka zwiększa nakłady na moce produkcyjne i nowe platformy."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.byk",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.33,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice 90. percentyla stopy bazowej: dziesięcioletni wzrost przychodów powyżej 30% rocznie utrzymuje bardzo mała część spółek, nawet przy małej bazie. Warunki: spółka zwiększa moce produkcyjne z ok. 10 do ponad 40 satelitów rocznie (doc-137), wchodzi w minisatelity i zdobywa kontrakty w programach EOGS i IRIS² jako główny wykonawca; marża FCF wraca do poziomu z FY2025 dzięki dźwigni operacyjnej."
+    },
+    {
+      "id": "scenariusz_wzrost_przychodow.niedzwiedz",
+      "rodzaj": "zalozenie",
+      "pozycja": "scenariusz_wzrost_przychodow",
+      "okres": {
+        "typ": "brak"
+      },
+      "wartosc": 0.07,
+      "jednostka": "ulamek",
+      "metoda": "model",
+      "status": "jedno_zrodlo",
+      "uzasadnienie": "Okolice mediany stopy bazowej dla wzrostu przychodów małych spółek przemysłowych, ze spadkiem marży FCF. Przychody spółki zależą od kilku dużych kontraktów publicznych (ESA, Komisja Europejska, zamówienia obronne); opóźnienie programów konstelacyjnych albo przegrana w przetargach zatrzymuje wzrost, a koszty stałe po rozbudowie mocy obniżają marżę. Wysokie prawdopodobieństwo odzwierciedla zmienność przychodów spółki w latach 2021–2024."
+    },
+    {
       "id": "spread_kraju.2026-11-18",
       "rodzaj": "raportowany",
       "pozycja": "spread_kraju",
@@ -8874,6 +9063,75 @@
       ]
     },
     {
+      "id": "stopa_zwrotu_implikowana.bazowy",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 0.05661519093532115,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza bazowy równa się kursowi",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-11-18",
+        "kurs.2026-11-17",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "stopa_zwrotu_implikowana.byk",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 0.11829134339746086,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza byk równa się kursowi",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.byk",
+        "scenariusz_marza_fcf.byk",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-11-18",
+        "kurs.2026-11-17",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "stopa_zwrotu_implikowana.niedzwiedz",
+      "rodzaj": "wyliczony",
+      "pozycja": "stopa_zwrotu_implikowana",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 0.03068567377218279,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "stopa dyskontowa, przy której wartość scenariusza niedzwiedz równa się kursowi",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.niedzwiedz",
+        "scenariusz_marza_fcf.niedzwiedz",
+        "wzrost_rezydualny.zalozenie",
+        "akcje_w_obrocie.2026-11-18",
+        "kurs.2026-11-17",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
       "id": "udzial_pvgo.2026-11-17",
       "rodzaj": "wyliczony",
       "pozycja": "udzial_pvgo",
@@ -8890,6 +9148,1201 @@
         "zysk_netto.TTM2026-06-30",
         "koszt_kapitalu_wlasnego.2026-11-17",
         "kapitalizacja.2026-11-17"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.bazowy",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 280.69134888122056,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "(wartość przepływów: przychody × marża FCF, wzrost przez 10 lat, potem rezydualny − dlug_netto) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.byk",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 971.897533926963,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "(wartość przepływów: przychody × marża FCF, wzrost przez 10 lat, potem rezydualny − dlug_netto) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.byk",
+        "scenariusz_marza_fcf.byk",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wartosc_na_akcje.niedzwiedz",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 80.3269704395075,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "(wartość przepływów: przychody × marża FCF, wzrost przez 10 lat, potem rezydualny − dlug_netto) / akcje_w_obrocie",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.niedzwiedz",
+        "scenariusz_marza_fcf.niedzwiedz",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wartosc_oczekiwana_na_akcje.2026-11-17",
+      "rodzaj": "wyliczony",
+      "pozycja": "wartosc_oczekiwana_na_akcje",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 348.8050534357695,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartosc oczekiwana na akcje",
+      "wejscia": [
+        "scenariusz_prawdopodobienstwo.byk",
+        "wartosc_na_akcje.byk",
+        "scenariusz_prawdopodobienstwo.bazowy",
+        "wartosc_na_akcje.bazowy",
+        "scenariusz_prawdopodobienstwo.niedzwiedz",
+        "wartosc_na_akcje.niedzwiedz",
+        "kurs.2026-11-17"
+      ]
+    },
+    {
+      "id": "wplywy_z_emisji_serii_m.2026-07-31",
+      "rodzaj": "raportowany",
+      "pozycja": "wplywy_z_emisji_serii_m",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-07-31"
+      },
+      "wartosc": 481.0,
+      "skala": "mln",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 40
+      },
+      "cytat": "W lipcu 2026 roku pozyskano środki z emisji akcji serii M w wysokości 481 mln PLN",
+      "kontrole": [
+        "test_cytatu:ok:ok"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_m1_gt_m1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 313.85363732191297,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału -1 krok(i), wzrost rezydualny -1 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_m1_gt_p0",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 330.3141414859237,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału -1 krok(i), wzrost rezydualny +0 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_m1_gt_p1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 349.61385195419206,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału -1 krok(i), wzrost rezydualny +1 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_m2_gt_m1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 374.6444848376347,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału -2 krok(i), wzrost rezydualny -1 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_m2_gt_p0",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 399.57544940569153,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału -2 krok(i), wzrost rezydualny +0 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_m2_gt_p1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 429.7029930737473,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału -2 krok(i), wzrost rezydualny +1 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_p0_gt_m1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 269.28699936327655,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału +0 krok(i), wzrost rezydualny -1 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_p0_gt_p0",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 280.69134888122056,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału +0 krok(i), wzrost rezydualny +0 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_p0_gt_p1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 293.77340755964866,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału +0 krok(i), wzrost rezydualny +1 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_p1_gt_m1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 235.3663174595963,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału +1 krok(i), wzrost rezydualny -1 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_p1_gt_p0",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 243.55958025602519,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału +1 krok(i), wzrost rezydualny +0 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_p1_gt_p1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 252.8035883812829,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału +1 krok(i), wzrost rezydualny +1 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_p2_gt_m1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 208.79453106484345,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału +2 krok(i), wzrost rezydualny -1 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_p2_gt_p0",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 214.8502203069399,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału +2 krok(i), wzrost rezydualny +0 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.ke_p2_gt_p1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 221.594245939242,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); koszt kapitału +2 krok(i), wzrost rezydualny +1 krok",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_m1_marza_m1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 204.12786550945393,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost -1 krok(i), marza -1 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_m1_marza_m2",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 161.29692774027336,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost -1 krok(i), marza -2 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_m1_marza_p0",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 246.95880327863446,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost -1 krok(i), marza +0 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_m1_marza_p1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 289.789741047815,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost -1 krok(i), marza +1 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_m1_marza_p2",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 332.6206788169956,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost -1 krok(i), marza +2 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_m2_marza_m1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 180.7111774345422,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost -2 krok(i), marza -1 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_m2_marza_m2",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 143.7344116840896,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost -2 krok(i), marza -2 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_m2_marza_p0",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 217.68794318499488,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost -2 krok(i), marza +0 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_m2_marza_p1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 254.66470893544752,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost -2 krok(i), marza +1 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_m2_marza_p2",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 291.64147468590016,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost -2 krok(i), marza +2 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p0_marza_m1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 231.11390199152277,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +0 krok(i), marza -1 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p0_marza_m2",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 181.53645510182503,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +0 krok(i), marza -2 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p0_marza_p0",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 280.69134888122056,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +0 krok(i), marza +0 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p0_marza_p1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 330.26879577091836,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +0 krok(i), marza +1 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p0_marza_p2",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 379.84624266061604,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +0 krok(i), marza +2 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p1_marza_m1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 262.16109445161584,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +1 krok(i), marza -1 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p1_marza_m2",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 204.82184944689482,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +1 krok(i), marza -2 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p1_marza_p0",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 319.50033945633686,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +1 krok(i), marza +0 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p1_marza_p1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 376.83958446105794,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +1 krok(i), marza +1 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p1_marza_p2",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 434.1788294657791,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +1 krok(i), marza +2 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p2_marza_m1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 297.82042706379434,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +2 krok(i), marza -1 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p2_marza_m2",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 231.56634890602862,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +2 krok(i), marza -2 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p2_marza_p0",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 364.0745052215599,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +2 krok(i), marza +0 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p2_marza_p1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 430.32858337932555,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +2 krok(i), marza +1 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_wartosc.wzrost_p2_marza_p2",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_wartosc",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 496.58266153709116,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "PLN",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość scenariusza bazowego (przychody × marża FCF, wzrost przez lata prognozy, dług netto); wzrost +2 krok(i), marza +2 krok(i)",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_zalozenia.gt",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_zalozenia",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 0.04660656172899724,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość przy wzrost rezydualny +0.5 pp ÷ wartość scenariusza bazowy − 1",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_zalozenia.ke",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_zalozenia",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": -0.13228682954852422,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość przy koszt kapitału +1 pp ÷ wartość scenariusza bazowy − 1",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_zalozenia.marza",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_zalozenia",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 0.17662620200908785,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość przy marża FCF +2 pp ÷ wartość scenariusza bazowy − 1",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wrazliwosc_zalozenia.wzrost",
+      "rodzaj": "wyliczony",
+      "pozycja": "wrazliwosc_zalozenia",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 0.13826215424807775,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "konflikt",
+      "wzor": "wartość przy wzrost przychodów +2 pp ÷ wartość scenariusza bazowy − 1",
+      "wejscia": [
+        "przychody.TTM2026-06-30",
+        "scenariusz_wzrost_przychodow.bazowy",
+        "scenariusz_marza_fcf.bazowy",
+        "wzrost_rezydualny.zalozenie",
+        "koszt_kapitalu_wlasnego.2026-11-17",
+        "akcje_w_obrocie.2026-11-18",
+        "dlug_netto.2025-12-31"
+      ]
+    },
+    {
+      "id": "wynik_na_dystrybucji_aktywow.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "wynik_na_dystrybucji_aktywow",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 683127.0,
+      "skala": "tys",
+      "jednostka": "pieniadz",
+      "waluta": "PLN",
+      "metoda": "tabela_pdf",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-003",
+      "miejsce": {
+        "strona": 29
+      },
+      "cytat": "Wynik na rozliczeniu dystrybucji aktywów niepieniężnych 683 127",
+      "kontrole": [
+        "test_cytatu:ok:ok"
       ]
     },
     {
@@ -9166,7 +10619,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -9189,7 +10642,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -9212,7 +10665,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -9235,7 +10688,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -9258,7 +10711,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -9281,7 +10734,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -9304,7 +10757,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zapasy"
@@ -9334,7 +10787,7 @@
       "cytat": "Zapasy 20 232 15 948",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:2.0232e+07:0.00%:ok"
+        "drugie_zrodlo:doc-324:2.0232e+07:0.00%:ok"
       ]
     },
     {
@@ -9352,7 +10805,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -9377,7 +10830,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -9402,7 +10855,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -9427,7 +10880,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -9452,7 +10905,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -9477,7 +10930,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -9502,7 +10955,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "zweryfikowany",
-      "dokument": "doc-261",
+      "dokument": "doc-326",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zmiana_gotowki"
@@ -9524,38 +10977,38 @@
       "jednostka": "ulamek",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-263",
+      "dokument": "doc-328",
       "miejsce": {
         "od": "2026-08-18",
         "do": "2026-11-17",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-263",
-          "doc-264",
-          "doc-265",
-          "doc-266",
-          "doc-267",
-          "doc-268",
-          "doc-269",
-          "doc-270",
-          "doc-271",
-          "doc-272",
-          "doc-273",
-          "doc-274",
-          "doc-275",
-          "doc-276",
-          "doc-277",
-          "doc-278",
-          "doc-279",
-          "doc-280",
-          "doc-281",
-          "doc-282",
-          "doc-283",
-          "doc-284",
-          "doc-285",
-          "doc-286",
-          "doc-287",
-          "doc-288"
+          "doc-328",
+          "doc-329",
+          "doc-330",
+          "doc-331",
+          "doc-332",
+          "doc-333",
+          "doc-334",
+          "doc-335",
+          "doc-336",
+          "doc-337",
+          "doc-338",
+          "doc-339",
+          "doc-340",
+          "doc-341",
+          "doc-342",
+          "doc-343",
+          "doc-344",
+          "doc-345",
+          "doc-346",
+          "doc-347",
+          "doc-348",
+          "doc-349",
+          "doc-350",
+          "doc-351",
+          "doc-352",
+          "doc-353"
         ]
       }
     },
@@ -9639,39 +11092,39 @@
       "jednostka": "ulamek",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-263",
+      "dokument": "doc-328",
       "miejsce": {
         "obliczenie": "odchylenie standardowe tygodniowych stóp zwrotu × √52",
         "od": "2021-11-19",
         "do": "2026-11-17",
         "tygodni": 262,
         "dokumenty": [
-          "doc-263",
-          "doc-264",
-          "doc-265",
-          "doc-266",
-          "doc-267",
-          "doc-268",
-          "doc-269",
-          "doc-270",
-          "doc-271",
-          "doc-272",
-          "doc-273",
-          "doc-274",
-          "doc-275",
-          "doc-276",
-          "doc-277",
-          "doc-278",
-          "doc-279",
-          "doc-280",
-          "doc-281",
-          "doc-282",
-          "doc-283",
-          "doc-284",
-          "doc-285",
-          "doc-286",
-          "doc-287",
-          "doc-288"
+          "doc-328",
+          "doc-329",
+          "doc-330",
+          "doc-331",
+          "doc-332",
+          "doc-333",
+          "doc-334",
+          "doc-335",
+          "doc-336",
+          "doc-337",
+          "doc-338",
+          "doc-339",
+          "doc-340",
+          "doc-341",
+          "doc-342",
+          "doc-343",
+          "doc-344",
+          "doc-345",
+          "doc-346",
+          "doc-347",
+          "doc-348",
+          "doc-349",
+          "doc-350",
+          "doc-351",
+          "doc-352",
+          "doc-353"
         ]
       }
     },
@@ -9822,7 +11275,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -9845,7 +11298,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -9868,7 +11321,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -9891,7 +11344,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -9914,7 +11367,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -9937,7 +11390,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -9960,7 +11413,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-259",
+      "dokument": "doc-324",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zobowiazania_krotkoterminowe"
@@ -9990,7 +11443,7 @@
       "cytat": "ZOBOWIĄZANIA KRÓTKOTERMINOWE 115 623 114 315",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-259:1.15623e+08:0.00%:ok"
+        "drugie_zrodlo:doc-324:1.15623e+08:0.00%:ok"
       ]
     },
     {
@@ -10031,7 +11484,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto"
@@ -10055,7 +11508,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto"
@@ -10079,7 +11532,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto"
@@ -10103,7 +11556,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto"
@@ -10131,7 +11584,7 @@
       "cytat": "Zysk (strata) netto za okres - 20 455 - 14 342",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-257:-1.4342e+07:0.00%:ok"
+        "drugie_zrodlo:doc-322:-1.4342e+07:0.00%:ok"
       ]
     },
     {
@@ -10153,7 +11606,7 @@
       "cytat": "Zysk (strata) netto za okres 13 571 -20 455",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-257:-2.0455e+07:0.00%:ok"
+        "drugie_zrodlo:doc-322:-2.0455e+07:0.00%:ok"
       ]
     },
     {
@@ -10175,7 +11628,7 @@
       "cytat": "Zysk (strata) netto za okres 13 571 -20 455",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-257:1.3571e+07:0.00%:ok"
+        "drugie_zrodlo:doc-322:1.3571e+07:0.00%:ok"
       ]
     },
     {
@@ -10200,7 +11653,7 @@
       "cytat": "Zysk (strata) netto za okres 685 270 3 541 692 138 2 137",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-258:3.541e+06:0.00%:ok"
+        "drugie_zrodlo:doc-323:3.541e+06:0.00%:ok"
       ]
     },
     {
@@ -10225,7 +11678,7 @@
       "cytat": "Zysk (strata) netto za okres 685 270 3 541 692 138 2 137",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-258:6.8527e+08:0.00%:ok"
+        "drugie_zrodlo:doc-323:6.8527e+08:0.00%:ok"
       ]
     },
     {
@@ -10375,7 +11828,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -10399,7 +11852,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -10423,7 +11876,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -10447,7 +11900,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -10471,7 +11924,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -10495,7 +11948,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -10519,7 +11972,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_netto_razem"
@@ -10543,7 +11996,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_operacyjny"
@@ -10567,7 +12020,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_operacyjny"
@@ -10591,7 +12044,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_operacyjny"
@@ -10615,7 +12068,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_operacyjny"
@@ -10643,7 +12096,7 @@
       "cytat": "Zysk (strata) z działalności operacyjnej - 24 847 - 16 863",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-257:-1.6862e+07:0.01%:ok"
+        "drugie_zrodlo:doc-322:-1.6862e+07:0.01%:ok"
       ]
     },
     {
@@ -10665,7 +12118,7 @@
       "cytat": "Zysk (strata) z działalności operacyjnej 24 874 -22 446",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-257:-2.4847e+07:9.66%:blad"
+        "drugie_zrodlo:doc-322:-2.4847e+07:9.66%:blad"
       ]
     },
     {
@@ -10687,7 +12140,7 @@
       "cytat": "Zysk (strata) z działalności operacyjnej 24 874 -22 446",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-257:2.4874e+07:0.00%:ok"
+        "drugie_zrodlo:doc-322:2.4874e+07:0.00%:ok"
       ]
     },
     {
@@ -10712,7 +12165,7 @@
       "cytat": "Zysk (strata) z działalności operacyjnej -945 7 511",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-258:3.993e+06:46.84%:blad"
+        "drugie_zrodlo:doc-323:3.993e+06:46.84%:blad"
       ]
     },
     {
@@ -10737,7 +12190,7 @@
       "cytat": "Zysk (strata) z działalności operacyjnej -945 7 511",
       "kontrole": [
         "test_cytatu:ok:ok",
-        "drugie_zrodlo:doc-258:-945000:0.00%:ok"
+        "drugie_zrodlo:doc-323:-945000:0.00%:ok"
       ]
     },
     {
@@ -10776,7 +12229,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -10800,7 +12253,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -10824,7 +12277,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -10848,7 +12301,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -10872,7 +12325,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -10896,7 +12349,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
@@ -10920,7 +12373,7 @@
       "waluta": "PLN",
       "metoda": "parser_strony",
       "status": "jedno_zrodlo",
-      "dokument": "doc-257",
+      "dokument": "doc-322",
       "miejsce": {
         "zrodlo": "Biznesradar",
         "pole": "zysk_przed_opodatkowaniem"
