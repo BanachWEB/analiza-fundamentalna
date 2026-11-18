@@ -4,7 +4,7 @@ Data analizy: 18.11.2026. Rynek: GPW. Typ spółki: ogólny. Decyzja bramek: DAL
 
 ## TL;DR
 
-> Creotech Instruments buduje mikrosatelity na własnej platformie HyperSat i sprzedaje je głównie polskiemu wojsku i Europejskiej Agencji Kosmicznej (ESA). W 2025 roku dwa kontrakty (Mikroglob dla Agencji Uzbrojenia i najpewniej CAMILA dla ESA) dały prawie całe przychody. Spółka chce zwiększyć moce produkcyjne kilka razy i w lipcu 2026 roku pozyskała 481,0 mln PLN[^1] z emisji akcji serii M. Teza ma pięć warunków koniecznych. Dokumenty potwierdzają dwa z nich (finansowanie, zdolność dostarczania satelitów), a trzy zostają do sprawdzenia: nowe kontrakty po Mikroglobie, marża FCF przy większej skali i rozwodnienie. Przy kursie 700,00 PLN[^2] nawet scenariusz byka daje stopę zwrotu 11,8%‼[^3], czyli cena zakłada wzrost bliski górnej granicy tego, co osiągają spółki. Moim zdaniem największym ryzykiem jest koncentracja przychodów na dwóch kontraktach publicznych, które kończą się w latach 2027–2029, przy cenie, która już zakłada ich zastąpienie znacznie większymi. Wg twoich zasad: spółka trafia do portfela Agresywny (koszyk GPW), pauza po rajdzie nie obowiązuje (zmiana kursu z trzech miesięcy -4,1%[^4]), a przed zakupem potrzebna jest karta z liczbą analityków, której tu nie ma.
+> Creotech Instruments buduje mikrosatelity na własnej platformie HyperSat i sprzedaje je głównie polskiemu wojsku i Europejskiej Agencji Kosmicznej (ESA). W 2025 roku dwóch klientów dało prawie całe przychody: Agencja Uzbrojenia w kontrakcie Mikroglob i drugi klient bez nazwy. Zakładam, że drugim klientem jest ESA w kontrakcie CAMILA, ale dokument tego nie mówi. Spółka chce zwiększyć moce produkcyjne ponad czterokrotnie i w lipcu 2026 roku pozyskała 481,0 mln PLN[^1] z emisji akcji serii M. Teza ma pięć warunków koniecznych. Dokumenty potwierdzają jeden z nich (finansowanie), a cztery zostają do sprawdzenia: odbiór Mikroglobu, nowe kontrakty po Mikroglobie, marża FCF przy większej skali i rozwodnienie. Przy kursie 700,00 PLN[^2] nawet scenariusz byka daje stopę zwrotu 11,8%‼[^3]. Moim zdaniem kurs zakłada więc, że spółka zrealizuje scenariusz byka, który daje stopę zwrotu bliską kosztowi kapitału własnego. Moim zdaniem największym ryzykiem jest koncentracja przychodów na dwóch kontraktach publicznych, które kończą się w latach 2027–2029, przy kursie, który już zakłada ich zastąpienie znacznie większymi. Wg twoich zasad: spółka trafia do portfela Agresywny (koszyk GPW), pauza po rajdzie nie obowiązuje (zmiana kursu z trzech miesięcy -4,1%[^4]), a przed zakupem potrzebna jest karta z liczbą analityków, której tu nie ma.
 
 - Przewaga konkurencyjna: wąska na rynku polskim, brak dowodu przewagi na rynku europejskim; trend rosnący, ale niepewny.
 - Wycena: kapitalizacja 2,5 mld PLN[^5], C/WK 16,2×[^6], FCF yield -4,3%[^7] (TTM do 30.06.2026). C/Z z TTM nie ma sensu, bo zysk netto zawiera jednorazowy zysk z podziału spółki (część szósta).
@@ -16,9 +16,9 @@ Data analizy: 18.11.2026. Rynek: GPW. Typ spółki: ogólny. Decyzja bramek: DAL
 
 Creotech Instruments z Piaseczna jest największym podmiotem polskiego sektora kosmicznego (`doc-133`). Spółka projektuje i buduje mikrosatelity na własnej platformie HyperSat. Klient płaci spółce za kompletną misję: projekt, satelitę, organizację startu, operacje na orbicie i segment naziemny (`doc-133`). Klientami są głównie instytucje publiczne: ESA i polskie Ministerstwo Obrony Narodowej (`doc-133`). Według zarządu około czterech piątych finansowania europejskiego rynku kosmicznego pochodzi ze środków publicznych (`doc-133`).
 
-Spółka rozpoznaje przychody po osiągnięciu kamieni milowych kontraktu, dlatego przychody kwartalne są nierówne (`doc-003`). Główną kategorią kosztów są koszty osobowe, a kontrakty mają z góry ustalone budżety (`doc-133`). Na koniec 2025 roku spółka zatrudniała 297[^10] osób, w tym 144[^11] w dziale badań i rozwoju satelitów (`doc-133`). Spółka ma własny zakład w Piasecznie i kwalifikację ESA do montażu elektroniki kosmicznej (`doc-133`).
+Przychody spółki zależą od rozliczenia kamieni milowych, które nie rozkładają się równo na kwartały (`doc-003`). Kontrakty mają z góry ustalone budżety (`doc-133`). Na koniec 2025 roku spółka zatrudniała 297[^10] osób, w tym 144[^11] w dziale badań i rozwoju satelitów (`doc-133`). Spółka ma własny zakład w Piasecznie i kwalifikację ESA do montażu elektroniki kosmicznej (`doc-133`).
 
-Platforma HyperSat poleciała w misji EagleEye w 2024 roku i osiągnęła najwyższy poziom gotowości technologicznej (`doc-133`). Spółka przekazała klientowi konstelację PIAST w czerwcu 2026 roku (`doc-138`), a pełna konstelacja Mikroglob jest na orbicie od października 2026 roku (`doc-317`). Dokumenty nie opisują jeszcze odbioru końcowego Mikroglobu.
+Platforma HyperSat poleciała w misji EagleEye w 2024 roku i osiągnęła najwyższy poziom gotowości technologicznej (`doc-133`). Spółka przekazała klientowi konstelację PIAST w czerwcu 2026 roku (`doc-138`), a pełna konstelacja Mikroglob jest na orbicie (`doc-317`). Dokumenty nie opisują jeszcze odbioru końcowego Mikroglobu.
 
 Do 1.04.2026 spółka miała też segment kwantowy. Spółka wydzieliła go do Creotech Quantum S.A. i wydała akcjonariuszom jedną akcję nowej spółki na każdą akcję Creotech Instruments (`doc-133`, `doc-003`). W sprawozdaniach ten segment występuje jako działalność zaniechana.
 
@@ -32,7 +32,7 @@ W 2025 roku segment kosmiczny dał 91,2%[^12] przychodów ogółem, czyli 140,4�
 
 Spółka podaje marżę EBITDA segmentu kosmicznego za 2025 rok: 37,6%[^18] (`doc-320`). Wyniku operacyjnego segmentów sprawozdanie nie podaje. Projekty ESA dały w 2025 roku 30,1 mln PLN[^19] przychodów (`doc-133`).
 
-Koncentracja klientów jest bardzo wysoka. W 2025 roku pierwszy klient dał 71,6%[^20] przychodów (110,3 mln PLN[^21]), a drugi klient dał 21,1%[^22] (32,4 mln PLN[^23]) (`doc-133`). Kwota od pierwszego klienta zgadza się z przychodami z kontraktu Mikroglob dla Agencji Uzbrojenia (`doc-133`). Sprawozdanie nie nazywa drugiego klienta. Zakładam, że to ESA w kontrakcie CAMILA, ale dokument tego nie mówi. W pierwszym półroczu 2026 roku pierwszy klient dał 55,6 mln PLN[^24], a drugi klient dał 27,1 mln PLN[^25] (`doc-003`).
+Moim zdaniem koncentracja klientów jest bardzo wysoka. W 2025 roku pierwszy klient dał 71,6%[^20] przychodów (110,3 mln PLN[^21]), a drugi klient dał 21,1%[^22] (32,4 mln PLN[^23]) (`doc-133`). Kwota od pierwszego klienta zgadza się z przychodami z kontraktu Mikroglob dla Agencji Uzbrojenia (`doc-133`). Sprawozdanie nie nazywa drugiego klienta. Zakładam, że to ESA w kontrakcie CAMILA, ale dokument tego nie mówi. W pierwszym półroczu 2026 roku pierwszy klient dał 55,6 mln PLN[^24], a drugi klient dał 27,1 mln PLN[^25] (`doc-003`).
 
 Wartość kontraktu Mikroglob to 451,0 mln PLN[^26] netto, a kontraktu CAMILA 59,0 mln EUR[^27] (`doc-133`). Spółka planuje zakończyć Mikroglob w pierwszym kwartale 2027 roku (`doc-320`). CAMILA trwa w latach 2025–2029 (`doc-318`). Zarząd sam pisze, że nie może zagwarantować zastąpienia kluczowych kontraktów innymi o podobnej skali (`doc-133`).
 
@@ -42,7 +42,7 @@ Udział przychodów zagranicznych wyniósł 27,2%[^34] w 2025 roku i 37,2%[^35] 
 
 ## 3. Najważniejsze fakty (akcjonariat, zarząd, płynność, kalendarz)
 
-- Akcjonariat jest rozproszony. Po emisji serii M największe pakiety mają PTE Allianz Polska (8,1%[^36] głosów), ARP (7,7%[^37]), TFI PZU (7,5%[^38]), Paweł Kasprowicz (6,0%[^39]) i Norges Bank (5,9%[^40]) (`doc-003`). Wszystkie akcje są zwykłe, a jedna akcja daje jeden głos (`doc-133`).
+- Moim zdaniem akcjonariat jest rozproszony. Po emisji serii M największe pakiety mają PTE Allianz Polska (8,1%[^36] głosów), ARP (7,7%[^37]), TFI PZU (7,5%[^38]), Paweł Kasprowicz (6,0%[^39]) i Norges Bank (5,9%[^40]) (`doc-003`). Wszystkie akcje są zwykłe (`doc-133`), a liczba głosów równa się liczbie akcji (`doc-003`).
 - Liczba akcji: 2,9 mln akcji[^41] na 30.06.2026 i 3,5 mln akcji[^42] po emisji serii M (`doc-003`).
 - Zarząd: prezes Grzegorz Brona, wiceprezesi Paweł Górnicki (finanse), Maciej Misiura i Jacek Mandas (`doc-133`); od 18.08.2026 także Jakub Bochiński (`doc-003`).
 - Płynność: średnie dzienne obroty z ostatnich sesji wynoszą 9,2 mln PLN[^43].
@@ -58,22 +58,22 @@ Udział przychodów zagranicznych wyniósł 27,2%[^34] w 2025 roku i 37,2%[^35] 
 | RKLB (Rocket Lab USA) | USA | — | — | — | — | — | — |
 | PL (Planet Labs) | USA | 55,4%¹ | -27,2%¹ | 25,9%¹ | — | — | — |
 | RDW (Redwire) | USA | — | — | — | — | — | — |
-| SATL (Satellogic) | USA | — | — | — | — | — | — |
-| Mediana konkurentów | | 55,4% | -27,2% | 25,9% | — | — | — |
+| SATL (Satellogic) | USA | — | -35,0%¹ | 37,6%¹ | — | — | — |
+| Mediana konkurentów | | 55,4% | -31,1% | 31,8% | — | — | — |
 
-Marże, wzrost i ROIC z ostatniego okresu TTM albo roku obrotowego każdej spółki (FY2025, FY2026, TTM2026-06-30, TTM2026-07-31); mnożniki z ostatniego kursu. Mediana liczona przez silnik z wierszy konkurentów. Dane konkurentów: osobne rejestry w katalogu konkurenci/, z jednego źródła na spółkę.
+Marże, wzrost i ROIC z ostatniego okresu TTM albo roku obrotowego każdej spółki (FY2025, FY2026, TTM2026-06-30, TTM2026-07-31, TTM2026-09-30); mnożniki z ostatniego kursu. Mediana liczona przez silnik z wierszy konkurentów. Dane konkurentów: osobne rejestry w katalogu konkurenci/, z jednego źródła na spółkę.
 Konkurenci z innego rynku: mnożniki z USA i z GPW nie są wprost porównywalne, bo koszt kapitału w Polsce jest wyższy niż w USA.
 
 
-Dokumenty spółki nie nazywają żadnego konkurenta. Tabelę konkurentów zbudowałem z doboru badacza: to notowane w USA spółki z rynku małych satelitów, a nie spółki wskazane przez Creotech. Silnik pobrał dane tylko części z nich, bo serwis notowań ograniczył liczbę zapytań. Moim zdaniem tabela słabo porównuje spółkę z jej rzeczywistymi rywalami. Rzeczywistymi rywalami w przetargach ESA i programach Unii Europejskiej są europejscy integratorzy satelitów. Dokumenty wymieniają kilku z nich jako partnerów: OHB, ICEYE, Aerospacelab, Eutelsat, Airbus Defence and Space (`doc-136`, `doc-138`, `doc-317`). ICEYE prowadzi konsorcjum ARISE, w którym jest Creotech, i jednocześnie buduje własne mikrosatelity (`doc-138`, `doc-003`).
+Dokumenty spółki nie nazywają żadnego konkurenta. Tabelę konkurentów zbudowałem z doboru badacza: to notowane w USA spółki z rynku małych satelitów, a nie spółki wskazane przez Creotech. Silnik pobrał dane tylko części z nich, bo serwis notowań ograniczył liczbę zapytań. Moim zdaniem tabela słabo porównuje spółkę z jej rzeczywistymi rywalami. Moim zdaniem rzeczywistymi rywalami w przetargach ESA i programach Unii Europejskiej są europejscy integratorzy satelitów. Dokumenty wymieniają kilku z nich jako partnerów: OHB (`doc-136`), ICEYE i Aerospacelab (`doc-138`) oraz Eutelsat (`doc-319`, `doc-320`). ICEYE prowadzi konsorcjum ARISE, w którym jest Creotech, i jednocześnie buduje własne mikrosatelity (`doc-138`, `doc-003`).
 
 Rynek: zarząd cytuje prognozę firmy Novaspace dla rynku mikrosatelitów w latach 2024–2033 (`doc-133`). To źródło przytacza spółka, więc nie mam niezależnej weryfikacji. Polska zwiększyła składkę do ESA, a na programy opcjonalne w latach 2026–2028 przeznaczyła 550,0 mln EUR[^44] (`doc-133`). Część tej składki wraca do polskich firm na zasadzie zwrotu geograficznego (`doc-003`). Zarząd szacuje udział Creotech w kontraktach ESA i Skarbu Państwa dla polskich firm na około trzy czwarte (`doc-133`). To szacunek spółki, a nie dane zewnętrzne.
 
 Kandydaci na źródło przewagi:
 
-1. **Integracja pionowa i własna platforma (przewaga procesowa).** Spółka podaje, że wytwarza wewnętrznie co najmniej 70,0%[^45] podsystemów (`doc-137`). Korzyść: kontrola kosztu i harmonogramu. Bariera: know-how i tajemnica przedsiębiorstwa, bo spółka pisze, że jej rozwiązania co do zasady nie spełniają warunków ochrony patentowej (`doc-133`). Dokumenty nie pokazują niższego kosztu jednostkowego niż u konkurentów.
-2. **Loty na orbicie i kwalifikacje (aktywa niematerialne).** HyperSat ma udany lot i trzy konstelacje (`doc-133`), a spółka ma kwalifikację ESA i zezwolenie Polskiej Agencji Kosmicznej (`doc-133`, `doc-003`). Bariera: klient instytucjonalny wybiera dostawcę z historią lotów. Ta bariera chroni przed nowymi firmami, ale nie przed dużymi integratorami europejskimi.
-3. **Zwrot geograficzny i polonizacja (czynnik zewnętrzny).** Spółka jest w uprzywilejowanej pozycji wobec konkurencji regionalnej (`doc-133`). Moim zdaniem to przewaga wynikająca z polityki, a nie ze spółki, więc może zniknąć po zmianie zasad finansowania.
+1. **Integracja pionowa i własna platforma (przewaga procesowa).** Spółka podaje, że wytwarza wewnętrznie co najmniej 70,0%[^45] podsystemów (`doc-137`). Korzyść, moim zdaniem: kontrola kosztu i harmonogramu. Bariera: know-how i tajemnica przedsiębiorstwa, bo spółka pisze, że jej rozwiązania co do zasady nie spełniają warunków ochrony patentowej (`doc-133`). Dokumenty nie pokazują niższego kosztu jednostkowego niż u konkurentów.
+2. **Loty na orbicie i kwalifikacje (aktywa niematerialne).** HyperSat ma za sobą misję EagleEye, a spółka umieściła na orbicie kolejne satelity na tej platformie (`doc-133`), a spółka ma kwalifikację ESA i zezwolenie Polskiej Agencji Kosmicznej (`doc-133`, `doc-003`). Bariera: klient instytucjonalny wybiera dostawcę z historią lotów. Moim zdaniem ta bariera chroni przed nowymi firmami, ale nie przed dużymi integratorami europejskimi.
+3. **Zwrot geograficzny i polonizacja (czynnik zewnętrzny).** Według zarządu spółka jest w uprzywilejowanej pozycji wobec konkurencji regionalnej (`doc-133`). Moim zdaniem to przewaga wynikająca z polityki, a nie ze spółki, więc może zniknąć po zmianie zasad finansowania.
 4. **Efektywna skala.** To plan, a nie stan: moce wynoszą dziś 10[^46] satelitów rocznie, a cel strategii to 40[^47] (`doc-137`).
 
 Liczby: ROIC w FY2025 wyniósł 45,7%[^48], ale w FY2022–FY2024 był ujemny (tabela w części szóstej). ROIC powyżej kosztu kapitału przez jeden rok, wynikający z rozliczenia kamieni milowych dwóch kontraktów, nie spełnia kryterium trwałości.
@@ -84,11 +84,11 @@ Test AI, moim zdaniem: spółka sprzedaje kontrakty ryczałtowe, a nie godziny p
 
 ## 5. Zarząd i alokacja kapitału
 
-Spółka nie wypłaca dywidend pieniężnych i nie skupuje akcji, a stopy zwrotu dla akcjonariuszy silnik nie policzył (brak danych). Spółka finansuje wzrost emisjami akcji. W pierwszym kwartale 2025 roku spółka wyemitowała akcje serii K i pozyskała 76,0 mln PLN[^49] (`doc-133`). W lipcu 2026 roku spółka wyemitowała akcje serii M i pozyskała 481,0 mln PLN[^1] (`doc-003`). Obie emisje odbyły się bez prawa poboru, z prawem pierwszeństwa dla akcjonariuszy z pakietem co najmniej pół procenta akcji (`doc-137`, `doc-133`). Liczba akcji na koniec 2025 roku wzrosła r/r o 20,0%[^50].
+Spółka nie wypłaca dywidend pieniężnych i nie skupuje akcji, a stopy zwrotu dla akcjonariuszy silnik nie policzył (brak danych). Spółka finansuje wzrost emisjami akcji. W pierwszym kwartale 2025 roku spółka wyemitowała akcje serii K i pozyskała 76,0 mln PLN[^49] (`doc-133`). W lipcu 2026 roku spółka wyemitowała akcje serii M i pozyskała 481,0 mln PLN[^1] (`doc-003`). Obie emisje odbyły się z wyłączeniem prawa poboru (`doc-133`, `doc-137`). Przy emisji serii M akcjonariusze z pakietem około pół procenta akcji lub większym mieli prawo pierwszeństwa (`doc-137`). Liczba akcji na koniec 2025 roku wzrosła r/r o 20,0%[^50].
 
-Spółka chce wydać środki z emisji serii M na rozbudowę mocy produkcyjnych, nowe platformy (Seagull, SWAN, EMU), badania i rozwój oraz przejęcia (`doc-137`, `doc-318`). Spółka zawarła umowę przedwstępną zakupu działek pod zakład (`doc-003`), umowę opcji na akcje Thorium Space (`doc-003`) i otworzyła ośrodek inżynieryjny w Bremie (`doc-317`). Konkretnych celów przejęć dokumenty nie podają.
+Spółka chce wydać środki z emisji serii M na rozbudowę mocy produkcyjnych, nowe platformy (SWAN i EMU według `doc-137`, Seagull według `doc-318`), badania i rozwój oraz przejęcia (`doc-137`). Spółka zawarła umowę przedwstępną zakupu działek pod zakład (`doc-003`), umowę opcji na akcje Thorium Space (`doc-003`) i założyła spółkę zależną Creotech Instruments GmbH w Bremie (`doc-317`). Konkretnych celów przejęć dokumenty nie podają.
 
-Członkowie zarządu poza prezesem mają symboliczne pakiety akcji (`doc-133`). Zarząd ma opcje z programu motywacyjnego: łącznie spółka przyznała 80 661[^51] uprawnień, a prezes ma 4 805[^52] (`doc-133`). Jedynym warunkiem opcji zarządu jest pozytywne zakończenie Mikroglobu (`doc-133`). Moim zdaniem warunek projektowy, a nie warunek zwrotu dla akcjonariuszy, słabo łączy interes zarządu z interesem akcjonariuszy. Ceny wykonania opcji nie znalazłem. Prezes sprzedał w lutym 2026 roku pakiet akcji (`doc-133`) i po emisji serii M ma mniej niż pięć procent głosów (`doc-003`). Wynagrodzenie prezesa z umowy o pracę w 2025 roku wyniosło 620,0 tys. PLN[^53], w tym część zmienna 224,0 tys. PLN[^54] (`doc-133`).
+Członkowie zarządu poza prezesem mają symboliczne pakiety akcji (`doc-133`). Zarząd ma opcje z programu motywacyjnego: łącznie spółka przyznała 80 661[^51] uprawnień, a prezes ma 4 805[^52] (`doc-133`). Kryterium głównym opcji zarządu jest pozytywne zakończenie Mikroglobu (`doc-133`). Moim zdaniem kryterium projektowe, a nie warunek zwrotu dla akcjonariuszy, słabo łączy interes zarządu z interesem akcjonariuszy. Ceny wykonania opcji nie znalazłem. Prezes sprzedał w lutym 2026 roku pakiet akcji (`doc-133`) i po emisji serii M ma mniej niż pięć procent głosów (`doc-003`). Wynagrodzenie prezesa z umowy o pracę w 2025 roku wyniosło 620,0 tys. PLN[^53], w tym część zmienna 224,0 tys. PLN[^54] (`doc-133`).
 
 Spółka nie publikowała prognoz (`doc-133`, `doc-003`), więc nie mogę sprawdzić, jak zarząd wykonuje własne cele.
 
@@ -223,15 +223,15 @@ Beta z regresji jest niska, a korelacja z WIG słaba (0,24[^83]), ale zmiennoś�
 
 **Teza do sprawdzenia (zdanie rozstrzygalne):** do końca 2029 roku Creotech zastąpi Mikroglob i CAMILA kontraktami w europejskich programach konstelacyjnych i zbrojeniowych na tyle dużymi, że przychody wzrosną kilka razy, a marża FCF wróci co najmniej do poziomu z FY2025. Horyzont rozpoznania tezy to trzy lata, osobno od horyzontu trzymania.
 
-Teza odmienna od rynku, moim zdaniem, nie istnieje w wersji pozytywnej: dzisiejsza cena już zakłada powodzenie strategii. Odmienna teza mogłaby brzmieć tylko „rynek przecenia trwałość wzrostu”, a to jest teza przeciw zakupowi.
+Teza odmienna od rynku, moim zdaniem, nie istnieje w wersji pozytywnej: dzisiejsza cena już zakłada powodzenie strategii. Odmienna teza mogłaby brzmieć tylko „rynek przecenia trwałość wzrostu”, a to jest teza o ryzyku, którą warto sprawdzić przed decyzją o pozycji.
 
 Warunki konieczne:
 
 1. **Spółka ma finansowanie na rozbudowę mocy.** Status: potwierdzony. Spółka pozyskała 481,0 mln PLN[^1] w lipcu 2026 roku (`doc-003`) i nie ma kredytów.
-2. **Spółka dostarcza działające satelity w terminie.** Status: potwierdzony częściowo. Konstelacja PIAST przekazana (`doc-138`), pełna konstelacja Mikroglob na orbicie (`doc-317`). Odbiór końcowy Mikroglobu do sprawdzenia w raporcie za trzeci kwartał i komunikatach ESPI.
-3. **Spółka zdobywa nowe duże kontrakty, zanim wygaśnie Mikroglob.** Status: do sprawdzenia. Nowe umowy z ESA (IOD B, IRIS² Low-LEO, SAWA) są według wiadomości małe (`doc-138`, wiadomości). Spółka nie podała portfela zamówień po pierwszym półroczu 2026 roku (`doc-003`). Gdzie sprawdzić: raport za trzeci kwartał (26.11.2026), decyzje ESA i Komisji Europejskiej o EOGS i IRIS².
+2. **Spółka dostarcza działające satelity w terminie.** Status: do sprawdzenia. Konstelacja PIAST przekazana (`doc-138`), pełna konstelacja Mikroglob na orbicie (`doc-317`). Odbiór końcowy Mikroglobu do sprawdzenia w raporcie za trzeci kwartał i komunikatach ESPI.
+3. **Spółka zdobywa nowe duże kontrakty, zanim wygaśnie Mikroglob.** Status: do sprawdzenia. Spółka podpisała nowe umowy z ESA (IOD B, IRIS² Low-LEO, SAWA) (`doc-138`). Komentatorzy oceniają umowę IRIS² jako małą, ale to ocena z artykułu bez dokumentu w archiwum. Spółka nie podała portfela zamówień po pierwszym półroczu 2026 roku (`doc-003`). Gdzie sprawdzić: raport za trzeci kwartał (26.11.2026), decyzje ESA i Komisji Europejskiej o EOGS i IRIS².
 4. **Marża FCF przy większej skali wraca co najmniej do poziomu z FY2025.** Status: do sprawdzenia. W FY2025 marża FCF wyniosła 14,9%[^79], a TTM jest ujemna (-61,2%‼[^88]). Gdzie sprawdzić: przepływy operacyjne w kolejnych kwartałach, marża EBITDA segmentu kosmicznego, konferencja wynikowa.
-5. **Spółka nie rozwadnia akcjonariuszy kolejnymi emisjami poniżej wartości.** Status: do sprawdzenia. Dwie emisje w niecałe półtora roku (`doc-133`, `doc-003`), a strategia przewiduje też przejęcia (`doc-137`). Gdzie sprawdzić: uchwały walnego zgromadzenia, program opcji.
+5. **Spółka nie rozwadnia akcjonariuszy kolejnymi emisjami poniżej wartości.** Status: do sprawdzenia. Spółka przeprowadziła dwie emisje: serię K w pierwszym kwartale 2025 roku i serię M w lipcu 2026 roku (`doc-133`, `doc-003`), a strategia przewiduje też przejęcia (`doc-137`). Gdzie sprawdzić: uchwały walnego zgromadzenia, program opcji.
 
 **Antytezy z progami:**
 
@@ -240,20 +240,20 @@ Warunki konieczne:
 - Rynkowe: spadek zainteresowania spółkami obronnymi i kosmicznymi w Europie (wysoka zmienność kursu, część ósma).
 - Nieprzewidywalne: zmiana zasad zwrotu geograficznego ESA albo budżetu MON; ta antyteza wpływa tylko na wielkość pozycji.
 
-**Pre-mortem: za dwa lata pozycja jest na minusie o połowę. Co się stało?** Moim zdaniem najbardziej prawdopodobna historia jest taka. Mikroglob się kończy, a europejskie konstelacje ruszają z opóźnieniem i trafiają do dużych integratorów. Przychody spadają, a spółka ma już wyższe koszty stałe po rozbudowie mocy i zatrudnienia. Rynek przestaje płacić za opowieść o wzroście, a spółka ogłasza kolejną emisję.
+**Pre-mortem: za dwa lata pozycja jest na minusie o połowę. Co się stało?** Moim zdaniem jedna z możliwych historii jest taka. Mikroglob się kończy, a europejskie konstelacje ruszają z opóźnieniem i trafiają do dużych integratorów. Przychody spadają, a spółka ma już wyższe koszty stałe po rozbudowie mocy i zatrudnienia. Rynek przestaje płacić za opowieść o wzroście, a spółka ogłasza kolejną emisję.
 
 ## 10. Wiadomości i scenariusze
 
 Najważniejsze wiadomości (streszczenie subagenta z linkami w pliku `wiadomosci.md`; liczby z artykułów nie są faktami raportu):
 
-- 7.05.2026: spółka ogłosiła strategię do 2029 roku i emisję akcji serii M (`doc-137`). Czynnik wartości: rozwodnienie i wzrost; zdarzenie zrealizowane.
-- Czerwiec–lipiec 2026: emisja serii M skierowana do wybranych inwestorów; według artykułu cena emisyjna była wyższa niż dzisiejszy kurs. Czynnik wartości: finansowanie wzrostu.
-- Lipiec–wrzesień 2026: umowy z ESA na satelitę IOD B i fazę konsolidacji IRIS² Low-LEO (`doc-138`). Czynnik wartości: wzrost; komentatorzy oceniają kontrakty jako małe.
-- Luty 2026: prezes sprzedał pakiet akcji (`doc-133`). Moim zdaniem to słaby sygnał, bo dotyczy niewielkiej części jego akcji.
-- Maj–czerwiec 2026: Noble Securities obniżył zalecenie do „trzymaj” (tylko artykuł, bez dokumentu w archiwum).
-- 18.11.2026: spółka otworzyła ośrodek inżynieryjny w Bremie, obok siedziby OHB (`doc-317`).
+- 7.05.2026 spółka ogłosiła strategię do 2029 roku i emisję akcji serii M (`doc-137`). Ta wiadomość zmienia dwa czynniki wartości: zapowiada wzrost i rozwadnia akcjonariuszy.
+- W czerwcu i lipcu 2026 roku spółka sprzedała akcje serii M wybranym inwestorom (`doc-137`, `doc-003`). Artykuł podaje cenę emisyjną, ale komunikatu z ceną nie mam w archiwum. Ta wiadomość zmienia czynnik finansowania wzrostu.
+- Od lipca do września 2026 roku spółka podpisała z ESA umowy na satelitę IOD B i na fazę konsolidacji IRIS² Low-LEO (`doc-138`). Ta wiadomość dotyczy wzrostu przychodów. Komentatorzy oceniają umowę IRIS² jako małą.
+- 2.02.2026 prezes zbył pakiet akcji w transakcji pakietowej (`doc-133`). Moim zdaniem to słaby sygnał, bo dotyczy niewielkiej części jego akcji.
+- Według artykułów Noble Securities obniżył zalecenie do „trzymaj” 8.05.2026 i podtrzymał je 2.06.2026. Tych raportów nie mam w archiwum.
+- 18.11.2026 spółka założyła spółkę zależną w Bremie, obok siedziby OHB (`doc-317`).
 
-Wiadomości nie wyjaśniają ostatniego spadku kursu jedną udokumentowaną przyczyną.
+Zebrane wiadomości nie wyjaśniają ostatniego spadku kursu jedną udokumentowaną przyczyną.
 
 
 | Scenariusz | Prawdopodobieństwo | Wartość na akcję | Stopa zwrotu przy obecnym kursie |
@@ -297,7 +297,7 @@ Zmiana wartości przy jednym kroku założenia w górę:
 
 Uzasadnienie scenariuszy jest w pliku `scenariusze.json`. Scenariusz bazowy ma prawdopodobieństwo 45,0%[^90], byk 20,0%[^91], a niedźwiedź 35,0%[^92]. Najważniejszym założeniem wyceny jest marża FCF: wyższa o dwa punkty procentowe podnosi wartość scenariusza bazowego o 17,7%‼[^93]. Przypomnienie: wartości scenariuszy nie zawierają gotówki z emisji serii M.
 
-**Byki mówią:** spółka ma jedyną w Polsce platformę satelitarną z lotem na orbicie, finansowanie z emisji, portfel zamówień kilka razy większy od rocznych przychodów i dostęp do rosnących budżetów obronnych i kosmicznych w Europie.
+**Byki mówią:** spółka ma platformę satelitarną sprawdzoną na orbicie (`doc-133`), finansowanie z emisji (`doc-003`) i portfel zamówień 587,0 mln PLN[^29] wobec przychodów TTM 170,4 mln PLN‼[^60] (`doc-137`). Byki dodają też, że budżety obronne i kosmiczne w Europie rosną; tego zdania nie potwierdza dokument w archiwum.
 
 **Niedźwiedzie mówią:** dwa kontrakty dają prawie całe przychody, przepływy operacyjne są ujemne, cena zakłada sukces strategii, a dotychczasowy wzrost kapitału opierał się na emisjach akcji.
 
@@ -336,14 +336,16 @@ Kalendarz: 26.11.2026 raport za trzeci kwartał (`doc-321`); koniec pierwszego k
 
 ## 13. Projekt karty
 
-- **Teza w trzech zdaniach:** Creotech jest jedynym polskim integratorem mikrosatelitów z platformą sprawdzoną na orbicie i ma finansowanie na kilkukrotne zwiększenie mocy. Teza zakłada, że do końca 2029 roku spółka zastąpi Mikroglob i CAMILA kontraktami europejskimi i utrzyma marżę FCF co najmniej z FY2025. Rynek już wycenia powodzenie tej strategii.
-- **Co jest w cenie:** przy wzroście historycznym marża FCF 5,9%‼[^78]; scenariusz byka daje stopę zwrotu 11,8%‼[^3], bliską kosztowi kapitału.
-- **Antytezy z progami:** portfel zamówień spada poniżej poziomu z 31.12.2025; dwa największe kontrakty dalej dają prawie całe przychody po zakończeniu Mikroglobu; marża operacyjna poniżej poziomu z FY2025 przez dwa półrocza; kolejna emisja bez prawa poboru. Dokładne progi wpisujesz sam.
-- **Pre-mortem:** opóźnienie konstelacji europejskich, wyższe koszty stałe po rozbudowie, kolejna emisja.
-- **Wielkość pozycji:** zasada słownie: przy danym udziale w IKE scenariusz niedźwiedzia zabiera dany procent IKE; zakup w transzach.
-- **Kiedy sprzedam:** gdy teza jest złamana (antytezy), gdy masz lepszą spółkę z kartą albo gdy uznasz „nie kupiłbym jej dziś”.
-- **Data przeglądu:** po raporcie za trzeci kwartał (26.11.2026) i po odbiorze Mikroglobu.
-- **Co śledzić:** portfel zamówień, przychody od dwóch największych klientów, przepływy operacyjne, marżę EBITDA segmentu kosmicznego, decyzje o EOGS i IRIS², kolejne emisje.
+Szkic karty do twojej decyzji.
+
+- **Teza w trzech zdaniach:** Creotech jest największym podmiotem polskiego sektora kosmicznego, ma platformę mikrosatelitów sprawdzoną na orbicie i ma finansowanie na ponad czterokrotne zwiększenie mocy produkcyjnych. Teza zakłada, że do końca 2029 roku spółka zastąpi Mikroglob i CAMILA kontraktami europejskimi i utrzyma marżę FCF co najmniej z FY2025. Moim zdaniem kurs już wycenia powodzenie tej strategii.
+- **Co jest w cenie:** przy wzroście historycznym kurs zakłada marżę FCF 5,9%‼[^78]. Scenariusz byka daje stopę zwrotu 11,8%‼[^3], bliską kosztowi kapitału własnego.
+- **Antytezy z progami:** teza słabnie, gdy portfel zamówień spada poniżej poziomu z 31.12.2025, gdy dwaj najwięksi klienci dalej dają prawie całe przychody po zakończeniu Mikroglobu, gdy marża operacyjna zostaje poniżej poziomu z FY2025 przez dwa półrocza albo gdy spółka ogłasza kolejną emisję bez prawa poboru. Dokładne progi wpisujesz sam.
+- **Pre-mortem:** europejskie konstelacje ruszają z opóźnieniem, koszty stałe rosną po rozbudowie mocy produkcyjnych, a spółka ogłasza kolejną emisję.
+- **Wielkość pozycji:** wg twoich zasad ustalasz udział w IKE tak, żeby scenariusz niedźwiedzia zabierał akceptowalną część IKE, i kupujesz w transzach.
+- **Kiedy sprzedajesz:** wg twoich zasad sprzedajesz, gdy teza jest złamana (antytezy), gdy masz lepszą spółkę z kartą albo gdy uznasz „nie kupiłbym jej dziś”.
+- **Data przeglądu:** przeglądasz kartę po raporcie za trzeci kwartał (26.11.2026) i po odbiorze Mikroglobu.
+- **Co śledzić:** śledzisz portfel zamówień, przychody od dwóch największych klientów, przepływy operacyjne, marżę EBITDA segmentu kosmicznego, decyzje o EOGS i IRIS² oraz kolejne emisje.
 
 ## 14. Jakość danych
 

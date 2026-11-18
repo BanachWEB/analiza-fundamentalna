@@ -31,6 +31,16 @@
       "pobrano": "2026-11-18T15:15:51.222478Z",
       "sha256": "d532afb8cd40f3724624eaa02fc635ea9c6363ace7de45f1bffd8da7e55d5a1b",
       "plik": "d532afb8cd40f372.json"
+    },
+    {
+      "id": "doc-004",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/PL?range=5y&interval=1d",
+      "opis": "notowania dzienne PL",
+      "pobrano": "2026-11-18T15:31:04.861076Z",
+      "sha256": "a8ea66a9b6c6769716bbe1ecf33d6f31a3480829ff4f3ee65eee6e0cbc21804c",
+      "plik": "a8ea66a9b6c67697.json"
     }
   ]
 }

@@ -9857,12 +9857,12 @@
         "typ": "dzien",
         "koniec": "2026-11-18"
       },
-      "wartosc": 12.699999809265137,
+      "wartosc": 12.53499984741211,
       "jednostka": "pieniadz_na_akcje",
       "waluta": "USD",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-003",
+      "dokument": "doc-004",
       "miejsce": {
         "sesja": "2026-11-18",
         "pole": "zamknięcie"
@@ -11225,13 +11225,13 @@
       "jednostka": "ulamek",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-003",
+      "dokument": "doc-004",
       "miejsce": {
         "od": "2025-11-18",
         "do": "2026-10-19",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-003"
+          "doc-004"
         ]
       }
     },
@@ -11558,17 +11558,17 @@
         "typ": "dzien",
         "koniec": "2026-11-18"
       },
-      "wartosc": 161088807.1764993,
+      "wartosc": 161117589.38498497,
       "jednostka": "pieniadz",
       "waluta": "USD",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-003",
+      "dokument": "doc-004",
       "miejsce": {
         "obliczenie": "średnia z 60 sesji: zamknięcie × wolumen",
         "od": "2026-08-26",
         "dokumenty": [
-          "doc-003"
+          "doc-004"
         ]
       }
     },
@@ -15637,16 +15637,16 @@
         "typ": "dzien",
         "koniec": "2026-11-18"
       },
-      "wartosc": 41.13929580646057,
+      "wartosc": 39.87285694876826,
       "jednostka": "liczba",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-003",
+      "dokument": "doc-004",
       "miejsce": {
         "obliczenie": "RSI Wildera z 14 sesji, zamknięcia",
         "od": "2021-11-18",
         "dokumenty": [
-          "doc-003"
+          "doc-004"
         ]
       }
     },
@@ -18419,17 +18419,17 @@
         "typ": "dzien",
         "koniec": "2026-11-18"
       },
-      "wartosc": -0.43854998505404363,
+      "wartosc": -0.44584441280520637,
       "jednostka": "ulamek",
       "metoda": "api",
       "status": "jedno_zrodlo",
-      "dokument": "doc-003",
+      "dokument": "doc-004",
       "miejsce": {
         "od": "2026-08-19",
         "do": "2026-11-18",
         "obliczenie": "kurs(do) / kurs(od) - 1",
         "dokumenty": [
-          "doc-003"
+          "doc-004"
         ]
       }
     },

@@ -21,6 +21,16 @@
       "pobrano": "2026-11-18T15:13:57.313019Z",
       "sha256": "6af50e5cb2826244a1a7cbd11fa85083d95aaea9e57931bdb7917334d7359ec9",
       "plik": "6af50e5cb2826244.json"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/SATL?range=5y&interval=1d",
+      "opis": "notowania dzienne SATL",
+      "pobrano": "2026-11-18T15:31:39.098323Z",
+      "sha256": "566caa1b3878083ca28892099f3bdb86b8b6b99d411f896317f075fb76182eed",
+      "plik": "566caa1b3878083c.json"
     }
   ]
 }
