@@ -47,6 +47,31 @@ def test_kalendarz_z_raportu_10k():
     assert (k.miesiac_konca, k.przesuniecie) == (1, -1)
 
 
+@pytest.mark.parametrize(
+    "start,end,fy,fp,miesiac,przes",
+    [
+        ("2026-07-01", "2026-09-30", 2026, "Q3", 12, 0),  # spółka po debiucie, rok kalendarzowy
+        ("2026-07-01", "2026-09-30", 2027, "Q1", 6, 0),  # rok do 30.06, nazwa = rok końca
+        ("2026-02-01", "2026-04-30", 2026, "Q1", 1, -1),  # rok do 31.01, nazwa = rok początku
+    ],
+)
+def test_kalendarz_bez_10k_z_raportu_10q(start, end, fy, fp, miesiac, przes):
+    # porównawczy kwartał sprzed roku ma te same fy i fp, ale wcześniejszy koniec
+    f = facts(Revenues=[
+        wpis(90, start.replace(start[:4], str(int(start[:4]) - 1)), end.replace(end[:4], str(int(end[:4]) - 1)),
+             form="10-Q", fy=fy, fp=fp),
+        wpis(100, start, end, form="10-Q", fy=fy, fp=fp),
+    ])
+    k = sec.kalendarz(f)
+    assert (k.miesiac_konca, k.przesuniecie) == (miesiac, przes)
+    assert k.kwartal(date.fromisoformat(end)) == fp
+
+
+def test_kalendarz_bez_zadnych_raportow():
+    with pytest.raises(sec.BladSEC):
+        sec.kalendarz(facts(Revenues=[wpis(5, None, "2026-04-17", form="S-1", fy=None, fp=None)]))
+
+
 # --- wybór wartości z XBRL ----------------------------------------------------
 
 

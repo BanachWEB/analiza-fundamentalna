@@ -1,0 +1,146 @@
+{
+  "wersja_schematu": "1",
+  "ticker": "CBRS",
+  "dokumenty": [
+    {
+      "id": "doc-001",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002021728.json",
+      "opis": "XBRL companyfacts",
+      "pobrano": "2026-11-18T11:37:45.666654Z",
+      "sha256": "399d71535b5ee9cf850a9022c4ff516e0be327faeb967a396de7b04741f7cf98",
+      "plik": "399d71535b5ee9cf.json"
+    },
+    {
+      "id": "doc-002",
+      "typ": "sec_api",
+      "zrodlo": "SEC",
+      "adres": "https://data.sec.gov/submissions/CIK0002021728.json",
+      "opis": "lista raportów",
+      "pobrano": "2026-11-18T11:37:46.048825Z",
+      "sha256": "f33ae30ee941854f45fbd2edcbd040d787d3b3fd895aec6bb9951a02d1889d37",
+      "plik": "f33ae30ee941854f.json"
+    },
+    {
+      "id": "doc-003",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/cbrs/financials/income-statement/",
+      "opis": "income-statement",
+      "pobrano": "2026-11-18T11:38:42.454108Z",
+      "sha256": "4cbddca5d437bfcda2130750814006d4a7efb91090979ffd80621999729334f6",
+      "plik": "4cbddca5d437bfcd.html"
+    },
+    {
+      "id": "doc-004",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/cbrs/financials/balance-sheet/",
+      "opis": "balance-sheet",
+      "pobrano": "2026-11-18T11:38:43.116690Z",
+      "sha256": "44dde1b8f25bfb412cf24ee0acc16b36ac1bbd9399fee33022a04345a21ec438",
+      "plik": "44dde1b8f25bfb41.html"
+    },
+    {
+      "id": "doc-005",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/cbrs/financials/cash-flow-statement/",
+      "opis": "cash-flow-statement",
+      "pobrano": "2026-11-18T11:38:43.819579Z",
+      "sha256": "dc98180e5a8e532c4e4d21805880f5bd225e1107eb993859f3e40316cd137237",
+      "plik": "dc98180e5a8e532c.html"
+    },
+    {
+      "id": "doc-006",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/cbrs/history/",
+      "opis": "historia kursu",
+      "pobrano": "2026-11-18T11:38:44.468668Z",
+      "sha256": "27f014c681b68e74c9124dd65c04b1c1b5846c8e45e009f9b5e355ecb03a86b0",
+      "plik": "27f014c681b68e74.html"
+    },
+    {
+      "id": "doc-007",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/CBRS?range=5y&interval=1d",
+      "opis": "notowania dzienne CBRS",
+      "pobrano": "2026-11-18T11:38:44.629558Z",
+      "sha256": "31c301f4b95df0840a52a20fe20ce0ec5d33a21906c57577a0a3d805c035b304",
+      "plik": "31c301f4b95df084.json"
+    },
+    {
+      "id": "doc-008",
+      "typ": "strona",
+      "zrodlo": "Yahoo Finance",
+      "adres": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=5y&interval=1d",
+      "opis": "notowania dzienne %5EGSPC",
+      "pobrano": "2026-11-18T11:38:46.335704Z",
+      "sha256": "2830d9353e09348dc211e0b2e7998a07dd9f36a8af07531987c9af98f308c2fd",
+      "plik": "2830d9353e09348d.json"
+    },
+    {
+      "id": "doc-009",
+      "typ": "strona",
+      "zrodlo": "Damodaran Online",
+      "adres": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+      "opis": "bety branżowe",
+      "pobrano": "2026-11-18T11:38:46.585687Z",
+      "sha256": "10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b",
+      "plik": "10993bab71504e24.html"
+    },
+    {
+      "id": "doc-010",
+      "typ": "strona",
+      "zrodlo": "Damodaran (NYU Stern)",
+      "adres": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+      "opis": "premie za ryzyko krajów",
+      "pobrano": "2026-11-18T11:38:47.309105Z",
+      "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+      "plik": "ea30d57fc0858072.html"
+    },
+    {
+      "id": "doc-011",
+      "typ": "strona",
+      "zrodlo": "U.S. Treasury",
+      "adres": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "opis": "rentowności obligacji",
+      "pobrano": "2026-11-18T11:38:47.607788Z",
+      "sha256": "d4d116eec0d400cffd49908f8a28f27977d3bb0e04b36d0119cb36d3c8cc567a",
+      "plik": "d4d116eec0d400cf.csv"
+    },
+    {
+      "id": "doc-012",
+      "typ": "strona",
+      "zrodlo": "Stock Analysis",
+      "adres": "https://stockanalysis.com/stocks/cbrs/forecast/",
+      "opis": "prognozy analityków",
+      "pobrano": "2026-11-18T11:38:47.762148Z",
+      "sha256": "b780d68b621d8e8cd38d8fdfe0ca0606753366a45caca4b771fe9d25eec6298e",
+      "plik": "b780d68b621d8e8c.html"
+    },
+    {
+      "id": "doc-013",
+      "typ": "strona",
+      "zrodlo": "SEC EDGAR (wyszukiwanie)",
+      "adres": "https://efts.sec.gov/LATEST/search-index?q=%22substantial%20doubt%22&forms=10-K,10-Q&dateRange=custom&startdt=2023-11-19&enddt=2026-11-18&ciks=0002021728",
+      "opis": "wyszukiwanie: substantial doubt",
+      "pobrano": "2026-11-18T11:40:26.231168Z",
+      "sha256": "d9ff55fe41c8fcb7fca87f93da4e8a6fcb24a613943bf2223b9f99ea85cc64c1",
+      "plik": "d9ff55fe41c8fcb7.json"
+    },
+    {
+      "id": "doc-014",
+      "typ": "strona",
+      "zrodlo": "SEC EDGAR (wyszukiwanie)",
+      "adres": "https://efts.sec.gov/LATEST/search-index?q=%22material%20weakness%22&forms=10-K&dateRange=custom&startdt=2023-11-19&enddt=2026-11-18&ciks=0002021728",
+      "opis": "wyszukiwanie: material weakness",
+      "pobrano": "2026-11-18T11:40:27.211941Z",
+      "sha256": "08c8354ec1abb3857e56750080c1b330135ff8752eb7f58650ea314ef500ad64",
+      "plik": "08c8354ec1abb385.json"
+    }
+  ]
+}

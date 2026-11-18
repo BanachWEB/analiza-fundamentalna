@@ -1,0 +1,90 @@
+{
+  "decyzja": "DALEJ",
+  "etap": null,
+  "powod": "brak twardej flagi",
+  "wyniki": [
+    {
+      "id": "B0.pokrycie",
+      "etap": 0,
+      "kategoria": "rynek_i_status",
+      "poziom": "ok",
+      "opis": "Pokrycie analityczne duże (11 analityków)",
+      "dowody": [
+        "liczba_analitykow.2026-11-18"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.korekta_sprawozdan",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Brak 8-K z pozycją 4.02 (korekta sprawozdań)",
+      "dowody": [],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.opoznione_raporty",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Brak zawiadomień NT 10-K/NT 10-Q",
+      "dowody": [],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.slabosc_kontroli_wzmianka",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Brak wzmianki „material weakness” w raportach od 2023-11-19",
+      "dowody": [
+        "doc-014: 0 trafień od 2023-11-19"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B1.zmiana_bieglego",
+      "etap": 1,
+      "kategoria": "biegly_i_regulator",
+      "poziom": "ok",
+      "opis": "Brak zmiany biegłego rewidenta",
+      "dowody": [],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B2.rozwodnienie",
+      "etap": 2,
+      "kategoria": "kapital",
+      "poziom": "brak_danych",
+      "opis": "Brak danych o liczbie akcji",
+      "dowody": [],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    },
+    {
+      "id": "B3.kontynuacja_wzmianka",
+      "etap": 3,
+      "kategoria": "wyplacalnosc_i_jakosc",
+      "poziom": "ok",
+      "opis": "Brak wzmianki „substantial doubt” w raportach od 2023-11-19",
+      "dowody": [
+        "doc-013: 0 trafień od 2023-11-19"
+      ],
+      "zrodlo": "kod",
+      "testy": null,
+      "warunek_powrotu": null
+    }
+  ]
+}

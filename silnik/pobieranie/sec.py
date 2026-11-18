@@ -181,10 +181,39 @@ def kalendarz(facts: dict) -> KalendarzFiskalny:
                     if najlepszy is None or k > najlepszy[0]:
                         najlepszy = (k, int(x["fy"]))
     if najlepszy is None:
-        raise BladSEC("brak okresów rocznych z raportów 10-K; nie da się ustalić roku obrotowego")
+        return _kalendarz_z_10q(facts)
     koniec, fy = najlepszy
     miesiac = KalendarzFiskalny._miesiac(koniec).month
     return KalendarzFiskalny(miesiac, fy - KalendarzFiskalny._miesiac(koniec).year)
+
+
+def _kalendarz_z_10q(facts: dict) -> KalendarzFiskalny:
+    """Kalendarz spółki bez raportu 10-K (np. tuż po debiucie) z najnowszego kwartału z 10-Q.
+
+    Pola fy i fp opisują raport, a nie fakt, dlatego bierzemy kwartał (80–100 dni), który
+    kończy się najpóźniej w raporcie: to okres bieżący tego raportu. Numer kwartału z fp
+    wyznacza miesiąc końca roku obrotowego, a fy wyznacza przesunięcie nazwy roku.
+    """
+    najlepszy = None  # (koniec, fy, numer kwartału)
+    for ns in facts.get("facts", {}).values():
+        for tag in ns.values():
+            for wartosci in tag.get("units", {}).values():
+                for x in wartosci:
+                    fp = x.get("fp") or ""
+                    if (x.get("form") not in {"10-Q", "10-Q/A"} or fp not in {"Q1", "Q2", "Q3"}
+                            or not x.get("start") or not x.get("fy")):
+                        continue
+                    k, s_ = date.fromisoformat(x["end"]), date.fromisoformat(x["start"])
+                    if not 80 <= (k - s_).days <= 100:
+                        continue
+                    if najlepszy is None or k > najlepszy[0]:
+                        najlepszy = (k, int(x["fy"]), int(fp[1]))
+    if najlepszy is None:
+        raise BladSEC("brak okresów rocznych z 10-K i kwartalnych z 10-Q; nie da się ustalić roku obrotowego")
+    koniec, fy, q = najlepszy
+    miesiac = (KalendarzFiskalny._miesiac(koniec).month - 3 * q - 1) % 12 + 1
+    kal = KalendarzFiskalny(miesiac)
+    return KalendarzFiskalny(miesiac, fy - kal.rok(koniec))
 
 
 def _dni(w: _Wpis) -> int:

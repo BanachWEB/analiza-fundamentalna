@@ -1,0 +1,5985 @@
+{
+  "ticker": "CBRS",
+  "data_analizy": "2026-11-18",
+  "fakty": [
+    {
+      "id": "aktywa.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 2326037000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Assets",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "drugie_zrodlo:doc-004:2.32604e+09:0.00%:ok"
+      ]
+    },
+    {
+      "id": "aktywa.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 4948378000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Assets",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "aktywa.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 11627872000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Assets",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "aktywa.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 11938412000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Assets",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "aktywa_obrotowe.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa_obrotowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 1543646000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AssetsCurrent",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "aktywa_obrotowe.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa_obrotowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 3580961000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AssetsCurrent",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "aktywa_obrotowe.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa_obrotowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 9121714000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AssetsCurrent",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "aktywa_obrotowe.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "aktywa_obrotowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 8865661000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AssetsCurrent",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "amortyzacja.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 9315000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:DepreciationDepletionAndAmortization",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "amortyzacja.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 17941000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:DepreciationDepletionAndAmortization",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "amortyzacja.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 3911000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:DepreciationDepletionAndAmortization",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "amortyzacja.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 42551000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:DepreciationDepletionAndAmortization",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "amortyzacja.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 72342000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:DepreciationDepletionAndAmortization",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "amortyzacja.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 18175000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:DepreciationDepletionAndAmortization",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "amortyzacja_srodkow_trwalych.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja_srodkow_trwalych",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 9315000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Depreciation",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "amortyzacja_srodkow_trwalych.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja_srodkow_trwalych",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 17941000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Depreciation",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "amortyzacja_srodkow_trwalych.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja_srodkow_trwalych",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 3911000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Depreciation",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "amortyzacja_srodkow_trwalych.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja_srodkow_trwalych",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 5600000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Depreciation",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "amortyzacja_srodkow_trwalych.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja_srodkow_trwalych",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 8625000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Depreciation",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "amortyzacja_srodkow_trwalych.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja_srodkow_trwalych",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 42551000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Depreciation",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "amortyzacja_srodkow_trwalych.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja_srodkow_trwalych",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 72342000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Depreciation",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "amortyzacja_srodkow_trwalych.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja_srodkow_trwalych",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 18175000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Depreciation",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "amortyzacja_srodkow_trwalych.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja_srodkow_trwalych",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 24377000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Depreciation",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "amortyzacja_srodkow_trwalych.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "amortyzacja_srodkow_trwalych",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 29794000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Depreciation",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "badania_i_rozwoj.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "badania_i_rozwoj",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 113519000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ResearchAndDevelopmentExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "badania_i_rozwoj.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "badania_i_rozwoj",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 170775000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ResearchAndDevelopmentExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "badania_i_rozwoj.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "badania_i_rozwoj",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 52751000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ResearchAndDevelopmentExpense",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "badania_i_rozwoj.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "badania_i_rozwoj",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 60768000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ResearchAndDevelopmentExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "badania_i_rozwoj.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "badania_i_rozwoj",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 57257000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ResearchAndDevelopmentExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "badania_i_rozwoj.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "badania_i_rozwoj",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 395646000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ResearchAndDevelopmentExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "badania_i_rozwoj.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "badania_i_rozwoj",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 573488000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ResearchAndDevelopmentExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "badania_i_rozwoj.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "badania_i_rozwoj",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 75495000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ResearchAndDevelopmentExpense",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "badania_i_rozwoj.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "badania_i_rozwoj",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 320151000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ResearchAndDevelopmentExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "badania_i_rozwoj.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "badania_i_rozwoj",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 177842000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ResearchAndDevelopmentExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "beta_sektorowa_bez_dlugu.2026-11-18",
+      "rodzaj": "raportowany",
+      "pozycja": "beta_sektorowa_bez_dlugu",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-18"
+      },
+      "wartosc": 1.5,
+      "jednostka": "liczba",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-009",
+      "miejsce": {
+        "branza": "Semiconductor",
+        "kolumna": "unlevered beta corrected for cash",
+        "firm": 66
+      }
+    },
+    {
+      "id": "capex.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "capex",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 185094000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "capex.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "capex",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 301139000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "capex.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "capex",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 98244000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "capex.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "capex",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 548873000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "capex.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "capex",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 1046059000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "capex.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "capex",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 131970000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "cena_docelowa_srednia.2026-11-18",
+      "rodzaj": "prognoza",
+      "pozycja": "cena_docelowa_srednia",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-18"
+      },
+      "wartosc": 210.18,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-012",
+      "miejsce": {
+        "tekst": "According to 11 analysts polled by S&P Global, Cerebras Systems stock has a consensus rating of \"Strong Buy\" and an average price target of $210.18"
+      },
+      "dostawca": "S&P Global (przez Stock Analysis)",
+      "data_prognozy": "2026-11-18",
+      "liczba_analitykow": 11
+    },
+    {
+      "id": "dlug_dlugoterminowy.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "dlug_dlugoterminowy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 0.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LongTermDebtNoncurrent",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "dlug_dlugoterminowy.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "dlug_dlugoterminowy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 361617000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LongTermDebtNoncurrent",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "dlug_dlugoterminowy.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "dlug_dlugoterminowy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 182208000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LongTermDebtNoncurrent",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "dlug_dlugoterminowy.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "dlug_dlugoterminowy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 122564000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LongTermDebtNoncurrent",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "dlug_krotkoterminowy.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "dlug_krotkoterminowy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 0.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LongTermDebtCurrent",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "dlug_krotkoterminowy.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "dlug_krotkoterminowy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 621306000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:DebtCurrent",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "dlug_krotkoterminowy.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "dlug_krotkoterminowy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 736036000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LongTermDebtCurrent",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "dlug_krotkoterminowy.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "dlug_krotkoterminowy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 706518000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LongTermDebtCurrent",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "emisje_akcji.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "emisje_akcji",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 0.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "emisje_akcji.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "emisje_akcji",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 0.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "emisje_akcji.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "emisje_akcji",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 0.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "emisje_akcji.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "emisje_akcji",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 15036000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "emisje_akcji.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "emisje_akcji",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 15035000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "emisje_akcji.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "emisje_akcji",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 15019000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "eps_rozwodniony.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "eps_rozwodniony",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 1.76,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EarningsPerShareDiluted",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "eps_rozwodniony.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "eps_rozwodniony",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 1.61,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EarningsPerShareDiluted",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "eps_rozwodniony.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "eps_rozwodniony",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -0.46,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EarningsPerShareDiluted",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "eps_rozwodniony.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "eps_rozwodniony",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 1.91,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EarningsPerShareDiluted",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "eps_rozwodniony.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "eps_rozwodniony",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": -0.41,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EarningsPerShareDiluted",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "eps_rozwodniony.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "eps_rozwodniony",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -4.34,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EarningsPerShareDiluted",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "eps_rozwodniony.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "eps_rozwodniony",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -4.13,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EarningsPerShareDiluted",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "eps_rozwodniony.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "eps_rozwodniony",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -0.22,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EarningsPerShareDiluted",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "eps_rozwodniony.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "eps_rozwodniony",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": -2.98,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EarningsPerShareDiluted",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "eps_rozwodniony.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "eps_rozwodniony",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": -0.67,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EarningsPerShareDiluted",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "gotowka.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 701706000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "gotowka.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 1716016000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "gotowka.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 6742157000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "gotowka.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "gotowka",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 3074752000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "indeks_kurs.2026-11-17",
+      "rodzaj": "raportowany",
+      "pozycja": "indeks_kurs",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 7340.52978515625,
+      "jednostka": "punkty",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-008",
+      "miejsce": {
+        "sesja": "2026-11-17",
+        "pole": "zamknięcie"
+      }
+    },
+    {
+      "id": "indeks_momentum_12_1.2026-11-17",
+      "rodzaj": "raportowany",
+      "pozycja": "indeks_momentum_12_1",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 0.1479270251742102,
+      "jednostka": "ulamek",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-008",
+      "miejsce": {
+        "od": "2025-11-17",
+        "do": "2026-10-16",
+        "obliczenie": "kurs(do) / kurs(od) - 1",
+        "dokumenty": [
+          "doc-008"
+        ]
+      }
+    },
+    {
+      "id": "inwestycje_krotkoterminowe.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "inwestycje_krotkoterminowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 406531000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AvailableForSaleSecuritiesDebtSecuritiesCurrent",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "inwestycje_krotkoterminowe.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "inwestycje_krotkoterminowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 515605000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AvailableForSaleSecuritiesDebtSecuritiesCurrent",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "inwestycje_krotkoterminowe.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "inwestycje_krotkoterminowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 1179390000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AvailableForSaleSecuritiesDebtSecuritiesCurrent",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "inwestycje_krotkoterminowe.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "inwestycje_krotkoterminowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 4286026000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AvailableForSaleSecuritiesDebtSecuritiesCurrent",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "kapital_wlasny.2024-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2024-12-31"
+      },
+      "wartosc": -966791000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "konflikt",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:StockholdersEquity",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-004:-1.16725e+08:87.93%:blad"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2025-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-03-31"
+      },
+      "wartosc": -978209000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:StockholdersEquity",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "kapital_wlasny.2025-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-06-30"
+      },
+      "wartosc": -651118000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:StockholdersEquity",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "kapital_wlasny.2025-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-09-30"
+      },
+      "wartosc": -656888000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:StockholdersEquity",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "kapital_wlasny.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": -578655000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "konflikt",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:StockholdersEquity",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:blad:83.1177%",
+        "drugie_zrodlo:doc-004:1.35469e+09:142.71%:blad"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": -194682000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "konflikt",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:StockholdersEquity",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:blad:59.5625%"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 9154642000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:StockholdersEquity",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "kapital_wlasny.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "kapital_wlasny",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 9158913000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:StockholdersEquity",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 129131000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CostOfRevenue",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 209710000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CostOfRevenue",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 57908000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CostOfRevenue",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 71223000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CostOfRevenue",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 80579000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CostOfRevenue",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 261781000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CostOfRevenue",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 430497000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CostOfRevenue",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 107230000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CostOfRevenue",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 154551000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CostOfRevenue",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszt_sprzedazy.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszt_sprzedazy",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 168715000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CostOfRevenue",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "koszty_dystrybucji.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 28554000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 49388000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 10326000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 18228000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 20834000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 101670000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 134483000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 14701000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 86969000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "koszty_dystrybucji.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_dystrybucji",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 32813000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:SellingAndMarketingExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 17282000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 20796000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 6997000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 10285000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 3513000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 106689000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 162277000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 11017000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 95672000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "koszty_zarzadu.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "koszty_zarzadu",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 55588000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GeneralAndAdministrativeExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "kurs.2026-11-17",
+      "rodzaj": "raportowany",
+      "pozycja": "kurs",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 104.18000030517578,
+      "jednostka": "pieniadz_na_akcje",
+      "waluta": "USD",
+      "metoda": "api",
+      "status": "zweryfikowany",
+      "dokument": "doc-007",
+      "miejsce": {
+        "sesja": "2026-11-17",
+        "pole": "zamknięcie"
+      },
+      "kontrole": [
+        "drugie_zrodlo:doc-006:104.18:0.00%:ok"
+      ]
+    },
+    {
+      "id": "liczba_akcji_rozwodniona.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_rozwodniona",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 162276000.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "liczba_akcji_rozwodniona.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_rozwodniona",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 163677000.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "liczba_akcji_rozwodniona.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_rozwodniona",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 52003000.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "liczba_akcji_rozwodniona.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_rozwodniona",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 161822000.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "liczba_akcji_rozwodniona.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_rozwodniona",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 53983000.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "liczba_akcji_rozwodniona.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_rozwodniona",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 107132000.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "liczba_akcji_rozwodniona.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_rozwodniona",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 151532000.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "liczba_akcji_rozwodniona.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_rozwodniona",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 62806000.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "liczba_akcji_rozwodniona.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_rozwodniona",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 150968000.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "liczba_akcji_rozwodniona.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_akcji_rozwodniona",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 238885000.0,
+      "jednostka": "akcje",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "liczba_akcji_rozwodniona.TTM2026-09-30",
+      "rodzaj": "wyliczony",
+      "pozycja": "liczba_akcji_rozwodniona",
+      "okres": {
+        "typ": "TTM",
+        "koniec": "2026-09-30",
+        "poczatek": "2025-10-01"
+      },
+      "wartosc": 151532000.0,
+      "jednostka": "akcje",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "liczba_akcji_rozwodniona.FY2026M9 (ostatni okres)",
+      "wejscia": [
+        "liczba_akcji_rozwodniona.FY2026M9"
+      ]
+    },
+    {
+      "id": "liczba_analitykow.2026-11-18",
+      "rodzaj": "raportowany",
+      "pozycja": "liczba_analitykow",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-18"
+      },
+      "wartosc": 11.0,
+      "jednostka": "liczba",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-012",
+      "miejsce": {
+        "tekst": "According to 11 analysts polled by S&P Global, Cerebras Systems stock has a consensus rating of \"Strong Buy\" and an average price target of $210.18"
+      }
+    },
+    {
+      "id": "naleznosci_handlowe.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "naleznosci_handlowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 50423000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AccountsReceivableNetCurrent",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "naleznosci_handlowe.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "naleznosci_handlowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 62631000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AccountsReceivableNetCurrent",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "naleznosci_handlowe.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "naleznosci_handlowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 123361000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AccountsReceivableNetCurrent",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "naleznosci_handlowe.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "naleznosci_handlowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 231762000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AccountsReceivableNetCurrent",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "obroty_dzienne_60s.2026-11-17",
+      "rodzaj": "raportowany",
+      "pozycja": "obroty_dzienne_60s",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 1357374395.516688,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-007",
+      "miejsce": {
+        "obliczenie": "średnia z 60 sesji: zamknięcie × wolumen",
+        "od": "2026-08-25",
+        "dokumenty": [
+          "doc-007"
+        ]
+      }
+    },
+    {
+      "id": "pasywa_razem.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 2326037000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "konflikt",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LiabilitiesAndStockholdersEquity",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "tozsamosc:zobowiazania+kapital=pasywa:blad:83.1177%"
+      ]
+    },
+    {
+      "id": "pasywa_razem.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 4948378000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "konflikt",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LiabilitiesAndStockholdersEquity",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "tozsamosc:zobowiazania+kapital=pasywa:blad:59.5625%"
+      ]
+    },
+    {
+      "id": "pasywa_razem.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 11627872000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LiabilitiesAndStockholdersEquity",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "pasywa_razem.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "pasywa_razem",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 11938412000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LiabilitiesAndStockholdersEquity",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:aktywa=pasywa:ok:0.0000%",
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "podatek_dochodowy.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "podatek_dochodowy",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 3347000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeTaxExpenseBenefit",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "podatek_dochodowy.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "podatek_dochodowy",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 4866000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeTaxExpenseBenefit",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "podatek_dochodowy.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "podatek_dochodowy",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 1683000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeTaxExpenseBenefit",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "podatek_dochodowy.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "podatek_dochodowy",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 1664000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeTaxExpenseBenefit",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "podatek_dochodowy.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "podatek_dochodowy",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 1519000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeTaxExpenseBenefit",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "podatek_dochodowy.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "podatek_dochodowy",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 1771000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeTaxExpenseBenefit",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "podatek_dochodowy.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "podatek_dochodowy",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 2740000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeTaxExpenseBenefit",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "podatek_dochodowy.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "podatek_dochodowy",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 1497000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeTaxExpenseBenefit",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "podatek_dochodowy.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "podatek_dochodowy",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 274000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeTaxExpenseBenefit",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "podatek_dochodowy.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "podatek_dochodowy",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 969000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeTaxExpenseBenefit",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "premia_ryzyka_akcji.2026-11-18",
+      "rodzaj": "raportowany",
+      "pozycja": "premia_ryzyka_akcji",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-18"
+      },
+      "wartosc": 0.0446,
+      "jednostka": "ulamek",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-010",
+      "miejsce": {
+        "kraj": "United States",
+        "kolumna": "Total Equity Risk Premium",
+        "rating": "Aa1"
+      }
+    },
+    {
+      "id": "przeplywy_finansowe.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 5148000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 1068812000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 1552000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 7853242000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 7869421000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_finansowe.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_finansowe",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 2038106000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -87296000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -182724000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -56746000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -1309933000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -4892200000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_inwestycyjne.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_inwestycyjne",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -236616000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -123843000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -134216000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -54937000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -47488000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -388894000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przeplywy_operacyjne.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przeplywy_operacyjne",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 12335000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przychody.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 202834000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przychody.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 338548000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przychody.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 99512000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przychody.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 103322000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przychody.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 135714000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przychody.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 373516000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przychody.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 584324000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przychody.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 193406000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przychody.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 180110000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przychody.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "przychody",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 210809000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "przychody_konsensus.2026-12-31",
+      "rodzaj": "prognoza",
+      "pozycja": "przychody_konsensus",
+      "okres": {
+        "typ": "FY",
+        "koniec": "2026-12-31"
+      },
+      "wartosc": 930231560.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "parser_strony",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-012",
+      "miejsce": {
+        "pole": "revenue[2026-12-31].avg (rok obrotowy z prognozą)"
+      },
+      "dostawca": "S&P Global (przez Stock Analysis)",
+      "data_prognozy": "2026-11-18",
+      "liczba_analitykow": 10
+    },
+    {
+      "id": "rentownosc_10l.2026-11-17",
+      "rodzaj": "raportowany",
+      "pozycja": "rentownosc_10l",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 0.051,
+      "jednostka": "ulamek",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-011",
+      "miejsce": {
+        "kolumna": "10 Yr",
+        "dzien": "2026-11-17"
+      }
+    },
+    {
+      "id": "rsi_14.2026-11-17",
+      "rodzaj": "raportowany",
+      "pozycja": "rsi_14",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": 42.98551931509118,
+      "jednostka": "liczba",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-007",
+      "miejsce": {
+        "obliczenie": "RSI Wildera z 14 sesji, zamknięcia",
+        "od": "2026-05-14",
+        "dokumenty": [
+          "doc-007"
+        ]
+      }
+    },
+    {
+      "id": "rzeczowe_aktywa_trwale.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "rzeczowe_aktywa_trwale",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 437396000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:PropertyPlantAndEquipmentNet",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "rzeczowe_aktywa_trwale.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "rzeczowe_aktywa_trwale",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 572439000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:PropertyPlantAndEquipmentNet",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "rzeczowe_aktywa_trwale.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "rzeczowe_aktywa_trwale",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 986808000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:PropertyPlantAndEquipmentNet",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "rzeczowe_aktywa_trwale.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "rzeczowe_aktywa_trwale",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 1507797000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:PropertyPlantAndEquipmentNet",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "sbc.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "sbc",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 22435000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ShareBasedCompensation",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "sbc.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "sbc",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 33781000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ShareBasedCompensation",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "sbc.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "sbc",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 9154000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ShareBasedCompensation",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "sbc.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "sbc",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 13281000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AllocatedShareBasedCompensationExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "sbc.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "sbc",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 11346000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AllocatedShareBasedCompensationExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "sbc.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "sbc",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 386601000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ShareBasedCompensation",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "sbc.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "sbc",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 541706000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ShareBasedCompensation",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "sbc.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "sbc",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 9593000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:ShareBasedCompensation",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "sbc.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "sbc",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 377008000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AllocatedShareBasedCompensationExpense",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "sbc.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "sbc",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 155105000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:AllocatedShareBasedCompensationExpense",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "wplyw_kursow_na_gotowke.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "wplyw_kursow_na_gotowke",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 912000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "wplyw_kursow_na_gotowke.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "wplyw_kursow_na_gotowke",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 297000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "wplyw_kursow_na_gotowke.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "wplyw_kursow_na_gotowke",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 180000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "wplyw_kursow_na_gotowke.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "wplyw_kursow_na_gotowke",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 638000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "wplyw_kursow_na_gotowke.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "wplyw_kursow_na_gotowke",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 89000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "wplyw_kursow_na_gotowke.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "wplyw_kursow_na_gotowke",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 911000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "wzrost_przychody.FY2026H1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wzrost_przychody",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 0.8414861413766923,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "zweryfikowany",
+      "wzor": "przychody.FY2026H1 / przychody.FY2025H1 - 1",
+      "wejscia": [
+        "przychody.FY2026H1",
+        "przychody.FY2025H1"
+      ]
+    },
+    {
+      "id": "wzrost_przychody.FY2026M9",
+      "rodzaj": "wyliczony",
+      "pozycja": "wzrost_przychody",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 0.7259709110672636,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "zweryfikowany",
+      "wzor": "przychody.FY2026M9 / przychody.FY2025M9 - 1",
+      "wejscia": [
+        "przychody.FY2026M9",
+        "przychody.FY2025M9"
+      ]
+    },
+    {
+      "id": "wzrost_przychody.FY2026Q1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wzrost_przychody",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 0.9435444971460729,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "zweryfikowany",
+      "wzor": "przychody.FY2026Q1 / przychody.FY2025Q1 - 1",
+      "wejscia": [
+        "przychody.FY2026Q1",
+        "przychody.FY2025Q1"
+      ]
+    },
+    {
+      "id": "wzrost_zysk_netto.FY2026H1",
+      "rodzaj": "wyliczony",
+      "pozycja": "wzrost_zysk_netto",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -2.62626336886695,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "zysk_netto.FY2026H1 / zysk_netto.FY2025H1 - 1",
+      "wejscia": [
+        "zysk_netto.FY2026H1",
+        "zysk_netto.FY2025H1"
+      ]
+    },
+    {
+      "id": "wzrost_zysk_netto.FY2026M9",
+      "rodzaj": "wyliczony",
+      "pozycja": "wzrost_zysk_netto",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -3.3752752008016884,
+      "jednostka": "ulamek",
+      "metoda": "kod",
+      "status": "jedno_zrodlo",
+      "wzor": "zysk_netto.FY2026M9 / zysk_netto.FY2025M9 - 1",
+      "wejscia": [
+        "zysk_netto.FY2026M9",
+        "zysk_netto.FY2025M9"
+      ]
+    },
+    {
+      "id": "zapasy.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 63626000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:InventoryNet",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zapasy.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 89040000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:InventoryNet",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "zapasy.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 32666000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:InventoryNet",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zapasy.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zapasy",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 146100000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:InventoryNet",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zmiana_gotowki.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -205079000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 752169000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -109951000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 6496459000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 2588416000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_gotowki.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_gotowki",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 1814736000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przeplywy=zmiana_gotowki:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zmiana_kursu_3m.2026-11-17",
+      "rodzaj": "raportowany",
+      "pozycja": "zmiana_kursu_3m",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-11-17"
+      },
+      "wartosc": -0.5264760560596314,
+      "jednostka": "ulamek",
+      "metoda": "api",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-007",
+      "miejsce": {
+        "od": "2026-08-18",
+        "do": "2026-11-17",
+        "obliczenie": "kurs(do) / kurs(od) - 1",
+        "dokumenty": [
+          "doc-007"
+        ]
+      }
+    },
+    {
+      "id": "zobowiazania.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 971344000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "konflikt",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Liabilities",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:blad:83.1177%",
+        "drugie_zrodlo:doc-004:9.71344e+08:0.00%:ok"
+      ]
+    },
+    {
+      "id": "zobowiazania.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 2195681000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "konflikt",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Liabilities",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:blad:59.5625%"
+      ]
+    },
+    {
+      "id": "zobowiazania.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 2473230000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Liabilities",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zobowiazania.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 2779499000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:Liabilities",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:zobowiazania+kapital=pasywa:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zobowiazania_krotkoterminowe.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania_krotkoterminowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": 719540000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LiabilitiesCurrent",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zobowiazania_krotkoterminowe.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania_krotkoterminowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": 1427246000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LiabilitiesCurrent",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "zobowiazania_krotkoterminowe.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania_krotkoterminowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": 1566088000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LiabilitiesCurrent",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zobowiazania_krotkoterminowe.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zobowiazania_krotkoterminowe",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": 1680871000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:LiabilitiesCurrent",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_brutto.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 73703000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GrossProfit",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_brutto.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 128838000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GrossProfit",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_brutto.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 41604000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GrossProfit",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_brutto.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 32099000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GrossProfit",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_brutto.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": 55135000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GrossProfit",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_brutto.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 111735000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GrossProfit",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_brutto.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 153827000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GrossProfit",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_brutto.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": 86176000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GrossProfit",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_brutto.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": 25559000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GrossProfit",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_brutto.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_brutto",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": 42094000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "zweryfikowany",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:GrossProfit",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      },
+      "kontrole": [
+        "tozsamosc:przychody-koszt_sprzedazy=zysk_brutto:ok:0.0000%"
+      ]
+    },
+    {
+      "id": "zysk_netto.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 285645000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetIncomeLoss",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zysk_netto.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 263444000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetIncomeLoss",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_netto.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -23867000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetIncomeLoss",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_netto.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 309512000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetIncomeLoss",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_netto.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": -22201000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetIncomeLoss",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_netto.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -464534000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetIncomeLoss",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zysk_netto.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -625752000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetIncomeLoss",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_netto.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -14006000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetIncomeLoss",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_netto.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": -450528000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetIncomeLoss",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_netto.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_netto",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": -161218000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:NetIncomeLoss",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_operacyjny.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -85652000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:OperatingIncomeLoss",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zysk_operacyjny.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -112121000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:OperatingIncomeLoss",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_operacyjny.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -28470000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:OperatingIncomeLoss",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "zysk_operacyjny.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": -57182000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:OperatingIncomeLoss",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zysk_operacyjny.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": -26469000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:OperatingIncomeLoss",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_operacyjny.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -492270000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:OperatingIncomeLoss",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zysk_operacyjny.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -716421000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:OperatingIncomeLoss",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_operacyjny.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -15037000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:OperatingIncomeLoss",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "zysk_operacyjny.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": -477233000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:OperatingIncomeLoss",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zysk_operacyjny.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_operacyjny",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": -224149000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:OperatingIncomeLoss",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2025H1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 288992000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2025M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": 268310000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2025Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2025-03-31",
+        "poczatek": "2025-01-01"
+      },
+      "wartosc": -22184000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2025Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2025-06-30",
+        "poczatek": "2025-04-01"
+      },
+      "wartosc": 311176000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2025Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2025-09-30",
+        "poczatek": "2025-07-01"
+      },
+      "wartosc": -20682000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2026H1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "H1",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -462763000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2026M9",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "M9",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -623012000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2026Q1",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "Q1",
+        "koniec": "2026-03-31",
+        "poczatek": "2026-01-01"
+      },
+      "wartosc": -12509000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2026Q2",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "Q2",
+        "koniec": "2026-06-30",
+        "poczatek": "2026-04-01"
+      },
+      "wartosc": -450254000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zysk_przed_opodatkowaniem.FY2026Q3",
+      "rodzaj": "raportowany",
+      "pozycja": "zysk_przed_opodatkowaniem",
+      "okres": {
+        "typ": "Q3",
+        "koniec": "2026-09-30",
+        "poczatek": "2026-07-01"
+      },
+      "wartosc": -160249000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zyski_zatrzymane.2025-12-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zyski_zatrzymane",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2025-12-31"
+      },
+      "wartosc": -905330000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RetainedEarningsAccumulatedDeficit",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    },
+    {
+      "id": "zyski_zatrzymane.2026-03-31",
+      "rodzaj": "raportowany",
+      "pozycja": "zyski_zatrzymane",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-03-31"
+      },
+      "wartosc": -919336000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RetainedEarningsAccumulatedDeficit",
+        "accn": "0001628280-26-044981",
+        "forma": "10-Q",
+        "zlozono": "2026-06-24"
+      }
+    },
+    {
+      "id": "zyski_zatrzymane.2026-06-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zyski_zatrzymane",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-06-30"
+      },
+      "wartosc": -1369864000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RetainedEarningsAccumulatedDeficit",
+        "accn": "0001628280-26-056357",
+        "forma": "10-Q",
+        "zlozono": "2026-08-12"
+      }
+    },
+    {
+      "id": "zyski_zatrzymane.2026-09-30",
+      "rodzaj": "raportowany",
+      "pozycja": "zyski_zatrzymane",
+      "okres": {
+        "typ": "dzien",
+        "koniec": "2026-09-30"
+      },
+      "wartosc": -1531082000.0,
+      "jednostka": "pieniadz",
+      "waluta": "USD",
+      "metoda": "xbrl",
+      "status": "jedno_zrodlo",
+      "dokument": "doc-001",
+      "miejsce": {
+        "xbrl": "us-gaap:RetainedEarningsAccumulatedDeficit",
+        "accn": "0001628280-26-073494",
+        "forma": "10-Q",
+        "zlozono": "2026-11-12"
+      }
+    }
+  ]
+}
