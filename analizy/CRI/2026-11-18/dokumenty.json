@@ -2771,6 +2771,66 @@
       "pobrano": "2026-11-18T14:59:25.742196Z",
       "sha256": "2e1dc8ba8ed0c0efdcc05b3d0c33c424ce5846e4b3854f81d3bf0dd16aecd8da",
       "plik": "2e1dc8ba8ed0c0ef.html"
+    },
+    {
+      "id": "doc-278",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,16",
+      "opis": "notowania historyczne CRI, strona 16",
+      "pobrano": "2026-11-18T14:59:27.028923Z",
+      "sha256": "0ad24bd37c518ba9ae2a23c1284aac7238ca3fbe6582f5aa926a1bcdbc9485ae",
+      "plik": "0ad24bd37c518ba9.html"
+    },
+    {
+      "id": "doc-279",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,17",
+      "opis": "notowania historyczne CRI, strona 17",
+      "pobrano": "2026-11-18T14:59:28.595679Z",
+      "sha256": "00cd4f957150b2fafa1556089e8d7404048a4b93ed2890e5fba13e396a2695f2",
+      "plik": "00cd4f957150b2fa.html"
+    },
+    {
+      "id": "doc-280",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,18",
+      "opis": "notowania historyczne CRI, strona 18",
+      "pobrano": "2026-11-18T14:59:29.893355Z",
+      "sha256": "7d49a179655b1e49f1f176e3090a3d408f69a6e5e8aca979c0969eac34c39473",
+      "plik": "7d49a179655b1e49.html"
+    },
+    {
+      "id": "doc-281",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,19",
+      "opis": "notowania historyczne CRI, strona 19",
+      "pobrano": "2026-11-18T14:59:31.184547Z",
+      "sha256": "89affd30f8e11c9b9c793c07329fe7bde017f977c98e2ac1a5e1c6266e5c6622",
+      "plik": "89affd30f8e11c9b.html"
+    },
+    {
+      "id": "doc-282",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,20",
+      "opis": "notowania historyczne CRI, strona 20",
+      "pobrano": "2026-11-18T14:59:32.455117Z",
+      "sha256": "e566a394884f7344768a902028c7ffca4ee2d1751ad59d353c4b6a8aea75b678",
+      "plik": "e566a394884f7344.html"
+    },
+    {
+      "id": "doc-283",
+      "typ": "strona",
+      "zrodlo": "Biznesradar",
+      "adres": "https://www.biznesradar.pl/notowania-historyczne/CRI,21",
+      "opis": "notowania historyczne CRI, strona 21",
+      "pobrano": "2026-11-18T14:59:33.764377Z",
+      "sha256": "092bafdc7ae56ac8c4b8395c42dcbaf7c6007ce6b2567b38f63a38751c0da99e",
+      "plik": "092bafdc7ae56ac8.html"
     }
   ]
 }
